@@ -11,7 +11,7 @@ function fmt(n) {
 }
 
 function card(l) {
-  const waMsg = encodeURIComponent(`Assalamualaikum, saya berminat dengan listing ${l.tracking} - ${l.title} (${l.price_label}). Adakah masih tersedia?`);
+  const waMsg = encodeURIComponent(`Assalamualaikum dan salam sejahtera, saya berminat dengan listing ${l.tracking} - ${l.title} (${l.price_label}). Adakah masih tersedia?`);
   const badges = [];
   if (l.status === "JUAL") badges.push('<span class="badge">JUAL</span>');
   if (l.status === "SEWA") badges.push('<span class="badge promo">SEWA</span>');
