@@ -19,7 +19,7 @@ body {
 }
 .header-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
 .brand { display: flex; align-items: center; gap: 12px; }
-.logo { font-size: 2rem; }
+.logo-img { height: 52px; width: auto; display: block; }
 .brand h1 { font-size: 1.35rem; letter-spacing: .5px; }
 .brand h1 span { color: #d4af37; }
 .tagline { font-size: .8rem; color: #d4af37; }
