@@ -32,9 +32,7 @@ function card(l) {
     ? `<div class="price">${l.price_label}${l.psf ? `<span class="price-psf"> · RM${l.psf}/sqft</span>` : ""}</div>`
     : `<div class="price standby">${l.price_label} <span class="price-psf">(harga menyusul)</span></div>`;
 
-  const mapBtn = l.map_url
-    ? `<a class="btn btn-map" href="${l.map_url}" target="_blank" rel="noopener">📍 Peta</a>`
-    : "";
+  const mapBtn = "";  // pin peta dikeluarkan - hanya nama tempat
 
   return `
   <article class="card">
@@ -51,7 +49,6 @@ function card(l) {
       <div class="card-actions">
         <a class="btn btn-wa-card" href="https://wa.me/${WA}?text=${waMsg}" target="_blank">WhatsApp</a>
         <a class="btn btn-call" href="tel:+${WA}">Panggil</a>
-        ${mapBtn}
       </div>
       <div class="card-foot">${l.tracking} · ${l.date || ""}</div>
     </div>
@@ -63,6 +60,7 @@ function render(query = "", state = "") {
   const empty = document.getElementById("emptyMsg");
   const q = query.toLowerCase().trim();
   const items = DATA.filter(l => {
+    if (l.active === false) return false;  // listing dimatikan - tak dipaparkan
     const okState = !state || (l.location || "").toUpperCase().includes(state.toUpperCase());
     const hay = (l.title + " " + l.location + " " + (l.tenure || "") + " " + (l.sekatan || "")).toLowerCase();
     const okQ = !q || hay.includes(q);
