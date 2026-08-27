@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr Tanah — Pakar Tanah &amp; Hartanah Malaysia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <span class="logo">🏞️</span>
+      <div>
+        <h1>Mr Tanah</h1>
+        <p class="tagline">Pakar Tanah &amp; Hartanah Malaysia — Jual, Beli &amp; Sewa</p>
+      </div>
+    </div>
+    <a class="btn-wa" href="https://wa.me/60163119076" target="_blank">📲 WhatsApp: 016-3119076</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2>Cari Tanah &amp; Hartanah Idaman Anda</h2>
+    <p>Listing tanah, bangunan &amp; pertanian terkini dari seluruh Malaysia — harga pemilik, terus dari kami.</p>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Cari lokasi, lot, daerah...">
+      <select id="typeFilter">
+        <option value="">Semua Jenis</option>
+        <option>Tanah</option>
+        <option>Tanah Pertanian</option>
+        <option>Bangunan</option>
+      </select>
+      <select id="stateFilter">
+        <option value="">Semua Negeri</option>
+        <option>PAHANG</option>
+        <option>MELAKA</option>
+        <option>NEGERI SEMBILAN</option>
+        <option>SELANGOR</option>
+        <option>KUALA LUMPUR</option>
+        <option>PUTRAJAYA</option>
+      </select>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+  <div id="listingGrid" class="grid"></div>
+  <p id="emptyMsg" class="empty" style="display:none">Tiada listing dijumpai.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Mr Tanah · 016-3119076 · Tanah &amp; Hartanah Seluruh Malaysia</p>
+  </div>
+</footer>
+
+<script src="data/listings.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
