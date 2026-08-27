@@ -134,3 +134,42 @@ body {
   70% { box-shadow: 0 4px 18px rgba(0,0,0,.3), 0 0 0 18px rgba(37,211,102,0); }
   100% { box-shadow: 0 4px 18px rgba(0,0,0,.3), 0 0 0 0 rgba(37,211,102,0); }
 }
+
+/* Halaman Serah Listing */
+.hero-small { padding: 36px 20px; }
+.hero-small h2 { font-size: 1.6rem; }
+.form-card {
+  background: #fff; border-radius: 16px; padding: 30px 34px;
+  box-shadow: 0 6px 22px rgba(10,31,68,.1);
+  max-width: 640px; margin: 36px auto; border-top: 4px solid #d4af37;
+}
+.form-card h3 { color: #0a1f44; font-size: 1.25rem; margin-bottom: 4px; }
+.form-hint { color: #66788f; font-size: .85rem; margin-bottom: 20px; }
+.form-row { margin-bottom: 16px; }
+.form-row label { display: block; font-weight: 600; font-size: .9rem; color: #1a2332; margin-bottom: 6px; }
+.form-row .req { color: #b03a3a; }
+.form-row input[type="text"], .form-row input[type="tel"], .form-row select, .form-row textarea {
+  width: 100%; padding: 11px 14px; border: 2px solid #dde4f0; border-radius: 8px;
+  font-size: .95rem; font-family: inherit; background: #fafbfe; transition: border-color .15s;
+}
+.form-row input:focus, .form-row select:focus, .form-row textarea:focus {
+  outline: none; border-color: #d4af37; background: #fff;
+}
+.radio-group { display: flex; gap: 14px; flex-wrap: wrap; }
+.radio {
+  display: flex; align-items: center; gap: 6px;
+  background: #eef2f7; padding: 9px 16px; border-radius: 30px;
+  font-weight: 600; font-size: .9rem; cursor: pointer; border: 2px solid transparent;
+}
+.radio input { accent-color: #b8860b; }
+.radio:has(input:checked) { border-color: #d4af37; background: #fdf8e8; }
+.btn-submit {
+  width: 100%; padding: 14px; border: none; border-radius: 10px;
+  background: linear-gradient(135deg, #25d366, #1eb356); color: #fff;
+  font-size: 1.05rem; font-weight: 700; cursor: pointer;
+  transition: transform .15s, opacity .15s; box-shadow: 0 4px 14px rgba(37,211,102,.3);
+}
+.btn-submit:hover { transform: translateY(-2px); opacity: .95; }
+.form-note { font-size: .78rem; color: #8a98ad; text-align: center; margin-top: 12px; }
+.cta-hero { display: inline-block; margin-top: 14px; padding: 12px 22px; border-radius: 30px; background: #d4af37; color: #0a1f44; text-decoration: none; font-weight: 700; font-size: .95rem; box-shadow: 0 3px 12px rgba(212,175,55,.4); transition: transform .15s; }
+.cta-hero:hover { transform: scale(1.04); }
