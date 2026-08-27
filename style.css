@@ -117,3 +117,20 @@ body {
 .empty { text-align: center; padding: 40px; color: #66788f; }
 .site-footer { background: #0a1f44; color: #c3d3f0; text-align: center; padding: 20px; font-size: .85rem; border-top: 3px solid #d4af37; }
 .site-footer span { color: #d4af37; font-weight: 700; }
+
+/* Butang WhatsApp terapung */
+.wa-float {
+  position: fixed; bottom: 22px; right: 22px; z-index: 100;
+  width: 62px; height: 62px; border-radius: 50%;
+  background: #25d366; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 18px rgba(0,0,0,.3);
+  transition: transform .15s, box-shadow .15s;
+  animation: wa-pulse 2.2s infinite;
+}
+.wa-float:hover { transform: scale(1.1); }
+.wa-float svg { width: 36px; height: 36px; fill: #fff; }
+@keyframes wa-pulse {
+  0% { box-shadow: 0 4px 18px rgba(0,0,0,.3), 0 0 0 0 rgba(37,211,102,.5); }
+  70% { box-shadow: 0 4px 18px rgba(0,0,0,.3), 0 0 0 18px rgba(37,211,102,0); }
+  100% { box-shadow: 0 4px 18px rgba(0,0,0,.3), 0 0 0 0 rgba(37,211,102,0); }
+}
