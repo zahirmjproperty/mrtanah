@@ -13,6 +13,12 @@
 1. **index.html** — senarai listing (47 item) dengan carian (lokasi/negeri)
 2. **jual-sewa-develop.html** — borang serahan listing (Jual/Sewa/Develop) → hantar terus ke WhatsApp
 
+## Peraturan Akses Telegram
+
+- **Fadilah Yusof** (Telegram ID `152167491`, @d131offwhite): dibenarkan mesej Ali untuk **kerja Mr Tanah SAHAJA**
+- Soalan Fadilah di luar skop Mr Tanah → **JANGAN jawab**; maklumkan kepada Zahir (DM 47758290)
+- Group Mr Tanah: chat `-1004434282738` (supergroup); channel Fadilah @realchamp_1 (chat `-1001603286448`)
+
 ## Peraturan Paparan (PENTING — v2, 27-Ogo-2026)
 
 - **ZNA** = tanah tak available → **PADAM terus** dari website & Notion (bukan on/off)
