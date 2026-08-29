@@ -3,74 +3,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mr Tanah — Pakar Tanah &amp; Hartanah Malaysia</title>
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="stylesheet" href="style.css">
+<title>Mr Tanah — Cari Hartanah: Rumah, Tanah &amp; Komersial</title>
+<meta name="description" content="Senarai hartanah untuk dijual oleh Mr Tanah — rumah teres, semi-D, tanah dan komersial di Selangor, Kuala Lumpur &amp; seluruh Malaysia. Ejen hartanah berdaftar (PEA 2684).">
+<link rel="stylesheet" href="style.css?v=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
 </head>
 <body>
+
 <header class="site-header">
   <div class="container header-inner">
-    <div class="brand">
-      <img src="assets/logo.png" alt="Mr Tanah — Pakar Tanah &amp; Hartanah Malaysia" class="logo-img">
+    <a href="index.html" class="brand">
+      <span class="logo"><img src="assets/logo.png" alt="Mr Tanah" class="logo-img-header"></span>
+      <span class="brand-text">
+        <strong>Mr Tanah</strong>
+        <small>Pakar Tanah &amp; Hartanah Malaysia</small>
+      </span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html" class="active">Utama</a>
+      <a href="index.html#listing">Listing</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="jual-sewa-develop.html">Serah Listing</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn-wa" href="https://wa.me/60163119076" target="_blank" rel="noopener">📲 016-3119076</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
     </div>
-    <a class="btn-wa" href="https://wa.me/60163119076" target="_blank">📲 WhatsApp: 016-3119076</a>
   </div>
 </header>
 
 <section class="hero">
   <div class="container">
-    <h2>Cari Tanah &amp; Hartanah <span>Idaman</span> Anda</h2>
-    <p>Listing tanah, bangunan &amp; pertanian terkini dari seluruh Malaysia — harga pemilik, terus dari kami.</p>
-    <a class="cta-hero" href="jual-sewa-develop.html">🏷️ Nak Jual / Sewa / Develop? Serah Listing Anda</a>
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Cari lokasi, daerah, negeri...">
-      <select id="stateFilter">
-        <option value="">Semua Negeri</option>
-        <option>KUALA LUMPUR</option>
-        <option>SELANGOR</option>
-        <option>PAHANG</option>
-        <option>JOHOR</option>
-        <option>KEDAH</option>
-        <option>KELANTAN</option>
-        <option>MELAKA</option>
-        <option>NEGERI SEMBILAN</option>
-        <option>PUTRAJAYA</option>
-      </select>
+    <h1>Cari Tanah &amp; Hartanah Idaman Anda</h1>
+    <p>Listing tanah, bangunan &amp; tanah pertanian dari seluruh Malaysia — harga pemilik, terus dari kami. Semua lot melalui semakan status pemilikan dan harga pasaran.</p>
+    <div class="search-panel" id="searchPanel">
+      <div class="search-row">
+        <input type="text" id="searchInput" placeholder="Cari lokasi, jenis hartanah..." autocomplete="off">
+        <select id="stateFilter" aria-label="Negeri">
+          <option value="">Semua Negeri</option>
+        </select>
+        <select id="typeFilter" aria-label="Jenis">
+          <option value="">Semua Jenis</option>
+        </select>
+      </div>
+      <div class="search-row search-row-2">
+        <div class="price-field">
+          <span>Harga min</span>
+          <input type="number" id="minPrice" placeholder="cth: 500000" min="0" step="10000">
+        </div>
+        <div class="price-field">
+          <span>Harga maks</span>
+          <input type="number" id="maxPrice" placeholder="cth: 1000000" min="0" step="10000">
+        </div>
+        <select id="sortSelect" aria-label="Susun">
+          <option value="newest">Terbaru</option>
+          <option value="priceAsc">Harga: Rendah → Tinggi</option>
+          <option value="priceDesc">Harga: Tinggi → Rendah</option>
+        </select>
+        <button class="btn btn-clear" id="clearBtn" type="button">Reset</button>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="about">
-  <div class="container">
-    <h2>Tentang <span>Kami</span></h2>
-    <div class="gold-line"></div>
-    <div class="about-img-wrap">
-      <img src="assets/mr-tanah-team.jpg" alt="Pasukan Mr Tanah" class="about-img">
-      <p class="about-caption">Zahir (kiri) &amp; Ejen Fadilah Yusof (kanan)</p>
-    </div>
-    <p><span class="about-names">Mr Tanah</span> ialah jenama kerjasama antara <span class="about-names">Zahir</span> (Ejen Hartanah Berdaftar — PEA2684) dan <span class="about-names">Ejen Fadilah Yusof</span> (PEA2313) — menggabungkan pengalaman, rangkaian luas dan pengetahuan pasaran tanah &amp; hartanah di seluruh Malaysia.</p>
-    <p>Kami menyediakan listing tanah, bangunan dan tanah pertanian dengan harga pemilik — daripada lot kecil hingga tanah ladang berskala besar. Setiap transaksi diuruskan dengan telus dan profesional.</p>
-    <p>📞 Untuk sebarang pertanyaan &amp; urusan: <strong>016-3119076</strong> (WhatsApp)</p>
+<main class="container main">
+  <div class="results-bar">
+    <p id="resultCount">Memuatkan listing...</p>
   </div>
-</section>
-
-<main class="container">
   <div id="listingGrid" class="grid"></div>
-  <p id="emptyMsg" class="empty" style="display:none">Tiada listing dijumpai.</p>
+  <div id="emptyMsg" class="empty" style="display:none">
+    <p>Tiada listing dijumpai.</p>
+    <p class="empty-sub">Cuba ubah carian atau filter — atau hubungi kami, mungkin ada listing yang belum disenaraikan.</p>
+    <a class="btn btn-wa" href="https://wa.me/60163119076?text=Assalamualaikum%20dan%20salam%20sejahtera%2C%20saya%20mencari%20hartanah..." target="_blank" rel="noopener">Tanya kami di WhatsApp</a>
+  </div>
 </main>
 
+<section class="agent-teaser">
+  <div class="container agent-teaser-inner">
+    <div class="agent-avatar">👨‍💼</div>
+    <div class="agent-copy">
+      <h2>Kenali Pasukan Kami</h2>
+      <p>Pasukan ejen hartanah berdaftar yang membantu anda beli, jual dan sewa tanah &amp; hartanah dengan telus — dari semakan dokumen dan harga pasaran hingga kunci di tangan.</p>
+      <a class="btn btn-outline-light" href="tentang.html">Lihat Profil Pasukan →</a>
+    </div>
+  </div>
+</section>
+
 <footer class="site-footer">
-  <div class="container">
-    <p>© 2026 Mr Tanah · 016-3119076 · Tanah &amp; Hartanah Seluruh Malaysia · <a href="jual-sewa-develop.html" style="color:#c3d3f0">Serah Listing</a></p>
+  <div class="container footer-grid">
+    <div>
+      <h3>Mr Tanah</h3>
+      <p>Pakar Tanah &amp; Hartanah Malaysia — Jual, Beli &amp; Sewa.</p>
+    </div>
+    <div>
+      <h3>Pautan</h3>
+      <a href="index.html">Utama</a>
+      <a href="index.html#listing">Senarai Hartanah</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="jual-sewa-develop.html">Serah Listing</a>
+    </div>
+    <div>
+      <h3>Hubungi</h3>
+      <p>📞 <a href="tel:+60163119076">016-3119076</a></p>
+      <p>📲 <a href="https://wa.me/60163119076" target="_blank" rel="noopener">WhatsApp</a></p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Mr Tanah · Ejen Hartanah Berdaftar</p>
   </div>
 </footer>
 
-<script src="data/listings.js"></script>
-<script src="app.js"></script>
-
-<!-- Butang WhatsApp terapung - sentiasa kelihatan -->
-<a class="wa-float" href="https://wa.me/60163119076?text=Assalamualaikum%20dan%20salam%20sejahtera%2C%20saya%20ingin%20bertanya%20tentang%20listing%20Mr%20Tanah." target="_blank" aria-label="Hubungi Mr Tanah di WhatsApp">
-  <svg viewBox="0 0 32 32"><path d="M16 2.5C8.5 2.5 2.5 8.5 2.5 16c0 2.4.6 4.7 1.8 6.7L2.5 29.5l7-1.8c2 .9 4.2 1.4 6.5 1.4 7.5 0 13.5-6 13.5-13.5S23.5 2.5 16 2.5zm0 24.5c-2.1 0-4.1-.6-5.9-1.6l-.4-.2-4.2 1.1 1.1-4.1-.3-.4c-1.1-1.8-1.7-3.9-1.7-6.1C4.6 9.6 9.7 4.5 16 4.5S27.4 9.6 27.4 16 22.3 27 16 27zm6.1-8.3c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg>
-</a>
+<script src="data/listings.js?v=1"></script>
+<script src="app.js?v=1"></script>
 </body>
 </html>

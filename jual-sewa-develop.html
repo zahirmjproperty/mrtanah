@@ -4,30 +4,45 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Serah Listing — Mr Tanah | Jual · Sewa · Develop</title>
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="stylesheet" href="style.css">
+<meta name="description" content="Serahkan listing hartanah anda kepada Mr Tanah — jual, sewa atau develop. Isi borang, maklumat terus sampai melalui WhatsApp.">
+<link rel="stylesheet" href="style.css?v=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
 </head>
 <body>
+
 <header class="site-header">
   <div class="container header-inner">
-    <div class="brand">
-      <a href="index.html"><img src="assets/logo.png" alt="Mr Tanah" class="logo-img"></a>
+    <a href="index.html" class="brand">
+      <span class="logo"><img src="assets/logo.png" alt="Mr Tanah" class="logo-img-header"></span>
+      <span class="brand-text">
+        <strong>Mr Tanah</strong>
+        <small>Pakar Tanah &amp; Hartanah Malaysia</small>
+      </span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html">Utama</a>
+      <a href="index.html#listing">Listing</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="jual-sewa-develop.html" class="active">Serah Listing</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn-wa" href="https://wa.me/60163119076" target="_blank" rel="noopener">📲 016-3119076</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
     </div>
-    <a class="btn-wa" href="https://wa.me/60163119076" target="_blank">📲 WhatsApp: 016-3119076</a>
   </div>
 </header>
 
 <section class="hero hero-small">
   <div class="container">
-    <h2>Serah Listing Anda Kepada <span>Mr Tanah</span></h2>
+    <h1>Serah Listing Anda Kepada Mr Tanah</h1>
     <p>Kami bantu <strong>JUAL · SEWA · DEVELOP</strong> hartanah anda — isi borang di bawah, maklumat terus sampai kepada kami melalui WhatsApp.</p>
   </div>
 </section>
 
-<main class="container">
+<main class="container main">
   <div class="form-card">
-    <h3>📋 Borang Serahan Listing</h3>
-    <p class="form-hint">Isi maklumat hartanah anda — <span style="color:#b03a3a">*</span> wajib diisi.</p>
+    <h2>📋 Borang Serahan Listing</h2>
+    <p class="form-hint">Isi maklumat hartanah anda — <span class="req">*</span> wajib diisi.</p>
 
     <form id="listingForm">
       <div class="form-row">
@@ -56,6 +71,7 @@
           <option>Tanah</option>
           <option>Tanah Pertanian</option>
           <option>Rumah</option>
+          <option>Rumah Semi-D</option>
           <option>Bangunan Komersial</option>
           <option>Lain-lain</option>
         </select>
@@ -63,7 +79,7 @@
 
       <div class="form-row">
         <label>Lokasi / Alamat Hartanah <span class="req">*</span></label>
-        <input type="text" id="fLocation" placeholder="Cth: Mukim Cheras, Hulu Langat, Selangor" required>
+        <input type="text" id="fLocation" placeholder="Cth: Bangi, Selangor" required>
       </div>
 
       <div class="form-row">
@@ -98,8 +114,26 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <p>© 2026 <span>Mr Tanah</span> · 016-3119076 · <a href="index.html" style="color:#c3d3f0">Lihat Listing</a></p>
+  <div class="container footer-grid">
+    <div>
+      <h3>Mr Tanah</h3>
+      <p>Pakar Tanah &amp; Hartanah Malaysia — Jual, Beli &amp; Sewa.</p>
+    </div>
+    <div>
+      <h3>Pautan</h3>
+      <a href="index.html">Utama</a>
+      <a href="index.html#listing">Senarai Hartanah</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="jual-sewa-develop.html">Serah Listing</a>
+    </div>
+    <div>
+      <h3>Hubungi</h3>
+      <p>📞 <a href="tel:+60163119076">016-3119076</a></p>
+      <p>📲 <a href="https://wa.me/60163119076" target="_blank" rel="noopener">WhatsApp</a></p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Mr Tanah · Ejen Hartanah Berdaftar</p>
   </div>
 </footer>
 
@@ -140,6 +174,11 @@ document.getElementById("listingForm").addEventListener("submit", function(e) {
   const msg = encodeURIComponent(lines.join("\n"));
   window.open("https://wa.me/" + WA_NUMBER + "?text=" + msg, "_blank");
 });
+
+// Mobile nav toggle (dikongsi)
+const toggle = document.getElementById("navToggle");
+const nav = document.getElementById("nav");
+if (toggle) toggle.addEventListener("click", () => nav.classList.toggle("open"));
 </script>
 </body>
 </html>
