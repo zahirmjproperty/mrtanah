@@ -46,6 +46,7 @@ function card(l) {
   if (l.land_area && l.land_area !== "-") specs.push(`📐 ${l.land_area}`);
   if (l.built_up && l.built_up !== "-") specs.push(`🏗️ ${l.built_up}`);
   if (l.tenure && l.tenure !== "-") specs.push(`📜 ${l.tenure}`);
+  if (l.sekatan && l.sekatan !== "-" && l.sekatan !== "Tidak dinyatakan") specs.push(`🔖 ${l.sekatan}`);
 
   const oldPrice = l.price_old ? `<span class="price-old">${fmt(l.price_old)}</span>` : "";
 

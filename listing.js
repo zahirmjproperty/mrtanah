@@ -66,14 +66,15 @@ function galleryHTML(l) {
 }
 
 function specsTable(l) {
-  const rows = [
-    ["Jenis", l.type || "-"],
-    ["Bilik Tidur", l.bedrooms > 0 ? l.bedrooms + " bilik" : "Tidak dinyatakan"],
-    ["Bilik Air", l.bathrooms > 0 ? l.bathrooms + " bilik" : "Tidak dinyatakan"],
-    ["Keluasan Tanah", l.land_area && l.land_area !== "-" ? l.land_area : "Tidak dinyatakan"],
-    ["Keluasan Binaan", l.built_up && l.built_up !== "-" ? l.built_up : "Tidak dinyatakan"],
-    ["Hakmilik", l.tenure && l.tenure !== "-" ? l.tenure : "Tidak dinyatakan"]
-  ];
+  // Jadual spesifikasi khusus tanah/bangunan/kilang — baris hanya dipapar jika ada data
+  const rows = [["Jenis", l.type || "-"]];
+  if (l.land_area && l.land_area !== "-" && l.land_area !== "") rows.push(["Keluasan Tanah", l.land_area]);
+  if (l.built_up && l.built_up !== "-" && l.built_up !== "") rows.push(["Keluasan Binaan", l.built_up]);
+  if (l.bedrooms > 0) rows.push(["Bilik Tidur", l.bedrooms + " bilik"]);
+  if (l.bathrooms > 0) rows.push(["Bilik Air", l.bathrooms + " bilik"]);
+  if (l.tenure && l.tenure !== "-" && l.tenure !== "Tidak pasti") rows.push(["Hakmilik", l.tenure]);
+  if (l.sekatan && l.sekatan !== "-" && l.sekatan !== "Tidak dinyatakan") rows.push(["Sekatan", l.sekatan]);
+  if (l.kategori) rows.push(["Kategori", l.kategori]);
   return `<table class="spec-table">${rows.map(r => `<tr><th>${r[0]}</th><td>${r[1]}</td></tr>`).join("")}</table>`;
 }
 
@@ -162,7 +163,7 @@ function renderDetail(l) {
 
     <section class="cta-card">
       <h2>Berminat Dengan Listing Ini?</h2>
-      <p>Hubungi saya untuk maklumat lanjut, jadual tinjauan (viewing), atau semak kelayakan pembiayaan anda.</p>
+      <p>Hubungi kami untuk maklumat lanjut, jadual tinjauan (viewing), atau semak status hakmilik &amp; kelayakan pembiayaan anda.</p>
       <div class="cta-actions">
         <a class="btn btn-wa" href="https://wa.me/${WA}?text=${waMsg}" target="_blank" rel="noopener">📲 WhatsApp Sekarang</a>
         <a class="btn btn-outline" href="tel:+${WA}">📞 Panggil</a>
