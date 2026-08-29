@@ -47,6 +47,8 @@ function card(l) {
   if (l.built_up && l.built_up !== "-") specs.push(`🏗️ ${l.built_up}`);
   if (l.tenure && l.tenure !== "-") specs.push(`📜 ${l.tenure}`);
   if (l.sekatan && l.sekatan !== "-" && l.sekatan !== "Tidak dinyatakan") specs.push(`🔖 ${l.sekatan}`);
+  if (l.zoning && l.zoning !== "Tidak dinyatakan") specs.push(`🏷️ ${l.zoning}`);
+  if (l.kategori) specs.push(`🌾 ${l.kategori}`);
 
   const oldPrice = l.price_old ? `<span class="price-old">${fmt(l.price_old)}</span>` : "";
 
@@ -56,7 +58,7 @@ function card(l) {
     <div class="card-body">
       <h3 class="card-title"><a href="${url}">${l.title}</a></h3>
       <p class="card-loc">📍 ${l.location}</p>
-      <div class="price-row"><span class="price">${l.price_label}</span>${oldPrice}</div>
+      <div class="price-row"><span class="price">${l.price_label}</span>${l.psf ? `<span class="price-psf"> · RM${l.psf.toLocaleString("en-MY")}/sqft</span>` : ""}${oldPrice}</div>
       ${specs.length ? `<div class="specs">${specs.join("")}</div>` : ""}
       <div class="card-actions">
         <a class="btn btn-wa-card" href="https://wa.me/${WA}?text=${waMsg}" target="_blank" rel="noopener">WhatsApp</a>

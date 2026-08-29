@@ -75,6 +75,8 @@ function specsTable(l) {
   if (l.tenure && l.tenure !== "-" && l.tenure !== "Tidak pasti") rows.push(["Hakmilik", l.tenure]);
   if (l.sekatan && l.sekatan !== "-" && l.sekatan !== "Tidak dinyatakan") rows.push(["Sekatan", l.sekatan]);
   if (l.kategori) rows.push(["Kategori", l.kategori]);
+  if (l.zoning && l.zoning !== "Tidak dinyatakan") rows.push(["Zoning", l.zoning]);
+  if (l.psf) rows.push(["Harga Tanah (psf)", "RM" + l.psf.toLocaleString("en-MY") + "/sqft"]);
   return `<table class="spec-table">${rows.map(r => `<tr><th>${r[0]}</th><td>${r[1]}</td></tr>`).join("")}</table>`;
 }
 
@@ -122,6 +124,7 @@ function renderDetail(l) {
         <p class="card-loc">📍 ${l.location}</p>
         <div class="detail-price">
           <span class="price price-lg">${l.price_label}</span>
+          ${l.psf ? `<span class="price-psf"> · RM${l.psf.toLocaleString("en-MY")}/sqft</span>` : ""}
           ${oldPrice}
         </div>
         <div class="detail-specs">${specsTable(l)}</div>
