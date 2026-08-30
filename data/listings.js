@@ -38,7 +38,7 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-08-31",
     "images": [
-      "https://drive.google.com/uc?export=view&id=1IUzGZwmcF6F86t_u7ZWTnPmqv829ntls"
+      "https://lh3.googleusercontent.com/d/1IUzGZwmcF6F86t_u7ZWTnPmqv829ntls=w1000"
     ],
     "active": true
   },
@@ -75,7 +75,7 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-08-30",
     "images": [
-      "https://drive.google.com/uc?export=view&id=1pjTDpOHHQdr9yJaVVLcoMLHtPsvW0NCq"
+      "https://lh3.googleusercontent.com/d/1pjTDpOHHQdr9yJaVVLcoMLHtPsvW0NCq=w1000"
     ],
     "active": true
   },
@@ -107,7 +107,7 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-08-31",
     "images": [
-      "https://drive.google.com/uc?export=view&id=1x-ywx-bepx1t3ANnJqvnmLjm7PiT5nWn"
+      "https://lh3.googleusercontent.com/d/1x-ywx-bepx1t3ANnJqvnmLjm7PiT5nWn=w1000"
     ],
     "active": true
   },
@@ -139,7 +139,7 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-08-31",
     "images": [
-      "https://drive.google.com/uc?export=view&id=1uUQTGOjoOG3-nfzhEcJM3gJwEtM0Qky8",
+      "https://lh3.googleusercontent.com/d/1uUQTGOjoOG3-nfzhEcJM3gJwEtM0Qky8=w1000",
       "https://drive.google.com/file/d/1EKvP3jVJXEL_lXQHoPGHYsDzolApt69K/view?usp=drivesdk",
       "https://drive.google.com/file/d/1S20FbfNjb05BoGL_12my-8quypihfxhG/view?usp=drivesdk"
     ],
@@ -173,7 +173,7 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-08-31",
     "images": [
-      "https://drive.google.com/uc?export=view&id=1WFo6539HayBM0HOiKylRGDPKiukXRglJ"
+      "https://lh3.googleusercontent.com/d/1WFo6539HayBM0HOiKylRGDPKiukXRglJ=w1000"
     ],
     "active": false
   },
@@ -205,7 +205,7 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-08-31",
     "images": [
-      "https://drive.google.com/uc?export=view&id=1_1EavZjFoenleAhZ1g7A-LOgMMvIlN2m"
+      "https://lh3.googleusercontent.com/d/1_1EavZjFoenleAhZ1g7A-LOgMMvIlN2m=w1000"
     ],
     "active": false
   }
