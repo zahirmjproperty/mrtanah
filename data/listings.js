@@ -78,10 +78,26 @@ window.LISTINGS = [
     "bathrooms": 0,
     "status": "BARU",
     "jenis": "JUAL",
-    "highlights": [],
-    "description": "",
-    "amenities": [],
-    "nearby": [],
+    "highlights": [
+      "4.65 ekar / 202,554 sqft",
+      "Freehold - Malay Reserve",
+      "Zoning Residential (Kategori Pertanian)",
+      "2 lot bersebelahan",
+      "Tepi jalan kawasan perumahan elit",
+      "Kawasan Zoo Negara"
+    ],
+    "description": "Tanah lot Freehold 4.65 ekar (202,554 sqft) di Kemensah — kawasan perumahan elit tepi jalan, berhampiran Zoo Negara. 2 lot bersebelahan dengan zoning Residential, sangat strategik untuk membina rumah di bandar dengan suasana hijauan dan eksklusif. Bersebelahan Twin Palms Kemensah residences dan The Reserve Puncak Kayangan Kemensah, serta kawasan rekreasi dan hiking trail Kemensah.",
+    "amenities": [
+      "Tepi jalan utama",
+      "Kawasan perumahan elit",
+      "Suasana hijauan & eksklusif"
+    ],
+    "nearby": [
+      "Zoo Negara",
+      "Twin Palms Kemensah residences",
+      "The Reserve Puncak Kayangan Kemensah",
+      "Hiking Trail Kemensah"
+    ],
     "map_url": "https://www.google.com/maps?q=Kemensah,+Ampang,+Selangor",
     "source": "Mr Tanah",
     "date": "2026-08-31",
