@@ -108,6 +108,55 @@ window.LISTINGS = [
     "active": true
   },
   {
+    "tracking": "MT-0003",
+    "title": "Tanah Janda Baik (Sungai & Resort)",
+    "type": "Tanah",
+    "location": "Janda Baik, Pahang",
+    "state": "Pahang",
+    "price": 2400000,
+    "price_label": "RM2,400,000",
+    "price_old": null,
+    "land_area": "1.64 ekar / 71,438 sqft",
+    "built_up": "-",
+    "tenure": "Freehold",
+    "sekatan": "Melayu Reserved",
+    "kategori": "Pertanian",
+    "zoning": "Pertanian",
+    "psf": 34,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "highlights": [
+      "Sungai di atas tanah",
+      "Guest house & camp site sedia beroperasi",
+      "Akses terus ke tanah",
+      "Freehold - Malay Reservation",
+      "45km ke KLCC | 32km ke Lebuhraya Karak",
+      "Sesuai resort & pelaburan"
+    ],
+    "description": "Tanah strategik 1.64 ekar di Janda Baik dengan sungai mengalir di atas tanah dan akses terus ke lot. Dilengkapi guest house dan camp site yang terselenggara baik — boleh terus beroperasi. Berhampiran Surau al-Taqwa, hanya 45km ke KLCC dan 32km ke Lebuhraya Karak. Freehold, Malay Reservation, kategori pertanian.",
+    "amenities": [
+      "Sungai semula jadi",
+      "Guest house & camp site sedia ada",
+      "Akses jalan terus ke tanah"
+    ],
+    "nearby": [
+      "Surau al-Taqwa (berhampiran)",
+      "KLCC (45km)",
+      "Lebuhraya Karak (32km)"
+    ],
+    "map_url": "https://www.google.com/maps?q=Janda+Baik,+Bentong,+Pahang",
+    "source": "Mr Tanah",
+    "date": "2026-08-31",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1p80AuX11c_XVtXoseSXZHPLpiWy4s-oP=w1000",
+      "https://lh3.googleusercontent.com/d/1fZTSi2VcGnlw6i2WQzyQH3G22_ZCkUac=w1000",
+      "https://lh3.googleusercontent.com/d/1AOKDGUvUuDQv1ActEzy3D22-xE_3TvOC=w1000"
+    ],
+    "active": true
+  },
+  {
     "tracking": "MTCOA-0001",
     "title": "Tanah Ulu Perdik Batu 19 Hulu Langat",
     "type": "Tanah",
