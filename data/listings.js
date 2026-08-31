@@ -209,6 +209,57 @@ window.LISTINGS = [
     "active": true
   },
   {
+    "tracking": "MT-0005",
+    "title": "Lot Banglo Sg Merab (Bangi)",
+    "type": "Tanah",
+    "location": "Sg Merab, Selangor",
+    "state": "Selangor",
+    "price": 382000,
+    "price_label": "RM382,000",
+    "price_old": null,
+    "land_area": "6,178 sqft",
+    "built_up": "-",
+    "tenure": "Freehold",
+    "sekatan": "Melayu Reserved",
+    "kategori": "Perumahan",
+    "zoning": "Tidak dinyatakan",
+    "psf": 62,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "highlights": [
+      "Lot banglo 6,178 sqft",
+      "FREEHOLD - Melayu Reserved",
+      "Geran individu",
+      "Tanah rata, kawasan perumahan",
+      "10-15 minit ke Putrajaya/Bangi/Dengkil"
+    ],
+    "description": "Lot banglo 6,178 sqft di Sg Merab, Selangor — Freehold dengan sekatan Melayu Reserved dan geran individu. Tanah rata dalam kawasan perumahan, 10-15 minit ke Putrajaya, Bangi dan Dengkil. Berhampiran Alamanda Putrajaya (9.6km), Tenera Hotel Bandar Baru Bangi (6.3km) dan Universiti Kebangsaan Malaysia (5.9km). Harga RM382,000 (boleh nego) — sesuai untuk pembinaan rumah banglo.",
+    "amenities": [
+      "Alamanda Putrajaya (9.6km)",
+      "Tenera Hotel & Suites Bandar Baru Bangi (6.3km)",
+      "Sepang Vocational College (3.8km)",
+      "Universiti Kebangsaan Malaysia (5.9km)"
+    ],
+    "nearby": [
+      "Putrajaya — 10-15 minit",
+      "Bangi — 10-15 minit",
+      "Dengkil — 10-15 minit",
+      "Alamanda Shopping Mall Putrajaya — 9.6km",
+      "UKM — 5.9km"
+    ],
+    "map_url": "https://www.google.com/maps?q=Sg+Merab,+Selangor",
+    "source": "Mr Tanah",
+    "date": "2026-08-31",
+    "images": [
+      "https://lh3.googleusercontent.com/d/11uSEz5vMFwCF_xuW31LNf8_ruidEqiwh",
+      "https://lh3.googleusercontent.com/d/13z-q1a45O3pK6deQd_9jmajWgua1dNlu",
+      "https://lh3.googleusercontent.com/d/1liDFJsfJDs5BWxwI-AlipkN9FiZqkJ-z"
+    ],
+    "active": true
+  },
+  {
     "tracking": "MTCOA-0001",
     "title": "Tanah Ulu Perdik Batu 19 Hulu Langat",
     "type": "Tanah",
