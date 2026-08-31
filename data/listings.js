@@ -607,6 +607,53 @@ window.LISTINGS = [
     "active": true
   },
   {
+    "tracking": "MTCOA-0006",
+    "title": "6 Ekar Tanah Durian Bentong",
+    "type": "Tanah",
+    "location": "Bentong, Pahang",
+    "state": "Pahang",
+    "price": 2600000,
+    "price_label": "RM2,600,000",
+    "price_old": null,
+    "land_area": "6 ekar",
+    "built_up": "-",
+    "tenure": "Freehold",
+    "sekatan": "Open",
+    "kategori": "Pertanian",
+    "zoning": "Pertanian",
+    "psf": 10,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "highlights": [
+      "200 pokok durian (Black Thorn, Musang King, D24)",
+      "Freehold Open (non-bumi)",
+      "Anak sungai di tepi tanah",
+      "Sesuai chalet / leisure / weekend house",
+      "50% pokok tua 20-50 tahun",
+      "7.7km ke Pekan Bentong"
+    ],
+    "description": "Tanah pertanian 6 ekar di Bentong, Pahang dengan 200 pokok durian premium (Black Thorn, Musang King, D24, 114 & Kampung) — 50% muda 2 tahun, 50% tua 20-50 tahun. Freehold, open lot, tanah hampir rata dengan anak sungai di tepi tanah. Sesuai untuk chalet, leisure atau weekend house. 7.7km ke Pekan Bentong, 4.6km ke Lemang Tok'ki.",
+    "amenities": [
+      "Pekan Bentong (7.7 km)",
+      "Lemang Tok'ki (4.6 km)"
+    ],
+    "nearby": [
+      "Pekan Bentong — 7.7 km",
+      "Lemang Tok'ki — 4.6 km"
+    ],
+    "map_url": "https://www.google.com/maps?q=Bentong,+Pahang",
+    "source": "Mr Tanah",
+    "date": "2026-08-31",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1Zt5JH7XeHflSe99xiTXurwrnxqfHkoYO=w1000",
+      "https://lh3.googleusercontent.com/d/1f_3dh23Nsb_5SHLvMYJt3iqsllNBK3sS=w1000",
+      "https://lh3.googleusercontent.com/d/1DCeU8SAcLkjYMtp-IAsPF-VTE7yTXKzi=w1000"
+    ],
+    "active": true
+  },
+  {
     "tracking": "MTCOA-0003",
     "title": "Tanah Pembangunan Bukit Damar Dengkil",
     "type": "Tanah",
