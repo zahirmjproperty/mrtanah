@@ -315,6 +315,55 @@ window.LISTINGS = [
     "active": true
   },
   {
+    "tracking": "MT-0007",
+    "title": "Tanah Kelat Rendang Pekan Pahang",
+    "type": "Tanah",
+    "location": "Kelat Rendang, Pahang",
+    "state": "Pahang",
+    "price": 430000,
+    "price_label": "RM430,000",
+    "price_old": null,
+    "land_area": "84,066 sqft",
+    "built_up": "-",
+    "tenure": "Freehold",
+    "sekatan": "Malay Reserve",
+    "kategori": "Pertanian",
+    "zoning": "Residential",
+    "psf": 5,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "highlights": [
+      "Freehold Malay Reserve",
+      "Berhadapan Jalan Saleh Aman",
+      "Zoning Residential",
+      "5 minit ke Istana Mahkota Pahang",
+      "10 minit ke Pekan Pahang",
+      "Berhampiran SK Sri Maulana"
+    ],
+    "description": "Tanah rata pertanian Freehold seluas 84,066 sqft di Kelat Rendang, Pahang, berhadapan terus Jalan Saleh Aman dengan zoning Residential. Lokasi strategik hanya 5 minit ke Istana Mahkota Pahang dan 10 minit ke Pekan Pahang — berpotensi untuk pembangunan perumahan atau simpanan pelaburan jangka panjang.",
+    "amenities": [
+      "Istana Mahkota Pahang (5 minit)",
+      "Pekan Pahang (10 minit)",
+      "SK Sri Maulana"
+    ],
+    "nearby": [
+      "Istana Mahkota Pahang — 5 minit",
+      "Pekan Pahang — 10 minit",
+      "SK Sri Maulana — berhampiran"
+    ],
+    "map_url": "https://www.google.com/maps?q=Kelat+Rendang,+Pekan,+Pahang",
+    "source": "Mr Tanah",
+    "date": "2026-08-31",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1tN4szqTDYVgf0Iad1IUsxJheI9caxmBy=w1000",
+      "https://lh3.googleusercontent.com/d/1ud1oKy1sB-mdXP8zMvNyFHI9q_13PIhF=w1000",
+      "https://lh3.googleusercontent.com/d/1ioi3WsBGiwCAcGnKZFwMXmz7i1fWVnLY=w1000"
+    ],
+    "active": true
+  },
+  {
     "tracking": "MTCOA-0001",
     "title": "Tanah Ulu Perdik Batu 19 Hulu Langat",
     "type": "Tanah",
