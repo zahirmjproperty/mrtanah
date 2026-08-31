@@ -260,6 +260,61 @@ window.LISTINGS = [
     "active": true
   },
   {
+    "tracking": "MT-0006",
+    "title": "Lot Bungalow Teluk Kemang (Port Dickson)",
+    "type": "Tanah",
+    "location": "Teluk Kemang, Negeri Sembilan",
+    "state": "Negeri Sembilan",
+    "price": 380000,
+    "price_label": "RM380,000",
+    "price_old": null,
+    "land_area": "9,127.70 sqft",
+    "built_up": "-",
+    "tenure": "Leasehold",
+    "sekatan": "Bumi Lot",
+    "kategori": "Perumahan",
+    "zoning": "Tidak dinyatakan",
+    "psf": 42,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "highlights": [
+      "Lot bungalow 9,127.70 sqft",
+      "Leasehold Bumi, baki 89 tahun",
+      "Walking distance ke Dickson Dragon Cruise",
+      "Berhampiran World Marina Resort PD",
+      "4km ke Pantai Port Dickson",
+      "RM380,000 — harga menarik"
+    ],
+    "description": "Lot bungalow 9,127.70 sqft di Teluk Kemang, Port Dickson, Negeri Sembilan — Leasehold Bumi dengan baki tempoh pajakan 89 tahun (sehingga Mac 2115). Walking distance ke Dickson Dragon Cruise dan World Marina Resort; 1.7km ke Hospital Port Dickson, 2.5km ke Avillion Admiral Cove, 4km ke Pantai Port Dickson dan 7km ke Pantai Cermin. Harga RM380,000 — sesuai untuk pembinaan rumah percutian atau pelaburan di kawasan pelancongan pantai.",
+    "amenities": [
+      "Dickson Dragon Cruise (walking distance)",
+      "World Marina Resort PD (walking distance)",
+      "Hospital Port Dickson (1.7km)",
+      "Avillion Admiral Cove (2.5km)",
+      "Pantai Port Dickson (4km)",
+      "Pantai Cermin (7km)"
+    ],
+    "nearby": [
+      "Dickson Dragon Cruise — walking distance",
+      "World Marina Resort PD — walking distance",
+      "Hospital Port Dickson — 1.7km",
+      "Avillion Admiral Cove — 2.5km",
+      "Pantai Port Dickson — 4km",
+      "Pantai Cermin — 7km"
+    ],
+    "map_url": "https://www.google.com/maps?q=Teluk+Kemang,+Port+Dickson,+Negeri+Sembilan",
+    "source": "Mr Tanah",
+    "date": "2026-08-31",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1lVbkxL8SIVhGOQew6WUIIZyNcChClusM",
+      "https://lh3.googleusercontent.com/d/1FcciBaVll8YvJpdEFTDsziqBOIJUsb6N",
+      "https://lh3.googleusercontent.com/d/1p6K1QmhMwPeFcaSq_rxhBaIKlgEG9GeV"
+    ],
+    "active": true
+  },
+  {
     "tracking": "MTCOA-0001",
     "title": "Tanah Ulu Perdik Batu 19 Hulu Langat",
     "type": "Tanah",
