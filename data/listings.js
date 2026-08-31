@@ -418,6 +418,60 @@ window.LISTINGS = [
     "active": true
   },
   {
+    "tracking": "MT-0009",
+    "title": "Bungalow Lot Sungai Merab",
+    "type": "Tanah",
+    "location": "Sungai Merab, Selangor",
+    "state": "Selangor",
+    "price": 405000,
+    "price_label": "RM405,000",
+    "price_old": null,
+    "land_area": "6,340 sqft",
+    "built_up": "-",
+    "tenure": "Freehold",
+    "sekatan": "Malay Reserve",
+    "kategori": "Perumahan",
+    "zoning": "Tidak dinyatakan",
+    "psf": 64,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "highlights": [
+      "Freehold Malay Reserve",
+      "Tanah rata (flat land)",
+      "100m dari jalan utama Sg Merab - BB Bangi",
+      "Harga RM64 psf (nilai pasaran RM85 psf)",
+      "Dikelilingi bungalow & Taman Pesona",
+      "12 minit ke Putrajaya & Bangi"
+    ],
+    "description": "Bungalow lot Freehold Malay Reserve seluas 6,340 sqft di Sungai Merab, Selangor — hanya 100 meter dari jalan utama Sg Merab ke Bandar Baru Bangi, tanah rata dan dikelilingi bungalow sedia ada serta Taman Pesona Mekar/Impian. Harga RM405,000 (RM64 psf, nilai pasaran RM85 psf). 12 minit ke Presint 16 Putrajaya dan Seksyen 9 Bangi.",
+    "amenities": [
+      "UniKL MFI (3.6 km)",
+      "Akademi Kelulut Malaysia (1.2 km)",
+      "Masjid Al-Hasanah Bandar Baru Bangi (5.5 km)",
+      "Alamanda Shopping Centre (10.7 km)",
+      "Putrajaya ICC (11.8 km)"
+    ],
+    "nearby": [
+      "Nasi Lemak Maklong Sg Merab — 850m",
+      "Surau Al-islah — 2.2 km",
+      "Warung Bunian — 4.2 km",
+      "Tenera Hotel & Suites — 5.2 km",
+      "German-Malaysian Institute — 8.7 km",
+      "Presint 16 Putrajaya — 12 minit"
+    ],
+    "map_url": "https://www.google.com/maps?q=Sungai+Merab,+Sepang,+Selangor",
+    "source": "Mr Tanah",
+    "date": "2026-08-31",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1aq22V19iDmNdlh-hAT-uJ0sTYlVODY2E=w1000",
+      "https://lh3.googleusercontent.com/d/1GgU1yy-1rDqUcoVNAMdjxMNoCyKyKBx_=w1000",
+      "https://lh3.googleusercontent.com/d/1E0C03ZaEcwsuQ6A575HBf6DOO49G1bI7=w1000"
+    ],
+    "active": true
+  },
+  {
     "tracking": "MTCOA-0001",
     "title": "Tanah Ulu Perdik Batu 19 Hulu Langat",
     "type": "Tanah",
