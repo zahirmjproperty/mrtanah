@@ -679,6 +679,26 @@ window.LISTINGS = [
       "Leasehold 99 tahun (hingga 2112)",
       "Strategik berhampiran Bandar Baru Bangi"
     ],
+    "description": "Tanah komersial strategik seluas 87,774 sqft (~2.01 ekar) di Sungai Ramal, Kajang — sangat sesuai untuk Wedding Space, Foodcourt, atau Automotive Sales & Service Centre. Status Leasehold 99 tahun (hingga 15 Julai 2112), Malay Reserve, kategori Bangunan. Berhampiran Bandar Baru Bangi dengan akses mudah ke lebuh raya utama. Peluang pembangunan komersial bernilai tinggi. Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
+    "amenities": [
+      "Bandar Baru Bangi — berhampiran",
+      "Kawasan perniagaan sekitar",
+      "Akses lebuh raya utama"
+    ],
+    "nearby": [
+      "Bandar Baru Bangi",
+      "Kajang",
+      "Bangi Gateway",
+      "UKM"
+    ],
+    "map_url": "https://www.google.com/maps?q=Sungai+Ramal,+Kajang,+Selangor",
+    "source": "Mr Tanah",
+    "date": "2026-08-31",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1wcArmCRIFFFzqYYunpHKial4o3EHFZKr=w1000",
+      "https://lh3.googleusercontent.com/d/1-PfParuujOUfd2Xj3yWNI_eRnsT15CqP=w1000",
+      "https://lh3.googleusercontent.com/d/1iaSjI9Q4ezPqjxTE9EiwWt66v5K_gu9V=w1000"
+    ],
     "active": true
   },
   {
@@ -706,6 +726,25 @@ window.LISTINGS = [
       "Freehold | Malay Reserved",
       "Individual title",
       "Harga NETT RM600K"
+    ],
+    "description": "Bungalow lot seluas 7,071 sqft di Sungai Ramal, Kajang — Freehold, Malay Reserved, status Bangunan dengan individual title. Berhampiran shoplots, stesen minyak dan sekolah; akses mudah ke SKVE, PLUS, Grand Saga dan SILK Highway. Harga NETT RM600,000. Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
+    "amenities": [
+      "Shoplots — berhampiran",
+      "Stesen minyak — berhampiran",
+      "Sekolah — berhampiran"
+    ],
+    "nearby": [
+      "Kajang",
+      "Bandar Baru Bangi",
+      "Bangi Gateway"
+    ],
+    "map_url": "https://www.google.com/maps?q=Sungai+Ramal,+Kajang,+Selangor",
+    "source": "Mr Tanah",
+    "date": "2026-08-31",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1p9DGWqTD8_d74C2y3eNHQExfVT5QHNNo=w1000",
+      "https://lh3.googleusercontent.com/d/1XgsU7qlSshthobhPsdAf1Of1n2bnq22K=w1000",
+      "https://lh3.googleusercontent.com/d/1f5JeD4uaM4Ad2vUGT5CJoR4oUYiVveWD=w1000"
     ],
     "active": true
   },
