@@ -176,10 +176,28 @@ window.LISTINGS = [
     "bathrooms": 0,
     "status": "BARU",
     "jenis": "JUAL",
-    "highlights": [],
-    "description": "",
-    "amenities": [],
-    "nearby": [],
+    "highlights": [
+      "2 lot bersebelahan — 12,055 sqft",
+      "Tengah-tengah Kuala Lumpur",
+      "Leasehold Bumi, baki 87 tahun",
+      "800m Stesen Sentul",
+      "2.6km MRT Titiwangsa"
+    ],
+    "description": "2 lot tanah bersebelahan di Sentul, tengah-tengah Kuala Lumpur. Jumlah keluasan 12,055 sqft dengan status Leasehold Bumi dan baki tempoh pajakan 87 tahun (sehingga 11 Mei 2113). Lokasi strategik — 800m dari Stesen Sentul, 2.6km dari MRT Titiwangsa, dan berhampiran Hospital Kuala Lumpur serta Institut Jantung Negara. Sesuai untuk pembangunan kediaman di kawasan pusat bandar.",
+    "amenities": [
+      "Stesen Sentul (800m)",
+      "MRT Titiwangsa (2.6km)",
+      "Hospital Kuala Lumpur (3.9km)",
+      "Institut Jantung Negara (5.2km)",
+      "Masjid Wilayah Persekutuan (9.1km)",
+      "Hyatt Regency (6.4km)"
+    ],
+    "nearby": [
+      "Stesen Sentul — 800m",
+      "MRT Titiwangsa — 2.6km",
+      "Hospital Kuala Lumpur — 3.9km",
+      "Institut Jantung Negara — 5.2km"
+    ],
     "map_url": "https://www.google.com/maps?q=Sentul,+Kuala+Lumpur",
     "source": "Mr Tanah",
     "date": "2026-08-31",
