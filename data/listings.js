@@ -364,6 +364,60 @@ window.LISTINGS = [
     "active": true
   },
   {
+    "tracking": "MT-0008",
+    "title": "Tanah Lot Banglo Dengkil",
+    "type": "Tanah",
+    "location": "Dengkil, Selangor",
+    "state": "Selangor",
+    "price": 680000,
+    "price_label": "RM680,000",
+    "price_old": null,
+    "land_area": "16,800 sqft",
+    "built_up": "-",
+    "tenure": "Leasehold",
+    "sekatan": "Bumi Lot",
+    "kategori": "Perumahan",
+    "zoning": "Residential",
+    "psf": 40,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "highlights": [
+      "Leasehold Bumi Lot",
+      "Berhadapan Jalan Selangor Dredging",
+      "Berhampiran Lebuhraya Elite",
+      "Zoning Residential",
+      "Harga RM40 psf (nilai pasaran RM60 psf)",
+      "Berhampiran Gamuda Cove & Kota Warisan"
+    ],
+    "description": "Tanah lot banglo seluas 16,800 sqft di Dengkil, Selangor, berhadapan Jalan Selangor Dredging dan berhampiran Lebuhraya Elite. Zoning Residential dengan harga asking RM680,000 (RM40 psf) — jauh di bawah nilai pasaran RM60 psf. Dikelilingi kawasan perumahan sedia ada dan berhampiran Gamuda Cove, Kota Warisan, UiTM Dengkil, Cybersouth serta KLIA.",
+    "amenities": [
+      "SK Dengkil (7.5 km)",
+      "SMK Dengkil (7.3 km)",
+      "Klinik Kesihatan Dengkil (6.8 km)",
+      "Balai Polis Dengkil (6.3 km)",
+      "Restoran (2.5 km)"
+    ],
+    "nearby": [
+      "Gamuda Cove — berhampiran",
+      "Kota Warisan — berhampiran",
+      "UiTM Dengkil — berhampiran",
+      "Cybersouth — berhampiran",
+      "KLIA — berhampiran",
+      "Paya Indah Wetland"
+    ],
+    "map_url": "https://www.google.com/maps?q=Dengkil,+Selangor",
+    "source": "Mr Tanah",
+    "date": "2026-08-31",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1A3epKffs6nJXoWgZSPdoHI3jjz0P5XMC=w1000",
+      "https://lh3.googleusercontent.com/d/1BWw_wfyReYcSU_t0Kr7KVCbBpUlasLFz=w1000",
+      "https://lh3.googleusercontent.com/d/1SILBi9KZs0Yxq-nA4q1QgrgjBW8sG_Jq=w1000"
+    ],
+    "active": true
+  },
+  {
     "tracking": "MTCOA-0001",
     "title": "Tanah Ulu Perdik Batu 19 Hulu Langat",
     "type": "Tanah",
