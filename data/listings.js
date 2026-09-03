@@ -885,5 +885,54 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1pdckcBRyG9g2Gi5eLLCYsvSJJkTYCutU=w1000"
     ],
     "active": false
+  },
+  {
+    "tracking": "MTCOA-0009",
+    "title": "Tanah Kampung Chemperoh Janda Baik",
+    "type": "Tanah",
+    "location": "Janda Baik, Pahang",
+    "state": "Pahang",
+    "price": 2200000,
+    "price_label": "RM2,200,000",
+    "price_old": null,
+    "land_area": "3.97 ekar / 172,933 sqft",
+    "built_up": "-",
+    "tenure": "Freehold",
+    "sekatan": "Malay Reserved",
+    "kategori": "Pertanian",
+    "zoning": "Pertanian",
+    "psf": 13,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "highlights": [
+      "Freehold | Malay Reserved — individual title",
+      "3.97 ekar (172,933 sqft) tanah pertanian",
+      "Dikelilingi sungai air jernih",
+      "Akses jalan sedia ada",
+      "Sesuai untuk retreat house / orchard",
+      "Kawasan peranginan Janda Baik yang sejuk"
+    ],
+    "description": "Tanah pertanian Freehold seluas 3.97 ekar (172,933 sqft) di Kampung Chemperoh, Janda Baik, Pahang — individual title, sekatan Malay Reserved, status Pertanian. Dikelilingi sungai air jernih dengan akses jalan sedia ada; amat sesuai untuk retreat house, orchard atau ladang rekreasi. Berada di kawasan tanah tinggi Janda Baik yang tenang, lebih kurang 45 minit dari Kuala Lumpur. Harga RM2,200,000 (lebih kurang RM13 sekaki persegi). Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
+    "amenities": [
+      "Sungai air jernih — mengelilingi tanah",
+      "Akses jalan — sedia ada",
+      "Suasana peranginan tanah tinggi"
+    ],
+    "nearby": [
+      "Kampung Chemperoh, Janda Baik",
+      "Lebuhraya Karak (Genting Sempah)",
+      "Kuala Lumpur — lebih kurang 45 minit"
+    ],
+    "map_url": "https://maps.app.goo.gl/FoJXmRMuajhbBQG6A",
+    "source": "Mr Tanah",
+    "date": "2026-09-03",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1Q-0SD5YoQ799naUmRMM04Q9H2VyNDj-T=w1000",
+      "https://lh3.googleusercontent.com/d/1F6HGY6VS1ZAIBfkNoo-6XvRLu5SeyVsb=w1000",
+      "https://lh3.googleusercontent.com/d/1LHL8eoVIvBGXB2Vsjzl637x3M3_VwTi1=w1000"
+    ],
+    "active": false
   }
 ];
