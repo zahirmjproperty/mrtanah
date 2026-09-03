@@ -933,6 +933,6 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1F6HGY6VS1ZAIBfkNoo-6XvRLu5SeyVsb=w1000",
       "https://lh3.googleusercontent.com/d/1LHL8eoVIvBGXB2Vsjzl637x3M3_VwTi1=w1000"
     ],
-    "active": false
+    "active": true
   }
 ];
