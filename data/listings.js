@@ -472,6 +472,52 @@ window.LISTINGS = [
     "active": true
   },
   {
+    "tracking": "MT-0010",
+    "title": "Corner Bungalow Lot Presint 10 Putrajaya",
+    "type": "Tanah",
+    "location": "Presint 10, Putrajaya",
+    "state": "Putrajaya",
+    "price": 2800000,
+    "price_label": "RM2,800,000",
+    "price_old": null,
+    "land_area": "21,388 sqft / 1,987 sqm",
+    "built_up": "-",
+    "tenure": "Freehold",
+    "sekatan": "Open",
+    "kategori": "Bangunan",
+    "zoning": "Perumahan",
+    "psf": 131,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "highlights": [
+      "Freehold Open — corner lot",
+      "Keluasan 21,388 sqft (1,987 sqm)",
+      "200m dari Surau Jumaat baharu",
+      "650m dari kediaman Perdana Menteri",
+      "Kawasan kediaman eksklusif Presint 10",
+      "Akses Lebuh Sentosa ke IOI City Mall"
+    ],
+    "description": "Corner bungalow lot Freehold Open seluas 21,388 sqft (1,987 sqm) di Presint 10, Putrajaya — kawasan kediaman eksklusif dalam lingkungan kediaman Perdana Menteri. Corner lot, kategori Bangunan (kediaman), tanah rata dan terurus. Harga RM2,800,000 (RM131 psf). 200m dari Surau Jumaat baharu, 650m dari kediaman PM, akses pantas Lebuh Sentosa ke IOI City Mall.",
+    "amenities": [],
+    "nearby": [
+      "Surau Jumaat Presint 10 — 200m",
+      "Kediaman Perdana Putrajaya — 650m",
+      "Lebuh Sentosa — akses ke IOI City Mall",
+      "IOI City Mall — dalam 10 minit"
+    ],
+    "map_url": "https://www.google.com/maps/search/?api=1&query=Presint+10+Putrajaya",
+    "source": "Mr Tanah",
+    "date": "2026-09-03",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1GIsSCY_smFnLGCDpdru0gP4GVl5Q1m1m=w1000",
+      "https://lh3.googleusercontent.com/d/1TiAhP3rhv_1Vugbq_aKP8i3FG7AIahQ0=w1000",
+      "https://lh3.googleusercontent.com/d/1KCx8f91N_lTTdKXprTovXVqhJDtJ9zJW=w1000"
+    ],
+    "active": true
+  },
+  {
     "tracking": "MTCOA-0001",
     "title": "Tanah Ulu Perdik Batu 19 Hulu Langat",
     "type": "Tanah",
