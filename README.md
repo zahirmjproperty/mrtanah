@@ -1,6 +1,6 @@
 # Mr Tanah — Website Landing Page
 
-**URL:** https://zahirmjproperty.github.io/mrtanah/
+**URL:** https://mrtanah.com/
 **Repo:** https://github.com/zahirmjproperty/mrtanah
 
 ## Jenama
