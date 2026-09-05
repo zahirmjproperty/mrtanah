@@ -557,9 +557,9 @@ window.LISTINGS = [
   "source": "Mr Tanah",
   "date": "2026-09-05",
   "images": [
-   "https://drive.google.com/uc?export=view&id=1RXOYQ15sH34f5uPm9HYmi8tI2hmal75s",
-   "https://drive.google.com/uc?export=view&id=1mId64XTkAFSt4qiknkipAOViPYO3jX01",
-   "https://drive.google.com/uc?export=view&id=1kCUsOfzimJl5LOlXu005OJRx92jW9BOL"
+   "https://lh3.googleusercontent.com/d/1RXOYQ15sH34f5uPm9HYmi8tI2hmal75s=w1000",
+   "https://lh3.googleusercontent.com/d/1mId64XTkAFSt4qiknkipAOViPYO3jX01=w1000",
+   "https://lh3.googleusercontent.com/d/1kCUsOfzimJl5LOlXu005OJRx92jW9BOL=w1000"
   ],
   "active": true
  },
