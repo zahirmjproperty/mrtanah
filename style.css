@@ -147,8 +147,8 @@ a { color: inherit; text-decoration: none; }
   transition: transform .18s, box-shadow .18s;
 }
 .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
-.card-media { position: relative; display: block; aspect-ratio: 16 / 10; background: var(--brand-soft); }
-.card-media img { width: 100%; height: 100%; object-fit: cover; }
+.card-media { position: relative; display: block; aspect-ratio: 16 / 10; background: var(--brand-soft); overflow: hidden; }
+.card-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .badges { position: absolute; top: 10px; left: 10px; display: flex; gap: 6px; flex-wrap: wrap; }
 .badge {
   font-size: 11px; font-weight: 800; letter-spacing: .3px; color: #fff;
