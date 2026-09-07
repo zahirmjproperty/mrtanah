@@ -1,14 +1,3 @@
-// Data listing Mr Tanah - dikemas kini oleh sync_mrtanah_notion.py
-// SUMBER: Notion DB 'Listing Mr Tanah' (Aktif=on/off, Gambar=gambar utama)
-window.SITE = {
- "name": "Mr Tanah",
- "tagline": "Pakar Tanah & Hartanah Malaysia — Jual, Beli & Sewa",
- "agent": "Mr Tanah",
- "phone": "016-3119076",
- "whatsapp": "60163119076",
- "domain": "https://mrtanah.com/"
-};
-
 window.LISTINGS = [
  {
   "tracking": "MT-0001",
@@ -560,6 +549,58 @@ window.LISTINGS = [
    "https://lh3.googleusercontent.com/d/1RXOYQ15sH34f5uPm9HYmi8tI2hmal75s=w1000",
    "https://lh3.googleusercontent.com/d/1mId64XTkAFSt4qiknkipAOViPYO3jX01=w1000",
    "https://lh3.googleusercontent.com/d/1kCUsOfzimJl5LOlXu005OJRx92jW9BOL=w1000"
+  ],
+  "active": true
+ },
+ {
+  "tracking": "MT-0012",
+  "title": "Bangunan Pejabat 6 Tingkat Kampung Baru Kuala Lumpur",
+  "type": "Komersial",
+  "location": "Kampung Baru, Kuala Lumpur",
+  "state": "Kuala Lumpur",
+  "price": 24000000,
+  "price_label": "RM24,000,000",
+  "price_old": null,
+  "land_area": "8,428 sqft",
+  "built_up": "26,728 sqft",
+  "tenure": "Freehold",
+  "sekatan": "Melayu Reserved",
+  "kategori": "Bangunan",
+  "zoning": "Komersial",
+  "psf": 898,
+  "bedrooms": 0,
+  "bathrooms": 0,
+  "status": "BARU",
+  "jenis": "JUAL",
+  "highlights": [
+   "Bangunan pejabat 6 tingkat di pusat tumpuan pelancong Kampung Baru",
+   "7 tingkat termasuk 1 tingkat parkir",
+   "Ruang rooftop dengan pemandangan KLCC",
+   "Sistem keselamatan lengkap 24/7, lift & akses OKU",
+   "Freehold komersial — Tanah Simpanan Melayu",
+   "ROI 4.57% — peluang pelaburan strategik"
+  ],
+  "description": "Peluang pelaburan strategik di Kampung Baru, Kuala Lumpur: bangunan pejabat 6 tingkat (7 tingkat termasuk 1 tingkat parkir) dengan keluasan binaan 26,728 sqft di atas tanah 8,428 sqft. Struktur moden dan kukuh, ruang fleksibel untuk pelbagai acara, rooftop dengan pemandangan KLCC, sistem keselamatan lengkap 24/7, lift dan akses OKU, parking luas serta pendingin berpusat. Berhampiran KLCC, Jalan Ampang dan Bukit Bintang; mudah akses LRT KLCC, MRT/LRT Ampang Park, Monorail Bukit Nanas dan laluan bas GoKL.",
+  "amenities": [
+   "Parking luas & selesa",
+   "Lift & akses OKU",
+   "Sistem keselamatan 24/7",
+   "Pendingin berpusat",
+   "Ruang rooftop pemandangan KLCC"
+  ],
+  "nearby": [
+   "KLCC & Jalan Ampang",
+   "Bukit Bintang",
+   "LRT KLCC / MRT Ampang Park / Monorail Bukit Nanas",
+   "Laluan bas GoKL"
+  ],
+  "map_url": "https://www.google.com/maps/search/?api=1&query=Kampung+Baru+Kuala+Lumpur",
+  "source": "Mr Tanah",
+  "date": "2026-09-07",
+  "images": [
+   "https://lh3.googleusercontent.com/d/1YYJkls0_xhGqAq_O8HASs3zttT0xva_o=w1000",
+   "https://lh3.googleusercontent.com/d/10s-FTr-lrgxPqbJgvbRNLhV3UeAq_ZWR=w1000",
+   "https://lh3.googleusercontent.com/d/1O4evUGr6WX_RkgHl8lRdMYrtNwpHaQtS=w1000"
   ],
   "active": true
  },
