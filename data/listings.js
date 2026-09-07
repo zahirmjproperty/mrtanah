@@ -1,3 +1,10 @@
+// Data listing Mr Tanah - dikemas kini oleh sync_mrtanah_notion.py
+// SUMBER: Notion DB 'Listing Mr Tanah' (Aktif=on/off, Gambar=gambar utama)
+window.SITE = {
+  "name": "Mr Tanah",
+  "phone": "016-3119076"
+};
+
 window.LISTINGS = [
  {
   "tracking": "MT-0001",
@@ -38,6 +45,9 @@ window.LISTINGS = [
    "Lebuhraya Karak (35km)"
   ],
   "map_url": "https://www.google.com/maps?q=Janda+Baik,+Pahang",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-31",
   "images": [
@@ -88,6 +98,9 @@ window.LISTINGS = [
    "Hiking Trail Kemensah"
   ],
   "map_url": "https://www.google.com/maps?q=Kemensah,+Ampang,+Selangor",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-31",
   "images": [
@@ -136,6 +149,9 @@ window.LISTINGS = [
    "Lebuhraya Karak (32km)"
   ],
   "map_url": "https://www.google.com/maps?q=Janda+Baik,+Bentong,+Pahang",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-31",
   "images": [
@@ -188,6 +204,9 @@ window.LISTINGS = [
    "Institut Jantung Negara — 5.2km"
   ],
   "map_url": "https://www.google.com/maps?q=Sentul,+Kuala+Lumpur",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-31",
   "images": [
@@ -239,6 +258,9 @@ window.LISTINGS = [
    "UKM — 5.9km"
   ],
   "map_url": "https://www.google.com/maps?q=Sg+Merab,+Selangor",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-31",
   "images": [
@@ -294,6 +316,9 @@ window.LISTINGS = [
    "Pantai Cermin — 7km"
   ],
   "map_url": "https://www.google.com/maps?q=Teluk+Kemang,+Port+Dickson,+Negeri+Sembilan",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-31",
   "images": [
@@ -343,6 +368,9 @@ window.LISTINGS = [
    "SK Sri Maulana — berhampiran"
   ],
   "map_url": "https://www.google.com/maps?q=Kelat+Rendang,+Pekan,+Pahang",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-31",
   "images": [
@@ -397,6 +425,9 @@ window.LISTINGS = [
    "Paya Indah Wetland"
   ],
   "map_url": "https://www.google.com/maps?q=Dengkil,+Selangor",
+  "project": "tanah-lot-banglo-dengkil-single",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-31",
   "images": [
@@ -451,6 +482,9 @@ window.LISTINGS = [
    "Presint 16 Putrajaya — 12 minit"
   ],
   "map_url": "https://www.google.com/maps?q=Sungai+Merab,+Sepang,+Selangor",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-31",
   "images": [
@@ -497,6 +531,9 @@ window.LISTINGS = [
    "IOI City Mall — dalam 10 minit"
   ],
   "map_url": "https://www.google.com/maps/search/?api=1&query=Presint+10+Putrajaya",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-09-03",
   "images": [
@@ -543,6 +580,9 @@ window.LISTINGS = [
    "Pusat pentadbiran Putrajaya (berdekatan)"
   ],
   "map_url": "https://www.google.com/maps/search/?api=1&query=Perdana+Hills+Presint+11+Putrajaya",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-09-05",
   "images": [
@@ -561,7 +601,7 @@ window.LISTINGS = [
   "price": 24000000,
   "price_label": "RM24,000,000",
   "price_old": null,
-  "land_area": "8,428 sqft",
+  "land_area": "Bangunan 26,728 sqft · Tanah 8,428 sqft",
   "built_up": "26,728 sqft",
   "tenure": "Freehold",
   "sekatan": "Melayu Reserved",
@@ -595,12 +635,352 @@ window.LISTINGS = [
    "Laluan bas GoKL"
   ],
   "map_url": "https://www.google.com/maps/search/?api=1&query=Kampung+Baru+Kuala+Lumpur",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-09-07",
   "images": [
    "https://lh3.googleusercontent.com/d/1YYJkls0_xhGqAq_O8HASs3zttT0xva_o=w1000",
    "https://lh3.googleusercontent.com/d/10s-FTr-lrgxPqbJgvbRNLhV3UeAq_ZWR=w1000",
    "https://lh3.googleusercontent.com/d/1O4evUGr6WX_RkgHl8lRdMYrtNwpHaQtS=w1000"
+  ],
+  "active": true
+ },
+ {
+  "tracking": "MT-0013",
+  "title": "Tanah Lot Banglo Dengkil — Lot 1 (5,145 sqft)",
+  "type": "Tanah",
+  "location": "Dengkil, Selangor",
+  "state": "Selangor",
+  "price": 248000,
+  "price_label": "RM248,000",
+  "price_old": null,
+  "land_area": "5,145 sqft",
+  "built_up": "-",
+  "tenure": "Leasehold",
+  "sekatan": "Tidak dinyatakan",
+  "kategori": "Perumahan",
+  "zoning": "Perumahan",
+  "psf": 48,
+  "bedrooms": 0,
+  "bathrooms": 0,
+  "status": "BARU",
+  "jenis": "JUAL",
+  "highlights": [
+   "3 lot banglo bersebelahan — beli 1 atau semua",
+   "Leasehold sehingga 19 Mac 2094",
+   "Status residential",
+   "Berhadapan Jalan Selangor Dredging",
+   "Berhampiran Lebuhraya Elite",
+   "Dari RM248,000 per lot"
+  ],
+  "description": "Tanah lot banglo di Dengkil, Selangor — 3 lot bersebelahan di Jalan Selangor Dredging, status residential, leasehold sehingga 19 Mac 2094. Harga dari RM248,000 per lot (5,145 sqft, 5,748 sqft & 5,963 sqft). Berhampiran Lebuhraya Elite, Gamuda Cove, Kota Warisan dan KLIA — sesuai bina rumah banglo idaman.",
+  "amenities": [
+   "Jalan Selangor Dredging",
+   "Status residential",
+   "Berhampiran Lebuhraya Elite"
+  ],
+  "nearby": [
+   "Gamuda Cove",
+   "Kota Warisan",
+   "Dengkil town",
+   "KLIA",
+   "Paya Indah Wetland",
+   "UiTM Dengkil",
+   "Cybersouth"
+  ],
+  "map_url": "https://www.google.com/maps?q=Dengkil,+Selangor",
+  "project": "tanah-lot-banglo-dengkil",
+  "project_name": "Tanah Lot Banglo Dengkil (3 Lot)",
+  "unit": "Lot 1 · 5,145 sqft",
+  "source": "Mr Tanah",
+  "date": "2026-09-07",
+  "images": [
+   "https://lh3.googleusercontent.com/d/1XAipKkXRcjMZ5UzWniCiUqzdhx6hEQZ3=w1000",
+   "https://lh3.googleusercontent.com/d/1Bt1gZsip8t-LUuKUFUvqQaxK4HuV5SUD=w1000",
+   "https://lh3.googleusercontent.com/d/1k_Bv-Z5Ilx2rs5Svda2WZ8msoyo_7lxJ=w1000"
+  ],
+  "active": true
+ },
+ {
+  "tracking": "MT-0014",
+  "title": "Tanah Lot Banglo Dengkil — Lot 2 (5,748 sqft)",
+  "type": "Tanah",
+  "location": "Dengkil, Selangor",
+  "state": "Selangor",
+  "price": 248000,
+  "price_label": "RM248,000",
+  "price_old": null,
+  "land_area": "5,748 sqft",
+  "built_up": "-",
+  "tenure": "Leasehold",
+  "sekatan": "Tidak dinyatakan",
+  "kategori": "Perumahan",
+  "zoning": "Perumahan",
+  "psf": 43,
+  "bedrooms": 0,
+  "bathrooms": 0,
+  "status": "BARU",
+  "jenis": "JUAL",
+  "highlights": [
+   "3 lot banglo bersebelahan — beli 1 atau semua",
+   "Leasehold sehingga 19 Mac 2094",
+   "Status residential",
+   "Berhadapan Jalan Selangor Dredging",
+   "Berhampiran Lebuhraya Elite",
+   "Dari RM248,000 per lot"
+  ],
+  "description": "Tanah lot banglo di Dengkil, Selangor — Lot 2 (5,748 sqft) antara 3 lot bersebelahan di Jalan Selangor Dredging, status residential, leasehold sehingga 19 Mac 2094. Harga dari RM248,000 per lot. Berhampiran Lebuhraya Elite, Gamuda Cove, Kota Warisan dan KLIA.",
+  "amenities": [
+   "Jalan Selangor Dredging",
+   "Status residential",
+   "Berhampiran Lebuhraya Elite"
+  ],
+  "nearby": [
+   "Gamuda Cove",
+   "Kota Warisan",
+   "Dengkil town",
+   "KLIA",
+   "Paya Indah Wetland",
+   "UiTM Dengkil",
+   "Cybersouth"
+  ],
+  "map_url": "https://www.google.com/maps?q=Dengkil,+Selangor",
+  "project": "tanah-lot-banglo-dengkil",
+  "project_name": "Tanah Lot Banglo Dengkil (3 Lot)",
+  "unit": "Lot 2 · 5,748 sqft",
+  "source": "Mr Tanah",
+  "date": "2026-09-07",
+  "images": [
+   "https://lh3.googleusercontent.com/d/1Bt1gZsip8t-LUuKUFUvqQaxK4HuV5SUD=w1000",
+   "https://lh3.googleusercontent.com/d/1k_Bv-Z5Ilx2rs5Svda2WZ8msoyo_7lxJ=w1000",
+   "https://lh3.googleusercontent.com/d/1QEtvOvVcoDbDAV-VQt5RXAkAWS3acqn8=w1000"
+  ],
+  "active": true
+ },
+ {
+  "tracking": "MT-0015",
+  "title": "Tanah Lot Banglo Dengkil — Lot 3 (5,963 sqft)",
+  "type": "Tanah",
+  "location": "Dengkil, Selangor",
+  "state": "Selangor",
+  "price": 248000,
+  "price_label": "RM248,000",
+  "price_old": null,
+  "land_area": "5,963 sqft",
+  "built_up": "-",
+  "tenure": "Leasehold",
+  "sekatan": "Tidak dinyatakan",
+  "kategori": "Perumahan",
+  "zoning": "Perumahan",
+  "psf": 42,
+  "bedrooms": 0,
+  "bathrooms": 0,
+  "status": "BARU",
+  "jenis": "JUAL",
+  "highlights": [
+   "3 lot banglo bersebelahan — beli 1 atau semua",
+   "Leasehold sehingga 19 Mac 2094",
+   "Status residential",
+   "Berhadapan Jalan Selangor Dredging",
+   "Berhampiran Lebuhraya Elite",
+   "Dari RM248,000 per lot"
+  ],
+  "description": "Tanah lot banglo di Dengkil, Selangor — Lot 3 (5,963 sqft) antara 3 lot bersebelahan di Jalan Selangor Dredging, status residential, leasehold sehingga 19 Mac 2094. Harga dari RM248,000 per lot. Berhampiran Lebuhraya Elite, Gamuda Cove, Kota Warisan dan KLIA.",
+  "amenities": [
+   "Jalan Selangor Dredging",
+   "Status residential",
+   "Berhampiran Lebuhraya Elite"
+  ],
+  "nearby": [
+   "Gamuda Cove",
+   "Kota Warisan",
+   "Dengkil town",
+   "KLIA",
+   "Paya Indah Wetland",
+   "UiTM Dengkil",
+   "Cybersouth"
+  ],
+  "map_url": "https://www.google.com/maps?q=Dengkil,+Selangor",
+  "project": "tanah-lot-banglo-dengkil",
+  "project_name": "Tanah Lot Banglo Dengkil (3 Lot)",
+  "unit": "Lot 3 · 5,963 sqft",
+  "source": "Mr Tanah",
+  "date": "2026-09-07",
+  "images": [
+   "https://lh3.googleusercontent.com/d/1k_Bv-Z5Ilx2rs5Svda2WZ8msoyo_7lxJ=w1000",
+   "https://lh3.googleusercontent.com/d/1QEtvOvVcoDbDAV-VQt5RXAkAWS3acqn8=w1000",
+   "https://lh3.googleusercontent.com/d/1XAipKkXRcjMZ5UzWniCiUqzdhx6hEQZ3=w1000"
+  ],
+  "active": true
+ },
+ {
+  "tracking": "MT-0016",
+  "title": "Bungalow Kayangan Heights — Unit 1",
+  "type": "Rumah",
+  "location": "Kayangan Heights, Seksyen U9, Shah Alam, Selangor",
+  "state": "Selangor",
+  "price": 2605069.5,
+  "price_label": "RM2,605,069.50",
+  "price_old": null,
+  "land_area": "18,586 sqft",
+  "built_up": "-",
+  "tenure": "Leasehold",
+  "sekatan": "Tidak dinyatakan",
+  "kategori": "Perumahan",
+  "zoning": "Perumahan",
+  "psf": 140,
+  "bedrooms": 0,
+  "bathrooms": 0,
+  "status": "BARU",
+  "jenis": "JUAL",
+  "highlights": [
+   "2.5 Storey Bungalow Type Begonia Crescent",
+   "CF completed — sedia huni",
+   "Built up 4,232 sqft",
+   "6 bilik 7 bilik air",
+   "Leasehold",
+   "Gated & guarded 24 jam, clubhouse infinity pool"
+  ],
+  "description": "Bungalow 2.5 tingkat Type Begonia Crescent di Kayangan Heights, Seksyen U9 Shah Alam — CF completed, built up 4,232 sqft dengan tanah 18,586 sqft. 6 bilik 7 bilik air, gated & guarded 24 jam, security fees RM250/bulan. Berhampiran Kelab Impiana Kayangan, Real International School dan Elmina Lakeside Mall. Harga dari RM2,605,069.50.",
+  "amenities": [
+   "Gated & guarded 24 jam",
+   "Clubhouse infinity pool & gymnasium",
+   "Tennis court",
+   "Security fees RM250/bln",
+   "CF completed"
+  ],
+  "nearby": [
+   "Kelab Impiana Kayangan (di hadapan)",
+   "Real International School (1.2km)",
+   "Mudtrekker Paintball Park Cahaya SPK (2.9km)",
+   "Monterez Golf Driving Range (3.1km)",
+   "Elmina Lakeside Mall (8.2km)",
+   "UiTM Puncak Perdana (7.2km)"
+  ],
+  "map_url": "https://www.google.com/maps?q=Kayangan+Heights,+Seksyen+U9,+Shah+Alam,+Selangor",
+  "project": "bungalow-kayangan-heights",
+  "project_name": "Bungalow Kayangan Heights (2 Unit)",
+  "unit": "Unit 1",
+  "source": "Mr Tanah",
+  "date": "2026-09-07",
+  "images": [
+   "https://lh3.googleusercontent.com/d/1Ha9p8YfoE9Ng2lY9Ee9u-_m4fx0IZmD4=w1000",
+   "https://lh3.googleusercontent.com/d/1qKlKbGPaeq9ZqepPLV6xwiNzneeS8bI2=w1000",
+   "https://lh3.googleusercontent.com/d/1HBivSU_WzLT9ig2F8SfWkCDBsNTq44nW=w1000"
+  ],
+  "active": true
+ },
+ {
+  "tracking": "MT-0017",
+  "title": "Bungalow Kayangan Heights — Unit 2",
+  "type": "Rumah",
+  "location": "Kayangan Heights, Seksyen U9, Shah Alam, Selangor",
+  "state": "Selangor",
+  "price": 2951150.4,
+  "price_label": "RM2,951,150.40",
+  "price_old": null,
+  "land_area": "27,049 sqft",
+  "built_up": "-",
+  "tenure": "Leasehold",
+  "sekatan": "Tidak dinyatakan",
+  "kategori": "Perumahan",
+  "zoning": "Perumahan",
+  "psf": 109,
+  "bedrooms": 0,
+  "bathrooms": 0,
+  "status": "BARU",
+  "jenis": "JUAL",
+  "highlights": [
+   "2.5 Storey Bungalow Type Begonia Crescent",
+   "CF completed — sedia huni",
+   "Built up 4,232 sqft",
+   "6 bilik 7 bilik air",
+   "Leasehold",
+   "Gated & guarded 24 jam, clubhouse infinity pool"
+  ],
+  "description": "Bungalow 2.5 tingkat Type Begonia Crescent di Kayangan Heights, Seksyen U9 Shah Alam — CF completed, built up 4,232 sqft dengan tanah 27,049 sqft. 6 bilik 7 bilik air, gated & guarded 24 jam, security fees RM250/bulan. Berhampiran Kelab Impiana Kayangan, Real International School dan Elmina Lakeside Mall. Harga RM2,951,150.40.",
+  "amenities": [
+   "Gated & guarded 24 jam",
+   "Clubhouse infinity pool & gymnasium",
+   "Tennis court",
+   "Security fees RM250/bln",
+   "CF completed"
+  ],
+  "nearby": [
+   "Kelab Impiana Kayangan (di hadapan)",
+   "Real International School (1.2km)",
+   "Mudtrekker Paintball Park Cahaya SPK (2.9km)",
+   "Monterez Golf Driving Range (3.1km)",
+   "Elmina Lakeside Mall (8.2km)",
+   "UiTM Puncak Perdana (7.2km)"
+  ],
+  "map_url": "https://www.google.com/maps?q=Kayangan+Heights,+Seksyen+U9,+Shah+Alam,+Selangor",
+  "project": "bungalow-kayangan-heights",
+  "project_name": "Bungalow Kayangan Heights (2 Unit)",
+  "unit": "Unit 2",
+  "source": "Mr Tanah",
+  "date": "2026-09-07",
+  "images": [
+   "https://lh3.googleusercontent.com/d/1dSDvvD3z99H4qxeQsqaWdx1L6hiGm0EQ=w1000",
+   "https://lh3.googleusercontent.com/d/1KuZTTdZ2NPWCFGRHv48y4U1w5_biuLK6=w1000",
+   "https://lh3.googleusercontent.com/d/1I29SrIHSfU2YFd1UgxbwGvtl_jQ4H62P=w1000"
+  ],
+  "active": true
+ },
+ {
+  "tracking": "MT-0018",
+  "title": "Industrial Land Banting Sepang (60 ekar)",
+  "type": "Tanah",
+  "location": "Banting, Sepang, Selangor",
+  "state": "Selangor",
+  "price": 75000000,
+  "price_label": "RM75,000,000",
+  "price_old": null,
+  "land_area": "60 ekar (2,613,600 sqft)",
+  "built_up": "-",
+  "tenure": "Leasehold",
+  "sekatan": "Malay Reserve",
+  "kategori": "Perindustrian",
+  "zoning": "Perindustrian",
+  "psf": 29,
+  "bedrooms": 0,
+  "bathrooms": 0,
+  "status": "BARU",
+  "jenis": "JUAL",
+  "highlights": [
+   "60 ekar industrial land — IDRISS South Selangor",
+   "Depan pintu masuk NCT Smart Industry Park",
+   "12km ke KLIA",
+   "Leasehold Malay Reserve",
+   "Land category: Industry",
+   "Akses WCE, LATAR, NKVE, GCE, DASH"
+  ],
+  "description": "Tanah industri 60 ekar di Banting, Sepang — terletak dalam IDRISS (Integrated Development Region South Selangor), tepat di hadapan pintu masuk NCT Smart Industry Park dan hanya 12km ke KLIA. Leasehold Malay Reserve, land category Industry. Akses terus ke lebuh raya utama WCE, LATAR, North South, GCE, DASH & NKVE. 26km ke Sepang Gold Coast, 56km ke Port Klang. Harga RM75,000,000.",
+  "amenities": [
+   "Land category: Industry",
+   "Depan pintu masuk NCT Smart Industry Park",
+   "12km ke KLIA",
+   "Akses lebuh raya utama"
+  ],
+  "nearby": [
+   "KLIA (12km)",
+   "Sepang Gold Coast (26km)",
+   "Port Klang (56km)",
+   "Kuala Lumpur City Centre (60km)",
+   "Subang Airport (60km)"
+  ],
+  "map_url": "https://www.google.com/maps?q=Banting,+Sepang,+Selangor",
+  "project": "",
+  "project_name": "",
+  "unit": "",
+  "source": "Mr Tanah",
+  "date": "2026-09-07",
+  "images": [
+   "https://lh3.googleusercontent.com/d/1UfvMtctksaZeHRGmiia09TwzSatumiJx=w1000",
+   "https://lh3.googleusercontent.com/d/1Nol8ia688YyW8bYzFBEx3KFmCqpMiQCw=w1000",
+   "https://lh3.googleusercontent.com/d/1mXz18I053-Z1mKFrv4_c7CWu899r75aZ=w1000"
   ],
   "active": true
  },
@@ -641,6 +1021,9 @@ window.LISTINGS = [
    "Batu 19, Hulu Langat"
   ],
   "map_url": "https://www.google.com/maps/search/?api=1&query=Ulu+Perdik+Batu+19+Hulu+Langat+Selangor",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-30",
   "images": [
@@ -686,6 +1069,9 @@ window.LISTINGS = [
    "Rawang, Selangor"
   ],
   "map_url": "https://www.google.com/maps?q=Kampung+Sungai+Serai,+Rawang",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-31",
   "images": [
@@ -730,6 +1116,9 @@ window.LISTINGS = [
    "Kapar, Klang, Selangor"
   ],
   "map_url": "https://www.google.com/maps?q=Meru,+Kapar,+Klang",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-31",
   "images": [
@@ -777,6 +1166,9 @@ window.LISTINGS = [
    "Lemang Tok'ki — 4.6 km"
   ],
   "map_url": "https://www.google.com/maps?q=Bentong,+Pahang",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-31",
   "images": [
@@ -825,6 +1217,9 @@ window.LISTINGS = [
    "UKM"
   ],
   "map_url": "https://www.google.com/maps?q=Sungai+Ramal,+Kajang,+Selangor",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-31",
   "images": [
@@ -872,6 +1267,9 @@ window.LISTINGS = [
    "Bangi Gateway"
   ],
   "map_url": "https://www.google.com/maps?q=Sungai+Ramal,+Kajang,+Selangor",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-31",
   "images": [
@@ -922,6 +1320,9 @@ window.LISTINGS = [
    "Bandar Baru Bangi"
   ],
   "map_url": "https://www.google.com/maps?q=Sungai+Merab,+Kajang,+Selangor",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-09-06",
   "images": [
@@ -976,6 +1377,9 @@ window.LISTINGS = [
    "Air terjun & tarikan semula jadi Hulu Langat"
   ],
   "map_url": "https://www.google.com/maps?q=Hulu+Langat,+Selangor",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-09-07",
   "images": [
@@ -1030,6 +1434,9 @@ window.LISTINGS = [
    "Kawasan Hulu Langat"
   ],
   "map_url": "https://www.google.com/maps?q=Sungai+Gabai,+Hulu+Langat,+Selangor",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-09-07",
   "images": [
@@ -1075,6 +1482,9 @@ window.LISTINGS = [
    "Sepang, Selangor"
   ],
   "map_url": "https://www.google.com/maps?q=Bukit+Damar,+Dengkil,+Sepang",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-31",
   "images": [
@@ -1122,6 +1532,9 @@ window.LISTINGS = [
    "Jalan Genting Klang"
   ],
   "map_url": "https://www.google.com/maps?q=Kemensah+Height,+Ampang",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-08-31",
   "images": [
@@ -1171,6 +1584,9 @@ window.LISTINGS = [
    "Kuala Lumpur — lebih kurang 45 minit"
   ],
   "map_url": "https://maps.app.goo.gl/FoJXmRMuajhbBQG6A",
+  "project": "",
+  "project_name": "",
+  "unit": "",
   "source": "Mr Tanah",
   "date": "2026-09-03",
   "images": [
