@@ -10,6 +10,10 @@ function projSlug(l) {
     .replace(/\bunit\s*[\w-]+/g, " ").replace(/\b\d{3,4}\s*sqft\b/g, " ")
     .replace(/\s+/g, " ").trim();
 }
+// Slug URL fail projek (sempang) — mesti padan penamaan gen_site_seo.py (cth bungalow-lot-sungai-merab)
+function urlSlug(s) {
+  return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+}
 function sameSpec(a, b) {
   return a.price === b.price && a.land_area === b.land_area
     && a.bedrooms === b.bedrooms && a.bathrooms === b.bathrooms;
@@ -31,7 +35,7 @@ const PROJECTS = buildProjects(DATA);
 function projectOf(l) {
   return PROJECTS.find(p => p.some(u => u.tracking === l.tracking));
 }
-const WA = SITE.whatsapp || "60" + PHONE;
+const WA = SITE.whatsapp || "60" + PHONE.replace(/^0/, "");
 
 function fmt(n) {
   return "RM" + Number(n).toLocaleString("en-MY");
@@ -111,7 +115,7 @@ function projectCard(units) {
   const sorted = [...units].sort((a, b) => (a.price || 0) - (b.price || 0));
   const best = sorted[0];
   const slug = best.project || projSlug(best);
-  const url = "projek/" + encodeURIComponent(slug) + ".html";
+  const url = "projek/" + urlSlug(slug) + ".html";
   const name = best.project_name || best.title;
   const count = units.length;
   const minP = best.price_label || fmt(best.price);

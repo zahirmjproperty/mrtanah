@@ -2,7 +2,7 @@
 const SITE = window.SITE || {};
 const DATA = (window.LISTINGS || []).filter(l => l.active !== false);
 const PHONE = (SITE.phone || "012-2310119").replace(/[-\s]/g, "");
-const WA = SITE.whatsapp || "60" + PHONE;
+const WA = SITE.whatsapp || "60" + PHONE.replace(/^0/, "");
 
 function fmt(n) { return "RM" + Number(n).toLocaleString("en-MY"); }
 

@@ -2,7 +2,8 @@
 // SUMBER: Notion DB 'Listing Mr Tanah' (Aktif=on/off, Gambar=gambar utama)
 window.SITE = {
   "name": "Mr Tanah",
-  "phone": "016-3119076"
+  "phone": "016-3119076",
+  "whatsapp": "60163119076"
 };
 
 window.LISTINGS = [
@@ -482,7 +483,7 @@ window.LISTINGS = [
    "Presint 16 Putrajaya — 12 minit"
   ],
   "map_url": "https://www.google.com/maps?q=Sungai+Merab,+Sepang,+Selangor",
-  "project": "",
+  "project": "bungalow-lot-sungai-merab",
   "project_name": "",
   "unit": "",
   "source": "Mr Tanah",
@@ -1320,7 +1321,7 @@ window.LISTINGS = [
    "Bandar Baru Bangi"
   ],
   "map_url": "https://www.google.com/maps?q=Sungai+Merab,+Kajang,+Selangor",
-  "project": "",
+  "project": "bungalow-lot-sungai-merab",
   "project_name": "",
   "unit": "",
   "source": "Mr Tanah",
