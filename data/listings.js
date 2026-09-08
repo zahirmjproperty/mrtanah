@@ -867,7 +867,7 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-09-07",
     "images": [
-      "https://lh3.googleusercontent.com/d/1Ha9p8YfoE9Ng2lY9Ee9u-_m4fx0IZmD4=w1000",
+      "https://lh3.googleusercontent.com/d/1KuZTTdZ2NPWCFGRHv48y4U1w5_biuLK6=w1000",
       "https://lh3.googleusercontent.com/d/1qKlKbGPaeq9ZqepPLV6xwiNzneeS8bI2=w1000",
       "https://lh3.googleusercontent.com/d/1HBivSU_WzLT9ig2F8SfWkCDBsNTq44nW=w1000"
     ],
