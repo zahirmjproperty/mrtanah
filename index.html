@@ -26,7 +26,7 @@
   "address": {"@type": "PostalAddress", "addressCountry": "MY"}
 }
 </script>
-<link rel="stylesheet" href="style.css?v=43">
+<link rel="stylesheet" href="style.css?v=44">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
 </head>
 <body>
@@ -58,6 +58,12 @@
     <h1>Cari Tanah &amp; Hartanah Idaman Anda</h1>
     <p>Listing tanah, bangunan &amp; tanah pertanian dari seluruh Malaysia — harga pemilik, terus dari kami. Semua lot melalui semakan status pemilikan dan harga pasaran.</p>
     <div class="search-panel" id="searchPanel">
+      <div class="deal-tabs" id="dealTabs">
+        <button type="button" class="deal-tab active" data-deal="">Semua</button>
+        <button type="button" class="deal-tab" data-deal="JUAL">Jual</button>
+        <button type="button" class="deal-tab" data-deal="SEWA">Sewa</button>
+        <button type="button" class="deal-tab" data-deal="JV">JV</button>
+      </div>
       <div class="search-row">
         <input type="text" id="searchInput" placeholder="Cari lokasi, jenis hartanah..." autocomplete="off">
         <select id="stateFilter" aria-label="Negeri">
@@ -135,7 +141,7 @@
   </div>
 </footer>
 
-<script src="data/listings.js?v=43"></script>
-<script src="app.js?v=43"></script>
+<script src="data/listings.js?v=44"></script>
+<script src="app.js?v=44"></script>
 </body>
 </html>
