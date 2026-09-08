@@ -55,10 +55,26 @@ const TYPE_GRAD = {
 function typeIcon(l) { return TYPE_ICON[l.type] || "🏠"; }
 function typeGrad(l) { return TYPE_GRAD[l.type] || "g-teres"; }
 
+// Urusan boleh tunggal ("JUAL") atau jamak (["JUAL","SEWA"]) — cth tanah dijual & disewa
+function dealsOf(l) {
+  const j = l.jenis;
+  if (Array.isArray(j)) return j.length ? j.slice() : ["JUAL"];
+  return j ? [j] : [];
+}
+function isDual(l) {
+  return l.sewa_label && dealsOf(l).some(d => String(d).toUpperCase() === "SEWA");
+}
+function rentHTML(l) {
+  return isDual(l) ? `<div class="price-rent">🔑 Sewa: ${l.sewa_label}</div>` : "";
+}
+function waPrice(l) {
+  return isDual(l) ? `Jual ${l.price_label} / Sewa ${l.sewa_label}` : (l.price_label || "");
+}
+
 function mediaHTML(l, link, extra = []) {
   const img = l.images && l.images.length ? l.images[0] : "";
   const badges = [];
-  if (l.jenis) badges.push(`<span class="badge badge-${(l.jenis || "jual").toLowerCase()}">${l.jenis}</span>`);
+  dealsOf(l).forEach(d => badges.push(`<span class="badge badge-${String(d).toLowerCase()}">${d}</span>`));
   if (l.status === "BARU") badges.push('<span class="badge badge-baru">BARU</span>');
   if (l.status === "PROMOSI") badges.push('<span class="badge badge-promo">⚡ PROMOSI</span>');
   badges.push(...extra);
@@ -73,7 +89,7 @@ function mediaHTML(l, link, extra = []) {
 
 function card(l) {
   const url = "listing/" + encodeURIComponent(l.tracking) + ".html";
-  const waMsg = encodeURIComponent(`Assalamualaikum dan salam sejahtera, saya berminat dengan listing ${l.tracking} - ${l.title} (${l.price_label}). Adakah masih tersedia?`);
+  const waMsg = encodeURIComponent(`Assalamualaikum dan salam sejahtera, saya berminat dengan listing ${l.tracking} - ${l.title} (${waPrice(l)}). Adakah masih tersedia?`);
   const specs = [];
   if (l.bedrooms > 0) specs.push(`🛏️ ${l.bedrooms} bilik`);
   if (l.bathrooms > 0) specs.push(`🚿 ${l.bathrooms} bilik air`);
@@ -99,6 +115,7 @@ function card(l) {
       <h3 class="card-title"><a href="${url}">${l.title}</a></h3>
       <p class="card-loc">📍 ${l.location}</p>
       <div class="price-row"><span class="price">${l.price_label}</span>${l.psf ? `<span class="price-psf"> · RM${l.psf.toLocaleString("en-MY")}/sqft</span>` : ""}${oldPrice}</div>
+      ${rentHTML(l)}
       ${specs.length ? `<div class="specs">${specs.join("")}</div>` : ""}
       <div class="card-actions">
         <a class="btn btn-wa-card" href="https://wa.me/${WA}?text=${waMsg}" target="_blank" rel="noopener">WhatsApp</a>
@@ -163,7 +180,7 @@ function apply() {
   const items = DATA.filter(l => {
     if (state && l.state !== state) return false;
     if (type && l.type !== type) return false;
-    if (deal && (l.jenis || "").toUpperCase() !== deal) return false;
+    if (deal && !dealsOf(l).some(d => String(d).toUpperCase() === deal)) return false;
     const hay = (l.title + " " + l.location + " " + (l.description || "") + " " + l.tracking).toLowerCase();
     if (q && !hay.includes(q.toLowerCase())) return false;
     if (min !== "" && !(l.price >= Number(min))) return false;

@@ -994,6 +994,8 @@ window.LISTINGS = [
     "price": 26606448,
     "price_label": "RM26,606,448",
     "price_old": null,
+    "sewa_price": 110860,
+    "sewa_label": "RM110,860/bulan",
     "land_area": "5.09 ekar (221,720 sqft)",
     "built_up": "-",
     "tenure": "Freehold",
@@ -1004,16 +1006,17 @@ window.LISTINGS = [
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
-    "jenis": "JUAL",
+    "jenis": ["JUAL", "SEWA"],
     "highlights": [
       "5.09 ekar tanah komersial — Two Frontage (Jalan Kebun & Toll 3 Shah Alam)",
       "Bersebelahan jalan utama — depan Jalan Kebun, belakang Toll 3 Shah Alam",
       "Berhampiran SP Setia Alam Impian & Sunrise Technology Park",
       "Freehold, Title Agriculture Open, bebas bebanan",
       "Diluluskan untuk Commercial Industry (DO/KM)",
-      "Zoning Commercial — sesuai apartment servis, hipermarket, logistik, showroom, pembangunan campuran"
+      "Zoning Commercial — sesuai apartment servis, hipermarket, logistik, showroom, pembangunan campuran",
+      "Turut ditawarkan untuk disewa — RM110,860/bulan"
     ],
-    "description": "Tanah komersial strategik 5.09 ekar di Jalan Kebun, Seksyen 36 Shah Alam dengan dua muka jalan (two frontage) — Jalan Kebun di hadapan dan Toll 3 Shah Alam di belakang. Berhampiran SP Setia Alam Impian dan Sunrise Technology Park, tanah ini sesuai untuk pembangunan apartment servis/kondominium, hipermarket, logistik, showroom, 3S/4S, kompleks membeli-belah atau projek pembangunan campuran. Freehold, Title Agriculture Open, bebas daripada bebanan dan diluluskan untuk Commercial Industry (DO/KM). Harga RM26,606,448.",
+    "description": "Tanah komersial strategik 5.09 ekar di Jalan Kebun, Seksyen 36 Shah Alam dengan dua muka jalan (two frontage) — Jalan Kebun di hadapan dan Toll 3 Shah Alam di belakang. Berhampiran SP Setia Alam Impian dan Sunrise Technology Park, tanah ini sesuai untuk pembangunan apartment servis/kondominium, hipermarket, logistik, showroom, 3S/4S, kompleks membeli-belah atau projek pembangunan campuran. Freehold, Title Agriculture Open, bebas daripada bebanan dan diluluskan untuk Commercial Industry (DO/KM). Harga jualan RM26,606,448; turut ditawarkan untuk disewa pada RM110,860/bulan.",
     "amenities": [
       "Bersebelahan SJK (T) Ladang Batu Ampat",
       "Masjid Alam Impian (4.9km)",

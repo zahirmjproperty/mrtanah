@@ -182,6 +182,7 @@ a { color: inherit; text-decoration: none; }
 .price-lg { font-size: 26px; }
 .price-old { font-size: 13px; color: var(--muted); text-decoration: line-through; }
 .price-old-line { color: var(--muted); font-size: 13.5px; text-decoration: line-through; }
+.price-rent { margin-top: 4px; font-size: 14px; font-weight: 700; color: var(--blue); }
 .specs { display: flex; flex-wrap: wrap; gap: 6px; }
 .specs span {
   background: var(--bg); border: 1px solid var(--line); color: var(--muted);

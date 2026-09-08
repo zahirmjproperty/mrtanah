@@ -19,6 +19,22 @@ const TYPE_GRAD = {
 const typeIcon = l => TYPE_ICON[l.type] || "🏠";
 const typeGrad = l => TYPE_GRAD[l.type] || "g-teres";
 
+// Urusan tunggal ("JUAL") atau jamak (["JUAL","SEWA"]) — papar kedua-dua info jual & sewa
+function dealsOf(l) {
+  const j = l.jenis;
+  if (Array.isArray(j)) return j.length ? j.slice() : ["JUAL"];
+  return j ? [j] : [];
+}
+function isDual(l) {
+  return l.sewa_label && dealsOf(l).some(d => String(d).toUpperCase() === "SEWA");
+}
+function rentHTML(l) {
+  return isDual(l) ? `<div class="price-rent">🔑 Sewa: ${l.sewa_label}</div>` : "";
+}
+function waPrice(l) {
+  return isDual(l) ? `Jual ${l.price_label} / Sewa ${l.sewa_label}` : (l.price_label || "");
+}
+
 // --- Galeri / Lightbox ---
 let lbIndex = 0, lbImgs = [];
 
@@ -86,10 +102,10 @@ function chipList(items) {
 
 function renderDetail(l) {
   document.title = l.title + " — " + (SITE.name || "Zahir MJ Property");
-  const waMsg = encodeURIComponent(`Assalamualaikum dan salam sejahtera, saya berminat dengan listing ${l.tracking} - ${l.title} (${l.price_label}). Boleh kongsi maklumat lanjut?`);
-  const shareMsg = encodeURIComponent(`${l.title} - ${l.price_label} — ${SITE.domain || ""}listing/${encodeURIComponent(l.tracking)}.html`);
+  const waMsg = encodeURIComponent(`Assalamualaikum dan salam sejahtera, saya berminat dengan listing ${l.tracking} - ${l.title} (${waPrice(l)}). Boleh kongsi maklumat lanjut?`);
+  const shareMsg = encodeURIComponent(`${l.title} - ${waPrice(l)} — ${SITE.domain || ""}listing/${encodeURIComponent(l.tracking)}.html`);
   const badges = [];
-  if (l.jenis) badges.push(`<span class="badge badge-${(l.jenis || "jual").toLowerCase()}">${l.jenis}</span>`);
+  dealsOf(l).forEach(d => badges.push(`<span class="badge badge-${String(d).toLowerCase()}">${d}</span>`));
   if (l.status === "BARU") badges.push('<span class="badge badge-baru">BARU</span>');
   if (l.status === "PROMOSI") badges.push('<span class="badge badge-promo">⚡ PROMOSI</span>');
   const oldPrice = l.price_old ? `<p class="price-old-line">Harga asal: ${fmt(l.price_old)}</p>` : "";
@@ -126,6 +142,7 @@ function renderDetail(l) {
           <span class="price price-lg">${l.price_label}</span>
           ${l.psf ? `<span class="price-psf"> · RM${l.psf.toLocaleString("en-MY")}/sqft</span>` : ""}
           ${oldPrice}
+          ${rentHTML(l)}
         </div>
         <div class="detail-specs">${specsTable(l)}</div>
         <div class="detail-actions">
