@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pendaftaran Pihak — Mr Tanah</title>
+<meta name="description" content="Daftar syarikat/pihak sebagai Pembeli, Pengurus/Kontraktor atau Pembeli + Pengurus/Kontraktor — Sistem Ladang Mr Tanah (dikendalikan Strategic Agro Technology).">
+<style>
+  :root{--hijau:#123a7a;--hijau2:#123a7a;--hijau3:#14905c;--teks:#1e293b;--kelabu:#64748b;--garis:#d7e3d9}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;color:var(--teks);background:#f1f5f0;line-height:1.6}
+  .header{background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 55%,#14905c 100%);color:#fff;padding:16px 20px}
+  .header .in{max-width:960px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:11px}
+  .logo{font-size:28px}
+  .brand-text strong{font-size:17px;display:block}
+  .brand-text small{opacity:.85;font-size:12.5px}
+  .btn-wa{background:#25D366;color:#fff;text-decoration:none;font-weight:700;padding:8px 15px;border-radius:24px;font-size:13.5px;white-space:nowrap}
+  main{max-width:960px;margin:0 auto;padding:22px 16px 46px}
+  h1.pg{font-size:25px;margin:2px 0 4px;color:#0f2f1d}
+  .subpg{color:#475569;font-size:14px;margin-bottom:14px}
+  .privacy-note{background:#f0fdf4;border:1px solid #bbf7d0;color:#123a7a;border-radius:10px;padding:11px 15px;font-size:13px;margin-bottom:18px}
+  .form-wrap{max-width:860px;margin:0 auto}
+  .form-card{background:#fff;border:1px solid var(--garis);border-radius:14px;padding:20px 22px;margin-bottom:16px}
+  .form-card h2{font-size:18px;margin:0 0 3px;color:#0f2f1d}
+  .form-card .sub{color:var(--kelabu);font-size:13px;margin:0 0 14px}
+  .step-tag{display:inline-block;background:var(--hijau2);color:#fff;border-radius:20px;padding:2px 12px;font-size:12px;font-weight:600;margin-bottom:8px}
+  .role-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  @media(max-width:760px){.role-cards{grid-template-columns:1fr}}
+  .role-card{border:2px solid var(--garis);border-radius:12px;padding:12px 13px;cursor:pointer;transition:all .15s;background:#fff}
+  .role-card:hover{border-color:#14905c}
+  .role-card.sel{border-color:var(--hijau3);background:#dcfce7;box-shadow:0 0 0 3px rgba(22,163,74,.18)}
+  .role-card.sel .rc-title{color:var(--hijau2)}
+  .role-card .rc-icon{font-size:20px}
+  .role-card .rc-title{font-weight:700;font-size:13.5px;margin:3px 0 1px;color:#0f2f1d}
+  .role-card .rc-desc{font-size:11.5px;color:var(--kelabu)}
+  .f-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:640px){.f-grid{grid-template-columns:1fr}}
+  .f-field{display:flex;flex-direction:column;gap:4px}
+  .f-field.full{grid-column:1/-1}
+  .f-field label{font-size:12.5px;font-weight:600;color:#334155}
+  .f-field label .req{color:#dc2626}
+  .f-field input,.f-field select,.f-field textarea{padding:9px 11px;border:1px solid #cbd5e1;border-radius:8px;font-size:13.5px;font-family:inherit;width:100%}
+  .f-field textarea{resize:vertical;min-height:48px}
+  .lesen-tip{background:#fffbeb;border:1px solid #fde68a;color:#92400e;border-radius:8px;padding:8px 12px;font-size:12px;margin-top:8px}
+  .file-hint{font-size:12px;color:var(--kelabu);margin-top:5px}
+  .file-list{margin-top:8px;font-size:12.5px;color:#123a7a}
+  .btn-submit{width:100%;padding:14px;background:var(--hijau2);color:#fff;border:0;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;margin-top:4px}
+  .btn-submit:hover{background:#0f3d24}
+  .btn-submit:disabled{background:#94a3b8;cursor:not-allowed}
+  .consent-item{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:#334155;line-height:1.6;margin:7px 0}
+  .consent-item input{flex:0 0 auto;margin-top:3px;width:16px;height:16px;accent-color:var(--hijau2)}
+  .consent-item span{flex:1}
+  .msg-box{border-radius:10px;padding:13px 15px;font-size:13.5px;margin-top:13px;white-space:pre-wrap}
+  .msg-ok{background:#dcfce7;border:1px solid #86efac;color:#123a7a}
+  .msg-err{background:#fee2e2;border:1px solid #fca5a5;color:#991b1b}
+  .hidden{display:none}
+  .foot{background:#123a7a;color:#cde7d4;text-align:center;padding:16px;font-size:12.5px}
+  .foot a{color:#fff}
+  .chip-ref{display:inline-block;background:#0f2f1d;color:#d1fae5;border-radius:10px;padding:5px 13px;font-size:13px;font-weight:700;margin:2px 6px 6px 0}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="in">
+    <div class="brand">
+      <span class="logo">🌴</span>
+      <span class="brand-text">
+        <strong>Mr Tanah</strong>
+        <small>Pengurusan Ladang · dikendalikan Strategic Agro Technology</small>
+      </span>
+    </div>
+    <a class="btn-wa" href="https://wa.me/60122310119" target="_blank" rel="noopener">📲 WhatsApp</a>
+  </div>
+</header>
+
+<main>
+  <nav style="margin-bottom:10px"><a href="index.html" style="color:#123a7a;font-size:13.5px">← Utama</a></nav>
+  <div class="form-wrap">
+    <h1 class="pg">📝 Pendaftaran Pihak — Sistem Ladang</h1>
+    <p class="subpg">Daftar syarikat/pihak yang berurusan dengan Strategic Agro Technology. Selepas hantar, rujukan & salinan emel diberikan — pengurusan akan sahkan pendaftaran.</p>
+    <div class="privacy-note">🔒 <strong>Privasi:</strong> Maklumat & dokumen dihantar terus ke sistem selamat Strategic Agro Technology (Google Drive peribadi) — bukan paparan awam. Digunakan untuk rekod urus niaga & pematuhan sahaja (PDPA).</div>
+
+    <form id="dfForm" autocomplete="off">
+      <!-- LANGKAH 1 -->
+      <div class="form-card">
+        <span class="step-tag">LANGKAH 1</span>
+        <h2>🧑‍💼 Daftar sebagai</h2>
+        <p class="sub">Pilih peranan syarikat/pihak anda dalam urusan ladang. Jika syarikat yang sama bertindak sebagai pembeli DAN pengurus/kontraktor, pilih pilihan ketiga.</p>
+        <div class="role-cards" id="roleCards">
+          <div class="role-card" data-role="pembeli">
+            <div class="rc-icon">🤝</div>
+            <div class="rc-title">Pembeli</div>
+            <div class="rc-desc">Membeli hasil FFB dari ladang (cth: peniaga / kilang FFB)</div>
+          </div>
+          <div class="role-card" data-role="kontraktor">
+            <div class="rc-icon">🚜</div>
+            <div class="rc-title">Pengurus / Kontraktor</div>
+            <div class="rc-desc">Menjalankan kerja pengurusan / kontraktor ladang (baja, racun, upah, selenggara)</div>
+          </div>
+          <div class="role-card" data-role="dua">
+            <div class="rc-icon">🔄</div>
+            <div class="rc-title">Pembeli + Pengurus/Kontraktor</div>
+            <div class="rc-desc">Syarikat sama — beli FFB & buat kerja ladang (cth: Anak Jati Maju Enterprise)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LANGKAH 2 -->
+      <div class="form-card">
+        <span class="step-tag">LANGKAH 2</span>
+        <h2>🏢 Maklumat Syarikat / Pihak</h2>
+        <p class="sub">No. pendaftaran syarikat (SSM) & no. lesen berkaitan digunakan untuk rekod pematuhan. Salinan emel dihantar ke emel anda selepas daftar — untuk pengesahan & tambahan dokumen (balas emel itu).</p>
+        <div class="f-grid">
+          <div class="f-field full"><label>Nama syarikat / pihak <span class="req">*</span></label><input type="text" id="f_syarikat" placeholder="cth: Anak Jati Maju Enterprise" required></div>
+          <div class="f-field"><label>No. Pendaftaran Syarikat (SSM) <span class="req">*</span></label><input type="text" id="f_nossm" placeholder="cth: 201501012345 (1234567-T)" required></div>
+          <div class="f-field"><label>Jenis lesen berkaitan</label>
+            <select id="f_jenis_lesen">
+              <option value="">— pilih (jika ada) —</option>
+              <option value="MPOB (peniaga/pembeli FFB)">MPOB (peniaga/pembeli FFB)</option>
+              <option value="MPOB (e-LesenPK)">MPOB (e-LesenPK)</option>
+              <option value="CIDB">CIDB</option>
+              <option value="SSM sahaja (tiada lesen khas)">SSM sahaja (tiada lesen khas)</option>
+              <option value="Lain">Lain (nyatakan)</option>
+            </select></div>
+          <div class="f-field" id="fldNoLesen"><label id="labNolesen">No. Lesen</label><input type="text" id="f_nolesen" placeholder="No. lesen (jika ada)"></div>
+          <div class="f-field hidden" id="fldJenisLain" style="grid-column:1/-1"><label>Nyatakan jenis lesen lain</label><input type="text" id="f_jenis_lain" placeholder="cth: Permit KPDN, lesen majlis perbandaran..."></div>
+        </div>
+        <div class="lesen-tip" id="lesenTip">💡 <strong>Pembeli FFB</strong>: biasanya memegang lesen MPOB (peniaga/pengumpul). <strong>Pengurus/Kontraktor</strong>: SSM cukup; isi lesen lain jika ada. Dokumen sokongan boleh dimuat naik di Langkah 3.</div>
+      </div>
+
+      <!-- LANGKAH 3 -->
+      <div class="form-card">
+        <span class="step-tag">LANGKAH 3</span>
+        <h2>👤 Pegawai & Hubungan</h2>
+        <p class="sub">Orang yang boleh dihubungi bagi pihak syarikat ini.</p>
+        <div class="f-grid">
+          <div class="f-field"><label>Nama pegawai / PIC <span class="req">*</span></label><input type="text" id="f_pic" placeholder="Nama penuh pegawai" required></div>
+          <div class="f-field"><label>No. Telefon / WhatsApp <span class="req">*</span></label><input type="tel" id="f_wa" placeholder="012-3456789" required></div>
+          <div class="f-field full"><label>Emel <span class="req">*</span></label><input type="email" id="f_emel" placeholder="cth. nama@syarikat.com" required></div>
+          <div class="f-field full"><label>Nota (pilihan)</label><textarea id="f_nota" placeholder="Lain-lain maklumat / skop kerja / kawasan ladang"></textarea></div>
+        </div>
+      </div>
+
+      <!-- LANGKAH 4: dokumen -->
+      <div class="form-card">
+        <span class="step-tag">LANGKAH 4</span>
+        <h2>📎 Dokumen Sokongan</h2>
+        <p class="sub">Pilihan — muat naik jika nak: SSM (butiran syarikat), salinan lesen MPOB/CIDB, surat kebenaran, dsb. Disimpan dalam folder pendaftaran Drive SAT.</p>
+        <div class="f-field full"><label>Fail dokumen</label>
+          <input type="file" id="f_files" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" multiple>
+          <div class="file-hint">Maks 5 fail · setiap fail maks 10MB (PDF/JPG/PNG/DOC).</div>
+          <div class="file-list" id="fileList"></div>
+        </div>
+      </div>
+
+      <!-- LANGKAH 5 -->
+      <div class="form-card">
+        <span class="step-tag">LANGKAH 5</span>
+        <h2>✅ Pengesahan</h2>
+        <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:12px 16px;margin-bottom:12px">
+          <label class="consent-item"><input type="checkbox" id="fc1" required>
+            <span>Saya mengesahkan maklumat & dokumen yang dihantar adalah <strong>sah dan benar</strong>.</span></label>
+          <label class="consent-item"><input type="checkbox" id="fc2" required>
+            <span>Saya memberi kebenaran maklumat ini disimpan dan digunakan untuk tujuan rekod urus niaga ladang & pematuhan, selaras dengan Akta Perlindungan Data Peribadi (PDPA) 2010.</span></label>
+        </div>
+        <input type="text" name="website" id="f_hp" value="" style="display:none" tabindex="-1" autocomplete="off">
+        <button class="btn-submit" type="submit" id="btnSubmit">📝 Hantar Pendaftaran</button>
+        <div id="msgBox" class="msg-box hidden"></div>
+      </div>
+    </form>
+  </div>
+</main>
+
+<footer class="foot">
+  <p>© 2026 Mr Tanah — Portal Pengurusan · Ladang dikendalikan Strategic Agro Technology (003536560-T)</p>
+</footer>
+
+<script>
+// ===== Konfigurasi =====
+var WEBHOOK = "https://script.google.com/macros/s/AKfycbz7IJBf6dkuKLTV3m-pjvL664GLDx6RJVzbRZMgyD9IobzfbcEmnAfFeuITJ7eqosECkA/exec";
+var WA_FALLBACK = "https://wa.me/60122310119";
+
+var ROLE_LABELS = {
+  pembeli:   "Pembeli",
+  kontraktor: "Pengurus/Kontraktor",
+  dua:        "Pembeli + Pengurus/Kontraktor"
+};
+var state = { role: null };
+
+function el(id){ return document.getElementById(id); }
+function esc(s){ return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+function msgOk(t){ var b=el("msgBox"); b.className="msg-box msg-ok"; b.textContent=t; b.classList.remove("hidden"); }
+function msgErr(t){ var b=el("msgBox"); b.className="msg-box msg-err"; b.textContent=t; b.classList.remove("hidden"); }
+
+// ===== kad peranan =====
+document.querySelectorAll(".role-card").forEach(function(c){
+  c.addEventListener("click", function(){ setRole(c.dataset.role); });
+});
+function setRole(role){
+  state.role = role;
+  document.querySelectorAll(".role-card").forEach(function(x){ x.classList.toggle("sel", x.dataset.role===role); });
+  // petua lesen ikut peranan
+  var tip = el("lesenTip");
+  if (role === "pembeli"){
+    tip.innerHTML = "💡 <strong>Pembeli FFB</strong>: lesen MPOB (peniaga/pengumpul FFB) lazimnya diperlukan — isi jenis & no. lesen jika ada, muat naik salinan di Langkah 4.";
+  } else if (role === "kontraktor"){
+    tip.innerHTML = "💡 <strong>Pengurus/Kontraktor</strong>: pendaftaran SSM mencukupi; isi jenis & no. lesen lain (cth. CIDB, permit) jika berkaitan.";
+  } else if (role === "dua"){
+    tip.innerHTML = "💡 <strong>Pembeli + Pengurus/Kontraktor</strong>: isi lesen pembeli FFB (jika ada) — syarikat boleh memegang lebih daripada satu lesen. Nyatakan dalam nota jika perlu.";
+  }
+}
+
+// ===== jenis lesen "Lain" =====
+el("f_jenis_lesen").addEventListener("change", function(){
+  var lain = el("f_jenis_lesen").value === "Lain";
+  el("fldJenisLain").classList.toggle("hidden", !lain);
+  el("f_jenis_lain").required = lain;
+});
+
+// ===== senarai fail =====
+el("f_files").addEventListener("change", function(){
+  var fl = el("f_files"), out = [];
+  for (var i=0;i<fl.files.length;i++){
+    var f = fl.files[i];
+    out.push("📄 " + esc(f.name) + " (" + (f.size/1024/1024).toFixed(2) + " MB)");
+  }
+  el("fileList").textContent = out.length ? out.join("\n") : "";
+});
+
+// ===== fail → base64 =====
+function fileToBase64(file){
+  return new Promise(function(res, rej){
+    var r = new FileReader();
+    r.onload = function(){ res({ name:file.name, mime:file.type||"application/octet-stream", data:r.result.split(",")[1] }); };
+    r.onerror = rej;
+    r.readAsDataURL(file);
+  });
+}
+
+// ===== hantar =====
+el("dfForm").addEventListener("submit", async function(e){
+  e.preventDefault();
+  var box = el("msgBox"); box.classList.add("hidden");
+  if (!state.role){ msgErr("⚠️ Sila pilih peranan di Langkah 1."); return; }
+  if (el("f_hp").value) return; // honeypot
+
+  var syarikat = el("f_syarikat").value.trim();
+  var nossm = el("f_nossm").value.trim();
+  var pic = el("f_pic").value.trim();
+  var wa = el("f_wa").value.trim();
+  var emel = el("f_emel").value.trim();
+  if (!syarikat){ msgErr("⚠️ Sila isi nama syarikat/pihak di Langkah 2."); return; }
+  if (!nossm){ msgErr("⚠️ Sila isi no. pendaftaran syarikat (SSM) di Langkah 2."); return; }
+  if (!pic || !wa){ msgErr("⚠️ Sila lengkapkan nama pegawai & no. WhatsApp di Langkah 3."); return; }
+  if (!emel){ msgErr("⚠️ Sila isi emel di Langkah 3 — salinan pendaftaran akan dihantar ke emel itu."); return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emel)){ msgErr("⚠️ Alamat emel tidak sah."); return; }
+
+  var jenisLesen = el("f_jenis_lesen").value;
+  var noLesen = el("f_nolesen").value.trim();
+  if (jenisLesen === "Lain"){
+    var lain = el("f_jenis_lain").value.trim();
+    if (!lain){ msgErr("⚠️ Sila nyatakan jenis lesen lain."); return; }
+    jenisLesen = lain;
+  }
+  if (noLesen && !jenisLesen){ msgErr("⚠️ Jika isi no. lesen, sila pilih jenis lesen juga."); return; }
+
+  // fail
+  var files = [];
+  var fl = el("f_files");
+  if (fl.files && fl.files.length){
+    if (fl.files.length > 5){ msgErr("⚠️ Maksimum 5 fail dokumen."); return; }
+    for (var i=0;i<fl.files.length;i++) if (fl.files[i].size > 10*1024*1024){ msgErr("⚠️ Fail \""+fl.files[i].name+"\" melebihi 10MB."); return; }
+    for (var j=0;j<fl.files.length;j++) files.push(await fileToBase64(fl.files[j]));
+  }
+
+  var payload = {
+    jenis: "daftar",
+    peranan: state.role,
+    peranan_label: ROLE_LABELS[state.role],
+    syarikat: syarikat,
+    nossm: nossm,
+    jenis_lesen: jenisLesen,
+    no_lesen: noLesen,
+    pic: pic, wa: wa, emel: emel,
+    nota: el("f_nota").value.trim(),
+    files: files
+  };
+
+  var btn = el("btnSubmit");
+  btn.disabled = true; btn.textContent = "⏳ Menghantar...";
+  try {
+    var resp = await fetch(WEBHOOK, { method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"}, body: JSON.stringify(payload) });
+    var data = await resp.json();
+    if (!data.ok) throw new Error(data.error || "Server menolak");
+    msgOk("✅ Pendaftaran DITERIMA — rujukan: " + data.id
+      + "\nPeranan: " + ROLE_LABELS[state.role]
+      + "\n📩 Salinan pendaftaran dihantar ke emel anda — balas emel itu untuk pertanyaan / tambahan dokumen."
+      + "\n⏳ Pengurusan akan sahkan pendaftaran (status: " + (data.status||"BARU") + ")."
+      + (data.folderUrl ? "\n📁 Folder dokumen: " + data.folderUrl : "")
+      + "\n\nSimpan rujukan ini untuk urusan akan datang.");
+    el("dfForm").reset();
+    el("fileList").textContent = "";
+    state.role = null;
+    document.querySelectorAll(".role-card").forEach(function(x){ x.classList.remove("sel"); });
+    el("fldJenisLain").classList.add("hidden");
+  } catch (err){
+    msgErr("⚠️ Ralat: " + err.message + "\nSila cuba lagi, atau hubungi pengurusan di WhatsApp 012-2310119.");
+  }
+  btn.disabled = false; btn.textContent = "📝 Hantar Pendaftaran";
+});
+
+// preview helper (dev): ?role=&demo=1
+(function(){
+  try {
+    var qs = new URLSearchParams(location.search);
+    var r = qs.get("role");
+    if (r && document.querySelector('[data-role="'+r+'"]')) setRole(r);
+    if (qs.get("demo") === "1"){
+      el("f_syarikat").value = "Anak Jati Maju Enterprise (contoh)";
+      el("f_nossm").value = "201501012345 (contoh)";
+      el("f_jenis_lesen").value = "MPOB (peniaga/pembeli FFB)";
+      el("f_nolesen").value = "MPOB-12345 (contoh)";
+      el("f_pic").value = "Ali bin Abu (contoh)";
+      el("f_wa").value = "012-3456789";
+      el("f_emel").value = "nama@syarikat.com";
+      el("f_nota").value = "Contoh pengisian untuk semakan sahaja.";
+    }
+  } catch(e){}
+})();
+</script>
+</body>
+</html>
