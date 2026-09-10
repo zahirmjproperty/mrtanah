@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Contoh Tab Google Sheet — Aduan Kerosakan (Mock-up) — Mr Tanah</title>
+<style>
+  :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; }
+  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 60%,#14905c 100%); color:#fff; padding:16px; }
+  .topbar h1 { font-size:18px; } .topbar p { font-size:12.5px; opacity:.92; margin-top:2px; }
+  .wrap { max-width:1100px; margin:0 auto; padding:14px 14px 44px; }
+  .card { background:#fff; border-radius:12px; padding:14px; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:16px; }
+  .card h2 { font-size:14px; color:var(--mt-tua); margin-bottom:4px; }
+  .card p.sub { font-size:12px; color:#5a6b61; margin-bottom:10px; }
+  .scroll { overflow-x:auto; }
+  table { border-collapse:collapse; font-size:11.5px; white-space:nowrap; }
+  th { background:#eef3f7; color:var(--mt-tua); padding:6px 8px; text-align:left; border:1px solid #dbe6e0; font-size:11px; }
+  td { padding:6px 8px; border:1px solid #e9f0ec; }
+  tr:nth-child(even) td { background:#fafcfb; }
+  td.new { background:#fff8e8 !important; }
+  th.new { background:#f6e2c4; }
+  .st { font-size:10px; font-weight:800; border-radius:20px; padding:2px 7px; }
+  .s1 { background:#fff1dc; color:#8a4c00; } .s2 { background:#e7f0ff; color:#123a7a; }
+  .s3 { background:#e5f4ec; color:#0e5a33; } .s4 { background:#fdeaea; color:#a12; }
+  .legend { font-size:11.5px; color:#5a6b61; margin-top:8px; }
+  .foot { text-align:center; font-size:11px; color:#6a7a71; margin-top:16px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>📊 Contoh Tab Google Sheet — 4 tab baharu</h1>
+    <p>Workbook sedia ada: 🏠 MT — Penyelenggaraan Unit (Fasa A) · lajur lama KEKAL, lajur <b>kuning</b> = tambahan baharu</p>
+  </div>
+  <div class="wrap">
+
+    <div class="card">
+      <h2>Tab 1 — Senarai Unit &amp; Kontraktor (sedia ada, ditunjukkan sebagai rujukan)</h2>
+      <p class="sub">Tidak berubah — RFQ memilih kontraktor dari sini ikut <b>Kepakaran</b> + <b>Kawasan Servis</b>.</p>
+      <div class="scroll"><table>
+        <tr><th>ID</th><th>Nama</th><th>Kepakaran</th><th>Telefon</th><th>Status</th><th>Kawasan Servis</th><th>Rating</th></tr>
+        <tr><td>MT-CK-0007</td><td>Rizal Plumbing &amp; Renovation</td><td>Plumbing, Bocor/Bumbung</td><td>012-345 6789</td><td>Disenarai</td><td>Bangi / Putrajaya</td><td>4.6</td></tr>
+        <tr><td>MT-CK-0011</td><td>Maju Jaya Renovation</td><td>Plumbing, Cat/Kemasan</td><td>013-222 1111</td><td>Disenarai</td><td>Bangi / Kajang</td><td>4.1</td></tr>
+        <tr><td>MT-CK-0014</td><td>Sinaran Aircond &amp; Plumbing</td><td>Penghawa Dingin, Plumbing</td><td>017-888 9999</td><td>Disenarai</td><td>Putrajaya / Cyberjaya</td><td>4.8</td></tr>
+      </table></div>
+      <div class="legend">+ lajur baharu dicadangkan: <b>Rating</b>, <b>Bil. Kerja Selesai</b>, <b>Kadar Tepat Masa</b></div>
+    </div>
+
+    <div class="card">
+      <h2>Tab 2 — <span style="color:var(--hijau)">Sebutharga</span> (BAHARU)</h2>
+      <p class="sub">1 baris = 1 sebut harga. 3 baris = 3 kontraktor bagi tiket yang sama → asas jadual perbandingan.</p>
+      <div class="scroll"><table>
+        <tr><th>Ref SH</th><th>Ref Tiket</th><th>ID Kontraktor</th><th>Nama Kontraktor</th><th>Tarikh Diminta</th><th>Tarikh Diterima</th><th>Jumlah RM</th><th>Skop Ringkas</th><th>Tempoh (hari)</th><th>Waranti (bln)</th><th>Deposit %</th><th>Lampiran</th><th>Status</th></tr>
+        <tr><td>MT-Q-2026-0031</td><td>MT-K-2026-0012</td><td>MT-CK-0007</td><td>Rizal Plumbing</td><td>11/09/2026</td><td>11/09/2026</td><td>480.00</td><td>Ganti paip + cat dinding</td><td>2</td><td>3</td><td>30</td><td>📁 link</td><td><span class="st s2">DIPILIH</span></td></tr>
+        <tr><td>MT-Q-2026-0032</td><td>MT-K-2026-0012</td><td>MT-CK-0011</td><td>Maju Jaya Renovation</td><td>11/09/2026</td><td>12/09/2026</td><td>395.00</td><td>Ganti paip (bahan asas)</td><td>4</td><td>1</td><td>30</td><td>📁 link</td><td><span class="st s1">TIDAK DIPILIH</span></td></tr>
+        <tr><td>MT-Q-2026-0033</td><td>MT-K-2026-0012</td><td>MT-CK-0014</td><td>Sinaran Aircond</td><td>11/09/2026</td><td>12/09/2026</td><td>560.00</td><td>Ganti paip + ujian tekanan</td><td>1</td><td>6</td><td>30</td><td>📁 link</td><td><span class="st s1">TIDAK DIPILIH</span></td></tr>
+      </table></div>
+    </div>
+
+    <div class="card">
+      <h2>Tab 3 — <span style="color:var(--hijau)">Work Order</span> (BAHARU)</h2>
+      <div class="scroll"><table>
+        <tr><th>No WO</th><th>Ref Tiket</th><th>Ref SH</th><th>Kontraktor</th><th>Jumlah Kontrak</th><th>Deposit %</th><th>Jumlah Deposit</th><th>Retensi %</th><th>Tarikh WO</th><th>Mula</th><th>Siap Sasaran</th><th>Status</th><th>Siap Sebenar</th><th>QC</th><th>Terimaan Pemilik</th><th>Baki Dibayar</th><th>Waranti Hingga</th><th>Review</th></tr>
+        <tr><td>MT-WO-2026-0009</td><td>MT-K-2026-0012</td><td>MT-Q-2026-0031</td><td>Rizal Plumbing</td><td>480.00</td><td>30</td><td>144.00</td><td>0</td><td>16/09/2026</td><td>16/09/2026</td><td>17/09/2026</td><td><span class="st s2">DALAM KERJA</span></td><td>—</td><td>—</td><td>—</td><td>—</td><td>17/12/2026</td><td>—</td></tr>
+        <tr><td>MT-WO-2026-0008</td><td>MT-K-2026-0008</td><td>MT-Q-2026-0027</td><td>Sinaran Aircond</td><td>1,250.00</td><td>30</td><td>375.00</td><td>5</td><td>02/09/2026</td><td>03/09/2026</td><td>05/09/2026</td><td><span class="st s3">QC LULUS</span></td><td>05/09/2026</td><td>LULUS 06/09</td><td>06/09/2026</td><td>812.50</td><td>05/12/2026</td><td>5★</td></tr>
+      </table></div>
+      <div class="legend">Retensi 5% hanya untuk kerja &gt; RM5,000 (disyorkan) — contoh baris ke-2 guna 0% retensi kerana kerja kecil.</div>
+    </div>
+
+    <div class="card">
+      <h2>Tab 4 — <span style="color:var(--hijau)">Bayaran</span> (BAHARU)</h2>
+      <p class="sub">Setiap wang masuk (dari pemilik) dan wang keluar (ke kontraktor) direkod — jejak audit penuh.</p>
+      <div class="scroll"><table>
+        <tr><th>Ref Bayaran</th><th>Ref Tiket/WO</th><th>Arah</th><th>Pihak</th><th>Amaun RM</th><th>Kaedah</th><th>Rujukan</th><th>Tarikh Mohon</th><th>Tarikh Bayar</th><th>Bukti</th><th>Status</th><th>Disahkan Oleh</th></tr>
+        <tr><td>MT-BY-2026-0101</td><td>MT-K-2026-0012</td><td><span class="st s3">MASUK</span></td><td>En. Kamal (pemilik)</td><td>144.00</td><td>Billplz FPX</td><td>BILL-9f2k…</td><td>12/09/2026</td><td>15/09/2026</td><td>📁 resit</td><td><span class="st s3">DIBAYAR</span></td><td>Zahir</td></tr>
+        <tr><td>MT-BY-2026-0102</td><td>MT-WO-2026-0009</td><td><span class="st s4">KELUAR</span></td><td>Rizal Plumbing</td><td>144.00</td><td>Pindahan bank</td><td>DuitNow 16/9</td><td>16/09/2026</td><td>16/09/2026</td><td>📁 bukti</td><td><span class="st s3">DIBAYAR</span></td><td>Zahir</td></tr>
+        <tr><td>MT-BY-2026-0103</td><td>MT-WO-2026-0009</td><td><span class="st s4">KELUAR</span></td><td>Rizal Plumbing (baki)</td><td>336.00</td><td>Pindahan bank</td><td>—</td><td>17/09/2026</td><td>—</td><td>—</td><td><span class="st s1">DIJANGKA</span></td><td>—</td></tr>
+        <tr><td>MT-BY-2026-0099</td><td>MT-K-2026-0012</td><td><span class="st s3">MASUK</span></td><td>En. Kamal (pemilik)</td><td>144.00</td><td>Emel bukti pindahan</td><td>mrtanahmy 14/9</td><td>14/09/2026</td><td>14/09/2026</td><td>📁 gambar</td><td><span class="st s3">DIBAYAR</span></td><td>Zahir</td></tr>
+      </table></div>
+      <div class="legend">Cara bayaran: (a) pautan Billplz (auto rekod), (b) emel bukti ke <b>mrtanahmy@gmail.com</b> — Ali semak masuk, hantar kepada Zahir untuk <b>sahkan</b> sebelum status jadi DIBAYAR.</div>
+    </div>
+
+    <div class="card">
+      <h2>Tab 5 — <span style="color:var(--hijau)">Tickets</span> (SEDIA ADA + lajur baharu kuning)</h2>
+      <div class="scroll"><table>
+        <tr><th>No Rujukan</th><th>Tarikh</th><th>Unit</th><th>Nama Pelapor</th><th>Jenis Kerosakan</th><th>Status</th><th class="new">Keutamaan</th><th class="new">Kategori Kos</th><th class="new">Pihak Bertanggungjawab</th><th class="new">Jumlah Diluluskan</th><th class="new">Kontraktor Dipilih</th><th class="new">No WO</th><th class="new">Tarikh Tutup</th></tr>
+        <tr><td>MT-K-2026-0012</td><td>10/09/2026</td><td>A-3-2 Mewas</td><td>En. Hafiz</td><td>Plumbing</td><td><span class="st s2">MENUNGGU PEMILIK</span></td><td class="new">Tinggi</td><td class="new">Baiki</td><td class="new">Pemilik</td><td class="new">480.00</td><td class="new">Rizal Plumbing</td><td class="new">MT-WO-2026-0009</td><td class="new">—</td></tr>
+        <tr><td>MT-K-2026-0010</td><td>08/09/2026</td><td>C-1-5 Vista</td><td>Pn. Salmah</td><td>Bocor / Bumbung</td><td><span class="st s4">RUJUK JMB</span></td><td class="new">Tinggi</td><td class="new">Baiki</td><td class="new">JMB (harta bersama)</td><td class="new">—</td><td class="new">—</td><td class="new">—</td><td class="new">—</td></tr>
+      </table></div>
+      <div class="legend">Semua perubahan status dibuat melalui halaman/webhook atau Ali — <b>bukan</b> edit manual dalam Sheet (elak aliran rosak).</div>
+    </div>
+
+    <p class="foot">Mock-up POC — Mr Tanah · Preview sahaja · 10 September 2026</p>
+  </div>
+</body>
+</html>

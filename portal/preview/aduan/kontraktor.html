@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Kontraktor — Sebut Harga &amp; Work Order (Mock-up) — Mr Tanah</title>
+<style>
+  :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; }
+  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 60%,#14905c 100%); color:#fff; padding:16px; }
+  .topbar h1 { font-size:18px; } .topbar p { font-size:12.5px; opacity:.92; margin-top:2px; }
+  .wrap { max-width:560px; margin:0 auto; padding:14px 14px 44px; }
+  .card { background:#fff; border-radius:14px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:13px; }
+  .card h2 { font-size:14.5px; color:var(--mt-tua); margin-bottom:10px; display:flex; align-items:center; gap:7px; }
+  .pill { display:inline-block; font-size:10.5px; font-weight:800; border-radius:20px; padding:3px 9px; letter-spacing:.3px; }
+  .p-rfq { background:#fff1dc; color:#8a4c00; } .p-wo { background:#e7f0ff; color:#123a7a; } .p-ok { background:#e5f4ec; color:#0e5a33; }
+  label { display:block; font-size:12.5px; font-weight:600; margin:11px 0 4px; }
+  input,textarea,select { width:100%; padding:10px 12px; border:1.5px solid #cfdcd4; border-radius:10px; font-size:15px; background:#fbfdfc; }
+  textarea { min-height:70px; resize:vertical; }
+  .row { display:flex; gap:10px; } .row > div { flex:1; }
+  .btn { width:100%; padding:13px; background:var(--oren); color:#fff; border:0; border-radius:11px; font-size:15.5px; font-weight:700; cursor:pointer; margin-top:14px; }
+  .btn.sec { background:var(--mt); }
+  .btn.ghost { background:#eef3f7; color:var(--mt-tua); }
+  .meta { background:#f6faf8; border:1px solid #e0eae3; border-radius:11px; padding:11px 12px; font-size:12.7px; }
+  .meta b { color:var(--mt-tua); }
+  .ok { background:#e5f4ec; border:1px solid #bfe3cf; color:#0e5a33; border-radius:11px; padding:13px; font-size:13px; margin-top:12px; display:none; }
+  .ok.on { display:block; }
+  .ref { font-size:16px; font-weight:800; color:var(--mt-tua); }
+  .hint { font-size:11.5px; color:#5a6b61; margin-top:4px; }
+  .sh { display:flex; justify-content:space-between; font-size:13px; padding:7px 0; border-bottom:1px dashed #e2ebe5; }
+  .sh:last-child { border-bottom:0; }
+  .foot { text-align:center; font-size:11px; color:#6a7a71; margin-top:16px; }
+  .sim { font-size:11.5px; color:#8a4c00; background:#fff8e8; border:1px dashed var(--oren); border-radius:9px; padding:8px 10px; margin-top:10px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>🔧 Portal Kontraktor</h1>
+    <p>Pautan peribadi: portal/preview/aduan/kontraktor.html?k=k001&amp;t=••••</p>
+  </div>
+  <div class="wrap">
+    <div class="card">
+      <h2>👤 En. Rizal — Rizal Plumbing &amp; Renovation</h2>
+      <div class="meta">
+        Kepakaran: <b>Plumbing, Bocor/Bumbung</b> · Kawasan: <b>Bangi / Putrajaya</b><br>
+        Status kontraktor: <b>Disenarai (MT-CK-0007)</b> · Rating semasa: <b>4.6/5 (12 kerja)</b>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📨 Permintaan Sebut Harga <span class="pill p-rfq">MT-Q DIMINTA</span></h2>
+      <div class="meta">
+        <b>Ref:</b> MT-K-2026-0012 (RFQ MT-Q-2026-0031)<br>
+        <b>Unit:</b> Blok A-3-2, Pangsapuri Mewas, Bandar Baru Bangi<br>
+        <b>Keutamaan:</b> Tinggi · <b>Tarikh diminta:</b> 10/09/2026 · <b>Harap balas:</b> 13/09/2026<br>
+        <b>Skop:</b> Paip PVC bawah sinki dapur bocor — ganti paip + sealant, uji kebocoran, cat semula dinding sekeliling (kecuali kabinet).
+      </div>
+      <div class="sim">🧪 Simulasi: isi sahaja dan tekan butang — data tidak dihantar ke mana-mana.</div>
+      <label>Jumlah sebut harga (RM)</label>
+      <input type="text" value="480.00">
+      <div class="row">
+        <div><label>Tempoh kerja (hari)</label><input type="text" value="2"></div>
+        <div><label>Waranti kerja (bulan)</label><input type="text" value="3"></div>
+      </div>
+      <label>Deposit diminta (%)</label>
+      <select><option>30%</option><option>0% (bayar penuh selepas siap)</option><option>50%</option></select>
+      <label>Skop / nota tambahan</label>
+      <textarea>Termasuk bahan (paip PVC 1½", sealant, simen, cat). Kerja 2 hari, siap pada hari kedua sebelum 5 petang. Waranti 3 bulan untuk kerja paip.</textarea>
+      <label>Lampiran sebut harga (gambar/PDF)</label>
+      <input type="file"><div class="hint">Boleh muat naik sebut harga bertulis, atau taip terus di atas.</div>
+      <button class="btn" onclick="document.getElementById('okRFQ').classList.add('on');">🚀 Hantar Sebut Harga</button>
+      <div class="ok" id="okRFQ">
+        ✅ Sebut harga <b>MT-Q-2026-0031</b> diterima.<br>MT akan bandingkan dengan kontraktor lain dan maklumkan keputusan dalam 3 hari bekerja.<div class="ref" style="margin-top:6px">RM 480.00 · 2 hari · waranti 3 bulan</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📄 Work Order <span class="pill p-wo">WO DIKELUARKAN</span></h2>
+      <div class="meta">
+        <b>No. WO:</b> MT-WO-2026-0009 · <b>Dikeluarkan:</b> 14/09/2026<br>
+        <b>Jumlah kontrak:</b> RM 480.00 · <b>Deposit 30%:</b> RM 144.00 (dibayar 15/09/2026)<br>
+        <b>Baki:</b> RM 336.00 — dibayar selepas QC &amp; terimaan pemilik<br>
+        <b>Tarikh mula:</b> 16/09/2026 · <b>Siap sasaran:</b> 17/09/2026 · <b>Waranti hingga:</b> 17/12/2026
+      </div>
+      <a class="btn sec" style="display:block;text-align:center;text-decoration:none" href="workorder.pdf" onclick="return false">⬇️ Muat Turun Work Order (PDF)</a>
+      <button class="btn ghost" onclick="this.textContent='✅ Work Order DITERIMA — 14/09/2026 21:04'">✅ Saya Terima Work Order Ini</button>
+    </div>
+
+    <div class="card">
+      <h2>📷 Laporan Kerja Siap <span class="pill p-rfq">BELUM LAPOR</span></h2>
+      <div class="sim">Hantar gambar siap + nota. MT akan buat QC sebelum bayaran baki dilepaskan.</div>
+      <label>Nota kerja siap</label>
+      <textarea>Paip diganti, tiada lagi bocor (diuji 24 jam). Dinding dicat semula. Kabinet tidak disentuh.</textarea>
+      <label>Gambar kerja siap (3–6 gambar)</label>
+      <input type="file" multiple>
+      <label>Tandatangan penerimaan kontraktor</label>
+      <input type="text" value="Rizal (Rizal Plumbing) — 17/09/2026">
+      <button class="btn" onclick="document.getElementById('okSiap').classList.add('on');">📤 Hantar Laporan Siap</button>
+      <div class="ok" id="okSiap">✅ Laporan siap diterima. MT akan buat QC. Bayaran baki RM336.00 akan diproses selepas terimaan pemilik.</div>
+    </div>
+
+    <p class="foot">Mock-up POC — Mr Tanah · Preview sahaja</p>
+  </div>
+</body>
+</html>
