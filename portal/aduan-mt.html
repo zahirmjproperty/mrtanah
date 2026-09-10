@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Papan MT — Aduan Kerosakan (Admin)</title>
+<style>
+  :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; --ungu:#7a4bbd; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; }
+  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 60%,#14905c 100%); color:#fff; padding:14px 16px; position:sticky; top:0; z-index:5; }
+  .topbar h1 { font-size:17px; } .topbar p { font-size:12px; opacity:.92; }
+  .wrap { max-width:860px; margin:0 auto; padding:14px 12px 60px; }
+  .card { background:#fff; border-radius:14px; padding:14px; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:12px; }
+  .card h2 { font-size:14px; color:var(--mt-tua); margin-bottom:9px; }
+  .kpi { display:flex; gap:7px; margin-bottom:12px; flex-wrap:wrap; }
+  .kpi div { flex:1; min-width:88px; background:#fff; border-radius:12px; padding:10px 6px; text-align:center; box-shadow:0 1px 3px rgba(0,0,0,.07); }
+  .kpi b { display:block; font-size:17px; color:var(--mt-tua); } .kpi span { font-size:10px; color:#5a6b61; }
+  table { width:100%; border-collapse:collapse; font-size:12.2px; }
+  th { background:#eef3f7; color:var(--mt-tua); text-align:left; padding:7px 6px; font-size:11px; }
+  td { padding:8px 6px; border-top:1px solid #e9f0ec; vertical-align:top; }
+  tr.tap { cursor:pointer; } tr.tap:hover td { background:#f7fbf9; }
+  .num { text-align:right; white-space:nowrap; }
+  .meta { background:#f6faf8; border:1px solid #e0eae3; border-radius:11px; padding:11px 12px; font-size:12.6px; }
+  .meta b { color:var(--mt-tua); }
+  .st { font-size:9.8px; font-weight:800; border-radius:20px; padding:2px 8px; display:inline-block; white-space:nowrap; }
+  .s-wait { background:#eef3f7; color:#5a6b61; } .s-claim { background:#fff1dc; color:#8a4c00; }
+  .s-ok { background:#e5f4ec; color:#0e5a33; } .s-bad { background:#fdeaea; color:#a12; }
+  .s-priv { background:#f3eefb; color:#5b34a3; }
+  label { display:block; font-size:12.3px; font-weight:600; margin:10px 0 4px; }
+  input,select,textarea { width:100%; padding:9px 11px; border:1.5px solid #cfdcd4; border-radius:10px; font-size:14.5px; background:#fbfdfc; }
+  textarea { min-height:64px; }
+  .row { display:flex; gap:9px; } .row > div { flex:1; }
+  .btn { width:100%; padding:12px; background:var(--mt); color:#fff; border:0; border-radius:11px; font-size:14.5px; font-weight:700; cursor:pointer; margin-top:11px; }
+  .btn.o { background:var(--oren); } .btn.g { background:#eef3f7; color:var(--mt-tua); } .btn.u { background:var(--ungu); }
+  .btn:disabled { opacity:.55; cursor:not-allowed; }
+  .ok { background:#e5f4ec; border:1px solid #bfe3cf; color:#0e5a33; border-radius:11px; padding:11px; font-size:12.8px; margin-top:10px; }
+  .err { background:#fdeaea; border:1px solid #f2c2c2; color:#8c1f1f; border-radius:11px; padding:11px; font-size:12.8px; margin-top:10px; }
+  .priv { background:#f3eefb; border:1px solid #ddd0f2; border-radius:11px; padding:11px; font-size:12.5px; color:#4a2b8a; margin-top:10px; }
+  .hint { font-size:11.3px; color:#5a6b61; margin-top:5px; }
+  .chk { display:flex; gap:8px; align-items:flex-start; font-size:12.5px; margin-top:6px; font-weight:400; }
+  .chk input { width:17px; height:17px; margin-top:2px; accent-color:var(--mt); }
+  .foot { text-align:center; font-size:11px; color:#6a7a71; margin-top:14px; }
+  .hide { display:none !important; }
+  .link { font-size:11.5px; word-break:break-all; background:#f2f7fb; border:1px dashed #b9cde0; border-radius:9px; padding:8px; margin-top:6px; }
+  .splash { text-align:center; padding:34px 16px; color:#5a6b61; font-size:14px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>📋 Papan MT — Aduan Kerosakan</h1>
+    <p>Zahir / Fadilah · tindakan pihak MT (dalaman)</p>
+  </div>
+  <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
+<script>
+var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
+var wrap = document.getElementById("wrap");
+var D = null, AKTIF = "";
+function tok(){ return localStorage.getItem("mt_admin_token") || ""; }
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
+function rp(n){ return "RM " + (Number(n)||0).toFixed(2); }
+function splash(h){ wrap.innerHTML = '<div class="splash">' + h + '</div>'; }
+function post(p){ p.admin_token = tok(); return fetch(API,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(p)}).then(function(r){return r.json();}); }
+function cls(s){ s=String(s||"").toUpperCase();
+  if (s.indexOf("SELESAI")>=0||s.indexOf("QC LULUS")>=0||s.indexOf("DIBAYAR")>=0) return "s-ok";
+  if (s.indexOf("TOLAK")>=0||s.indexOf("GAGAL")>=0) return "s-bad";
+  if (s.indexOf("MENUNGGU")>=0||s.indexOf("SEBUT HARGA")>=0||s.indexOf("TUNTUTAN")>=0||s.indexOf("KERJA")>=0) return "s-claim";
+  return "s-wait"; }
+
+/* ---------- log masuk ---------- */
+function login(){
+  wrap.innerHTML = '<div class="card"><h2>🔐 Akses Papan MT</h2>' +
+    '<p class="hint">Masukkan token admin MT (disimpan dalam telefon ini sahaja, tidak dihantar ke mana-mana selain webhook MT).</p>' +
+    '<label>Token admin</label><input type="password" id="tk" placeholder="mtadm-…">' +
+    '<button class="btn" id="bLogin">Masuk</button><div id="mLogin"></div></div>';
+  document.getElementById("bLogin").onclick = function(){
+    var v = document.getElementById("tk").value.trim();
+    if (!v) { document.getElementById("mLogin").innerHTML = '<div class="err">Token diperlukan.</div>'; return; }
+    localStorage.setItem("mt_admin_token", v);
+    load();
+  };
+}
+
+/* ---------- muat papan ---------- */
+function load(){
+  splash("Memuatkan papan…");
+  post({ form:"papan" }).then(function(d){
+    if (!d.ok) { localStorage.removeItem("mt_admin_token"); login(); return; }
+    D = d; renderPapan();
+  }).catch(function(){ splash("Ralat memuatkan. <a href='#' onclick='load();return false'>Cuba lagi</a>"); });
+}
+
+function renderPapan(){
+  var t = D.tiket || [], aktif = t.filter(function(x){ return x.status !== "SELESAI"; });
+  var h = '<div class="kpi">' +
+    '<div><b>' + aktif.length + '</b><span>tiket aktif</span></div>' +
+    '<div><b>' + t.filter(function(x){return /MENUNGGU|DILULUSKAN|SEBUT HARGA/.test(x.status);}).length + '</b><span>menunggu pemilik/kelulusan</span></div>' +
+    '<div><b>' + t.filter(function(x){return /KERJA|QC|SIAP|TERIMAAN/.test(x.status);}).length + '</b><span>dalam kerja/QC</span></div>' +
+    '<div><b>' + t.filter(function(x){return x.status === "SELESAI";}).length + '</b><span>selesai</span></div></div>';
+
+  h += '<div class="card"><h2>🗂️ Semua Tiket ' + (D.masa ? '<span class="hint" style="font-weight:400">(' + esc(D.masa) + ')</span>' : '') + '</h2>';
+  if (!t.length) h += '<p class="hint">Belum ada tiket aduan.</p>';
+  else {
+    h += '<table><tr><th>Ref</th><th>Unit</th><th>Status</th><th class="num">Diluluskan</th><th></th></tr>';
+    t.slice().reverse().forEach(function(x){
+      h += '<tr class="tap" data-ref="' + esc(x.ref) + '"><td><b>' + esc(x.ref) + '</b><br><span class="hint">' + esc(x.tarikh) + '</span></td>' +
+        '<td>' + esc(x.unit) + '<br><span class="hint">' + esc(x.jenis) + '</span></td>' +
+        '<td><span class="st ' + cls(x.status) + '">' + esc(x.status) + '</span>' +
+        (x.dirujuk ? '<br><span class="st s-priv">🔒 ' + esc(x.dirujuk) + '</span>' : '') + '</td>' +
+        '<td class="num">' + (x.diluluskan ? rp(x.diluluskan) : "—") +
+        (x.kos_urus ? '<br><span class="hint">kos ' + rp(x.kos_urus) + '</span>' : '') + '</td>' +
+        '<td>›</td></tr>';
+    });
+    h += '</table>';
+  }
+  h += '<button class="btn g" id="bOut">Log keluar (buang token dari telefon)</button></div>';
+  wrap.innerHTML = h;
+  [].forEach.call(wrap.querySelectorAll("tr.tap"), function(r){ r.onclick = function(){ detail(r.getAttribute("data-ref")); }; });
+  document.getElementById("bOut").onclick = function(){ localStorage.removeItem("mt_admin_token"); login(); };
+}
+
+/* ---------- detail tiket ---------- */
+function detail(ref){
+  AKTIF = ref;
+  splash("Memuatkan tiket " + ref + "…");
+  post({ form:"detail", ref:ref }).then(function(d){
+    if (!d.ok) { splash("❌ " + esc(d.error) + " <a href='#' onclick='renderPapan();return false'>Kembali</a>"); return; }
+    renderDetail(d);
+  });
+}
+
+function renderDetail(d){
+  var t = d.tiket, w = d.wo, h = "";
+  h += '<div class="card"><h2>👈 <a href="#" id="bBack" style="color:#123a7a;text-decoration:none">Kembali ke papan</a></h2>' +
+    '<div class="meta"><b>' + esc(t.ref) + '</b> · <span class="st ' + cls(t.status) + '">' + esc(t.status) + '</span><br>' +
+    '<b>📍 Unit:</b> ' + esc(t.unit) + '<br><b>Pelapor:</b> ' + esc(t.nama) + ' (' + esc(t.wa) + ') · ' + esc(t.emel) +
+    '<br><b>Jenis:</b> ' + esc(t.jenis) + '<br><b>Keterangan:</b> ' + esc(t.keterangan).replace(/\n/g,"<br>") +
+    '<br><b>Kategori kos:</b> ' + esc(t.kategori || "-") + ' · <b>Tanggungjawab:</b> ' + esc(t.tanggungjawab || "-") +
+    (t.dirujuk ? '<br><b>🔒 Rujukan ejen:</b> ' + esc(t.dirujuk) : '') +
+    (t.folder ? '<br><a href="' + esc(t.folder) + '" target="_blank" style="color:#123a7a">📁 Folder tiket</a>' : '') + '</div></div>';
+
+  /* sebut harga */
+  h += '<div class="card"><h2>📊 Sebut Harga (' + d.sebutharga.length + ')</h2>';
+  if (d.sebutharga.length) {
+    h += '<table><tr><th>Kontraktor</th><th class="num">Jumlah</th><th>Tempoh</th><th>Status</th><th></th></tr>';
+    d.sebutharga.forEach(function(s){
+      h += '<tr><td>' + esc(s.kontraktor) + '</td><td class="num">' + rp(s.jumlah) + '</td><td>' + esc(s.tempoh) + 'h / ' + esc(s.waranti) + 'bln</td>' +
+        '<td><span class="st ' + cls(s.status) + '">' + esc(s.status) + '</span></td>' +
+        '<td>' + (s.status === "DIPILIH" && !w ? '<button class="pick" data-wo="' + esc(s.ref_sh) + '" style="background:#14905c;color:#fff;border:0;border-radius:8px;padding:6px 9px;font-size:11.5px;font-weight:700;cursor:pointer">Keluarkan WO</button>' : '') + '</td></tr>';
+    });
+    h += '</table>';
+  } else h += '<p class="hint">Belum ada sebut harga.</p>';
+
+  var bolehRfq = !d.sebutharga.some(function(s){return s.status === "DIMINTA" || s.status === "DITERIMA" || s.status === "DIPILIH";});
+  if (bolehRfq) {
+    h += '<div style="border-top:1px dashed #dbe6e0;margin-top:11px;padding-top:9px"><b>Hantar RFQ kepada kontraktor</b>' +
+      '<label>Skop kerja</label><textarea id="rfqSkop">' + esc(t.keterangan || "") + '</textarea>' +
+      '<div class="row"><div><label>Harap balas sebelum</label><input type="date" id="rfqHarap"></div>' +
+      '<div><label>Kategori kos</label><select id="rfqKat"><option>Baiki</option><option>Penggantian</option><option>Peningkatan</option></select></div></div>' +
+      '<div class="row"><div><label>Pihak bertanggungjawab</label><select id="rfqTj"><option>Pemilik</option><option>Penyewa</option><option>JMB/Strata</option><option>Insurans</option></select></div>' +
+      '<div><label>🔒 Rujukan ejen (jika ada)</label><select id="rfqEjen"><option value="">— tiada —</option>';
+    (D.ejen || []).forEach(function(e){ h += '<option>' + esc(e.nama) + '</option>'; });
+    (D.kontraktor && D.kontraktor.length ? [] : []).forEach(function(){});
+    h += '</select></div></div>' +
+      '<label>Pemilik — untuk pautan kelulusan</label>' +
+      '<div class="row"><div><input type="text" id="rfqPNama" placeholder="Nama pemilik"></div>' +
+      '<div><input type="text" id="rfqPEmel" placeholder="Emel pemilik"></div></div>' +
+      '<label>Pilih kontraktor (' + (D.kontraktor||[]).length + ' dalam panel)</label>';
+    (D.kontraktor || []).forEach(function(k){
+      h += '<label class="chk"><input type="checkbox" class="kcek" value="' + esc(k.id) + '" data-nama="' + esc(k.nama) + '" data-emel="' + esc(k.emel) + '" data-wa="' + esc(k.wa) + '">' +
+        '<span><b>' + esc(k.nama) + '</b> — ' + esc(k.kepakaran) + ' · ' + esc(k.kawasan || "") + ' · ' + esc(k.status || "") + '</span></label>';
+    });
+    h += '<button class="btn o" id="bRfq">📨 Hantar RFQ</button><div id="mRfq"></div></div>';
+  }
+  h += '</div>';
+
+  /* WO + tahap */
+  if (w) {
+    h += '<div class="card"><h2>📄 ' + esc(w.no_wo) + ' <span class="st ' + cls(w.status) + '">' + esc(w.status) + '</span></h2>' +
+      '<div class="meta"><b>Kontraktor:</b> ' + esc(w.kontraktor) + ' · <b>Jumlah:</b> ' + rp(w.jumlah) +
+      '<br><b>Kos urus MT:</b> ' + rp(w.kos) + ' (' + esc(w.kos_pct) + '%) · <b>Retensi:</b> ' + esc(w.retensi_pct) + '% (had ' + rp(w.had_retensi) + ')' +
+      '<br><b>Mula:</b> ' + esc(w.mula) + ' · <b>Siap sasaran:</b> ' + esc(w.siap) + (w.siap_sebenar ? ' · <b>Siap sebenar:</b> ' + esc(w.siap_sebenar) : '') +
+      '<br><b>QC:</b> ' + esc(w.qc || "-") + ' · <b>Terimaan:</b> ' + esc(w.terimaan || "-") + ' · <b>Waranti hingga:</b> ' + esc(w.waranti || "-") + ' · <b>Review:</b> ' + (w.review ? esc(w.review) + "★" : "-") +
+      (w.dirujuk ? '<br><b>🔒 Dirujuk:</b> ' + esc(w.dirujuk) + ' (' + esc(w.kadar_ref) + '%)' : '') + '</div>';
+    if (d.tahap.length) {
+      h += '<table style="margin-top:9px"><tr><th>Tahap</th><th>Perkara</th><th class="num">Nilai</th><th class="num">🔒Kos</th><th class="num">🔒Ret</th><th class="num">🔒Bayar K</th><th>Status</th><th></th></tr>';
+      d.tahap.forEach(function(s){
+        h += '<tr><td>' + esc(s.tahap) + '</td><td>' + esc(s.perkara) + '</td><td class="num">' + rp(s.nilai) + '</td>' +
+          '<td class="num">' + rp(s.kos) + '</td><td class="num">' + rp(s.retensi) + '</td><td class="num">' + rp(s.bayar_k) + '</td>' +
+          '<td><span class="st ' + cls(s.status) + '">' + esc(s.status) + '</span></td><td>' +
+          (s.status === "TUNTUTAN" ? '<button class="pick" data-sah="' + esc(s.ref_tahap) + '" style="background:#14905c;color:#fff;border:0;border-radius:8px;padding:5px 8px;font-size:11px;font-weight:700;cursor:pointer">Sah</button>' : '') +
+          '</td></tr>';
+      });
+      h += '</table>';
+    }
+    /* tindakan */
+    h += '<div style="border-top:1px dashed #dbe6e0;margin-top:10px;padding-top:9px">';
+    if (w.status === "SIAP (MENUNGGU QC)") h += '<button class="btn" id="bQc">✅ QC — LULUS</button><button class="btn g" id="bQcG">❌ QC — GAGAL (minta baiki)</button>';
+    h += '<button class="btn u" id="bVo">➕ Tambah VO (kerja tambahan)</button>' +
+      '<div id="voBox" class="hide"><label>Perkara VO</label><input type="text" id="voPerkara">' +
+      '<label>Amaun (RM)</label><input type="text" id="voAmaun"><button class="btn u" id="bVoHantar">Hantar VO</button></div>' +
+      '<div id="mWo"></div></div></div>';
+    /* bayaran */
+    h += '<div class="card"><h2>💳 Bayaran</h2>';
+    if (d.bayaran.length) {
+      h += '<table><tr><th>Ref</th><th>Arah</th><th>Pihak</th><th class="num">Amaun</th><th>Status</th></tr>';
+      d.bayaran.forEach(function(b){ h += '<tr><td>' + esc(b.ref) + '</td><td><span class="st ' + (b.arah === "MASUK" ? "s-ok" : "s-claim") + '">' + esc(b.arah) + '</span></td><td>' + esc(b.pihak) + '</td><td class="num">' + rp(b.amaun) + '</td><td>' + esc(b.status) + '</td></tr>'; });
+      h += '</table>';
+    }
+    h += '<div class="row"><div><label>Arah</label><select id="byArah"><option>MASUK (dari pemilik)</option><option>KELUAR (ke kontraktor)</option></select></div>' +
+      '<div><label>Amaun (RM)</label><input type="text" id="byAmaun"></div></div>' +
+      '<div class="row"><div><label>Pihak</label><input type="text" id="byPihak"></div>' +
+      '<div><label>Tahap (rujukan)</label><select id="byTahap"><option value="">—</option>';
+    d.tahap.forEach(function(s){ h += '<option value="' + esc(s.ref_tahap) + '">' + esc(s.tahap) + ' — ' + esc(s.perkara) + '</option>'; });
+    h += '</select></div></div><button class="btn" id="bBayar">Rekod bayaran</button><div id="mBy"></div></div>';
+  }
+
+  /* referral */
+  if (d.referral && d.referral.length) {
+    h += '<div class="card"><h2><span style="color:#5b34a3">🔒 Bayaran Referral (dalaman)</span></h2>';
+    d.referral.forEach(function(r){
+      h += '<div class="priv"><b>' + esc(r.ref) + '</b> · ' + esc(r.ejen) + ' · kos urus ' + rp(r.kos) + ' × ' + esc(r.kadar) + '% = <b>' + rp(r.amaun) + '</b> · ' + esc(r.status) +
+        (r.status !== "DIBAYAR" ? '<button class="pick" data-refbayar="' + esc(r.ref) + '" style="background:#7a4bbd;color:#fff;border:0;border-radius:8px;padding:6px 10px;font-size:11.5px;font-weight:700;cursor:pointer;display:block;margin-top:7px">Tanda DIBAYAR kepada ejen</button>' : '') + '</div>';
+    });
+    h += '<p class="hint">Bayaran dibuat sekali sahaja, selepas MT menerima bayaran penuh daripada pemilik.</p></div>';
+  }
+
+  /* pautan akses */
+  h += '<div class="card"><h2>🔗 Jana Pautan Akses</h2>' +
+    '<div class="row"><div><label>Peranan</label><select id="akPer"><option value="PEMILIK">Pemilik</option><option value="KONTRAKTOR">Kontraktor</option></select></div>' +
+    '<div><label>Nama</label><input type="text" id="akNama"></div></div>' +
+    '<label>Emel (hantar pautan)</label><input type="text" id="akEmel">' +
+    '<label>Rujukan</label><input type="text" id="akRujuk" value="' + esc(w ? w.no_wo : t.ref) + '">' +
+    '<button class="btn g" id="bAkses">Jana pautan</button><div id="mAkses"></div></div>';
+
+  h += '<div class="card"><button class="btn g" id="bBack2">👈 Kembali ke papan</button></div>';
+  wrap.innerHTML = h;
+  document.getElementById("bBack").onclick = function(e){ e.preventDefault(); renderPapan(); };
+  document.getElementById("bBack2").onclick = function(){ renderPapan(); };
+  bindDetail(d, w);
+}
+
+function bindDetail(d, w){
+  var b1 = document.getElementById("bRfq");
+  if (b1) b1.onclick = function(){
+    var sel = [].filter.call(wrap.querySelectorAll(".kcek"), function(c){ return c.checked; });
+    if (!sel.length) { document.getElementById("mRfq").innerHTML = '<div class="err">Pilih sekurang-kurangnya 1 kontraktor.</div>'; return; }
+    b1.disabled = true; b1.textContent = "Menghantar…";
+    post({ form:"rfq", ref_tiket: AKTIF, skop: document.getElementById("rfqSkop").value,
+      tarikh_harap: document.getElementById("rfqHarap").value, kategori_kos: document.getElementById("rfqKat").value,
+      tanggungjawab: document.getElementById("rfqTj").value, dirujuk_ejen: document.getElementById("rfqEjen").value,
+      pemilik_nama: document.getElementById("rfqPNama").value, pemilik_emel: document.getElementById("rfqPEmel").value,
+      kontraktor: sel.map(function(c){ return { id:c.value, nama:c.getAttribute("data-nama"), emel:c.getAttribute("data-emel"), wa:c.getAttribute("data-wa") }; }) })
+    .then(function(r){
+      b1.disabled = false; b1.textContent = "📨 Hantar RFQ";
+      if (!r.ok) { document.getElementById("mRfq").innerHTML = '<div class="err">❌ ' + esc(r.error) + '</div>'; return; }
+      var x = '<div class="ok">✅ RFQ dihantar (' + r.rfq.length + ' kontraktor).</div>';
+      if (r.link_pemilik) x += '<div class="link">🏡 Pautan PEMILIK:<br>' + esc(r.link_pemilik) + '</div>';
+      r.rfq.forEach(function(q){ x += '<div class="link">🔧 ' + esc(q.kontraktor) + ' (' + esc(q.ref_sh) + '):<br>' + esc(q.link) + '</div>'; });
+      document.getElementById("mRfq").innerHTML = x;
+    });
+  };
+  [].forEach.call(wrap.querySelectorAll("button[data-wo]"), function(b){
+    b.onclick = function(){
+      var ref = b.getAttribute("data-wo");
+      var m = prompt("Tarikh mula (YYYY-MM-DD):", new Date().toISOString().slice(0,10)); if (!m) return;
+      var s = prompt("Tarikh siap sasaran (YYYY-MM-DD):"); if (!s) return;
+      b.disabled = true; b.textContent = "…";
+      post({ form:"wo", ref_tiket:AKTIF, ref_sh:ref, tarikh_mula:m, tarikh_siap:s }).then(function(r){
+        alert(r.ok ? "WO " + r.no_wo + " dikeluarkan — " + r.tahap + " tahap bayaran dijana." : "❌ " + r.error);
+        detail(AKTIF);
+      });
+    };
+  });
+  [].forEach.call(wrap.querySelectorAll("button[data-sah]"), function(b){
+    b.onclick = function(){
+      b.disabled = true;
+      post({ form:"sahkan", ref_tahap:b.getAttribute("data-sah"), keputusan:"SAH" }).then(function(r){ alert(r.ok ? "✅ Tuntutan disahkan (" + r.status + ")" : "❌ " + r.error); detail(AKTIF); });
+    };
+  });
+  [].forEach.call(wrap.querySelectorAll("button[data-refbayar]"), function(b){
+    b.onclick = function(){ if (!confirm("Tanda referral ini sebagai DIBAYAR?")) return; b.disabled = true;
+      post({ form:"referralbayar", ref:b.getAttribute("data-refbayar") }).then(function(r){ alert(r.ok ? "✅ Referral dibayar " + rp(r.amaun) : "❌ " + r.error); detail(AKTIF); }); };
+  });
+  var q = document.getElementById("bQc");
+  if (q) q.onclick = function(){ q.disabled = true; post({ form:"qc", no_wo:w.no_wo, keputusan:"LULUS" }).then(function(r){ alert(r.ok ? "✅ QC LULUS" : "❌ " + r.error); detail(AKTIF); }); };
+  var qg = document.getElementById("bQcG");
+  if (qg) qg.onclick = function(){ var n = prompt("Sebab gagal QC:"); if (n === null) return;
+    post({ form:"qc", no_wo:w.no_wo, keputusan:"GAGAL", nota:n }).then(function(r){ alert(r.ok ? "QC GAGAL direkod" : "❌ " + r.error); detail(AKTIF); }); };
+  var bv = document.getElementById("bVo");
+  if (bv) bv.onclick = function(){ document.getElementById("voBox").classList.toggle("hide"); };
+  var bvh = document.getElementById("bVoHantar");
+  if (bvh) bvh.onclick = function(){
+    bvh.disabled = true;
+    post({ form:"vo", no_wo:w.no_wo, perkara:document.getElementById("voPerkara").value, amaun:document.getElementById("voAmaun").value })
+    .then(function(r){ alert(r.ok ? "✅ VO diluluskan — kontrak baharu " + rp(r.jumlah_kontrak) : "❌ " + r.error); detail(AKTIF); });
+  };
+  var bb = document.getElementById("bBayar");
+  if (bb) bb.onclick = function(){
+    bb.disabled = true;
+    var arah = document.getElementById("byArah").value.indexOf("MASUK") === 0 ? "MASUK" : "KELUAR";
+    post({ form:"bayar", ref_tiket:AKTIF, no_wo:w.no_wo, arah:arah, amaun:document.getElementById("byAmaun").value,
+      pihak:document.getElementById("byPihak").value, ref_tahap:document.getElementById("byTahap").value,
+      kaedah:"Pindahan bank" })
+    .then(function(r){ document.getElementById("mBy").innerHTML = r.ok ? '<div class="ok">✅ ' + r.ref + ' — ' + r.arah + ' ' + rp(r.amaun) + ' direkod</div>' : '<div class="err">❌ ' + esc(r.error) + '</div>'; bb.disabled = false; });
+  };
+  var ba = document.getElementById("bAkses");
+  if (ba) ba.onclick = function(){
+    ba.disabled = true;
+    post({ form:"akses", peranan:document.getElementById("akPer").value, nama:document.getElementById("akNama").value,
+      emel:document.getElementById("akEmel").value, rujukan:document.getElementById("akRujuk").value })
+    .then(function(r){ document.getElementById("mAkses").innerHTML = r.ok ? '<div class="link">✅ ' + esc(r.peranan) + ':<br>' + esc(r.link) + '</div>' : '<div class="err">❌ ' + esc(r.error) + '</div>'; ba.disabled = false; });
+  };
+}
+
+if (tok()) load(); else login();
+</script>
+</body>
+</html>
