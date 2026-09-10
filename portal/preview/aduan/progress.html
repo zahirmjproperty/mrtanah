@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Kes Progress Payment — Bayaran Berperingkat (Mock-up) — Mr Tanah</title>
+<style>
+  :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; }
+  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 60%,#14905c 100%); color:#fff; padding:16px; }
+  .topbar h1 { font-size:18px; } .topbar p { font-size:12.5px; opacity:.92; margin-top:2px; }
+  .wrap { max-width:640px; margin:0 auto; padding:14px 14px 44px; }
+  .card { background:#fff; border-radius:14px; padding:15px; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:13px; }
+  .card h2 { font-size:14.5px; color:var(--mt-tua); margin-bottom:10px; }
+  .lead { background:#eef6f1; border:1.5px dashed var(--hijau); border-radius:12px; padding:11px 13px; font-size:12.6px; color:#155a35; margin-bottom:13px; }
+  .meta { background:#f6faf8; border:1px solid #e0eae3; border-radius:11px; padding:11px 12px; font-size:12.7px; }
+  .meta b { color:var(--mt-tua); }
+  table { width:100%; border-collapse:collapse; font-size:12px; }
+  th { background:#eef3f7; color:var(--mt-tua); text-align:left; padding:7px 6px; font-size:11px; }
+  td { padding:8px 6px; border-top:1px solid #e9f0ec; vertical-align:top; }
+  tr.now td { background:#fff8e8; }
+  .st { font-size:10px; font-weight:800; border-radius:20px; padding:2px 8px; display:inline-block; white-space:nowrap; }
+  .s-wait { background:#eef3f7; color:#5a6b61; } .s-claim { background:#fff1dc; color:#8a4c00; }
+  .s-ok { background:#e5f4ec; color:#0e5a33; } .s-pay { background:#e7f0ff; color:#123a7a; }
+  .st-.s { }
+  .num { text-align:right; white-space:nowrap; }
+  .btn { width:100%; padding:12px; background:var(--oren); color:#fff; border:0; border-radius:11px; font-size:14.5px; font-weight:700; cursor:pointer; margin-top:12px; }
+  .btn.sec { background:var(--mt); } .btn.ghost { background:#eef3f7; color:var(--mt-tua); }
+  .ok { background:#e5f4ec; border:1px solid #bfe3cf; color:#0e5a33; border-radius:11px; padding:12px; font-size:13px; margin-top:11px; display:none; }
+  .ok.on { display:block; }
+  .sim { font-size:11.5px; color:#8a4c00; background:#fff8e8; border:1px dashed var(--oren); border-radius:9px; padding:8px 10px; margin:10px 0; }
+  .kpi { display:flex; gap:8px; margin-bottom:13px; }
+  .kpi div { flex:1; background:#fff; border-radius:12px; padding:10px 8px; text-align:center; box-shadow:0 1px 3px rgba(0,0,0,.07); }
+  .kpi b { display:block; font-size:16.5px; color:var(--mt-tua); } .kpi span { font-size:10px; color:#5a6b61; }
+  .bar { height:12px; border-radius:8px; background:#e9f0ec; overflow:hidden; margin:8px 0 4px; display:flex; }
+  .bar i { display:block; height:100%; }
+  .who { font-size:11px; font-weight:800; letter-spacing:.4px; text-transform:uppercase; padding:2px 0; }
+  .who.mt { color:var(--mt); } .who.own { color:var(--hijau); } .who.kon { color:#4a2b8a; }
+  .gal { display:flex; gap:6px; margin-top:8px; }
+  .gal div { flex:1; height:52px; border-radius:8px; background:linear-gradient(135deg,#cfe0d6,#9fb9ab); font-size:10px; color:#3c5348; display:flex; align-items:center; justify-content:center; }
+  .foot { text-align:center; font-size:11px; color:#6a7a71; margin-top:16px; }
+  .note { font-size:11.5px; color:#5a6b61; margin-top:8px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>💳 Kes Progress Payment (Bayaran Berperingkat)</h1>
+    <p>Mr Tanah — contoh kerja besar: bumbung bocor + siling runtuh separa</p>
+  </div>
+  <div class="wrap">
+    <div class="lead">🧪 <b>Kes contoh:</b> MT-K-2026-0013 · Jumlah kontrak <b>RM12,400</b> · 3 tahap bayaran + <b>retensi 5%</b> + <b>1 Variation Order</b>. Bandingkan dengan kes kecil MT-K-2026-0012 (deposit 30% + baki sekali sahaja). Halaman ini menunjukkan <b>3 sudut</b>: MT, pemilik, kontraktor.</div>
+
+    <div class="kpi">
+      <div><b>RM12,400</b><span>kontrak asal</span></div>
+      <div><b>RM1,850</b><span>VO diluluskan</span></div>
+      <div><b>RM14,250</b><span>jumlah akhir</span></div>
+      <div><b>RM520</b><span>retensi ditahan</span></div>
+    </div>
+
+    <div class="card">
+      <h2>📋 Sudut MT — Jadual Bayaran (2 hala)</h2>
+      <div class="meta"><b>Tiket:</b> MT-K-2026-0013 · <b>WO:</b> MT-WO-2026-0010 · <b>Kontraktor:</b> Sinaran Aircond &amp; Plumbing (RM12,400) · <b>Pemilik:</b> Pn. Salmah (C-1-5 Vista) · <b>Skop:</b> ganti rangka &amp; penutup bumbung, baiki siling runtuh, cat dalam</div>
+      <table>
+        <tr><th>Tahap</th><th>Perkara</th><th class="num">Amaun</th><th class="num">Retensi</th><th class="num">Bayar bersih</th><th>Status</th></tr>
+        <tr><td>1</td><td>Deposit / mobilisasi (30%)</td><td class="num">3,720</td><td class="num">—</td><td class="num">3,720</td><td><span class="st s-ok">DIBAYAR</span></td></tr>
+        <tr class="now"><td>2</td><td>Rangka &amp; penutup bumbung siap (40%)</td><td class="num">4,960</td><td class="num">248</td><td class="num">4,712</td><td><span class="st s-claim">TUNTUTAN DIHANTAR</span></td></tr>
+        <tr><td>3</td><td>Siap sepenuhnya / CPC (30%)</td><td class="num">3,720</td><td class="num">186</td><td class="num">3,534</td><td><span class="st s-wait">BELUM</span></td></tr>
+        <tr><td>V1</td><td><b>VO</b> — ganti kayu kasau reput (ditemui semasa kerja)</td><td class="num">1,850</td><td class="num">86</td><td class="num">1,764</td><td><span class="st s-claim">MENUNGGU PEMILIK</span></td></tr>
+      </table>
+      <div class="note">📌 Retensi 5% ditolak pada setiap tuntutan interim (bukan pada deposit). Had retensi = 5% daripada jumlah kontrak (RM712). Dilepas <b>50% pada siap praktikal (CPC)</b> dan <b>50% selepas tempoh liabiliti kecacatan 90 hari</b>.</div>
+      <div class="bar"><i style="width:30%;background:var(--hijau)"></i><i style="width:40%;background:var(--oren)"></i><i style="width:30%;background:#dfe8e3"></i></div>
+      <div class="note">Kemajuan bayaran: 30% selesai · 40% sedang dituntut · 30% belum — <b>wang masuk (pemilik) mesti mendahului wang keluar (kontraktor)</b>.</div>
+    </div>
+
+    <div class="card">
+      <h2>🏡 Sudut Pemilik — Luluskan Bayaran Tahap 2</h2>
+      <div class="meta"><b>Tahap 2 · RM4,960</b> daripada kontrak RM12,400 · <b>Bukti:</b> gambar progress (4) + pemeriksaan MT 18/09/2026 · <b>% siap:</b> 68%<br><b>Syarat:</b> Tahap 2 hanya boleh dibayar selepas MT sahkan kerja struktur siap.</div>
+      <div class="gal"><div>📷 bumbung siap</div><div>📷 dalam bumbung</div><div>📷 siling</div><div>📷 tapak</div></div>
+      <button class="btn" onclick="document.getElementById('okOwn').classList.add('on')">✅ Saya LULUS Bayaran Tahap 2 (RM4,960)</button>
+      <button class="btn ghost" onclick="document.getElementById('okOwn2').classList.add('on')">⚠️ Ada isu — Tahan bayaran</button>
+      <div class="ok" id="okOwn">✅ Tahap 2 diluluskan. MT akan teruskan bayaran kepada kontraktor: <b>RM4,960 − retensi RM248 = RM4,712</b>.</div>
+      <div class="ok" id="okOwn2">🛑 Bayaran ditahan. MT akan semak isu Tuan dahulu — kontraktor tidak dibayar sehingga selesai.</div>
+    </div>
+
+    <div class="card">
+      <h2>➕ Variation Order (VO) — kerosakan tersembunyi</h2>
+      <div class="meta"><b>Ref:</b> MT-VO-2026-0003 · <b>Punca:</b> semasa membuka siling, dijumpai kayu kasau reput (tidak kelihatan semasa siasatan awal) · <b>Kerja tambahan:</b> ganti 6 batang kayu kasau + rawatan anti-anai · <b>Amaun:</b> RM1,850<br><b>Kontrak baharu:</b> RM12,400 → <b>RM14,250</b></div>
+      <div class="sim">Kerja pembaikan rumah kerap jumpa kerosakan tersembunyi. VO mesti melalui laluan yang sama: sebut harga → kelulusan pemilik → baru kerja diteruskan.</div>
+      <button class="btn sec" onclick="document.getElementById('okVO').classList.add('on')">✅ Luluskan VO RM1,850</button>
+      <button class="btn ghost" onclick="document.getElementById('okVO2').classList.add('on')">❌ Tolak / minta turun harga</button>
+      <div class="ok" id="okVO">✅ VO diluluskan. Ia menjadi <b>Tahap V1</b> dalam jadual bayaran &amp; kontrak baharu RM14,250 direkodkan.</div>
+      <div class="ok" id="okVO2">❌ VO ditolak/ditangguh. Kerja tambahan TIDAK diteruskan sehingga pemilik bersetuju.</div>
+    </div>
+
+    <div class="card">
+      <h2>🔧 Sudut Kontraktor — Hantar Tuntutan Progress</h2>
+      <div class="meta"><span class="who kon">Sinaran Aircond &amp; Plumbing</span><br><b>WO:</b> MT-WO-2026-0010 · <b>Jadual:</b> Tahap 1 (30%) ✓ dibayar · Tahap 2 (40%) — boleh dituntut sekarang</div>
+      <div class="sim">Kontraktor tekan "Hantar Tuntutan Tahap 2" + muat naik gambar. MT nilai → pemilik lulus → bayaran dibuat (SLA dalaman 7 hari bekerja).</div>
+      <label style="display:block;font-size:12.5px;font-weight:600;margin:10px 0 4px">Nota kerja dicapai</label>
+      <input type="text" value="Rangka &amp; penutup bumbung siap 100%. Ujian hujan 1 jam — tiada bocor. Bahan baki untuk siling.">
+      <label style="display:block;font-size:12.5px;font-weight:600;margin:10px 0 4px">Gambar progress</label>
+      <input type="file" multiple>
+      <button class="btn" onclick="document.getElementById('okKon').classList.add('on')">📤 Hantar Tuntutan Progress (Tahap 2)</button>
+      <div class="ok" id="okKon">✅ Tuntutan <b>RM4,960</b> diterima (MT-PC-2026-0044). MT akan nilai &amp; keluarkan perakuan bayaran. Net selepas retensi: <b>RM4,712</b>.</div>
+    </div>
+
+    <div class="card">
+      <h2>⚙️ Peraturan Sistem (untuk Ali kuatkuasakan)</h2>
+      <div class="meta" style="font-size:12.4px">
+        <b>1.</b> Jumlah tuntutan terkumpul tidak boleh melebihi (kontrak + VO diluluskan).<br>
+        <b>2.</b> Retensi dikira automatik setiap tuntutan; had 5% kontrak; dilepas 50% pada siap, 50% selepas tempoh kecacatan.<br>
+        <b>3.</b> Bayaran keluar ke kontraktor <b>tidak</b> dibuat sebelum wang masuk dari pemilik direkod &amp; disahkan Zahir.<br>
+        <b>4.</b> Tuntutan tanpa bukti (gambar/% siap) tidak diterima.<br>
+        <b>5.</b> Setiap tahap mesti ada rekod: perakuan MT, kelulusan pemilik (jika &gt; had), resit/jujukan bayaran.<br>
+        <b>6.</b> SLA dalaman: tuntutan → perakuan MT 3 hari · pengesahan Zahir 1 hari · bayaran 7 hari bekerja.
+      </div>
+      <div class="note">⚖️ <b>Nota undang-undang:</b> bagi kontrak binaan bertulis, <b>CIPAA 2012</b> memberi hak tuntutan bayaran (progress payment) dan menetapkan <b>respons bertulis dalam 10 hari bekerja</b>; retensi lazim 10% setiap interim dihadkan 5% jumlah kontrak, dilepas 2 peringkat (siap → selepas tempoh kecacatan). WO MT patut nyatakan jadual bayaran + retensi secara bertulis supaya kedua-dua pihak jelas.</div>
+    </div>
+
+    <p class="foot">Mock-up POC — Mr Tanah · Preview sahaja · kaitan: <a href="index.html" style="color:var(--mt)">kembali ke menu mock-up</a></p>
+  </div>
+</body>
+</html>
