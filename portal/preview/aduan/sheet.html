@@ -22,6 +22,11 @@
   tr:nth-child(even) td { background:#fafcfb; }
   td.new { background:#fff8e8 !important; }
   th.new { background:#f6e2c4; }
+  td.fee { background:#f3f7fb !important; }
+  th.fee { background:#dbe8f5; }
+  td.priv { background:#f3eefb !important; }
+  th.priv { background:#e2d5f5; }
+  .lock { font-size:10px; font-weight:800; color:#5b34a3; }
   .st { font-size:10px; font-weight:800; border-radius:20px; padding:2px 7px; }
   .s1 { background:#fff1dc; color:#8a4c00; } .s2 { background:#e7f0ff; color:#123a7a; }
   .s3 { background:#e5f4ec; color:#0e5a33; } .s4 { background:#fdeaea; color:#a12; }
@@ -31,13 +36,13 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>📊 Contoh Tab Google Sheet — 4 tab baharu</h1>
-    <p>Workbook sedia ada: 🏠 MT — Penyelenggaraan Unit (Fasa A) · lajur lama KEKAL, lajur <b>kuning</b> = tambahan baharu</p>
+    <h1>📊 Contoh Tab Google Sheet — struktur baharu</h1>
+    <p>Workbook sedia ada: 🏠 MT — Penyelenggaraan Unit (Fasa A) · lajur lama KEKAL · <span style="background:#f6e2c4;color:#7a4a10;padding:0 4px;border-radius:4px">kuning</span> = baharu · <span style="background:#dbe8f5;color:#123a7a;padding:0 4px;border-radius:4px">biru</span> = kos pengurusan · <span style="background:#e2d5f5;color:#5b34a3;padding:0 4px;border-radius:4px">ungu 🔒</span> = DALAMAN MT sahaja</p>
   </div>
   <div class="wrap">
 
     <div class="card">
-      <h2>Tab 1 — Senarai Unit &amp; Kontraktor (sedia ada, ditunjukkan sebagai rujukan)</h2>
+      <h2>Tab 1 — Kontraktor (sedia ada, rujukan)</h2>
       <p class="sub">Tidak berubah — RFQ memilih kontraktor dari sini ikut <b>Kepakaran</b> + <b>Kawasan Servis</b>.</p>
       <div class="scroll"><table>
         <tr><th>ID</th><th>Nama</th><th>Kepakaran</th><th>Telefon</th><th>Status</th><th>Kawasan Servis</th><th>Rating</th></tr>
@@ -45,12 +50,12 @@
         <tr><td>MT-CK-0011</td><td>Maju Jaya Renovation</td><td>Plumbing, Cat/Kemasan</td><td>013-222 1111</td><td>Disenarai</td><td>Bangi / Kajang</td><td>4.1</td></tr>
         <tr><td>MT-CK-0014</td><td>Sinaran Aircond &amp; Plumbing</td><td>Penghawa Dingin, Plumbing</td><td>017-888 9999</td><td>Disenarai</td><td>Putrajaya / Cyberjaya</td><td>4.8</td></tr>
       </table></div>
-      <div class="legend">+ lajur baharu dicadangkan: <b>Rating</b>, <b>Bil. Kerja Selesai</b>, <b>Kadar Tepat Masa</b></div>
+      <div class="legend">+ lajur dicadangkan: <b>Rating</b>, <b>Bil. Kerja Selesai</b>, <b>Kadar Tepat Masa</b></div>
     </div>
 
     <div class="card">
       <h2>Tab 2 — <span style="color:var(--hijau)">Sebutharga</span> (BAHARU)</h2>
-      <p class="sub">1 baris = 1 sebut harga. 3 baris = 3 kontraktor bagi tiket yang sama → asas jadual perbandingan.</p>
+      <p class="sub">1 baris = 1 sebut harga. 3 baris = 3 kontraktor bagi tiket sama → asas jadual perbandingan.</p>
       <div class="scroll"><table>
         <tr><th>Ref SH</th><th>Ref Tiket</th><th>ID Kontraktor</th><th>Nama Kontraktor</th><th>Tarikh Diminta</th><th>Tarikh Diterima</th><th>Jumlah RM</th><th>Skop Ringkas</th><th>Tempoh (hari)</th><th>Waranti (bln)</th><th>Deposit %</th><th>Lampiran</th><th>Status</th></tr>
         <tr><td>MT-Q-2026-0031</td><td>MT-K-2026-0012</td><td>MT-CK-0007</td><td>Rizal Plumbing</td><td>11/09/2026</td><td>11/09/2026</td><td>480.00</td><td>Ganti paip + cat dinding</td><td>2</td><td>3</td><td>30</td><td>📁 link</td><td><span class="st s2">DIPILIH</span></td></tr>
@@ -62,49 +67,76 @@
     <div class="card">
       <h2>Tab 3 — <span style="color:var(--hijau)">Work Order</span> (BAHARU)</h2>
       <div class="scroll"><table>
-        <tr><th>No WO</th><th>Ref Tiket</th><th>Ref SH</th><th>Kontraktor</th><th>Jumlah Kontrak</th><th>Deposit %</th><th>Jumlah Deposit</th><th>Retensi %</th><th>Tarikh WO</th><th>Mula</th><th>Siap Sasaran</th><th>Status</th><th>Siap Sebenar</th><th>QC</th><th>Terimaan Pemilik</th><th>Baki Dibayar</th><th>Waranti Hingga</th><th>Review</th></tr>
-        <tr><td>MT-WO-2026-0009</td><td>MT-K-2026-0012</td><td>MT-Q-2026-0031</td><td>Rizal Plumbing</td><td>480.00</td><td>30</td><td>144.00</td><td>0</td><td>16/09/2026</td><td>16/09/2026</td><td>17/09/2026</td><td><span class="st s2">DALAM KERJA</span></td><td>—</td><td>—</td><td>—</td><td>—</td><td>17/12/2026</td><td>—</td></tr>
-        <tr><td>MT-WO-2026-0008</td><td>MT-K-2026-0008</td><td>MT-Q-2026-0027</td><td>Sinaran Aircond</td><td>1,250.00</td><td>30</td><td>375.00</td><td>5</td><td>02/09/2026</td><td>03/09/2026</td><td>05/09/2026</td><td><span class="st s3">QC LULUS</span></td><td>05/09/2026</td><td>LULUS 06/09</td><td>06/09/2026</td><td>812.50</td><td>05/12/2026</td><td>5★</td></tr>
+        <tr><th>No WO</th><th>Ref Tiket</th><th>Ref SH</th><th>Kontraktor</th><th>Jumlah Kontrak</th><th class="fee">Kos Pengurusan %</th><th class="fee">Jumlah Kos Pengurusan</th><th>Retensi %</th><th>Had Retensi</th><th>Tarikh WO</th><th>Mula</th><th>Siap Sasaran</th><th>Status</th><th>Siap Sebenar</th><th>QC</th><th>Terimaan Pemilik</th><th>Waranti Hingga</th><th>Review</th></tr>
+        <tr><td>MT-WO-2026-0010</td><td>MT-K-2026-0013</td><td>MT-Q-2026-0035</td><td>Sinaran Aircond</td><td>12,400.00</td><td class="fee">5</td><td class="fee">620.00</td><td>5</td><td>620.00</td><td>13/09/2026</td><td>15/09/2026</td><td>25/09/2026</td><td><span class="st s2">DALAM KERJA</span></td><td>—</td><td>—</td><td>—</td><td>15/10/2026</td><td>—</td></tr>
+        <tr><td>MT-WO-2026-0009</td><td>MT-K-2026-0012</td><td>MT-Q-2026-0031</td><td>Rizal Plumbing</td><td>480.00</td><td class="fee">5</td><td class="fee">24.00</td><td>0</td><td>—</td><td>16/09/2026</td><td>16/09/2026</td><td>17/09/2026</td><td><span class="st s2">DALAM KERJA</span></td><td>—</td><td>—</td><td>—</td><td>17/10/2026</td><td>—</td></tr>
+        <tr><td>MT-WO-2026-0008</td><td>MT-K-2026-0008</td><td>MT-Q-2026-0027</td><td>Sinaran Aircond</td><td>1,250.00</td><td class="fee">5</td><td class="fee">62.50</td><td>0</td><td>—</td><td>02/09/2026</td><td>03/09/2026</td><td>05/09/2026</td><td><span class="st s3">TUTUP</span></td><td>05/09/2026</td><td>LULUS 06/09</td><td>06/09/2026</td><td>05/10/2026</td><td>5★</td></tr>
       </table></div>
-      <div class="legend">Retensi 5% hanya untuk kerja &gt; RM5,000 (disyorkan) — contoh baris ke-2 guna 0% retensi kerana kerja kecil.</div>
+      <div class="legend">Retensi hanya untuk kerja &gt; RM5,000 (contoh: WO-2026-0010) · tempoh liabiliti kecacatan <b>30 hari</b> · <b>Kos Pengurusan 5%</b> = tetapan boleh ubah per WO.</div>
     </div>
 
     <div class="card">
       <h2>Tab 4 — <span style="color:var(--hijau)">Bayaran</span> (BAHARU)</h2>
-      <p class="sub">Setiap wang masuk (dari pemilik) dan wang keluar (ke kontraktor) direkod — jejak audit penuh.</p>
+      <p class="sub">Setiap wang masuk (dari pemilik) &amp; keluar (ke kontraktor) direkod, termasuk potongan kos pengurusan &amp; retensi.</p>
       <div class="scroll"><table>
-        <tr><th>Ref Bayaran</th><th>Ref Tiket/WO</th><th>Arah</th><th>Pihak</th><th>Amaun RM</th><th>Kaedah</th><th>Rujukan</th><th>Tarikh Mohon</th><th>Tarikh Bayar</th><th>Bukti</th><th>Status</th><th>Disahkan Oleh</th></tr>
-        <tr><td>MT-BY-2026-0101</td><td>MT-K-2026-0012</td><td><span class="st s3">MASUK</span></td><td>En. Kamal (pemilik)</td><td>144.00</td><td>Billplz FPX</td><td>BILL-9f2k…</td><td>12/09/2026</td><td>15/09/2026</td><td>📁 resit</td><td><span class="st s3">DIBAYAR</span></td><td>Zahir</td></tr>
-        <tr><td>MT-BY-2026-0102</td><td>MT-WO-2026-0009</td><td><span class="st s4">KELUAR</span></td><td>Rizal Plumbing</td><td>144.00</td><td>Pindahan bank</td><td>DuitNow 16/9</td><td>16/09/2026</td><td>16/09/2026</td><td>📁 bukti</td><td><span class="st s3">DIBAYAR</span></td><td>Zahir</td></tr>
-        <tr><td>MT-BY-2026-0103</td><td>MT-WO-2026-0009</td><td><span class="st s4">KELUAR</span></td><td>Rizal Plumbing (baki)</td><td>336.00</td><td>Pindahan bank</td><td>—</td><td>17/09/2026</td><td>—</td><td>—</td><td><span class="st s1">DIJANGKA</span></td><td>—</td></tr>
-        <tr><td>MT-BY-2026-0099</td><td>MT-K-2026-0012</td><td><span class="st s3">MASUK</span></td><td>En. Kamal (pemilik)</td><td>144.00</td><td>Emel bukti pindahan</td><td>mrtanahmy 14/9</td><td>14/09/2026</td><td>14/09/2026</td><td>📁 gambar</td><td><span class="st s3">DIBAYAR</span></td><td>Zahir</td></tr>
+        <tr><th>Ref Bayaran</th><th>Ref Tiket/WO</th><th>Tahap</th><th>Arah</th><th>Pihak</th><th>Amaun RM</th><th class="fee">Kos Urus MT</th><th class="fee">Retensi</th><th class="fee">Bayar Bersih</th><th>Kaedah</th><th>Rujukan</th><th>Tarikh Bayar</th><th>Status</th><th>Disahkan</th></tr>
+        <tr><td>MT-BY-2026-0101</td><td>MT-K-2026-0013</td><td>1</td><td><span class="st s3">MASUK</span></td><td>Pn. Salmah (pemilik)</td><td>3,720.00</td><td class="fee">—</td><td class="fee">—</td><td class="fee">3,720.00</td><td>Billplz FPX</td><td>BILL-7c1a…</td><td>14/09/2026</td><td><span class="st s3">DIBAYAR</span></td><td>Zahir</td></tr>
+        <tr><td>MT-BY-2026-0102</td><td>MT-WO-2026-0010</td><td>1</td><td><span class="st s4">KELUAR</span></td><td>Sinaran Aircond</td><td>3,720.00</td><td class="fee">186.00</td><td class="fee">—</td><td class="fee">3,534.00</td><td>Pindahan bank</td><td>DuitNow 15/9</td><td>15/09/2026</td><td><span class="st s3">DIBAYAR</span></td><td>Zahir</td></tr>
+        <tr><td>MT-BY-2026-0103</td><td>MT-WO-2026-0010</td><td>2</td><td><span class="st s4">KELUAR</span></td><td>Sinaran Aircond</td><td>4,960.00</td><td class="fee">248.00</td><td class="fee">248.00</td><td class="fee">4,464.00</td><td>Pindahan bank</td><td>—</td><td>—</td><td><span class="st s1">DIJANGKA</span></td><td>—</td></tr>
+        <tr><td>MT-BY-2026-0104</td><td>MT-K-2026-0012</td><td>Dep</td><td><span class="st s3">MASUK</span></td><td>En. Kamal (pemilik)</td><td>144.00</td><td class="fee">—</td><td class="fee">—</td><td class="fee">144.00</td><td>Emel bukti</td><td>mrtanahmy 14/9</td><td>14/09/2026</td><td><span class="st s3">DIBAYAR</span></td><td>Zahir</td></tr>
+        <tr><td>MT-BY-2026-0105</td><td>MT-WO-2026-0009</td><td>Dep</td><td><span class="st s4">KELUAR</span></td><td>Rizal Plumbing</td><td>144.00</td><td class="fee">7.20</td><td class="fee">—</td><td class="fee">136.80</td><td>Pindahan bank</td><td>DuitNow 16/9</td><td>16/09/2026</td><td><span class="st s3">DIBAYAR</span></td><td>Zahir</td></tr>
       </table></div>
-      <div class="legend">Cara bayaran: (a) pautan Billplz (auto rekod), (b) emel bukti ke <b>mrtanahmy@gmail.com</b> — Ali semak masuk, hantar kepada Zahir untuk <b>sahkan</b> sebelum status jadi DIBAYAR.</div>
+      <div class="legend">Cara bayaran masuk: (a) pautan <b>Billplz</b> (auto rekod), (b) <b>emel bukti → mrtanahmy@gmail.com</b> — Ali semak, hantar kepada Zahir untuk <b>SAHKAN</b> sebelum status jadi DIBAYAR.</div>
     </div>
 
     <div class="card">
-      <h2>Tab 4b — <span style="color:var(--hijau)">Jadual Bayaran</span> (BAHARU — kes progress payment)</h2>
-      <p class="sub">1 baris = 1 tahap bayaran. Menakrifkan <b>bila</b> tiap-tiap wang keluar/masuk, retensi, dan syaratnya. Contoh: kes MT-K-2026-0013 (kontrak RM12,400 + VO RM1,850).</p>
+      <h2>Tab 4b — <span style="color:var(--hijau)">Jadual Bayaran</span> (BAHARU — progress payment)</h2>
+      <p class="sub">1 baris = 1 tahap. Menakrifkan <b>bila</b> tiap wang keluar/masuk, potongan kos pengurusan, retensi &amp; syaratnya. Kes MT-K-2026-0013 (kontrak RM12,400 + VO RM1,850 = RM14,250).</p>
       <div class="scroll"><table>
-        <tr><th>Ref Tahap</th><th>No WO</th><th>Tahap</th><th>Perkara</th><th>Syarat Lepas</th><th>Amaun RM</th><th>Retensi RM</th><th>Bayar Bersih RM</th><th>Status</th><th>Tarikh Tuntutan</th><th>Tarikh Sahkan</th><th>Tarikh Bayar</th></tr>
-        <tr><td>MT-PP-2026-0031</td><td>MT-WO-2026-0010</td><td>1</td><td>Deposit / mobilisasi (30%)</td><td>Kelulusan pemilik</td><td>3,720.00</td><td>—</td><td>3,720.00</td><td><span class="st s3">DIBAYAR</span></td><td>13/09/2026</td><td>13/09/2026</td><td>14/09/2026</td></tr>
-        <tr><td>MT-PP-2026-0032</td><td>MT-WO-2026-0010</td><td>2</td><td>Rangka &amp; penutup bumbung siap (40%)</td><td>QC MT + lulus pemilik</td><td>4,960.00</td><td>248.00</td><td>4,712.00</td><td><span class="st s1">TUNTUTAN</span></td><td>18/09/2026</td><td>—</td><td>—</td></tr>
-        <tr><td>MT-PP-2026-0033</td><td>MT-WO-2026-0010</td><td>3</td><td>Siap sepenuhnya / CPC (30%)</td><td>Terimaan pemilik</td><td>3,720.00</td><td>186.00</td><td>3,534.00</td><td><span class="st s2">BELUM</span></td><td>—</td><td>—</td><td>—</td></tr>
-        <tr><td>MT-PP-2026-0034</td><td>MT-WO-2026-0010</td><td>V1</td><td><b>VO</b> — ganti 6 kasau reput + anti-anai</td><td>Kelulusan pemilik (VO)</td><td>1,850.00</td><td>92.50</td><td>1,757.50</td><td><span class="st s1">MENUNGGU PEMILIK</span></td><td>—</td><td>—</td><td>—</td></tr>
-        <tr><td>MT-PP-2026-0035</td><td>MT-WO-2026-0010</td><td>R1</td><td>Pelepasan retensi 50% (pada siap praktikal)</td><td>CPC / terimaan pemilik</td><td>263.25</td><td>—</td><td>263.25</td><td><span class="st s2">BELUM</span></td><td>—</td><td>—</td><td>—</td></tr>
-        <tr><td>MT-PP-2026-0036</td><td>MT-WO-2026-0010</td><td>R2</td><td>Pelepasan retensi baki (selepas tempoh kecacatan 90 hari)</td><td>Tiada kecacatan / waranti tamat</td><td>263.25</td><td>—</td><td>263.25</td><td><span class="st s2">BELUM</span></td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><th>Ref Tahap</th><th>No WO</th><th>Tahap</th><th>Perkara</th><th>Syarat Lepas</th><th>Nilai RM</th><th class="fee">Kos Urus 5%</th><th class="fee">Retensi 5%</th><th class="fee">Bayar Kontraktor</th><th>Status</th><th>Tarikh Tuntutan</th><th>Tarikh Sahkan</th><th>Tarikh Bayar</th></tr>
+        <tr><td>MT-PP-2026-0031</td><td>MT-WO-2026-0010</td><td>1</td><td>Deposit / mobilisasi (30%)</td><td>Kelulusan pemilik</td><td>3,720.00</td><td class="fee">186.00</td><td class="fee">—</td><td class="fee">3,534.00</td><td><span class="st s3">DIBAYAR</span></td><td>13/09/2026</td><td>13/09/2026</td><td>14/09/2026</td></tr>
+        <tr><td>MT-PP-2026-0032</td><td>MT-WO-2026-0010</td><td>2</td><td>Rangka &amp; penutup bumbung siap (40%)</td><td>QC MT + lulus pemilik</td><td>4,960.00</td><td class="fee">248.00</td><td class="fee">248.00</td><td class="fee">4,464.00</td><td><span class="st s1">TUNTUTAN</span></td><td>18/09/2026</td><td>—</td><td>—</td></tr>
+        <tr><td>MT-PP-2026-0033</td><td>MT-WO-2026-0010</td><td>3</td><td>Siap sepenuhnya / CPC (30%)</td><td>Terimaan pemilik</td><td>3,720.00</td><td class="fee">186.00</td><td class="fee">186.00</td><td class="fee">3,348.00</td><td><span class="st s2">BELUM</span></td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td>MT-PP-2026-0034</td><td>MT-WO-2026-0010</td><td>V1</td><td><b>VO</b> — ganti 6 kasau reput + anti-anai</td><td>Kelulusan pemilik (VO)</td><td>1,850.00</td><td class="fee">92.50</td><td class="fee">92.50</td><td class="fee">1,665.00</td><td><span class="st s1">MENUNGGU PEMILIK</span></td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td>MT-PP-2026-0035</td><td>MT-WO-2026-0010</td><td>R1</td><td>Pelepasan retensi 50% (pada siap praktikal)</td><td>CPC / terimaan pemilik</td><td>263.25</td><td class="fee">—</td><td class="fee">—</td><td class="fee">263.25</td><td><span class="st s2">BELUM</span></td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td>MT-PP-2026-0036</td><td>MT-WO-2026-0010</td><td>R2</td><td>Pelepasan retensi baki (selepas tempoh kecacatan <b>30 hari</b>)</td><td>Tiada kecacatan / waranti tamat</td><td>263.25</td><td class="fee">—</td><td class="fee">—</td><td class="fee">263.25</td><td><span class="st s2">BELUM</span></td><td>—</td><td>—</td><td>—</td></tr>
+        <tr style="background:#f7fbf9"><td colspan="5"><b>JUMLAH (kontrak + VO)</b></td><td><b>14,250.00</b></td><td class="fee"><b>712.50</b></td><td class="fee"><b>526.50</b></td><td class="fee"><b>13,011.00</b></td><td colspan="4">+ pelepasan retensi 526.50 → kontraktor terima <b>13,537.50</b></td></tr>
       </table></div>
-      <div class="legend">Lihat mock-up <b>progress.html</b> untuk kes penuh (pandangan MT, pemilik &amp; kontraktor).</div>
+      <div class="legend">Pendapatan MT = <b>RM712.50</b> (5%) — tiada bocor. Lihat kes penuh: <b>progress.html</b>.</div>
     </div>
 
     <div class="card">
       <h2>Tab 5 — <span style="color:var(--hijau)">Tickets</span> (SEDIA ADA + lajur baharu kuning)</h2>
       <div class="scroll"><table>
-        <tr><th>No Rujukan</th><th>Tarikh</th><th>Unit</th><th>Nama Pelapor</th><th>Jenis Kerosakan</th><th>Status</th><th class="new">Keutamaan</th><th class="new">Kategori Kos</th><th class="new">Pihak Bertanggungjawab</th><th class="new">Jumlah Diluluskan</th><th class="new">Kontraktor Dipilih</th><th class="new">No WO</th><th class="new">Tarikh Tutup</th></tr>
-        <tr><td>MT-K-2026-0012</td><td>10/09/2026</td><td>A-3-2 Mewas</td><td>En. Hafiz</td><td>Plumbing</td><td><span class="st s2">MENUNGGU PEMILIK</span></td><td class="new">Tinggi</td><td class="new">Baiki</td><td class="new">Pemilik</td><td class="new">480.00</td><td class="new">Rizal Plumbing</td><td class="new">MT-WO-2026-0009</td><td class="new">—</td></tr>
-        <tr><td>MT-K-2026-0010</td><td>08/09/2026</td><td>C-1-5 Vista</td><td>Pn. Salmah</td><td>Bocor / Bumbung</td><td><span class="st s4">RUJUK JMB</span></td><td class="new">Tinggi</td><td class="new">Baiki</td><td class="new">JMB (harta bersama)</td><td class="new">—</td><td class="new">—</td><td class="new">—</td><td class="new">—</td></tr>
+        <tr><th>No Rujukan</th><th>Tarikh</th><th>Unit</th><th>Nama Pelapor</th><th>Jenis Kerosakan</th><th>Status</th><th class="new">Keutamaan</th><th class="new">Kategori Kos</th><th class="new">Pihak Bertanggungjawab</th><th class="new">Jumlah Diluluskan</th><th class="new">Kos Pengurusan MT</th><th class="new">Kontraktor Dipilih</th><th class="new">No WO</th><th class="priv">🔒 Dirujuk Oleh (Ejen)</th></tr>
+        <tr><td>MT-K-2026-0013</td><td>08/09/2026</td><td>C-1-5 Vista</td><td>Pn. Salmah</td><td>Bocor / Bumbung</td><td><span class="st s2">DALAM KERJA</span></td><td class="new">Tinggi</td><td class="new">Baiki</td><td class="new">Pemilik</td><td class="new">14,250.00</td><td class="new">712.50</td><td class="new">Sinaran Aircond</td><td class="new">MT-WO-2026-0010</td><td class="priv">Ahmad Faiz (IQI)</td></tr>
+        <tr><td>MT-K-2026-0012</td><td>10/09/2026</td><td>A-3-2 Mewas</td><td>En. Hafiz</td><td>Plumbing</td><td><span class="st s2">MENUNGGU PEMILIK</span></td><td class="new">Tinggi</td><td class="new">Baiki</td><td class="new">Pemilik</td><td class="new">480.00</td><td class="new">24.00</td><td class="new">Rizal Plumbing</td><td class="new">MT-WO-2026-0009</td><td class="priv">— (terus)</td></tr>
       </table></div>
-      <div class="legend">Semua perubahan status dibuat melalui halaman/webhook atau Ali — <b>bukan</b> edit manual dalam Sheet (elak aliran rosak).</div>
+      <div class="legend">Semua perubahan status dibuat melalui halaman/webhook atau Ali — <b>bukan</b> edit manual (elak aliran rosak).</div>
+    </div>
+
+    <div class="card">
+      <h2>Tab 6 — <span class="lock">🔒 Ejen Rujukan</span> (BAHARU · DALAMAN)</h2>
+      <p class="sub">Daftar ejen hartanah yang boleh mereferalkan kerja. Kadar referral disimpan <b>per ejen</b> (boleh override per tiket).</p>
+      <div class="scroll"><table>
+        <tr><th>ID Ejen</th><th>Nama</th><th>Agensi</th><th>Telefon</th><th>Emel</th><th class="priv">Kadar Referral %</th><th class="priv">Bank / Akaun</th><th>Status</th><th>Bil. Rujukan</th><th class="priv">Jumlah Referral Dibayar</th></tr>
+        <tr><td>MT-RF-0001</td><td>Ahmad Faiz</td><td>IQI Realty (E(1)1584)</td><td>012-777 1234</td><td>faiz@iqi.com</td><td class="priv">20%</td><td class="priv">Maybank ••••1234</td><td>Aktif</td><td>3</td><td class="priv">RM 385.00</td></tr>
+        <tr><td>MT-RF-0002</td><td>Fadilah</td><td>IQI Realty (COA)</td><td>013-360 9007</td><td>fadilah.property@gmail.com</td><td class="priv">20%</td><td class="priv">CIMB ••••8899</td><td>Aktif</td><td>1</td><td class="priv">RM 24.00</td></tr>
+        <tr><td>MT-RF-0003</td><td>Suresh Kumar</td><td>PropNex (E(3)0123)</td><td>016-555 7788</td><td>suresh@propnex.my</td><td class="priv">10%</td><td class="priv">RHB ••••5566</td><td>Aktif</td><td>0</td><td class="priv">RM 0.00</td></tr>
+      </table></div>
+      <div class="legend"><b>Sejarah disimpan per ejen</b> (bukan padam) — supaya boleh nilai ejen mana yang mendatangkan kerja.</div>
+    </div>
+
+    <div class="card">
+      <h2>Tab 7 — <span class="lock">🔒 Bayaran Referral</span> (BAHARU · DALAMAN)</h2>
+      <p class="sub">Lejar dalaman: berapa MT kena bayar kepada ejen bagi setiap kerja yang dirujuk. <b>Tiada</b> dalam dokumen/halaman pemilik atau kontraktor.</p>
+      <div class="scroll"><table>
+        <tr><th>Ref</th><th>Ref Tiket / WO</th><th>Ejen</th><th class="priv">Kos Pengurusan MT</th><th class="priv">Kadar %</th><th class="priv">Amaun Referral</th><th class="priv">Akru (tarikh)</th><th>Status</th><th>Tarikh Bayar</th><th>Bukti</th><th>Disahkan</th></tr>
+        <tr><td>MT-RFBY-2026-0011</td><td>MT-K-2026-0013 / WO-2026-0010</td><td>Ahmad Faiz</td><td class="priv">712.50</td><td class="priv">20</td><td class="priv">142.50</td><td class="priv">18/09/2026</td><td><span class="st s1">AKRUAL</span></td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td>MT-RFBY-2026-0010</td><td>MT-K-2026-0012 / WO-2026-0009</td><td>Fadilah</td><td class="priv">24.00</td><td class="priv">20</td><td class="priv">4.80</td><td class="priv">14/09/2026</td><td><span class="st s1">AKRUAL</span></td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td>MT-RFBY-2026-0009</td><td>MT-K-2026-0008 / WO-2026-0008</td><td>Ahmad Faiz</td><td class="priv">62.50</td><td class="priv">20</td><td class="priv">12.50</td><td class="priv">06/09/2026</td><td><span class="st s3">DIBAYAR</span></td><td>08/09/2026</td><td>📁</td><td>Zahir</td></tr>
+      </table></div>
+      <div class="legend">Bayaran referral juga muncul dalam tab <b>Bayaran</b> sebagai KELUAR bertanda <span class="lock">🔒 dalaman</span> — supaya jumlah wang keluar MT tetap berjejak penuh. Bayaran dibuat selepas MT menerima bayaran penuh dari pemilik &amp; disahkan Zahir.</div>
     </div>
 
     <p class="foot">Mock-up POC — Mr Tanah · Preview sahaja · 10 September 2026</p>
