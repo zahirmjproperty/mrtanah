@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Portal Kontraktor — Mr Tanah</title>
+<style>
+  :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; }
+  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 60%,#14905c 100%); color:#fff; padding:16px; }
+  .topbar h1 { font-size:18px; } .topbar p { font-size:12.5px; opacity:.92; margin-top:2px; }
+  .wrap { max-width:600px; margin:0 auto; padding:14px 14px 48px; }
+  .card { background:#fff; border-radius:14px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:13px; }
+  .card h2 { font-size:14.5px; color:var(--mt-tua); margin-bottom:10px; }
+  .meta { background:#f6faf8; border:1px solid #e0eae3; border-radius:11px; padding:11px 12px; font-size:12.7px; }
+  .meta b { color:var(--mt-tua); }
+  label { display:block; font-size:12.5px; font-weight:600; margin:11px 0 4px; }
+  input,textarea,select { width:100%; padding:10px 12px; border:1.5px solid #cfdcd4; border-radius:10px; font-size:15px; background:#fbfdfc; }
+  textarea { min-height:70px; resize:vertical; }
+  .row { display:flex; gap:10px; } .row > div { flex:1; }
+  .btn { width:100%; padding:13px; background:var(--oren); color:#fff; border:0; border-radius:11px; font-size:15px; font-weight:700; cursor:pointer; margin-top:13px; }
+  .btn.sec { background:var(--mt); } .btn.ghost { background:#eef3f7; color:var(--mt-tua); }
+  .btn:disabled { opacity:.55; cursor:not-allowed; }
+  .ok { background:#e5f4ec; border:1px solid #bfe3cf; color:#0e5a33; border-radius:11px; padding:12px; font-size:13px; margin-top:11px; }
+  .err { background:#fdeaea; border:1px solid #f2c2c2; color:#8c1f1f; border-radius:11px; padding:12px; font-size:13px; margin-top:11px; }
+  .hide { display:none !important; }
+  table { width:100%; border-collapse:collapse; font-size:12.2px; }
+  th { background:#eef3f7; color:var(--mt-tua); text-align:left; padding:7px 6px; font-size:11px; }
+  td { padding:8px 6px; border-top:1px solid #e9f0ec; }
+  .num { text-align:right; white-space:nowrap; }
+  .st { font-size:10px; font-weight:800; border-radius:20px; padding:2px 8px; display:inline-block; }
+  .s-wait { background:#eef3f7; color:#5a6b61; } .s-claim { background:#fff1dc; color:#8a4c00; }
+  .s-ok { background:#e5f4ec; color:#0e5a33; } .s-bad { background:#fdeaea; color:#a12; }
+  .hint { font-size:11.5px; color:#5a6b61; margin-top:4px; }
+  .foot { text-align:center; font-size:11px; color:#6a7a71; margin-top:16px; }
+  .splash { text-align:center; padding:40px 16px; color:#5a6b61; font-size:14px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>🔧 Portal Kontraktor</h1>
+    <p>Mr Tanah — Pengurusan Penyelenggaraan · ZMJ Solutions</p>
+  </div>
+  <div class="wrap" id="wrap">
+    <div class="splash" id="splash">Memuatkan…</div>
+  </div>
+<script>
+var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
+var TOKEN = new URLSearchParams(location.search).get("t") || "";
+var wrap = document.getElementById("wrap");
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+function rp(n){ return "RM " + (Number(n)||0).toFixed(2); }
+function splash(html){ wrap.innerHTML = '<div class="splash">' + html + '</div>'; }
+
+function post(payload){
+  payload.token = TOKEN;
+  return fetch(API, { method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"}, body: JSON.stringify(payload) })
+    .then(function(r){ return r.json(); });
+}
+function compress(file, cb){
+  var img = new Image(), fr = new FileReader();
+  fr.onload = function(){ img.onload = function(){
+    var w = img.width, h = img.height, max = 1200;
+    if (w > max) { h = Math.round(h * max / w); w = max; }
+    var c = document.createElement("canvas"); c.width = w; c.height = h;
+    c.getContext("2d").drawImage(img, 0, 0, w, h);
+    cb(c.toDataURL("image/jpeg", 0.7));
+  }; img.src = fr.result; };
+  fr.readAsDataURL(file);
+}
+function collectFiles(input, max, cb){
+  var fs = Array.prototype.slice.call(input.files || []).slice(0, max);
+  if (!fs.length) return cb([]);
+  var out = [], i = 0;
+  (function next(){ if (i >= fs.length) return cb(out);
+    compress(fs[i], function(b64){ out.push({ name: fs[i].name.replace(/[^\w.\-]/g,"_"), mime:"image/jpeg", b64:b64 }); i++; next(); });
+  })();
+}
+function box(html){ var d = document.createElement("div"); d.innerHTML = html; return d.firstChild; }
+
+function render(d){
+  if (!d.ok) { splash("⚠️ " + esc(d.error || "Pautan tidak sah atau sudah tamat.") + "<br><br>Sila hubungi Mr Tanah: WhatsApp 016-3119076"); return; }
+  var html = "";
+  html += '<div class="card"><h2>👤 ' + esc(d.nama) + '</h2><div class="meta">Pautan peribadi anda — jangan kongsi. Semua tindakan direkod.</div></div>';
+
+  if (d.rfq && d.rfq.length) {
+    d.rfq.forEach(function(q){
+      var boleh = (q.status === "DIMINTA" || q.status === "DITERIMA");
+      html += '<div class="card"><h2>📨 Permintaan Sebut Harga <span class="st s-claim">' + esc(q.status) + '</span></h2>' +
+        '<div class="meta"><b>Ref:</b> ' + esc(q.ref_sh) + ' · <b>Tiket:</b> ' + esc(q.ref_tiket) + ' · <b>Diminta:</b> ' + esc(q.tarikh_diminta) + '<br><b>Skop:</b> ' + esc(q.skop) + '</div>' +
+        (boleh ? '<label>Jumlah sebut harga (RM)</label><input type="text" id="j_' + q.ref_sh + '" placeholder="cth. 480.00">' +
+          '<div class="row"><div><label>Tempoh kerja (hari)</label><input type="text" id="t_' + q.ref_sh + '" value="2"></div>' +
+          '<div><label>Waranti kerja (bulan)</label><input type="text" id="w_' + q.ref_sh + '" value="3"></div></div>' +
+          '<label>Deposit diminta (%)</label><select id="d_' + q.ref_sh + '"><option value="30">30%</option><option value="0">0% (bayar penuh selepas siap)</option><option value="50">50%</option></select>' +
+          '<label>Skop / nota tambahan</label><textarea id="n_' + q.ref_sh + '"></textarea>' +
+          '<label>Lampiran sebut harga (gambar/PDF — maks 3)</label><input type="file" id="f_' + q.ref_sh + '" accept="image/*" multiple>' +
+          '<button class="btn" data-sh="' + q.ref_sh + '">🚀 Hantar Sebut Harga</button><div id="r_' + q.ref_sh + '"></div>'
+          : '<div class="ok">Sebut harga anda sudah dihantar. Menunggu keputusan Mr Tanah.</div>') + '</div>';
+    });
+  }
+
+  if (d.wo) {
+    html += '<div class="card"><h2>📄 Work Order <span class="st s-ok">' + esc(d.wo.status) + '</span></h2>' +
+      '<div class="meta"><b>No WO:</b> ' + esc(d.wo.no_wo) + '<br><b>Jumlah kontrak:</b> ' + rp(d.wo.jumlah) +
+      '<br><b>Mula:</b> ' + esc(d.wo.tarikh_mula) + ' · <b>Siap sasaran:</b> ' + esc(d.wo.tarikh_siap) +
+      '<br><b>Skop:</b> ' + esc(d.wo.skop) + '</div>';
+    if (d.tahap && d.tahap.length) {
+      html += '<table><tr><th>Tahap</th><th>Perkara</th><th class="num">Bayar</th><th>Status</th></tr>';
+      d.tahap.forEach(function(t){
+        html += '<tr><td>' + esc(t.tahap) + '</td><td>' + esc(t.perkara) + '</td><td class="num">' + rp(t.bayar_kontraktor) +
+          '</td><td><span class="st ' + (t.status === "DIBAYAR" ? "s-ok" : (t.status === "TUNTUTAN" ? "s-claim" : "s-wait")) + '">' + esc(t.status) + '</span></td></tr>';
+      });
+      html += '</table>';
+      html += '<div class="hint">Butang tuntutan muncul pada tahap seterusnya selepas yang sebelum disahkan/dibayar.</div>';
+      d.tahap.forEach(function(t){
+        if (t.status === "BELUM" || t.status === "TUNTUTAN") {
+          html += '<div class="card" style="box-shadow:none;border:1px solid #e0eae3"><b>Tuntutan ' + esc(t.ref_tahap) + ' — ' + esc(t.perkara) + ' (' + rp(t.nilai) + ')</b>' +
+            '<label>Nota kerja dicapai</label><textarea id="tn_' + t.ref_tahap + '"></textarea>' +
+            '<label>Gambar progress (maks 6)</label><input type="file" id="tf_' + t.ref_tahap + '" accept="image/*" multiple>' +
+            '<button class="btn sec" data-tuntut="' + t.ref_tahap + '">📤 Hantar Tuntutan Progress</button><div id="tr_' + t.ref_tahap + '"></div></div>';
+        }
+      });
+    }
+    if (d.wo.status !== "SIAP (MENUNGGU QC)" && d.wo.status !== "QC LULUS" && d.wo.status !== "SELESAI") {
+      html += '<div style="border-top:1px dashed #dbe6e0;margin-top:12px;padding-top:10px"><label>Nota kerja SIAP</label>' +
+        '<textarea id="sn"></textarea><label>Gambar kerja siap (maks 8)</label><input type="file" id="sf" accept="image/*" multiple>' +
+        '<button class="btn" id="btnSiap">📷 Hantar Laporan Kerja Siap</button><div id="sr"></div></div>';
+    }
+    html += '</div>';
+  }
+  wrap.innerHTML = html;
+  bind();
+}
+
+function bind(){
+  [].forEach.call(wrap.querySelectorAll("button[data-sh]"), function(b){
+    var ref = b.getAttribute("data-sh");
+    b.onclick = function(){
+      var j = parseFloat((document.getElementById("j_" + ref).value || "").replace(/[^0-9.]/g, ""));
+      if (!(j > 0)) { document.getElementById("r_" + ref).innerHTML = '<div class="err">Masukkan jumlah sebut harga.</div>'; return; }
+      var f = document.getElementById("f_" + ref);
+      b.disabled = true; b.textContent = "Menghantar…";
+      collectFiles(f, 3, function(files){
+        post({ form:"sebutharga", token:TOKEN, ref_sh:ref, jumlah:j,
+          tempoh: document.getElementById("t_" + ref).value, waranti: document.getElementById("w_" + ref).value,
+          deposit_pct: document.getElementById("d_" + ref).value,
+          skop: "", nota: document.getElementById("n_" + ref).value, files: files })
+        .then(function(r){
+          b.textContent = "Hantar Sebut Harga";
+          document.getElementById("r_" + ref).innerHTML = r.ok
+            ? '<div class="ok">✅ Sebut harga ' + esc(r.ref_sh) + ' — ' + rp(r.jumlah) + ' diterima. Mr Tanah akan maklumkan keputusan.</div>'
+            : '<div class="err">❌ ' + esc(r.error) + '</div>';
+          if (r.ok) b.classList.add("hide");
+          b.disabled = false;
+        }).catch(function(){ b.disabled = false; b.textContent = "Hantar Sebut Harga"; document.getElementById("r_" + ref).innerHTML = '<div class="err">Ralat rangkaian — cuba lagi.</div>'; });
+      });
+    };
+  });
+
+  [].forEach.call(wrap.querySelectorAll("button[data-tuntut]"), function(b){
+    var ref = b.getAttribute("data-tuntut");
+    b.onclick = function(){
+      b.disabled = true; b.textContent = "Menghantar…";
+      collectFiles(document.getElementById("tf_" + ref), 6, function(files){
+        post({ form:"tuntutan", token:TOKEN, ref_tahap:ref, nota: document.getElementById("tn_" + ref).value, files: files })
+        .then(function(r){
+          b.textContent = "Hantar Tuntutan Progress"; b.disabled = false;
+          document.getElementById("tr_" + ref).innerHTML = r.ok
+            ? '<div class="ok">✅ Tuntutan dihantar (status: ' + esc(r.status) + '). Gambar diterima: ' + (r.bukti || 0) + '.</div>'
+            : '<div class="err">❌ ' + esc(r.error) + '</div>';
+        }).catch(function(){ b.disabled = false; b.textContent = "Hantar Tuntutan Progress"; });
+      });
+    };
+  });
+
+  var bs = document.getElementById("btnSiap");
+  if (bs) bs.onclick = function(){
+    bs.disabled = true; bs.textContent = "Menghantar…";
+    collectFiles(document.getElementById("sf"), 8, function(files){
+      post({ form:"siap", token:TOKEN, nota: document.getElementById("sn").value, files: files })
+      .then(function(r){
+        bs.textContent = "Hantar Laporan Kerja Siap"; bs.disabled = false;
+        document.getElementById("sr").innerHTML = r.ok
+          ? '<div class="ok">✅ Laporan siap diterima. Mr Tanah akan buat QC.</div>'
+          : '<div class="err">❌ ' + esc(r.error) + '</div>';
+      }).catch(function(){ bs.disabled = false; bs.textContent = "Hantar Laporan Kerja Siap"; });
+    });
+  };
+}
+
+if (!TOKEN) splash("⚠️ Pautan tidak lengkap (tiada token).<br>Guna pautan yang dihantar Mr Tanah.");
+else fetch(API + "?aksi=kontraktor&token=" + encodeURIComponent(TOKEN))
+  .then(function(r){ return r.json(); }).then(render)
+  .catch(function(){ splash("Ralat memuatkan data. Sila muat semula halaman."); });
+</script>
+</body>
+</html>
