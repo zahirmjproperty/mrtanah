@@ -414,8 +414,8 @@ a { color: inherit; text-decoration: none; }
 .logo-img-header { height: 44px; width: auto; display: block; border-radius: 8px; }
 
 /* Mr Tanah: gambar pasukan */
-.about-img-wrap { margin: 16px 0; text-align: center; }
-.about-img { max-width: 100%; border-radius: 14px; box-shadow: var(--shadow); }
+.about-img-wrap { margin: 16px 0; display: flex; justify-content: center; text-align: center; }
+.about-img { max-width: 100%; width: auto; display: block; margin: 0 auto; border-radius: 14px; box-shadow: var(--shadow); }
 .about-caption { font-size: .85rem; color: var(--muted); margin-top: 6px; text-align: center; }
 
 /* ---------- Navigasi mobile baharu (10/9/2026): chips + bottom bar + grid menu ---------- */
