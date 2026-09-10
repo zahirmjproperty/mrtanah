@@ -314,7 +314,15 @@ function bindDetail(d, w){
   };
 }
 
-if (tok()) load(); else login();
+if (tok()) { load(); }
+else {
+  var q = new URLSearchParams(location.search).get("t") || "";
+  if (q) {
+    localStorage.setItem("mt_admin_token", q);
+    try { history.replaceState(null, "", location.pathname); } catch (e) {}   // buang token dari URL
+    load();
+  } else login();
+}
 </script>
 </body>
 </html>
