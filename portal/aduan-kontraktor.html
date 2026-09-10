@@ -89,7 +89,14 @@ function render(d){
     d.rfq.forEach(function(q){
       var boleh = (q.status === "DIMINTA" || q.status === "DITERIMA");
       html += '<div class="card"><h2>📨 Permintaan Sebut Harga <span class="st s-claim">' + esc(q.status) + '</span></h2>' +
-        '<div class="meta"><b>Ref:</b> ' + esc(q.ref_sh) + ' · <b>Tiket:</b> ' + esc(q.ref_tiket) + ' · <b>Diminta:</b> ' + esc(q.tarikh_diminta) + '<br><b>Skop:</b> ' + esc(q.skop) + '</div>' +
+        '<div class="meta"><b>Ref:</b> ' + esc(q.ref_sh) + ' · <b>Tiket:</b> ' + esc(q.ref_tiket) +
+        (q.keutamaan ? ' · <b>Keutamaan:</b> ' + esc(q.keutamaan) : '') +
+        '<br><b>📍 Alamat unit:</b> <b>' + esc(q.unit || "(tiada)") + '</b>' +
+        '<br><b>Jenis kerosakan:</b> ' + esc(q.jenis || "-") +
+        (q.keterangan ? '<br><b>Keterangan:</b> ' + esc(q.keterangan).replace(/\n/g, "<br>") : '') +
+        '<br><b>Diperlukan sebelum:</b> ' + esc(q.harap_balas || "-") +
+        (q.folder ? '<br><a href="' + esc(q.folder) + '" target="_blank" style="color:#123a7a">📷 Lihat gambar kerosakan</a>' : '') +
+        '<br><br><b>Skop kerja diminta:</b><br>' + esc(q.skop) + '</div>' +
         (boleh ? '<label>Jumlah sebut harga (RM)</label><input type="text" id="j_' + q.ref_sh + '" placeholder="cth. 480.00">' +
           '<div class="row"><div><label>Tempoh kerja (hari)</label><input type="text" id="t_' + q.ref_sh + '" value="2"></div>' +
           '<div><label>Waranti kerja (bulan)</label><input type="text" id="w_' + q.ref_sh + '" value="3"></div></div>' +
@@ -103,9 +110,12 @@ function render(d){
 
   if (d.wo) {
     html += '<div class="card"><h2>📄 Work Order <span class="st s-ok">' + esc(d.wo.status) + '</span></h2>' +
-      '<div class="meta"><b>No WO:</b> ' + esc(d.wo.no_wo) + '<br><b>Jumlah kontrak:</b> ' + rp(d.wo.jumlah) +
+      '<div class="meta"><b>No WO:</b> ' + esc(d.wo.no_wo) + (d.wo.ref_tiket ? ' · <b>Tiket:</b> ' + esc(d.wo.ref_tiket) : '') +
+      '<br><b>📍 Alamat unit:</b> <b>' + esc(d.wo.unit || "(tiada)") + '</b>' +
+      '<br><b>Jumlah kontrak:</b> ' + rp(d.wo.jumlah) +
       '<br><b>Mula:</b> ' + esc(d.wo.tarikh_mula) + ' · <b>Siap sasaran:</b> ' + esc(d.wo.tarikh_siap) +
-      '<br><b>Skop:</b> ' + esc(d.wo.skop) + '</div>';
+      (d.wo.folder ? '<br><a href="' + esc(d.wo.folder) + '" target="_blank" style="color:#123a7a">📷 Gambar kerosakan (tiket)</a>' : '') +
+      '<br><br><b>Skop kerja:</b><br>' + esc(d.wo.skop) + '</div>';
     if (d.tahap && d.tahap.length) {
       html += '<table><tr><th>Tahap</th><th>Perkara</th><th class="num">Bayar</th><th>Status</th></tr>';
       d.tahap.forEach(function(t){
@@ -117,6 +127,7 @@ function render(d){
       d.tahap.forEach(function(t){
         if (t.status === "BELUM" || t.status === "TUNTUTAN") {
           html += '<div class="card" style="box-shadow:none;border:1px solid #e0eae3"><b>Tuntutan ' + esc(t.ref_tahap) + ' — ' + esc(t.perkara) + ' (' + rp(t.nilai) + ')</b>' +
+            '<div class="hint">📍 ' + esc(d.wo.unit || "(alamat unit)") + '</div>' +
             '<label>Nota kerja dicapai</label><textarea id="tn_' + t.ref_tahap + '"></textarea>' +
             '<label>Gambar progress (maks 6)</label><input type="file" id="tf_' + t.ref_tahap + '" accept="image/*" multiple>' +
             '<button class="btn sec" data-tuntut="' + t.ref_tahap + '">📤 Hantar Tuntutan Progress</button><div id="tr_' + t.ref_tahap + '"></div></div>';
@@ -124,7 +135,7 @@ function render(d){
       });
     }
     if (d.wo.status !== "SIAP (MENUNGGU QC)" && d.wo.status !== "QC LULUS" && d.wo.status !== "SELESAI") {
-      html += '<div style="border-top:1px dashed #dbe6e0;margin-top:12px;padding-top:10px"><label>Nota kerja SIAP</label>' +
+      html += '<div style="border-top:1px dashed #dbe6e0;margin-top:12px;padding-top:10px"><div class="hint">📍 ' + esc(d.wo.unit || "(alamat unit)") + '</div><label>Nota kerja SIAP</label>' +
         '<textarea id="sn"></textarea><label>Gambar kerja siap (maks 8)</label><input type="file" id="sf" accept="image/*" multiple>' +
         '<button class="btn" id="btnSiap">📷 Hantar Laporan Kerja Siap</button><div id="sr"></div></div>';
     }

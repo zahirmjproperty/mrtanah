@@ -66,7 +66,7 @@ function render(d){
 
   if (d.sebutharga && d.sebutharga.length) {
     var adaDipilih = d.sebutharga.some(function(s){ return s.status === "DIPILIH"; });
-    h += '<div class="card"><h2>📊 Perbandingan Sebut Harga</h2><table><tr><th>Kontraktor</th><th class="num">Jumlah</th><th>Tempoh</th><th>Waranti</th><th>Status</th></tr>';
+    h += '<div class="card"><h2>📊 Perbandingan Sebut Harga</h2><div class="hint" style="margin-bottom:8px">📍 Unit: <b>' + esc(t.unit) + '</b></div><table><tr><th>Kontraktor</th><th class="num">Jumlah</th><th>Tempoh</th><th>Waranti</th><th>Status</th></tr>';
     d.sebutharga.forEach(function(s){
       h += '<tr id="row_' + esc(s.ref_sh) + '"><td>' + esc(s.kontraktor) + '</td><td class="num">' + rp(s.jumlah) + '</td><td>' +
         esc(s.tempoh) + ' hari</td><td>' + esc(s.waranti) + ' bln</td><td><span class="st ' + (s.status === "DIPILIH" ? "s-ok" : (s.status === "TIDAK DIPILIH" ? "s-bad" : "s-wait")) + '">' + esc(s.status) + '</span></td></tr>';
@@ -87,6 +87,7 @@ function render(d){
   if (d.wo) {
     h += '<div class="card"><h2>📄 Kerja &amp; Bayaran <span class="st ' + (d.wo.status === "SELESAI" ? "s-ok" : "s-claim") + '">' + esc(d.wo.status) + '</span></h2>' +
       '<div class="meta"><b>No WO:</b> ' + esc(d.wo.no_wo) + ' · <b>Kontraktor:</b> ' + esc(d.wo.kontraktor) +
+      '<br><b>📍 Alamat unit:</b> <b>' + esc(t.unit) + '</b>' +
       '<br><b>Jumlah kontrak:</b> ' + rp(d.wo.jumlah) + ' · <b>Siap sasaran:</b> ' + esc(d.wo.tarikh_siap) + '</div>';
     if (d.tahap && d.tahap.length) {
       h += '<table style="margin-top:10px"><tr><th>Tahap</th><th>Perkara</th><th class="num">Jumlah</th><th>Status</th></tr>';
