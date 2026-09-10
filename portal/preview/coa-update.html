@@ -56,8 +56,14 @@
   <div class="banner" style="margin-top:4px;background:#f0f7ff;border-color:#bcd9f5;border-left-color:#2f6fb0">
     📧 <b>Salinan pengesahan</b> — Kami akan menghantar salinan pengesahan kemas kini ini
     melalui emel ke alamat yang kami ada dalam rekod.<br>
-    Jika anda mahu ia dihantar ke <b>alamat emel lain</b>, sila maklumkan
+    Jika <b>tiada emel dalam rekod kami</b>, atau <b>emel anda telah berubah</b> — sila masukkan
+    di bawah. Jika anda mahu ia dihantar ke <b>alamat emel lain</b>, sila maklumkan
     <b>Zahir MJ Property</b> melalui emel: <b>zahirmj.property@gmail.com</b>
+  </div>
+  <label style="margin-top:6px">Emel untuk salinan pengesahan (jika tiada / berubah) — pilihan</label>
+  <input id="emel" placeholder="cth: nama@gmail.com">
+  <div style="font-size:11.5px;color:#64748b;margin-top:5px">
+    Emel dalam rekod kami: <b>fadilah@contoh.com</b> (contoh) — biarkan kosong jika tidak berubah.
   </div>
   <label style="margin-top:6px">Nama anda (jika wakil) — pilihan</label>
   <input id="nama" placeholder="Biarkan kosong jika anda sendiri yang isi">
@@ -102,6 +108,7 @@ function hantar(){
             nota:document.getElementById('nt'+i).value || null};
   });
   var payload = {form:"coaupdate", nama:document.getElementById('nama').value || "(belum diisi)",
+                 emel:document.getElementById('emel').value || null,
                  wa:document.getElementById('wa').value || null, tarikh_hantar:new Date().toLocaleString('ms-MY'), items:items};
   var out = document.getElementById('out');
   out.style.display='block';
