@@ -70,6 +70,7 @@
 var DATA = [{"trk": "MTCOA-0006", "tajuk": "6 Ekar Tanah Durian Bentong", "harga": "2,600,000", "keluasan": "6 ekar", "lokasi": "Bentong, Pahang"}];
 var TOKEN = "d7decc09f0aa";
 var BRAND_K = "mt";
+var AGEN = "Yaya";
 var WEBHOOK = "https://script.google.com/macros/s/AKfycbxO-Ju3Pu_KC_jU1gAel5cClx-UZUVXRp8l_hMI5JXhdzI_2ZnYyV-_8wlCu0kas3ZK4Q/exec";
 function card(d,i){
   var specs = [d.trk, d.harga?("RM "+d.harga):"", d.keluasan, d.lokasi].filter(Boolean);
@@ -121,7 +122,7 @@ function hantar(){
             tarikh:document.getElementById('tg'+i).value || null,
             nota:document.getElementById('nt'+i).value || null};
   });
-  var payload = {form:"coaupdate", brand:BRAND_K, token:TOKEN,
+  var payload = {form:"coaupdate", brand:BRAND_K, token:TOKEN, agen:"Yaya",
                  nama:document.getElementById('nama').value || null,
                  emel:document.getElementById('emel').value || null,
                  wa:document.getElementById('wa').value || null,

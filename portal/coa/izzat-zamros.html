@@ -70,6 +70,7 @@
 var DATA = [{"trk": "MTCOA-0008", "tajuk": "Bungalow Lot Sungai Ramal Kajang", "harga": "600,000", "keluasan": "7,071 sqft", "lokasi": "Sungai Ramal, Kajang, Selangor"}, {"trk": "MTCOA-0007", "tajuk": "Tanah Komersial Sungai Ramal Kajang", "harga": "12,000,000", "keluasan": "87,774.18 sqft (~2.01 ekar)", "lokasi": "Sungai Ramal, Kajang, Selangor"}];
 var TOKEN = "082a01a69433";
 var BRAND_K = "mt";
+var AGEN = "Izzat Zamros";
 var WEBHOOK = "https://script.google.com/macros/s/AKfycbxO-Ju3Pu_KC_jU1gAel5cClx-UZUVXRp8l_hMI5JXhdzI_2ZnYyV-_8wlCu0kas3ZK4Q/exec";
 function card(d,i){
   var specs = [d.trk, d.harga?("RM "+d.harga):"", d.keluasan, d.lokasi].filter(Boolean);
@@ -121,7 +122,7 @@ function hantar(){
             tarikh:document.getElementById('tg'+i).value || null,
             nota:document.getElementById('nt'+i).value || null};
   });
-  var payload = {form:"coaupdate", brand:BRAND_K, token:TOKEN,
+  var payload = {form:"coaupdate", brand:BRAND_K, token:TOKEN, agen:"Izzat Zamros",
                  nama:document.getElementById('nama').value || null,
                  emel:document.getElementById('emel').value || null,
                  wa:document.getElementById('wa').value || null,
