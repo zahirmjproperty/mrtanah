@@ -60,6 +60,13 @@ var D = null, AKTIF = "";
 function tok(){ return localStorage.getItem("mt_admin_token") || ""; }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
 function rp(n){ return "RM " + (Number(n)||0).toFixed(2); }
+function fmtDT(s){
+  if (!s) return "";
+  var d = new Date(s);
+  if (isNaN(d.getTime())) return esc(s);
+  function p(n){ return (n < 10 ? "0" : "") + n; }
+  return p(d.getDate()) + "/" + p(d.getMonth()+1) + "/" + d.getFullYear() + " " + p(d.getHours()) + ":" + p(d.getMinutes());
+}
 function splash(h){ wrap.innerHTML = '<div class="splash">' + h + '</div>'; }
 function post(p){ p.admin_token = tok(); return fetch(API,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(p)}).then(function(r){return r.json();}); }
 function cls(s){ s=String(s||"").toUpperCase();
@@ -104,7 +111,7 @@ function renderPapan(){
   else {
     h += '<table><tr><th>Ref</th><th>Unit</th><th>Status</th><th class="num">Diluluskan</th><th></th></tr>';
     t.slice().reverse().forEach(function(x){
-      h += '<tr class="tap" data-ref="' + esc(x.ref) + '"><td><b>' + esc(x.ref) + '</b><br><span class="hint">' + esc(x.tarikh) + '</span></td>' +
+      h += '<tr class="tap" data-ref="' + esc(x.ref) + '"><td><b>' + esc(x.ref) + '</b><br><span class="hint">' + fmtDT(x.tarikh) + '</span></td>' +
         '<td>' + esc(x.unit) + '<br><span class="hint">' + esc(x.jenis) + '</span></td>' +
         '<td><span class="st ' + cls(x.status) + '">' + esc(x.status) + '</span>' +
         (x.dirujuk ? '<br><span class="st s-priv">🔒 ' + esc(x.dirujuk) + '</span>' : '') + '</td>' +
