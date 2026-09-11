@@ -197,7 +197,7 @@
     </div>
   </div>
 
-  <div class="foot">Zahir MJ Property × Mr Tanah · 016-3119076 / 012-2310119</div>
+  <div class="foot" id="footBrand">Zahir MJ Property × Mr Tanah · 016-3119076 / 012-2310119</div>
 </div>
 
 <script>
@@ -220,6 +220,7 @@ function $(id){return document.getElementById(id)}
     $('hSub').textContent='Mr Tanah · pengurusan tanah & ladang';}
   else{$('hSub').textContent='Zahir MJ Property · ejen hartanah berdaftar';}
   if(BRAND==='mt'){$('f_extra').placeholder='cth: jalan tar ke lot, ada air & elektrik, cerun sederhana';}
+  $('footBrand').textContent=(BRAND==='mt')?'Mr Tanah · 016-3119076':'Zahir MJ Property · 012-2310119';
   var s=$('f_jenis');JENIS.forEach(function(t){var o=document.createElement('option');o.textContent=t;s.appendChild(o)});
   var n=$('f_negeri');n.innerHTML='<option value="">— pilih —</option>';
   NEGERI.forEach(function(x){var o=document.createElement('option');o.textContent=x;n.appendChild(o)});
