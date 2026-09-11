@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Mock-up v2 · Papan MT — Semua Kes &amp; Pihak Terlibat — Mr Tanah</title>
+<style>
+  :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; }
+  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 60%,#14905c 100%); color:#fff; padding:16px; }
+  .topbar h1 { font-size:18px; } .topbar p { font-size:12.5px; opacity:.92; margin-top:2px; }
+  .wrap { max-width:640px; margin:0 auto; padding:14px 14px 48px; }
+  .kpi { display:flex; gap:7px; margin-bottom:12px; flex-wrap:wrap; }
+  .kpi div { flex:1; min-width:88px; background:#fff; border-radius:12px; padding:10px 6px; text-align:center; box-shadow:0 1px 3px rgba(0,0,0,.07); }
+  .kpi b { display:block; font-size:17px; color:var(--mt-tua); } .kpi span { font-size:10px; color:#5a6b61; }
+  .card { background:#fff; border-radius:14px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:13px; }
+  .card h2 { font-size:14.5px; color:var(--mt-tua); margin-bottom:10px; }
+  .meta { background:#f6faf8; border:1px solid #e0eae3; border-radius:11px; padding:11px 12px; font-size:12.6px; }
+  .meta b { color:var(--mt-tua); }
+  .parti { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:9px; }
+  .parti div { background:#f6faf8; border:1px solid #e0eae3; border-radius:10px; padding:9px 10px; font-size:11.8px; }
+  .parti span { display:block; font-size:10px; font-weight:800; color:#5a6b61; text-transform:uppercase; letter-spacing:.3px; margin-bottom:2px; }
+  .parti b { color:var(--mt-tua); font-size:12.3px; }
+  .st { font-size:10px; font-weight:800; border-radius:20px; padding:2px 8px; display:inline-block; }
+  .s-work { background:#fff1dc; color:#8a4c00; } .s-ok { background:#e5f4ec; color:#0e5a33; }
+  .s-wait { background:#eef3f7; color:#5a6b61; }
+  table { width:100%; border-collapse:collapse; font-size:12px; }
+  th { background:#eef3f7; color:var(--mt-tua); text-align:left; padding:7px 5px; font-size:10.5px; }
+  td { padding:9px 5px; border-top:1px solid #e9f0ec; vertical-align:top; }
+  .num { text-align:right; white-space:nowrap; }
+  .lock { background:#f3eefb; border:1px solid #ddd0f2; color:#4b2d80; border-radius:11px; padding:11px 12px; font-size:12.2px; margin-top:10px; }
+  .tl { position:relative; padding-left:20px; }
+  .tl:before { content:""; position:absolute; left:5px; top:6px; bottom:6px; width:2px; background:#dfe8e3; }
+  .ev { position:relative; padding-bottom:11px; font-size:12.2px; }
+  .ev:before { content:""; position:absolute; left:-19px; top:4px; width:11px; height:11px; border-radius:50%; background:#cfdcd4; border:2px solid #fff; box-shadow:0 0 0 1.5px #cfdcd4; }
+  .ev.done:before { background:var(--hijau); box-shadow:0 0 0 1.5px var(--hijau); }
+  .ev.now:before { background:var(--oren); box-shadow:0 0 0 3px #f8d9b5; }
+  .ev b { color:var(--mt-tua); display:block; font-size:12.5px; } .ev i { font-style:normal; color:#6a7a71; font-size:11px; }
+  .hint { font-size:11.5px; color:#5a6b61; margin-top:6px; }
+  .mock { background:#fff8e8; border:1.5px dashed var(--oren); border-radius:11px; padding:9px 11px; font-size:11.5px; color:#7a4a10; margin-bottom:12px; }
+  .foot { text-align:center; font-size:11px; color:#6a7a71; margin-top:16px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>📋 Papan MT — Aduan Kerosakan</h1>
+    <p>Mr Tanah · ZMJ Solutions — pandangan dalaman</p>
+  </div>
+  <div class="wrap">
+    <div class="mock">🧪 <b>MOCK-UP v2</b> — papan admin. Tambahan baharu: <b>nama pemilik, kontraktor dipilih &amp; ejen pada senarai/detail</b> + timeline.</div>
+
+    <div class="kpi">
+      <div><b>4</b><span>Kes Aktif</span></div>
+      <div><b>2</b><span>Dalam Kerja</span></div>
+      <div><b>1</b><span>Menunggu Pemilik</span></div>
+      <div><b>27</b><span>Selesai (2026)</span></div>
+    </div>
+
+    <div class="card">
+      <h2>🗂️ Semua Tiket</h2>
+      <table>
+        <tr><th>Ref</th><th>Unit / Pemilik</th><th>Kontraktor dipilih</th><th>Ejen</th><th>Status</th></tr>
+        <tr><td>MT-K-2026-0012</td><td>Blok C-3-3, Pangsapuri Melati<br><b>En. Hafiz Roslan</b></td><td><b>Rizal Plumbing &amp; Renovation</b></td><td>Nurul Ain</td><td><span class="st s-work">DALAM KERJA</span></td></tr>
+        <tr><td>MT-K-2026-0011</td><td>Blok A-12-5, Kondominium Sri Damai<br><b>Pn. Zaleha Ibrahim</b></td><td><b>Sinar Aircond &amp; Plumbing</b></td><td>—</td><td><span class="st s-work">DALAM KERJA</span></td></tr>
+        <tr><td>MT-K-2026-0010</td><td>Blok D-8-2, Pangsapuri Melati<br><b>En. Kumar Raj</b></td><td>— (belum dipilih)</td><td>Faizal REN</td><td><span class="st s-wait">SEBUT HARGA</span></td></tr>
+        <tr><td>MT-K-2026-0009</td><td>Blok B-4-1, Apartment Seri Indah<br><b>Cik Wong Li Fen</b></td><td><b>Maju Jaya Renovation</b></td><td>—</td><td><span class="st s-wait">QC MT</span></td></tr>
+      </table>
+      <div class="hint">Nama kontraktor kosong selagi pemilik belum meluluskan sebut harga — jadi papan menunjukkan siapa belum dipilih.</div>
+    </div>
+
+    <div class="card">
+      <h2>MT-K-2026-0012 — Detail <span class="st s-work">DALAM KERJA</span></h2>
+      <div class="meta">
+        <b>📍 Unit:</b> Blok C-3-3, Pangsapuri Melati, Jalan Melati 2, Bandar Baru Bangi, 43650 Selangor<br>
+        <b>Kategori:</b> Plumbing · <b>Keutamaan:</b> Sederhana · <b>Tanggungjawab:</b> Pemilik<br>
+        <b>Nilai diluluskan:</b> RM14,250.00 · <b>Siap sasaran:</b> 18/09/2026
+      </div>
+      <div class="parti">
+        <div><span>Pemilik</span><b>En. Hafiz Roslan</b>019-778 4521</div>
+        <div><span>Pelapor</span><b>Cik Tan Mei Ling</b>017-455 2210 · penyewa</div>
+        <div><span>Kontraktor dipilih</span><b>Rizal Plumbing &amp; Renovation</b>En. Rizal bin Osman · 013-620 8844</div>
+        <div><span>Ejen rujukan</span><b>Nurul Ain b. Kamarudin</b>REN 21984 · 012-345 6789</div>
+      </div>
+      <div class="lock">🔒 <b>Dalaman MT sahaja:</b> Kos pengurusan MT (5%) = RM712.50 · Referral ejen (30% kos pengurusan) = <b>RM213.75</b> — status: <b>AKRUAL</b> (dibayar selepas bayaran penuh pemilik diterima &amp; disahkan Zahir). Bahagian ini <b>tidak</b> muncul pada halaman pemilik, kontraktor atau ejen.</div>
+    </div>
+
+    <div class="card">
+      <h2>🕒 Timeline Kes</h2>
+      <div class="tl">
+        <div class="ev done"><b>Aduan diterima</b><i>02/09/2026 09:14 · borang web</i></div>
+        <div class="ev done"><b>MT sahkan kerosakan</b><i>02/09/2026 11:30 · 3 gambar</i></div>
+        <div class="ev done"><b>RFQ dihantar — 3 kontraktor</b><i>03/09/2026 10:05</i></div>
+        <div class="ev done"><b>3 sebut harga diterima</b><i>04/09/2026 14:20</i></div>
+        <div class="ev done"><b>Pemilik lulus — Rizal RM12,400</b><i>05/09/2026 20:41</i></div>
+        <div class="ev done"><b>WO MT-WO-2026-0007 dikeluarkan</b><i>06/09/2026 09:00 · 3 tahap + R1/R2</i></div>
+        <div class="ev done"><b>Deposit RM3,720 diterima</b><i>07/09/2026 14:32</i></div>
+        <div class="ev done"><b>Kerja bermula</b><i>08/09/2026 08:15 · 6 gambar</i></div>
+        <div class="ev done"><b>VO RM1,850 diluluskan</b><i>10/09/2026 17:40</i></div>
+        <div class="ev now"><b>Tuntutan Tahap 2 — RM4,960</b><i>11/09/2026 08:05 · 6 gambar · perlu sahkan</i></div>
+        <div class="ev"><b>Setelah bayar: pelepasan retensi R1/R2</b><i>—</i></div>
+      </div>
+      <div class="hint">Setiap entri timeline membawa alamat unit + siapa pelaku (pemilik / kontraktor / MT / ejen).</div>
+    </div>
+
+    <div class="card">
+      <h2>🔗 Jana Pautan Akses</h2>
+      <div class="meta">Pemilik: <b>En. Hafiz Roslan</b> · Kontraktor: <b>Rizal Plumbing &amp; Renovation</b> · Ejen: <b>Nurul Ain b. Kamarudin</b> <span class="st s-ok">BAHARU</span></div>
+      <table style="margin-top:9px">
+        <tr><th>Pihak</th><th>Halaman</th><th>Dihantar</th></tr>
+        <tr><td>Pemilik</td><td>aduan-pemilik</td><td>Emel + WA</td></tr>
+        <tr><td>Kontraktor</td><td>aduan-kontraktor</td><td>Emel</td></tr>
+        <tr><td>Ejen rujukan</td><td>aduan-ejen <span class="st s-ok">BAHARU</span></td><td>Emel + WA</td></tr>
+      </table>
+      <div class="hint">Peranan baharu <b>EJEN</b> akan disokong dalam tab `Akses` (token berasingan, hanya kes yang dirujuk oleh ejen itu).</div>
+    </div>
+
+    <p class="foot">Mock-up oleh Ali (Hermes Agent) · 11 September 2026 · Preview sahaja — tidak diindeks</p>
+  </div>
+</body>
+</html>
