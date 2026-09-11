@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Portal Ejen Rujukan — Status Kes — Mr Tanah</title>
+<style>
+  :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; --ungu:#7a4bbd; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; }
+  .topbar { background:linear-gradient(135deg,#3a2a6b 0%,#123a7a 60%,#14905c 100%); color:#fff; padding:16px; }
+  .topbar h1 { font-size:18px; } .topbar p { font-size:12.5px; opacity:.92; margin-top:2px; }
+  .wrap { max-width:600px; margin:0 auto; padding:14px 14px 48px; }
+  .card { background:#fff; border-radius:14px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:13px; }
+  .card h2 { font-size:14.5px; color:var(--mt-tua); margin-bottom:10px; }
+  .meta { background:#f6faf8; border:1px solid #e0eae3; border-radius:11px; padding:11px 12px; font-size:12.7px; }
+  .meta b { color:var(--mt-tua); }
+  .st { font-size:10px; font-weight:800; border-radius:20px; padding:2px 8px; display:inline-block; white-space:nowrap; }
+  .s-wait { background:#eef3f7; color:#5a6b61; } .s-claim { background:#fff1dc; color:#8a4c00; }
+  .s-ok { background:#e5f4ec; color:#0e5a33; } .s-bad { background:#fdeaea; color:#a12; }
+  .parti { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .parti div { background:#f6faf8; border:1px solid #e0eae3; border-radius:10px; padding:9px 10px; font-size:11.8px; }
+  .parti span { display:block; font-size:10px; font-weight:800; color:#5a6b61; text-transform:uppercase; letter-spacing:.3px; margin-bottom:2px; }
+  .parti b { color:var(--mt-tua); font-size:12.3px; }
+  .tl { position:relative; padding-left:20px; }
+  .tl:before { content:""; position:absolute; left:5px; top:6px; bottom:6px; width:2px; background:#dfe8e3; }
+  .ev { position:relative; padding-bottom:12px; font-size:12.3px; }
+  .ev:before { content:""; position:absolute; left:-19px; top:4px; width:11px; height:11px; border-radius:50%; background:#cfdcd4; border:2px solid #fff; box-shadow:0 0 0 1.5px #cfdcd4; }
+  .ev.done:before { background:var(--hijau); box-shadow:0 0 0 1.5px var(--hijau); }
+  .ev.now:before { background:var(--oren); box-shadow:0 0 0 3px #f8d9b5; }
+  .ev b { color:var(--mt-tua); display:block; font-size:12.5px; }
+  .ev i { font-style:normal; color:#6a7a71; font-size:11px; }
+  .ev p { color:#4c5c53; font-size:12.1px; }
+  .lock { background:#f3eefb; border:1px solid #ddd0f2; color:#4b2d80; border-radius:11px; padding:11px 12px; font-size:12.2px; margin-top:10px; }
+  .hint { font-size:11.5px; color:#5a6b61; margin-top:6px; }
+  .rate { font-size:11px; font-weight:800; color:#8a4c00; background:#fff4e2; border-radius:20px; padding:2px 7px; display:inline-block; }
+  .foot { text-align:center; font-size:11px; color:#6a7a71; margin-top:16px; }
+  .splash { text-align:center; padding:40px 16px; color:#5a6b61; font-size:14px; }
+  .kes { border:1px solid #e0eae3; border-radius:12px; padding:12px; margin-bottom:11px; }
+  .kes h3 { font-size:13.5px; color:var(--mt-tua); margin-bottom:5px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>🤝 Portal Ejen Rujukan</h1>
+    <p>Mr Tanah — pantau kes yang anda rujuk</p>
+  </div>
+  <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
+<script>
+var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
+var TOKEN = new URLSearchParams(location.search).get("t") || "";
+var wrap = document.getElementById("wrap");
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+function rp(n){ return "RM " + (Number(n)||0).toFixed(2); }
+function splash(h){ wrap.innerHTML = '<div class="splash">' + h + '</div>'; }
+function stCls(s){ s = String(s||"").toUpperCase();
+  if (s.indexOf("SELESAI")>=0 || s.indexOf("LULUS")>=0 || s.indexOf("TERIMA")>=0) return "s-ok";
+  if (s.indexOf("DALAM KERJA")>=0 || s.indexOf("TUNTUTAN")>=0 || s.indexOf("SIAP")>=0 || s.indexOf("WO")>=0) return "s-claim";
+  if (s.indexOf("TIDAK")>=0 || s.indexOf("GAGAL")>=0) return "s-bad";
+  return "s-wait"; }
+function bersih(x){ return String(x||"").replace(/\s*\|\s*Unit:.*$/i, ""); }
+function ratingTxt(r){ return r && r.nilai ? ' <span class="rate">★ ' + r.nilai + '/5</span>' : ""; }
+
+function render(d){
+  if (!d.ok) { splash("⚠️ " + esc(d.error || "Pautan tidak sah atau sudah tamat.") + "<br><br>Sila hubungi Mr Tanah: WhatsApp 016-3119076"); return; }
+  var e = d.ejen || {}, h = "";
+  h += '<div class="card"><h2>👤 ' + esc(e.nama || d.nama) + '</h2><div class="meta">Pautan peribadi anda — jangan kongsi.<br>' +
+       (e.ren ? '<b>REN:</b> ' + esc(e.ren) + (e.agensi ? ' · <b>Agensi:</b> ' + esc(e.agensi) : '') + '<br>' : '') +
+       (e.tel ? '<b>Telefon:</b> ' + esc(e.tel) : '') + '</div>' +
+       '<div class="hint">Anda hanya nampak kes yang <b>dirujuk oleh anda</b>. Maklumat kes dikemas kini automatik.</div></div>';
+
+  var kes = d.kes || [];
+  if (!kes.length) {
+    h += '<div class="card"><div class="hint" style="margin:0">Belum ada kes yang dirujuk kepada Mr Tanah dengan nama anda. Beritahu Mr Tanah (WhatsApp ' + esc((e.tel || "016-3119076")) + ') jika sepatutnya ada.</div></div>';
+  }
+  kes.forEach(function(k){
+    h += '<div class="card"><h2>📋 Kes Rujukan — ' + esc(k.ref) + ' <span class="st ' + stCls(k.status) + '">' + esc(k.status) + '</span></h2>' +
+      '<div class="meta"><b>📍 Unit:</b> ' + esc(k.unit) + '<br>' +
+      '<b>Jenis kerja:</b> ' + esc(k.jenis) + '<br>' +
+      '<b>👤 Pemilik:</b> ' + esc(k.pemilik || "-") + (k.pemilik_tel ? ' · ' + esc(k.pemilik_tel) : '') + '<br>' +
+      (k.kontraktor ? '<b>🔧 Kontraktor dipilih:</b> ' + esc(k.kontraktor) + (k.kontraktor_tel ? ' · ' + esc(k.kontraktor_tel) : '') + ratingTxt(k.rating) + '<br>'
+                    : '<b>🔧 Kontraktor:</b> belum dipilih pemilik<br>') +
+      (k.nilai ? '<b>Nilai kerja diluluskan:</b> ' + rp(k.nilai) + '<br>' : '') +
+      (k.no_wo ? '<b>No WO:</b> ' + esc(k.no_wo) + '<br>' : '') +
+      '<b>Tarikh aduan:</b> ' + esc(k.tarikh) + (k.tarikh_tutup ? '<br><b>Tarikh tutup:</b> ' + esc(k.tarikh_tutup) : '') + '</div>';
+    if (k.keterangan) h += '<div class="hint">Keterangan: ' + esc(k.keterangan).replace(/\n/g, "<br>") + '</div>';
+
+    var tl = k.timeline || [];
+    if (tl.length) {
+      h += '<div class="hint" style="margin-top:11px;font-weight:700;color:#0a1f44">Kemajuan</div><div class="tl">';
+      tl.forEach(function(x, i){
+        var cls = i === tl.length - 1 ? "now" : "done";
+        h += '<div class="ev ' + cls + '"><b>' + esc(x.aksi) + '</b><i>' + esc(x.masa) + '</i>' +
+             (bersih(x.butiran) ? '<p>' + esc(bersih(x.butiran)) + '</p>' : '') + '</div>';
+      });
+      h += '</div>';
+    }
+    h += '<div class="lock">🔒 <b>Bahagian dalaman MT</b> (kos pengurusan MT, kadar &amp; bayaran balasan rujukan) tidak dipaparkan di halaman ini — hanya pada Papan MT. Pertanyaan: WhatsApp Mr Tanah 016-3119076.</div>';
+    h += '</div>';
+  });
+
+  h += '<p class="foot">Mr Tanah · ZMJ Solutions (002093603-H) · halaman peribadi — jangan kongsi pautan ini</p>';
+  wrap.innerHTML = h;
+}
+
+if (!TOKEN) splash("⚠️ Pautan tidak lengkap (tiada token). Guna pautan yang dihantar Mr Tanah.");
+else fetch(API + "?aksi=ejen&token=" + encodeURIComponent(TOKEN))
+  .then(function(r){ return r.json(); })
+  .then(render)
+  .catch(function(){ splash("Ralat memuatkan data. Sila muat semula halaman."); });
+</script>
+</body>
+</html>

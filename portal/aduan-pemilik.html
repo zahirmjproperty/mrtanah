@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Portal Tuan Rumah — Aduan & Kelulusan — Mr Tanah</title>
+<title>Portal Tuan Rumah — Status Pembaikan Unit — Mr Tanah</title>
 <style>
   :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; }
   * { box-sizing:border-box; margin:0; padding:0; }
@@ -16,87 +16,181 @@
   .card h2 { font-size:14.5px; color:var(--mt-tua); margin-bottom:10px; }
   .meta { background:#f6faf8; border:1px solid #e0eae3; border-radius:11px; padding:11px 12px; font-size:12.7px; }
   .meta b { color:var(--mt-tua); }
-  table { width:100%; border-collapse:collapse; font-size:12.2px; }
-  th { background:#eef3f7; color:var(--mt-tua); text-align:left; padding:7px 6px; font-size:11px; }
-  td { padding:9px 6px; border-top:1px solid #e9f0ec; vertical-align:top; }
+  table { width:100%; border-collapse:collapse; font-size:12px; }
+  th { background:#eef3f7; color:var(--mt-tua); text-align:left; padding:7px 5px; font-size:10.5px; }
+  td { padding:9px 5px; border-top:1px solid #e9f0ec; vertical-align:top; }
   tr.sel { background:#e8f5ee; }
   .num { text-align:right; white-space:nowrap; }
-  .pick { background:var(--hijau); color:#fff; border:0; border-radius:8px; padding:7px 10px; font-size:12px; font-weight:700; cursor:pointer; white-space:nowrap; }
-  .pick.off { background:#dfe8e3; color:#7a8a80; }
   .btn { width:100%; padding:13px; background:var(--oren); color:#fff; border:0; border-radius:11px; font-size:15px; font-weight:700; cursor:pointer; margin-top:12px; }
   .btn.sec { background:var(--mt); } .btn.ghost { background:#eef3f7; color:var(--mt-tua); }
   .btn:disabled { opacity:.55; cursor:not-allowed; }
   .ok { background:#e5f4ec; border:1px solid #bfe3cf; color:#0e5a33; border-radius:11px; padding:12px; font-size:13px; margin-top:11px; }
   .err { background:#fdeaea; border:1px solid #f2c2c2; color:#8c1f1f; border-radius:11px; padding:12px; font-size:13px; margin-top:11px; }
-  .st { font-size:10px; font-weight:800; border-radius:20px; padding:2px 8px; display:inline-block; }
+  .st { font-size:10px; font-weight:800; border-radius:20px; padding:2px 8px; display:inline-block; white-space:nowrap; }
   .s-wait { background:#eef3f7; color:#5a6b61; } .s-claim { background:#fff1dc; color:#8a4c00; }
   .s-ok { background:#e5f4ec; color:#0e5a33; } .s-bad { background:#fdeaea; color:#a12; }
+  .parti { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .parti div { background:#f6faf8; border:1px solid #e0eae3; border-radius:10px; padding:9px 10px; font-size:11.8px; }
+  .parti span { display:block; font-size:10px; font-weight:800; color:#5a6b61; text-transform:uppercase; letter-spacing:.3px; margin-bottom:2px; }
+  .parti b { color:var(--mt-tua); font-size:12.3px; }
+  .tl { position:relative; padding-left:20px; }
+  .tl:before { content:""; position:absolute; left:5px; top:6px; bottom:6px; width:2px; background:#dfe8e3; }
+  .ev { position:relative; padding-bottom:13px; font-size:12.3px; }
+  .ev:before { content:""; position:absolute; left:-19px; top:4px; width:11px; height:11px; border-radius:50%; background:#cfdcd4; border:2px solid #fff; box-shadow:0 0 0 1.5px #cfdcd4; }
+  .ev.done:before { background:var(--hijau); box-shadow:0 0 0 1.5px var(--hijau); }
+  .ev.now:before { background:var(--oren); box-shadow:0 0 0 3px #f8d9b5; }
+  .ev b { color:var(--mt-tua); display:block; font-size:12.6px; }
+  .ev i { font-style:normal; color:#6a7a71; font-size:11px; }
+  .ev p { color:#4c5c53; }
+  .bkt { display:flex; align-items:center; gap:9px; background:#f6faf8; border:1px solid #e0eae3; border-radius:10px; padding:9px 10px; margin-top:7px; font-size:12.2px; text-decoration:none; color:var(--mt-tua); }
+  .bkt b { display:block; font-size:12.4px; } .bkt small { color:#5a6b61; font-size:11px; }
   .stars { font-size:32px; letter-spacing:6px; color:#d8dfdb; cursor:pointer; text-align:center; margin:6px 0; }
   .stars b { color:#f0a83c; }
-  textarea { width:100%; padding:10px 12px; border:1.5px solid #cfdcd4; border-radius:10px; font-size:15px; min-height:70px; background:#fbfdfc; }
+  textarea { width:100%; padding:10px 12px; border:1.5px solid #cfdcd4; border-radius:10px; font-size:15px; min-height:66px; background:#fbfdfc; }
+  select { width:100%; padding:11px 12px; border:1.5px solid #cfdcd4; border-radius:10px; font-size:15px; background:#fbfdfc; }
   label { display:block; font-size:12.5px; font-weight:600; margin:11px 0 4px; }
   .hint { font-size:11.5px; color:#5a6b61; margin-top:6px; }
   .foot { text-align:center; font-size:11px; color:#6a7a71; margin-top:16px; }
   .splash { text-align:center; padding:40px 16px; color:#5a6b61; font-size:14px; }
+  .rate { font-size:11px; font-weight:800; color:#8a4c00; background:#fff4e2; border-radius:20px; padding:2px 7px; display:inline-block; }
 </style>
 </head>
 <body>
   <div class="topbar">
     <h1>🏡 Portal Tuan Rumah</h1>
-    <p>Mr Tanah — Aduan kerosakan, kelulusan &amp; terimaan kerja</p>
+    <p>Mr Tanah — pantau status pembaikan unit anda</p>
   </div>
   <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
 <script>
 var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
 var TOKEN = new URLSearchParams(location.search).get("t") || "";
-var wrap = document.getElementById("wrap"), STAR = 0, PILIH = "";
+var wrap = document.getElementById("wrap"), STAR = 0;
 function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
 function rp(n){ return "RM " + (Number(n)||0).toFixed(2); }
 function splash(h){ wrap.innerHTML = '<div class="splash">' + h + '</div>'; }
 function post(p){ p.token = TOKEN; return fetch(API, { method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"}, body: JSON.stringify(p) }).then(function(r){ return r.json(); }); }
 function msg(id, html){ var e = document.getElementById(id); if (e) e.innerHTML = html; }
+function stCls(s){ s = String(s||"").toUpperCase();
+  if (s.indexOf("DIBAYAR")>=0 || s.indexOf("SELESAI")>=0 || s.indexOf("LULUS")>=0 || s.indexOf("DITERIMA")>=0) return "s-ok";
+  if (s.indexOf("TUNTUTAN")>=0 || s.indexOf("DALAM KERJA")>=0 || s.indexOf("SIAP")>=0) return "s-claim";
+  if (s.indexOf("TIDAK")>=0 || s.indexOf("GAGAL")>=0) return "s-bad";
+  return "s-wait"; }
+function iconAksi(a){ a = String(a||"");
+  if (a.indexOf("ADUAN")>=0 || a.indexOf("BARU")>=0) return "📝";
+  if (a.indexOf("RFQ")>=0) return "📨";
+  if (a.indexOf("SEBUT HARGA")>=0) return "📊";
+  if (a.indexOf("VO")>=0) return "➕";
+  if (a.indexOf("WO")>=0) return "📄";
+  if (a.indexOf("TUNTUTAN")>=0) return "🔧";
+  if (a.indexOf("BAYAR")>=0) return "💳";
+  if (a.indexOf("SIAP")>=0 || a.indexOf("QC")>=0) return "🏁";
+  if (a.indexOf("TERIMA")>=0) return "👍";
+  if (a.indexOf("REVIEW")>=0) return "⭐";
+  if (a.indexOf("EMEL")>=0) return "✉️";
+  return "•"; }
+function bersih(x){ return String(x||"").replace(/\s*\|\s*Unit:.*$/i, ""); }
+function ratingTxt(r){ return r && r.nilai ? '<span class="rate">★ ' + r.nilai + '/5</span>' : ""; }
 
 function render(d){
   if (!d.ok) { splash("⚠️ " + esc(d.error || "Pautan tidak sah atau sudah tamat.") + "<br><br>Sila hubungi Mr Tanah: WhatsApp 016-3119076"); return; }
-  var t = d.tiket, h = "";
-  h += '<div class="card"><h2>📋 Aduan Anda — ' + esc(t.ref) + '</h2><div class="meta">' +
-       '<b>Unit:</b> ' + esc(t.unit) + '<br><b>Kerosakan:</b> ' + esc(t.jenis) + '<br><b>Keterangan:</b> ' + esc(t.keterangan).replace(/\n/g, "<br>") +
-       '<br><b>Status:</b> <span class="st ' + (t.status === "SELESAI" ? "s-ok" : "s-claim") + '">' + esc(t.status) + '</span>' +
-       (t.folder ? '<br><a href="' + esc(t.folder) + '" target="_blank" style="color:#123a7a">📁 Gambar / dokumen tiket</a>' : '') + '</div></div>';
+  var t = d.tiket, h = "", p = d.pihak || {};
+  var pem = p.pemilik || {}, ej = p.ejen, kd = p.kontraktor, mt = p.mt || {};
 
+  /* 1. Aduan */
+  h += '<div class="card"><h2>📋 Aduan Anda — ' + esc(t.ref) + '</h2><div class="meta">' +
+       '<b>Nama pemilik:</b> ' + esc(pem.nama || "-") + (pem.tel ? ' · ' + esc(pem.tel) : '') + '<br>' +
+       '<b>Unit:</b> ' + esc(t.unit) + '<br>' +
+       '<b>Kerosakan:</b> ' + esc(t.jenis) + '<br>' +
+       '<b>Keterangan:</b> ' + esc(t.keterangan).replace(/\n/g, "<br>") + '<br>' +
+       '<b>Status kerja:</b> <span class="st ' + stCls(t.status) + '">' + esc(t.status) + '</span>' +
+       (d.wo && d.wo.tarikh_siap ? ' · siap sasaran <b>' + esc(d.wo.tarikh_siap) + '</b>' : '') +
+       (t.folder ? '<br><a href="' + esc(t.folder) + '" target="_blank" style="color:#123a7a">📁 Folder gambar/dokumen aduan</a>' : '') +
+       '</div></div>';
+
+  /* 2. Pihak terlibat */
+  h += '<div class="card"><h2>👥 Pihak Terlibat</h2><div class="parti">' +
+       '<div><span>Pemilik</span><b>' + esc(pem.nama || "-") + '</b>' + esc(pem.tel || "") + '</div>' +
+       ((p.pelapor && p.pelapor.nama) ? '<div><span>Pelapor aduan</span><b>' + esc(p.pelapor.nama) + '</b>' + esc(p.pelapor.tel || "") + '</div>' : '') +
+       (kd ? '<div><span>Kontraktor dipilih</span><b>' + esc(kd.nama) + '</b>' + (kd.telefon ? esc(kd.telefon) : "") + ' ' + ratingTxt(kd.rating) + '</div>'
+           : '<div><span>Kontraktor</span><b>Belum dipilih</b>Nama dipaparkan selepas anda meluluskan</div>') +
+       (ej ? '<div><span>Ejen rujukan</span><b>' + esc(ej.nama) + '</b>' + (ej.ren ? 'REN ' + esc(ej.ren) + ' · ' : '') + esc(ej.tel || "") + '</div>' : '') +
+       '<div><span>Pengurus MT</span><b>' + esc(mt.nama || "Mr Tanah") + '</b>' + esc(mt.tel || "016-3119076") + '</div>' +
+       '<div><span>No. Rujukan</span><b>' + esc(t.ref) + '</b>' + (d.wo ? 'WO ' + esc(d.wo.no_wo) : '') + '</div>' +
+       '</div></div>';
+
+  /* 3. Sebut harga + kontraktor dipilih */
   if (d.sebutharga && d.sebutharga.length) {
-    var adaDipilih = d.sebutharga.some(function(s){ return s.status === "DIPILIH"; });
-    h += '<div class="card"><h2>📊 Perbandingan Sebut Harga</h2><div class="hint" style="margin-bottom:8px">📍 Unit: <b>' + esc(t.unit) + '</b></div><table><tr><th>Kontraktor</th><th class="num">Jumlah</th><th>Tempoh</th><th>Waranti</th><th>Status</th></tr>';
+    h += '<div class="card"><h2>📊 Sebut Harga' + (d.sudah_pilih ? ' &amp; Kontraktor Dipilih' : '') + '</h2><table>' +
+         '<tr><th>Sebut harga</th><th class="num">Jumlah</th><th>Tempoh</th><th>Waranti</th><th>Status</th></tr>';
     d.sebutharga.forEach(function(s){
-      h += '<tr id="row_' + esc(s.ref_sh) + '"><td>' + esc(s.kontraktor) + '</td><td class="num">' + rp(s.jumlah) + '</td><td>' +
-        esc(s.tempoh) + ' hari</td><td>' + esc(s.waranti) + ' bln</td><td><span class="st ' + (s.status === "DIPILIH" ? "s-ok" : (s.status === "TIDAK DIPILIH" ? "s-bad" : "s-wait")) + '">' + esc(s.status) + '</span></td></tr>';
+      h += '<tr' + (s.terpilih ? ' class="sel"' : '') + '><td>' + esc(s.nama_papar) + ' ' + ratingTxt(s.rating) + '</td>' +
+           '<td class="num">' + rp(s.jumlah) + '</td><td>' + esc(s.tempoh) + ' hari</td><td>' + esc(s.waranti) + ' bln</td>' +
+           '<td><span class="st ' + (s.terpilih ? 's-ok' : (String(s.status).indexOf("TIDAK")>=0 ? 's-bad' : 's-wait')) + '">' + esc(s.status) + '</span></td></tr>';
     });
     h += '</table>';
-    if (!adaDipilih) {
+    if (!d.sudah_pilih) {
       h += '<label>Pilih sebut harga</label><select id="selSH"><option value="">— Pilih —</option>';
-      d.sebutharga.forEach(function(s){ if (s.status !== "TIDAK DIPILIH") h += '<option value="' + esc(s.ref_sh) + '">' + esc(s.kontraktor) + ' — ' + rp(s.jumlah) + '</option>'; });
+      d.sebutharga.forEach(function(s){ if (String(s.status).indexOf("TIDAK") < 0) h += '<option value="' + esc(s.ref_sh) + '">' + esc(s.nama_papar) + ' — ' + rp(s.jumlah) + ' (' + esc(s.tempoh) + ' hari, waranti ' + esc(s.waranti) + ' bln)</option>'; });
       h += '</select><button class="btn" id="btnLulus">✅ Luluskan Sebut Harga Ini</button>' +
-           '<button class="btn ghost" id="btnTolak">⚠️ Tolak Semua / Minta Semak Semula</button>' +
-           '<div id="mPilih"></div><div class="hint">Pemilik hanya membayar jumlah sebut harga yang diluluskan — tiada caj tambahan.</div>';
+           '<button class="btn ghost" id="btnTolak">⚠️ Tolak / Minta Semak Semula</button><div id="mPilih"></div>' +
+           '<div class="hint">Nama kontraktor sengaja disorok sebagai Kontraktor A/B/C supaya pilihan dibuat atas nilai kerja, tempoh &amp; waranti. Sebaik anda meluluskan, nama penuh, telefon &amp; penilaian kontraktor akan dipaparkan dan diemel kepada anda. Anda hanya membayar jumlah sebut harga yang diluluskan — tiada caj tambahan.</div>';
     } else {
-      h += '<div class="ok">✅ Anda telah meluluskan sebut harga. Mr Tanah akan keluarkan Work Order kepada kontraktor.</div>';
+      h += '<div class="ok">✅ Anda telah meluluskan sebut harga. Maklumat kontraktor dipaparkan di atas &amp; telah diemel kepada anda.</div>';
     }
     h += '</div>';
   }
 
+  /* 4. Kemajuan kerja (timeline) */
+  if (d.timeline && d.timeline.length) {
+    h += '<div class="card"><h2>🕒 Kemajuan Kerja</h2><div class="tl">';
+    var n = d.timeline.length;
+    d.timeline.forEach(function(e, i){
+      var cls = i === n - 1 ? "now" : "done";
+      h += '<div class="ev ' + cls + '"><b>' + iconAksi(e.aksi) + ' ' + esc(e.aksi) + '</b>' +
+           '<i>' + esc(e.masa) + (e.oleh ? ' · ' + esc(e.oleh) : '') + '</i>' +
+           (bersih(e.butiran) ? '<p>' + esc(bersih(e.butiran)) + '</p>' : '') + '</div>';
+    });
+    h += '</div><div class="hint">Setiap kemajuan direkod automatik. Anda juga akan dimaklumkan melalui emel / WhatsApp.</div></div>';
+  }
+
+  /* 5. Gambar bukti */
+  var adaBkt = (d.tahap || []).some(function(x){ return x.folder_bukti; }) || (d.wo && d.wo.folder_laporan);
+  h += '<div class="card"><h2>📸 Gambar Bukti Kerja</h2>';
+  if (!adaBkt) h += '<div class="hint" style="margin:0">Belum ada gambar dimuat naik oleh kontraktor. Gambar progress akan muncul di sini setiap kali kontraktor menghantar tuntutan.</div>';
+  (d.tahap || []).forEach(function(x){
+    if (!x.folder_bukti) return;
+    h += '<a class="bkt" href="' + esc(x.folder_bukti) + '" target="_blank">📷<span><b>Tahap ' + esc(x.tahap) + ' — ' + esc(x.perkara) + '</b>' +
+         '<small>Dimuat naik ' + esc(x.tuntutan || "-") + ' · klik untuk lihat gambar</small></span></a>';
+  });
+  if (d.wo && d.wo.folder_laporan) {
+    h += '<a class="bkt" href="' + esc(d.wo.folder_laporan) + '" target="_blank">🏁<span><b>Laporan kerja siap</b>' +
+         '<small>' + esc(d.wo.siap_sebenar || "-") + ' · klik untuk lihat gambar</small></span></a>';
+  }
+  h += '</div>';
+
+  /* 6. Kerja & bayaran */
   if (d.wo) {
-    h += '<div class="card"><h2>📄 Kerja &amp; Bayaran <span class="st ' + (d.wo.status === "SELESAI" ? "s-ok" : "s-claim") + '">' + esc(d.wo.status) + '</span></h2>' +
-      '<div class="meta"><b>No WO:</b> ' + esc(d.wo.no_wo) + ' · <b>Kontraktor:</b> ' + esc(d.wo.kontraktor) +
+    var r = d.ringkasan || {};
+    h += '<div class="card"><h2>📄 Kerja &amp; Bayaran <span class="st ' + stCls(d.wo.status) + '">' + esc(d.wo.status) + '</span></h2>' +
+      '<div class="meta"><b>No WO:</b> ' + esc(d.wo.no_wo) + ' · <b>Kontraktor:</b> ' + esc(d.wo.kontraktor) + ratingTxt((kd||{}).rating) +
       '<br><b>📍 Alamat unit:</b> <b>' + esc(t.unit) + '</b>' +
-      '<br><b>Jumlah kontrak:</b> ' + rp(d.wo.jumlah) + ' · <b>Siap sasaran:</b> ' + esc(d.wo.tarikh_siap) + '</div>';
+      '<br><b>Nilai kontrak:</b> ' + rp(d.wo.jumlah) + ' · <b>Mula:</b> ' + esc(d.wo.tarikh_mula) + ' · <b>Siap sasaran:</b> ' + esc(d.wo.tarikh_siap) +
+      (d.wo.siap_sebenar ? '<br><b>Siap sebenar:</b> ' + esc(d.wo.siap_sebenar) : '') +
+      (d.wo.waranti ? '<br><b>Waranti hingga:</b> ' + esc(d.wo.waranti) : '') + '</div>';
     if (d.tahap && d.tahap.length) {
-      h += '<table style="margin-top:10px"><tr><th>Tahap</th><th>Perkara</th><th class="num">Jumlah</th><th>Status</th></tr>';
+      h += '<table style="margin-top:10px"><tr><th>Tahap</th><th>Perkara</th><th class="num">Anda bayar</th><th>Status</th></tr>';
       d.tahap.forEach(function(s){
-        h += '<tr><td>' + esc(s.tahap) + '</td><td>' + esc(s.perkara) + '</td><td class="num">' + rp(s.bayaran_pemilik) +
-          '</td><td><span class="st ' + (s.status === "DIBAYAR" ? "s-ok" : (s.status === "TUNTUTAN" ? "s-claim" : "s-wait")) + '">' + esc(s.status) + '</span></td></tr>';
+        h += '<tr><td>' + esc(s.tahap) + '</td><td>' + esc(s.perkara) + '</td>' +
+             '<td class="num">' + (s.bayaran_pemilik === "" || s.bayaran_pemilik == null ? '—' : rp(s.bayaran_pemilik)) + '</td>' +
+             '<td><span class="st ' + stCls(s.status) + '">' + esc(s.status || "-") + '</span></td></tr>';
       });
-      h += '</table><div class="hint">Bayaran mengikut tahap. Cara bayar: pautan Billplz yang dihantar Mr Tanah, ATAU pindahan bank + emel bukti ke mrtanahmy@gmail.com (nyatakan No. Rujukan/WO).</div>';
+      h += '</table>';
     }
+    if (r.jumlah_jadual) {
+      h += '<div class="hint">Jumlah yang anda bayar: <b>' + rp(r.jumlah_jadual) + '</b> (' + rp(r.dibayar) + ' telah dibayar · baki <b>' + rp(r.baki) + '</b>). Retensi 5% ditahan daripada bayaran kontraktor sebagai jaminan kerja — bukan bayaran tambahan kepada anda.</div>';
+    }
+    h += '<div class="hint">Cara bayar: pautan Billplz yang dihantar Mr Tanah, ATAU pindahan bank + emel bukti ke mrtanahmy@gmail.com (nyatakan No. Rujukan/WO).</div>';
+
     if (d.wo.qc === "LULUS" && !d.wo.terimaan) {
       h += '<div class="ok">✅ Kerja telah dilaporkan siap oleh kontraktor dan <b>lulus QC Mr Tanah</b>. Sila sahkan terimaan.</div>' +
            '<label>Nota (jika ada)</label><textarea id="notaTerima" placeholder="cth. Ada sedikit cat tertinggal — minta bersihkan."></textarea>' +
@@ -109,8 +203,10 @@ function render(d){
     } else if (d.wo.review) {
       h += '<div class="ok">🙏 Terima kasih — penilaian anda (' + esc(d.wo.review) + '★) sudah direkod. Kerja ini selesai.</div>';
     }
-    h += '</div>';
+    h += '<a class="bkt" href="https://wa.me/' + esc(String(mt.tel || "0163119076").replace(/[^0-9]/g,"").replace(/^0/,"60")) + '" target="_blank">💬<span><b>Hubungi Pengurus MT</b><small>' + esc(mt.tel || "016-3119076") + ' — WhatsApp</small></span></a></div>';
   }
+
+  h += '<p class="foot">Mr Tanah · ZMJ Solutions (002093603-H) · halaman peribadi — jangan kongsi pautan ini</p>';
   wrap.innerHTML = h; bind();
 }
 
@@ -119,11 +215,11 @@ function bind(){
   if (b1) b1.onclick = function(){
     var ref = document.getElementById("selSH").value;
     if (!ref) { msg("mPilih", '<div class="err">Sila pilih satu sebut harga dahulu.</div>'); return; }
-    if (!confirm("Luluskan sebut harga ini?")) return;
+    if (!confirm("Luluskan sebut harga ini? Nama & maklumat kontraktor akan dipaparkan dan diemel kepada anda.")) return;
     b1.disabled = true; b1.textContent = "Menghantar…";
     post({ form:"lulus", ref_sh:ref }).then(function(r){
-      msg("mPilih", r.ok ? '<div class="ok">✅ Diluluskan — ' + rp(r.jumlah) + '. Mr Tanah akan meneruskan kerja.</div>' : '<div class="err">❌ ' + esc(r.error) + '</div>');
-      if (r.ok) setTimeout(function(){ location.reload(); }, 1500);
+      msg("mPilih", r.ok ? '<div class="ok">✅ Diluluskan — ' + rp(r.jumlah) + '. Maklumat kontraktor diemel kepada anda. Mr Tanah akan keluarkan Work Order.</div>' : '<div class="err">❌ ' + esc(r.error) + '</div>');
+      if (r.ok) setTimeout(function(){ location.reload(); }, 1600);
       else { b1.disabled = false; b1.textContent = "✅ Luluskan Sebut Harga Ini"; }
     }).catch(function(){ b1.disabled = false; b1.textContent = "✅ Luluskan Sebut Harga Ini"; msg("mPilih", '<div class="err">Ralat rangkaian.</div>'); });
   };
