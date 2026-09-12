@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="ms"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow"><title>🗂️ Papan Kanban + SLA (staging)</title>
+<link rel="stylesheet" href="poc.css"></head><body>
+<div class="topbar"><div class="tt"><div><h1>🗂️ Papan Kanban + SLA (staging)</h1><p>Portal Mr Tanah · staging dengan DATA SEBENAR (nama/alamat ditopengkan)</p></div>
+<span class="brand">Mr Tanah · ZMJ Solutions</span></div></div>
+<nav class="pocnav"><div class="in"><a href="index.html">🏠 Staging</a><a href="penyewa.html">👤 Portal Penyewa</a><a href="kanban.html" class="on">🗂️ Kanban + SLA</a></div></nav><div class="wrap">
+<div class="banner">🧪 <b>STAGING (noindex)</b> — dibaca terus dari sistem sebenar (tab <b>Invois</b>, <b>Bil</b>, <b>Tickets</b>, <b>Sebutharga</b>, <b>Work Order</b>, <b>Jadual Bayaran</b>). Nama/telefon/alamat <b>ditopengkan</b>. Halaman production hidup <b>tidak</b> diubah.</div>
+<div class="kpi">
+  <div class="k"><b>3</b><span>Tiket sebenar</span></div>
+  <div class="k red"><b>0</b><span>Lewat &gt;72 jam</span></div>
+  <div class="k"><b>9</b><span>Sebut harga</span></div>
+  <div class="k green"><b>1</b><span>Work Order</span></div>
+  <div class="k"><b>6</b><span>Tahap bayaran</span></div>
+</div>
+<div class="card" style="padding:13px"><div class="kanban"><div class="col"><h3>Baru / Triage<em>0</em></h3><div class="sub" style="padding:8px 4px">Tiada kad</div></div><div class="col"><h3>Sebut Harga<em>2</em></h3><div class="kcard warn" onclick="alert('Staging: butiran penuh (sebut harga / WO / jadual bayaran) pada sistem sebenar.')">
+      <div class="r">MT-K-2026-0001</div>
+      <div class="u">TEST-UNIT C-3-3, Pangsapuri Mewas</div>
+      <div class="m">Plumbing<br>2026-09-10 22:42 · Z*** (UJIAN)</div>
+      <div class="f"><span class="sla warn">70 jam sejak lapor</span><span class="amt">—</span></div>
+      <div class="m" style="margin-top:5px">Kontraktor: <b>—</b></div></div><div class="kcard ok" onclick="alert('Staging: butiran penuh (sebut harga / WO / jadual bayaran) pada sistem sebenar.')">
+      <div class="r">MT-K-2026-0002</div>
+      <div class="u">Blok C-3-3, Pangsapuri Melati</div>
+      <div class="m">Plumbing<br>2026-09-11 09:53 · C*** T*** Mei Ling</div>
+      <div class="f"><span class="sla ok">46 jam sejak lapor</span><span class="amt">—</span></div>
+      <div class="m" style="margin-top:5px">Kontraktor: <b>—</b></div></div></div><div class="col"><h3>Sedang Dibaiki / WO<em>1</em></h3><div class="kcard ok" onclick="alert('Staging: butiran penuh (sebut harga / WO / jadual bayaran) pada sistem sebenar.')">
+      <div class="r">MT-K-2026-0003</div>
+      <div class="u">Blok A-12-5, Kondominium Sri Damai</div>
+      <div class="m">Plumbing<br>2026-09-11 10:03 · C*** T*** Mei Ling</div>
+      <div class="f"><span class="sla ok">46 jam sejak lapor</span><span class="amt">—</span></div>
+      <div class="m" style="margin-top:5px">Kontraktor: <b>R*** P*** &amp; Renovation</b></div></div></div><div class="col"><h3>Selesai<em>0</em></h3><div class="sub" style="padding:8px 4px">Tiada kad</div></div></div>
+<div class="hint">Lajur dibina automatik daripada <b>Status</b> tiket + kewujudan baris dalam <b>Sebutharga</b>/<b>Work Order</b>. Tab <b>Tickets</b> sudah ada medan <i>Keutamaan</i>, <i>Pihak Bertanggungjawab</i>, <i>Jumlah Diluluskan</i> &amp; <i>Folder Gambar</i> — yang kurang hanya <b>jam SLA</b> + <b>tarikh triage</b> untuk warna hijau/kuning/merah tepat (sekarang guna heuristik 48/72 jam).</div></div>
+
+<div class="card"><h2>📄 Sebut harga sebenar (tab Sebutharga)</h2>
+<table><tr><th>Ref SH</th><th>Ref Tiket</th><th>Kontraktor</th><th class="num">Jumlah</th><th>Tempoh</th><th>Waranti</th><th>Status</th></tr><tr><td>MT-Q-2026-0001</td><td>MT-K-2026-0001</td><td>R*** P*** &amp; Renovation</td><td class='num'>RM 480.00</td><td>2</td><td>3</td><td>DITERIMA</td></tr><tr><td>MT-Q-2026-0002</td><td>MT-K-2026-0001</td><td>M*** J*** Renovation</td><td class='num'>RM 395.00</td><td>4</td><td>1</td><td>TIDAK DIPILIH</td></tr><tr><td>MT-Q-2026-0003</td><td>MT-K-2026-0001</td><td>S*** A*** &amp; Plumbing</td><td class='num'>RM 0.00</td><td></td><td></td><td>DIMINTA</td></tr><tr><td>MT-Q-2026-0004</td><td>MT-K-2026-0002</td><td>R*** P*** &amp; Renovation</td><td class='num'>RM 11,900.00</td><td>12</td><td>3</td><td>DITERIMA</td></tr><tr><td>MT-Q-2026-0005</td><td>MT-K-2026-0002</td><td>M*** J*** Renovation</td><td class='num'>RM 12,400.00</td><td>10</td><td>6</td><td>DITERIMA</td></tr><tr><td>MT-Q-2026-0006</td><td>MT-K-2026-0002</td><td>S*** A*** &amp; Plumbing</td><td class='num'>RM 0.00</td><td></td><td></td><td>DIMINTA</td></tr><tr><td>MT-Q-2026-0007</td><td>MT-K-2026-0003</td><td>R*** P*** &amp; Renovation</td><td class='num'>RM 12,400.00</td><td>10</td><td>6</td><td>DIPILIH</td></tr><tr><td>MT-Q-2026-0008</td><td>MT-K-2026-0003</td><td>M*** J*** Renovation</td><td class='num'>RM 13,150.00</td><td>9</td><td>6</td><td>TIDAK DIPILIH</td></tr><tr><td>MT-Q-2026-0009</td><td>MT-K-2026-0003</td><td>S*** A*** &amp; Plumbing</td><td class='num'>RM 11,900.00</td><td>12</td><td>3</td><td>TIDAK DIPILIH</td></tr></table></div>
+
+<div class="card"><h2>🧰 Work Order sebenar</h2>
+<table><tr><th>No WO</th><th>Ref Tiket</th><th>Kontraktor</th><th class="num">Jumlah kos</th><th>Status kerja</th><th>Siap sasaran</th></tr><tr><td>MT-WO-2026-0001</td><td>MT-K-2026-0003</td><td>M***</td><td class='num'>RM 14,250.00</td><td>DIKELUARKAN</td><td>2026-09-25</td></tr></table></div>
+
+<div class="card"><h2>💵 Jadual bayaran (milestone)</h2>
+<table><tr><th>No WO</th><th>Tahap</th><th>Peringkat</th><th class="num">Amaun</th><th>Status</th><th>Tarikh</th></tr><tr><td>MT-WO-2026-0001</td><td>MT-PP-2026-0001</td><td>Deposit / mobilisasi 30%</td><td class='num'>RM 3,720.00</td><td>DIBAYAR</td><td>2026-09-11</td></tr><tr><td>MT-WO-2026-0001</td><td>MT-PP-2026-0002</td><td>Kerja utama siap 40%</td><td class='num'>RM 4,960.00</td><td>BELUM</td><td>2026-09-11</td></tr><tr><td>MT-WO-2026-0001</td><td>MT-PP-2026-0003</td><td>Siap sepenuhnya (CPC) 30%</td><td class='num'>RM 3,720.00</td><td>BELUM</td><td>—</td></tr><tr><td>MT-WO-2026-0001</td><td>MT-PP-2026-0004</td><td>Pelepasan retensi 50% (pada siap praktikal)</td><td class='num'>RM 217.00</td><td>BELUM</td><td>—</td></tr><tr><td>MT-WO-2026-0001</td><td>MT-PP-2026-0005</td><td>Pelepasan retensi baki (tempoh kecacatan 30 hari)</td><td class='num'>RM 217.00</td><td>BELUM</td><td>—</td></tr><tr><td>MT-WO-2026-0001</td><td>MT-PP-2026-0006</td><td>VO — Ganti paip utama PVC 4&quot; + siling tandas (kerosakan tersembunyi)</td><td class='num'>RM 1,850.00</td><td>BELUM</td><td>—</td></tr></table></div>
+
+<div class="card"><h2>⭐ Panel kontraktor &amp; rating sebenar</h2>
+<table><tr><th>ID</th><th>Nama</th><th>Kategori</th><th class="num">Rating</th><th class="num">Bil kerja</th><th class="num">Kualiti/Masa %</th></tr><tr><td>MT-CK-0001</td><td>Rizal Plumbing &amp; Renovation</td><td></td><td class='num'>4.6</td><td class='num'></td><td class='num'></td></tr><tr><td>MT-CK-0002</td><td>Maju Jaya Renovation</td><td></td><td class='num'>4</td><td class='num'></td><td class='num'></td></tr><tr><td>MT-CK-0003</td><td>Sinaran Aircond &amp; Plumbing</td><td></td><td class='num'>3.7</td><td class='num'></td><td class='num'></td></tr></table>
+<div class="hint">Rating dikira automatik daripada penilaian selepas kerja (ZMPKerja v18).</div></div>
+<div class="foot">Staging · dijana oleh Ali (Hermes) dari Sheets sebenar · noindex · production tidak disentuh</div></div></body></html>

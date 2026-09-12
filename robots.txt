@@ -2,3 +2,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://mrtanah.com/sitemap.xml
+
+# Pratonton dalaman (jangan indeks)
+User-agent: *
+Disallow: /portal/preview/
