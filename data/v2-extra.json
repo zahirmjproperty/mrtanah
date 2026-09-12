@@ -1,0 +1,413 @@
+{
+  "nota": "Data sokongan halaman Butiran Projek v2: video rasmi (disahkan oEmbed), grafik, label pelan. Koordinat hotspot TIDAK diletak — perlu disahkan pemaju (elak salah maklumat).",
+  "terra-residences": {
+    "video": [],
+    "grafik": {
+      "unit_mix": [
+        {
+          "label": "Blok C — Camellia (28 tingkat)",
+          "value": 166,
+          "warna": "#123a7a"
+        },
+        {
+          "label": "Blok B — Begonia (28 tingkat)",
+          "value": 182,
+          "warna": "#2b6cd4"
+        }
+      ],
+      "jenis_unit": [
+        {
+          "kod": "Type C — City Retreat",
+          "kps": "700 kps",
+          "bilik": "1R+1BA",
+          "min": 489800,
+          "max": 529800
+        },
+        {
+          "kod": "Type B1/B2 — Lakeside Suite",
+          "kps": "904 kps",
+          "bilik": "2R+2BA",
+          "min": 673800,
+          "max": 885800
+        },
+        {
+          "kod": "Type A1/A2 — Premium / Dual-Key",
+          "kps": "1,184 kps",
+          "bilik": "3R+3BA",
+          "min": 1118800,
+          "max": 1158800
+        }
+      ],
+      "jarak": [
+        {
+          "label": "Ayer@8",
+          "km": 0.8
+        },
+        {
+          "label": "SK Putrajaya P8(3)",
+          "km": 1.2
+        },
+        {
+          "label": "Hospital Putrajaya & IKN",
+          "km": 2.5
+        },
+        {
+          "label": "Putrajaya Sentral (MRT/ERL)",
+          "km": 3.0
+        },
+        {
+          "label": "Alamanda Putrajaya",
+          "km": 7.3
+        },
+        {
+          "label": "IOI City Mall",
+          "km": 12.0
+        }
+      ],
+      "timeline": [
+        {
+          "t": "Pelancaran",
+          "d": "Fasa jualan dibuka pemaju (2022) · anugerah Best Waterfront High-Rise 2025"
+        },
+        {
+          "t": "Pembinaan",
+          "d": "Dua menara 28 tingkat sudah berdiri (foto drone rasmi); hotel Fraser Residence soft opening 18 Ogos 2026"
+        },
+        {
+          "t": "Dijangka siap",
+          "d": "November 2027 — mengikut permit iklan"
+        },
+        {
+          "t": "Penyerahan (VP)",
+          "d": "Sahkan tarikh CCC/VP dengan sales gallery 03 8888 6633"
+        }
+      ]
+    },
+    "pelan": [
+      {
+        "judul": "Type A1 — Premium (1,184 kps)",
+        "kps": "1,184 kps",
+        "bilik": "3R+3BA",
+        "kereta": "2"
+      },
+      {
+        "judul": "Type A2 — Dual-Key (1,184 kps)",
+        "kps": "1,184 kps",
+        "bilik": "3R+3BA",
+        "kereta": "2"
+      },
+      {
+        "judul": "Type B1 — Lakeside Suite (904 kps)",
+        "kps": "904 kps",
+        "bilik": "2R+2BA",
+        "kereta": "1"
+      },
+      {
+        "judul": "Type B2 — Lakeside Suite (904 kps)",
+        "kps": "904 kps",
+        "bilik": "2R+2BA",
+        "kereta": "1–2"
+      },
+      {
+        "judul": "Type C — City Retreat (700 kps)",
+        "kps": "700 kps",
+        "bilik": "1R+1BA",
+        "kereta": "1"
+      }
+    ],
+    "masterplan_legenda": [
+      "2 menara kondominium 28 tingkat (Blok B — Begonia, Blok C — Camellia)",
+      "Kemudahan podium: kolam, gimnasium, dewan serbaguna, taman bumbung",
+      "Plaza Terra — pusat beli-belah komuniti (170,000 kps)",
+      "Fraser Residence Putrajaya — 283 unit servis apartment (sudah beroperasi)",
+      "Terra Acara — dewan konvensyen (dijangka 2027)",
+      "Promenade tepi Tasik Putrajaya"
+    ],
+    "nota_video": "Tiada video rasmi pemaju dijumpai untuk TERRA (saluran PjH tidak menyiarkan video projek). Cadangan: rakam walkthrough show unit sendiri (Zahir/Fadilah) ATAU minta bahan video rasmi daripada sales gallery."
+  },
+  "avalon-cybersouth": {
+    "video": [],
+    "grafik": {
+      "unit_mix": [
+        {
+          "label": "Type A — Link Homes (22'×65')",
+          "value": 113,
+          "warna": "#123a7a"
+        },
+        {
+          "label": "Type B — Lakefront Homes (26'×70')",
+          "value": 17,
+          "warna": "#2b6cd4"
+        },
+        {
+          "label": "Type C — Garden Homes (26'×70')",
+          "value": 36,
+          "warna": "#7c3aed"
+        }
+      ],
+      "jenis_unit": [
+        {
+          "kod": "Type A — Link Homes",
+          "kps": "2,004–2,038 kps",
+          "bilik": "4R+4BA",
+          "min": 803800,
+          "max": 1178800
+        },
+        {
+          "kod": "Type C — Garden Homes",
+          "kps": "2,390–2,424 kps",
+          "bilik": "4R+4BA",
+          "min": 941800,
+          "max": 1346800
+        },
+        {
+          "kod": "Type B — Lakefront Homes",
+          "kps": "2,421–2,454 kps",
+          "bilik": "4R+4BA",
+          "min": 1090800,
+          "max": 1484800
+        }
+      ],
+      "jarak": [
+        {
+          "label": "Jalan Cybersouth 2 (akses terus)",
+          "km": 0.3
+        },
+        {
+          "label": "The Island @ Cybersouth",
+          "km": 0.5
+        },
+        {
+          "label": "Putrajaya Sentral (MRT2/ERL)",
+          "km": 12.0
+        },
+        {
+          "label": "Hospital Cyberjaya",
+          "km": 9.0
+        },
+        {
+          "label": "MMU Cyberjaya",
+          "km": 8.0
+        },
+        {
+          "label": "KLIA / KLIA2",
+          "km": 25.0
+        }
+      ],
+      "timeline": [
+        {
+          "t": "Pelancaran",
+          "d": "Phase 1 (166 unit, GDV RM151 juta) — habis dijual 15 Julai 2025"
+        },
+        {
+          "t": "Phase 2",
+          "d": "Dilancarkan Oktober 2025"
+        },
+        {
+          "t": "Pembinaan",
+          "d": "Kemas kini tapak Jun 2026 dipaparkan di laman pemaju"
+        },
+        {
+          "t": "Dijangka siap",
+          "d": "Julai 2028 (permit iklan)"
+        }
+      ]
+    },
+    "pelan": [
+      {
+        "judul": "Type A — Link Homes (2,004–2,038 kps)",
+        "kps": "2,004–2,038 kps",
+        "bilik": "4R+4BA",
+        "kereta": "2"
+      },
+      {
+        "judul": "Type B — Lakefront Homes (2,421–2,454 kps)",
+        "kps": "2,421–2,454 kps",
+        "bilik": "4R+4BA",
+        "kereta": "2"
+      },
+      {
+        "judul": "Type C — Garden Homes (2,390–2,424 kps)",
+        "kps": "2,390–2,424 kps",
+        "bilik": "4R+4BA",
+        "kereta": "2"
+      },
+      {
+        "judul": "Pelan tapak fasa (Site Plan)",
+        "kps": "25 ekar · 343 unit",
+        "bilik": "—",
+        "kereta": "—"
+      }
+    ],
+    "masterplan_legenda": [
+      "Township Cybersouth (417 ekar) — Avalon fasa landed terakhir",
+      "Tasik & Central Park (3.49 ekar taman)",
+      "Jogging track perimeter 2.9 km",
+      "Clubhouse (gim, dewan serbaguna, bilik mesyuarat)",
+      "The Island @ Cybersouth (fasa berasingan)",
+      "Meria @ Cybersouth (komersial)"
+    ],
+    "nota_video": "Tiada video rasmi projek Avalon di saluran Avaland (video rasmi yang ada ialah untuk projek lain). Cadangan: minta video rasmi daripada sales gallery 011-1722 5596 atau rakam walkthrough sendiri."
+  },
+  "setia-seraya-p15": {
+    "video": [
+      {
+        "id": "kRbtyFci9Ik",
+        "saluran": "SetiaToday (SP Setia)",
+        "tajuk": "Setia Seraya Residences — video rasmi pemaju"
+      }
+    ],
+    "nota_video": "Video rasmi SP Setia (saluran SetiaToday) — disahkan melalui YouTube oEmbed.",
+    "grafik": {
+      "jarak": [
+        {
+          "label": "Alamanda Shopping Centre",
+          "km": 2.0
+        },
+        {
+          "label": "Putrajaya Sentral (ERL/MRT)",
+          "km": 4.0
+        },
+        {
+          "label": "Hospital Putrajaya",
+          "km": 3.5
+        },
+        {
+          "label": "IOI City Mall",
+          "km": 11.0
+        },
+        {
+          "label": "KLIA (ERL)",
+          "km": 30.0
+        }
+      ],
+      "timeline": [
+        {
+          "t": "Pelancaran",
+          "d": "Projek kondominium 363 unit (1 blok, 40 tingkat)"
+        },
+        {
+          "t": "Siap",
+          "d": "VP 26/10/2022 — siap & diserahkan"
+        },
+        {
+          "t": "Sekarang",
+          "d": "Harga = pasaran sekunder; unit boleh dilihat sebenar"
+        }
+      ]
+    }
+  },
+  "allamanda-saujana-klia": {
+    "video": [
+      {
+        "id": "SRK1NvAqy3I",
+        "saluran": "Glomac Berhad",
+        "tajuk": "Saujana KLIA — video rasmi pemaju (Glomac)"
+      }
+    ],
+    "nota_video": "Video rasmi Glomac untuk township Saujana KLIA (tapak Allamanda berada dalam township ini) — disahkan melalui YouTube oEmbed.",
+    "grafik": {
+      "jenis_unit": [
+        {
+          "kod": "Type A — Teres 2 tingkat",
+          "kps": "1,500 kps",
+          "bilik": "4R+3BA",
+          "min": 548905,
+          "max": 831659
+        }
+      ],
+      "jarak": [
+        {
+          "label": "KIP Mall Kota Warisan",
+          "km": 1.6
+        },
+        {
+          "label": "SK Kota Warisan",
+          "km": 2.4
+        },
+        {
+          "label": "ERL Salak Tinggi",
+          "km": 3.3
+        },
+        {
+          "label": "Xiamen University",
+          "km": 3.6
+        },
+        {
+          "label": "Mitsui Outlet Park KLIA",
+          "km": 5.1
+        },
+        {
+          "label": "KLIA/KLIA2",
+          "km": 11.7
+        }
+      ],
+      "timeline": [
+        {
+          "t": "Lancaran",
+          "d": "Fasa Allamanda dilancarkan (fasa terdahulu Primrose siap & diserahkan Jan 2024)"
+        },
+        {
+          "t": "Pembinaan",
+          "d": "Sedang dibina"
+        },
+        {
+          "t": "Dijangka siap",
+          "d": "2027 (sahkan dengan permit iklan)"
+        },
+        {
+          "t": "Penyerahan (VP)",
+          "d": "Sahkan dengan sales gallery Glomac"
+        }
+      ]
+    }
+  },
+  "senna-presint-12": {
+    "video": [],
+    "nota_video": "Tiada video rasmi PjH untuk SENNA.",
+    "grafik": {
+      "timeline": [
+        {
+          "t": "Status",
+          "d": "Lancaran baharu (Presint 12)"
+        },
+        {
+          "t": "Keluasan",
+          "d": "3,197 – 6,706 kps · 6+1 bilik · semi-D 3 tingkat"
+        },
+        {
+          "t": "Harga",
+          "d": "Dari RM2.3 juta (laman pemaju)"
+        },
+        {
+          "t": "Maklumat permit",
+          "d": "Sedang dilengkapkan daripada brosur pemaju"
+        }
+      ]
+    }
+  },
+  "astana-residence-p8": {
+    "video": [],
+    "nota_video": "Tiada video rasmi PjH untuk Astana Residence.",
+    "grafik": {
+      "timeline": [
+        {
+          "t": "Status",
+          "d": "Lancaran baharu (Presint 8, tepi tasik)"
+        },
+        {
+          "t": "Keluasan",
+          "d": "5,348 – 6,456 kps · boutique villa 2.5–3.5 tingkat"
+        },
+        {
+          "t": "Ciri",
+          "d": "Lift peribadi, 3 parking berbumbung, clubhouse kolam infiniti 25 m"
+        },
+        {
+          "t": "Harga",
+          "d": "Dari RM2.3 juta (laman pemaju)"
+        }
+      ]
+    }
+  }
+}
