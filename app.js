@@ -84,6 +84,7 @@ function mediaHTML(l, link, extra = []) {
   return `<a class="card-media" href="${link}" aria-label="${l.title}">
     ${inner}
     <div class="badges">${badges.join("")}</div>
+    ${(l.images && l.images.length > 1) ? `<span class="phcount">📷 ${l.images.length}</span>` : ""}
   </a>`;
 }
 

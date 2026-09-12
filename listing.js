@@ -112,7 +112,27 @@ function specsTable(l) {
   if (l.kategori) rows.push(["Kategori", l.kategori]);
   if (l.zoning && l.zoning !== "Tidak dinyatakan") rows.push(["Zoning", l.zoning]);
   if (l.psf) rows.push(["Harga Tanah (psf)", "RM" + l.psf.toLocaleString("en-MY") + "/sqft"]);
-  return `<table class="spec-table">${rows.map(r => `<tr><th>${r[0]}</th><td>${r[1]}</td></tr>`).join("")}</table>`;
+  // Fasa 1: medan teknikal baharu — papar jika ada, tandakan jika belum ada rekod
+  const baharu = [["Jenis Geran", l.jenis_geran], ["Syarat Nyata", l.syarat_nyata],
+                  ["Topografi", l.topografi], ["Akses Jalan", l.akses_jalan],
+                  ["Kemudahan Asas", l.utiliti], ["Tanaman Sedia Ada", l.tanaman]];
+  const kurang = [];
+  baharu.forEach(function (b) {
+    if (b[1] === "" || b[1] === "-" || b[1]) { if (b[1]) rows.push(b); else kurang.push(b[0]); }
+    else kurang.push(b[0]);
+  });
+  const isTanah = (l.type === "Tanah");
+  const jadual = `<table class="${isTanah ? "spec-table" : "spec-table"}">${rows.map(r => `<tr><th>${r[0]}</th><td>${r[1]}</td></tr>`).join("")}</table>`;
+  if (isTanah && kurang.length) {
+    return `<div class="tech-f1"><div class="hd">Jadual Data Teknikal Tanah <span>Disemak ${l.date || ""}</span></div>` +
+      jadual +
+      `<div class="verify"><span>Sedang dilengkapkan: ${kurang.join(", ")} — sila WhatsApp kami untuk maklumat terkini.</span></div></div>`;
+  }
+  if (isTanah) {
+    return `<div class="tech-f1"><div class="hd">Jadual Data Teknikal Tanah <span>Disemak ${l.date || ""}</span></div>` + jadual +
+      `<div class="verify"><span>✅ Maklumat hakmilik &amp; status listing disemak oleh ejen berdaftar (PEA 2684).</span></div></div>`;
+  }
+  return jadual;
 }
 
 function chipList(items) {
