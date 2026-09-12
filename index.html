@@ -26,7 +26,7 @@
   "address": {"@type": "PostalAddress", "addressCountry": "MY"}
 }
 </script>
-<link rel="stylesheet" href="style.css?v=54">
+<link rel="stylesheet" href="style.css?v=55">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
 </head>
 <body>
@@ -43,9 +43,14 @@
     <nav class="nav" id="nav">
       <a href="index.html" class="active">Utama</a>
       <a href="tentang.html">Tentang</a>
-      <a href="jual-sewa-develop.html">Serah Listing</a>
-      <a href="https://mrtanah.com/serah-dokumen.html">Serah Dokumen</a>
-      <a href="https://mrtanah.com/portal/">Portal Pengurusan</a>
+      <div class="navdrop">
+        <button type="button" aria-haspopup="true">Untuk Pemilik &amp; Ejen ▾</button>
+        <div class="menu">
+          <a href="jual-sewa-develop.html">Serah Listing</a>
+          <a href="https://mrtanah.com/serah-dokumen.html">Serah Dokumen</a>
+          <a href="https://mrtanah.com/portal/">Portal Pengurusan</a>
+        </div>
+      </div>
     </nav>
     <div class="header-actions">
       <a class="btn-wa" href="https://wa.me/60163119076" target="_blank" rel="noopener">📲 016-3119076</a>
@@ -54,9 +59,8 @@
   </div>
   <div class="navchips">
     <a class="chip aktif" href="index.html">Utama</a>
-    <a class="chip" href="jual-sewa-develop.html">Serah Listing</a>
-    <a class="chip" href="https://mrtanah.com/portal/">Portal</a>
     <a class="chip" href="tentang.html">Tentang</a>
+    <a class="chip" href="jual-sewa-develop.html">Pemilik/Ejen</a>
   </div>
 </header>
 
