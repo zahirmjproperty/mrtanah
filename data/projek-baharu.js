@@ -403,7 +403,7 @@ window.PROJECTS = [
   "dijangka_siap": "2027 (sumber ejen/portal — sahkan dengan permit)",
   "harga_label": "Dari RM548,905",
   "harga_rasmi": "Harga SPA sebelum rebat: RM548,905 – RM831,659 (RM366 – RM554 psf) — sumber portal/pemaju, perlu sahkan dengan senarai harga berpermit",
-  "status_fasa": "Lancaran baharu / bawah pembinaan",
+  "status_fasa": "Bawah pembinaan",
   "status_pembinaan": "Fasa terdahulu Saujana KLIA (Primrose) siap & diserahkan Januari 2024 · Allamanda dilancarkan 2024/2025",
   "unit_list": [
    {
