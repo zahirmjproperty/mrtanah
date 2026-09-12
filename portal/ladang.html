@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Papan Ladang — Mr Tanah / SAT (dalaman)</title>
+<style>
+  :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; --merah:#c0392b; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; }
+  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 60%,#14905c 100%); color:#fff; padding:16px; }
+  .topbar h1 { font-size:18px; } .topbar p { font-size:12.5px; opacity:.92; margin-top:2px; }
+  .wrap { max-width:1000px; margin:0 auto; padding:14px 14px 48px; }
+  .card { background:#fff; border-radius:14px; padding:15px; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:13px; }
+  .card h2 { font-size:14.5px; color:var(--mt-tua); margin-bottom:10px; }
+  .kpi { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:13px; }
+  .kpi div { flex:1; min-width:104px; background:#fff; border-radius:12px; padding:11px 8px; text-align:center; box-shadow:0 1px 3px rgba(0,0,0,.07); }
+  .kpi b { display:block; font-size:18px; color:var(--mt-tua); } .kpi span { font-size:10.3px; color:#5a6b61; font-weight:600; }
+  .kpi .hijau b { color:var(--hijau); } .kpi .oren b { color:var(--oren); } .kpi .merah b { color:var(--merah); }
+  table { width:100%; border-collapse:collapse; font-size:12.2px; }
+  th { background:#eef3f7; color:var(--mt-tua); text-align:left; padding:7px 6px; font-size:10.4px; }
+  td { padding:9px 6px; border-top:1px solid #e9f0ec; vertical-align:top; }
+  .num { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .meta { background:#f6faf8; border:1px solid #e0eae3; border-radius:11px; padding:11px 12px; font-size:12.6px; }
+  .row { display:flex; justify-content:space-between; gap:10px; padding:3px 0; border-bottom:1px dashed #e6efe9; }
+  .row:last-child { border:0; } .row span { color:#5a6b61; }
+  .btn { padding:12px 16px; background:var(--hijau); color:#fff; border:0; border-radius:10px; font-size:14px; font-weight:700; cursor:pointer; }
+  .btn.sec { background:var(--mt); } .btn.ghost { background:#eef3f7; color:var(--mt-tua); }
+  .btnrow { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:11px; }
+  input,select,textarea { padding:11px; border:1.5px solid #cfdcd4; border-radius:10px; font-size:14px; font-family:inherit; width:100%; }
+  .grid { display:grid; gap:11px; }
+  @media(min-width:760px){ .grid.g2 { grid-template-columns:1fr 1fr; } }
+  .st { font-size:10px; font-weight:800; border-radius:20px; padding:2px 8px; display:inline-block; white-space:nowrap; }
+  .s-ok { background:#e5f4ec; color:#0e5a33; } .s-warn { background:#fff4e2; color:#8a4c00; } .s-bad { background:#fdeaea; color:#a11; }
+  .note { background:#eef4ff; border:1px solid #d8e4ff; border-radius:11px; padding:11px; font-size:12.4px; color:#1e3a8a; }
+  .hint { font-size:11.5px; color:#5a6b61; margin-top:6px; }
+  .foot { text-align:center; font-size:11px; color:#6a7a71; margin-top:16px; }
+  .splash { text-align:center; padding:40px 16px; color:#5a6b61; font-size:14px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>🌴 Papan Ladang — Mr Tanah · SAT</h1>
+    <p>Blok · hasil · harga rujukan MPOB · kos · agihan pemilik · lesen</p>
+  </div>
+  <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
+  <div class="foot">Dalaman — jangan kongsi pautan ini.</div>
+
+<script>
+var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
+var T = new URLSearchParams(location.search).get("t") || localStorage.getItem("mt_admin_token") || "";
+var D = null;
+function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function rm(n){ return "RM " + Number(n||0).toLocaleString("ms-MY", {minimumFractionDigits:2, maximumFractionDigits:2}); }
+function tkh(s){ if(!s) return "—"; var d=String(s).substring(0,10).split("-"); return d.length===3 ? d[2]+"/"+d[1]+"/"+d[0] : String(s); }
+function splash(m){ document.getElementById("wrap").innerHTML = '<div class="splash">'+m+'</div>'; }
+
+function login(){
+  document.getElementById("wrap").innerHTML = '<div class="card"><h2>Log masuk papan ladang</h2>'
+    + '<p class="hint">Masukkan token admin MT.</p><input type="password" id="tk" placeholder="mtadm-…">'
+    + '<div class="btnrow"><button class="btn" id="bIn">Masuk</button></div><div id="lg"></div></div>';
+  document.getElementById("bIn").onclick = function(){ var v=document.getElementById("tk").value.trim(); if(!v) return; localStorage.setItem("mt_admin_token",v); T=v; muat(); };
+}
+function muat(){
+  fetch(API + "?aksi=ladang&admin_token=" + encodeURIComponent(T))
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if(!d.ok){ localStorage.removeItem("mt_admin_token"); login(); document.getElementById("lg").innerHTML='<div class="hint" style="color:#a11">'+esc(d.error||"Token tidak sah")+'</div>'; return; }
+      D = d; lukis();
+    }).catch(function(e){ splash("⚠️ Gagal memuatkan: "+esc(e)); });
+}
+function lukis(){
+  var k = D.kpi, h = "";
+  h += '<div class="kpi">'
+    + '<div><b>' + k.bil_blok + '</b><span>Blok</span></div>'
+    + '<div><b>' + k.luas_ha.toFixed(2) + ' ha</b><span>Luas</span></div>'
+    + '<div class="hijau"><b>' + k.ffb_tan.toFixed(2) + ' tan</b><span>FFB Dijual</span></div>'
+    + '<div class="oren"><b>' + k.tan_per_ha.toFixed(2) + '</b><span>Tan / ha</span></div>'
+    + '<div><b>' + rm(k.bersih) + '</b><span>Bersih</span></div>'
+    + '<div><b>' + k.bil_pemilik + '</b><span>Pemilik</span></div></div>';
+
+  var hr = D.harga || {};
+  h += '<div class="card"><h2>📊 Harga Diterima vs Rujukan Pasaran</h2><div class="grid g2"><div class="meta">'
+    + '<div class="row"><span>Harga purata diterima (ladang)</span><b>' + rm(k.harga_purata) + ' / tan</b></div>'
+    + '<div class="row"><span>CPO MPOB (rujukan terkini)</span><b>' + (hr.cpo ? "RM " + Number(hr.cpo).toLocaleString("ms-MY",{minimumFractionDigits:2}) + " / tan" : "— belum ada snapshot") + '</b></div>'
+    + '<div class="row"><span>Nilai kandungan CPO per tan FFB (CPO × OER 20%)</span><b>' + rm(k.nilai_kandungan_cpo) + '</b></div>'
+    + '<div class="row"><span>Harga diterima / nilai kandungan</span><b>' + (k.margin_vs_kandungan ? k.margin_vs_kandungan.toFixed(1) + "%" : "—") + '</b></div>'
+    + '<div class="row"><span>Rujukan BTS MPOB (RM/1% OER)</span><b>' + (hr.rm_1oer ? Number(hr.rm_1oer).toFixed(2) + " → ≈ " + rm(hr.rm_1oer*20) + "/tan (OER 20%)" : "—") + '</b></div>'
+    + '<div class="row"><span>Snapshot</span><b>' + esc(hr.bulan || "—") + ' · ' + esc(hr.sumber || "—") + ' · ' + tkh(hr.tarikh_ambil) + '</b></div>'
+    + '</div><div>'
+    + '<div class="note"><b>Nota teknikal:</b> harga rujukan BTS rasmi MPOB disebut <b>RM per 1% OER</b> (pintu kilang, ikut wilayah), '
+    + 'manakala harga kilang dibayar <b>RM/tan</b>. Hubungannya: RM/tan ≈ (RM per 1% OER) × OER%. Silangan CPO × OER di atas = '
+    + '<b>siling kasar</b> nilai buah; harga sebenar biasanya sedikit di bawahnya (margin kilang). '
+    + 'Cadangan: isi <b>OER% sebenar</b> pada setiap jualan (kolum OER dalam tab Log Hasil) untuk perbandingan tepat.</div>'
+    + '<div class="hint">Snapshot harga auto diambil oleh cron server dari laman MPOB/BEPI (harian) ke tab <b>Harga Rujukan BTS</b>. Boleh juga simpan manual di bawah.</div>'
+    + '<div class="btnrow"><input id="hBulan" placeholder="Bulan YYYY-MM" style="max-width:130px"><input id="hRm" placeholder="RM / 1% OER" style="max-width:130px">'
+    + '<input id="hCpo" placeholder="CPO RM/tan" style="max-width:130px"><button class="btn ghost" id="bHarga">Simpan snapshot</button></div>'
+    + '<div id="hHasil" class="hint"></div></div></div></div>';
+
+  h += '<div class="card"><h2>🌴 Prestasi Blok</h2><table><tr><th>Blok</th><th class="num">Luas (ha)</th><th>Tahun tanam</th><th class="num">FFB (tan)</th><th class="num">Tan/ha</th><th class="num">Bersih</th><th>Status</th></tr>';
+  (D.blok||[]).forEach(function(b){
+    h += '<tr><td><b>'+esc(b.id)+'</b><br><span class="hint">'+esc(b.nama)+'</span></td><td class="num">'+Number(b.ha).toFixed(2)+'</td><td>'+esc(b.tanam||"—")+'</td>'
+      + '<td class="num">'+Number(b.ffb).toFixed(2)+'</td><td class="num">'+Number(b.tan_per_ha).toFixed(2)+'</td><td class="num">'+rm(b.bersih)+'</td><td>'+esc(b.status||"—")+'</td></tr>';
+  });
+  h += '</table><div class="hint">Penanda aras: pekebun kecil ≈10.6 tan/ha/tahun · estet baik 20–25 tan/ha/tahun (angka di atas = tempoh data, bukan tahunan).</div></div>';
+
+  h += '<div class="card"><h2>🧾 Rekod Jualan Terkini</h2><table><tr><th>Tarikh</th><th>Blok</th><th class="num">Tan</th><th class="num">Harga/tan</th><th class="num">Bersih</th><th>Pembeli</th><th>Chit</th><th class="num">Beza vs siling</th></tr>';
+  (D.hasil||[]).forEach(function(x){
+    var kls = x.beza < -100 ? "s-bad" : (x.beza < 0 ? "s-warn" : "s-ok");
+    h += '<tr><td>'+tkh(x.tarikh)+'</td><td>'+esc(x.blok)+'</td><td class="num">'+Number(x.tan).toFixed(2)+'</td><td class="num">'+rm(x.harga)+'</td>'
+      + '<td class="num">'+rm(x.bersih)+'</td><td>'+esc(x.pembeli)+'</td><td>'+esc(x.chit||"—")+'</td>'
+      + '<td class="num"><span class="st '+kls+'">'+(x.beza>=0?"+":"")+Number(x.beza).toFixed(0)+'</span></td></tr>';
+  });
+  h += '</table></div>';
+
+  h += '<div class="card"><h2>💰 Ringkasan Bulanan &amp; Agihan Pemilik</h2><div class="grid g2"><div>'
+    + '<table><tr><th>Bulan</th><th class="num">Kasar</th><th class="num">Potongan</th><th class="num">Bersih</th></tr>';
+  (D.ringkasan||[]).forEach(function(r){ h += '<tr><td>'+esc(r.bulan)+'</td><td class="num">'+rm(r.kasar)+'</td><td class="num">'+rm(r.potongan)+'</td><td class="num"><b>'+rm(r.bersih)+'</b></td></tr>'; });
+  h += '</table></div><div><table><tr><th>Bulan</th><th>Pemilik</th><th class="num">Bahagian</th><th class="num">Agihan</th></tr>';
+  (D.agihan||[]).forEach(function(a){ h += '<tr><td>'+esc(a.bulan)+'</td><td>'+esc(a.nama)+'</td><td class="num">'+(Number(a.bahagian)*100).toFixed(2)+'%</td><td class="num">'+rm(a.amaun)+'</td></tr>'; });
+  h += '</table><div class="hint">Dipapar: ' + (D.bulan_agihan||[]).join(" · ") + '</div></div></div></div>';
+
+  h += '<div class="card"><h2>🛡️ Lesen &amp; Pihak Berdaftar</h2><table><tr><th>Pihak</th><th>Peranan</th><th>Jenis lesen</th><th>No. lesen</th><th>Status</th></tr>';
+  if (!(D.lesen||[]).length) h += '<tr><td colspan="5">Tiada rekod — isi lesen MPOB (e-LesenPK), MyGAP, SSM kontraktor/pembeli dalam tab <b>Pihak Berdaftar</b>.</td></tr>';
+  (D.lesen||[]).forEach(function(l){ h += '<tr><td>'+esc(l.nama)+'</td><td>'+esc(l.peranan)+'</td><td>'+esc(l.jenis_lesen||"—")+'</td><td>'+esc(l.no_lesen||"—")+'</td><td>'+esc(l.status||"—")+'</td></tr>'; });
+  h += '</table></div>';
+
+  h += '<div class="card"><h2>🔗 Jana pautan portal pemilik ladang</h2>'
+    + '<div class="btnrow"><input id="pJana" placeholder="cth P-001" style="max-width:160px"><button class="btn" id="bJana">Jana / ambil pautan</button></div>'
+    + '<div id="hJana" class="hint">Setiap pemilik nampak blok, bahagian %, hasil &amp; agihan sendiri sahaja.</div></div>';
+
+  h += '<div class="btnrow"><button class="btn ghost" id="bOut">Log keluar</button></div>';
+  document.getElementById("wrap").innerHTML = h;
+
+  document.getElementById("bOut").onclick = function(){ localStorage.removeItem("mt_admin_token"); login(); };
+  document.getElementById("bHarga").onclick = function(){
+    var b={ form:"hargabts", admin_token:T, bulan:(document.getElementById("hBulan").value||"").trim(),
+            rm_1oer:(document.getElementById("hRm").value||"").trim(), cpo:(document.getElementById("hCpo").value||"").trim() };
+    document.getElementById("hHasil").innerHTML = "Menyimpan…";
+    fetch(API,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(b)})
+      .then(function(r){return r.json();}).then(function(d){
+        document.getElementById("hHasil").innerHTML = d.ok ? "✅ Snapshot disimpan (FFB≈"+rm(d.ffb_anggaran)+")" : "⚠️ "+esc(d.error);
+        if (d.ok) muat();
+      }).catch(function(e){ document.getElementById("hHasil").innerHTML = "⚠️ "+esc(e); });
+  };
+  document.getElementById("bJana").onclick = function(){
+    var pv=(document.getElementById("pJana").value||"").trim().toUpperCase(); if(!pv) return;
+    document.getElementById("hJana").innerHTML = "Menjana…";
+    fetch(API,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({form:"aksesladang",admin_token:T,pemilik:pv})})
+      .then(function(r){return r.json();}).then(function(d){
+        if(!d.ok){ document.getElementById("hJana").innerHTML = "⚠️ "+esc(d.error); return; }
+        document.getElementById("hJana").innerHTML = '✅ <b>'+esc(d.pemilik)+'</b> · '+esc(d.nama)+' · blok '+esc(d.blok)+' · '+(Number(d.bahagian)*100).toFixed(2)+'%'
+          + '<br><a href="'+esc(d.link)+'" target="_blank">'+esc(d.link)+'</a><br>'
+          + '<button class="btn ghost" onclick="navigator.clipboard.writeText(\''+esc(d.link)+'\')">Salin</button> '
+          + '<a class="btn" href="https://wa.me/?text='+encodeURIComponent("Pautan portal pemilik ladang: "+d.link)+'" target="_blank">Hantar WhatsApp</a>'
+          + '<div class="hint">'+(d.baru?"Token baharu dicipta.":"Token sedia ada diguna semula.")+'</div>';
+      }).catch(function(e){ document.getElementById("hJana").innerHTML = "⚠️ "+esc(e); });
+  };
+}
+if (!T) login(); else muat();
+</script>
+</body>
+</html>

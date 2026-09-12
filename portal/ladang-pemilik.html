@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Portal Pemilik Ladang — Mr Tanah / SAT</title>
+<style>
+  :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; }
+  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 60%,#14905c 100%); color:#fff; padding:16px; }
+  .topbar h1 { font-size:18px; } .topbar p { font-size:12.5px; opacity:.92; margin-top:2px; }
+  .wrap { max-width:620px; margin:0 auto; padding:14px 14px 48px; }
+  .card { background:#fff; border-radius:14px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:13px; }
+  .card h2 { font-size:14.5px; color:var(--mt-tua); margin-bottom:10px; }
+  .meta { background:#f6faf8; border:1px solid #e0eae3; border-radius:11px; padding:11px 12px; font-size:12.7px; }
+  .row { display:flex; justify-content:space-between; gap:10px; padding:3px 0; border-bottom:1px dashed #e6efe9; }
+  .row:last-child { border:0; } .row span { color:#5a6b61; }
+  table { width:100%; border-collapse:collapse; font-size:12px; }
+  th { background:#eef3f7; color:var(--mt-tua); text-align:left; padding:7px 5px; font-size:10.5px; }
+  td { padding:9px 5px; border-top:1px solid #e9f0ec; }
+  .num { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .big { font-size:28px; font-weight:800; color:var(--mt-tua); font-variant-numeric:tabular-nums; }
+  .kpi { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:13px; }
+  .kpi div { flex:1; min-width:96px; background:#fff; border-radius:12px; padding:11px 8px; text-align:center; box-shadow:0 1px 3px rgba(0,0,0,.07); }
+  .kpi b { display:block; font-size:17px; color:var(--mt-tua); } .kpi span { font-size:10.4px; color:#5a6b61; font-weight:600; }
+  .kpi .hijau b { color:var(--hijau); }
+  .btn { display:inline-flex; align-items:center; justify-content:center; padding:13px 16px; background:var(--hijau); color:#fff; border:0; border-radius:11px; font-size:15px; font-weight:700; cursor:pointer; text-decoration:none; }
+  .btn.ghost { background:#eef3f7; color:var(--mt-tua); }
+  .btnrow { display:flex; gap:9px; flex-wrap:wrap; margin-top:12px; }
+  .btnrow .btn { flex:1; }
+  .hint { font-size:11.5px; color:#5a6b61; margin-top:6px; }
+  .note { background:#eef4ff; border:1px solid #d8e4ff; border-radius:11px; padding:11px; font-size:12.4px; color:#1e3a8a; }
+  .foot { text-align:center; font-size:11px; color:#6a7a71; margin-top:16px; }
+  .splash { text-align:center; padding:40px 16px; color:#5a6b61; font-size:14px; }
+</style>
+</head>
+<body>
+  <div class="topbar"><h1>🌴 Portal Pemilik Ladang</h1><p id="sub">Mr Tanah · pengendali Strategic Agro Technology (SAT)</p></div>
+  <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
+  <div class="foot">Dokumen peribadi — pautan ini khas untuk anda. Jangan kongsi.</div>
+<script>
+var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
+var TOKEN = new URLSearchParams(location.search).get("t") || "";
+function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function rm(n){ return "RM " + Number(n||0).toLocaleString("ms-MY", {minimumFractionDigits:2, maximumFractionDigits:2}); }
+function tkh(s){ if(!s) return "—"; var d=String(s).substring(0,10).split("-"); return d.length===3 ? d[2]+"/"+d[1]+"/"+d[0] : String(s); }
+function splash(m){ document.getElementById("wrap").innerHTML = '<div class="splash">'+m+'</div>'; }
+
+if (!TOKEN) splash("⚠️ Pautan tidak lengkap (tiada token). Guna pautan yang dihantar Mr Tanah.");
+else fetch(API + "?aksi=ladangpemilik&token=" + encodeURIComponent(TOKEN))
+  .then(function(r){ return r.json(); })
+  .then(function(d){ if(!d.ok){ splash("⚠️ "+esc(d.error||"Pautan tidak sah.")); return; } lukis(d); })
+  .catch(function(e){ splash("⚠️ Gagal memuatkan: "+esc(e)); });
+
+function lukis(d){
+  var r = d.ringkasan, b = d.blok || {};
+  document.getElementById("sub").textContent = "Mr Tanah · SAT · " + d.nama + " (" + d.id_pemilik + ")";
+  var h = '';
+  h += '<div class="kpi"><div><b>'+esc(b.id||"—")+'</b><span>Blok</span></div>'
+    + '<div><b>'+(Number(d.bahagian)*100).toFixed(2)+'%</b><span>Bahagian anda</span></div>'
+    + '<div class="hijau"><b>'+rm(r.bahagian_rm)+'</b><span>Bahagian bersih</span></div></div>';
+
+  h += '<div class="card"><h2>💰 Penyata Kedudukan</h2><div class="meta">'
+    + '<div class="row"><span>Blok</span><b>'+esc(b.id||"—")+' · '+esc(b.nama||"—")+'</b></div>'
+    + '<div class="row"><span>Luas blok / bahagian anda</span><b>'+(b.ha?Number(b.ha).toFixed(2):"—")+' ha / '+(d.luas_bahagian?Number(d.luas_bahagian).toFixed(4):"—")+' ha</b></div>'
+    + '<div class="row"><span>Hasil FFB blok (setakat ini)</span><b>'+Number(r.ffb).toFixed(2)+' tan</b></div>'
+    + '<div class="row"><span>Kasar blok</span><b>'+rm(r.kasar)+'</b></div>'
+    + '<div class="row"><span>Bersih blok (selepas potongan)</span><b>'+rm(r.bersih)+'</b></div>'
+    + '<div class="row"><span><b>Bahagian anda ('+(Number(d.bahagian)*100).toFixed(2)+'%)</b></span><b style="color:#0C7A4B">'+rm(r.bahagian_rm)+'</b></div>'
+    + '<div class="row"><span>Agihan telah direkod</span><b>'+rm(r.agihan_direkod)+'</b></div>'
+    + '</div><div class="hint">Pengiraan: bersih blok × bahagian milik. Agihan bulanan mengikut tab Agihan (bulan).</div></div>';
+
+  h += '<div class="card"><h2>📅 Agihan Bulanan</h2><table><tr><th>Bulan</th><th class="num">Bahagian</th><th class="num">Agihan (RM)</th></tr>';
+  if (!(d.agihan||[]).length) h += '<tr><td colspan="3">Tiada rekod agihan</td></tr>';
+  (d.agihan||[]).forEach(function(a){ h += '<tr><td>'+esc(a.bulan)+'</td><td class="num">'+(Number(a.bahagian)*100).toFixed(2)+'%</td><td class="num">'+rm(a.amaun)+'</td></tr>'; });
+  h += '</table></div>';
+
+  h += '<div class="card"><h2>🧾 Rekod Jualan Blok Anda</h2><table><tr><th>Tarikh</th><th class="num">Tan</th><th class="num">Harga</th><th class="num">Bersih</th><th>Chit</th></tr>';
+  if (!(d.hasil||[]).length) h += '<tr><td colspan="5">Tiada rekod</td></tr>';
+  (d.hasil||[]).forEach(function(x){ h += '<tr><td>'+tkh(x.tarikh)+'</td><td class="num">'+Number(x.tan).toFixed(2)+'</td><td class="num">'+rm(x.harga)+'</td><td class="num">'+rm(x.bersih)+'</td><td>'+esc(x.chit||"—")+'</td></tr>'; });
+  h += '</table></div>';
+
+  var hr = d.harga || {};
+  h += '<div class="card"><h2>📊 Harga Pasaran Rujukan</h2><div class="meta">'
+    + '<div class="row"><span>CPO MPOB (rujukan terkini)</span><b>'+(hr.cpo?"RM "+Number(hr.cpo).toLocaleString("ms-MY",{minimumFractionDigits:2})+" / tan":"—")+'</b></div>'
+    + '<div class="row"><span>Rujukan BTS (RM / 1% OER)</span><b>'+(hr.rm_1oer?Number(hr.rm_1oer).toFixed(2):"—")+'</b></div>'
+    + '<div class="row"><span>Snapshot</span><b>'+esc(hr.bulan||"—")+' · '+tkh(hr.tarikh_ambil)+'</b></div></div>'
+    + '<div class="hint">Harga BTS dirujuk dalam RM per 1% OER. Harga diterima anda = (rujukan × OER%) tolak margin kilang.</div></div>';
+
+  h += '<div class="card"><h2>💬 Hubungi</h2><div class="btnrow">'
+    + '<a class="btn" href="https://wa.me/60163119076?text='+encodeURIComponent("Portal pemilik ladang "+d.id_pemilik+" — ")+'">WhatsApp Mr Tanah</a>'
+    + '<a class="btn ghost" href="mailto:mrtanahmy@gmail.com">Emel</a></div>'
+    + '<div class="hint">Pengendali: Strategic Agro Technology (SAT) · diurus oleh Mr Tanah.</div></div>';
+
+  document.getElementById("wrap").innerHTML = h;
+  window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>
