@@ -1,7 +1,7 @@
 {
  "amaran": [
   {
-   "butir": "Due 2026-09-17 · 4 hari lagi",
+   "butir": "Due 2026-09-17 · 3 hari lagi",
    "tahap": "merah",
    "tajuk": "5 invois sewa belum dibayar — RM2751.60"
   },
@@ -224,7 +224,7 @@
   "unit_sewaan": 5,
   "utiliti_diterima": 0
  },
- "masa": "2026-09-13 21:15",
+ "masa": "2026-09-14 00:00",
  "nota": "Anggaran bersih = sewa yang diterima − bil utiliti yang ditanggung pemilik (unit tanpa penyewa) − kos penyelenggaraan pemilik (termasuk kos pengurusan MT). Utiliti unit disewa adalah pass-through kepada penyewa, bukan pendapatan pemilik.",
  "ok": true,
  "pemilik": "Zahir MJ",
