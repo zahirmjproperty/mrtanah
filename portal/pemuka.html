@@ -164,7 +164,7 @@ function lukis() {
     + '<p class="hint" style="margin:0 0 10px">Data setakat: <b>' + badge + '</b>'
     + (MOD === "login" ? ' · <a href="#" id="bKeluar" style="color:#0a5">Log keluar</a>' : '') + '</p>'
     + '<div class="kpis">'
-    + kpi(k.unit_sewaan, "Unit disewa", k.unit_jumlah + " unit didaftar · " + k.unit_peribadi + " peribadi")
+    + kpi(k.unit_sewaan, "Unit disewa", k.unit_jumlah + " unit didaftar · " + k.unit_peribadi + " tidak disewa")
     + kpi(rm(k.sewa_bulanan, 0), "Sewa bulanan (kontrak)", "tempoh " + (k.inv_tempoh || "—"))
     + kpi(rm(k.inv_dibayar), "Kutipan diterima", Math.round(pct) + "% daripada " + rm(k.inv_jumlah), "#14905c")
     + kpi(rm(k.inv_tertunggak), "Invois belum bayar", k.inv_bilangan_belum + " invois", "#b3261e")
