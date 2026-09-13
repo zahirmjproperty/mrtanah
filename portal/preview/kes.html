@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Dashboard Kes (CRM) — Mr Tanah</title>
+<style>
+  :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; }
+  .topbar { background:linear-gradient(135deg,#0a1f44 0%,#123a7a 55%,#14905c 100%); color:#fff; padding:16px; }
+  .topbar h1 { font-size:18px; } .topbar p { font-size:12.5px; opacity:.92; margin-top:2px; }
+  .wrap { max-width:860px; margin:0 auto; padding:14px 14px 48px; }
+  .card { background:#fff; border-radius:14px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:13px; }
+  .card h2 { font-size:14.5px; color:var(--mt-tua); margin-bottom:10px; display:flex; justify-content:space-between; align-items:center; gap:8px; }
+  .row { display:flex; justify-content:space-between; gap:10px; padding:3px 0; border-bottom:1px dashed #e6efe9; }
+  .row:last-child { border:0; } .row span { color:#5a6b61; }
+  table { width:100%; border-collapse:collapse; font-size:12px; }
+  th { background:#eef3f7; color:var(--mt-tua); text-align:left; padding:7px 5px; font-size:10.5px; }
+  td { padding:9px 5px; border-top:1px solid #e9f0ec; vertical-align:top; }
+  .num { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .btn { padding:11px 14px; background:var(--hijau); color:#fff; border:0; border-radius:10px; font-size:13px; font-weight:700; cursor:pointer; }
+  .btn.sec { background:var(--mt); } .btn.ghost { background:#eef3f7; color:var(--mt-tua); }
+  .btn.small { padding:7px 10px; font-size:11.5px; border-radius:8px; }
+  .btn:disabled { opacity:.55; cursor:not-allowed; }
+  .btnrow { display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
+  .kpi { display:grid; grid-template-columns:repeat(4,1fr); gap:9px; }
+  @media (max-width:640px) { .kpi { grid-template-columns:1fr 1fr; } }
+  .kbox { background:#fff; border:1px solid #e4ecf1; border-radius:12px; padding:10px; }
+  .kbox .l { font-size:10px; color:#5a6b61; text-transform:uppercase; letter-spacing:.3px; }
+  .kbox .v { font-size:17px; font-weight:800; color:var(--mt-tua); font-variant-numeric:tabular-nums; margin-top:2px; }
+  .kbox .s { font-size:10px; color:#7c8b93; }
+  .amr { border-left:4px solid #cfdcd4; background:#f8fbf9; border-radius:9px; padding:10px 11px; margin-bottom:9px; font-size:12.6px; }
+  .amr.merah { border-color:#d64545; background:#fdf3f3; } .amr.kuning { border-color:#e8a33d; background:#fdf8f0; }
+  .amr.biru { border-color:#3f6fd6; background:#f3f6fd; } .amr.hijau { border-color:#33a06a; background:#f2faf5; }
+  .amr b { color:var(--mt-tua); display:block; } .amr i { font-style:normal; color:#5a6b61; font-size:11.7px; }
+  .st { font-size:10px; font-weight:800; border-radius:20px; padding:2px 8px; display:inline-block; white-space:nowrap; }
+  .s-wait { background:#eef3f7; color:#5a6b61; } .s-ok { background:#e5f4ec; color:#0e5a33; }
+  .s-bad { background:#fdeaea; color:#a11; } .s-warn { background:#fdf1e3; color:#8a5308; } .s-info { background:#e8eefb; color:#1c3f8f; }
+  .pipe { display:grid; grid-template-columns:repeat(6,1fr); gap:7px; }
+  @media (max-width:640px) { .pipe { grid-template-columns:1fr 1fr 1fr; } }
+  .pb { background:#f7fafc; border:1px solid #e2ebf1; border-radius:10px; padding:8px; text-align:center; cursor:pointer; }
+  .pb.on { border-color:var(--mt); background:#eef4ff; }
+  .pb .t { font-size:9.6px; color:#5a6b61; text-transform:uppercase; font-weight:700; }
+  .pb .n { font-size:17px; font-weight:800; color:var(--mt-tua); }
+  label { display:block; font-size:12px; font-weight:600; margin:9px 0 3px; }
+  input, select, textarea { width:100%; padding:10px 11px; border:1.5px solid #cfdcd4; border-radius:9px; font-size:14px; background:#fbfdfc; font-family:inherit; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:9px; }
+  @media (max-width:640px) { .grid2 { grid-template-columns:1fr; } }
+  .hint { font-size:11.5px; color:#5a6b61; margin-top:6px; }
+  .foot { text-align:center; font-size:11px; color:#6a7a71; margin-top:16px; }
+  .splash { text-align:center; padding:40px 16px; color:#5a6b61; font-size:14px; }
+  .badge { font-size:10.5px; font-weight:800; background:#e8f5ee; color:#0e5a33; border-radius:20px; padding:3px 9px; }
+  .pban { max-width:860px; margin:12px auto 0; padding:9px 12px; background:#fff6e5; border:1px solid #f0d9a8; border-radius:10px; font-size:12px; color:#8a5308; }
+  .det { background:#f6faf8; border:1px solid #e0eae3; border-radius:11px; padding:12px; margin-top:10px; font-size:12.6px; }
+  .dok { display:flex; gap:6px; align-items:center; justify-content:space-between; border-bottom:1px dashed #e6efe9; padding:5px 0; }
+  .dok:last-child { border:0; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>📋 Dashboard Kes (CRM)</h1>
+    <p id="sub">Mr Tanah · ZMJ Solutions — staff sahaja · satu baris = satu urus niaga</p>
+  </div>
+  <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
+  <div class="foot">Dokumen dalaman MT — akses staff sahaja (peranan ADMIN atau token admin).</div>
+
+<script>
+/* data sebenar dari aksi=kes (dijana 2026-09-13 19:58) */
+window.PRATONTON_DATA = {"ok": true, "masa": "2026-09-13 19:58", "peranan": "ADMIN", "kpi": {"jumlah": 2, "aktif": 2, "selesai": 0, "batal": 0, "ujian": 0, "jual": 1, "sewa": 1, "nilai_jual": 450000, "nilai_sewa": 2100, "deposit": 15600, "nilai_aktif": 452100, "tarikh_lewat": 0, "lewat_kemaskini": 0}, "ikut_peringkat": {"TAWARAN": 1, "TEMPAHAN": 1, "PINJAMAN": 0, "SPA": 0, "PINDAH HAK": 0, "SELESAI": 0}, "senarai": [{"kes": "MT-KES-2026-0002", "jenis": "SEWA", "hartanah": "(UJIAN) MT-0019", "alamat": "Kajang, Selangor", "penjual": "MTC-0042 (Pemilik A)", "pembeli": "MTC-0058 (Penyewa A)", "ejen": "Fadilah", "solicitor": "", "mortgage": "", "harga": 2100, "deposit": 2100, "peringkat": "TEMPAHAN", "tarikh_peringkat": {"TAWARAN": "2026-09-05", "TEMPAHAN": "2026-09-12"}, "tarikh_penting": "2026-09-20", "hari_penting": 7, "dokumen": {"Borang Tempahan": "OK", "SPA": "TIDAK BERKENAAN"}, "status": "AKTIF", "nota": "Baris UJIAN (Ali 13/9) — sewa bulanan RM2,100; ditapis dari KPI. (UJIAN)", "ujian": false, "dikemaskini": "2026-09-13 20:40", "didaftar": "Zahir"}, {"kes": "MT-KES-2026-0001", "jenis": "JUAL", "hartanah": "(UJIAN) COA-0068", "alamat": "Bandar Baru Bangi, Selangor", "penjual": "MTC-0042 (Pemilik A)", "pembeli": "MTC-0057 (Pembeli A)", "ejen": "Zahir", "solicitor": "Firma ABC (rujukan)", "mortgage": "Encik R (Bank X)", "harga": 450000, "deposit": 13500, "peringkat": "TAWARAN", "tarikh_peringkat": {"TAWARAN": "2026-09-13"}, "tarikh_penting": "2026-10-04", "hari_penting": 21, "dokumen": {"Borang Tempahan": "OK", "SPA": "MENUNGGU"}, "status": "AKTIF", "nota": "Baris UJIAN (Ali 13/9) — tunjuk paparan pipeline; ditapis dari KPI. (UJIAN)", "ujian": false, "dikemaskini": "2026-09-13 20:40", "didaftar": "Zahir"}], "amaran": [{"tahap": "hijau", "tajuk": "Tiada tindakan segera", "butir": "Semua kes berjalan dalam keadaan terkawal."}, {"tahap": "biru", "tajuk": "2 baris UJIAN dalam tab Kes (ditapis dari KPI)", "butir": "Baris ujian kekal untuk audit — padam bila Zahir putuskan."}], "susun": ["TAWARAN", "TEMPAHAN", "PINJAMAN", "SPA", "PINDAH HAK", "SELESAI"], "senarai_dok": ["Borang Tempahan", "SPA", "LA / Perjanjian Pinjaman", "Kelulusan Bank / LPPSA", "Duti Setem", "Pindah Hak", "Resit Bayaran", "Lain-lain"], "sumber": "1hq58IQSSexqw87-kiY0fnq755Gwc-SIRyqbApPaUlPg", "nota": "Lajur A–S dalam tab Kes workbook kerja MT. Satu baris = satu urus niaga. Baris bertanda (UJIAN) tidak masuk KPI. Peringkat: TAWARAN → TEMPAHAN → PINJAMAN → SPA → PINDAH HAK → SELESAI.", "__cache": 1};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../assets/auth-config.js?v=2"></script>
+<script>
+var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
+var T = new URLSearchParams(location.search).get("t") || localStorage.getItem("mt_admin_token") || "";
+var MOD = "token", SESI = null, SB = null, D = null, SIBUK = false, TAPIS = "", JENIS = "", PERINGKAT = "";
+function rm(n){ return "RM " + Number(n||0).toLocaleString("ms-MY", {minimumFractionDigits:2, maximumFractionDigits:2}); }
+function rm0(n){ return "RM " + Number(n||0).toLocaleString("ms-MY", {maximumFractionDigits:0}); }
+function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function tkh(s){ if(!s) return "—"; var d=String(s).substring(0,10).split("-"); return d.length===3 ? d[2]+"/"+d[1]+"/"+d[0] : String(s); }
+function splash(m){ document.getElementById("wrap").innerHTML = '<div class="splash">'+m+'</div>'; }
+function stKes(s){ s=String(s||"").toUpperCase();
+  if(s==="SELESAI") return '<span class="st s-ok">SELESAI</span>';
+  if(s==="BATAL") return '<span class="st s-bad">BATAL</span>';
+  return '<span class="st s-info">AKTIF</span>'; }
+function pillPeringkat(p){ p=String(p||"").toUpperCase();
+  var m={"TAWARAN":"s-wait","TEMPAHAN":"s-info","PINJAMAN":"s-warn","SPA":"s-warn","PINDAH HAK":"s-warn","SELESAI":"s-ok","BATAL":"s-bad"};
+  return '<span class="st ' + (m[p]||"s-wait") + '">' + esc(p||"—") + '</span>'; }
+function hariTeks(h){ if(h===null||h===undefined) return "—"; if(h<0) return "lewat "+Math.abs(h)+" hari"; if(h===0) return "HARI INI"; return h+" hari lagi"; }
+
+function urlAPI() {
+  return API + "?aksi=kes" + (TAPIS ? "&tapis=" + encodeURIComponent(TAPIS) : "") + (JENIS ? "&jenis=" + JENIS : "") +
+         (MOD === "login" ? "&access_token=" + encodeURIComponent((SESI && SESI.access_token) || "") : "&admin_token=" + encodeURIComponent(T)) +
+         "&_=" + Date.now();
+}
+function muat() {
+  if (SIBUK) return; SIBUK = true;
+  var p = (window.PRATONTON_DATA) ? Promise.resolve(window.PRATONTON_DATA) : fetch(urlAPI()).then(function(r){ return r.json(); });
+  if (!D) splash("Memuatkan…");
+  p.then(function(d){
+    SIBUK = false;
+    if (!d || !d.ok) {
+      if (MOD === "login" && /sesi tidak sah|tamat tempoh/i.test(String((d||{}).error||""))) { location.href = "../login.html"; return; }
+      if (String((d||{}).error||"").indexOf("Akses admin") >= 0) { T = ""; localStorage.removeItem("mt_admin_token"); splash("Akses diperlukan."); return; }
+      splash("⚠️ " + esc((d||{}).error || "Ralat memuatkan data."));
+      return;
+    }
+    D = d; if (!window.PRATONTON_DATA && T) localStorage.setItem("mt_admin_token", T);
+    lukis();
+  })
+  .catch(function(e){ SIBUK = false; splash("⚠️ Gagal memuatkan data.<br><small>"+esc(e)+"</small>"); });
+}
+(function init(){
+  var A = window.AUTH || {};
+  if (window.PRATONTON_DATA) { muat(); return; }
+  if (!A.url || !A.key || typeof window.supabase === "undefined") { if (T) muat(); else splash("Tiada akses. Tambah ?t=&lt;token admin&gt; pada URL."); return; }
+  SB = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false } });
+  SB.auth.getSession().then(function(o){
+    SESI = (o.data && o.data.session) || null;
+    if (SESI) { MOD = "login"; muat(); return; }
+    if (T) { MOD = "token"; muat(); return; }
+    location.href = "../login.html";
+  });
+})();
+
+function lukis(){
+  var kp = D.kpi || {}, h = "";
+  document.getElementById("sub").textContent = "Mr Tanah · " + (kp.aktif||0) + " kes aktif · " + (kp.jumlah||0) + " kes direkod · data " + esc(D.masa||"");
+  var logKeluar = (MOD === "login") ? '<button class="btn ghost small" onclick="keluar()">Log keluar</button>' : '';
+
+  /* KPI */
+  h += '<div class="card"><h2>📌 Ringkasan <span class="badge">DATA SEBENAR</span></h2><div class="kpi">'
+    +  '<div class="kbox"><div class="l">Kes aktif</div><div class="v">' + (kp.aktif||0) + '</div><div class="s">' + (kp.selesai||0) + ' selesai · ' + (kp.batal||0) + ' batal</div></div>'
+    +  '<div class="kbox"><div class="l">Nilai kes aktif</div><div class="v">' + rm0(kp.nilai_aktif) + '</div><div class="s">jual ' + rm0(kp.nilai_jual) + ' · sewa ' + rm0(kp.nilai_sewa) + '</div></div>'
+    +  '<div class="kbox"><div class="l">Deposit diterima</div><div class="v">' + rm0(kp.deposit) + '</div><div class="s">' + (kp.jual||0) + ' jual · ' + (kp.sewa||0) + ' sewa</div></div>'
+    +  '<div class="kbox"><div class="l">Tarikh penting lewat</div><div class="v">' + (kp.tarikh_lewat||0) + '</div><div class="s">' + (kp.lewat_kemaskini||0) + ' kes tak dikemas kini 30h+</div></div>'
+    +  '</div><div class="btnrow"><button class="btn ghost small" onclick="muat()">🔄 Tarik data terkini</button>'
+    +  '<button class="btn sec small" onclick="borang()">+ Daftar kes baharu</button>' + logKeluar + '</div>'
+    +  '<div class="hint">Sumber: tab <b>Kes</b> workbook kerja MT (lajur A–S). Setiap dashboard pihak akan jadi penapisan atas tab ini.</div></div>';
+
+  /* pipeline */
+  h += '<div class="card"><h2>🧭 Peringkat Kes</h2><div class="pipe">';
+  (D.susun||[]).forEach(function(p){
+    var n = (D.ikut_peringkat||{})[p]||0;
+    h += '<div class="pb ' + (PERINGKAT===p?"on":"") + '" onclick="tapisPeringkat(\'' + esc(p) + '\')"><div class="t">' + esc(p) + '</div><div class="n">' + n + '</div></div>';
+  });
+  h += '</div><div class="hint">Klik peringkat untuk tapis senarai. Bilangan ini hanya mengira kes AKTIF (baris UJIAN ditapis).</div></div>';
+
+  /* amaran */
+  h += '<div class="card"><h2>⚡ Perlu tindakan</h2>';
+  (D.amaran||[]).forEach(function(a){ h += '<div class="amr ' + esc(a.tahap) + '"><b>' + esc(a.tajuk) + '</b><i>' + esc(a.butir) + '</i></div>'; });
+  h += '</div>';
+
+  /* tapisan */
+  h += '<div class="card"><h2>🔎 Carian &amp; Tapisan</h2><div class="grid2">'
+    +  '<div><label>Cari (kes / hartanah / alamat / pihak)</label><input id="fCari" value="' + esc(TAPIS) + '" placeholder="cth COA-0068 / Bangi / MTC-0042"></div>'
+    +  '<div><label>Jenis kes</label><select id="fJenis"><option value="">Semua</option><option value="JUAL"' + (JENIS==="JUAL"?" selected":"") + '>JUAL</option><option value="SEWA"' + (JENIS==="SEWA"?" selected":"") + '>SEWA</option></select></div>'
+    +  '</div><div class="btnrow"><button class="btn sec small" onclick="gunaTapisan()">Guna tapisan</button>'
+    +  '<button class="btn ghost small" onclick="TAPIS=\'\';JENIS=\'\';PERINGKAT=\'\';muat()">Kosongkan</button></div></div>';
+
+  /* senarai kes */
+  var sen = (D.senarai||[]).filter(function(x){ return !PERINGKAT || x.peringkat === PERINGKAT; });
+  h += '<div class="card"><h2>📄 Senarai Kes (' + sen.length + ')</h2>';
+  if (!sen.length) h += '<div class="hint">Tiada kes dipaparkan. ' + (D.kpi && D.kpi.jumlah===0 ? 'Daftar kes pertama dengan butang di atas.' : 'Cuba kosongkan tapisan.') + '</div>';
+  else {
+    h += '<table><tr><th>Kes / Hartanah</th><th>Pihak</th><th class="num">Harga</th><th>Peringkat</th><th>Tarikh penting</th><th></th></tr>';
+    sen.forEach(function(x){
+      h += '<tr><td><b>' + esc(x.kes) + '</b> ' + (x.ujian ? '<span class="st s-bad">UJIAN</span>' : '') + '<br><small>' + esc(x.jenis) + ' · ' + esc(x.hartanah) + '</small><br><small>' + esc(x.alamat||"—") + '</small></td>'
+        +  '<td><small>Penjual: ' + esc(x.penjual||"—") + '<br>Pembeli: ' + esc(x.pembeli||"—") + '<br>Ejen: ' + esc(x.ejen||"—") + (x.solicitor ? '<br>Solicitor: ' + esc(x.solicitor) : '') + (x.mortgage ? '<br>Bank: ' + esc(x.mortgage) : '') + '</small></td>'
+        +  '<td class="num">' + rm0(x.harga) + '<br><small>deposit ' + rm0(x.deposit) + '</small></td>'
+        +  '<td>' + pillPeringkat(x.peringkat) + '<br>' + stKes(x.status) + '</td>'
+        +  '<td>' + tkh(x.tarikh_penting) + '<br><small>' + esc(hariTeks(x.hari_penting)) + '</small></td>'
+        +  '<td><button class="btn ghost small" onclick="detail(\'' + esc(x.kes) + '\')">Buka</button></td></tr>';
+    });
+    h += '</table>';
+  }
+  h += '<div class="hint">' + esc(D.nota||"") + '</div></div>';
+
+  h += '<div id="panel"></div>';
+  document.getElementById("wrap").innerHTML = h;
+}
+function gunaTapisan(){ TAPIS = (document.getElementById("fCari")||{}).value || ""; JENIS = (document.getElementById("fJenis")||{}).value || ""; PERINGKAT=""; muat(); }
+function tapisPeringkat(p){ PERINGKAT = (PERINGKAT === p) ? "" : p; lukis(); }
+function cariKes(ref){ for (var i=0;i<(D.senarai||[]).length;i++) if (D.senarai[i].kes === ref) return D.senarai[i]; return null; }
+function keluar(){ if (SB) SB.auth.signOut().then(function(){ localStorage.removeItem("mt_admin_token"); location.href="../login.html"; }); else { localStorage.removeItem("mt_admin_token"); location.href="../login.html"; } }
+
+/* ---------- hantar POST ---------- */
+function hantar(obj, semulaLukis){
+  var b = Object.assign({}, obj, { form: "kes" });
+  if (MOD === "login" && SESI) b.access_token = SESI.access_token; else b.admin_token = T;
+  var p = document.getElementById("panel");
+  p.innerHTML = '<div class="card"><div class="splash">Menghantar…</div></div>';
+  fetch(API, { method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"}, body: JSON.stringify(b) })
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var m = (d.ok ? "ok" : "err");
+      p.innerHTML = '<div class="card"><h2>Keputusan</h2><div class="' + m + '">' + esc(d.msg || d.error || "Selesai") + '</div>'
+        + '<div class="btnrow"><button class="btn ghost small" onclick="muat()">Muat semula senarai</button>'
+        + '<button class="btn ghost small" onclick="document.getElementById(\'panel\').innerHTML=\'\'">Tutup</button></div></div>';
+      window.scrollTo(0, document.body.scrollHeight);
+    })
+    .catch(function(e){ p.innerHTML = '<div class="card"><div class="err">Gagal: ' + esc(e) + '</div></div>'; });
+}
+
+/* ---------- borang kes baharu ---------- */
+function borang(){
+  var h = '<div class="card"><h2>➕ Daftar Kes Baharu</h2>'
+    + '<div class="grid2"><div><label>Jenis *</label><select id="kJenis"><option value="JUAL">JUAL</option><option value="SEWA">SEWA</option></select></div>'
+    + '<div><label>Rujukan hartanah *</label><input id="kHartanah" placeholder="cth COA-0068 / MT-0019 / slug projek"></div></div>'
+    + '<label>Alamat ringkas</label><input id="kAlamat" placeholder="cth Bandar Baru Bangi, Selangor">'
+    + '<div class="grid2"><div><label>Penjual (kenalan/rujukan)</label><input id="kPenjual" placeholder="cth MTC-0042 / nama"></div>'
+    + '<div><label>Pembeli / penyewa</label><input id="kPembeli" placeholder="cth MTC-0057 / nama"></div></div>'
+    + '<div class="grid2"><div><label>Ejen (rujukan)</label><input id="kEjen" placeholder="cth Zahir / Fadilah"></div>'
+    + '<div><label>Solicitor / peguamcara</label><input id="kSolicitor" placeholder="cth Firma ABC"></div></div>'
+    + '<div class="grid2"><div><label>Mortgage officer (bank)</label><input id="kMortgage" placeholder="cth Nama (Bank X)"></div>'
+    + '<div><label>Peringkat semasa</label><select id="kPeringkat">'
+    + (D.susun||[]).map(function(p){ return '<option value="' + esc(p) + '">' + esc(p) + '</option>'; }).join("") + '</select></div></div>'
+    + '<div class="grid2"><div><label>Harga jual / sewa (RM)</label><input id="kHarga" type="number" step="0.01" placeholder="cth 450000"></div>'
+    + '<div><label>Deposit diterima (RM)</label><input id="kDeposit" type="number" step="0.01" placeholder="cth 13500"></div></div>'
+    + '<label>Tarikh penting seterusnya</label><input id="kTarikh" type="date">'
+    + '<label>Nota</label><textarea id="kNota" rows="2" placeholder="cth tawaran lisan RM450k, tempahan 3%"></textarea>'
+    + '<div class="btnrow"><button class="btn" onclick="hantarCipta()">Daftar kes</button>'
+    + '<button class="btn ghost" onclick="document.getElementById(\'panel\').innerHTML=\'\'">Batal</button></div>'
+    + '<div class="hint">Rujukan kes (MT-KES-YYYY-####) dijana automatik oleh sistem. Peringkat boleh diubah bila-bila masa.</div></div>';
+  var p = document.getElementById("panel"); p.innerHTML = h; p.scrollIntoView({behavior:"smooth"});
+}
+function hantarCipta(){
+  var g = function(id){ var e = document.getElementById(id); return e ? e.value : ""; };
+  hantar({ action:"cipta", oleh:"Zahir", jenis:g("kJenis"), hartanah:g("kHartanah"), alamat:g("kAlamat"),
+           penjual:g("kPenjual"), pembeli:g("kPembeli"), ejen:g("kEjen"), solicitor:g("kSolicitor"),
+           mortgage:g("kMortgage"), peringkat:g("kPeringkat"), harga:g("kHarga"), deposit:g("kDeposit"),
+           tarikh_penting:g("kTarikh"), nota:g("kNota") });
+}
+
+/* ---------- detail kes ---------- */
+function detail(ref){
+  var x = cariKes(ref); if (!x) return;
+  var doks = D.senarai_dok || [];
+  var h = '<div class="card"><h2>' + esc(x.kes) + ' <span class="badge">' + esc(x.jenis) + '</span></h2>'
+    + '<div class="det">'
+    +  '<div class="row"><span>Hartanah</span><b>' + esc(x.hartanah) + '</b></div>'
+    +  '<div class="row"><span>Alamat</span><b>' + esc(x.alamat||"—") + '</b></div>'
+    +  '<div class="row"><span>Penjual</span><b>' + esc(x.penjual||"—") + '</b></div>'
+    +  '<div class="row"><span>Pembeli / penyewa</span><b>' + esc(x.pembeli||"—") + '</b></div>'
+    +  '<div class="row"><span>Ejen</span><b>' + esc(x.ejen||"—") + '</b></div>'
+    +  '<div class="row"><span>Solicitor</span><b>' + esc(x.solicitor||"—") + '</b></div>'
+    +  '<div class="row"><span>Mortgage officer</span><b>' + esc(x.mortgage||"—") + '</b></div>'
+    +  '<div class="row"><span>Harga</span><b>' + rm(x.harga) + '</b></div>'
+    +  '<div class="row"><span>Deposit</span><b>' + rm(x.deposit) + '</b></div>'
+    +  '<div class="row"><span>Peringkat</span><b>' + esc(x.peringkat) + ' ' + stKes(x.status) + '</b></div>'
+    +  '<div class="row"><span>Tarikh penting</span><b>' + tkh(x.tarikh_penting) + ' (' + esc(hariTeks(x.hari_penting)) + ')</b></div>'
+    +  '<div class="row"><span>Kemas kini terakhir</span><b>' + esc(x.dikemaskini||"—") + '</b></div>'
+    +  '<div class="row"><span>Didaftarkan oleh</span><b>' + esc(x.didaftar||"—") + '</b></div>'
+    + '</div>';
+
+  /* peringkat */
+  h += '<label>Kemas kini peringkat</label><div class="btnrow">';
+  (D.susun||[]).forEach(function(p){
+    var on = (p === x.peringkat);
+    h += '<button class="btn ' + (on ? "" : "ghost") + ' small" ' + (on ? "disabled" : "") + ' onclick="setPeringkat(\'' + esc(x.kes) + '\',\'' + esc(p) + '\')">' + esc(p) + (on ? " ✓" : "") + '</button>';
+  });
+  h += '<button class="btn ghost small" onclick="setPeringkat(\'' + esc(x.kes) + '\',\'BATAL\')">BATAL</button></div>';
+
+  /* dokumen */
+  h += '<label>Dokumen (klik status)</label><div class="det">';
+  doks.forEach(function(nm){
+    var st = (x.dokumen||{})[nm] || "—";
+    var cls = st === "OK" ? "s-ok" : (st === "MENUNGGU" ? "s-warn" : "s-wait");
+    h += '<div class="dok"><span>' + esc(nm) + '</span><span><span class="st ' + cls + '">' + esc(st) + '</span>'
+      + ' <button class="btn ghost small" onclick="setDok(\'' + esc(x.kes) + '\',\'' + esc(nm) + '\',\'OK\')">OK</button>'
+      + ' <button class="btn ghost small" onclick="setDok(\'' + esc(x.kes) + '\',\'' + esc(nm) + '\',\'MENUNGGU\')">Menunggu</button>'
+      + ' <button class="btn ghost small" onclick="setDok(\'' + esc(x.kes) + '\',\'' + esc(nm) + '\',\'TIDAK BERKENAAN\')">N/A</button></span></div>';
+  });
+  h += '</div>';
+
+  /* kemas kini medan */
+  h += '<label>Kemas kini butiran</label><div class="grid2">'
+    + '<div><label>Harga (RM)</label><input id="dHarga" type="number" step="0.01" value="' + (x.harga||0) + '"></div>'
+    + '<div><label>Deposit (RM)</label><input id="dDeposit" type="number" step="0.01" value="' + (x.deposit||0) + '"></div>'
+    + '<div><label>Tarikh penting</label><input id="dTarikh" type="date" value="' + esc(String(x.tarikh_penting||"").substring(0,10)) + '"></div>'
+    + '<div><label>Status</label><select id="dStatus"><option value="AKTIF"' + (x.status==="AKTIF"?" selected":"") + '>AKTIF</option><option value="SELESAI"' + (x.status==="SELESAI"?" selected":"") + '>SELESAI</option><option value="BATAL"' + (x.status==="BATAL"?" selected":"") + '>BATAL</option></select></div>'
+    + '<div><label>Ejen</label><input id="dEjen" value="' + esc(x.ejen||"") + '"></div>'
+    + '<div><label>Solicitor</label><input id="dSolicitor" value="' + esc(x.solicitor||"") + '"></div>'
+    + '<div><label>Mortgage officer</label><input id="dMortgage" value="' + esc(x.mortgage||"") + '"></div>'
+    + '<div><label>Pembeli / penyewa</label><input id="dPembeli" value="' + esc(x.pembeli||"") + '"></div>'
+    + '</div><label>Nota tambahan</label><textarea id="dNota" rows="2"></textarea>'
+    + '<div class="btnrow"><button class="btn" onclick="hantarKemaskini(\'' + esc(x.kes) + '\')">Simpan perubahan</button>'
+    + '<button class="btn ghost" onclick="document.getElementById(\'panel\').innerHTML=\'\'">Tutup</button></div>';
+
+  /* jejak peringkat */
+  var tp = x.tarikh_peringkat || {}, ada = false, jj = "";
+  (D.susun||[]).forEach(function(p){ if (tp[p]) { ada = true; jj += '<div class="row"><span>' + esc(p) + '</span><b>' + tkh(tp[p]) + '</b></div>'; } });
+  if (ada) h += '<label>Jejak peringkat</label><div class="det">' + jj + '</div>';
+  if (x.nota) h += '<label>Nota</label><div class="det">' + esc(x.nota) + '</div>';
+  h += '</div>';
+  var p = document.getElementById("panel"); p.innerHTML = h; p.scrollIntoView({behavior:"smooth"});
+}
+function setPeringkat(ref, p){
+  var nota = prompt("Nota peringkat (pilihan) — cth dokumen diterima:", "");
+  hantar({ action:"peringkat", kes:ref, peringkat:p, nota: (nota||""), oleh:"Zahir" });
+}
+function setDok(ref, dok, st){ hantar({ action:"dokumen", kes:ref, dokumen:dok, status:st, oleh:"Zahir" }); }
+function hantarKemaskini(ref){
+  var g = function(id){ var e = document.getElementById(id); return e ? e.value : ""; };
+  hantar({ action:"kemaskini", kes:ref, oleh:"Zahir", harga:g("dHarga"), deposit:g("dDeposit"),
+           tarikh_penting:g("dTarikh"), status:g("dStatus"), ejen:g("dEjen"), solicitor:g("dSolicitor"),
+           mortgage:g("dMortgage"), pembeli:g("dPembeli"), nota:g("dNota") });
+}
+</script>
+</body>
+</html>
