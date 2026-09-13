@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Papan Pemuka MT — Pengurusan Hartanah (dalaman)</title>
+<meta name="description" content="Papan pemuka pengurusan Mr Tanah — portfolio unit, kutipan sewa, bil utiliti, tiket penyelenggaraan & work order. Akses khas pasukan MT.">
+<style>
+  :root { --mt:#123a7a; --mt-tua:#0a1f44; --mt-soft:#e8eefb; --hijau:#14905c; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.45; }
+  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 58%,#14905c 100%); color:#fff; padding:16px; }
+  .topbar h1 { margin:0 0 3px; font-size:20px; }
+  .topbar p { margin:0; font-size:12.5px; opacity:.95; }
+  .crumbs { font-size:12px; opacity:.9; margin-top:4px; }
+  .crumbs a { color:#fff; }
+  .wrap { max-width:1040px; margin:0 auto; padding:16px 14px 46px; }
+  .splash { text-align:center; color:#5a6b61; padding:40px 0; font-size:14px; }
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(156px,1fr)); gap:10px; }
+  .kpi { background:#fff; border:1px solid #dde5f2; border-radius:12px; padding:13px; }
+  .kpi b { display:block; font-size:21px; line-height:1.15; }
+  .kpi span { display:block; font-size:12px; color:#5a6b61; margin-top:3px; }
+  .kpi em { display:block; font-size:11px; color:#87968d; font-style:normal; margin-top:2px; }
+  .card { background:#fff; border:1px solid #dde5f2; border-radius:12px; padding:14px; margin-top:16px; }
+  .card h2 { margin:0 0 10px; font-size:15px; color:var(--mt-tua); }
+  .al { border-radius:10px; padding:10px 13px; margin-bottom:8px; font-size:13px; }
+  .al b { display:block; }
+  .al span { color:#42546b; }
+  table { width:100%; border-collapse:collapse; font-size:12.6px; }
+  th,td { text-align:left; padding:7px 6px; border-bottom:1px solid #eef2f6; vertical-align:top; }
+  th { font-size:11.3px; text-transform:uppercase; letter-spacing:.3px; color:#5a6b61; white-space:nowrap; }
+  td.kanan, th.kanan { text-align:right; white-space:nowrap; }
+  .pil { display:inline-block; font-size:11px; font-weight:700; border-radius:20px; padding:2px 9px; white-space:nowrap; }
+  .pil.hijau { background:#e6f5ee; color:#0e5a33; }
+  .pil.merah { background:#fdeaea; color:#a11; }
+  .pil.biru { background:#eaf0fb; color:var(--mt); }
+  .pil.kelabu { background:#eef1f4; color:#5a6b61; }
+  .pil.kuning { background:#fff4e2; color:#8a4c00; }
+  .dua { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:780px) { .dua { grid-template-columns:1fr; } }
+  .nota { font-size:11.6px; color:#5a6b61; margin-top:9px; }
+  .bar { background:#e6ebe8; border-radius:6px; height:9px; overflow:hidden; }
+  .bar i { display:block; height:100%; background:var(--hijau); }
+  .btnrow { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+  .btn { background:var(--mt); color:#fff; border:none; border-radius:9px; padding:10px 15px; font-size:13.5px; font-weight:600; cursor:pointer; }
+  .btn.ghost { background:#fff; color:var(--mt); border:1.5px solid #c9d6ec; }
+  .hint { font-size:12px; color:#5a6b61; }
+  .err { color:#a11; font-size:13px; }
+  input { padding:11px; border:1.5px solid #cfdcd4; border-radius:10px; font-size:14px; width:100%; }
+  .foot { text-align:center; font-size:11.5px; color:#5a6b61; padding:20px 10px 30px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>📊 Papan Pemuka MT</h1>
+    <p>Pengurusan hartanah — ZMJ Solutions · data langsung</p>
+    <div class="crumbs"><a href="index.html">← Portal</a> · <a href="kanban.html">Papan Kanban Kerja + SLA</a></div>
+  </div>
+  <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
+  <div class="foot">Dalaman MT — jangan kongsi pautan ini.</div>
+
+<script>
+var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
+var T = new URLSearchParams(location.search).get("t") || localStorage.getItem("mt_admin_token") || "";
+var D = null;
+
+function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+function rm(n, dec) { return "RM" + Number(n || 0).toLocaleString("ms-MY", { minimumFractionDigits: dec == null ? 2 : dec, maximumFractionDigits: dec == null ? 2 : dec }); }
+function tkh(s) { if (!s) return "—"; var d = String(s).substring(0, 10).split("-"); return d.length === 3 ? d[2] + "/" + d[1] + "/" + d[0] : String(s); }
+function splash(m) { document.getElementById("wrap").innerHTML = '<div class="splash">' + esc(m) + '</div>'; }
+
+function login() {
+  document.getElementById("wrap").innerHTML = '<div class="card" style="max-width:430px;margin:24px auto"><h2>Log masuk papan MT</h2>'
+    + '<p class="hint">Masukkan token admin MT (token sama seperti papan kanban; disimpan dalam peranti ini sahaja).</p>'
+    + '<label style="display:block;font-size:12.5px;font-weight:600;margin:11px 0 4px">Token admin</label>'
+    + '<input type="password" id="tk" placeholder="mtadm-…">'
+    + '<div class="btnrow" style="margin-top:12px"><button class="btn" id="bIn">Masuk</button></div>'
+    + '<div id="lg"></div></div>';
+  document.getElementById("bIn").onclick = function () {
+    var v = document.getElementById("tk").value.trim();
+    if (!v) return;
+    localStorage.setItem("mt_admin_token", v); T = v; muat();
+  };
+}
+
+function muat() {
+  fetch(API + "?aksi=pemuka&admin_token=" + encodeURIComponent(T))
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      if (!d.ok) {
+        localStorage.removeItem("mt_admin_token");
+        login();
+        var el = document.getElementById("lg");
+        if (el) el.innerHTML = '<div class="err" style="margin-top:10px">' + esc(d.error || "Token tidak sah.") + '</div>';
+        return;
+      }
+      D = d; lukis();
+    })
+    .catch(function (e) { splash("⚠️ Gagal memuatkan: " + e); });
+}
+
+function pilStatus(txt) {
+  var t = String(txt || "").toUpperCase();
+  var c = "kelabu";
+  if (t.indexOf("BELUM") >= 0 || t.indexOf("TERTUNGGAK") >= 0 || t.indexOf("LEWAT") >= 0) c = "merah";
+  else if (t.indexOf("DIBAYAR") >= 0 || t.indexOf("SELESAI") >= 0 || t.indexOf("LULUS") >= 0) c = "hijau";
+  else if (t.indexOf("SEBUT HARGA") >= 0 || t.indexOf("QC") >= 0) c = "kuning";
+  else if (t) c = "biru";
+  return '<span class="pil ' + c + '">' + esc(txt || "—") + '</span>';
+}
+
+function lukis() {
+  var k = D.kpi, warna = { merah: "#b3261e", kuning: "#8a4c00", biru: "#123a7a", hijau: "#14905c" },
+      latar = { merah: "#fdeaea", kuning: "#fff4e2", biru: "#eaf0fb", hijau: "#e6f5ee" };
+  var pct = k.inv_jumlah ? (k.inv_dibayar / k.inv_jumlah * 100) : 0;
+
+  function kpi(nilai, label, nota, w) {
+    return '<div class="kpi"><b style="color:' + (w || "#123a7a") + '">' + esc(nilai) + '</b><span>' + esc(label) + '</span>'
+      + (nota ? '<em>' + esc(nota) + '</em>' : '') + '</div>';
+  }
+  var h = '<div class="kpis">'
+    + kpi(k.unit_sewaan, "Unit disewa", k.unit_jumlah + " unit didaftar · " + k.unit_peribadi + " peribadi")
+    + kpi(rm(k.sewa_bulanan, 0), "Sewa bulanan (kontrak)", "tempoh " + (k.inv_tempoh || "—"))
+    + kpi(rm(k.inv_dibayar), "Kutipan diterima", Math.round(pct) + "% daripada " + rm(k.inv_jumlah), "#14905c")
+    + kpi(rm(k.inv_tertunggak), "Invois belum bayar", k.inv_bilangan_belum + " invois", "#b3261e")
+    + kpi(rm(k.bil_belum_jumlah), "Bil utiliti tertunggak", k.bil_belum_bilangan + " bil", "#8a4c00")
+    + kpi(k.tiket_aktif, "Tiket aktif", (k.tiket_lewat_sla || 0) + " lewat SLA · " + (k.tiket_ujian_ditapis || 0) + " ujian ditapis")
+    + kpi(rm(k.wo_nilai, 0), "Nilai WO berjalan", k.wo_aktif + " work order")
+    + '</div>';
+
+  h += '<div class="card"><h2>⚡ Perlu tindakan</h2>';
+  (D.amaran || []).forEach(function (a) {
+    h += '<div class="al" style="background:' + (latar[a.tahap] || "#eef1f4") + ';border-left:5px solid ' + (warna[a.tahap] || "#5a6b61") + '">'
+      + '<b>' + esc(a.tajuk) + '</b><span>' + esc(a.butir) + '</span></div>';
+  });
+  h += '</div>';
+
+  h += '<div class="card"><h2>💵 Kutipan sewa ' + esc(k.inv_tempoh || "") + '</h2>'
+    + '<div class="bar"><i style="width:' + Math.max(0, Math.min(100, pct)).toFixed(1) + '%"></i></div>'
+    + '<p class="nota">Diterima <b>' + rm(k.inv_dibayar) + '</b> daripada dijana <b>' + rm(k.inv_jumlah) + '</b>'
+    + ' · tertunggak <b>' + rm(k.inv_tertunggak) + '</b> · ' + Math.round(pct) + '% kutipan.</p>'
+    + '<div style="overflow-x:auto"><table><thead><tr><th>Invois</th><th>Unit</th><th>Penyewa</th>'
+    + '<th class="kanan">Sewa</th><th class="kanan">Utiliti</th><th class="kanan">Jumlah</th><th>Due</th><th>Status</th></tr></thead><tbody>'
+    + (D.invois || []).map(function (i) {
+        return '<tr><td><b>' + esc(i.id) + '</b></td><td>' + esc(i.unit) + '</td><td>' + esc(i.penyewa) + '</td>'
+          + '<td class="kanan">' + rm(i.sewa) + '</td><td class="kanan">' + rm(i.utiliti) + '</td>'
+          + '<td class="kanan"><b>' + rm(i.jumlah) + '</b></td><td>' + tkh(i.due) + '</td><td>' + pilStatus(i.status) + '</td></tr>';
+      }).join('')
+    + '</tbody></table></div></div>';
+
+  h += '<div class="dua">'
+    + '<div class="card"><h2>🏠 Portfolio unit</h2><div style="overflow-x:auto"><table>'
+    + '<thead><tr><th>Unit</th><th>Nama</th><th>Status</th><th>Penyewa</th><th class="kanan">Sewa/bln</th></tr></thead><tbody>'
+    + (D.unit || []).map(function (u) {
+        return '<tr><td><b>' + esc(u.id) + '</b></td><td>' + esc(u.nama) + '</td>'
+          + '<td>' + pilStatus(u.status || (u.pemilikan ? "Peribadi" : "")) + '</td>'
+          + '<td>' + esc(u.penyewa || "—") + '</td><td class="kanan">' + (u.sewa ? rm(u.sewa, 0) : "—") + '</td></tr>';
+      }).join('')
+    + '</tbody></table></div><p class="nota">Sewa kontrak bulanan = <b>' + rm(k.sewa_bulanan, 0) + '</b> (' + k.unit_sewaan + ' unit disewa).</p></div>'
+    + '<div class="card"><h2>🧾 Bil utiliti belum bayar</h2><div style="overflow-x:auto"><table>'
+    + '<thead><tr><th>Bil</th><th>Unit</th><th>Jenis</th><th class="kanan">Amaun</th><th>Due</th><th>Tanggungjawab</th></tr></thead><tbody>'
+    + (D.bil_belum || []).map(function (b) {
+        return '<tr><td><b>' + esc(b.id) + '</b></td><td>' + esc(b.unit) + '</td><td>' + esc(b.jenis + " " + b.tempoh) + '</td>'
+          + '<td class="kanan">' + rm(b.amaun) + '</td><td>' + tkh(b.due) + '</td><td>' + esc(b.tanggungjawab || "—") + '</td></tr>';
+      }).join('')
+    + '</tbody></table></div><p class="nota">Dibayar terkumpul <b>' + rm(k.bil_dibayar_jumlah) + '</b> · belum bayar <b>' + rm(k.bil_belum_jumlah) + '</b>.</p></div>'
+    + '</div>';
+
+  h += '<div class="card"><h2>🔧 Tiket penyelenggaraan</h2><div style="overflow-x:auto"><table>'
+    + '<thead><tr><th>Rujukan</th><th>Tarikh</th><th>Unit</th><th>Jenis</th><th>Status</th><th>Keutamaan</th>'
+    + '<th class="kanan">Diluluskan</th><th>Kontraktor</th></tr></thead><tbody>'
+    + (D.tiket || []).map(function (t) {
+        var sla = t.sla || {};
+        return '<tr><td><b>' + esc(t.ref) + '</b></td><td>' + tkh(t.tarikh) + '</td><td>' + esc(t.unit) + '</td>'
+          + '<td>' + esc(t.jenis) + '</td><td>' + pilStatus(t.status) + '</td>'
+          + '<td>' + (t.keutamaan ? esc(t.keutamaan) + ' · ' + sla.baki + 'j baki' : '<span class="hint">belum diisi</span>') + '</td>'
+          + '<td class="kanan">' + (t.nilai ? rm(t.nilai) : "—") + '</td><td>' + esc(t.kontraktor || "—") + '</td></tr>';
+      }).join('')
+    + '</tbody></table></div><p class="nota">SLA bermula hanya bila medan <b>Keutamaan</b> (P1 4j · P2 24j · P3 72j · P4 7hari) diisi pada tiket.</p></div>';
+
+  h += '<div class="card"><h2>🛠️ Work Order</h2><div style="overflow-x:auto"><table>'
+    + '<thead><tr><th>No WO</th><th>Tiket</th><th>Kontraktor</th><th class="kanan">Kontrak</th>'
+    + '<th class="kanan">Kos pengurusan</th><th>Mula</th><th>Siap sasar</th><th>Status</th></tr></thead><tbody>'
+    + (D.wo || []).map(function (w) {
+        return '<tr><td><b>' + esc(w.no) + '</b></td><td>' + esc(w.ref) + '</td><td>' + esc(w.kontraktor) + '</td>'
+          + '<td class="kanan">' + rm(w.kontrak, 0) + '</td><td class="kanan">' + rm(w.kos) + '</td>'
+          + '<td>' + tkh(w.mula) + '</td><td>' + tkh(w.siap) + '</td><td>' + pilStatus(w.status) + '</td></tr>';
+      }).join('')
+    + '</tbody></table></div></div>';
+
+  h += '<div class="card"><h2>ℹ️ Sumber data</h2><ul class="nota" style="margin:0;padding-left:18px">'
+    + '<li>Unit · Bil · Invois — workbook <b>DB Unit &amp; Bil</b> (tab Unit/Bil/Invois).</li>'
+    + '<li>Tiket · Work Order — workbook kerja MT (tab Tickets/Work Order).</li>'
+    + '<li>Dibaca langsung setiap muat halaman — tiada taip semula. Data dikemas kini: <b>' + esc(D.masa || "—") + '</b>.</li>'
+    + '</ul><div class="btnrow" style="margin-top:12px"><button class="btn ghost" id="bRe">🔄 Muat semula</button>'
+    + '<button class="btn ghost" id="bOut">Log keluar</button></div></div>';
+
+  document.getElementById("wrap").innerHTML = h;
+  var bRe = document.getElementById("bRe"); if (bRe) bRe.onclick = function () { muat(); };
+  var bOut = document.getElementById("bOut");
+  if (bOut) bOut.onclick = function () { localStorage.removeItem("mt_admin_token"); T = ""; splash("Telah log keluar."); login(); };
+}
+
+if (!T) login(); else muat();
+</script>
+</body>
+</html>
