@@ -3817,7 +3817,7 @@ window.LISTINGS = [
     "sekatan": "Tidak dinyatakan",
     "kategori": "Komersial",
     "zoning": "Komersial",
-    "psf": null,
+    "psf": 0.9,
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
