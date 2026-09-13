@@ -53,6 +53,7 @@
         <button class="btn" id="bMasuk" type="submit">Log masuk</button>
       </form>
 
+      <p class="hint" id="tajukReset" style="margin:10px 0 12px"></p>
       <form id="fReset" style="display:none" autocomplete="on">
         <label for="kata2">Kata laluan baharu</label>
         <input type="password" id="kata2" autocomplete="new-password" required minlength="8" placeholder="min 8 aksara">
@@ -100,13 +101,20 @@ function sedia() {
   return true;
 }
 
-/* Mod tetapan semula kata laluan: pautan dari emel membawa token dalam URL */
+/* Mod tetapan kata laluan: pautan dari emel membawa token dalam URL
+   type=recovery (lupa kata laluan) · type=invite (jemputan akaun baharu) · type=signup (sahkan emel) */
 function modReset() {
   var href = location.href;
-  if (!/type=recovery/.test(href) && !/reset=1/.test(href)) return false;
+  if (!/type=(recovery|invite|signup)/.test(href) && !/reset=1/.test(href)) return false;
+  var jemputan = /type=invite/.test(href);
   document.getElementById("fLogin").style.display = "none";
   document.getElementById("fReset").style.display = "block";
-  mesej("🔑 <b>Tetapkan kata laluan baharu</b> untuk akaun portal anda.", "ok");
+  document.getElementById("tajukReset").innerHTML = jemputan
+    ? "🔑 <b>Selamat datang!</b> Tetapkan kata laluan untuk akaun portal anda."
+    : "🔑 <b>Tetapkan kata laluan baharu</b> untuk akaun portal anda.";
+  mesej(jemputan
+    ? "Akaun anda telah dijemput. Tetapkan kata laluan di bawah, kemudian anda akan dibawa ke papan pemuka."
+    : "Isi kata laluan baharu di bawah.", "ok");
   return true;
 }
 async function kePortal(sesi) {
