@@ -181,7 +181,7 @@ function lukis(){
       +  (k.ejen_telefon ? '<div class="row"><span>Telefon ejen</span><b>' + esc(k.ejen_telefon) + '</b></div>' : '')
       +  '<div class="row"><span>Peguamcara anda</span><b>' + esc(k.solicitor_saya||"Belum dilantik") + '</b></div>'
       +  '<div class="row"><span>Pegawai pinjaman</span><b>' + esc(k.mortgage||"—") + '</b></div>'
-      +  '<div class="row"><span>Pihak jual</span><b>' + esc(k.penjual||"—") + '</b></div>'
+      +  '<div class="row"><span>Pihak jual</span><b>' + esc(k.lawan_nama||k.penjual||"—") + '</b></div>'
       +  '</div><div class="btnrow">';
     if (k.ejen_telefon) h += '<a class="btn ghost" href="' + esc(wa(k.ejen_telefon, "Assalamualaikum " + (k.ejen||"") + ", saya pembeli untuk kes " + k.kes + " (" + k.hartanah + "). Boleh saya bertanya perkembangan?")) + '" target="_blank">WhatsApp ejen</a>';
     h += '<a class="btn ghost" href="https://wa.me/60163119076?text=' + encodeURIComponent("Pembeli " + (D.pembeli||"") + " — kes " + k.kes + " (" + k.hartanah + "): ") + '" target="_blank">WhatsApp MT</a></div>'
