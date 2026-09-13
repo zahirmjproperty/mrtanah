@@ -112,7 +112,7 @@ function modReset() {
     ? "🔑 <b>Selamat datang!</b> Tetapkan kata laluan untuk akaun portal anda."
     : "🔑 <b>Tetapkan kata laluan baharu</b> untuk akaun portal anda.";
   mesej(jemputan
-    ? "Akaun anda telah dijemput. Tetapkan kata laluan di bawah, kemudian anda akan dibawa ke papan pemuka."
+    ? "Akaun anda telah dijemput. Tetapkan kata laluan di bawah, kemudian anda akan dibawa ke dashboard."
     : "Isi kata laluan baharu di bawah.", "ok");
   return true;
 }
@@ -121,7 +121,7 @@ async function kePortal(sesi) {
   var r = await fetch(A.api + "?aksi=sesi&access_token=" + encodeURIComponent(tok) + "&_=" + Date.now());
   var d = await r.json();
   if (!d.ok) { mesej("⚠️ " + (d.error || "Akaun tidak dikenali."), "err"); return; }
-  mesej("✅ Selamat datang, <b>" + (d.nama || d.emel) + "</b> (" + d.peranan + "). Membuka papan pemuka…", "ok");
+  mesej("✅ Selamat datang, <b>" + (d.nama || d.emel) + "</b> (" + d.peranan + "). Membuka dashboard…", "ok");
   var lompat = "";
   if (d.peranan === "PEMILIK_HARTANAH") lompat = "pemilik.html";
   else if (d.peranan === "PEMILIK_LADANG") lompat = "ladang-pemilik.html";
@@ -176,7 +176,7 @@ document.getElementById("fReset").addEventListener("submit", async function (e) 
     if (!s.data || !s.data.session) { mesej("❌ Pautan pemulihan tidak sah atau telah luput. Ketuk “Lupa kata laluan?” untuk pautan baharu.", "err"); return; }
     var out = await sb.auth.updateUser({ password: k2 });
     if (out.error) { mesej("❌ " + out.error.message, "err"); return; }
-    mesej("✅ Kata laluan baharu disimpan. Membuka papan pemuka…", "ok");
+    mesej("✅ Kata laluan baharu disimpan. Membuka dashboard…", "ok");
     setTimeout(function () { kePortal(s.data.session); }, 800);
   } catch (err) { mesej("⚠️ Ralat: " + String(err).slice(0, 90), "err"); }
 });

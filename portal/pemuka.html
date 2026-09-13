@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Papan Pemuka MT — Pengurusan Hartanah (dalaman)</title>
+<title>Dashboard MT — Pengurusan Hartanah (dalaman)</title>
 <meta name="description" content="Papan pemuka pengurusan Mr Tanah — portfolio unit, kutipan sewa, bil utiliti, tiket penyelenggaraan & work order. Akses khas pasukan MT.">
 <style>
   :root { --mt:#123a7a; --mt-tua:#0a1f44; --mt-soft:#e8eefb; --hijau:#14905c; }
@@ -53,7 +53,7 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>📊 Papan Pemuka MT</h1>
+    <h1>📊 Dashboard MT</h1>
     <p>Pengurusan hartanah — ZMJ Solutions · data langsung</p>
     <p style="margin:2px 0 0;font-size:11px;opacity:.85">versi v3-snapshot</p>
     <div class="crumbs"><a href="index.html">← Portal</a> · <a href="kanban.html">Papan Kanban Kerja + SLA</a></div>
@@ -61,9 +61,13 @@
   <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
   <div class="foot">Dalaman MT — jangan kongsi pautan ini.</div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/auth-config.js?v=2"></script>
 <script>
 var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
 var T = new URLSearchParams(location.search).get("t") || localStorage.getItem("mt_admin_token") || "";
+var MOD = "token";        /* "token" = admin_token lama · "login" = sesi log masuk */
+var SESI = null, SB = null;
 var D = null;
 
 function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
@@ -99,7 +103,10 @@ function muatLive(gunaSandaran) {
   splash("Menghubungi pelayan… (boleh ambil 10–30 saat)");
   var ctrl = (typeof AbortController !== "undefined") ? new AbortController() : null;
   var tamat = setTimeout(function () { if (ctrl) ctrl.abort(); }, 45000);
-  fetch(API + "?aksi=pemuka&admin_token=" + encodeURIComponent(T) + "&_=" + Date.now(), ctrl ? { signal: ctrl.signal } : undefined)
+  var urlAPI = (MOD === "login")
+    ? API + "?aksi=pemuka&access_token=" + encodeURIComponent((SESI && SESI.access_token) || "") + "&_=" + Date.now()
+    : API + "?aksi=pemuka&admin_token=" + encodeURIComponent(T) + "&_=" + Date.now();
+  fetch(urlAPI, ctrl ? { signal: ctrl.signal } : undefined)
     .then(function (r) { clearTimeout(tamat); return r.json(); })
     .then(function (d) {
       if (!d.ok) {
@@ -152,7 +159,8 @@ function lukis() {
       + (nota ? '<em>' + esc(nota) + '</em>' : '') + '</div>';
   }
   var badge = D.__snap ? ('📦 Snapshot ' + esc(D.masa || '')) : ('🟢 Data langsung ' + esc(D.masa || ''));
-  var h = '<p class="hint" style="margin:0 0 10px">Data setakat: <b>' + badge + '</b></p>'
+  var h = '<p class="hint" style="margin:0 0 10px">Data setakat: <b>' + badge + '</b>'
+    + (MOD === "login" ? ' · <a href="#" id="bKeluar" style="color:#0a5">Log keluar</a>' : '') + '</p>'
     + '<div class="kpis">'
     + kpi(k.unit_sewaan, "Unit disewa", k.unit_jumlah + " unit didaftar · " + k.unit_peribadi + " peribadi")
     + kpi(rm(k.sewa_bulanan, 0), "Sewa bulanan (kontrak)", "tempoh " + (k.inv_tempoh || "—"))
@@ -236,9 +244,24 @@ function lukis() {
   var bRe = document.getElementById("bRe"); if (bRe) bRe.onclick = function () { muatLive(false); };
   var bOut = document.getElementById("bOut");
   if (bOut) bOut.onclick = function () { localStorage.removeItem("mt_admin_token"); T = ""; splash("Telah log keluar."); login(); };
+  var bK = document.getElementById("bKeluar");
+  if (bK) bK.onclick = function (e) { e.preventDefault(); try { SB.auth.signOut(); } catch (x) {} localStorage.removeItem("mt_admin_token"); location.href = "login.html"; };
 }
 
-if (!T) login(); else muat();
+(function init() {
+  var A = window.AUTH || {};
+  if (!A.url || !A.key || typeof window.supabase === "undefined") {
+    if (T) muat(); else login();
+    return;
+  }
+  SB = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false } });
+  SB.auth.getSession().then(function (o) {
+    SESI = (o.data && o.data.session) || null;
+    if (SESI) { MOD = "login"; muat(); return; }
+    if (T) { MOD = "token"; muat(); return; }
+    location.href = "login.html";
+  });
+})();
 </script>
 </body>
 </html>
