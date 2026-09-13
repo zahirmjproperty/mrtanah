@@ -6,12 +6,21 @@
   "use strict";
 
   var SEMUA = {
+    /* ---- Role pengurusan & pelanggan sedia ada ---- */
     ADMIN:            { nama: "Dashboard Pengurusan", ico: "📊", url: "pemuka.html",         sedia: true,  mod: "login" },
     PEMILIK_HARTANAH: { nama: "Dashboard Pemilik",    ico: "🏠", url: "pemilik.html",        sedia: true,  mod: "login" },
     PEMILIK_LADANG:   { nama: "Dashboard Ladang",     ico: "🌴", url: "ladang-pemilik.html", sedia: true,  mod: "token" },
     PENYEWA:          { nama: "Dashboard Penyewa",    ico: "🧾", url: "penyewa.html",        sedia: true,  mod: "token" },
     KONTRAKTOR:       { nama: "Dashboard Kontraktor", ico: "🔧", url: "kontraktor.html",     sedia: false, mod: "belum" },
-    EJEN:             { nama: "Dashboard Ejen",       ico: "🧑‍💼", url: "ejen.html",          sedia: false, mod: "belum" }
+    EJEN:             { nama: "Dashboard Ejen",       ico: "🧑‍💼", url: "ejen.html",          sedia: false, mod: "belum" },
+    /* ---- Role baharu (didaftar 13/9/2026; dashboard dalam perancangan) ---- */
+    PEMBELI_HARTANAH:     { nama: "Pembeli Hartanah",      ico: "🛒", url: "pembeli.html",       sedia: false, mod: "belum" },
+    PEMBELI_HASIL_LADANG: { nama: "Pembeli Hasil Ladang", ico: "🌾", url: "pembeli-ladang.html", sedia: false, mod: "belum" },
+    PENJUAL_HARTANAH:     { nama: "Penjual Hartanah",      ico: "🏷️", url: "penjual.html",       sedia: false, mod: "belum" },
+    SOLICITOR:            { nama: "Solicitor (Conveyancing)", ico: "⚖️", url: "solicitor.html",  sedia: false, mod: "belum" },
+    MORTGAGE_OFFICER:     { nama: "Mortgage Officer (Pembiayaan)", ico: "🏦", url: "pembiayaan.html", sedia: false, mod: "belum" },
+    /* Role teknikal: pemilik dalam konteks tiket aduan sahaja (tiada dashboard portfolio) */
+    PEMILIK:          { nama: "Pemilik (tiket aduan)", ico: "📋", url: "aduan-pemilik.html",   sedia: true,  mod: "token" }
   };
 
   function senarai(peranans) {
