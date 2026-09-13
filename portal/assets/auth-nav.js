@@ -11,8 +11,8 @@
     PEMILIK_HARTANAH: { nama: "Dashboard Pemilik",    ico: "🏠", url: "pemilik.html",        sedia: true,  mod: "login" },
     PEMILIK_LADANG:   { nama: "Dashboard Ladang",     ico: "🌴", url: "ladang-pemilik.html", sedia: true,  mod: "token" },
     PENYEWA:          { nama: "Dashboard Penyewa",    ico: "🧾", url: "penyewa.html",        sedia: true,  mod: "token" },
-    KONTRAKTOR:       { nama: "Dashboard Kontraktor", ico: "🔧", url: "kontraktor.html",     sedia: false, mod: "belum" },
-    EJEN:             { nama: "Dashboard Ejen",       ico: "🧑‍💼", url: "ejen.html",          sedia: false, mod: "belum" },
+    KONTRAKTOR:       { nama: "Dashboard Kontraktor", ico: "🔧", url: "kontraktor.html",     sedia: true,  mod: "login" },
+    EJEN:             { nama: "Dashboard Ejen",       ico: "🧑‍💼", url: "ejen.html",          sedia: true,  mod: "login" },
     /* ---- Role baharu (didaftar 13/9/2026; dashboard dalam perancangan) ---- */
     PEMBELI_HARTANAH:     { nama: "Pembeli Hartanah",      ico: "🛒", url: "pembeli.html",       sedia: false, mod: "belum" },
     PEMBELI_HASIL_LADANG: { nama: "Pembeli Hasil Ladang", ico: "🌾", url: "pembeli-ladang.html", sedia: false, mod: "belum" },

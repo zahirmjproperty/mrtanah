@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Dashboard Ejen — Mr Tanah</title>
+<style>
+  :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; }
+  .topbar { background:linear-gradient(135deg,#0a4d5c 0%,#123a7a 60%,#14905c 100%); color:#fff; padding:16px; }
+  .topbar h1 { font-size:18px; } .topbar p { font-size:12.5px; opacity:.92; margin-top:2px; }
+  .wrap { max-width:680px; margin:0 auto; padding:14px 14px 48px; }
+  .card { background:#fff; border-radius:14px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:13px; }
+  .card h2 { font-size:14.5px; color:var(--mt-tua); margin-bottom:10px; display:flex; justify-content:space-between; align-items:center; gap:8px; }
+  .meta { background:#f6faf8; border:1px solid #e0eae3; border-radius:11px; padding:11px 12px; font-size:12.7px; }
+  .row { display:flex; justify-content:space-between; gap:10px; padding:3px 0; border-bottom:1px dashed #e6efe9; }
+  .row:last-child { border:0; }
+  .row span { color:#5a6b61; }
+  table { width:100%; border-collapse:collapse; font-size:12px; }
+  th { background:#eef3f7; color:var(--mt-tua); text-align:left; padding:7px 5px; font-size:10.5px; }
+  td { padding:9px 5px; border-top:1px solid #e9f0ec; vertical-align:top; }
+  .num { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .btn { width:100%; padding:14px; background:var(--hijau); color:#fff; border:0; border-radius:11px; font-size:15px; font-weight:700; cursor:pointer; }
+  .btn.sec { background:var(--mt); } .btn.ghost { background:#eef3f7; color:var(--mt-tua); }
+  .btnrow { display:flex; gap:9px; flex-wrap:wrap; margin-top:12px; }
+  .btnrow .btn { width:auto; flex:1; min-width:130px; }
+  .err { background:#fdeaea; border:1px solid #f2c2c2; color:#8c1f1f; border-radius:11px; padding:12px; font-size:13px; }
+  .st { font-size:10px; font-weight:800; border-radius:20px; padding:2px 8px; display:inline-block; white-space:nowrap; }
+  .s-wait { background:#eef3f7; color:#5a6b61; } .s-bad { background:#fdeaea; color:#a11; }
+  .s-ok { background:#e5f4ec; color:#0e5a33; } .s-warn { background:#fdf1e3; color:#8a5308; } .s-info { background:#e8eefb; color:#1c3f8f; }
+  .kpi { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .kbox { background:#fff; border:1px solid #e4ecf1; border-radius:12px; padding:11px 12px; }
+  .kbox .l { font-size:10.5px; color:#5a6b61; text-transform:uppercase; letter-spacing:.3px; }
+  .kbox .v { font-size:19px; font-weight:800; color:var(--mt-tua); font-variant-numeric:tabular-nums; margin-top:3px; }
+  .kbox .s { font-size:10.5px; color:#7c8b93; }
+  .amr { border-left:4px solid #cfdcd4; background:#f8fbf9; border-radius:9px; padding:10px 11px; margin-bottom:9px; font-size:12.6px; }
+  .amr.merah { border-color:#d64545; background:#fdf3f3; } .amr.kuning { border-color:#e8a33d; background:#fdf8f0; }
+  .amr.biru { border-color:#3f6fd6; background:#f3f6fd; } .amr.hijau { border-color:#33a06a; background:#f2faf5; }
+  .amr b { color:var(--mt-tua); display:block; } .amr i { font-style:normal; color:#5a6b61; font-size:11.7px; }
+  .hint { font-size:11.5px; color:#5a6b61; margin-top:6px; }
+  .foot { text-align:center; font-size:11px; color:#6a7a71; margin-top:16px; }
+  .splash { text-align:center; padding:40px 16px; color:#5a6b61; font-size:14px; }
+  .badge { font-size:10.5px; font-weight:800; background:#e8f5ee; color:#0e5a33; border-radius:20px; padding:3px 9px; }
+  .pban { max-width:680px; margin:12px auto 0; padding:9px 12px; background:#fff6e5; border:1px solid #f0d9a8; border-radius:10px; font-size:12px; color:#8a5308; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>🧑‍💼 Dashboard Ejen</h1>
+    <p id="sub">Mr Tanah · ZMJ Solutions — kes rujukan &amp; komisen anda</p>
+  </div>
+  <div id="navPhmt" style="max-width:900px;margin:14px auto 0;padding:0 14px"></div>
+  <div class="wrap" id="wrap">
+    <div class="splash">Memuatkan…</div>
+  </div>
+  <div class="foot">Dokumen peribadi — pautan/akaun ini khas untuk ejen rujukan anda. Jangan kongsi.</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/auth-config.js?v=2"></script>
+<script src="assets/auth-nav.js?v=2"></script>
+<script>
+var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
+var TOKEN = new URLSearchParams(location.search).get("t") || "";
+var MOD = "token", SESI = null, SB = null, D = null, SIBUK = false;
+function rm(n){ return "RM " + Number(n||0).toLocaleString("ms-MY", {minimumFractionDigits:2, maximumFractionDigits:2}); }
+function rm0(n){ return "RM " + Number(n||0).toLocaleString("ms-MY", {maximumFractionDigits:0}); }
+function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function tkh(s){ if(!s) return "—"; var d=String(s).substring(0,10).split("-"); return d.length===3 ? d[2]+"/"+d[1]+"/"+d[0] : String(s); }
+function splash(m){ document.getElementById("wrap").innerHTML = '<div class="splash">'+m+'</div>'; }
+function stKes(s){ s=String(s||"").toUpperCase();
+  if(s.indexOf("SELESAI")>=0) return '<span class="st s-ok">SELESAI</span>';
+  if(s.indexOf("WORK ORDER")>=0) return '<span class="st s-info">KERJA DIJALANKAN</span>';
+  if(s.indexOf("SEBUT HARGA")>=0) return '<span class="st s-warn">SEBUT HARGA</span>';
+  if(s.indexOf("BARU")>=0||s.indexOf("TRIAGE")>=0) return '<span class="st s-bad">BARU — MENUNGGU MT</span>';
+  return '<span class="st s-wait">'+esc(s||"—")+'</span>'; }
+function stKomisen(s){ s=String(s||"").toUpperCase();
+  if(s.indexOf("DIBAYAR")>=0) return '<span class="st s-ok">DIBAYAR</span>';
+  if(s==="AKRUAL") return '<span class="st s-warn">AKRUAL — BELUM BAYAR</span>';
+  if(s==="DISAHKAN") return '<span class="st s-info">DISAHKAN</span>';
+  return '<span class="st s-wait">'+esc(s||"—")+'</span>'; }
+
+function urlAPI() {
+  return (MOD === "login")
+    ? API + "?aksi=ejen-dash&access_token=" + encodeURIComponent((SESI && SESI.access_token) || "") + "&_=" + Date.now()
+    : API + "?aksi=ejen-dash&token=" + encodeURIComponent(TOKEN) + "&_=" + Date.now();
+}
+function muat(paksa) {
+  if (SIBUK) return; SIBUK = true;
+  var p = (window.PRATONTON_DATA) ? Promise.resolve(window.PRATONTON_DATA) : fetch(urlAPI()).then(function(r){ return r.json(); });
+  if (!window.PRATONTON_DATA && paksa) splash("Menghubungi pelayan… (boleh ambil beberapa saat)");
+  else if (!D) splash("Memuatkan…");
+  p.then(function(d){
+    SIBUK = false;
+    if (!d || !d.ok) {
+      if (MOD === "login" && /sesi tidak sah|tamat tempoh/i.test(String((d||{}).error||""))) { location.href = "login.html"; return; }
+      if (D) document.getElementById("wrap").insertAdjacentHTML("afterbegin", '<div class="err">⚠️ Gagal memuatkan data terkini — paparan lama dikekalkan.<br><small>'+esc((d||{}).error||"Ralat rangkaian")+'</small></div>');
+      else splash("⚠️ " + esc((d||{}).error || "Pautan tidak sah atau telah dimatikan."));
+      return;
+    }
+    D = d; lukis();
+    var nav = document.getElementById("navPhmt");
+    if (nav && window.PHMT && D.peranans) PHMT.lukis(nav, D.peranans, "EJEN");
+  })
+  .catch(function(e){ SIBUK = false; if (D) document.getElementById("wrap").insertAdjacentHTML("afterbegin", '<div class="err">⚠️ Ralat rangkaian — paparan lama dikekalkan.</div>'); else splash("⚠️ Gagal memuatkan data.<br><small>"+esc(e)+"</small>"); });
+}
+(function init(){
+  var A = window.AUTH || {};
+  if (window.PRATONTON_DATA) { muat(); return; }
+  if (!A.url || !A.key || typeof window.supabase === "undefined") {
+    if (TOKEN) muat(); else splash("⚠️ Pautan tidak lengkap (tiada token). Guna pautan ejen dari Mr Tanah, atau log masuk.");
+    return;
+  }
+  SB = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false } });
+  SB.auth.getSession().then(function(o){
+    SESI = (o.data && o.data.session) || null;
+    if (SESI) { MOD = "login"; muat(); return; }
+    if (TOKEN) { MOD = "token"; muat(); return; }
+    location.href = "login.html";
+  });
+})();
+
+function lukis(){
+  var e = D.ejen || {}, kp = D.kpi || {}, h = "";
+  document.getElementById("sub").textContent = "Mr Tanah · " + (e.nama || "") + (e.agensi ? " (" + e.agensi + ")" : "") + (e.id ? " · " + e.id : "");
+  var masa = esc(D.masa || "");
+  var logKeluar = (MOD === "login") ? '<div class="btnrow"><button class="btn ghost" onclick="keluar()">Log keluar</button></div>' : "";
+
+  h += '<div class="card"><h2>📌 Ringkasan <span class="badge" title="Data ' + masa + '">DATA SEBENAR</span></h2><div class="kpi">'
+    +  '<div class="kbox"><div class="l">Kes dirujuk</div><div class="v">' + (kp.kes_jumlah||0) + '</div><div class="s">' + (kp.kes_aktif||0) + ' masih berjalan · ' + (kp.kes_selesai||0) + ' selesai</div></div>'
+    +  '<div class="kbox"><div class="l">Nilai kerja dirujuk</div><div class="v">' + rm0(kp.nilai_lulus) + '</div><div class="s">diluluskan (termasuk selesai)</div></div>'
+    +  '<div class="kbox"><div class="l">Komisen terjana</div><div class="v">' + rm0(kp.komisen_terjana) + '</div><div class="s">kadar ' + (e.kadar||0) + '% kos pengurusan</div></div>'
+    +  '<div class="kbox"><div class="l">Komisen belum dibayar</div><div class="v">' + rm0(kp.komisen_akrual) + '</div><div class="s">dibayar: ' + rm0(kp.komisen_dibayar) + '</div></div>'
+    +  '</div>'
+    +  (Number(kp.anggaran_aktif) > 0 ? '<div class="hint">Anggaran komisen kes aktif yang belum dikeluarkan WO: <b>' + rm(kp.anggaran_aktif) + '</b> (bukan angka muktamad).</div>' : '')
+    +  '<div class="btnrow"><button class="btn ghost" onclick="muat(1)">🔄 Tarik data terkini</button></div>'
+    +  '<div class="hint">Data setakat <b>' + masa + '</b> (waktu Malaysia).</div>' + logKeluar + '</div>';
+
+  h += '<div class="card"><h2>⚡ Perlu tindakan / status</h2>';
+  (D.amaran || []).forEach(function(a){ h += '<div class="amr ' + esc(a.tahap) + '"><b>' + esc(a.tajuk) + '</b><i>' + esc(a.butir) + '</i></div>'; });
+  h += '</div>';
+
+  h += '<div class="card"><h2>🧾 Profil Ejen</h2><div class="meta">'
+    +  '<div class="row"><span>Ejen</span><b>' + esc(e.nama||"—") + (e.id ? " · " + esc(e.id) : "") + '</b></div>'
+    +  '<div class="row"><span>Agensi</span><b>' + esc(e.agensi||"—") + (e.ren ? " · REN " + esc(e.ren) : "") + '</b></div>'
+    +  '<div class="row"><span>Telefon</span><b>' + esc(e.telefon||"—") + '</b></div>'
+    +  '<div class="row"><span>Emel</span><b>' + esc(e.emel||"—") + '</b></div>'
+    +  '<div class="row"><span>Kadar komisen rujukan</span><b>' + (e.kadar||0) + '% kos pengurusan MT</b></div>'
+    +  '<div class="row"><span>Status panel</span><b>' + esc(e.status||"—") + '</b></div>'
+    +  '</div><div class="hint">Komisen dikira daripada kos pengurusan MT bagi setiap kes yang anda rujuk, dan dibayar selepas bayaran pemilik disahkan.</div></div>';
+
+  h += '<div class="card"><h2>📋 Kes Dirujuk</h2>';
+  if (!(D.kes||[]).length) h += '<div class="hint">Tiada kes rujukan direkod untuk anda.</div>';
+  else {
+    h += '<table><tr><th>Ref / Unit</th><th>Jenis</th><th class="num">Nilai</th><th>Status</th></tr>';
+    D.kes.forEach(function(c){
+      h += '<tr><td><b>' + esc(c.ref) + '</b><br><small>' + esc(c.unit||"—") + '</small><br><small>' + esc(tkh(String(c.tarikh||"").substring(0,10))) + '</small></td>'
+        +  '<td>' + esc(c.jenis||"—") + (c.kontraktor ? '<br><small>kontraktor: ' + esc(c.kontraktor) + '</small>' : '')
+        +  (c.no_wo ? '<br><small>' + esc(c.no_wo) + '</small>' : '') + (c.pemilik ? '<br><small>pemilik: ' + esc(c.pemilik) + '</small>' : '') + '</td>'
+        +  '<td class="num">' + (Number(c.nilai)>0 ? rm(c.nilai) : "—") + '</td>'
+        +  '<td>' + stKes(c.status) + '</td></tr>';
+    });
+    h += '</table>';
+  }
+  h += '</div>';
+
+  h += '<div class="card"><h2>💰 Komisen Rujukan</h2>';
+  if (!(D.komisen||[]).length) h += '<div class="hint">Tiada baris komisen direkod lagi. Komisen muncul apabila kos pengurusan MT bagi kes rujukan dikira.</div>';
+  else {
+    h += '<table><tr><th>Ref</th><th>Kes / WO</th><th class="num">Kos urus</th><th class="num">Komisen</th><th>Status</th></tr>';
+    D.komisen.forEach(function(k){
+      h += '<tr><td><b>' + esc(k.ref) + '</b><br><small>akru ' + tkh(k.tarikh_akru) + '</small></td>'
+        +  '<td>' + esc(k.ref_tiket||"—") + '<br><small>' + esc(k.no_wo||"—") + '</small></td>'
+        +  '<td class="num">' + rm(k.kos_urus) + '<br><small>' + (k.kadar||0) + '%</small></td>'
+        +  '<td class="num"><b>' + rm(k.amaun) + '</b></td>'
+        +  '<td>' + stKomisen(k.status) + (k.tarikh_bayar ? '<br><small>bayar ' + tkh(k.tarikh_bayar) + '</small>' : '') + '</td></tr>';
+    });
+    h += '</table>';
+  }
+  h += '<div class="hint">' + esc(D.nota || "") + '</div></div>';
+
+  h += '<div class="card"><h2>📤 Hantar &amp; Hubungi MT</h2><div class="btnrow">';
+  if (MOD === "token" && TOKEN) {
+    h += '<a class="btn" href="aduan-ejen.html?t=' + encodeURIComponent(TOKEN) + '" style="text-align:center;text-decoration:none">Lihat / hantar kes</a>';
+  }
+  h += '<a class="btn ghost" href="https://wa.me/60163119076?text=' + encodeURIComponent("Ejen " + (e.nama||"") + (e.id ? " (" + e.id + ")" : "") + " — ") + '" style="text-align:center;text-decoration:none">WhatsApp MT 016-311 9076</a>'
+    +  '<a class="btn ghost" href="mailto:mrtanahmy@gmail.com" style="text-align:center;text-decoration:none">Emel MT</a></div>'
+    +  '<div class="hint">Waktu pejabat Isnin–Jumaat 9:00 pg–6:00 ptg.</div></div>';
+
+  document.getElementById("wrap").innerHTML = h;
+  window.scrollTo(0,0);
+}
+function keluar(){ if (SB) SB.auth.signOut().then(function(){ location.href = "login.html"; }); else location.href = "login.html"; }
+</script>
+</body>
+</html>
