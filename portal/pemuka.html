@@ -85,8 +85,11 @@ function login() {
 }
 
 function muat() {
-  fetch(API + "?aksi=pemuka&admin_token=" + encodeURIComponent(T))
-    .then(function (r) { return r.json(); })
+  splash("Memuatkan…");
+  var ctrl = (typeof AbortController !== "undefined") ? new AbortController() : null;
+  var tamat = setTimeout(function () { if (ctrl) ctrl.abort(); }, 15000);
+  fetch(API + "?aksi=pemuka&admin_token=" + encodeURIComponent(T), ctrl ? { signal: ctrl.signal } : undefined)
+    .then(function (r) { clearTimeout(tamat); return r.json(); })
     .then(function (d) {
       if (!d.ok) {
         localStorage.removeItem("mt_admin_token");
@@ -97,7 +100,17 @@ function muat() {
       }
       D = d; lukis();
     })
-    .catch(function (e) { splash("⚠️ Gagal memuatkan: " + e); });
+    .catch(function (e) {
+      clearTimeout(tamat);
+      document.getElementById("wrap").innerHTML = '<div class="card" style="max-width:520px;margin:24px auto">'
+        + '<h2>⚠️ Data tidak dapat dimuatkan</h2>'
+        + '<p class="hint">Sambungan ke pangkalan data MT gagal atau terlalu lambat (rangkaian/sekat sementara). '
+        + 'Data tidak diubah — cuba muat semula. Jika berulang, maklumkan Ali.</p>'
+        + '<p class="hint" style="color:#a11">' + esc(String(e).slice(0, 120)) + '</p>'
+        + '<div class="btnrow" style="margin-top:12px"><button class="btn" id="bCuba">🔄 Cuba lagi</button>'
+        + '<a class="btn ghost" style="text-decoration:none" href="kanban.html">Buka Papan Kanban</a></div></div>';
+      var b = document.getElementById("bCuba"); if (b) b.onclick = function () { muat(); };
+    });
 }
 
 function pilStatus(txt) {
