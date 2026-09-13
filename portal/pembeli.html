@@ -162,6 +162,8 @@ function lukis(){
       +  '<div class="row"><span>Harga</span><b>' + rm(k.harga) + '</b></div>'
       +  '<div class="row"><span>Deposit direkod</span><b>' + rm(k.deposit) + '</b></div>'
       +  '<div class="row"><span>Baki (harga − deposit)</span><b>' + rm(k.baki) + '</b></div>'
+      +  (Number(k.pinjaman_diluluskan) > 0 ? '<div class="row"><span>Pembiayaan diluluskan</span><b>' + rm(k.pinjaman_diluluskan) + ' · ' + esc(k.bank||"—") + '</b></div>'
+            + '<div class="row"><span>Tarikh LO / kadar</span><b>' + tkh(k.tarikh_lo) + ' · ' + esc(k.kadar||"—") + '</b></div>' : '')
       +  '<div class="row"><span>Status</span><b>' + esc(k.status) + '</b></div>'
       +  (k.tarikh_penting ? '<div class="row"><span>Tarikh penting</span><b>' + tkh(k.tarikh_penting) + ' (' + esc(hariTeks(k.hari_penting)) + ')</b></div>' : '')
       +  '</div>'

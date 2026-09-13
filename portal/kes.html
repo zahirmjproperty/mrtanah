@@ -217,6 +217,10 @@ function borang(){
     + '<div class="grid2"><div><label>Harga jual / sewa (RM)</label><input id="kHarga" type="number" step="0.01" placeholder="cth 450000"></div>'
     + '<div><label>Deposit diterima (RM)</label><input id="kDeposit" type="number" step="0.01" placeholder="cth 13500"></div></div>'
     + '<label>Tarikh penting seterusnya</label><input id="kTarikh" type="date">'
+    + '<div class="grid2"><div><label>Bank pembiayaan</label><input id="kBank" placeholder="cth Maybank / LPPSA"></div>'
+    + '<div><label>Jumlah pinjaman diluluskan (RM)</label><input id="kPinjaman" type="number" step="0.01" placeholder="cth 405000"></div></div>'
+    + '<div class="grid2"><div><label>Tarikh LO (surat tawaran)</label><input id="kTarikhLo" type="date"></div>'
+    + '<div><label>Kadar / tenure</label><input id="kKadar" placeholder="cth 4.15% / 35 tahun"></div></div>'
     + '<label>Nota</label><textarea id="kNota" rows="2" placeholder="cth tawaran lisan RM450k, tempahan 3%"></textarea>'
     + '<div class="btnrow"><button class="btn" onclick="hantarCipta()">Daftar kes</button>'
     + '<button class="btn ghost" onclick="document.getElementById(\'panel\').innerHTML=\'\'">Batal</button></div>'
@@ -229,7 +233,8 @@ function hantarCipta(){
            penjual:g("kPenjual"), pembeli:g("kPembeli"), ejen:g("kEjen"),
            solicitor_penjual:g("kSolP"), solicitor_pembeli:g("kSolB"),
            mortgage:g("kMortgage"), peringkat:g("kPeringkat"), harga:g("kHarga"), deposit:g("kDeposit"),
-           tarikh_penting:g("kTarikh"), nota:g("kNota") });
+           tarikh_penting:g("kTarikh"), nota:g("kNota"),
+           bank:g("kBank"), pinjaman:g("kPinjaman"), tarikh_lo:g("kTarikhLo"), kadar:g("kKadar") });
 }
 
 /* ---------- detail kes ---------- */
@@ -249,6 +254,7 @@ function detail(ref){
     +  '<div class="row"><span>Harga</span><b>' + rm(x.harga) + '</b></div>'
     +  '<div class="row"><span>Deposit</span><b>' + rm(x.deposit) + '</b></div>'
     +  '<div class="row"><span>Peringkat</span><b>' + esc(x.peringkat) + ' ' + stKes(x.status) + '</b></div>'
+    +  '<div class="row"><span>Pembiayaan</span><b>' + (Number(x.pinjaman) > 0 ? rm(x.pinjaman) + ' · ' + esc(x.bank||"—") + (x.tarikh_lo ? ' · LO ' + tkh(x.tarikh_lo) : '') + (x.kadar ? ' · ' + esc(x.kadar) : '') : '—') + '</b></div>'
     +  '<div class="row"><span>Tarikh penting</span><b>' + tkh(x.tarikh_penting) + ' (' + esc(hariTeks(x.hari_penting)) + ')</b></div>'
     +  '<div class="row"><span>Kemas kini terakhir</span><b>' + esc(x.dikemaskini||"—") + '</b></div>'
     +  '<div class="row"><span>Didaftarkan oleh</span><b>' + esc(x.didaftar||"—") + '</b></div>'
@@ -285,6 +291,10 @@ function detail(ref){
     + '<div><label>Solicitor pembeli</label><input id="dSolB" value="' + esc(x.solicitor_pembeli||"") + '"></div>'
     + '<div><label>Mortgage officer</label><input id="dMortgage" value="' + esc(x.mortgage||"") + '"></div>'
     + '<div><label>Pembeli / penyewa</label><input id="dPembeli" value="' + esc(x.pembeli||"") + '"></div>'
+    + '<div><label>Bank pembiayaan</label><input id="dBank" value="' + esc(x.bank||"") + '"></div>'
+    + '<div><label>Jumlah pinjaman diluluskan (RM)</label><input id="dPinjaman" type="number" step="0.01" value="' + (x.pinjaman||"") + '"></div>'
+    + '<div><label>Tarikh LO</label><input id="dTarikhLo" type="date" value="' + esc(String(x.tarikh_lo||"").substring(0,10)) + '"></div>'
+    + '<div><label>Kadar / tenure</label><input id="dKadar" value="' + esc(x.kadar||"") + '"></div>'
     + '</div><label>Nota tambahan</label><textarea id="dNota" rows="2"></textarea>'
     + '<div class="btnrow"><button class="btn" onclick="hantarKemaskini(\'' + esc(x.kes) + '\')">Simpan perubahan</button>'
     + '<button class="btn ghost" onclick="document.getElementById(\'panel\').innerHTML=\'\'">Tutup</button></div>';
@@ -307,7 +317,8 @@ function hantarKemaskini(ref){
   hantar({ action:"kemaskini", kes:ref, oleh:"Zahir", harga:g("dHarga"), deposit:g("dDeposit"),
            tarikh_penting:g("dTarikh"), status:g("dStatus"), ejen:g("dEjen"),
            solicitor_penjual:g("dSolP"), solicitor_pembeli:g("dSolB"),
-           mortgage:g("dMortgage"), pembeli:g("dPembeli"), nota:g("dNota") });
+           mortgage:g("dMortgage"), pembeli:g("dPembeli"), nota:g("dNota"),
+           bank:g("dBank"), pinjaman:g("dPinjaman"), tarikh_lo:g("dTarikhLo"), kadar:g("dKadar") });
 }
 </script>
 </body>

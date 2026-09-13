@@ -139,7 +139,7 @@ function lukis(){
 
   h += '<div class="card"><h2>📌 Ringkasan Pembiayaan <span class="badge">DATA SEBENAR</span></h2><div class="kpi">'
     +  '<div class="kbox"><div class="l">Kes aktif</div><div class="v">' + (kp.aktif||0) + '</div><div class="s">' + (kp.selesai||0) + ' selesai · ' + (kp.kes_jumlah||0) + ' jumlah</div></div>'
-    +  '<div class="kbox"><div class="l">Jumlah perlu dibiayai</div><div class="v">' + rm0(kp.pembiayaan) + '</div><div class="s">harga − deposit (indikatif)</div></div>'
+    +  '<div class="kbox"><div class="l">Jumlah perlu dibiayai</div><div class="v">' + rm0(kp.pembiayaan) + '</div><div class="s">diluluskan: ' + rm0(kp.pinjaman_diluluskan||0) + ((kp.kekurangan_bil||0) > 0 ? ' · ' + kp.kekurangan_bil + ' kes kurang' : '') + '</div></div>'
     +  '<div class="kbox"><div class="l">Kelulusan menunggu</div><div class="v">' + (kp.kelulusan_menunggu||0) + '</div><div class="s">' + (kp.la_menunggu||0) + ' perjanjian pinjaman (LA) menunggu</div></div>'
     +  '<div class="kbox"><div class="l">Dokumen menunggu</div><div class="v">' + (kp.dokumen_menunggu||0) + '</div><div class="s">' + (kp.tarikh_lewat||0) + ' tarikh penting lewat</div></div>'
     +  '</div><div class="btnrow"><button class="btn ghost" onclick="muat()">🔄 Tarik data terkini</button></div>'
@@ -168,6 +168,14 @@ function lukis(){
       +  (k.tarikh_penting ? '<div class="row"><span>Tarikh penting</span><b>' + tkh(k.tarikh_penting) + ' (' + esc(hariTeks(k.hari_penting)) + ')</b></div>' : '')
       +  '</div>'
       +  '<div class="box" style="margin-top:10px;text-align:center"><div class="hint" style="margin:0">Jumlah perlu dibiayai (harga − deposit)</div><div class="big">' + rm(k.baki) + '</div></div>'
+      +  (Number(k.pinjaman_diluluskan) > 0
+            ? '<div class="meta" style="margin-top:10px"><div class="row"><span>Pinjaman diluluskan</span><b>' + rm(k.pinjaman_diluluskan) + '</b></div>'
+              + '<div class="row"><span>Bank / pemberi pinjaman</span><b>' + esc(k.bank||"—") + '</b></div>'
+              + '<div class="row"><span>Tarikh LO (surat tawaran)</span><b>' + tkh(k.tarikh_lo) + '</b></div>'
+              + '<div class="row"><span>Kadar / tenure</span><b>' + esc(k.kadar||"—") + '</b></div>'
+              + '<div class="row"><span>Baki dibiayai sendiri / tunai</span><b>' + rm(Math.max(0, k.kekurangan||0)) + '</b></div></div>'
+              + (k.kekurangan > 0 ? '<div class="amr kuning" style="margin-top:8px"><b>Perhatian: kelulusan kurang RM' + Number(k.kekurangan).toFixed(2) + '</b><i>Pembeli perlu menampung baki ini (tunai/EPF/top-up). Bendung lebih awal supaya tarikh penyelesaian tidak tergelincir.</i></div>' : '')
+            : '<div class="hint" style="margin-top:8px">Kelulusan pembiayaan belum direkod untuk kes ini.</div>')
       +  '<div class="box" style="margin-top:10px"><b>🏦 Urusan pegawai pada peringkat ' + esc(k.peringkat) + ':</b> ' + esc(k.urusan||"—") + '</div>'
       +  '<h2 style="margin-top:12px">🧭 Peringkat Urus Niaga</h2>' + garisPeringkat(k);
 
