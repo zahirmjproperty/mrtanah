@@ -87,23 +87,44 @@ function tiadaAkses(m) {
 }
 
 function muat() {
+  /* Snapshot dahulu (fail sama-domain, laju & PASTI) — dicegah masalah had masa Apps Script */
   splash("Memuatkan…");
+  const snap = "data/pemilik-" + encodeURIComponent(T) + ".json";
+  fetch(snap + "?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error("tiada snapshot"); return r.json(); })
+    .then(function (d) { if (!d.ok) throw new Error("snapshot tidak sah"); D = d; D.__snap = 1; lukis(); })
+    .catch(function () { muatLive(true); });
+}
+
+function muatLive(gunaSandaran) {
+  /* Data langsung (Apps Script) — lebih perlahan; guna bila pengguna minta atau snapshot tiada */
+  splash("Menghubungi pelayan… (boleh ambil 10–30 saat)");
   var ctrl = (typeof AbortController !== "undefined") ? new AbortController() : null;
-  var tamat = setTimeout(function () { if (ctrl) ctrl.abort(); }, 15000);
+  var tamat = setTimeout(function () { if (ctrl) ctrl.abort(); }, 45000);
   fetch(API + "?aksi=pemilik&token=" + encodeURIComponent(T), ctrl ? { signal: ctrl.signal } : undefined)
     .then(function (r) { clearTimeout(tamat); return r.json(); })
     .then(function (d) {
       if (!d.ok) { localStorage.removeItem("mt_pemilik_token"); tiadaAkses(d.error || "Pautan tidak sah atau telah dimatikan."); return; }
-      D = d; lukis();
+      D = d; D.__snap = 0; lukis();
     })
     .catch(function (e) {
       clearTimeout(tamat);
+      if (D) { lukis(); amaranKecil("⚠️ Data langsung gagal dimuatkan (" + String(e).slice(0, 60) + "). Paparan ini ialah snapshot " + (D.masa || "") + "."); return; }
       document.getElementById("wrap").innerHTML = '<div class="card" style="max-width:520px;margin:24px auto">'
-        + '<h2>⚠️ Data tidak dapat dimuatkan</h2><p class="hint">Sambungan gagal atau lambat. Cuba muat semula; '
-        + 'jika berulang hubungi WhatsApp 016-3119076.</p><p class="hint" style="color:#a11">' + esc(String(e).slice(0, 110)) + '</p>'
+        + '<h2>⚠️ Data tidak dapat dimuatkan</h2><p class="hint">Snapshot belum tersedia dan sambungan langsung gagal. '
+        + 'Cuba lagi sebentar; jika berulang hubungi WhatsApp 016-3119076.</p>'
+        + '<p class="hint" style="color:#a11">' + esc(String(e).slice(0, 110)) + '</p>'
         + '<div class="btnrow" style="margin-top:12px"><button class="btn" id="bCuba">🔄 Cuba lagi</button></div></div>';
-      var b = document.getElementById("bCuba"); if (b) b.onclick = function () { muat(); };
+      var b = document.getElementById("bCuba"); if (b) b.onclick = function () { muatLive(true); };
     });
+}
+
+function amaranKecil(mesej) {
+  var el = document.getElementById("amaranKecil");
+  if (!el) { el = document.createElement("div"); el.id = "amaranKecil"; el.className = "al";
+    el.style.cssText = "background:#fff4e2;border-left:5px solid #8a4c00;margin:10px 0";
+    var w = document.getElementById("wrap"); if (w && w.firstChild) w.insertBefore(el, w.firstChild); }
+  el.textContent = mesej;
 }
 
 function lukis() {
@@ -113,7 +134,8 @@ function lukis() {
     return '<div class="kpi"><b style="color:' + (w || "#123a7a") + '">' + esc(nilai) + '</b><span>' + esc(label) + '</span>'
       + (nota ? '<em>' + esc(nota) + '</em>' : '') + '</div>';
   }
-  var h = '<p class="hint" style="margin:0 0 10px">Pemilik: <b>' + esc(D.pemilik) + '</b> · data setakat ' + esc(D.masa) + '</p>'
+  var badge = D.__snap ? ('📦 Snapshot ' + esc(D.masa || '')) : ('🟢 Data langsung ' + esc(D.masa || ''));
+  var h = '<p class="hint" style="margin:0 0 10px">Pemilik: <b>' + esc(D.pemilik) + '</b> · ' + badge + '</p>'
     + '<div class="kpis">'
     + kpi(k.unit_sewaan, "Unit disewa", k.unit_jumlah + " unit dalam portfolio")
     + kpi(rm(k.sewa_bulanan, 0), "Sewa bulanan (kontrak)", "tempoh " + (k.inv_tempoh || "—"))
@@ -177,11 +199,13 @@ function lukis() {
     + '<li>Sewa diterima tempoh ini: <b>' + rm(k.sewa_diterima) + '</b> · utiliti pass-through diterima: <b>' + rm(k.utiliti_diterima) + '</b>.</li>'
     + '<li>Kutipan keseluruhan semua tempoh: <b>' + rm(k.diterima_semua_tempoh) + '</b>.</li>'
     + '<li>Anggaran bersih adalah anggaran bulan semasa sahaja (bukan penyata akaun rasmi).</li>'
-    + '</ul><div class="btnrow" style="margin-top:12px"><button class="btn ghost" id="bRe">🔄 Muat semula</button>'
-    + '<a class="btn ghost" style="text-decoration:none" href="https://wa.me/60163119076?text=Saya%20ada%20pertanyaan%20tentang%20portfolio%20hartanah%20saya">💬 Tanya Mr Tanah</a></div></div>';
+    + '</ul><div class="btnrow" style="margin-top:12px"><button class="btn ghost" id="bRe">🔄 Tarik data terkini</button>'
+    + '<a class="btn ghost" style="text-decoration:none" href="https://wa.me/60163119076?text=Saya%20ada%20pertanyaan%20tentang%20portfolio%20hartanah%20saya">💬 Tanya Mr Tanah</a></div>'
+    + '<p class="nota">Paparan biasa ialah <b>snapshot</b> (dikemas kini automatik setiap 15 minit) supaya halaman sentiasa laju. '
+    + 'Butang <b>Tarik data terkini</b> cuba menarik data langsung dari pangkalan data MT (boleh ambil 10–30 saat).</p></div>';
 
   document.getElementById("wrap").innerHTML = h;
-  var bRe = document.getElementById("bRe"); if (bRe) bRe.onclick = function () { muat(); };
+  var bRe = document.getElementById("bRe"); if (bRe) bRe.onclick = function () { muatLive(false); };
 }
 
 if (!T) { tiadaAkses("Tiada token dalam pautan. Buka pautan penuh yang diberi Mr Tanah (…/pemilik.html?t=…)."); }

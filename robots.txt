@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://mrtanah.com/sitemap.xml
+Disallow: /portal/data/
+Disallow: /portal/preview/

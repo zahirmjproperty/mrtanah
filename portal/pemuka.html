@@ -85,9 +85,19 @@ function login() {
 }
 
 function muat() {
+  /* Snapshot dahulu (fail sama-domain, laju & PASTI) — elak had masa Apps Script */
   splash("Memuatkan…");
+  var snap = "data/pemuka-" + encodeURIComponent(T) + ".json";
+  fetch(snap + "?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error("tiada snapshot"); return r.json(); })
+    .then(function (d) { if (!d.ok) throw new Error("snapshot tidak sah"); D = d; D.__snap = 1; lukis(); })
+    .catch(function () { muatLive(true); });
+}
+
+function muatLive(gunaSandaran) {
+  splash("Menghubungi pelayan… (boleh ambil 10–30 saat)");
   var ctrl = (typeof AbortController !== "undefined") ? new AbortController() : null;
-  var tamat = setTimeout(function () { if (ctrl) ctrl.abort(); }, 15000);
+  var tamat = setTimeout(function () { if (ctrl) ctrl.abort(); }, 45000);
   fetch(API + "?aksi=pemuka&admin_token=" + encodeURIComponent(T), ctrl ? { signal: ctrl.signal } : undefined)
     .then(function (r) { clearTimeout(tamat); return r.json(); })
     .then(function (d) {
@@ -98,19 +108,27 @@ function muat() {
         if (el) el.innerHTML = '<div class="err" style="margin-top:10px">' + esc(d.error || "Token tidak sah.") + '</div>';
         return;
       }
-      D = d; lukis();
+      D = d; D.__snap = 0; lukis();
     })
     .catch(function (e) {
       clearTimeout(tamat);
+      if (D) { lukis(); amaranKecil("⚠️ Data langsung gagal (" + String(e).slice(0, 60) + "). Paparan ini snapshot " + (D.masa || "") + "."); return; }
       document.getElementById("wrap").innerHTML = '<div class="card" style="max-width:520px;margin:24px auto">'
         + '<h2>⚠️ Data tidak dapat dimuatkan</h2>'
-        + '<p class="hint">Sambungan ke pangkalan data MT gagal atau terlalu lambat (rangkaian/sekat sementara). '
-        + 'Data tidak diubah — cuba muat semula. Jika berulang, maklumkan Ali.</p>'
+        + '<p class="hint">Snapshot belum tersedia dan sambungan langsung gagal. Cuba lagi sebentar; jika berulang maklumkan Ali.</p>'
         + '<p class="hint" style="color:#a11">' + esc(String(e).slice(0, 120)) + '</p>'
         + '<div class="btnrow" style="margin-top:12px"><button class="btn" id="bCuba">🔄 Cuba lagi</button>'
         + '<a class="btn ghost" style="text-decoration:none" href="kanban.html">Buka Papan Kanban</a></div></div>';
-      var b = document.getElementById("bCuba"); if (b) b.onclick = function () { muat(); };
+      var b = document.getElementById("bCuba"); if (b) b.onclick = function () { muatLive(true); };
     });
+}
+
+function amaranKecil(mesej) {
+  var el = document.getElementById("amaranKecil");
+  if (!el) { el = document.createElement("div"); el.id = "amaranKecil"; el.className = "al";
+    el.style.cssText = "background:#fff4e2;border-left:5px solid #8a4c00;margin:10px 0";
+    var w = document.getElementById("wrap"); if (w && w.firstChild) w.insertBefore(el, w.firstChild); }
+  el.textContent = mesej;
 }
 
 function pilStatus(txt) {
@@ -132,7 +150,9 @@ function lukis() {
     return '<div class="kpi"><b style="color:' + (w || "#123a7a") + '">' + esc(nilai) + '</b><span>' + esc(label) + '</span>'
       + (nota ? '<em>' + esc(nota) + '</em>' : '') + '</div>';
   }
-  var h = '<div class="kpis">'
+  var badge = D.__snap ? ('📦 Snapshot ' + esc(D.masa || '')) : ('🟢 Data langsung ' + esc(D.masa || ''));
+  var h = '<p class="hint" style="margin:0 0 10px">Data setakat: <b>' + badge + '</b></p>'
+    + '<div class="kpis">'
     + kpi(k.unit_sewaan, "Unit disewa", k.unit_jumlah + " unit didaftar · " + k.unit_peribadi + " peribadi")
     + kpi(rm(k.sewa_bulanan, 0), "Sewa bulanan (kontrak)", "tempoh " + (k.inv_tempoh || "—"))
     + kpi(rm(k.inv_dibayar), "Kutipan diterima", Math.round(pct) + "% daripada " + rm(k.inv_jumlah), "#14905c")
@@ -205,12 +225,14 @@ function lukis() {
   h += '<div class="card"><h2>ℹ️ Sumber data</h2><ul class="nota" style="margin:0;padding-left:18px">'
     + '<li>Unit · Bil · Invois — workbook <b>DB Unit &amp; Bil</b> (tab Unit/Bil/Invois).</li>'
     + '<li>Tiket · Work Order — workbook kerja MT (tab Tickets/Work Order).</li>'
-    + '<li>Dibaca langsung setiap muat halaman — tiada taip semula. Data dikemas kini: <b>' + esc(D.masa || "—") + '</b>.</li>'
-    + '</ul><div class="btnrow" style="margin-top:12px"><button class="btn ghost" id="bRe">🔄 Muat semula</button>'
-    + '<button class="btn ghost" id="bOut">Log keluar</button></div></div>';
+    + '<li>Tiada taip semula — angka dibaca dari workbook tersebut. Cap masa data: <b>' + esc(D.masa || "—") + '</b>.</li>'
+    + '</ul><div class="btnrow" style="margin-top:12px"><button class="btn ghost" id="bRe">🔄 Tarik data terkini</button>'
+    + '<button class="btn ghost" id="bOut">Log keluar</button></div>'
+    + '<p class="nota">Paparan biasa = <b>snapshot</b> (dikemas kini automatik setiap 15 minit) supaya halaman sentiasa laju. '
+    + 'Butang <b>Tarik data terkini</b> cuba menarik data langsung dari pangkalan data MT (10–30 saat).</p></div>';
 
   document.getElementById("wrap").innerHTML = h;
-  var bRe = document.getElementById("bRe"); if (bRe) bRe.onclick = function () { muat(); };
+  var bRe = document.getElementById("bRe"); if (bRe) bRe.onclick = function () { muatLive(false); };
   var bOut = document.getElementById("bOut");
   if (bOut) bOut.onclick = function () { localStorage.removeItem("mt_admin_token"); T = ""; splash("Telah log keluar."); login(); };
 }
