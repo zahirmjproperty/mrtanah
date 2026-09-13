@@ -53,6 +53,14 @@
         <button class="btn" id="bMasuk" type="submit">Log masuk</button>
       </form>
 
+      <form id="fReset" style="display:none" autocomplete="on">
+        <label for="kata2">Kata laluan baharu</label>
+        <input type="password" id="kata2" autocomplete="new-password" required minlength="8" placeholder="min 8 aksara">
+        <label for="kata3">Ulang kata laluan baharu</label>
+        <input type="password" id="kata3" autocomplete="new-password" required minlength="8" placeholder="••••••••">
+        <button class="btn" id="bSimpan" type="submit">Simpan kata laluan baharu</button>
+      </form>
+
       <div class="row">
         <a href="#" id="aLupa">Lupa kata laluan?</a>
         <a href="../portal/index.html">← Portal</a>
@@ -88,7 +96,17 @@ function sedia() {
     mesej("⚠️ Perpustakaan log masuk gagal dimuatkan (rangkaian). Muat semula halaman atau cuba guna data mudah alih.", "err");
     return false;
   }
-  sb = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false } });
+  sb = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true } });
+  return true;
+}
+
+/* Mod tetapan semula kata laluan: pautan dari emel membawa token dalam URL */
+function modReset() {
+  var href = location.href;
+  if (!/type=recovery/.test(href) && !/reset=1/.test(href)) return false;
+  document.getElementById("fLogin").style.display = "none";
+  document.getElementById("fReset").style.display = "block";
+  mesej("🔑 <b>Tetapkan kata laluan baharu</b> untuk akaun portal anda.", "ok");
   return true;
 }
 async function kePortal(sesi) {
@@ -138,9 +156,28 @@ document.getElementById("aLupa").addEventListener("click", async function (e) {
   } catch (err) { mesej("⚠️ Ralat: " + String(err).slice(0, 90), "err"); }
 });
 
+/* Simpan kata laluan baharu (selepas klik pautan dalam emel) */
+document.getElementById("fReset").addEventListener("submit", async function (e) {
+  e.preventDefault();
+  var k2 = document.getElementById("kata2").value, k3 = document.getElementById("kata3").value;
+  if (k2.length < 8) { mesej("Kata laluan perlu sekurang-kurangnya 8 aksara.", "warn"); return; }
+  if (k2 !== k3) { mesej("❌ Dua kata laluan itu tidak sama. Cuba lagi.", "err"); return; }
+  mesej("Menyimpan…", "warn");
+  try {
+    var s = await sb.auth.getSession();
+    if (!s.data || !s.data.session) { await new Promise(function (r) { setTimeout(r, 1200); }); s = await sb.auth.getSession(); }
+    if (!s.data || !s.data.session) { mesej("❌ Pautan pemulihan tidak sah atau telah luput. Ketuk “Lupa kata laluan?” untuk pautan baharu.", "err"); return; }
+    var out = await sb.auth.updateUser({ password: k2 });
+    if (out.error) { mesej("❌ " + out.error.message, "err"); return; }
+    mesej("✅ Kata laluan baharu disimpan. Membuka papan pemuka…", "ok");
+    setTimeout(function () { kePortal(s.data.session); }, 800);
+  } catch (err) { mesej("⚠️ Ralat: " + String(err).slice(0, 90), "err"); }
+});
+
 function mula(cuba) {
   cuba = cuba || 0;
   if (sedia()) {
+    if (modReset()) return;
     sb.auth.getSession().then(function (o) {
       if (o.data && o.data.session) kePortal(o.data.session);
     });
