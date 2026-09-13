@@ -3854,7 +3854,6 @@ window.LISTINGS = [
     "date": "2026-09-13",
     "images": [
       "https://lh3.googleusercontent.com/d/11Xc5WWZCC0tMxXRtoOyg7XkapVnT_Nel=w1000",
-      "https://lh3.googleusercontent.com/d/1-phG8tsfNntMhZNBWjY47JYxJuPkNT8J=w1000",
       "https://lh3.googleusercontent.com/d/1KacL6k_9N0Mz2g1rWKBQi3rbRF9aOiGp=w1000",
       "https://lh3.googleusercontent.com/d/1XlrkXrBBN1bgzGx_9nTHGcdVdDluRRvu=w1000"
     ],
@@ -3915,14 +3914,14 @@ window.LISTINGS = [
     "images": [
       "https://lh3.googleusercontent.com/d/1qwDkfnFt46xsskaFAG5o9PN0j6SmSR69=w1000",
       "https://lh3.googleusercontent.com/d/1lJEVr3vrSIiMPzPk-vCGY6wlMaEefSbW=w1000",
-      "https://lh3.googleusercontent.com/d/1JvbHaPHjE1PTxNOIvzyeyXrn5mx68Ae7=w1000",
       "https://lh3.googleusercontent.com/d/1zD3RU_8K7TL0wyEdCFKf-Sb9jVYDNaet=w1000",
       "https://lh3.googleusercontent.com/d/1OtI4YH164n6olWwJVAI2FTWXGw2MJu0E=w1000",
       "https://lh3.googleusercontent.com/d/1TigK5ZykFPUleuwQlimTxknuRRIU1w-a=w1000",
       "https://lh3.googleusercontent.com/d/1txlUGGHrHeI6ehMwap1TLX_0cmgCxx7_=w1000",
       "https://lh3.googleusercontent.com/d/162wnuCD4uBhiSYCfsO4h662pbZFwMmFa=w1000",
       "https://lh3.googleusercontent.com/d/1BBKCLjHPjDMbF09MOyLR1c1rUclqTzxb=w1000",
-      "https://lh3.googleusercontent.com/d/14u4_f8qL6gz8EYTusSRxZ-8lrkA5g2Sa=w1000"
+      "https://lh3.googleusercontent.com/d/14u4_f8qL6gz8EYTusSRxZ-8lrkA5g2Sa=w1000",
+      "https://lh3.googleusercontent.com/d/1BWNvHcUKChoGz9uCzfWS18XJ6Hh7GmJs=w1000"
     ],
     "active": true
   },
