@@ -14,7 +14,7 @@
     KONTRAKTOR:       { nama: "Dashboard Kontraktor", ico: "🔧", url: "kontraktor.html",     sedia: true,  mod: "login" },
     EJEN:             { nama: "Dashboard Ejen",       ico: "🧑‍💼", url: "ejen.html",          sedia: true,  mod: "login" },
     /* ---- Role baharu (didaftar 13/9/2026; dashboard dalam perancangan) ---- */
-    PEMBELI_HARTANAH:     { nama: "Pembeli Hartanah",      ico: "🛒", url: "pembeli.html",       sedia: false, mod: "belum" },
+    PEMBELI_HARTANAH:     { nama: "Dashboard Pembeli",      ico: "🛒", url: "pembeli.html",       sedia: true,  mod: "login" },
     PEMBELI_HASIL_LADANG: { nama: "Pembeli Hasil Ladang", ico: "🌾", url: "pembeli-ladang.html", sedia: false, mod: "belum" },
     PENJUAL_HARTANAH:     { nama: "Penjual Hartanah",      ico: "🏷️", url: "penjual.html",       sedia: false, mod: "belum" },
     SOLICITOR:            { nama: "Solicitor (Conveyancing)", ico: "⚖️", url: "solicitor.html",  sedia: false, mod: "belum" },
