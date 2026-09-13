@@ -1,8 +1,7 @@
-// Konfigurasi Auth (Supabase) untuk portal MT — diisi semasa setup.
-// Kunci di bawah ialah kunci AWAM (publishable/anon) — memang selamat diletak di frontend.
-// JANGAN letak kunci rahsia (sb_secret / service_role) di fail ini.
+// Konfigurasi Auth (Supabase) — kunci AWAM sahaja (publishable/anon).
+// JANGAN letak kunci rahsia (sb_secret / service_role) di sini.
 window.AUTH = {
-  url: "",          // cth: "https://abcdefghijkl.supabase.co"
-  key: "",          // cth: "sb_publishable_xxx" atau anon key
+  url: "https://ntvlqfsisanztdeqhpxh.supabase.co",
+  key: "sb_publishable_rPZ8734eOqaX3Mx-yyhN4w_Ta44wsCS",
   api: "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec"
 };
