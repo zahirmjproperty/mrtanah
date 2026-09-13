@@ -121,13 +121,25 @@ async function kePortal(sesi) {
   var r = await fetch(A.api + "?aksi=sesi&access_token=" + encodeURIComponent(tok) + "&_=" + Date.now());
   var d = await r.json();
   if (!d.ok) { mesej("⚠️ " + (d.error || "Akaun tidak dikenali."), "err"); return; }
-  mesej("✅ Selamat datang, <b>" + (d.nama || d.emel) + "</b> (" + d.peranan + "). Membuka dashboard…", "ok");
+  var ps = d.peranans && d.peranans.length ? d.peranans : [d.peranan];
+  var nama = d.nama || d.emel;
+  var adaAdmin = ps.indexOf("ADMIN") >= 0;
+  var adaPemilik = ps.indexOf("PEMILIK_HARTANAH") >= 0;
+  /* Dua peranan (cth ADMIN + PEMILIK_HARTANAH) → beri pilihan, jangan pilih sendiri */
+  if (adaAdmin && adaPemilik) {
+    mesej("✅ Selamat datang, <b>" + nama + "</b>. Anda ada dua akses — pilih paparan:"
+      + '<div class="btnrow" style="margin-top:10px">'
+      + '<a class="btn" style="text-decoration:none" href="pemuka.html">📊 Dashboard Pengurusan</a> '
+      + '<a class="btn ghost" style="text-decoration:none" href="pemilik.html">🏠 Dashboard Pemilik</a></div>', "ok");
+    return;
+  }
   var lompat = "";
-  if (d.peranan === "PEMILIK_HARTANAH") lompat = "pemilik.html";
-  else if (d.peranan === "PEMILIK_LADANG") lompat = "ladang-pemilik.html";
-  else if (d.peranan === "PENYEWA") lompat = "penyewa-paran.html";
+  if (adaAdmin) lompat = "pemuka.html";
+  else if (adaPemilik) lompat = "pemilik.html";
+  else if (ps.indexOf("PEMILIK_LADANG") >= 0) lompat = "ladang-pemilik.html";
+  mesej("✅ Selamat datang, <b>" + nama + "</b> (" + ps.join(", ") + "). Membuka dashboard…", "ok");
   if (lompat) setTimeout(function () { location.href = lompat; }, 900);
-  else mesej("✅ Log masuk berjaya (" + d.peranan + "). Halaman untuk peranan ini akan dibuka oleh Ali.", "ok");
+  else mesej("✅ Log masuk berjaya (" + ps.join(", ") + "). Paparan untuk peranan ini akan dibuka oleh Ali.", "ok");
 }
 
 document.getElementById("fLogin").addEventListener("submit", async function (e) {
