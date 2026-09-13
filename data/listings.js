@@ -3744,7 +3744,7 @@ window.LISTINGS = [
   },
   {
     "tracking": "MTCOA-0040",
-    "title": "Tanah Sungai Kantan, Kajang",
+    "title": "Tanah Sungai Kantan Kajang",
     "type": "Tanah",
     "location": "Sungai Kantan, Kajang, Selangor",
     "state": "Selangor",
@@ -3797,8 +3797,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/19WVny5AvhU7K8ZSj2czAM-k6rIojKdVA=w1000",
       "https://lh3.googleusercontent.com/d/1oYAdGQEZg-svoYjkIekmq4E7sfr4ZVhd=w1000",
       "https://lh3.googleusercontent.com/d/1DzfOJGlhP2U0uqe5_7fa8bnSXRAuhgKG=w1000",
-      "https://lh3.googleusercontent.com/d/1fsTEOezUjBsD9l1LR9G8_T7Npqo61bi1=w1000",
-      "https://lh3.googleusercontent.com/d/1xwyl5xje3zZvJA6ZWsEQGf_033IH7xzv=w1000"
+      "https://lh3.googleusercontent.com/d/1fsTEOezUjBsD9l1LR9G8_T7Npqo61bi1=w1000"
     ],
     "active": true
   },
@@ -3863,7 +3862,7 @@ window.LISTINGS = [
   },
   {
     "tracking": "MTCOA-0042",
-    "title": "Tanah Pertanian 3.75 Ekar, Kg Sungai Kembung, Semenyih",
+    "title": "Tanah Pertanian 3.75 Ekar Kg Sungai Kembung Semenyih",
     "type": "Tanah",
     "location": "Kg Sungai Kembung, Semenyih, Selangor",
     "state": "Selangor",
