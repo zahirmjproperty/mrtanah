@@ -164,7 +164,7 @@ function lukis(){
     h += '<table><tr><th>Kes / Hartanah</th><th>Pihak</th><th class="num">Harga</th><th>Peringkat</th><th>Tarikh penting</th><th></th></tr>';
     sen.forEach(function(x){
       h += '<tr><td><b>' + esc(x.kes) + '</b> ' + (x.ujian ? '<span class="st s-bad">UJIAN</span>' : '') + '<br><small>' + esc(x.jenis) + ' · ' + esc(x.hartanah) + '</small><br><small>' + esc(x.alamat||"—") + '</small></td>'
-        +  '<td><small>Penjual: ' + esc(x.penjual||"—") + '<br>Pembeli: ' + esc(x.pembeli||"—") + '<br>Ejen: ' + esc(x.ejen||"—") + (x.solicitor ? '<br>Solicitor: ' + esc(x.solicitor) : '') + (x.mortgage ? '<br>Bank: ' + esc(x.mortgage) : '') + '</small></td>'
+        +  '<td><small>Penjual: ' + esc(x.penjual||"—") + '<br>Pembeli: ' + esc(x.pembeli||"—") + '<br>Ejen: ' + esc(x.ejen||"—") + (x.solicitor_penjual ? '<br>Solicitor penjual: ' + esc(x.solicitor_penjual) : '') + (x.solicitor_pembeli ? '<br>Solicitor pembeli: ' + esc(x.solicitor_pembeli) : '') + (x.mortgage ? '<br>Bank: ' + esc(x.mortgage) : '') + '</small></td>'
         +  '<td class="num">' + rm0(x.harga) + '<br><small>deposit ' + rm0(x.deposit) + '</small></td>'
         +  '<td>' + pillPeringkat(x.peringkat) + '<br>' + stKes(x.status) + '</td>'
         +  '<td>' + tkh(x.tarikh_penting) + '<br><small>' + esc(hariTeks(x.hari_penting)) + '</small></td>'
@@ -209,9 +209,10 @@ function borang(){
     + '<div class="grid2"><div><label>Penjual (kenalan/rujukan)</label><input id="kPenjual" placeholder="cth MTC-0042 / nama"></div>'
     + '<div><label>Pembeli / penyewa</label><input id="kPembeli" placeholder="cth MTC-0057 / nama"></div></div>'
     + '<div class="grid2"><div><label>Ejen (rujukan)</label><input id="kEjen" placeholder="cth Zahir / Fadilah"></div>'
-    + '<div><label>Solicitor / peguamcara</label><input id="kSolicitor" placeholder="cth Firma ABC"></div></div>'
-    + '<div class="grid2"><div><label>Mortgage officer (bank)</label><input id="kMortgage" placeholder="cth Nama (Bank X)"></div>'
-    + '<div><label>Peringkat semasa</label><select id="kPeringkat">'
+    + '<div><label>Solicitor penjual (vendor)</label><input id="kSolP" placeholder="cth Firma ABC"></div></div>'
+    + '<div class="grid2"><div><label>Solicitor pembeli (purchaser)</label><input id="kSolB" placeholder="cth Firma XYZ (isi sama jika satu firma)"></div>'
+    + '<div><label>Mortgage officer (bank)</label><input id="kMortgage" placeholder="cth Nama (Bank X)"></div></div>'
+    + '<div class="grid2"><div><label>Peringkat semasa</label><select id="kPeringkat">'
     + (D.susun||[]).map(function(p){ return '<option value="' + esc(p) + '">' + esc(p) + '</option>'; }).join("") + '</select></div></div>'
     + '<div class="grid2"><div><label>Harga jual / sewa (RM)</label><input id="kHarga" type="number" step="0.01" placeholder="cth 450000"></div>'
     + '<div><label>Deposit diterima (RM)</label><input id="kDeposit" type="number" step="0.01" placeholder="cth 13500"></div></div>'
@@ -225,7 +226,8 @@ function borang(){
 function hantarCipta(){
   var g = function(id){ var e = document.getElementById(id); return e ? e.value : ""; };
   hantar({ action:"cipta", oleh:"Zahir", jenis:g("kJenis"), hartanah:g("kHartanah"), alamat:g("kAlamat"),
-           penjual:g("kPenjual"), pembeli:g("kPembeli"), ejen:g("kEjen"), solicitor:g("kSolicitor"),
+           penjual:g("kPenjual"), pembeli:g("kPembeli"), ejen:g("kEjen"),
+           solicitor_penjual:g("kSolP"), solicitor_pembeli:g("kSolB"),
            mortgage:g("kMortgage"), peringkat:g("kPeringkat"), harga:g("kHarga"), deposit:g("kDeposit"),
            tarikh_penting:g("kTarikh"), nota:g("kNota") });
 }
@@ -241,7 +243,8 @@ function detail(ref){
     +  '<div class="row"><span>Penjual</span><b>' + esc(x.penjual||"—") + '</b></div>'
     +  '<div class="row"><span>Pembeli / penyewa</span><b>' + esc(x.pembeli||"—") + '</b></div>'
     +  '<div class="row"><span>Ejen</span><b>' + esc(x.ejen||"—") + '</b></div>'
-    +  '<div class="row"><span>Solicitor</span><b>' + esc(x.solicitor||"—") + '</b></div>'
+    +  '<div class="row"><span>Solicitor penjual</span><b>' + esc(x.solicitor_penjual||"—") + '</b></div>'
+    +  '<div class="row"><span>Solicitor pembeli</span><b>' + esc(x.solicitor_pembeli||"—") + '</b></div>'
     +  '<div class="row"><span>Mortgage officer</span><b>' + esc(x.mortgage||"—") + '</b></div>'
     +  '<div class="row"><span>Harga</span><b>' + rm(x.harga) + '</b></div>'
     +  '<div class="row"><span>Deposit</span><b>' + rm(x.deposit) + '</b></div>'
@@ -278,7 +281,8 @@ function detail(ref){
     + '<div><label>Tarikh penting</label><input id="dTarikh" type="date" value="' + esc(String(x.tarikh_penting||"").substring(0,10)) + '"></div>'
     + '<div><label>Status</label><select id="dStatus"><option value="AKTIF"' + (x.status==="AKTIF"?" selected":"") + '>AKTIF</option><option value="SELESAI"' + (x.status==="SELESAI"?" selected":"") + '>SELESAI</option><option value="BATAL"' + (x.status==="BATAL"?" selected":"") + '>BATAL</option></select></div>'
     + '<div><label>Ejen</label><input id="dEjen" value="' + esc(x.ejen||"") + '"></div>'
-    + '<div><label>Solicitor</label><input id="dSolicitor" value="' + esc(x.solicitor||"") + '"></div>'
+    + '<div><label>Solicitor penjual</label><input id="dSolP" value="' + esc(x.solicitor_penjual||"") + '"></div>'
+    + '<div><label>Solicitor pembeli</label><input id="dSolB" value="' + esc(x.solicitor_pembeli||"") + '"></div>'
     + '<div><label>Mortgage officer</label><input id="dMortgage" value="' + esc(x.mortgage||"") + '"></div>'
     + '<div><label>Pembeli / penyewa</label><input id="dPembeli" value="' + esc(x.pembeli||"") + '"></div>'
     + '</div><label>Nota tambahan</label><textarea id="dNota" rows="2"></textarea>'
@@ -301,7 +305,8 @@ function setDok(ref, dok, st){ hantar({ action:"dokumen", kes:ref, dokumen:dok, 
 function hantarKemaskini(ref){
   var g = function(id){ var e = document.getElementById(id); return e ? e.value : ""; };
   hantar({ action:"kemaskini", kes:ref, oleh:"Zahir", harga:g("dHarga"), deposit:g("dDeposit"),
-           tarikh_penting:g("dTarikh"), status:g("dStatus"), ejen:g("dEjen"), solicitor:g("dSolicitor"),
+           tarikh_penting:g("dTarikh"), status:g("dStatus"), ejen:g("dEjen"),
+           solicitor_penjual:g("dSolP"), solicitor_pembeli:g("dSolB"),
            mortgage:g("dMortgage"), pembeli:g("dPembeli"), nota:g("dNota") });
 }
 </script>

@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Dashboard Pembeli — Mr Tanah</title>
+<title>Dashboard Penjual — Mr Tanah</title>
 <style>
   :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; }
   * { box-sizing:border-box; margin:0; padding:0; }
   body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; }
-  .topbar { background:linear-gradient(135deg,#0a1f44 0%,#14905c 55%,#123a7a 100%); color:#fff; padding:16px; }
+  .topbar { background:linear-gradient(135deg,#6b3a0a 0%,#123a7a 55%,#14905c 100%); color:#fff; padding:16px; }
   .topbar h1 { font-size:18px; } .topbar p { font-size:12.5px; opacity:.92; margin-top:2px; }
   .wrap { max-width:680px; margin:0 auto; padding:14px 14px 48px; }
   .card { background:#fff; border-radius:14px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:13px; }
@@ -52,8 +52,8 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>👤 Dashboard Pembeli</h1>
-    <p id="sub">Mr Tanah · ZMJ Solutions — peringkat, dokumen &amp; bayaran urus niaga anda</p>
+    <h1>🏷️ Dashboard Penjual</h1>
+    <p id="sub">Mr Tanah · ZMJ Solutions — peringkat, dokumen &amp; bayaran penjualan anda</p>
   </div>
   <div id="navPhmt" style="max-width:900px;margin:14px auto 0;padding:0 14px"></div>
   <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
@@ -81,8 +81,8 @@ function wa(nombor, teks){ var n=String(nombor||"").replace(/[^0-9]/g,""); if(n.
 
 function urlAPI() {
   return (MOD === "login")
-    ? API + "?aksi=pembeli-dash&access_token=" + encodeURIComponent((SESI && SESI.access_token) || "") + "&_=" + Date.now()
-    : API + "?aksi=pembeli-dash&token=" + encodeURIComponent(TOKEN) + "&_=" + Date.now();
+    ? API + "?aksi=penjual-dash&access_token=" + encodeURIComponent((SESI && SESI.access_token) || "") + "&_=" + Date.now()
+    : API + "?aksi=penjual-dash&token=" + encodeURIComponent(TOKEN) + "&_=" + Date.now();
 }
 function muat() {
   if (SIBUK) return; SIBUK = true;
@@ -97,7 +97,7 @@ function muat() {
     }
     D = d; lukis();
     var nav = document.getElementById("navPhmt");
-    if (nav && window.PHMT && D.peranans) PHMT.lukis(nav, D.peranans, "PEMBELI_HARTANAH");
+    if (nav && window.PHMT && D.peranans) PHMT.lukis(nav, D.peranans, "PENJUAL_HARTANAH");
   })
   .catch(function(e){ SIBUK = false; splash("⚠️ Gagal memuatkan data.<br><small>"+esc(e)+"</small>"); });
 }
@@ -131,14 +131,14 @@ function garisPeringkat(k){
 
 function lukis(){
   var kp = D.kpi || {}, h = "";
-  document.getElementById("sub").textContent = "Mr Tanah · " + (D.pembeli || "") + (kp.kes_jumlah ? " · " + kp.kes_jumlah + " kes" : "");
+  document.getElementById("sub").textContent = "Mr Tanah · " + (D.penjual || "") + (kp.kes_jumlah ? " · " + kp.kes_jumlah + " kes" : "");
   var logKeluar = (MOD === "login") ? '<div class="btnrow"><button class="btn ghost" onclick="keluar()">Log keluar</button></div>' : "";
 
-  h += '<div class="card"><h2>📌 Ringkasan Urus Niaga <span class="badge">DATA SEBENAR</span></h2><div class="kpi">'
+  h += '<div class="card"><h2>📌 Ringkasan Penjualan <span class="badge">DATA SEBENAR</span></h2><div class="kpi">'
     +  '<div class="kbox"><div class="l">Kes aktif</div><div class="v">' + (kp.kes_aktif||0) + '</div><div class="s">' + (kp.kes_selesai||0) + ' selesai · peringkat ' + esc(kp.peringkat_semasa||"—") + '</div></div>'
-    +  '<div class="kbox"><div class="l">Harga kes</div><div class="v">' + rm0(kp.nilai) + '</div><div class="s">' + (kp.kes_jumlah||0) + ' kes direkod</div></div>'
-    +  '<div class="kbox"><div class="l">Deposit dibayar</div><div class="v">' + rm0(kp.deposit) + '</div><div class="s">direkod oleh MT</div></div>'
-    +  '<div class="kbox"><div class="l">Baki menjelang selesai</div><div class="v">' + rm0(kp.baki) + '</div><div class="s">harga − deposit</div></div>'
+    +  '<div class="kbox"><div class="l">Harga jualan</div><div class="v">' + rm0(kp.nilai) + '</div><div class="s">' + (kp.kes_jumlah||0) + ' kes direkod</div></div>'
+    +  '<div class="kbox"><div class="l">Deposit diterima</div><div class="v">' + rm0(kp.deposit) + '</div><div class="s">direkod oleh MT</div></div>'
+    +  '<div class="kbox"><div class="l">Baki belum diterima</div><div class="v">' + rm0(kp.baki) + '</div><div class="s">harga − deposit</div></div>'
     +  '</div><div class="btnrow"><button class="btn ghost" onclick="muat()">🔄 Tarik data terkini</button></div>'
     +  '<div class="hint">Data setakat <b>' + esc(D.masa||"") + '</b> — dikemas kini oleh pejabat Mr Tanah.</div>' + logKeluar + '</div>';
 
@@ -149,19 +149,20 @@ function lukis(){
     D.tindakan.forEach(function(t){ h += '<div class="amr kuning" style="margin-top:8px"><b>' + esc(t.perkara) + '</b><i>' + esc(t.kes) + ' · ' + esc(t.butir) + '</i></div>'; });
     h += '</div>';
   }
+  h += '<div class="amr biru"><b>Peringatan penting</b><i>Jangan serahkan kunci atau barang dalam unit sebelum bayaran baki disahkan selesai oleh MT/peguamcara.</i></div>';
   h += '</div>';
 
   if (!(D.kes||[]).length) {
-    h += '<div class="card"><div class="hint">Tiada kes urus niaga didaftarkan atas nama anda buat masa ini. Jika ini tidak betul, hubungi Mr Tanah.</div></div>';
+    h += '<div class="card"><div class="hint">Tiada kes penjualan didaftarkan atas nama anda buat masa ini. Jika ini tidak betul, hubungi Mr Tanah.</div></div>';
   }
 
   (D.kes||[]).forEach(function(k){
     h += '<div class="card"><h2>' + esc(k.kes) + ' <span class="badge">' + esc(k.jenis) + '</span></h2>'
       +  '<div class="meta"><div class="row"><span>Hartanah</span><b>' + esc(k.hartanah) + '</b></div>'
       +  '<div class="row"><span>Alamat</span><b>' + esc(k.alamat||"—") + '</b></div>'
-      +  '<div class="row"><span>Harga</span><b>' + rm(k.harga) + '</b></div>'
-      +  '<div class="row"><span>Deposit direkod</span><b>' + rm(k.deposit) + '</b></div>'
-      +  '<div class="row"><span>Baki (harga − deposit)</span><b>' + rm(k.baki) + '</b></div>'
+      +  '<div class="row"><span>Harga jualan</span><b>' + rm(k.harga) + '</b></div>'
+      +  '<div class="row"><span>Deposit diterima</span><b>' + rm(k.deposit) + '</b></div>'
+      +  '<div class="row"><span>Baki belum diterima</span><b>' + rm(k.baki) + '</b></div>'
       +  '<div class="row"><span>Status</span><b>' + esc(k.status) + '</b></div>'
       +  (k.tarikh_penting ? '<div class="row"><span>Tarikh penting</span><b>' + tkh(k.tarikh_penting) + ' (' + esc(hariTeks(k.hari_penting)) + ')</b></div>' : '')
       +  '</div>'
@@ -171,24 +172,24 @@ function lukis(){
     if ((k.dokumen||[]).length) {
       h += '<h2 style="margin-top:12px">📄 Dokumen</h2><table><tr><th>Dokumen</th><th>Status</th></tr>';
       k.dokumen.forEach(function(dd){ h += '<tr><td>' + esc(dd.nama) + '</td><td>' + stDok(dd.status) + '</td></tr>'; });
-      h += '</table><div class="hint">Status diselenggara oleh pejabat MT. Dokumen diserahkan melalui WhatsApp atau emel — bukan muat turun portal.</div>';
+      h += '</table><div class="hint">Status diselenggara oleh pejabat MT. Salinan dokumen hak milik/geran diserahkan kepada peguamcara melalui MT — jangan hantar kepada pihak tidak dikenali.</div>';
     }
 
     h += '<h2 style="margin-top:12px">👥 Pihak berkaitan</h2><div class="meta">'
       +  '<div class="row"><span>Ejen</span><b>' + esc(k.ejen||"—") + (k.ejen_agensi ? " · " + esc(k.ejen_agensi) : "") + '</b></div>'
       +  (k.ejen_telefon ? '<div class="row"><span>Telefon ejen</span><b>' + esc(k.ejen_telefon) + '</b></div>' : '')
       +  '<div class="row"><span>Peguamcara anda</span><b>' + esc(k.solicitor_saya||"Belum dilantik") + '</b></div>'
-      +  '<div class="row"><span>Pegawai pinjaman</span><b>' + esc(k.mortgage||"—") + '</b></div>'
-      +  '<div class="row"><span>Pihak jual</span><b>' + esc(k.penjual||"—") + '</b></div>'
+      +  '<div class="row"><span>Pegawai pinjaman pembeli</span><b>' + esc(k.mortgage||"—") + '</b></div>'
+      +  '<div class="row"><span>' + esc(k.lawan_label || "Pembeli") + '</span><b>' + esc(k.lawan_nama||"—") + '</b></div>'
       +  '</div><div class="btnrow">';
-    if (k.ejen_telefon) h += '<a class="btn ghost" href="' + esc(wa(k.ejen_telefon, "Assalamualaikum " + (k.ejen||"") + ", saya pembeli untuk kes " + k.kes + " (" + k.hartanah + "). Boleh saya bertanya perkembangan?")) + '" target="_blank">WhatsApp ejen</a>';
-    h += '<a class="btn ghost" href="https://wa.me/60163119076?text=' + encodeURIComponent("Pembeli " + (D.pembeli||"") + " — kes " + k.kes + " (" + k.hartanah + "): ") + '" target="_blank">WhatsApp MT</a></div>'
+    if (k.ejen_telefon) h += '<a class="btn ghost" href="' + esc(wa(k.ejen_telefon, "Assalamualaikum " + (k.ejen||"") + ", saya penjual untuk kes " + k.kes + " (" + k.hartanah + "). Boleh saya bertanya perkembangan?")) + '" target="_blank">WhatsApp ejen</a>';
+    h += '<a class="btn ghost" href="https://wa.me/60163119076?text=' + encodeURIComponent("Penjual " + (D.penjual||"") + " — kes " + k.kes + " (" + k.hartanah + "): ") + '" target="_blank">WhatsApp MT</a></div>'
       +  '<div class="hint">Kemas kini terakhir rekod: ' + esc(k.dikemaskini||"—") + '</div></div>';
     h += '</div>';
   });
 
   h += '<div class="card"><h2>💬 Hubungi Mr Tanah</h2><div class="btnrow">'
-    +  '<a class="btn" href="https://wa.me/60163119076?text=' + encodeURIComponent("Pembeli " + (D.pembeli||"") + " — ") + '" target="_blank">WhatsApp MT 016-311 9076</a>'
+    +  '<a class="btn" href="https://wa.me/60163119076?text=' + encodeURIComponent("Penjual " + (D.penjual||"") + " — ") + '" target="_blank">WhatsApp MT 016-311 9076</a>'
     +  '<a class="btn ghost" href="mailto:mrtanahmy@gmail.com" target="_blank">Emel MT</a></div>'
     +  '<div class="note" style="margin-top:10px">' + esc(D.nota||"") + '</div>'
     +  '<div class="hint">Waktu pejabat Isnin–Jumaat 9:00 pg–6:00 ptg.</div></div>';

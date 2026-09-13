@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Dashboard Pembeli — Mr Tanah</title>
+<title>Dashboard Penjual — Mr Tanah</title>
 <style>
   :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; }
   * { box-sizing:border-box; margin:0; padding:0; }
   body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; }
-  .topbar { background:linear-gradient(135deg,#0a1f44 0%,#14905c 55%,#123a7a 100%); color:#fff; padding:16px; }
+  .topbar { background:linear-gradient(135deg,#6b3a0a 0%,#123a7a 55%,#14905c 100%); color:#fff; padding:16px; }
   .topbar h1 { font-size:18px; } .topbar p { font-size:12.5px; opacity:.92; margin-top:2px; }
   .wrap { max-width:680px; margin:0 auto; padding:14px 14px 48px; }
   .card { background:#fff; border-radius:14px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:13px; }
@@ -52,16 +52,21 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>👤 Dashboard Pembeli</h1>
-    <p id="sub">Mr Tanah · ZMJ Solutions — peringkat, dokumen &amp; bayaran urus niaga anda</p>
+    <h1>🏷️ Dashboard Penjual</h1>
+    <p id="sub">Mr Tanah · ZMJ Solutions — peringkat, dokumen &amp; bayaran penjualan anda</p>
   </div>
+  <div class="pban">🧪 <b>PRATONTON (bukan pautan produksi)</b> — kod halaman produksi yang sama, dengan data SEBENAR sistem MT (nama &amp; angka tidak diubah).<br>Data setakat <b>2026-09-13 20:46</b> · penjual <b>Pemilik A (UJIAN)</b> (baris contoh UJIAN DIKIRA dalam KPI untuk pratonton ini — data sebenar menapisnya)</div>
   <div id="navPhmt" style="max-width:900px;margin:14px auto 0;padding:0 14px"></div>
   <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
   <div class="foot">Dokumen peribadi — pautan/akaun ini khas untuk anda. Jangan kongsi.</div>
 
+<script>
+/* data sebenar dari aksi=penjual-dash (dijana 2026-09-13 20:46) */
+window.PRATONTON_DATA = {"ok": true, "masa": "2026-09-13 20:46", "peranan": "PENJUAL_HARTANAH", "kpi": {"kes_jumlah": 3, "kes_aktif": 3, "kes_selesai": 0, "nilai": 1072100, "deposit": 34200, "baki": 1037900, "peringkat_semasa": "TAWARAN"}, "kes": [{"kes": "MT-KES-2026-0003", "jenis": "JUAL", "hartanah": "(UJIAN) COA-0100", "alamat": "Bangi, Selangor", "peringkat": "PINJAMAN", "status": "AKTIF", "harga": 620000, "deposit": 18600, "baki": 601400, "tarikh_penting": "2026-11-01", "hari_penting": 49, "tarikh_peringkat": {"TAWARAN": "2026-09-13", "PINJAMAN": "2026-09-15"}, "dokumen": [{"nama": "SPA", "status": "MENUNGGU"}], "ejen": "Zahir", "solicitor_saya": "Firma SAMA (kongsi)", "mortgage": "Encik U (Bank U)", "lawan_nama": "Pembeli A", "lawan_label": "Pembeli", "dikemaskini": "Sun Sep 13 2026 20:46:00 GMT+0800 (Singapore Standard Time)", "ujian": false, "panduan": "Pembeli sedang memohon pembiayaan. Langkah seterusnya: bersedia menandatangani SPA dalam tempoh yang dipersetujui (lazimnya 14 hari selepas tempahan); dokumen hak milik diserahkan kepada peguamcara pembeli.", "ejen_telefon": "", "ejen_agensi": ""}, {"kes": "MT-KES-2026-0002", "jenis": "SEWA", "hartanah": "(UJIAN) MT-0019", "alamat": "Kajang, Selangor", "peringkat": "TEMPAHAN", "status": "AKTIF", "harga": 2100, "deposit": 2100, "baki": 0, "tarikh_penting": "2026-09-20", "hari_penting": 7, "tarikh_peringkat": {"TAWARAN": "2026-09-05", "TEMPAHAN": "2026-09-12"}, "dokumen": [{"nama": "Borang Tempahan", "status": "OK"}, {"nama": "SPA", "status": "TIDAK BERKENAAN"}], "ejen": "Fadilah", "solicitor_saya": "", "mortgage": "", "lawan_nama": "Penyewa A", "lawan_label": "Pembeli", "dikemaskini": "2026-09-13 20:40", "ujian": false, "panduan": "Tempahan diterima. Langkah seterusnya: serahkan salinan dokumen hak milik (geran/cukai tanah & taksiran terkini) kepada MT untuk semakan peguamcara.", "ejen_telefon": "0133609007", "ejen_agensi": "COA"}, {"kes": "MT-KES-2026-0001", "jenis": "JUAL", "hartanah": "(UJIAN) COA-0068", "alamat": "Bandar Baru Bangi, Selangor", "peringkat": "TAWARAN", "status": "AKTIF", "harga": 450000, "deposit": 13500, "baki": 436500, "tarikh_penting": "2026-10-04", "hari_penting": 21, "tarikh_peringkat": {"TAWARAN": "2026-09-13"}, "dokumen": [{"nama": "Borang Tempahan", "status": "OK"}, {"nama": "SPA", "status": "MENUNGGU"}], "ejen": "Zahir", "solicitor_saya": "Firma ABC (rujukan)", "mortgage": "Encik R (Bank X)", "lawan_nama": "Pembeli A", "lawan_label": "Pembeli", "dikemaskini": "2026-09-13 20:40", "ujian": false, "panduan": "Tawaran harga diterima. Langkah seterusnya: teliti terma, tanda borang tempahan dan terima deposit tempahan (lazimnya 2–3%).", "ejen_telefon": "", "ejen_agensi": ""}], "tindakan": [{"kes": "MT-KES-2026-0003", "perkara": "Dokumen SPA — belum diterima/disahkan", "butir": "Peringkat PINJAMAN · (UJIAN) COA-0100"}, {"kes": "MT-KES-2026-0001", "perkara": "Dokumen SPA — belum diterima/disahkan", "butir": "Peringkat TAWARAN · (UJIAN) COA-0068"}], "amaran": [{"tahap": "kuning", "tajuk": "MT-KES-2026-0002 — tarikh penting 7 hari lagi (2026-09-20)", "butir": "Kes SEWA · (UJIAN) MT-0019 · peringkat TEMPAHAN"}, {"tahap": "biru", "tajuk": "2 baris UJIAN dipaparkan", "butir": "Baris ujian sistem (tidak masuk KPI)."}], "susun": ["TAWARAN", "TEMPAHAN", "PINJAMAN", "SPA", "PINDAH HAK", "SELESAI"], "pihak_ejen": {"fadilah": {"nama": "Fadilah", "agensi": "COA", "telefon": "0133609007", "emel": "fadilah.property@gmail.com"}}, "jenis_pihak": "penjual", "nota": "Paparan ini menunjukkan kes yang didaftarkan atas nama anda sahaja (pembeli hanya dipapar sebagai nama). Maklumat dalaman MT (kos pengurusan, komisen ejen, nota dalaman, rujukan kenalan & nombor telefon pihak lawan) TIDAK dipaparkan. Angka baki = harga − deposit yang direkod; jadual bayaran sebenar mengikut SPA.", "penjual": "Pemilik A (UJIAN)", "__cache": 1, "peranans": ["PENJUAL_HARTANAH"]};
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="assets/auth-config.js?v=2"></script>
-<script src="assets/auth-nav.js?v=3"></script>
+<script src="../assets/auth-config.js?v=2"></script>
+<script src="../assets/auth-nav.js?v=3"></script>
 <script>
 var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
 var TOKEN = new URLSearchParams(location.search).get("t") || "";
@@ -81,8 +86,8 @@ function wa(nombor, teks){ var n=String(nombor||"").replace(/[^0-9]/g,""); if(n.
 
 function urlAPI() {
   return (MOD === "login")
-    ? API + "?aksi=pembeli-dash&access_token=" + encodeURIComponent((SESI && SESI.access_token) || "") + "&_=" + Date.now()
-    : API + "?aksi=pembeli-dash&token=" + encodeURIComponent(TOKEN) + "&_=" + Date.now();
+    ? API + "?aksi=penjual-dash&access_token=" + encodeURIComponent((SESI && SESI.access_token) || "") + "&_=" + Date.now()
+    : API + "?aksi=penjual-dash&token=" + encodeURIComponent(TOKEN) + "&_=" + Date.now();
 }
 function muat() {
   if (SIBUK) return; SIBUK = true;
@@ -91,13 +96,13 @@ function muat() {
   p.then(function(d){
     SIBUK = false;
     if (!d || !d.ok) {
-      if (MOD === "login" && /sesi tidak sah|tamat tempoh/i.test(String((d||{}).error||""))) { location.href = "login.html"; return; }
+      if (MOD === "login" && /sesi tidak sah|tamat tempoh/i.test(String((d||{}).error||""))) { location.href = "../login.html"; return; }
       splash("⚠️ " + esc((d||{}).error || "Pautan tidak sah atau telah dimatikan."));
       return;
     }
     D = d; lukis();
     var nav = document.getElementById("navPhmt");
-    if (nav && window.PHMT && D.peranans) PHMT.lukis(nav, D.peranans, "PEMBELI_HARTANAH");
+    if (nav && window.PHMT && D.peranans) PHMT.lukis(nav, D.peranans, "PENJUAL_HARTANAH");
   })
   .catch(function(e){ SIBUK = false; splash("⚠️ Gagal memuatkan data.<br><small>"+esc(e)+"</small>"); });
 }
@@ -113,7 +118,7 @@ function muat() {
     SESI = (o.data && o.data.session) || null;
     if (SESI) { MOD = "login"; muat(); return; }
     if (TOKEN) { MOD = "token"; muat(); return; }
-    location.href = "login.html";
+    location.href = "../login.html";
   });
 })();
 
@@ -131,14 +136,14 @@ function garisPeringkat(k){
 
 function lukis(){
   var kp = D.kpi || {}, h = "";
-  document.getElementById("sub").textContent = "Mr Tanah · " + (D.pembeli || "") + (kp.kes_jumlah ? " · " + kp.kes_jumlah + " kes" : "");
+  document.getElementById("sub").textContent = "Mr Tanah · " + (D.penjual || "") + (kp.kes_jumlah ? " · " + kp.kes_jumlah + " kes" : "");
   var logKeluar = (MOD === "login") ? '<div class="btnrow"><button class="btn ghost" onclick="keluar()">Log keluar</button></div>' : "";
 
-  h += '<div class="card"><h2>📌 Ringkasan Urus Niaga <span class="badge">DATA SEBENAR</span></h2><div class="kpi">'
+  h += '<div class="card"><h2>📌 Ringkasan Penjualan <span class="badge">DATA SEBENAR</span></h2><div class="kpi">'
     +  '<div class="kbox"><div class="l">Kes aktif</div><div class="v">' + (kp.kes_aktif||0) + '</div><div class="s">' + (kp.kes_selesai||0) + ' selesai · peringkat ' + esc(kp.peringkat_semasa||"—") + '</div></div>'
-    +  '<div class="kbox"><div class="l">Harga kes</div><div class="v">' + rm0(kp.nilai) + '</div><div class="s">' + (kp.kes_jumlah||0) + ' kes direkod</div></div>'
-    +  '<div class="kbox"><div class="l">Deposit dibayar</div><div class="v">' + rm0(kp.deposit) + '</div><div class="s">direkod oleh MT</div></div>'
-    +  '<div class="kbox"><div class="l">Baki menjelang selesai</div><div class="v">' + rm0(kp.baki) + '</div><div class="s">harga − deposit</div></div>'
+    +  '<div class="kbox"><div class="l">Harga jualan</div><div class="v">' + rm0(kp.nilai) + '</div><div class="s">' + (kp.kes_jumlah||0) + ' kes direkod</div></div>'
+    +  '<div class="kbox"><div class="l">Deposit diterima</div><div class="v">' + rm0(kp.deposit) + '</div><div class="s">direkod oleh MT</div></div>'
+    +  '<div class="kbox"><div class="l">Baki belum diterima</div><div class="v">' + rm0(kp.baki) + '</div><div class="s">harga − deposit</div></div>'
     +  '</div><div class="btnrow"><button class="btn ghost" onclick="muat()">🔄 Tarik data terkini</button></div>'
     +  '<div class="hint">Data setakat <b>' + esc(D.masa||"") + '</b> — dikemas kini oleh pejabat Mr Tanah.</div>' + logKeluar + '</div>';
 
@@ -149,19 +154,20 @@ function lukis(){
     D.tindakan.forEach(function(t){ h += '<div class="amr kuning" style="margin-top:8px"><b>' + esc(t.perkara) + '</b><i>' + esc(t.kes) + ' · ' + esc(t.butir) + '</i></div>'; });
     h += '</div>';
   }
+  h += '<div class="amr biru"><b>Peringatan penting</b><i>Jangan serahkan kunci atau barang dalam unit sebelum bayaran baki disahkan selesai oleh MT/peguamcara.</i></div>';
   h += '</div>';
 
   if (!(D.kes||[]).length) {
-    h += '<div class="card"><div class="hint">Tiada kes urus niaga didaftarkan atas nama anda buat masa ini. Jika ini tidak betul, hubungi Mr Tanah.</div></div>';
+    h += '<div class="card"><div class="hint">Tiada kes penjualan didaftarkan atas nama anda buat masa ini. Jika ini tidak betul, hubungi Mr Tanah.</div></div>';
   }
 
   (D.kes||[]).forEach(function(k){
     h += '<div class="card"><h2>' + esc(k.kes) + ' <span class="badge">' + esc(k.jenis) + '</span></h2>'
       +  '<div class="meta"><div class="row"><span>Hartanah</span><b>' + esc(k.hartanah) + '</b></div>'
       +  '<div class="row"><span>Alamat</span><b>' + esc(k.alamat||"—") + '</b></div>'
-      +  '<div class="row"><span>Harga</span><b>' + rm(k.harga) + '</b></div>'
-      +  '<div class="row"><span>Deposit direkod</span><b>' + rm(k.deposit) + '</b></div>'
-      +  '<div class="row"><span>Baki (harga − deposit)</span><b>' + rm(k.baki) + '</b></div>'
+      +  '<div class="row"><span>Harga jualan</span><b>' + rm(k.harga) + '</b></div>'
+      +  '<div class="row"><span>Deposit diterima</span><b>' + rm(k.deposit) + '</b></div>'
+      +  '<div class="row"><span>Baki belum diterima</span><b>' + rm(k.baki) + '</b></div>'
       +  '<div class="row"><span>Status</span><b>' + esc(k.status) + '</b></div>'
       +  (k.tarikh_penting ? '<div class="row"><span>Tarikh penting</span><b>' + tkh(k.tarikh_penting) + ' (' + esc(hariTeks(k.hari_penting)) + ')</b></div>' : '')
       +  '</div>'
@@ -171,24 +177,24 @@ function lukis(){
     if ((k.dokumen||[]).length) {
       h += '<h2 style="margin-top:12px">📄 Dokumen</h2><table><tr><th>Dokumen</th><th>Status</th></tr>';
       k.dokumen.forEach(function(dd){ h += '<tr><td>' + esc(dd.nama) + '</td><td>' + stDok(dd.status) + '</td></tr>'; });
-      h += '</table><div class="hint">Status diselenggara oleh pejabat MT. Dokumen diserahkan melalui WhatsApp atau emel — bukan muat turun portal.</div>';
+      h += '</table><div class="hint">Status diselenggara oleh pejabat MT. Salinan dokumen hak milik/geran diserahkan kepada peguamcara melalui MT — jangan hantar kepada pihak tidak dikenali.</div>';
     }
 
     h += '<h2 style="margin-top:12px">👥 Pihak berkaitan</h2><div class="meta">'
       +  '<div class="row"><span>Ejen</span><b>' + esc(k.ejen||"—") + (k.ejen_agensi ? " · " + esc(k.ejen_agensi) : "") + '</b></div>'
       +  (k.ejen_telefon ? '<div class="row"><span>Telefon ejen</span><b>' + esc(k.ejen_telefon) + '</b></div>' : '')
       +  '<div class="row"><span>Peguamcara anda</span><b>' + esc(k.solicitor_saya||"Belum dilantik") + '</b></div>'
-      +  '<div class="row"><span>Pegawai pinjaman</span><b>' + esc(k.mortgage||"—") + '</b></div>'
-      +  '<div class="row"><span>Pihak jual</span><b>' + esc(k.penjual||"—") + '</b></div>'
+      +  '<div class="row"><span>Pegawai pinjaman pembeli</span><b>' + esc(k.mortgage||"—") + '</b></div>'
+      +  '<div class="row"><span>' + esc(k.lawan_label || "Pembeli") + '</span><b>' + esc(k.lawan_nama||"—") + '</b></div>'
       +  '</div><div class="btnrow">';
-    if (k.ejen_telefon) h += '<a class="btn ghost" href="' + esc(wa(k.ejen_telefon, "Assalamualaikum " + (k.ejen||"") + ", saya pembeli untuk kes " + k.kes + " (" + k.hartanah + "). Boleh saya bertanya perkembangan?")) + '" target="_blank">WhatsApp ejen</a>';
-    h += '<a class="btn ghost" href="https://wa.me/60163119076?text=' + encodeURIComponent("Pembeli " + (D.pembeli||"") + " — kes " + k.kes + " (" + k.hartanah + "): ") + '" target="_blank">WhatsApp MT</a></div>'
+    if (k.ejen_telefon) h += '<a class="btn ghost" href="' + esc(wa(k.ejen_telefon, "Assalamualaikum " + (k.ejen||"") + ", saya penjual untuk kes " + k.kes + " (" + k.hartanah + "). Boleh saya bertanya perkembangan?")) + '" target="_blank">WhatsApp ejen</a>';
+    h += '<a class="btn ghost" href="https://wa.me/60163119076?text=' + encodeURIComponent("Penjual " + (D.penjual||"") + " — kes " + k.kes + " (" + k.hartanah + "): ") + '" target="_blank">WhatsApp MT</a></div>'
       +  '<div class="hint">Kemas kini terakhir rekod: ' + esc(k.dikemaskini||"—") + '</div></div>';
     h += '</div>';
   });
 
   h += '<div class="card"><h2>💬 Hubungi Mr Tanah</h2><div class="btnrow">'
-    +  '<a class="btn" href="https://wa.me/60163119076?text=' + encodeURIComponent("Pembeli " + (D.pembeli||"") + " — ") + '" target="_blank">WhatsApp MT 016-311 9076</a>'
+    +  '<a class="btn" href="https://wa.me/60163119076?text=' + encodeURIComponent("Penjual " + (D.penjual||"") + " — ") + '" target="_blank">WhatsApp MT 016-311 9076</a>'
     +  '<a class="btn ghost" href="mailto:mrtanahmy@gmail.com" target="_blank">Emel MT</a></div>'
     +  '<div class="note" style="margin-top:10px">' + esc(D.nota||"") + '</div>'
     +  '<div class="hint">Waktu pejabat Isnin–Jumaat 9:00 pg–6:00 ptg.</div></div>';
@@ -196,7 +202,7 @@ function lukis(){
   document.getElementById("wrap").innerHTML = h;
   window.scrollTo(0,0);
 }
-function keluar(){ if (SB) SB.auth.signOut().then(function(){ location.href = "login.html"; }); else location.href = "login.html"; }
+function keluar(){ if (SB) SB.auth.signOut().then(function(){ location.href = "../login.html"; }); else location.href = "../login.html"; }
 </script>
 </body>
 </html>
