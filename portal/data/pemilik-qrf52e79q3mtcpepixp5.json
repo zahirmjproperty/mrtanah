@@ -224,11 +224,14 @@
   "unit_sewaan": 5,
   "utiliti_diterima": 0
  },
- "masa": "2026-09-13 16:16",
+ "masa": "2026-09-13 18:15",
  "nota": "Anggaran bersih = sewa yang diterima − bil utiliti yang ditanggung pemilik (unit tanpa penyewa) − kos penyelenggaraan pemilik (termasuk kos pengurusan MT). Utiliti unit disewa adalah pass-through kepada penyewa, bukan pendapatan pemilik.",
  "ok": true,
  "pemilik": "Zahir MJ",
  "peranan": "PEMILIK_HARTANAH",
+ "peranans": [
+  "PEMILIK_HARTANAH"
+ ],
  "tiket": [],
  "unit": [
   {
