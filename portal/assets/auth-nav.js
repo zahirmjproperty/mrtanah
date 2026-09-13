@@ -17,7 +17,7 @@
     PEMBELI_HARTANAH:     { nama: "Dashboard Pembeli",      ico: "🛒", url: "pembeli.html",       sedia: true,  mod: "login" },
     PEMBELI_HASIL_LADANG: { nama: "Pembeli Hasil Ladang", ico: "🌾", url: "pembeli-ladang.html", sedia: false, mod: "belum" },
     PENJUAL_HARTANAH:     { nama: "Dashboard Penjual",      ico: "🏷️", url: "penjual.html",       sedia: true,  mod: "login" },
-    SOLICITOR:            { nama: "Solicitor (Conveyancing)", ico: "⚖️", url: "solicitor.html",  sedia: false, mod: "belum" },
+    SOLICITOR:            { nama: "Dashboard Peguamcara", ico: "⚖️", url: "solicitor.html",  sedia: true,  mod: "login" },
     MORTGAGE_OFFICER:     { nama: "Mortgage Officer (Pembiayaan)", ico: "🏦", url: "pembiayaan.html", sedia: false, mod: "belum" },
     /* Role teknikal: pemilik dalam konteks tiket aduan sahaja (tiada dashboard portfolio) */
     PEMILIK:          { nama: "Pemilik (tiket aduan)", ico: "📋", url: "aduan-pemilik.html",   sedia: true,  mod: "token" }
