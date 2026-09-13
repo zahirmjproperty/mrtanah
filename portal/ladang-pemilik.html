@@ -38,21 +38,56 @@
 </head>
 <body>
   <div class="topbar"><h1>🌴 Portal Pemilik Ladang</h1><p id="sub">Mr Tanah · pengendali Strategic Agro Technology (SAT)</p></div>
+  <div id="navPhmt" style="max-width:760px;margin:14px auto 0;padding:0 14px"></div>
   <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
-  <div class="foot">Dokumen peribadi — pautan ini khas untuk anda. Jangan kongsi.</div>
+  <div class="foot">Dokumen peribadi — pautan/akaun ini khas untuk anda. Jangan kongsi.</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/auth-config.js?v=2"></script>
+<script src="assets/auth-nav.js?v=7"></script>
 <script>
 var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
 var TOKEN = new URLSearchParams(location.search).get("t") || "";
+var MOD = "token", SESI = null, SB = null, D = null;   /* "token" = pautan lama · "login" = sesi Supabase */
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
 function rm(n){ return "RM " + Number(n||0).toLocaleString("ms-MY", {minimumFractionDigits:2, maximumFractionDigits:2}); }
 function tkh(s){ if(!s) return "—"; var d=String(s).substring(0,10).split("-"); return d.length===3 ? d[2]+"/"+d[1]+"/"+d[0] : String(s); }
 function splash(m){ document.getElementById("wrap").innerHTML = '<div class="splash">'+m+'</div>'; }
 
-if (!TOKEN) splash("⚠️ Pautan tidak lengkap (tiada token). Guna pautan yang dihantar Mr Tanah.");
-else fetch(API + "?aksi=ladangpemilik&token=" + encodeURIComponent(TOKEN))
-  .then(function(r){ return r.json(); })
-  .then(function(d){ if(!d.ok){ splash("⚠️ "+esc(d.error||"Pautan tidak sah.")); return; } lukis(d); })
-  .catch(function(e){ splash("⚠️ Gagal memuatkan: "+esc(e)); });
+function urlAPI() {
+  return (MOD === "login")
+    ? API + "?aksi=ladangpemilik&access_token=" + encodeURIComponent((SESI && SESI.access_token) || "") + "&_=" + Date.now()
+    : API + "?aksi=ladangpemilik&token=" + encodeURIComponent(TOKEN) + "&_=" + Date.now();
+}
+function muat() {
+  if (!D) splash("Memuatkan…");
+  var p = (window.PRATONTON_DATA) ? Promise.resolve(window.PRATONTON_DATA) : fetch(urlAPI()).then(function(r){ return r.json(); });
+  p.then(function(d){
+    if (!d || !d.ok) {
+      if (MOD === "login" && /sesi tidak sah|tamat tempoh/i.test(String((d||{}).error||""))) { location.href = "login.html"; return; }
+      splash("⚠️ " + esc((d||{}).error || "Pautan tidak sah atau telah dimatikan."));
+      return;
+    }
+    D = d; lukis(d);
+    var nav = document.getElementById("navPhmt");
+    if (nav && window.PHMT && d.peranans) PHMT.lukis(nav, d.peranans, "PEMILIK_LADANG");
+  })
+  .catch(function(e){ splash("⚠️ Gagal memuatkan: " + esc(e)); });
+}
+(function init(){
+  var A = window.AUTH || {};
+  if (window.PRATONTON_DATA) { muat(); return; }
+  if (!A.url || !A.key || typeof window.supabase === "undefined") {
+    if (TOKEN) muat(); else splash("⚠️ Pautan tidak lengkap (tiada token). Guna pautan dari Mr Tanah, atau log masuk.");
+    return;
+  }
+  SB = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false } });
+  SB.auth.getSession().then(function(o){
+    SESI = (o.data && o.data.session) || null;
+    if (SESI) { MOD = "login"; muat(); return; }
+    if (TOKEN) { MOD = "token"; muat(); return; }
+    location.href = "login.html";
+  });
+})();
 
 function lukis(d){
   var r = d.ringkasan, b = d.blok || {};

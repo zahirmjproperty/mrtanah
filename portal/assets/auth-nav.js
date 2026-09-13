@@ -9,7 +9,7 @@
     /* ---- Role pengurusan & pelanggan sedia ada ---- */
     ADMIN:            { nama: "Dashboard Pengurusan", ico: "📊", url: "pemuka.html",         sedia: true,  mod: "login" },
     PEMILIK_HARTANAH: { nama: "Dashboard Pemilik",    ico: "🏠", url: "pemilik.html",        sedia: true,  mod: "login" },
-    PEMILIK_LADANG:   { nama: "Dashboard Ladang",     ico: "🌴", url: "ladang-pemilik.html", sedia: true,  mod: "token" },
+    PEMILIK_LADANG:   { nama: "Dashboard Ladang",     ico: "🌴", url: "ladang-pemilik.html", sedia: true,  mod: "login" },
     PENYEWA:          { nama: "Dashboard Penyewa",    ico: "🧾", url: "penyewa.html",        sedia: true,  mod: "token" },
     KONTRAKTOR:       { nama: "Dashboard Kontraktor", ico: "🔧", url: "kontraktor.html",     sedia: true,  mod: "login" },
     EJEN:             { nama: "Dashboard Ejen",       ico: "🧑‍💼", url: "ejen.html",          sedia: true,  mod: "login" },
