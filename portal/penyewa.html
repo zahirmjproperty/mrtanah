@@ -52,14 +52,20 @@
     <h1>👤 Portal Penyewa</h1>
     <p id="sub">Mr Tanah · ZMJ Solutions — bil, bayaran &amp; aduan unit anda</p>
   </div>
+  <div id="navPhmt" style="max-width:900px;margin:14px auto 0;padding:0 14px"></div>
   <div class="wrap" id="wrap">
     <div class="splash">Memuatkan…</div>
   </div>
   <div class="foot">Dokumen peribadi — pautan ini khas untuk unit anda. Jangan kongsi.</div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/auth-config.js?v=2"></script>
+<script src="assets/auth-nav.js?v=1"></script>
 <script>
 var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
 var TOKEN = new URLSearchParams(location.search).get("t") || "";
+var MOD = "token";   /* "token" = pautan unit · "login" = sesi log masuk */
+var SESI = null, SB = null;
 var D = null;
 function rm(n){ return "RM " + Number(n||0).toLocaleString("ms-MY", {minimumFractionDigits:2, maximumFractionDigits:2}); }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
@@ -69,14 +75,40 @@ function statusSt(s){ s=String(s||"").toUpperCase(); if(s.indexOf("DIBAYAR")>=0)
 function splash(m){ document.getElementById("wrap").innerHTML = '<div class="splash">'+m+'</div>'; }
 function total(b){ return (b.sewa||0)+(b.elektrik||0)+(b.air||0)+(b.lain||0); }
 
-if (!TOKEN) splash("⚠️ Pautan tidak lengkap (tiada token). Guna pautan yang dihantar Mr Tanah.");
-else fetch(API + "?aksi=penyewa&token=" + encodeURIComponent(TOKEN))
-  .then(function(r){ return r.json(); })
-  .then(function(d){
-    if (!d.ok) { splash("⚠️ " + esc(d.error || "Pautan tidak sah.")); return; }
-    D = d; lukis();
-  })
-  .catch(function(e){ splash("⚠️ Gagal memuatkan data. Sila cuba lagi.<br><small>"+esc(e)+"</small>"); });
+function urlPenyewa() {
+  return (MOD === "login")
+    ? API + "?aksi=penyewa&access_token=" + encodeURIComponent((SESI && SESI.access_token) || "") + "&_=" + Date.now()
+    : API + "?aksi=penyewa&token=" + encodeURIComponent(TOKEN) + "&_=" + Date.now();
+}
+function muat() {
+  splash("Memuatkan…");
+  fetch(urlPenyewa())
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if (!d.ok) {
+        if (MOD === "login" && /sesi tidak sah|tamat tempoh/i.test(String(d.error||""))) { location.href = "login.html"; return; }
+        splash("⚠️ " + esc(d.error || "Pautan tidak sah.")); return;
+      }
+      D = d; lukis();
+      var nav = document.getElementById("navPhmt");
+      if (nav && window.PHMT && D.peranans) PHMT.lukis(nav, D.peranans, "PENYEWA");
+    })
+    .catch(function(e){ splash("⚠️ Gagal memuatkan data. Sila cuba lagi.<br><small>"+esc(e)+"</small>"); });
+}
+(function init(){
+  var A = window.AUTH || {};
+  if (!A.url || !A.key || typeof window.supabase === "undefined") {
+    if (TOKEN) muat(); else splash("⚠️ Pautan tidak lengkap (tiada token). Guna pautan yang dihantar Mr Tanah, atau log masuk.");
+    return;
+  }
+  SB = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false } });
+  SB.auth.getSession().then(function(o){
+    SESI = (o.data && o.data.session) || null;
+    if (SESI) { MOD = "login"; muat(); return; }
+    if (TOKEN) { MOD = "token"; muat(); return; }
+    location.href = "login.html";
+  });
+})();
 
 function lukis(){
   var u = D.unit, b = D.belum, h = "";
@@ -162,6 +194,7 @@ function bayar(inv, jumlah){
 
 function hantarBayar(inv){
   var p = { form:"bayarsewa", token:TOKEN, invois:inv, kaedah:"DuitNow QR",
+            access_token: (MOD === "login" && SESI) ? SESI.access_token : "",
             tarikh_bayar:(document.getElementById("bTarikh")||{}).value || "",
             jumlah:(document.getElementById("bJumlah")||{}).value || 0,
             rujukan:(document.getElementById("bRef")||{}).value || "",
