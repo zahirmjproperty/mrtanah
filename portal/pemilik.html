@@ -64,6 +64,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/auth-config.js?v=2"></script>
+<script src="assets/auth-nav.js?v=1"></script>
 <script>
 var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
 var T = new URLSearchParams(location.search).get("t") || localStorage.getItem("mt_pemilik_token") || "";
@@ -150,7 +151,8 @@ function lukis() {
       + (nota ? '<em>' + esc(nota) + '</em>' : '') + '</div>';
   }
   var badge = D.__snap ? ('📦 Snapshot ' + esc(D.masa || '')) : ('🟢 Data langsung ' + esc(D.masa || ''));
-  var h = '<p class="hint" style="margin:0 0 10px">Pemilik: <b>' + esc(D.pemilik) + '</b> · ' + badge
+  var h = '<div id="navPhmt"></div>'
+    + '<p class="hint" style="margin:0 0 10px">Pemilik: <b>' + esc(D.pemilik) + '</b> · ' + badge
     + (MOD === "login" ? ' · <a href="#" id="bKeluar" style="color:#0a5">Log keluar</a>' : '') + '</p>'
     + '<div class="kpis">'
     + kpi(k.unit_sewaan, "Unit disewa", k.unit_jumlah + " unit dalam portfolio")
@@ -222,6 +224,8 @@ function lukis() {
 
   document.getElementById("wrap").innerHTML = h;
   var bRe = document.getElementById("bRe"); if (bRe) bRe.onclick = function () { muatLive(false); };
+  var navEl = document.getElementById("navPhmt");
+  if (navEl && window.PHMT && D.peranans) PHMT.lukis(navEl, D.peranans, "PEMILIK_HARTANAH");
   var bK = document.getElementById("bKeluar");
   if (bK) bK.onclick = function (e) { e.preventDefault(); try { SB.auth.signOut(); } catch (x) {} localStorage.removeItem("mt_pemilik_token"); location.href = "login.html"; };
 }
