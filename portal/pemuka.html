@@ -98,7 +98,7 @@ function muatLive(gunaSandaran) {
   splash("Menghubungi pelayan… (boleh ambil 10–30 saat)");
   var ctrl = (typeof AbortController !== "undefined") ? new AbortController() : null;
   var tamat = setTimeout(function () { if (ctrl) ctrl.abort(); }, 45000);
-  fetch(API + "?aksi=pemuka&admin_token=" + encodeURIComponent(T), ctrl ? { signal: ctrl.signal } : undefined)
+  fetch(API + "?aksi=pemuka&admin_token=" + encodeURIComponent(T) + "&_=" + Date.now(), ctrl ? { signal: ctrl.signal } : undefined)
     .then(function (r) { clearTimeout(tamat); return r.json(); })
     .then(function (d) {
       if (!d.ok) {
