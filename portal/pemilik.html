@@ -62,10 +62,14 @@
   <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
   <div class="foot">Pautan peribadi — jangan kongsi. Pertanyaan: WhatsApp 016-3119076.</div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/auth-config.js?v=2"></script>
 <script>
 var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
 var T = new URLSearchParams(location.search).get("t") || localStorage.getItem("mt_pemilik_token") || "";
 var D = null;
+var MOD = "token";        /* "token" = pautan lama · "login" = sesi log masuk */
+var SESI = null, SB = null;
 
 function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
 function rm(n, dec) { return "RM" + Number(n || 0).toLocaleString("ms-MY", { minimumFractionDigits: dec == null ? 2 : dec, maximumFractionDigits: dec == null ? 2 : dec }); }
@@ -102,10 +106,20 @@ function muatLive(gunaSandaran) {
   splash("Menghubungi pelayan… (boleh ambil 10–30 saat)");
   var ctrl = (typeof AbortController !== "undefined") ? new AbortController() : null;
   var tamat = setTimeout(function () { if (ctrl) ctrl.abort(); }, 45000);
-  fetch(API + "?aksi=pemilik&token=" + encodeURIComponent(T) + "&_=" + Date.now(), ctrl ? { signal: ctrl.signal } : undefined)
+  var urlAPI = (MOD === "login")
+    ? API + "?aksi=pemilik&access_token=" + encodeURIComponent((SESI && SESI.access_token) || "") + "&_=" + Date.now()
+    : API + "?aksi=pemilik&token=" + encodeURIComponent(T) + "&_=" + Date.now();
+  fetch(urlAPI, ctrl ? { signal: ctrl.signal } : undefined)
     .then(function (r) { clearTimeout(tamat); return r.json(); })
     .then(function (d) {
-      if (!d.ok) { localStorage.removeItem("mt_pemilik_token"); tiadaAkses(d.error || "Pautan tidak sah atau telah dimatikan."); return; }
+      if (!d.ok) {
+        var em = String(d.error || "");
+        if (MOD === "login") {
+          if (/sesi tidak sah|tamat tempoh/i.test(em)) { document.getElementById("wrap").innerHTML = '<div class="card" style="max-width:520px;margin:24px auto"><h2>Sesi tamat</h2><p class="hint">Sila log masuk semula.</p><div class="btnrow" style="margin-top:12px"><a class="btn" style="text-decoration:none" href="login.html">🔐 Log masuk</a></div></div>'; return; }
+          tiadaAkses(em || "Akaun ini belum didaftarkan untuk portal."); return;
+        }
+        localStorage.removeItem("mt_pemilik_token"); tiadaAkses(em || "Pautan tidak sah atau telah dimatikan."); return;
+      }
       D = d; D.__snap = 0; lukis();
     })
     .catch(function (e) {
@@ -136,7 +150,8 @@ function lukis() {
       + (nota ? '<em>' + esc(nota) + '</em>' : '') + '</div>';
   }
   var badge = D.__snap ? ('📦 Snapshot ' + esc(D.masa || '')) : ('🟢 Data langsung ' + esc(D.masa || ''));
-  var h = '<p class="hint" style="margin:0 0 10px">Pemilik: <b>' + esc(D.pemilik) + '</b> · ' + badge + '</p>'
+  var h = '<p class="hint" style="margin:0 0 10px">Pemilik: <b>' + esc(D.pemilik) + '</b> · ' + badge
+    + (MOD === "login" ? ' · <a href="#" id="bKeluar" style="color:#0a5">Log keluar</a>' : '') + '</p>'
     + '<div class="kpis">'
     + kpi(k.unit_sewaan, "Unit disewa", k.unit_jumlah + " unit dalam portfolio")
     + kpi(rm(k.sewa_bulanan, 0), "Sewa bulanan (kontrak)", "tempoh " + (k.inv_tempoh || "—"))
@@ -207,10 +222,26 @@ function lukis() {
 
   document.getElementById("wrap").innerHTML = h;
   var bRe = document.getElementById("bRe"); if (bRe) bRe.onclick = function () { muatLive(false); };
+  var bK = document.getElementById("bKeluar");
+  if (bK) bK.onclick = function (e) { e.preventDefault(); try { SB.auth.signOut(); } catch (x) {} localStorage.removeItem("mt_pemilik_token"); location.href = "login.html"; };
 }
 
-if (!T) { tiadaAkses("Tiada token dalam pautan. Buka pautan penuh yang diberi Mr Tanah (…/pemilik.html?t=…)."); }
-else { localStorage.setItem("mt_pemilik_token", T); muat(); }
+(function init() {
+  var A = window.AUTH || {};
+  if (!A.url || !A.key || typeof window.supabase === "undefined") {
+    /* SDK/config tiada → guna laluan token lama sahaja */
+    if (T) { localStorage.setItem("mt_pemilik_token", T); muat(); }
+    else tiadaAkses("Tiada token dalam pautan. Buka pautan penuh yang diberi Mr Tanah (…/pemilik.html?t=…) atau log masuk.");
+    return;
+  }
+  SB = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false } });
+  SB.auth.getSession().then(function (o) {
+    SESI = (o.data && o.data.session) || null;
+    if (SESI) { MOD = "login"; muat(); return; }
+    if (T) { MOD = "token"; localStorage.setItem("mt_pemilik_token", T); muat(); return; }
+    location.href = "login.html";
+  });
+})();
 </script>
 </body>
 </html>
