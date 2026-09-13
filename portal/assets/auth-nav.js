@@ -15,7 +15,7 @@
     EJEN:             { nama: "Dashboard Ejen",       ico: "🧑‍💼", url: "ejen.html",          sedia: true,  mod: "login" },
     /* ---- Role baharu (didaftar 13/9/2026; dashboard dalam perancangan) ---- */
     PEMBELI_HARTANAH:     { nama: "Dashboard Pembeli",      ico: "🛒", url: "pembeli.html",       sedia: true,  mod: "login" },
-    PEMBELI_HASIL_LADANG: { nama: "Pembeli Hasil Ladang", ico: "🌾", url: "pembeli-ladang.html", sedia: false, mod: "belum" },
+    PEMBELI_HASIL_LADANG:{ nama: "Dashboard Pembeli Ladang", ico: "🌾", url: "pembeli-ladang.html", sedia: true, mod: "login" },
     PENJUAL_HARTANAH:     { nama: "Dashboard Penjual",      ico: "🏷️", url: "penjual.html",       sedia: true,  mod: "login" },
     SOLICITOR:            { nama: "Dashboard Peguamcara", ico: "⚖️", url: "solicitor.html",  sedia: true,  mod: "login" },
     MORTGAGE_OFFICER:     { nama: "Dashboard Pembiayaan", ico: "🏦", url: "pembiayaan.html",  sedia: true,  mod: "login" },
