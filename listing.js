@@ -232,7 +232,21 @@ function renderDetail(l) {
     ${relatedHTML}
   </article>`;
 
-  // Galeri events (ala-flymax: nav ◀▶ pada imej utama, thumb = tukar imej sahaja)
+}
+
+// Ikat interaksi galeri pada markup yang SUDAH ada dalam HTML.
+// Halaman listing dijana sebagai HTML statik (SEO) — kandungan tidak lagi dijana JS,
+// jadi kita hanya perlu ikat event. Jika markup lama (JS) yang wujud, lbImgs sudah diisi.
+function bindGallery() {
+  if (!lbImgs.length) {
+    const thumbs = Array.from(document.querySelectorAll(".gallery-thumbs .thumb img"))
+      .map(i => String(i.getAttribute("src") || "").replace(/=w\d+$/, "=w1600"));
+    if (thumbs.length) lbImgs = thumbs;
+    else {
+      const m = document.getElementById("mainImg");
+      if (m) lbImgs = [String(m.getAttribute("src") || "").replace(/=w\d+$/, "=w1600")];
+    }
+  }
   const mainImg = document.getElementById("mainImg");
   if (mainImg) mainImg.addEventListener("click", () => openLightbox(mainIdx));
   const gPrev = document.getElementById("gPrev");
@@ -249,7 +263,11 @@ const root = document.getElementById("detailRoot");
 if (root) {
   const id = new URLSearchParams(location.search).get("id") || (location.pathname.match(/listing\/([^/]+)\.html/) || [])[1] || "";
   const l = DATA.find(x => x.tracking === id);
-  if (!l) {
+  const adaStatik = !root.querySelector(".loading");
+  if (adaStatik) {
+    // kandungan sudah dalam HTML (SEO) — cuma ikat interaksi
+    bindGallery();
+  } else if (!l) {
     root.innerHTML = `<div class="empty">
       <p>Listing tidak dijumpai atau telah dikemaskini.</p>
       <a class="btn btn-wa" href="/">← Lihat Semua Listing</a>
@@ -261,6 +279,7 @@ if (root) {
     canon.href = (SITE.domain || "") + "listing/" + encodeURIComponent(l.tracking) + ".html";
     document.head.appendChild(canon);
     renderDetail(l);
+    bindGallery();
   }
 
   // Lightbox events
