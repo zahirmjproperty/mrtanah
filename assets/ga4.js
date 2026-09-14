@@ -1,6 +1,6 @@
 // assets/ga4.js — Google Analytics 4 + jejak konversi (dijana oleh pasang_ga4.py)
 (function () {
-  var ID = "G-RDQ9410X5X";
+  var ID = "G-J24ED43MZP";
   var s = document.createElement("script");
   s.async = true; s.src = "https://www.googletagmanager.com/gtag/js?id=" + ID;
   document.head.appendChild(s);
