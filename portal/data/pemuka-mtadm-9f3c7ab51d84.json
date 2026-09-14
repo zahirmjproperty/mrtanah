@@ -1,5 +1,4 @@
 {
- "__cache": 1,
  "amaran": [
   {
    "butir": "Due 2026-09-17 · 3 hari lagi",
@@ -158,7 +157,7 @@
   "inv_tertunggak": 2751.6,
   "sewa_bulanan": 2100,
   "tiket_aktif": 2,
-  "tiket_lewat_sla": 1,
+  "tiket_lewat_sla": 2,
   "tiket_ujian_ditapis": 1,
   "unit_jumlah": 7,
   "unit_kosong": 0,
@@ -167,7 +166,7 @@
   "wo_aktif": 1,
   "wo_nilai": 14250
  },
- "masa": "2026-09-14 09:30",
+ "masa": "2026-09-14 09:45",
  "ok": true,
  "sumber": {
   "kerja": "1hq58IQSSexqw87-kiY0fnq755Gwc-SIRyqbApPaUlPg",
@@ -201,10 +200,10 @@
    "pemilik": "Pn. Zaleha Ibrahim",
    "ref": "MT-K-2026-0003",
    "sla": {
-    "baki": 1,
-    "berlalu": 71,
+    "baki": 0,
+    "berlalu": 72,
     "jam": 72,
-    "keadaan": "warn"
+    "keadaan": "late"
    },
    "status": "WORK ORDER",
    "tarikh": "2026-09-11 10:03",
