@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mock-up — Tab Log Masuk &amp; Halaman Akses | Mr Tanah</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="../../style.css?v=67">
+<style>
+  body{background:var(--bg)}
+  .mockwrap{max-width:1080px;margin:0 auto;padding:22px 16px 60px}
+  .mock-note{background:#FFFBEB;border:1px solid #FDE68A;color:#7C2D12;border-radius:12px;padding:12px 14px;font-size:13.5px;margin-bottom:18px}
+  .mock-h2{margin:26px 0 6px;font-size:19px;color:var(--brand-dark)}
+  .mock-sub{color:var(--muted);font-size:13.5px;margin:0 0 14px}
+  .mock-stage{border:1px dashed #C7D2E0;border-radius:14px;padding:12px;background:#fff}
+  .mock-tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.3px;background:#0F172A;color:#fff;border-radius:999px;padding:3px 10px;margin-bottom:8px}
+  .mock-tag.alt{background:#0C7A4B}
+  /* clone header laman awam */
+  .mockheader{display:flex;align-items:center;gap:14px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding:10px 4px}
+  .mockbrand{font-weight:800;color:var(--brand-dark);font-size:17px}
+  .mocknav{display:flex;gap:14px;align-items:center;font-size:14px;flex-wrap:wrap}
+  .mocknav a{color:var(--ink);text-decoration:none}
+  .mocknav .na{color:var(--muted)}
+  .tab-login{background:var(--brand,#0F172A);color:#fff !important;border-radius:999px;padding:8px 15px;font-weight:700;display:inline-flex;align-items:center;gap:7px}
+  .tab-login.outline{background:#fff;color:var(--brand,#0F172A) !important;border:1.6px solid var(--brand,#0F172A)}
+  .tab-login.soft{background:#E8F5EF;color:#0A5B38 !important;border:1.5px solid #0C7A4B}
+  .grid-peranan{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:12px;margin-top:10px}
+  .kad-peranan{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px}
+  .kad-peranan .ico{font-size:22px}
+  .kad-peranan strong{font-size:14.5px;color:var(--brand-dark)}
+  .kad-peranan p{margin:0;font-size:12.5px;color:var(--muted)}
+  .kad-peranan .btn{margin-top:auto}
+  .aliran{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+  .aliran b{color:var(--ink)}
+  .pill{background:#EEF3FA;border:1px solid #D8E3F5;border-radius:999px;padding:5px 11px;font-size:12.5px;color:#123A7A;font-weight:600}
+</style>
+</head>
+<body>
+<div class="mockwrap">
+
+  <div class="mock-note">
+    <strong>MOCK-UP untuk kelulusan Zahir</strong> — reka bentuk sahaja, <em>belum</em> dipasang di laman sebenar.
+    Data peranan di bawah ialah <em>contoh</em>. Tiada pautan produksi diubah.
+  </div>
+
+  <h1 style="margin:0 0 4px;color:var(--brand-dark)">Tab Log Masuk &amp; Halaman Akses Sistem</h1>
+  <p class="mock-sub">
+    Matlamat (arahan Zahir): pengguna boleh masuk ke sistem kita dari <strong>satu tempat</strong> —
+    log masuk akaun mereka dan buka dashboard — <strong>tanpa perlu simpan atau ingat URL</strong>.
+  </p>
+
+  <p class="aliran" style="margin-bottom:18px">
+    <span class="pill">mrtanah.com</span> <b>→</b>
+    <span class="pill">Tab “Log Masuk”</span> <b>→</b>
+    <span class="pill">Halaman Akses (pilih peranan)</span> <b>→</b>
+    <span class="pill">Log masuk akaun</span> <b>→</b>
+    <span class="pill">Dashboard anda</span>
+  </p>
+
+  <!-- ================= PILIHAN A ================= -->
+  <h2 class="mock-h2">Pilihan A — Tab “Log Masuk” terus di nav atas</h2>
+  <p class="mock-sub">Pengguna klik tab → terus ke halaman log masuk → dashboard mereka dibuka automatik.</p>
+  <div class="mock-stage">
+    <span class="mock-tag">PILIHAN A</span>
+    <div class="mockheader">
+      <span class="mockbrand">Mr Tanah</span>
+      <nav class="mocknav">
+        <a href="#">Utama</a>
+        <a href="#">Projek Baharu</a>
+        <a href="#">Tentang</a>
+        <span class="na">Untuk Pemilik &amp; Ejen ▾</span>
+        <a class="tab-login" href="#">🔐 Log Masuk</a>
+      </nav>
+    </div>
+    <p style="font-size:12.5px;color:var(--muted);margin:9px 0 0">
+      Berat sebelah kanan, warna korporat, sentiasa kelihatan (desktop + telefon). Klik → <code>/portal/masuk.html</code> (halaman akses).
+    </p>
+  </div>
+
+  <!-- ================= PILIHAN B ================= -->
+  <h2 class="mock-h2">Pilihan B — Tab + Halaman Akses berkad (setiap peranan ada butang)</h2>
+  <p class="mock-sub">Sesuai untuk pengguna yang tidak pasti mereka masuk dari pintu mana. Empat peranan yang paling kerap diutamakan.</p>
+  <div class="mock-stage">
+    <span class="mock-tag alt">PILIHAN B</span>
+    <div class="mockheader">
+      <span class="mockbrand">Mr Tanah</span>
+      <nav class="mocknav">
+        <a href="#">Utama</a>
+        <a href="#">Projek Baharu</a>
+        <a href="#">Tentang</a>
+        <a class="tab-login outline" href="#">🔐 Log Masuk ▾</a>
+      </nav>
+    </div>
+
+    <h3 style="margin:16px 0 2px;font-size:16px;color:var(--brand-dark)">Selamat kembali — pilih dashboard anda</h3>
+    <p class="mock-sub">Satu akaun boleh ada lebih daripada satu peranan (contoh: anda pemilik <em>dan</em> penyewa). Selepas log masuk, semua dashboard anda disenaraikan.</p>
+    <div class="grid-peranan">
+      <div class="kad-peranan"><span class="ico">🏠</span><strong>Pemilik Hartanah</strong><p>Unit, sewa, bil &amp; laporan pemilik</p><a class="btn btn-block" href="#">Log Masuk →</a></div>
+      <div class="kad-peranan"><span class="ico">🧾</span><strong>Penyewa</strong><p>Sewa, resit, aduan &amp; notis tamat</p><a class="btn btn-block" href="#">Log Masuk →</a></div>
+      <div class="kad-peranan"><span class="ico">🧑‍💼</span><strong>Ejen</strong><p>Listing, papan COA, serahan dokumen</p><a class="btn btn-block" href="#">Log Masuk →</a></div>
+      <div class="kad-peranan"><span class="ico">🔧</span><strong>Kontraktor</strong><p>Tugasan, kerja &amp; tuntutan bayaran</p><a class="btn btn-block" href="#">Log Masuk →</a></div>
+      <div class="kad-peranan"><span class="ico">📊</span><strong>Pengurusan (Admin)</strong><p>Dashboard operasi penuh</p><a class="btn btn-block" href="#">Log Masuk →</a></div>
+      <div class="kad-peranan"><span class="ico">🌴</span><strong>Pemilik Ladang</strong><p>Ladang, hasil &amp; kos</p><a class="btn btn-block" href="#">Log Masuk →</a></div>
+      <div class="kad-peranan"><span class="ico">🛒</span><strong>Pembeli</strong><p>Proses belian &amp; dokumen</p><a class="btn btn-block" href="#">Log Masuk →</a></div>
+      <div class="kad-peranan"><span class="ico">⚖️</span><strong>Peguamcara</strong><p>Kes, dokumen &amp; status urus niaga</p><a class="btn btn-block" href="#">Log Masuk →</a></div>
+    </div>
+
+    <p style="font-size:12.5px;color:var(--muted);margin:14px 0 0">
+      Setiap butang membawa ke halaman log masuk <em>yang sama</em> (Supabase), dengan peranan dipilih awal —
+      supaya pengguna tidak perlu faham struktur URL. Peranan tambahan (Penjual, Pembiayaan, Pembeli Ladang, Pemilik-ladang, Tiket aduan) akan disenaraikan pada baris kedua.
+    </p>
+  </div>
+
+  <!-- ================= CADANGAN ================= -->
+  <h2 class="mock-h2">Cadangan Ali — gabungan A + B (satu tab, satu halaman, semua peranan)</h2>
+  <p class="mock-sub">Kekal mudah untuk pengguna biasa, tetapi lengkap untuk semua jenis akaun.</p>
+  <div class="mock-stage">
+    <span class="mock-tag">CADANGAN</span>
+    <p style="font-size:13.5px;margin:6px 0 10px">
+      <b>1.</b> Nav atas kedua-dua laman dapat tab <b>“Log Masuk”</b> (butang menonjol).<br>
+      <b>2.</b> Tab itu membuka <b>/portal/masuk.html</b> — halaman kad peranan seperti Pilihan B.<br>
+      <b>3.</b> Pilih peranan → halaman log masuk (akaun sedia ada) → <b>dashboard auto</b> ikut peranan akaun.<br>
+      <b>4.</b> Bila sudah log masuk, tab bertukar menjadi <b>“Dashboard saya”</b> (pintasan terus).
+    </p>
+    <div class="mockheader" style="border:1px dashed #D8E3F5;border-radius:12px;padding:10px 12px">
+      <span class="mockbrand">Mr Tanah</span>
+      <nav class="mocknav">
+        <a href="#">Utama</a>
+        <a href="#">Projek Baharu</a>
+        <a href="#">Tentang</a>
+        <a class="tab-login soft" href="#">👤 Dashboard saya</a>
+        <a class="tab-login" href="#">🔐 Log Masuk</a>
+      </nav>
+    </div>
+    <p style="font-size:12.5px;color:var(--muted);margin:10px 0 0">
+      Demo di atas menunjukkan keadaan <em>belum log masuk</em> (butang “Log Masuk”) dan <em>sudah log masuk</em> (“Dashboard saya”).
+      Keadaan sebenar dikesan automatik daripada sesi akaun.
+    </p>
+  </div>
+
+  <h2 class="mock-h2">Nota teknikal (untuk rekod)</h2>
+  <ul style="font-size:13.5px;color:var(--ink);line-height:1.75">
+    <li>Log masuk sedia ada: <code>/portal/login.html</code> (akaun peranan berbilang, satu akaun boleh ada banyak peranan).</li>
+    <li>Senarai peranan → dashboard sudah ada satu sumber kebenaran: <code>portal/assets/auth-nav.js</code> (11 peranan: admin, pemilik, penyewa, kontraktor, ejen, pembeli, penjual, peguamcara, pembiayaan, ladang, tiket aduan).</li>
+    <li>Halaman akses baharu yang dicadangkan: <code>/portal/masuk.html</code> (kad peranan + “Log Masuk”).</li>
+    <li>Tab disyorkan pada: <b>mrtanah.com</b> (semua halaman awam) dan <b>zahirmjproperty.com</b> (pautan ke log masuk yang sama) — untuk kelulusan Zahir.</li>
+    <li>Tiada URL baharu perlu diingat pengguna: mereka hanya perlu tahu <b>satu laman</b> → tab Log Masuk.</li>
+  </ul>
+
+  <p style="margin-top:22px;font-size:13px;color:var(--muted)">
+    Sedia untuk kelulusan Zahir: pilih <b>A</b>, <b>B</b>, atau <b>gabungan A+B (cadangan Ali)</b>. Selepas diluluskan, saya pasang di laman produksi dan sahkan pautan berfungsi.
+  </p>
+
+</div>
+</body>
+</html>
