@@ -32,14 +32,17 @@
     return keluar;
   }
 
-  /* Lukis bar pemilih. peranans = senarai peranan; semasa = peranan halaman ini (boleh kosong) */
+  /* Bar "Menu Utama" — dipaparkan pada SEMUA dashboard (walaupun 1 peranan sahaja).
+   * Arahan Zahir 15 Sep 2026: selepas log masuk pengguna nampak peranannya, boleh pilih dashboard
+   * mengikut peranan, dan boleh kembali ke Menu Utama untuk tukar peranan atau mohon peranan baharu. */
   function lukis(el, peranans, semasa) {
     if (!el) return false;
     var set = senarai(peranans);
-    if (set.length < 2) { el.innerHTML = ""; return false; }   // satu dashboard sahaja → tak perlu pemilih
-    var h = '<div class="phmt-nav" style="margin:0 0 12px;padding:9px 11px;background:#f4f7f9;border:1px solid #dbe4ea;border-radius:10px">'
-      + '<div style="font-size:12px;color:#5a6b76;margin-bottom:7px">Akses anda (' + set.length + ' dashboard) — pilih paparan:</div>'
-      + '<div class="btnrow" style="display:flex;flex-wrap:wrap;gap:6px">';
+    var h = '<div class="phmt-nav" style="margin:0 0 12px;padding:10px 12px;background:#f4f7f9;border:1px solid #dbe4ea;border-radius:10px">';
+    h += '<div style="display:flex;flex-wrap:wrap;gap:7px;align-items:center">'
+      + '<a class="btn ghost" style="text-decoration:none;font-size:13px" href="/portal/masuk.html">🏠 Menu Utama</a>'
+      + '<span style="font-size:12px;color:#5a6b76">Peranan anda' + (set.length ? " (" + set.length + ")" : "") + ":</span>";
+    if (!set.length) h += '<span style="font-size:12.5px;color:#5a6b76">tiada dashboard dikaitkan</span>';
     set.forEach(function (s) {
       var aktif = semasa && s.peranan === String(semasa).toUpperCase();
       if (!s.sedia) {
@@ -52,9 +55,44 @@
         h += '<a class="btn ghost" style="text-decoration:none;font-size:13px"' + nota + ' href="' + s.url + '">' + s.ico + " " + s.nama + "</a>";
       }
     });
+    h += '<a class="btn ghost" style="text-decoration:none;font-size:13px" href="/portal/daftar-peranan.html">➕ Permohonan Peranan</a>';
+    h += '<span style="flex:1"></span>';
+    h += '<button type="button" class="btn keluar" style="font-size:13px" id="phmtKeluar">🚪 Log Keluar</button>';
     h += "</div></div>";
     el.innerHTML = h;
+    var bk = document.getElementById("phmtKeluar");
+    if (bk) bk.onclick = function () { keluar(); };
     return true;
+  }
+
+  /* Log keluar dari peranti ini (peranti kongsi) — guna SDK jika ada, jika tidak guna REST Supabase. */
+  function keluar() {
+    if (typeof window === "undefined") return;
+    if (!confirm("Log keluar dari akaun anda pada peranti ini?")) return;
+    function selesai() { location.href = "/portal/login.html?keluar=1"; }
+    var A = window.AUTH || {};
+    var PR = String(A.url || "").replace(/^https?:\/\//, "").split(".")[0];
+    var KUNCI = PR ? ("sb-" + PR + "-auth-token") : "";
+    var tok = "";
+    try {
+      var raw = KUNCI ? localStorage.getItem(KUNCI) : "";
+      if (raw) { var d = JSON.parse(raw); tok = (d && (d.access_token || (d.currentSession && d.currentSession.access_token))) || ""; }
+    } catch (e) {}
+    function bersih() {
+      try { if (KUNCI) localStorage.removeItem(KUNCI); } catch (e) {}
+      try { localStorage.removeItem("mt_admin_token"); } catch (e) {}
+      try { sessionStorage.removeItem("mt_sesi_token"); } catch (e) {}
+      selesai();
+    }
+    if (window.supabase && window.supabase.createClient && A.url && A.key) {
+      try { window.supabase.createClient(A.url, A.key).auth.signOut().then(bersih, bersih); return; } catch (e) {}
+    }
+    if (tok && A.url) {
+      fetch(A.url.replace(/\/+$/, "") + "/auth/v1/logout", { method: "POST", headers: { apikey: A.key, Authorization: "Bearer " + tok } })
+        .then(bersih, bersih);
+      return;
+    }
+    bersih();
   }
 
   /* Ambil peranan dari pelayan (aksi=sesi) — pulangkan [] jika bukan mod log masuk */

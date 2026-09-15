@@ -63,13 +63,99 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/auth-config.js?v=2"></script>
-<script src="assets/auth-nav.js?v=8"></script>
+<script src="assets/auth-nav.js?v=9"></script>
 <script>
 var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
 var T = new URLSearchParams(location.search).get("t") || localStorage.getItem("mt_admin_token") || "";
 var MOD = "token";        /* "token" = admin_token lama · "login" = sesi log masuk */
 var SESI = null, SB = null;
 var D = null;
+
+/* ===== Kelulusan Peranan (arahan Zahir 15/9/2026) — senarai permohonan peranan perlu approval ===== */
+function authKuiri_() {
+  return (MOD === "login" && SESI && SESI.access_token)
+    ? "access_token=" + encodeURIComponent(SESI.access_token)
+    : "admin_token=" + encodeURIComponent(T);
+}
+function namaPeranan_(kod) {
+  try { var s = (window.PHMT && PHMT.SEMUA) ? PHMT.SEMUA[String(kod).toUpperCase()] : null; if (s) return s.nama; } catch (e) {}
+  return String(kod || "");
+}
+function ringkasMedan_(json) {
+  try {
+    var d = JSON.parse(json || "{}"), out = [], k;
+    for (k in d) if (d[k]) out.push(k + ": " + d[k]);
+    var t = out.join(" · ");
+    return t.length > 190 ? t.slice(0, 190) + "…" : t;
+  } catch (e) { return String(json || "").slice(0, 190); }
+}
+function muatPeranan() {
+  var box = document.getElementById("kadPeranan");
+  if (!box) return;
+  box.innerHTML = '<div class="card"><h2>🆕 Kelulusan peranan</h2><p class="nota">Memuatkan…</p></div>';
+  fetch(API + "?aksi=peranan-senarai&" + authKuiri_() + "&_=" + Date.now())
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      if (!d || !d.ok) {
+        box.innerHTML = '<div class="card"><h2>🆕 Kelulusan peranan</h2><p class="nota">' + esc((d && d.error) || "Tidak dapat dimuatkan.") + "</p></div>";
+        return;
+      }
+      var semua = d.senarai || [], tunggu = [], sudah = [];
+      semua.forEach(function (r) { (String(r.status).toUpperCase() === "MENUNGGU" ? tunggu : sudah).push(r); });
+      var h = '<div class="card"><h2>🆕 Kelulusan peranan <span class="badge">' + tunggu.length + " menunggu</span></h2>";
+      if (!tunggu.length) h += '<p class="nota">Tiada permohonan menunggu kelulusan.</p>';
+      else {
+        h += '<div style="overflow-x:auto"><table><thead><tr><th>No</th><th>Tarikh</th><th>Nama</th><th>Emel</th><th>Peranan dimohon</th><th>Maklumat</th><th>Tindakan</th></tr></thead><tbody>';
+        tunggu.forEach(function (r) {
+          h += "<tr><td><b>" + esc(r.no) + "</b></td><td>" + esc(r.tarikh) + "</td><td>" + esc(r.nama) + "</td><td>" + esc(r.emel) + "</td>"
+            + "<td><b>" + esc(namaPeranan_(r.peranan)) + "</b></td>"
+            + '<td style="font-size:12px;color:#5a6b76">' + esc(ringkasMedan_(r.medan)) + "</td>"
+            + '<td style="white-space:nowrap"><button class="btn" data-lulus="' + esc(r.no) + '">✅ Lulus</button> '
+            + '<button class="btn ghost" data-tolak="' + esc(r.no) + '">❌ Tolak</button></td></tr>';
+        });
+        h += "</tbody></table></div>";
+      }
+      if (sudah.length) {
+        h += '<p class="nota" style="margin-top:10px"><b>Sejarah terkini:</b> ';
+        sudah.slice(0, 6).forEach(function (r) {
+          h += "<br>" + esc(r.no) + " — " + esc(r.nama) + " · " + esc(namaPeranan_(r.peranan)) + " · <b>" + esc(r.status) + "</b> (" + esc(r.tindakan || r.tarikh) + ")";
+        });
+        h += "</p>";
+      }
+      h += "</div>";
+      box.innerHTML = h;
+      Array.prototype.forEach.call(box.querySelectorAll("[data-lulus]"), function (b) {
+        b.onclick = function () { tindakanPeranan_(b.getAttribute("data-lulus"), "lulus"); };
+      });
+      Array.prototype.forEach.call(box.querySelectorAll("[data-tolak]"), function (b) {
+        b.onclick = function () { tindakanPeranan_(b.getAttribute("data-tolak"), "tolak"); };
+      });
+    })
+    .catch(function (e) {
+      box.innerHTML = '<div class="card"><h2>🆕 Kelulusan peranan</h2><p class="nota">Ralat: ' + esc(String(e).slice(0, 80)) + "</p></div>";
+    });
+}
+function tindakanPeranan_(no, jenis) {
+  var sebab = "";
+  if (jenis === "tolak") {
+    sebab = prompt("Sebab ditolak (akan dihantar kepada pemohon):", "");
+    if (sebab === null) return;
+  }
+  var soalan = jenis === "lulus"
+    ? ("Luluskan permohonan No " + no + "?\nPeranan akan diberikan serta-merta kepada akaun pemohon.")
+    : ("Tolak permohonan No " + no + "?");
+  if (!confirm(soalan)) return;
+  var b = { form: jenis === "lulus" ? "peranan-lulus" : "peranan-tolak", consent: true, no: no, sebab: sebab };
+  if (MOD === "login" && SESI && SESI.access_token) b.access_token = SESI.access_token; else b.admin_token = T;
+  fetch(API, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(b) })
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      if (!d || !d.ok) { alert("Gagal: " + ((d && d.error) || "ralat")); return; }
+      alert(d.mesej || (jenis === "lulus" ? "Diluluskan." : "Ditolak."));
+      muatPeranan();
+    })
+    .catch(function (e) { alert("Ralat rangkaian: " + String(e).slice(0, 90)); });
+}
 
 function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
 function rm(n, dec) { return "RM" + Number(n || 0).toLocaleString("ms-MY", { minimumFractionDigits: dec == null ? 2 : dec, maximumFractionDigits: dec == null ? 2 : dec }); }
@@ -161,6 +247,7 @@ function lukis() {
   }
   var badge = D.__snap ? ('📦 Snapshot ' + esc(D.masa || '')) : ('🟢 Data langsung ' + esc(D.masa || ''));
   var h = '<div id="navPhmt"></div>'
+    + '<div id="kadPeranan"></div>'
     + '<p class="hint" style="margin:0 0 10px">Data setakat: <b>' + badge + '</b>'
     + (MOD === "login" ? ' · <a href="#" id="bKeluar" style="color:#0a5">Log keluar</a>' : '') + '</p>'
     + '<div class="kpis">'
@@ -243,6 +330,7 @@ function lukis() {
     + 'Butang <b>Tarik data terkini</b> cuba menarik data langsung dari pangkalan data MT (10–30 saat).</p></div>';
 
   document.getElementById("wrap").innerHTML = h;
+  muatPeranan();
   var bRe = document.getElementById("bRe"); if (bRe) bRe.onclick = function () { muatLive(false); };
   var bOut = document.getElementById("bOut");
   if (bOut) bOut.onclick = function () { localStorage.removeItem("mt_admin_token"); T = ""; splash("Telah log keluar."); login(); };

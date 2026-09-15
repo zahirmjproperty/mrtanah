@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Daftar Peranan Baharu — Portal Mr Tanah</title>
+<style>
+  :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; display:flex; min-height:100vh; flex-direction:column; }
+  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 58%,#14905c 100%); color:#fff; padding:16px; }
+  .topbar h1 { margin:0 0 3px; font-size:19px; }
+  .topbar p { margin:0; font-size:12.5px; opacity:.95; }
+  .wrap { flex:1; display:flex; align-items:flex-start; justify-content:center; padding:20px 14px 40px; }
+  .card { background:#fff; border:1px solid #dde5f2; border-radius:14px; padding:20px; width:100%; max-width:560px; box-shadow:0 4px 18px rgba(15,23,42,.06); }
+  .card h2 { margin:0 0 4px; font-size:18px; color:var(--mt-tua); }
+  .hint { font-size:12.6px; color:#5a6b61; margin:0 0 14px; }
+  label { display:block; font-size:12.8px; font-weight:700; margin:12px 0 5px; color:#33465e; }
+  input, select, textarea { width:100%; padding:12px; border:1.5px solid #cfdcd4; border-radius:10px; font-size:15px; background:#fff; }
+  input:focus, select:focus { outline:2px solid var(--mt); outline-offset:-1px; }
+  input[readonly] { background:#f6f8fa; }
+  .btn { width:100%; margin-top:16px; background:var(--mt); color:#fff; border:none; border-radius:10px; padding:13px; font-size:15px; font-weight:700; cursor:pointer; }
+  .btn.ghost { background:#fff; color:var(--mt); border:1.5px solid #c9d6ec; }
+  .btn:disabled { opacity:.6; cursor:default; }
+  .chiprow { display:flex; flex-wrap:wrap; gap:8px; }
+  .chip { border:1.5px solid #c9d6ec; background:#fff; color:var(--mt); border-radius:999px; padding:8px 13px; font-size:13.5px; font-weight:700; cursor:pointer; }
+  .chip.aktif { background:var(--mt); color:#fff; border-color:var(--mt); }
+  .msg { margin-top:13px; font-size:13px; border-radius:10px; padding:10px 12px; display:none; }
+  .msg.err { background:#fdeaea; color:#a11; border-left:4px solid #b3261e; display:block; }
+  .msg.ok { background:#e6f5ee; color:#0e5a33; border-left:4px solid var(--hijau); display:block; }
+  .msg.warn { background:#fff4e2; color:#8a4c00; border-left:4px solid #8a4c00; display:block; }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .note { margin-top:16px; font-size:11.9px; color:#5a6b61; border-top:1px dashed #cfdcd4; padding-top:12px; }
+  .consent-item { display:flex; gap:9px; align-items:flex-start; margin-top:8px; }
+  .consent-item input { width:auto; flex:0 0 auto; margin-top:3px; accent-color:var(--mt); }
+  .consent-item span { font-size:12.7px; }
+  .foot { text-align:center; font-size:11.5px; color:#5a6b61; padding:14px 10px 26px; }
+  @media(max-width:560px){ .row2 { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <h1>➕ Daftar Peranan Baharu</h1>
+  <p>Mohon tambah peranan pada akaun Portal Mr Tanah anda — kelulusan oleh Mr Tanah</p>
+</div>
+
+<div class="wrap">
+  <div class="card">
+    <h2>Permohonan peranan</h2>
+    <p class="hint" id="hint">Pilih peranan yang ingin dimohon, isi maklumat yang berkaitan, kemudian hantar.</p>
+
+    <div id="blokSesi" style="display:none">
+      <div class="msg err">⚠️ Anda perlu <b>log masuk</b> dahulu. <a href="masuk.html"><b>Ke halaman log masuk →</b></a></div>
+    </div>
+
+    <div id="blokBorang">
+      <label>Peranan yang dimohon</label>
+      <div class="chiprow" id="chips"></div>
+
+      <label>Nama penuh</label>
+      <input id="nama" placeholder="Nama seperti dalam kad pengenalan" autocomplete="name">
+
+      <div class="row2">
+        <div><label>No. WhatsApp</label><input id="wa" placeholder="01x-xxxxxxx" inputmode="tel" autocomplete="tel"></div>
+        <div><label>Emel akaun</label><input id="emel" readonly></div>
+      </div>
+
+      <div id="medanKhas"></div>
+
+      <label>Dokumen sokongan (pautan Drive — pilihan)</label>
+      <input id="dokumen" placeholder="Tampal pautan Google Drive fail SSM/lesen (jika ada)">
+
+      <label>Nota tambahan kepada Mr Tanah (pilihan)</label>
+      <textarea id="nota" rows="2" placeholder="Contoh: saya kontraktor bumbung, sudah bekerja dengan MT sejak 2024"></textarea>
+
+      <div class="consent-item">
+        <input type="checkbox" id="consent">
+        <span>Saya sahkan maklumat di atas benar, dan bersetuju Mr Tanah menyemak &amp; menyimpan maklumat ini untuk tujuan pengesahan peranan.</span>
+      </div>
+
+      <button class="btn" id="btnHantar">📨 Hantar permohonan</button>
+      <a class="btn ghost" href="masuk.html" style="display:block;text-align:center;text-decoration:none">← Kembali ke Menu Utama</a>
+    </div>
+
+    <div class="msg" id="msg"></div>
+
+    <div class="note">
+      Nota: peranan <b>Ejen</b> dan <b>Pengurusan</b> tidak boleh dimohon sendiri — ia diberikan melalui jemputan Mr Tanah.
+      Selepas dihantar, permohonan akan masuk ke <b>senarai kelulusan Mr Tanah</b>; anda dimaklumkan melalui emel sebaik diluluskan.
+    </div>
+  </div>
+</div>
+
+<div class="foot">Portal Mr Tanah — Mr Tanah (ZMJ Solutions) · 016-3119076</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/auth-config.js?v=2"></script>
+<script>
+var A = window.AUTH || {};
+var API = A.api;
+var sb = null, TOKEN = "", EMEL = "";
+
+var PERANAN = {
+  KONTRAKTOR:        { nama:"Kontraktor", ico:"🔧", medan:[["Nama syarikat / nama tukang","Cth: Kamsis Renovation"],["No. pendaftaran SSM (pilihan)","Cth: 202301234567"],["Jenis kerja","Cth: Renovasi, paip, elektrik, bumbung"],["Kawasan servis","Cth: Lembah Klang"],["Pengalaman (tahun)","Cth: 8"]] },
+  PENYEWA:           { nama:"Penyewa", ico:"🧾", medan:[["Unit / hartanah yang disewa","Cth: Apartment Miro 2 — Blok A-12-3"],["Tarikh mula sewa","Cth: 01/10/2026"],["Sewa bulanan (RM)","Cth: 1,300"],["Nama pemilik (jika tahu)","Cth: Puan Aisyah"]] },
+  PEMILIK_LADANG:    { nama:"Pemilik Ladang", ico:"🌴", medan:[["Lokasi ladang","Cth: Kuala Selangor"],["Keluasan (ekar)","Cth: 12"],["Jenis tanaman","Cth: Sawit, durian"],["No. geran / lot (jika ada)","Cth: Lot 1234, Mukim X"]] },
+  PEMBELI_HARTANAH:  { nama:"Pembeli Hartanah", ico:"🛒", medan:[["Jenis hartanah dicari","Cth: Teres 2 tingkat"],["Bajet (RM)","Cth: 450,000"],["Kawasan dicari","Cth: Bandar Baru Bangi"],["Pembiayaan","Cth: Bank / tunai / belum pasti"]] },
+  PENJUAL_HARTANAH:  { nama:"Penjual Hartanah", ico:"🏷️", medan:[["Hartanah yang dijual","Cth: Rumah teres Seksyen 4"],["Harga diminta (RM)","Cth: 480,000"],["Status milikan","Cth: Geran individu / sedang bayar bank"],["No. hakmilik (pilihan)","Cth: HSD 123456"]] },
+  SOLICITOR:         { nama:"Peguamcara", ico:"⚖️", medan:[["Nama firma guaman","Cth: Tetuan Harmoni & Co"],["No. lesen / bar","Cth: B/1234/2020"],["Bidang kepakaran","Cth: Urus niaga hartanah"],["Cawangan / kawasan","Cth: Kajang, Bangi"]] },
+  MORTGAGE_OFFICER:  { nama:"Penasihat Pembiayaan", ico:"🏦", medan:[["Syarikat / agensi","Cth: Mortgage Hub Sdn Bhd"],["Bank panel","Cth: Maybank, CIMB, RHB"],["Wilayah liputan","Cth: Selangor & KL"],["Pengalaman (tahun)","Cth: 6"]] }
+};
+var urutan = Object.keys(PERANAN);
+var dipilih = "KONTRAKTOR";
+
+function mesej(teks, jenis) {
+  var m = document.getElementById("msg");
+  m.className = "msg " + (jenis || "ok");
+  m.innerHTML = teks;
+}
+
+function chips() {
+  var h = "";
+  urutan.forEach(function (k) {
+    h += '<span class="chip' + (k === dipilih ? " aktif" : "") + '" data-k="' + k + '">' + PERANAN[k].ico + " " + PERANAN[k].nama + "</span>";
+  });
+  var el = document.getElementById("chips");
+  el.innerHTML = h;
+  Array.prototype.forEach.call(el.querySelectorAll(".chip"), function (c) {
+    c.onclick = function () { dipilih = c.getAttribute("data-k"); chips(); medanKhas(); };
+  });
+}
+
+function medanKhas() {
+  var d = PERANAN[dipilih], h = '<label style="margin-top:16px">Maklumat peranan — ' + d.nama + "</label>";
+  d.medan.forEach(function (m, i) {
+    h += '<label style="font-weight:600">' + m[0] + "</label>" +
+         '<input data-khas="' + m[0] + '" id="kh' + i + '" placeholder="' + m[1] + '" style="margin-bottom:6px">';
+  });
+  document.getElementById("medanKhas").innerHTML = h;
+}
+
+function kutipKhas() {
+  var out = {}, els = document.querySelectorAll("[data-khas]");
+  Array.prototype.forEach.call(els, function (e) {
+    var v = String(e.value || "").trim();
+    if (v) out[e.getAttribute("data-khas")] = v;
+  });
+  return out;
+}
+
+function sedia() {
+  if (typeof window.supabase === "undefined") return false;
+  sb = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true } });
+  return true;
+}
+
+function mula(cuba) {
+  cuba = cuba || 0;
+  if (!sedia()) {
+    if (cuba < 15) { setTimeout(function () { mula(cuba + 1); }, 400); }
+    else { document.getElementById("blokSesi").style.display = "block"; }
+    return;
+  }
+  sb.auth.getSession().then(function (o) {
+    var ss = (o.data && o.data.session) || null;
+    if (!ss) { document.getElementById("blokSesi").style.display = "block"; return; }
+    TOKEN = ss.access_token || "";
+    EMEL = (ss.user && ss.user.email) || "";
+    document.getElementById("emel").value = EMEL;
+    document.getElementById("blokBorang").style.display = "block";
+  });
+}
+chips(); medanKhas(); mula();
+
+document.getElementById("btnHantar").onclick = async function () {
+  if (!TOKEN) { mesej("⚠️ Sesi tidak dijumpai. Sila log masuk semula.", "err"); return; }
+  var nama = document.getElementById("nama").value.trim();
+  var wa = document.getElementById("wa").value.trim();
+  if (nama.length < 2) { mesej("⚠️ Nama penuh diperlukan.", "err"); return; }
+  if (!/^0?1\d{8,9}$/.test(wa.replace(/[\s-]/g, ""))) { mesej("⚠️ No. WhatsApp tidak sah (cth: 0123456789).", "err"); return; }
+  if (!document.getElementById("consent").checked) { mesej("⚠️ Sila tanda persetujuan sebelum hantar.", "err"); return; }
+
+  var medan = kutipKhas();
+  var nota = document.getElementById("nota").value.trim();
+  if (nota) medan["Nota kepada MT"] = nota;
+
+  var b = document.getElementById("btnHantar");
+  b.disabled = true; b.textContent = "⏳ Menghantar…";
+  try {
+    var r = await fetch(API, {
+      method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({
+        form: "peranan", consent: true, access_token: TOKEN,
+        peranan: dipilih, nama: nama, wa: wa,
+        medan: medan, dokumen: document.getElementById("dokumen").value.trim()
+      })
+    });
+    var d = await r.json();
+    if (!d.ok) { mesej("⚠️ " + (d.error || "Permohonan gagal dihantar."), "err"); }
+    else {
+      mesej("✅ Permohonan <b>" + PERANAN[dipilih].nama + "</b> dihantar (No <b>" + d.no + "</b>). " +
+            "Status: menunggu kelulusan Mr Tanah. Anda akan dimaklumkan melalui emel.", "ok");
+      b.textContent = "✅ Dihantar";
+    }
+  } catch (e) {
+    mesej("⚠️ Ralat rangkaian: " + String(e).slice(0, 90), "err");
+  }
+  if (b.textContent.indexOf("Dihantar") < 0) { b.disabled = false; b.textContent = "📨 Hantar permohonan"; }
+};
+</script>
+</body>
+</html>
