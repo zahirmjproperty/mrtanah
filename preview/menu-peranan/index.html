@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Mock-up — Menu Peranan &amp; Daftar Peranan Baharu | Portal Mr Tanah</title>
+<style>
+  :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --line:#dde5f2; --muted:#5a6b61; --bg:#f2f6f4; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:var(--bg); color:#1d2b24; line-height:1.5; }
+  .banner { background:#fff4e2; border-bottom:1px solid #f0dfb5; color:#7a5300; font-size:12.6px; padding:9px 14px; text-align:center; }
+  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 58%,#14905c 100%); color:#fff; padding:16px 14px; }
+  .topbar h1 { margin:0 0 3px; font-size:19px; }
+  .topbar p { margin:0; font-size:12.6px; opacity:.95; }
+  .wrap { max-width:1000px; margin:0 auto; padding:18px 14px 48px; }
+  h2 { font-size:16.5px; color:var(--mt-tua); margin:24px 0 4px; }
+  h2 .n { background:var(--mt); color:#fff; font-size:12px; border-radius:999px; padding:2px 8px; margin-right:6px; }
+  .sub { color:var(--muted); font-size:12.8px; margin:0 0 12px; }
+  .stage { background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px; box-shadow:0 4px 18px rgba(15,23,42,.06); position:relative; }
+  .tag { position:absolute; top:-10px; left:14px; background:#123a7a; color:#fff; font-size:11px; font-weight:700; letter-spacing:.4px; border-radius:999px; padding:3px 10px; }
+  .tag.alt { background:#14905c; }
+  .tag.zahir { background:#a11; }
+  .bar { display:flex; flex-wrap:wrap; gap:8px; align-items:center; border:1px solid var(--line); border-radius:12px; padding:10px 12px; background:#f7fafd; }
+  .bar b { font-size:14px; }
+  .chip { border:1.5px solid #c9d6ec; background:#fff; color:var(--mt); border-radius:999px; padding:6px 12px; font-size:13px; font-weight:700; cursor:pointer; }
+  .chip.aktif { background:var(--mt); color:#fff; border-color:var(--mt); }
+  .chip.daftar { border-color:#b9e2cd; background:#e6f5ee; color:#0e5a33; }
+  .btn { display:inline-block; background:var(--mt); color:#fff; border:none; border-radius:10px; padding:11px 15px; font-size:14px; font-weight:700; cursor:pointer; text-decoration:none; }
+  .btn.ghost { background:#fff; color:var(--mt); border:1.5px solid #c9d6ec; }
+  .btn.hijau { background:var(--hijau); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:12px; margin-top:12px; }
+  .kad { border:1px solid var(--line); border-radius:13px; padding:14px; display:flex; flex-direction:column; gap:8px; background:#fff; }
+  .kad.daftar { border:1.8px dashed #14905c; background:#f4fdf8; }
+  .kad .ico { font-size:22px; }
+  .kad strong { font-size:14.5px; color:var(--mt-tua); }
+  .kad p { margin:0; font-size:12.4px; color:var(--muted); }
+  .kad .btn { margin-top:auto; }
+  .msg { border-radius:10px; padding:10px 12px; font-size:13px; margin-top:12px; }
+  .msg.ok { background:#e6f5ee; color:#0e5a33; border-left:4px solid var(--hijau); }
+  .msg.info { background:#eef3fa; color:#123a7a; border-left:4px solid var(--mt); }
+  .msg.warn { background:#fff4e2; color:#8a4c00; border-left:4px solid #8a4c00; }
+  label { display:block; font-size:12.6px; font-weight:700; margin:11px 0 5px; color:#33465e; }
+  input, select, textarea { width:100%; padding:10px 11px; border:1.4px solid #cfdcd4; border-radius:9px; font-size:14px; background:#fff; }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  fieldset { border:1px solid var(--line); border-radius:11px; padding:12px 13px 15px; margin:12px 0 0; }
+  legend { font-size:12.4px; font-weight:700; color:var(--mt); padding:0 6px; }
+  .nota { font-size:12.3px; color:var(--muted); margin-top:10px; }
+  .foot { text-align:center; font-size:11.6px; color:var(--muted); padding:16px 10px 30px; }
+  .pill { font-size:11.4px; border-radius:999px; padding:3px 9px; display:inline-block; font-weight:700; }
+  .pill.kuning { background:#fff4e2; color:#8a4c00; border:1px solid #f0dfb5; }
+  table { width:100%; border-collapse:collapse; font-size:12.8px; margin-top:8px; }
+  th, td { text-align:left; border-bottom:1px solid var(--line); padding:7px 6px; }
+  th { color:var(--mt-tua); font-size:12.4px; }
+  @media (max-width:560px){ .row2{grid-template-columns:1fr} h2{font-size:15.5px} }
+</style>
+</head>
+<body>
+<div class="banner">MOCK-UP untuk kelulusan Zahir — reka bentuk sahaja, belum dipasang di produksi. Data pengguna di bawah ialah <b>contoh</b>.</div>
+<div class="topbar">
+  <h1>🧭 Menu Peranan &amp; Pendaftaran Peranan Baharu</h1>
+  <p>Permintaan Zahir (15 Sep 2026): selepas log masuk, pengguna nampak peranan mereka → pilih dashboard → boleh kembali ke menu utama untuk tukar peranan → dan boleh <b>mendaftar peranan baharu</b>.</p>
+</div>
+
+<div class="wrap">
+
+  <!-- ============ 1. MENU UTAMA SELEPAS LOG MASUK ============ -->
+  <h2><span class="n">1</span>Selepas log masuk — Menu Utama (peranan pengguna)</h2>
+  <p class="sub">Pengguna nampak semua peranan yang ada pada akaunnya, buka dashboard pilihan, atau mohon peranan baharu.</p>
+  <div class="stage">
+    <span class="tag">SELEPAS LOG MASUK</span>
+    <div class="msg ok">✅ Selamat datang, <b>Encik Zahir</b> — akaun anda ada <b>3 peranan</b>. Pilih dashboard untuk dibuka:</div>
+
+    <div class="grid">
+      <div class="kad">
+        <span class="ico">🏠</span><strong>Dashboard Pemilik</strong>
+        <p>Unit, sewa, bil &amp; laporan</p>
+        <button class="btn">Buka dashboard →</button>
+      </div>
+      <div class="kad">
+        <span class="ico">🧑‍💼</span><strong>Dashboard Ejen</strong>
+        <p>Listing, papan COA, serahan dokumen</p>
+        <button class="btn">Buka dashboard →</button>
+      </div>
+      <div class="kad">
+        <span class="ico">🛒</span><strong>Dashboard Pembeli</strong>
+        <p>Proses belian &amp; dokumen</p>
+        <button class="btn">Buka dashboard →</button>
+      </div>
+
+      <!-- kad pendaftaran peranan baharu -->
+      <div class="kad daftar">
+        <span class="ico">➕</span><strong>Daftar peranan baharu</strong>
+        <p>Mohon tambah peranan pada akaun anda (contoh: jadi Kontraktor, Penyewa, Peguamcara)</p>
+        <button class="btn hijau" onclick="document.getElementById('bhgDaftar').scrollIntoView({behavior:'smooth'})">Mohon peranan baharu →</button>
+      </div>
+    </div>
+
+    <div class="msg info">🔎 Tidak nampak peranan yang sepatutnya? Hubungi Mr Tanah (016-3119076) — atau guna <b>Daftar peranan baharu</b> di atas.</div>
+  </div>
+
+  <!-- ============ 2. DALAM DASHBOARD ============ -->
+  <h2><span class="n">2</span>Dalam dashboard — bar “Menu Utama” + tukar peranan</h2>
+  <p class="sub">Setiap dashboard ada bar yang sama (satu sumber: auth-nav.js). Pengguna boleh kembali ke Menu Utama atau terus tukar ke dashboard peranan lain.</p>
+  <div class="stage">
+    <span class="tag alt">DALAM DASHBOARD</span>
+
+    <div class="bar">
+      <a class="btn ghost" href="#menu" style="padding:8px 12px;font-size:13px">🏠 Menu Utama</a>
+      <span style="color:#5a6b76;font-size:13px">Peranan anda:</span>
+      <span class="chip aktif">🏠 Pemilik</span>
+      <span class="chip">🧑‍💼 Ejen</span>
+      <span class="chip">🛒 Pembeli</span>
+      <span class="chip daftar">➕ Peranan baharu</span>
+      <span style="flex:1"></span>
+      <span class="chip" style="border-color:#e7b4b4;color:#a11">🚪 Log Keluar</span>
+    </div>
+
+    <div class="msg warn" style="margin-top:14px">📍 Anda sedang melihat <b>Dashboard Pemilik</b>. Klik peranan lain di bar atas untuk terus bertukar dashboard — atau <b>Menu Utama</b> untuk kembali ke senarai penuh.</div>
+
+    <p class="nota">Perubahan berbanding sekarang: bar ini akan muncul pada <b>semua</b> dashboard (sekarang hanya muncul jika akaun ada 2+ peranan dan tiada butang “Menu Utama”).</p>
+  </div>
+
+  <!-- ============ 3. DAFTAR PERANAN BAHARU ============ -->
+  <h2 id="bhgDaftar"><span class="n">3</span>Daftar peranan baharu — borang ikut jenis peranan</h2>
+  <p class="sub">Pengguna pilih peranan yang dimohon, isi medan yang berkaitan, hantar untuk kelulusan Mr Tanah.</p>
+  <div class="stage">
+    <span class="tag zahir">BORANG PENDAFTARAN</span>
+
+    <label style="margin-top:4px">Peranan yang dimohon</label>
+    <div style="display:flex;flex-wrap:wrap;gap:8px">
+      <span class="chip" onclick="papar('kontraktor')" id="c-kontraktor">🔧 Kontraktor</span>
+      <span class="chip aktif" onclick="papar('ejen')" id="c-ejen">🧑‍💼 Ejen</span>
+      <span class="chip" onclick="papar('penyewa')" id="c-penyewa">🧾 Penyewa</span>
+      <span class="chip" onclick="papar('pembeli')" id="c-pembeli">🛒 Pembeli</span>
+      <span class="chip" onclick="papar('solicitor')" id="c-solicitor">⚖️ Peguamcara</span>
+      <span class="chip" onclick="papar('pembiayaan')" id="c-pembiayaan">🏦 Pembiayaan</span>
+      <span class="chip" onclick="papar('pemilikladang')" id="c-pemilikladang">🌴 Pemilik Ladang</span>
+    </div>
+
+    <fieldset>
+      <legend>Maklumat asas (semua permohonan)</legend>
+      <div class="row2">
+        <div><label>Nama penuh</label><input value="Zahiruddin bin Mat Jailaini"></div>
+        <div><label>Emel akaun</label><input value="zahirmj.property@gmail.com" readonly style="background:#f6f8fa"></div>
+      </div>
+      <div class="row2">
+        <div><label>No. WhatsApp</label><input value="012-2310119"></div>
+        <div><label>No. Kad Pengenalan (untuk pengesahan)</label><input placeholder="860101-14-XXXX"></div>
+      </div>
+    </fieldset>
+
+    <fieldset id="medanKhas">
+      <legend id="tajukKhas">Medan khusus — Ejen</legend>
+      <div id="borangKhas"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Persetujuan &amp; bukti</legend>
+      <label style="font-weight:400;display:flex;gap:8px;align-items:flex-start;margin-top:4px">
+        <input type="checkbox" checked style="width:auto;margin-top:3px">
+        <span style="font-size:12.6px">Saya sahkan maklumat di atas benar dan bersetuju Mr Tanah menyemak/menyimpan maklumat ini untuk pengesahan peranan.</span>
+      </label>
+      <label>Muat naik dokumen sokongan (SSM / lesen / surat lantikan — jika ada)</label>
+      <input type="file" style="padding:8px">
+    </fieldset>
+
+    <div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:14px">
+      <button class="btn hijau">📨 Hantar permohonan</button>
+      <button class="btn ghost">Batal</button>
+    </div>
+
+    <div class="msg ok" style="margin-top:14px">📋 Selepas dihantar: permohonan masuk ke senarai <b>“Permohonan Peranan”</b> untuk kelulusan Mr Tanah. Pengguna dapat notifikasi <b>“menunggu kelulusan”</b>, dan peranan muncul pada Menu Utama sebaik diluluskan.</div>
+
+    <p class="nota">Nota: pilihan peranan yang boleh dimohon, medan bagi setiap peranan, dan siapa yang meluluskan — Zahir boleh tetapkan. Cadangan Ali: hanya peranan yang berkaitan perkhidmatan MT boleh dimohon sendiri (Kontraktor, Penyewa, Pemilik Ladang, Pembeli/Penjual, Peguamcara, Pembiayaan); peranan <b>Ejen</b> dan <b>Pengurusan (Admin)</b> hanya melalui jemputan MT (elak salah guna).</p>
+  </div>
+
+  <!-- ============ 4. YANG PERLU DIBINA ============ -->
+  <h2><span class="n">4</span>Apa yang perlu dibina di belakang tabir (selepas Zahir lulus)</h2>
+  <div class="stage">
+    <table>
+      <tr><th>Komponen</th><th>Status sekarang</th><th>Kerja</th></tr>
+      <tr><td>Halaman <b>Menu Utama</b> peranan</td><td>Halaman Akses sudah senaraikan dashboard, tetapi tiada kad “Daftar peranan baharu”</td><td>Tambah kad + pautan</td></tr>
+      <tr><td>Bar <b>Menu Utama + tukar peranan</b> dalam semua dashboard</td><td>auth-nav.js hanya lukis jika 2+ peranan, tanpa butang Menu Utama</td><td>Kemas kini auth-nav.js (satu fail → semua dashboard)</td></tr>
+      <tr><td>Borang <b>Daftar peranan baharu</b></td><td>Belum ada</td><td>Halaman baharu + medan dinamik ikut peranan</td></tr>
+      <tr><td>Penyimpanan permohonan</td><td>Belum ada</td><td>Tab baharu <b>“Permohonan Peranan”</b> (Sheets MT) + notifikasi ke MT/Ali</td></tr>
+      <tr><td>Kelulusan + pemberian peranan</td><td>Peranan disimpan pada akaun (Supabase/Sheet)</td><td>MT luluskan → peranan ditambah pada akaun → muncul di Menu Utama</td></tr>
+    </table>
+    <div class="msg info">Semua kerja di atas hanya berlaku <b>selepas Zahir luluskan</b> reka bentuk ini. Mock-up ini tiada kesan pada sistem hidup.</div>
+  </div>
+</div>
+
+<div class="foot">Mock-up · Portal Mr Tanah — Mr Tanah (ZMJ Solutions)</div>
+
+<script>
+  var MEDAN = {
+    ejen: { tajuk:"Medan khusus — Ejen", medan:[
+      ["Agensi / syarikat","Contoh: ZMJ Solutions Sdn Bhd"],
+      ["No. pendaftaran REN / PEA","Contoh: REN 12345 / PEA 2684"],
+      ["Kawasan fokus","Contoh: Bangi, Kajang, Putrajaya"],
+      ["Pengalaman (tahun)","Contoh: 5"]
+    ]},
+    kontraktor: { tajuk:"Medan khusus — Kontraktor", medan:[
+      ["Nama syarikat / nama tukang","Contoh: Kamsis Renovation"],
+      ["No. pendaftaran SSM (pilihan)","Contoh: 202301234567"],
+      ["Jenis kerja","Contoh: Renovasi, paip, elektrik, bumbung"],
+      ["Kawasan servis","Contoh: Lembah Klang"],
+      ["Pengalaman (tahun)","Contoh: 8"]
+    ]},
+    penyewa: { tajuk:"Medan khusus — Penyewa", medan:[
+      ["Unit / hartanah yang disewa","Contoh: Apartment Miro 2 — Blok A-12-3"],
+      ["Tarikh mula sewa","Contoh: 01/10/2026"],
+      ["Sewa bulanan (RM)","Contoh: 1,300"],
+      ["Nama pemilik (jika tahu)","Contoh: Puan Aisyah"]
+    ]},
+    pembeli: { tajuk:"Medan khusus — Pembeli", medan:[
+      ["Jenis hartanah dicari","Contoh: Teres 2 tingkat"],
+      ["Bajet (RM)","Contoh: 450,000"],
+      ["Kawasan dicari","Contoh: Bandar Baru Bangi"],
+      ["Pembiayaan","Contoh: Bank / tunai / belum pasti"]
+    ]},
+    solicitor: { tajuk:"Medan khusus — Peguamcara", medan:[
+      ["Nama firma guaman","Contoh: Tetuan Harmoni & Co"],
+      ["No. lesen / bar","Contoh: B/1234/2020"],
+      ["Bidang kepakaran","Contoh: Urus niaga hartanah"],
+      ["Cawangan / kawasan","Contoh: Kajang, Bangi"]
+    ]},
+    pembiayaan: { tajuk:"Medan khusus — Penasihat Pembiayaan", medan:[
+      ["Syarikat / agensi","Contoh: Mortgage Hub Sdn Bhd"],
+      ["Bank panel","Contoh: Maybank, CIMB, RHB"],
+      ["Wilayah liputan","Contoh: Selangor & KL"],
+      ["Pengalaman (tahun)","Contoh: 6"]
+    ]},
+    pemilikladang: { tajuk:"Medan khusus — Pemilik Ladang", medan:[
+      ["Lokasi ladang","Contoh: Kuala Selangor"],
+      ["Keluasan (ekar)","Contoh: 12"],
+      ["Jenis tanaman","Contoh: Sawit, durian"],
+      ["No. geran / lot (jika ada)","Contoh: Lot 1234, Mukim X"]
+    ]}
+  };
+  function papar(k){
+    document.querySelectorAll('[id^="c-"]').forEach(function(e){ e.classList.remove('aktif'); });
+    var c = document.getElementById('c-' + k); if (c) c.classList.add('aktif');
+    var d = MEDAN[k]; if (!d) return;
+    document.getElementById('tajukKhas').textContent = d.tajuk;
+    var h = '';
+    d.medan.forEach(function(m){
+      h += '<label>' + m[0] + '</label><input placeholder="' + m[1] + '" style="margin-bottom:10px">';
+    });
+    h += '<p class="nota">Medan ini contoh — setiap peranan ada senarai sendiri, ditetapkan oleh Zahir.</p>';
+    document.getElementById('borangKhas').innerHTML = h;
+  }
+  papar('ejen');
+</script>
+</body>
+</html>
