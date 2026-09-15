@@ -111,8 +111,54 @@
     </p>
   </div>
 
+  <!-- ================= LOG KELUAR (permintaan Zahir 15/9) ================= -->
+  <h2 class="mock-h2">3. Pilihan <b>Log Keluar</b> selepas log masuk (keselamatan peranti kongsi)</h2>
+  <p class="mock-sub">Zahir: “bila dah masuk ke akaun, ada pilihan untuk log keluar — memastikan akaun pengguna selamat bila menggunakan peranti yang dikongsi.”</p>
+
+  <div class="mock-stage">
+    <span class="mock-tag">TAMBAHAN ZAHIR</span>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px">
+      <div style="border:1px solid #dbe4ea;border-radius:12px;padding:12px;background:#fff">
+        <small style="color:#5a6b76">(a) Tab nav bila sudah log masuk</small>
+        <div style="margin-top:9px;border:1px solid #dbe4ea;border-radius:10px;padding:9px 11px;display:flex;gap:9px;align-items:center;font-size:13.5px;flex-wrap:wrap">
+          <b>Mr Tanah</b>
+          <span style="color:#5a6b76">Utama</span>
+          <span style="color:#5a6b76">Projek Baharu</span>
+          <span class="btn" style="padding:7px 11px;font-size:13px">👤 Dashboard saya</span>
+          <span class="btn" style="padding:7px 11px;font-size:13px;background:#fff;color:#a11;border:1.6px solid #e7b4b4">🚪 Log Keluar</span>
+        </div>
+        <p style="font-size:12.4px;color:#5f6b7a;margin:9px 0 0">Butang merah “Log Keluar” sentiasa kelihatan sebaik sahaja pengguna log masuk — di semua halaman awam.</p>
+      </div>
+
+      <div style="border:1px solid #dbe4ea;border-radius:12px;padding:12px;background:#fff">
+        <small style="color:#5a6b76">(b) Dalam halaman Akses &amp; dalam dashboard</small>
+        <div style="margin-top:9px;border:1px solid #dbe4ea;border-radius:10px;padding:11px">
+          <div style="background:#e6f5ee;border-left:4px solid #14905c;border-radius:8px;padding:8px 10px;font-size:12.8px;color:#0e5a33">✅ Selamat kembali, <b>Encik Zahir</b> — akaun aktif pada peranti ini (PEMILIK_HARTANAH).</div>
+          <div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:9px">
+            <span class="btn" style="padding:8px 11px;font-size:12.8px">🏠 Dashboard Pemilik</span>
+            <span class="btn" style="padding:8px 11px;font-size:12.8px;background:#fff;color:#a11;border:1.6px solid #e7b4b4">🚪 Log Keluar</span>
+            <span class="btn" style="padding:8px 11px;font-size:12.8px;background:#fff;color:#0f2a55;border:1.5px solid #c9d6ec">Log keluar dari semua peranti</span>
+          </div>
+        </div>
+        <p style="font-size:12.4px;color:#5f6b7a;margin:9px 0 0">Nota keselamatan dipaparkan: “Peranti kongsi? Tekan Log Keluar selepas selesai.”</p>
+      </div>
+    </div>
+
+    <p style="font-size:13px;margin:14px 0 0">
+      <b>Sudah ada dalam sistem:</b> setiap dashboard (pemilik, penyewa, ejen, kontraktor, pembiayaan…) sudah ada butang “Log keluar” sendiri —
+      fungsi <code>signOut()</code> Supabase yang sama. Tambahan ini meletakkannya di <b>tab nav</b> dan <b>halaman akses</b>, supaya pengguna
+      yang berkongsi peranti tidak perlu masuk ke dalam dashboard untuk keluar.
+    </p>
+    <p style="font-size:13px;margin:10px 0 0">
+      <b>Halaman SEBENAR (boleh klik sekarang, belum dipasang di nav):</b>
+      <a href="https://mrtanah.com/portal/masuk.html" target="_blank" rel="noopener"><b>https://mrtanah.com/portal/masuk.html</b></a>
+      — paparan belum-log-masuk sudah siap; paparan sudah-log-masuk (kad hijau di atas) hanya muncul apabila akaun benar-benar log masuk.
+    </p>
+  </div>
+
   <!-- ================= CADANGAN ================= -->
-  <h2 class="mock-h2">Cadangan Ali — gabungan A + B (satu tab, satu halaman, semua peranan)</h2>
+  <h2 class="mock-h2">Cadangan Ali — gabungan A + B (satu tab, satu halaman, semua peranan) + Log Keluar</h2>
   <p class="mock-sub">Kekal mudah untuk pengguna biasa, tetapi lengkap untuk semua jenis akaun.</p>
   <div class="mock-stage">
     <span class="mock-tag">CADANGAN</span>
