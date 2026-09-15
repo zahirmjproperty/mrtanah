@@ -1,4 +1,5 @@
 {
+ "__cache": 1,
  "amaran": [
   {
    "butir": "Due 2026-09-17 · 2 hari lagi",
@@ -166,7 +167,7 @@
   "wo_aktif": 1,
   "wo_nilai": 14250
  },
- "masa": "2026-09-15 11:30",
+ "masa": "2026-09-15 11:45",
  "ok": true,
  "sumber": {
   "kerja": "1hq58IQSSexqw87-kiY0fnq755Gwc-SIRyqbApPaUlPg",
@@ -200,8 +201,8 @@
    "pemilik": "Pn. Zaleha Ibrahim",
    "ref": "MT-K-2026-0003",
    "sla": {
-    "baki": -25,
-    "berlalu": 97,
+    "baki": -26,
+    "berlalu": 98,
     "jam": 72,
     "keadaan": "late"
    },
