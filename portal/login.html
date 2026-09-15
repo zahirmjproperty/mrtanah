@@ -193,6 +193,21 @@ document.getElementById("fReset").addEventListener("submit", async function (e) 
   } catch (err) { mesej("⚠️ Ralat: " + String(err).slice(0, 90), "err"); }
 });
 
+/* Petunjuk dari halaman Akses (masuk.html): ?peranan=… dan mesej selepas log keluar (?keluar=1) */
+(function petunjukAkses() {
+  var q = new URLSearchParams(location.search);
+  if (q.get("keluar")) mesej("🚪 Anda telah log keluar. Akaun tidak lagi aktif pada peranti ini.", "ok");
+  var pr = (q.get("peranan") || "").toUpperCase();
+  if (pr && window.PHMT) {
+    var s = PHMT.senarai([pr]);
+    if (s.length) {
+      var h = document.querySelector(".hint");
+      if (h) h.innerHTML = "Anda memilih <b>" + s[0].ico + " " + s[0].nama + "</b>. " +
+        "Log masuk dengan emel &amp; kata laluan anda — anda akan dibawa terus ke dashboard.";
+    }
+  }
+})();
+
 function mula(cuba) {
   cuba = cuba || 0;
   if (sedia()) {
