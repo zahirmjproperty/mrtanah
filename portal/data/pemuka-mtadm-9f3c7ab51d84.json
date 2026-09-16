@@ -166,7 +166,7 @@
   "wo_aktif": 1,
   "wo_nilai": 14250
  },
- "masa": "2026-09-16 16:45",
+ "masa": "2026-09-16 17:30",
  "ok": true,
  "sumber": {
   "kerja": "1hq58IQSSexqw87-kiY0fnq755Gwc-SIRyqbApPaUlPg",
@@ -182,8 +182,8 @@
    "pemilik": "En. Hafiz Roslan",
    "ref": "MT-K-2026-0002",
    "sla": {
-    "baki": -55,
-    "berlalu": 127,
+    "baki": -56,
+    "berlalu": 128,
     "jam": 72,
     "keadaan": "late"
    },
