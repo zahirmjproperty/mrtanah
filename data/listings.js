@@ -4116,6 +4116,60 @@ window.LISTINGS = [
     "active": true
   },
   {
+    "tracking": "MTCOA-0046",
+    "title": "Tanah Pertanian 2.7 Ekar, Sungai Rambai, Melaka (Freehold)",
+    "type": "Tanah",
+    "location": "Sungai Rambai, Melaka",
+    "state": "Melaka",
+    "price": 530000,
+    "price_label": "RM530,000",
+    "price_old": null,
+    "land_area": "2.7 ekar (117,612 sqft)",
+    "built_up": "-",
+    "tenure": "Freehold",
+    "sekatan": "Open",
+    "kategori": "Pertanian",
+    "zoning": "Pertanian",
+    "psf": 5,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "sewa_price": null,
+    "sewa_label": null,
+    "highlights": [
+      "2.7 ekar (117,612 kaki persegi) tanah rata",
+      "Freehold, non-bumi",
+      "Kategori & zon penggunaan: pertanian",
+      "Lebih kurang RM4.50 sekaki persegi",
+      "Dilalui parit / drainase",
+      "Lokasi Sungai Rambai, Melaka — harga boleh runding"
+    ],
+    "description": "Tanah pertanian seluas 2.7 ekar (117,612 kaki persegi) di Sungai Rambai, Melaka, dengan pegangan Freehold dan bukan bumi lot. Tanah berbentuk rata dan dilalui parit atau drainase, manakala kategori penggunaan tanah serta zonnya adalah pertanian. Harga permintaan RM530,000 (boleh runding), bersamaan lebih kurang RM4.50 sekaki persegi.",
+    "amenities": [
+      "Tanah rata (flat land)",
+      "Dilalui parit / drainase",
+      "Zon pertanian"
+    ],
+    "nearby": [
+      "Pekan Sungai Rambai",
+      "Daerah Jasin",
+      "Bandar Melaka"
+    ],
+    "map_url": "https://www.google.com/maps/search/?api=1&query=Sungai%20Rambai%2C%20Melaka",
+    "project": "",
+    "project_name": "",
+    "unit": "",
+    "source": "Mr Tanah",
+    "date": "2026-09-17",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1K9i3sLOqKwzJyaoImEsl6ecoaqhHLEMU=w1000",
+      "https://lh3.googleusercontent.com/d/1TYXOMLtM3MLziENfbFQxHfQSnDc_ouhK=w1000",
+      "https://lh3.googleusercontent.com/d/1Pv1qZnUuTlHlP0c68u1mtjR8quqjOxAM=w1000"
+    ],
+    "active": true
+  },
+  {
     "tracking": "MTCOA-0003",
     "title": "Tanah Pembangunan Bukit Damar Dengkil",
     "type": "Tanah",
