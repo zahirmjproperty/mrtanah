@@ -4170,6 +4170,65 @@ window.LISTINGS = [
     "active": true
   },
   {
+    "tracking": "MTCOA-0047",
+    "title": "Tanah Lot Bungalow, Bandar Bukit Mahkota, Bangi (Freehold, Individual Title)",
+    "type": "Tanah",
+    "location": "Bandar Bukit Mahkota, Seksyen 7, Bangi",
+    "state": "Selangor",
+    "price": 441600,
+    "price_label": "RM441,600",
+    "price_old": null,
+    "land_area": "9,600 sqft (80' x 120')",
+    "built_up": "-",
+    "tenure": "Freehold",
+    "sekatan": "Non-Bumi",
+    "kategori": "Kediaman",
+    "zoning": "Kediaman",
+    "psf": 46,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "sewa_price": null,
+    "sewa_label": null,
+    "highlights": [
+      "9,600 kaki persegi (80' x 120') — tanah lot bungalow, bentuk empat segi",
+      "Freehold dengan individual title, bukan bumi lot",
+      "Bangunan kediaman — tanah rata, sedia untuk dibina",
+      "Kemudahan infrastruktur di kawasan sudah sedia",
+      "Lokasi Bandar Bukit Mahkota, Seksyen 7, Bangi (Selangor)",
+      "Harga permintaan RM441,600 — boleh runding"
+    ],
+    "description": "Tanah lot bungalow untuk dijual di Bandar Bukit Mahkota, Seksyen 7, Bangi, Selangor — seluas lebih kurang 9,600 kaki persegi (80' x 120') dengan bentuk tanah empat segi dan rata. Pegangan Freehold dengan individual title serta bukan bumi lot, manakala kategori penggunaan tanah adalah bangunan kediaman. Kemudahan infrastruktur di kawasan sudah sedia dan tanah berada dalam keadaan sedia untuk dibangunkan. Harga permintaan RM441,600 (boleh runding).",
+    "amenities": [
+      "Tanah rata berbentuk empat segi",
+      "Infrastruktur sudah sedia",
+      "Bangunan kediaman (individual title)",
+      "Jalan masuk Jalan BM 7/13"
+    ],
+    "nearby": [
+      "Bandar Bukit Mahkota",
+      "Seksyen 7, Bandar Baru Bangi",
+      "Kajang",
+      "LEKAS / SILK Highway"
+    ],
+    "map_url": "https://www.google.com/maps/search/?api=1&query=Bandar%20Bukit%20Mahkota%2C%20Seksyen%207%2C%20Bangi",
+    "project": "",
+    "project_name": "",
+    "unit": "",
+    "source": "Mr Tanah",
+    "date": "2026-09-17",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1yMWrfh35lyS4ckFgotVvEz74a7aqu-RC=w1000",
+      "https://lh3.googleusercontent.com/d/1aM24lR3PVYEXMu73CGDm0iY4P4QCW_s0=w1000",
+      "https://lh3.googleusercontent.com/d/1fLBd9n4HH5zIJWA4KG7iOayJ4nBDnpET=w1000",
+      "https://lh3.googleusercontent.com/d/1dBvl85t-g1Ng_m7UCG78TYKzkCd8CGBe=w1000",
+      "https://lh3.googleusercontent.com/d/1vxk3K-a6cyeAstby1-X2AdjaLF86TIXY=w1000",
+      "https://lh3.googleusercontent.com/d/1qSNayBFEaDibseFKAxBfOq72smc53Y2s=w1000"
+    ],
+    "active": true
+  },
+  {
     "tracking": "MTCOA-0003",
     "title": "Tanah Pembangunan Bukit Damar Dengkil",
     "type": "Tanah",
