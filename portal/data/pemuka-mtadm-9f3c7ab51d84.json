@@ -1,13 +1,13 @@
 {
  "amaran": [
   {
-   "butir": "Due 2026-09-17 · 0 hari lagi",
+   "butir": "Due 2026-09-17 · DAH LEWAT 1 hari",
    "tahap": "merah",
    "tahap_utama": true,
    "tajuk": "5 invois sewa belum dibayar — RM2751.60"
   },
   {
-   "butir": "Due 2026-10-08 · 21 hari lagi",
+   "butir": "Due 2026-10-08 · 20 hari lagi",
    "tahap": "kuning",
    "tajuk": "6 bil utiliti belum bayar — RM766.45"
   },
@@ -166,7 +166,7 @@
   "wo_aktif": 1,
   "wo_nilai": 14250
  },
- "masa": "2026-09-17 23:45",
+ "masa": "2026-09-18 00:00",
  "ok": true,
  "sumber": {
   "kerja": "1hq58IQSSexqw87-kiY0fnq755Gwc-SIRyqbApPaUlPg",
