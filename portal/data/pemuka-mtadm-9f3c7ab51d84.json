@@ -166,7 +166,7 @@
   "wo_aktif": 1,
   "wo_nilai": 14250
  },
- "masa": "2026-09-17 10:30",
+ "masa": "2026-09-17 10:45",
  "ok": true,
  "sumber": {
   "kerja": "1hq58IQSSexqw87-kiY0fnq755Gwc-SIRyqbApPaUlPg",
@@ -200,8 +200,8 @@
    "pemilik": "Pn. Zaleha Ibrahim",
    "ref": "MT-K-2026-0003",
    "sla": {
-    "baki": -72,
-    "berlalu": 144,
+    "baki": -73,
+    "berlalu": 145,
     "jam": 72,
     "keadaan": "late"
    },
