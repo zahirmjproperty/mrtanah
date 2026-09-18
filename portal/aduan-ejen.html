@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Portal Ejen Rujukan — Status Kes — Mr Tanah</title>
+<title>Referral Agent Portal — Case Status — Zentra Portal</title>
 <style>
   :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; --ungu:#7a4bbd; }
   * { box-sizing:border-box; margin:0; padding:0; }
@@ -43,10 +43,10 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>🤝 Portal Ejen Rujukan</h1>
-    <p>Mr Tanah — pantau kes yang anda rujuk</p>
+    <h1>🤝 Referral Agent Portal</h1>
+    <p>Mr Tanah — track the cases you refer</p>
   </div>
-  <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
+  <div class="wrap" id="wrap"><div class="splash">Loading…</div></div>
 <script>
 var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
 var TOKEN = new URLSearchParams(location.search).get("t") || "";
@@ -59,36 +59,36 @@ function stCls(s){ s = String(s||"").toUpperCase();
   if (s.indexOf("DALAM KERJA")>=0 || s.indexOf("TUNTUTAN")>=0 || s.indexOf("SIAP")>=0 || s.indexOf("WO")>=0) return "s-claim";
   if (s.indexOf("TIDAK")>=0 || s.indexOf("GAGAL")>=0) return "s-bad";
   return "s-wait"; }
-function bersih(x){ return String(x||"").replace(/\s*\|\s*Unit:.*$/i, ""); }
+function bersih(x){ return String(x||"").replace(/\s*\|\s*[Uu]nit:.*$/i, ""); }
 function ratingTxt(r){ return r && r.nilai ? ' <span class="rate">★ ' + r.nilai + '/5</span>' : ""; }
 
 function render(d){
-  if (!d.ok) { splash("⚠️ " + esc(d.error || "Pautan tidak sah atau sudah tamat.") + "<br><br>Sila hubungi Mr Tanah: WhatsApp 016-3119076"); return; }
+  if (!d.ok) { splash("⚠️ " + esc(d.error || "Invalid or expired link.") + "<br><br>Please contact Mr Tanah: WhatsApp 016-3119076"); return; }
   var e = d.ejen || {}, h = "";
-  h += '<div class="card"><h2>👤 ' + esc(e.nama || d.nama) + '</h2><div class="meta">Pautan peribadi anda — jangan kongsi.<br>' +
-       (e.ren ? '<b>REN:</b> ' + esc(e.ren) + (e.agensi ? ' · <b>Agensi:</b> ' + esc(e.agensi) : '') + '<br>' : '') +
-       (e.tel ? '<b>Telefon:</b> ' + esc(e.tel) : '') + '</div>' +
-       '<div class="hint">Anda hanya nampak kes yang <b>dirujuk oleh anda</b>. Maklumat kes dikemas kini automatik.</div></div>';
+  h += '<div class="card"><h2>👤 ' + esc(e.nama || d.nama) + '</h2><div class="meta">Your private link — do not share.<br>' +
+       (e.ren ? '<b>REN:</b> ' + esc(e.ren) + (e.agensi ? ' · <b>Agency:</b> ' + esc(e.agensi) : '') + '<br>' : '') +
+       (e.tel ? '<b>Phone:</b> ' + esc(e.tel) : '') + '</div>' +
+       '<div class="hint">You only see cases <b>you referred</b>. Case information is updated automatically.</div></div>';
 
   var kes = d.kes || [];
   if (!kes.length) {
-    h += '<div class="card"><div class="hint" style="margin:0">Belum ada kes yang dirujuk kepada Mr Tanah dengan nama anda. Beritahu Mr Tanah (WhatsApp ' + esc((e.tel || "016-3119076")) + ') jika sepatutnya ada.</div></div>';
+    h += '<div class="card"><div class="hint" style="margin:0">No cases have been referred to Mr Tanah under your name yet. Tell Mr Tanah (WhatsApp ' + esc((e.tel || "016-3119076")) + ') if there should be one.</div></div>';
   }
   kes.forEach(function(k){
-    h += '<div class="card"><h2>📋 Kes Rujukan — ' + esc(k.ref) + ' <span class="st ' + stCls(k.status) + '">' + esc(k.status) + '</span></h2>' +
-      '<div class="meta"><b>📍 Unit:</b> ' + esc(k.unit) + '<br>' +
-      '<b>Jenis kerja:</b> ' + esc(k.jenis) + '<br>' +
-      '<b>👤 Pemilik:</b> ' + esc(k.pemilik || "-") + (k.pemilik_tel ? ' · ' + esc(k.pemilik_tel) : '') + '<br>' +
-      (k.kontraktor ? '<b>🔧 Kontraktor dipilih:</b> ' + esc(k.kontraktor) + (k.kontraktor_tel ? ' · ' + esc(k.kontraktor_tel) : '') + ratingTxt(k.rating) + '<br>'
-                    : '<b>🔧 Kontraktor:</b> belum dipilih pemilik<br>') +
-      (k.nilai ? '<b>Nilai kerja diluluskan:</b> ' + rp(k.nilai) + '<br>' : '') +
+    h += '<div class="card"><h2>📋 Referral Case — ' + esc(k.ref) + ' <span class="st ' + stCls(k.status) + '">' + esc(k.status) + '</span></h2>' +
+      '<div class="meta"><b>📍 Property:</b> ' + esc(k.unit) + '<br>' +
+      '<b>Work type:</b> ' + esc(k.jenis) + '<br>' +
+      '<b>👤 Owner:</b> ' + esc(k.pemilik || "-") + (k.pemilik_tel ? ' · ' + esc(k.pemilik_tel) : '') + '<br>' +
+      (k.kontraktor ? '<b>🔧 Selected contractor:</b> ' + esc(k.kontraktor) + (k.kontraktor_tel ? ' · ' + esc(k.kontraktor_tel) : '') + ratingTxt(k.rating) + '<br>'
+                    : '<b>🔧 Contractor:</b> not yet selected by the owner<br>') +
+      (k.nilai ? '<b>Approved work value:</b> ' + rp(k.nilai) + '<br>' : '') +
       (k.no_wo ? '<b>No WO:</b> ' + esc(k.no_wo) + '<br>' : '') +
-      '<b>Tarikh aduan:</b> ' + esc(k.tarikh) + (k.tarikh_tutup ? '<br><b>Tarikh tutup:</b> ' + esc(k.tarikh_tutup) : '') + '</div>';
-    if (k.keterangan) h += '<div class="hint">Keterangan: ' + esc(k.keterangan).replace(/\n/g, "<br>") + '</div>';
+      '<b>Report date:</b> ' + esc(k.tarikh) + (k.tarikh_tutup ? '<br><b>Closed on:</b> ' + esc(k.tarikh_tutup) : '') + '</div>';
+    if (k.keterangan) h += '<div class="hint">Description: ' + esc(k.keterangan).replace(/\n/g, "<br>") + '</div>';
 
     var tl = k.timeline || [];
     if (tl.length) {
-      h += '<div class="hint" style="margin-top:11px;font-weight:700;color:#0a1f44">Kemajuan</div><div class="tl">';
+      h += '<div class="hint" style="margin-top:11px;font-weight:700;color:#0a1f44">Progress</div><div class="tl">';
       tl.forEach(function(x, i){
         var cls = i === tl.length - 1 ? "now" : "done";
         h += '<div class="ev ' + cls + '"><b>' + esc(x.aksi) + '</b><i>' + esc(x.masa) + '</i>' +
@@ -96,19 +96,19 @@ function render(d){
       });
       h += '</div>';
     }
-    h += '<div class="lock">🔒 <b>Bahagian dalaman MT</b> (kos pengurusan MT, kadar &amp; bayaran balasan rujukan) tidak dipaparkan di halaman ini — hanya pada Papan MT. Pertanyaan: WhatsApp Mr Tanah 016-3119076.</div>';
+    h += '<div class="lock">🔒 <b>MT internal section</b> (MT management cost, referral rate &amp; rewards) is not shown on this page — only on the MT Board. Enquiries: WhatsApp Mr Tanah 016-3119076.</div>';
     h += '</div>';
   });
 
-  h += '<p class="foot">Mr Tanah · ZMJ Solutions (002093603-H) · halaman peribadi — jangan kongsi pautan ini</p>';
+  h += '<p class="foot">Mr Tanah · ZMJ Solutions (002093603-H) · private page — do not share this link</p>';
   wrap.innerHTML = h;
 }
 
-if (!TOKEN) splash("⚠️ Pautan tidak lengkap (tiada token). Guna pautan yang dihantar Mr Tanah.");
+if (!TOKEN) splash("⚠️ Incomplete link (no token). Use the link sent by Mr Tanah.");
 else fetch(API + "?aksi=ejen&token=" + encodeURIComponent(TOKEN))
   .then(function(r){ return r.json(); })
   .then(render)
-  .catch(function(){ splash("Ralat memuatkan data. Sila muat semula halaman."); });
+  .catch(function(){ splash("Failed to load data. Please reload the page."); });
 </script>
 <script src="../assets/fasa1.js?v=1"></script>
 <script src="../assets/ali-config.js?v=1"></script>

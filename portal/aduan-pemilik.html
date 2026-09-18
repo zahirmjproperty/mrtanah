@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Portal Tuan Rumah — Status Pembaikan Unit — Mr Tanah</title>
+<title>Homeowner Portal — Repair Status — Zentra Portal</title>
 <style>
   :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; }
   * { box-sizing:border-box; margin:0; padding:0; }
@@ -57,10 +57,10 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>🏡 Portal Tuan Rumah</h1>
-    <p>Mr Tanah — pantau status pembaikan unit anda</p>
+    <h1>🏡 Homeowner Portal</h1>
+    <p>Mr Tanah — track the repair status of your property</p>
   </div>
-  <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
+  <div class="wrap" id="wrap"><div class="splash">Loading…</div></div>
 <script>
 var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
 var TOKEN = new URLSearchParams(location.search).get("t") || "";
@@ -88,61 +88,61 @@ function iconAksi(a){ a = String(a||"");
   if (a.indexOf("REVIEW")>=0) return "⭐";
   if (a.indexOf("EMEL")>=0) return "✉️";
   return "•"; }
-function bersih(x){ return String(x||"").replace(/\s*\|\s*Unit:.*$/i, ""); }
+function bersih(x){ return String(x||"").replace(/\s*\|\s*[Uu]nit:.*$/i, ""); }
 function ratingTxt(r){ return r && r.nilai ? '<span class="rate">★ ' + r.nilai + '/5</span>' : ""; }
 
 function render(d){
-  if (!d.ok) { splash("⚠️ " + esc(d.error || "Pautan tidak sah atau sudah tamat.") + "<br><br>Sila hubungi Mr Tanah: WhatsApp 016-3119076"); return; }
+  if (!d.ok) { splash("⚠️ " + esc(d.error || "Invalid or expired link.") + "<br><br>Please contact Mr Tanah: WhatsApp 016-3119076"); return; }
   var t = d.tiket, h = "", p = d.pihak || {};
   var pem = p.pemilik || {}, ej = p.ejen, kd = p.kontraktor, mt = p.mt || {};
 
-  /* 1. Aduan */
-  h += '<div class="card"><h2>📋 Aduan Anda — ' + esc(t.ref) + '</h2><div class="meta">' +
-       '<b>Nama pemilik:</b> ' + esc(pem.nama || "-") + (pem.tel ? ' · ' + esc(pem.tel) : '') + '<br>' +
-       '<b>Unit:</b> ' + esc(t.unit) + '<br>' +
-       '<b>Kerosakan:</b> ' + esc(t.jenis) + '<br>' +
-       '<b>Keterangan:</b> ' + esc(t.keterangan).replace(/\n/g, "<br>") + '<br>' +
-       '<b>Status kerja:</b> <span class="st ' + stCls(t.status) + '">' + esc(t.status) + '</span>' +
-       (d.wo && d.wo.tarikh_siap ? ' · siap sasaran <b>' + esc(d.wo.tarikh_siap) + '</b>' : '') +
-       (t.folder ? '<br><a href="' + esc(t.folder) + '" target="_blank" style="color:#123a7a">📁 Folder gambar/dokumen aduan</a>' : '') +
+  /* 1. Report */
+  h += '<div class="card"><h2>📋 Your Report — ' + esc(t.ref) + '</h2><div class="meta">' +
+       '<b>Owner name:</b> ' + esc(pem.nama || "-") + (pem.tel ? ' · ' + esc(pem.tel) : '') + '<br>' +
+       '<b>Property:</b> ' + esc(t.unit) + '<br>' +
+       '<b>Fault:</b> ' + esc(t.jenis) + '<br>' +
+       '<b>Description:</b> ' + esc(t.keterangan).replace(/\n/g, "<br>") + '<br>' +
+       '<b>Work status:</b> <span class="st ' + stCls(t.status) + '">' + esc(t.status) + '</span>' +
+       (d.wo && d.wo.tarikh_siap ? ' · target completion <b>' + esc(d.wo.tarikh_siap) + '</b>' : '') +
+       (t.folder ? '<br><a href="' + esc(t.folder) + '" target="_blank" style="color:#123a7a">📁 Report photos/documents folder</a>' : '') +
        '</div></div>';
 
-  /* 2. Pihak terlibat */
-  h += '<div class="card"><h2>👥 Pihak Terlibat</h2><div class="parti">' +
-       '<div><span>Pemilik</span><b>' + esc(pem.nama || "-") + '</b>' + esc(pem.tel || "") + '</div>' +
-       ((p.pelapor && p.pelapor.nama) ? '<div><span>Pelapor aduan</span><b>' + esc(p.pelapor.nama) + '</b>' + esc(p.pelapor.tel || "") + '</div>' : '') +
-       (kd ? '<div><span>Kontraktor dipilih</span><b>' + esc(kd.nama) + '</b>' + (kd.telefon ? esc(kd.telefon) : "") + ' ' + ratingTxt(kd.rating) + '</div>'
-           : '<div><span>Kontraktor</span><b>Belum dipilih</b>Nama dipaparkan selepas anda meluluskan</div>') +
-       (ej ? '<div><span>Ejen rujukan</span><b>' + esc(ej.nama) + '</b>' + (ej.ren ? 'REN ' + esc(ej.ren) + ' · ' : '') + esc(ej.tel || "") + '</div>' : '') +
-       '<div><span>Pengurus MT</span><b>' + esc(mt.nama || "Mr Tanah") + '</b>' + esc(mt.tel || "016-3119076") + '</div>' +
-       '<div><span>No. Rujukan</span><b>' + esc(t.ref) + '</b>' + (d.wo ? 'WO ' + esc(d.wo.no_wo) : '') + '</div>' +
+  /* 2. Parties involved */
+  h += '<div class="card"><h2>👥 Parties Involved</h2><div class="parti">' +
+       '<div><span>Owner</span><b>' + esc(pem.nama || "-") + '</b>' + esc(pem.tel || "") + '</div>' +
+       ((p.pelapor && p.pelapor.nama) ? '<div><span>Reported by</span><b>' + esc(p.pelapor.nama) + '</b>' + esc(p.pelapor.tel || "") + '</div>' : '') +
+       (kd ? '<div><span>Selected contractor</span><b>' + esc(kd.nama) + '</b>' + (kd.telefon ? esc(kd.telefon) : "") + ' ' + ratingTxt(kd.rating) + '</div>'
+           : '<div><span>Contractor</span><b>Not selected yet</b>Name is shown after you approve</div>') +
+       (ej ? '<div><span>Referral agent</span><b>' + esc(ej.nama) + '</b>' + (ej.ren ? 'REN ' + esc(ej.ren) + ' · ' : '') + esc(ej.tel || "") + '</div>' : '') +
+       '<div><span>MT Manager</span><b>' + esc(mt.nama || "Mr Tanah") + '</b>' + esc(mt.tel || "016-3119076") + '</div>' +
+       '<div><span>Reference No.</span><b>' + esc(t.ref) + '</b>' + (d.wo ? 'WO ' + esc(d.wo.no_wo) : '') + '</div>' +
        '</div></div>';
 
-  /* 3. Sebut harga + kontraktor dipilih */
+  /* 3. Quotations + selected contractor */
   if (d.sebutharga && d.sebutharga.length) {
-    h += '<div class="card"><h2>📊 Sebut Harga' + (d.sudah_pilih ? ' &amp; Kontraktor Dipilih' : '') + '</h2><table>' +
-         '<tr><th>Sebut harga</th><th class="num">Jumlah</th><th>Tempoh</th><th>Waranti</th><th>Status</th></tr>';
+    h += '<div class="card"><h2>📊 Quotations' + (d.sudah_pilih ? ' &amp; Selected Contractor' : '') + '</h2><table>' +
+         '<tr><th>Quotation</th><th class="num">Total</th><th>Duration</th><th>Warranty</th><th>Status</th></tr>';
     d.sebutharga.forEach(function(s){
       h += '<tr' + (s.terpilih ? ' class="sel"' : '') + '><td>' + esc(s.nama_papar) + ' ' + ratingTxt(s.rating) + '</td>' +
-           '<td class="num">' + rp(s.jumlah) + '</td><td>' + esc(s.tempoh) + ' hari</td><td>' + esc(s.waranti) + ' bln</td>' +
+           '<td class="num">' + rp(s.jumlah) + '</td><td>' + esc(s.tempoh) + ' days</td><td>' + esc(s.waranti) + ' months</td>' +
            '<td><span class="st ' + (s.terpilih ? 's-ok' : (String(s.status).indexOf("TIDAK")>=0 ? 's-bad' : 's-wait')) + '">' + esc(s.status) + '</span></td></tr>';
     });
     h += '</table>';
     if (!d.sudah_pilih) {
-      h += '<label>Pilih sebut harga</label><select id="selSH"><option value="">— Pilih —</option>';
-      d.sebutharga.forEach(function(s){ if (String(s.status).indexOf("TIDAK") < 0) h += '<option value="' + esc(s.ref_sh) + '">' + esc(s.nama_papar) + ' — ' + rp(s.jumlah) + ' (' + esc(s.tempoh) + ' hari, waranti ' + esc(s.waranti) + ' bln)</option>'; });
-      h += '</select><button class="btn" id="btnLulus">✅ Luluskan Sebut Harga Ini</button>' +
-           '<button class="btn ghost" id="btnTolak">⚠️ Tolak / Minta Semak Semula</button><div id="mPilih"></div>' +
-           '<div class="hint">Nama kontraktor sengaja disorok sebagai Kontraktor A/B/C supaya pilihan dibuat atas nilai kerja, tempoh &amp; waranti. Sebaik anda meluluskan, nama penuh, telefon &amp; penilaian kontraktor akan dipaparkan dan diemel kepada anda. Anda hanya membayar jumlah sebut harga yang diluluskan — tiada caj tambahan.</div>';
+      h += '<label>Select a quotation</label><select id="selSH"><option value="">— Select —</option>';
+      d.sebutharga.forEach(function(s){ if (String(s.status).indexOf("TIDAK") < 0) h += '<option value="' + esc(s.ref_sh) + '">' + esc(s.nama_papar) + ' — ' + rp(s.jumlah) + ' (' + esc(s.tempoh) + ' days, warranty ' + esc(s.waranti) + ' months)</option>'; });
+      h += '</select><button class="btn" id="btnLulus">✅ Approve This Quotation</button>' +
+           '<button class="btn ghost" id="btnTolak">⚠️ Reject / Request Review</button><div id="mPilih"></div>' +
+           '<div class="hint">Contractor names are deliberately hidden as Contractor A/B/C so the choice is based on work value, duration &amp; warranty. As soon as you approve, the full name, phone number &amp; rating of the contractor will be shown and emailed to you. You only pay the approved quotation total — there are no extra charges.</div>';
     } else {
-      h += '<div class="ok">✅ Anda telah meluluskan sebut harga. Maklumat kontraktor dipaparkan di atas &amp; telah diemel kepada anda.</div>';
+      h += '<div class="ok">✅ You have approved a quotation. The contractor details are shown above &amp; have been emailed to you.</div>';
     }
     h += '</div>';
   }
 
-  /* 4. Kemajuan kerja (timeline) */
+  /* 4. Work progress (timeline) */
   if (d.timeline && d.timeline.length) {
-    h += '<div class="card"><h2>🕒 Kemajuan Kerja</h2><div class="tl">';
+    h += '<div class="card"><h2>🕒 Work Progress</h2><div class="tl">';
     var n = d.timeline.length;
     d.timeline.forEach(function(e, i){
       var cls = i === n - 1 ? "now" : "done";
@@ -150,35 +150,35 @@ function render(d){
            '<i>' + esc(e.masa) + (e.oleh ? ' · ' + esc(e.oleh) : '') + '</i>' +
            (bersih(e.butiran) ? '<p>' + esc(bersih(e.butiran)) + '</p>' : '') + '</div>';
     });
-    h += '</div><div class="hint">Setiap kemajuan direkod automatik. Anda juga akan dimaklumkan melalui emel / WhatsApp.</div></div>';
+    h += '</div><div class="hint">Every progress update is recorded automatically. You will also be notified by email / WhatsApp.</div></div>';
   }
 
-  /* 5. Gambar bukti */
+  /* 5. Evidence photos */
   var adaBkt = (d.tahap || []).some(function(x){ return x.folder_bukti; }) || (d.wo && d.wo.folder_laporan);
-  h += '<div class="card"><h2>📸 Gambar Bukti Kerja</h2>';
-  if (!adaBkt) h += '<div class="hint" style="margin:0">Belum ada gambar dimuat naik oleh kontraktor. Gambar progress akan muncul di sini setiap kali kontraktor menghantar tuntutan.</div>';
+  h += '<div class="card"><h2>📸 Work Evidence Photos</h2>';
+  if (!adaBkt) h += '<div class="hint" style="margin:0">No photos uploaded by the contractor yet. Progress photos will appear here each time the contractor submits a claim.</div>';
   (d.tahap || []).forEach(function(x){
     if (!x.folder_bukti) return;
-    h += '<a class="bkt" href="' + esc(x.folder_bukti) + '" target="_blank">📷<span><b>Tahap ' + esc(x.tahap) + ' — ' + esc(x.perkara) + '</b>' +
-         '<small>Dimuat naik ' + esc(x.tuntutan || "-") + ' · klik untuk lihat gambar</small></span></a>';
+    h += '<a class="bkt" href="' + esc(x.folder_bukti) + '" target="_blank">📷<span><b>Stage ' + esc(x.tahap) + ' — ' + esc(x.perkara) + '</b>' +
+         '<small>Uploaded ' + esc(x.tuntutan || "-") + ' · click to view photos</small></span></a>';
   });
   if (d.wo && d.wo.folder_laporan) {
-    h += '<a class="bkt" href="' + esc(d.wo.folder_laporan) + '" target="_blank">🏁<span><b>Laporan kerja siap</b>' +
-         '<small>' + esc(d.wo.siap_sebenar || "-") + ' · klik untuk lihat gambar</small></span></a>';
+    h += '<a class="bkt" href="' + esc(d.wo.folder_laporan) + '" target="_blank">🏁<span><b>Completed work report</b>' +
+         '<small>' + esc(d.wo.siap_sebenar || "-") + ' · click to view photos</small></span></a>';
   }
   h += '</div>';
 
-  /* 6. Kerja & bayaran */
+  /* 6. Work & payments */
   if (d.wo) {
     var r = d.ringkasan || {};
-    h += '<div class="card"><h2>📄 Kerja &amp; Bayaran <span class="st ' + stCls(d.wo.status) + '">' + esc(d.wo.status) + '</span></h2>' +
-      '<div class="meta"><b>No WO:</b> ' + esc(d.wo.no_wo) + ' · <b>Kontraktor:</b> ' + esc(d.wo.kontraktor) + ratingTxt((kd||{}).rating) +
-      '<br><b>📍 Alamat unit:</b> <b>' + esc(t.unit) + '</b>' +
-      '<br><b>Nilai kontrak:</b> ' + rp(d.wo.jumlah) + ' · <b>Mula:</b> ' + esc(d.wo.tarikh_mula) + ' · <b>Siap sasaran:</b> ' + esc(d.wo.tarikh_siap) +
-      (d.wo.siap_sebenar ? '<br><b>Siap sebenar:</b> ' + esc(d.wo.siap_sebenar) : '') +
-      (d.wo.waranti ? '<br><b>Waranti hingga:</b> ' + esc(d.wo.waranti) : '') + '</div>';
+    h += '<div class="card"><h2>📄 Work &amp; Payments <span class="st ' + stCls(d.wo.status) + '">' + esc(d.wo.status) + '</span></h2>' +
+      '<div class="meta"><b>No WO:</b> ' + esc(d.wo.no_wo) + ' · <b>Contractor:</b> ' + esc(d.wo.kontraktor) + ratingTxt((kd||{}).rating) +
+      '<br><b>📍 Property address:</b> <b>' + esc(t.unit) + '</b>' +
+      '<br><b>Contract value:</b> ' + rp(d.wo.jumlah) + ' · <b>Start:</b> ' + esc(d.wo.tarikh_mula) + ' · <b>Target completion:</b> ' + esc(d.wo.tarikh_siap) +
+      (d.wo.siap_sebenar ? '<br><b>Actual completion:</b> ' + esc(d.wo.siap_sebenar) : '') +
+      (d.wo.waranti ? '<br><b>Warranty until:</b> ' + esc(d.wo.waranti) : '') + '</div>';
     if (d.tahap && d.tahap.length) {
-      h += '<table style="margin-top:10px"><tr><th>Tahap</th><th>Perkara</th><th class="num">Anda bayar</th><th>Status</th></tr>';
+      h += '<table style="margin-top:10px"><tr><th>Stage</th><th>Item</th><th class="num">You pay</th><th>Status</th></tr>';
       d.tahap.forEach(function(s){
         h += '<tr><td>' + esc(s.tahap) + '</td><td>' + esc(s.perkara) + '</td>' +
              '<td class="num">' + (s.bayaran_pemilik === "" || s.bayaran_pemilik == null ? '—' : rp(s.bayaran_pemilik)) + '</td>' +
@@ -187,26 +187,26 @@ function render(d){
       h += '</table>';
     }
     if (r.jumlah_jadual) {
-      h += '<div class="hint">Jumlah yang anda bayar: <b>' + rp(r.jumlah_jadual) + '</b> (' + rp(r.dibayar) + ' telah dibayar · baki <b>' + rp(r.baki) + '</b>). Retensi 5% ditahan daripada bayaran kontraktor sebagai jaminan kerja — bukan bayaran tambahan kepada anda.</div>';
+      h += '<div class="hint">Total you pay: <b>' + rp(r.jumlah_jadual) + '</b> (' + rp(r.dibayar) + ' paid · balance <b>' + rp(r.baki) + '</b>). A 5% retention is withheld from the contractor payment as a work guarantee — it is not an extra charge to you.</div>';
     }
-    h += '<div class="hint">Cara bayar: pautan Billplz yang dihantar Mr Tanah, ATAU pindahan bank + emel bukti ke mrtanahmy@gmail.com (nyatakan No. Rujukan/WO).</div>';
+    h += '<div class="hint">How to pay: the Billplz link sent by Mr Tanah, OR bank transfer + email the proof to mrtanahmy@gmail.com (state the Reference/WO No.).</div>';
 
     if (d.wo.qc === "LULUS" && !d.wo.terimaan) {
-      h += '<div class="ok">✅ Kerja telah dilaporkan siap oleh kontraktor dan <b>lulus QC Mr Tanah</b>. Sila sahkan terimaan.</div>' +
-           '<label>Nota (jika ada)</label><textarea id="notaTerima" placeholder="cth. Ada sedikit cat tertinggal — minta bersihkan."></textarea>' +
-           '<button class="btn" id="btnTerima">👍 Saya TERIMA Kerja Ini</button><div id="mTerima"></div>';
+      h += '<div class="ok">✅ The contractor has reported the work as complete and it <b>passed QC by Mr Tanah</b>. Please confirm acceptance.</div>' +
+           '<label>Notes (if any)</label><textarea id="notaTerima" placeholder="e.g. Some paint was missed — please clean it up."></textarea>' +
+           '<button class="btn" id="btnTerima">👍 I ACCEPT This Work</button><div id="mTerima"></div>';
     } else if (d.wo.terimaan && !d.wo.review) {
-      h += '<div class="ok">✅ Terimaan anda direkod pada ' + esc(d.wo.terimaan) + '. Sila beri penilaian.</div>' +
+      h += '<div class="ok">✅ Your acceptance was recorded on ' + esc(d.wo.terimaan) + '. Please give a rating.</div>' +
            '<div class="stars" id="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>' +
-           '<label>Komen</label><textarea id="komenRev"></textarea>' +
-           '<button class="btn ghost" id="btnReview">📩 Hantar Penilaian</button><div id="mRev"></div>';
+           '<label>Comment</label><textarea id="komenRev"></textarea>' +
+           '<button class="btn ghost" id="btnReview">📩 Submit Rating</button><div id="mRev"></div>';
     } else if (d.wo.review) {
-      h += '<div class="ok">🙏 Terima kasih — penilaian anda (' + esc(d.wo.review) + '★) sudah direkod. Kerja ini selesai.</div>';
+      h += '<div class="ok">🙏 Thank you — your rating (' + esc(d.wo.review) + '★) has been recorded. This job is complete.</div>';
     }
-    h += '<a class="bkt" href="https://wa.me/' + esc(String(mt.tel || "0163119076").replace(/[^0-9]/g,"").replace(/^0/,"60")) + '" target="_blank">💬<span><b>Hubungi Pengurus MT</b><small>' + esc(mt.tel || "016-3119076") + ' — WhatsApp</small></span></a></div>';
+    h += '<a class="bkt" href="https://wa.me/' + esc(String(mt.tel || "0163119076").replace(/[^0-9]/g,"").replace(/^0/,"60")) + '" target="_blank">💬<span><b>Contact MT Manager</b><small>' + esc(mt.tel || "016-3119076") + ' — WhatsApp</small></span></a></div>';
   }
 
-  h += '<p class="foot">Mr Tanah · ZMJ Solutions (002093603-H) · halaman peribadi — jangan kongsi pautan ini</p>';
+  h += '<p class="foot">Mr Tanah · ZMJ Solutions (002093603-H) · private page — do not share this link</p>';
   wrap.innerHTML = h; bind();
 }
 
@@ -214,31 +214,31 @@ function bind(){
   var b1 = document.getElementById("btnLulus");
   if (b1) b1.onclick = function(){
     var ref = document.getElementById("selSH").value;
-    if (!ref) { msg("mPilih", '<div class="err">Sila pilih satu sebut harga dahulu.</div>'); return; }
-    if (!confirm("Luluskan sebut harga ini? Nama & maklumat kontraktor akan dipaparkan dan diemel kepada anda.")) return;
-    b1.disabled = true; b1.textContent = "Menghantar…";
+    if (!ref) { msg("mPilih", '<div class="err">Please select a quotation first.</div>'); return; }
+    if (!confirm("Approve this quotation? The contractor name & details will be shown and emailed to you.")) return;
+    b1.disabled = true; b1.textContent = "Sending…";
     post({ form:"lulus", ref_sh:ref }).then(function(r){
-      msg("mPilih", r.ok ? '<div class="ok">✅ Diluluskan — ' + rp(r.jumlah) + '. Maklumat kontraktor diemel kepada anda. Mr Tanah akan keluarkan Work Order.</div>' : '<div class="err">❌ ' + esc(r.error) + '</div>');
+      msg("mPilih", r.ok ? '<div class="ok">✅ Approved — ' + rp(r.jumlah) + '. The contractor details have been emailed to you. Mr Tanah will issue the Work Order.</div>' : '<div class="err">❌ ' + esc(r.error) + '</div>');
       if (r.ok) setTimeout(function(){ location.reload(); }, 1600);
-      else { b1.disabled = false; b1.textContent = "✅ Luluskan Sebut Harga Ini"; }
-    }).catch(function(){ b1.disabled = false; b1.textContent = "✅ Luluskan Sebut Harga Ini"; msg("mPilih", '<div class="err">Ralat rangkaian.</div>'); });
+      else { b1.disabled = false; b1.textContent = "✅ Approve This Quotation"; }
+    }).catch(function(){ b1.disabled = false; b1.textContent = "✅ Approve This Quotation"; msg("mPilih", '<div class="err">Network error.</div>'); });
   };
   var b2 = document.getElementById("btnTolak");
   if (b2) b2.onclick = function(){
-    var sebab = prompt("Sebab tolak / semak semula (penyewa, pemilik, harga, dsb):");
+    var sebab = prompt("Reason for rejection / review (tenant, owner, price, etc.):");
     if (sebab === null) return;
     b2.disabled = true;
     post({ form:"tolak", ref_sh: (document.getElementById("selSH").value || ""), sebab: sebab }).then(function(r){
-      msg("mPilih", r.ok ? '<div class="ok">Direkod. Mr Tanah akan hubungi anda.</div>' : '<div class="err">❌ ' + esc(r.error) + '</div>');
+      msg("mPilih", r.ok ? '<div class="ok">Recorded. Mr Tanah will contact you.</div>' : '<div class="err">❌ ' + esc(r.error) + '</div>');
       b2.disabled = false;
     });
   };
   var b3 = document.getElementById("btnTerima");
   if (b3) b3.onclick = function(){
-    if (!confirm("Sahkan anda TERIMA kerja ini?")) return;
-    b3.disabled = true; b3.textContent = "Menghantar…";
+    if (!confirm("Confirm that you ACCEPT this work?")) return;
+    b3.disabled = true; b3.textContent = "Sending…";
     post({ form:"terima", no_wo: (window.__WO || ""), nota: (document.getElementById("notaTerima")||{}).value || "" })
-    .then(function(r){ msg("mTerima", r.ok ? '<div class="ok">✅ Terimaan direkod. Terima kasih.</div>' : '<div class="err">❌ ' + esc(r.error) + '</div>'); if (r.ok) setTimeout(function(){ location.reload(); }, 1200); });
+    .then(function(r){ msg("mTerima", r.ok ? '<div class="ok">✅ Acceptance recorded. Thank you.</div>' : '<div class="err">❌ ' + esc(r.error) + '</div>'); if (r.ok) setTimeout(function(){ location.reload(); }, 1200); });
   };
   var st = document.getElementById("stars");
   if (st) {
@@ -248,18 +248,18 @@ function bind(){
   }
   var b4 = document.getElementById("btnReview");
   if (b4) b4.onclick = function(){
-    if (!STAR) { msg("mRev", '<div class="err">Pilih bintang dahulu.</div>'); return; }
+    if (!STAR) { msg("mRev", '<div class="err">Select a star rating first.</div>'); return; }
     b4.disabled = true;
     post({ form:"review", no_wo:(window.__WO||""), bintang:STAR, komen:(document.getElementById("komenRev")||{}).value || "" })
-    .then(function(r){ msg("mRev", r.ok ? '<div class="ok">✅ Terima kasih! Penilaian ' + r.bintang + '★ direkod.</div>' : '<div class="err">❌ ' + esc(r.error) + '</div>'); if (r.ok) setTimeout(function(){ location.reload(); }, 1400); });
+    .then(function(r){ msg("mRev", r.ok ? '<div class="ok">✅ Thank you! Rating of ' + r.bintang + '★ recorded.</div>' : '<div class="err">❌ ' + esc(r.error) + '</div>'); if (r.ok) setTimeout(function(){ location.reload(); }, 1400); });
   };
 }
 
-if (!TOKEN) splash("⚠️ Pautan tidak lengkap (tiada token). Guna pautan yang dihantar Mr Tanah.");
+if (!TOKEN) splash("⚠️ Incomplete link (no token). Use the link sent by Mr Tanah.");
 else fetch(API + "?aksi=pemilik&token=" + encodeURIComponent(TOKEN))
   .then(function(r){ return r.json(); })
   .then(function(d){ window.__WO = (d.wo ? d.wo.no_wo : ""); render(d); })
-  .catch(function(){ splash("Ralat memuatkan data. Sila muat semula halaman."); });
+  .catch(function(){ splash("Failed to load data. Please reload the page."); });
 </script>
 <script src="../assets/fasa1.js?v=1"></script>
 <script src="../assets/ali-config.js?v=1"></script>
