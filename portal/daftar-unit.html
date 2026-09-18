@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pendaftaran Unit — Mr Tanah</title>
-<meta name="description" content="Daftar unit sewaan yang diuruskan Mr Tanah tetapi tidak melalui proses jual/beli/sewaan ZMJ Solutions — maklumat pemilik, penyewa & pihak berkaitan.">
+<title>Register a Property — Zentra Portal</title>
+<meta name="description" content="Register a rental property managed by Mr Tanah that did not go through a ZMJ Solutions sale/purchase/rental process — owner, tenant & related-party details.">
 <style>
   :root { --mt:#123a7a; --mt-tua:#0a1f44; --oren:#e8862e; }
   * { box-sizing:border-box; margin:0; padding:0; }
@@ -46,122 +46,122 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>🏠 Pendaftaran Unit — Pengurusan Mr Tanah</h1>
-    <p>Daftar unit sewaan di bawah pengurusan Mr Tanah · ZMJ Solutions</p>
-    <div class="crumbs"><a href="/">← Portal Mr Tanah</a></div>
+    <h1>🏠 Register a Property — Mr Tanah Management</h1>
+    <p>Register a rental property under Mr Tanah management · ZMJ Solutions</p>
+    <div class="crumbs"><a href="/">← Zentra Portal</a></div>
   </div>
   <div class="wrap">
 
     <div class="card">
-      <div class="emelnote">📩 Selepas hantar, <b>salinan emel</b> dihantar ke emel anda (No. Rujukan diberikan). Gambar / dokumen / maklumat <b>tambahan</b>: <b>BALAS emel salinan</b> itu — rujukan dipadan automatik. Pertanyaan: WhatsApp <b>016-3119076</b>.</div>
-      <div class="sub" style="margin-bottom:4px">Borang ini untuk unit yang <b>belum pernah</b> melalui proses jual / beli / sewaan ZMJ Solutions — supaya Mr Tanah dapat lengkapkan maklumat pemilik, penyewa & pihak berkaitan sebelum menguruskan unit. Isi bahagian yang anda tahu.</div>
+      <div class="emelnote">📩 After submitting, an <b>email copy</b> is sent to your email (a Reference No. is given). Extra photos / documents / information: <b>REPLY to that emailed copy</b> — the reference is matched automatically. Enquiries: WhatsApp <b>016-3119076</b>.</div>
+      <div class="sub" style="margin-bottom:4px">This form is for a property that has <b>never</b> gone through a ZMJ Solutions sale / purchase / rental process — so Mr Tanah can complete the owner, tenant & related-party details before managing it. Fill in the parts you know.</div>
     </div>
 
     <form id="f">
-      <!-- 1: pendaftar -->
+      <!-- 1: registrant -->
       <div class="card">
-        <span class="sec-tag">LANGKAH 1</span>
-        <h2>📝 Saya daftarkan unit ini sebagai</h2>
-        <div class="sub">Maklumat anda digunakan untuk salinan emel & hubungan susulan.</div>
-        <label>Peranan anda <span class="req">*</span></label>
+        <span class="sec-tag">STEP 1</span>
+        <h2>📝 I am registering this property as</h2>
+        <div class="sub">Your details are used for the email copy & follow-up contact.</div>
+        <label>Your role <span class="req">*</span></label>
         <select id="peranan" required>
-          <option value="">— pilih —</option>
-          <option value="Pemilik">Pemilik unit</option>
-          <option value="Wakil Pemilik">Wakil pemilik (anak / saudara / pentadbir)</option>
-          <option value="Penyewa">Penyewa</option>
-          <option value="Ejen">Ejen / agensi</option>
-          <option value="Lain">Lain</option>
+          <option value="">— select —</option>
+          <option value="Owner">Owner</option>
+          <option value="Owner Representative">Owner's representative (child / relative / administrator)</option>
+          <option value="Tenant">Tenant</option>
+          <option value="Agent">Agent / agency</option>
+          <option value="Other">Other</option>
         </select>
         <div class="f2">
-          <div><label>Nama anda <span class="req">*</span></label><input type="text" id="nama" autocomplete="name" placeholder="cth. Ahmad bin Ali" required></div>
-          <div><label>No. WhatsApp <span class="req">*</span></label><input type="tel" id="wa" autocomplete="tel" placeholder="012-3456789" required></div>
+          <div><label>Your name <span class="req">*</span></label><input type="text" id="nama" autocomplete="name" placeholder="e.g. Ahmad bin Ali" required></div>
+          <div><label>WhatsApp number <span class="req">*</span></label><input type="tel" id="wa" autocomplete="tel" placeholder="012-3456789" required></div>
         </div>
-        <label>Emel <span class="req">*</span></label>
-        <input type="email" id="emel" autocomplete="email" placeholder="cth. nama@gmail.com" required>
+        <label>Email <span class="req">*</span></label>
+        <input type="email" id="emel" autocomplete="email" placeholder="e.g. name@gmail.com" required>
       </div>
 
-      <!-- 2: unit -->
+      <!-- 2: property -->
       <div class="card">
-        <span class="sec-tag">LANGKAH 2</span>
-        <h2>🏢 Maklumat Unit</h2>
-        <div class="sub">Unit yang diuruskan / hendak diuruskan oleh Mr Tanah.</div>
+        <span class="sec-tag">STEP 2</span>
+        <h2>🏢 Property Details</h2>
+        <div class="sub">The property managed / to be managed by Mr Tanah.</div>
         <div class="f2">
-          <div><label>Unit (blok / tingkat / no. unit) <span class="req">*</span></label><input type="text" id="unit" placeholder="cth. Blok A-3-2 / No. 12" required></div>
-          <div><label>Jenis unit</label>
+          <div><label>Property (block / floor / unit no.) <span class="req">*</span></label><input type="text" id="unit" placeholder="e.g. Block A-3-2 / No. 12" required></div>
+          <div><label>Property type</label>
             <select id="jenis_unit">
-              <option value="">— pilih (jika ada) —</option>
-              <option>Flat</option><option>Apartment</option><option>Kondominium</option>
-              <option>Rumah Teres</option><option>Rumah Berkembar</option><option>Rumah Banglo</option>
-              <option>Kedai</option><option>Pejabat</option><option>Kilang</option><option>Lain</option>
+              <option value="">— select (if any) —</option>
+              <option>Flat</option><option>Apartment</option><option>Condominium</option>
+              <option>Terrace House</option><option>Semi-Detached House</option><option>Bungalow</option>
+              <option>Shop</option><option>Office</option><option>Factory</option><option>Other</option>
             </select></div>
         </div>
-        <label>Nama projek / kawasan <span class="req">*</span></label>
-        <input type="text" id="kawasan" placeholder="cth. Pangsapuri Mewah, Bandar Baru Bangi" required>
-        <label>Alamat penuh / panduan lokasi</label>
-        <input type="text" id="alamat" placeholder="cth. Jalan 3/9, Seksyen 9, 43650 Bangi, Selangor">
+        <label>Project / area name <span class="req">*</span></label>
+        <input type="text" id="kawasan" placeholder="e.g. Pangsapuri Mewah, Bandar Baru Bangi" required>
+        <label>Full address / location guide</label>
+        <input type="text" id="alamat" placeholder="e.g. Jalan 3/9, Seksyen 9, 43650 Bangi, Selangor">
       </div>
 
-      <!-- 3: pemilik -->
+      <!-- 3: owner -->
       <div class="card">
-        <span class="sec-tag">LANGKAH 3</span>
-        <h2>👤 Pemilik Unit</h2>
-        <div class="sub">Nama & hubungan pemilik berdaftar. Jika anda sendiri pemilik, boleh biarkan kosong — maklumat Langkah 1 akan digunakan.</div>
+        <span class="sec-tag">STEP 3</span>
+        <h2>👤 Property Owner</h2>
+        <div class="sub">Name & contact of the registered owner. If you are the owner yourself, you may leave this blank — the Step 1 details will be used.</div>
         <div class="f2">
-          <div><label>Nama pemilik</label><input type="text" id="n_pemilik" placeholder="Nama penuh pemilik"></div>
-          <div><label>No. telefon pemilik</label><input type="tel" id="t_pemilik" placeholder="012-3456789"></div>
+          <div><label>Owner's name</label><input type="text" id="n_pemilik" placeholder="Owner's full name"></div>
+          <div><label>Owner's phone number</label><input type="tel" id="t_pemilik" placeholder="012-3456789"></div>
         </div>
-        <label>Emel pemilik</label>
-        <input type="email" id="e_pemilik" placeholder="cth. pemilik@gmail.com">
-        <div class="auto-note" id="autoPemilik" style="display:none">ℹ️ Anda isi sebagai <b>Pemilik</b> — ruang pemilik di atas boleh dikosongkan; nama / WhatsApp / emel anda akan direkod sebagai pemilik.</div>
+        <label>Owner's email</label>
+        <input type="email" id="e_pemilik" placeholder="e.g. owner@gmail.com">
+        <div class="auto-note" id="autoPemilik" style="display:none">ℹ️ You are registering as the <b>Owner</b> — the owner fields above may be left blank; your name / WhatsApp / email will be recorded as the owner.</div>
       </div>
 
-      <!-- 4: penyewa -->
+      <!-- 4: tenant -->
       <div class="card">
-        <span class="sec-tag">LANGKAH 4</span>
-        <h2>🏠 Penyewa Semasa</h2>
-        <div class="sub">Jika unit sedang disewa — maklumat penyewa sekarang (pilihan).</div>
+        <span class="sec-tag">STEP 4</span>
+        <h2>🏠 Current Tenant</h2>
+        <div class="sub">If the property is currently rented out — the current tenant's details (optional).</div>
         <div class="f2">
-          <div><label>Nama penyewa</label><input type="text" id="n_penyewa" placeholder="Nama penuh penyewa"></div>
-          <div><label>No. telefon penyewa</label><input type="tel" id="t_penyewa" placeholder="012-3456789"></div>
+          <div><label>Tenant's name</label><input type="text" id="n_penyewa" placeholder="Tenant's full name"></div>
+          <div><label>Tenant's phone number</label><input type="tel" id="t_penyewa" placeholder="012-3456789"></div>
         </div>
         <div class="f2">
-          <div><label>Emel penyewa</label><input type="email" id="e_penyewa" placeholder="cth. penyewa@gmail.com"></div>
-          <div><label>Tarikh mula sewa</label><input type="date" id="t_mula"></div>
+          <div><label>Tenant's email</label><input type="email" id="e_penyewa" placeholder="e.g. tenant@gmail.com"></div>
+          <div><label>Tenancy start date</label><input type="date" id="t_mula"></div>
         </div>
-        <label>Sewa bulanan (RM)</label>
-        <input type="number" id="sewa" min="0" step="0.01" placeholder="cth. 1200">
-        <div class="hint">Pilihan — untuk rekod pengurusan sahaja.</div>
+        <label>Monthly rent (RM)</label>
+        <input type="number" id="sewa" min="0" step="0.01" placeholder="e.g. 1200">
+        <div class="hint">Optional — for management records only.</div>
       </div>
 
-      <!-- 5: pihak lain + dokumen -->
+      <!-- 5: other parties + documents -->
       <div class="card">
-        <span class="sec-tag">LANGKAH 5</span>
-        <h2>🤝 Pihak Lain & Dokumen</h2>
-        <label>Pihak berkaitan lain / rujukan</label>
-        <textarea id="pihak_lain" placeholder="cth. ejen yang uruskan sebelum ini, pengurus bangunan, waris/saudara pemilik, notis yang diterima — sertakan nama & no. telefon jika ada"></textarea>
-        <label>Dokumen sokongan (pilihan)</label>
+        <span class="sec-tag">STEP 5</span>
+        <h2>🤝 Other Parties & Documents</h2>
+        <label>Other related parties / references</label>
+        <textarea id="pihak_lain" placeholder="e.g. the agent who handled it before, building manager, the owner's heirs/relatives, notices received — include names & phone numbers if available"></textarea>
+        <label>Supporting documents (optional)</label>
         <div class="foto-box"><input type="file" id="files" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" multiple style="width:auto">
-          <div class="hint">Maks 5 fail · setiap fail maks 10MB — surat kebenaran, kontrak sewa sedia ada, salinan geran, bil utiliti, dll.</div>
+          <div class="hint">Max 5 files · each file max 10MB — authorisation letter, existing tenancy agreement, copy of the title, utility bills, etc.</div>
         </div>
         <div class="file-list" id="fileList"></div>
-        <label>Nota tambahan</label>
-        <textarea id="nota" placeholder="Sebarang maklumat lain yang membantu Mr Tanah menguruskan unit ini"></textarea>
+        <label>Additional notes</label>
+        <textarea id="nota" placeholder="Any other information that helps Mr Tanah manage this property"></textarea>
       </div>
 
-      <!-- 6: pengesahan -->
+      <!-- 6: confirmation -->
       <div class="card">
-        <span class="sec-tag">LANGKAH 6</span>
-        <h2>✅ Pengesahan</h2>
+        <span class="sec-tag">STEP 6</span>
+        <h2>✅ Confirmation</h2>
         <div class="chk"><input type="checkbox" id="consent" required>
-          <span>Saya memberi kebenaran kepada Mr Tanah (ZMJ Solutions) untuk menyimpan maklumat ini bagi tujuan pengurusan & penyelenggaraan unit, dan saya faham maklumat peribadi tidak akan dikongsi kepada pihak lain tanpa kebenaran. (PDPA)</span></div>
+          <span>I give Mr Tanah (ZMJ Solutions) permission to store this information for property management & maintenance purposes, and I understand that personal information will not be shared with other parties without consent. (PDPA)</span></div>
         <input type="text" name="website" id="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off">
-        <button type="submit" class="btn" id="sb">🚀 Hantar Pendaftaran Unit</button>
+        <button type="submit" class="btn" id="sb">🚀 Submit Property Registration</button>
         <div class="ok" id="ok"></div>
         <div class="err" id="err"></div>
-        <div class="wa-fallback" id="wafb">Hantaran gagal. <a id="wafbLink" href="#" target="_blank">Klik sini untuk hantar terus melalui WhatsApp</a></div>
+        <div class="wa-fallback" id="wafb">Submission failed. <a id="wafbLink" href="#" target="_blank">Click here to send it directly via WhatsApp</a></div>
       </div>
     </form>
-    <p style="font-size:11px;color:#6a7a71;text-align:center">Setelah dihantar, anda akan terima No. Rujukan & salinan emel. Mr Tanah akan sahkan maklumat sebelum unit diuruskan. ⏱️ Respons dalam 1 hari bekerja.</p>
+    <p style="font-size:11px;color:#6a7a71;text-align:center">After submitting, you will receive a Reference No. & an email copy. Mr Tanah will verify the details before the property is managed. ⏱️ Response within 1 business day.</p>
   </div>
 
 <script>
@@ -174,9 +174,9 @@ var WEBHOOK = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKV
   function showErr(t){ err.style.display='block'; err.textContent=t; ok.style.display='none'; }
   function hideMsg(){ ok.style.display='none'; err.style.display='none'; }
 
-  // tunjuk nota auto-pemilik bila peranan = Pemilik
+  // show the auto-owner note when the role = Owner
   $('peranan').addEventListener('change', function(){
-    $('autoPemilik').style.display = this.value === 'Pemilik' ? 'block' : 'none';
+    $('autoPemilik').style.display = this.value === 'Owner' ? 'block' : 'none';
   });
 
   $('files').addEventListener('change', function(){
@@ -196,23 +196,23 @@ var WEBHOOK = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKV
     ev.preventDefault(); hideMsg();
     var peranan=$('peranan').value, nama=$('nama').value.trim(), wa=$('wa').value.trim(), emel=$('emel').value.trim();
     var unit=$('unit').value.trim(), kawasan=$('kawasan').value.trim();
-    if(!peranan){ showErr('Sila pilih peranan anda di Langkah 1.'); return; }
-    if(nama.length<2){ showErr('Sila isi nama anda di Langkah 1.'); return; }
-    if(!/^0?1\d{8,9}$/.test(wa.replace(/[\s-]/g,''))){ showErr('No. WhatsApp tidak sah.'); return; }
-    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emel)){ showErr('Emel diperlukan — salinan pendaftaran dihantar ke emel anda.'); return; }
-    if(!unit || unit.length<2 || !kawasan){ showErr('Sila isi Unit dan Nama projek/kawasan di Langkah 2.'); return; }
-    if(!$('consent').checked){ showErr('Sila beri kebenaran PDPA sebelum hantar.'); return; }
+    if(!peranan){ showErr('Please select your role in Step 1.'); return; }
+    if(nama.length<2){ showErr('Please enter your name in Step 1.'); return; }
+    if(!/^0?1\d{8,9}$/.test(wa.replace(/[\s-]/g,''))){ showErr('Invalid WhatsApp number.'); return; }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emel)){ showErr('Email is required — the registration copy is sent to your email.'); return; }
+    if(!unit || unit.length<2 || !kawasan){ showErr('Please fill in the Property and the Project/area name in Step 2.'); return; }
+    if(!$('consent').checked){ showErr('Please give PDPA consent before submitting.'); return; }
     if($('website').value) return; // honeypot
 
-    // pemilik: auto dari pendaftar jika peranan = Pemilik dan ruang kosong
+    // owner: auto from the registrant if the role = Owner and the field is blank
     var nPem=$('n_pemilik').value.trim(), tPem=$('t_pemilik').value.trim(), ePem=$('e_pemilik').value.trim();
-    if(peranan==='Pemilik' && !nPem){ nPem=nama; if(!tPem) tPem=wa; if(!ePem) ePem=emel; }
+    if(peranan==='Owner' && !nPem){ nPem=nama; if(!tPem) tPem=wa; if(!ePem) ePem=emel; }
 
     var files=[];
     if($('files').files.length){
-      if($('files').files.length>5){ showErr('Maksimum 5 fail dokumen.'); return; }
+      if($('files').files.length>5){ showErr('Maximum 5 document files.'); return; }
       for(var i=0;i<$('files').files.length;i++){
-        if($('files').files[i].size>10*1024*1024){ showErr('Fail "'+$('files').files[i].name+'" melebihi 10MB.'); return; }
+        if($('files').files[i].size>10*1024*1024){ showErr('Fail "'+$('files').files[i].name+'" exceeds 10MB.'); return; }
         files.push(await fileToB64($('files').files[i]));
       }
     }
@@ -227,33 +227,33 @@ var WEBHOOK = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKV
       pihak_lain:$('pihak_lain').value.trim(), nota:$('nota').value.trim(), files:files
     };
 
-    var sb=$('sb'); sb.disabled=true; sb.textContent='⏳ Menghantar...';
+    var sb=$('sb'); sb.disabled=true; sb.textContent='⏳ Submitting...';
     try{
       var resp=await fetch(WEBHOOK,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)});
       var data=await resp.json();
-      if(!data.ok) throw new Error(data.error||'Server menolak');
-      showOk('✅ Pendaftaran unit DITERIMA.<br><span class="ref">'+data.ref+'</span>'+
-        '<br>📩 Salinan emel dihantar — <b>balas emel itu</b> untuk dokumen/maklumat tambahan.'+
-        '<br>Mr Tanah akan sahkan maklumat sebelum unit diuruskan.');
+      if(!data.ok) throw new Error(data.error||'The server rejected the request');
+      showOk('✅ Property registration RECEIVED.<br><span class="ref">'+data.ref+'</span>'+
+        '<br>📩 Email copy sent — <b>reply to that email</b> for extra documents/information.'+
+        '<br>Mr Tanah will verify the details before the property is managed.');
       $('f').reset(); $('fileList').textContent=''; $('autoPemilik').style.display='none';
     }catch(ex){
-      showErr('⚠️ Ralat: '+ex.message+'\nSila cuba lagi, atau hantar melalui WhatsApp 016-3119076.');
+      showErr('⚠️ Error: '+ex.message+'\nPlease try again, or send it via WhatsApp 016-3119076.');
       wafb.style.display='block';
     }
-    sb.disabled=false; sb.textContent='🚀 Hantar Pendaftaran Unit';
+    sb.disabled=false; sb.textContent='🚀 Submit Property Registration';
   });
 
   // demo preview: ?demo=1
   try{
     if(new URLSearchParams(location.search).get('demo')==='1'){
-      $('peranan').value='Penyewa'; $('nama').value='Ahmad bin Ali (contoh)'; $('wa').value='012-3456789'; $('emel').value='ahmad@gmail.com';
-      $('unit').value='Blok A-3-2'; $('jenis_unit').value='Apartment'; $('kawasan').value='Pangsapuri Mewah, Bandar Baru Bangi (contoh)';
-      $('alamat').value='Jalan 3/9, Seksyen 9, 43650 Bangi (contoh)';
-      $('n_pemilik').value='Rosli bin Hassan (contoh)'; $('t_pemilik').value='019-8765432'; $('e_pemilik').value='rosli@gmail.com';
+      $('peranan').value='Tenant'; $('nama').value='Ahmad bin Ali (example)'; $('wa').value='012-3456789'; $('emel').value='ahmad@gmail.com';
+      $('unit').value='Blok A-3-2'; $('jenis_unit').value='Apartment'; $('kawasan').value='Pangsapuri Mewah, Bandar Baru Bangi (example)';
+      $('alamat').value='Jalan 3/9, Seksyen 9, 43650 Bangi (example)';
+      $('n_pemilik').value='Rosli bin Hassan (example)'; $('t_pemilik').value='019-8765432'; $('e_pemilik').value='rosli@gmail.com';
       $('n_penyewa').value='Ahmad bin Ali'; $('t_penyewa').value='012-3456789'; $('e_penyewa').value='ahmad@gmail.com';
       $('t_mula').value='2026-03-01'; $('sewa').value='1200';
-      $('pihak_lain').value='Ejen sebelum ini: Puan Salina (012-1112223) (contoh)';
-      $('nota').value='Contoh pengisian untuk semakan sahaja.';
+      $('pihak_lain').value='Previous agent: Puan Salina (012-1112223) (example)';
+      $('nota').value='Sample entry for review only.';
     }
   }catch(e){}
 })();

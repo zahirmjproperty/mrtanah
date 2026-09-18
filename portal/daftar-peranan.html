@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Daftar Peranan Baharu — Portal Mr Tanah</title>
+<title>Apply for a New Role — Zentra Portal</title>
 <style>
   :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; }
   * { box-sizing:border-box; }
@@ -41,58 +41,58 @@
 </head>
 <body>
 <div class="topbar">
-  <h1>➕ Daftar Peranan Baharu</h1>
-  <p>Mohon tambah peranan pada akaun Portal Mr Tanah anda — kelulusan oleh Mr Tanah</p>
+  <h1>➕ Apply for a New Role</h1>
+  <p>Request an additional role for your Zentra Portal account — approved by Mr Tanah</p>
 </div>
 
 <div class="wrap">
   <div class="card">
-    <h2>Permohonan peranan</h2>
-    <p class="hint" id="hint">Pilih peranan yang ingin dimohon, isi maklumat yang berkaitan, kemudian hantar.</p>
+    <h2>Role application</h2>
+    <p class="hint" id="hint">Choose the role you are applying for, fill in the relevant details, then submit.</p>
 
     <div id="blokSesi" style="display:none">
-      <div class="msg err">⚠️ Anda perlu <b>log masuk</b> dahulu. <a href="masuk.html"><b>Ke halaman log masuk →</b></a></div>
+      <div class="msg err">⚠️ You need to <b>sign in</b> first. <a href="masuk.html"><b>Go to the sign-in page →</b></a></div>
     </div>
 
     <div id="blokBorang">
-      <label>Peranan yang dimohon</label>
+      <label>Role applied for</label>
       <div class="chiprow" id="chips"></div>
 
-      <label>Nama penuh</label>
-      <input id="nama" placeholder="Nama seperti dalam kad pengenalan" autocomplete="name">
+      <label>Full name</label>
+      <input id="nama" placeholder="Name exactly as shown on your identity card" autocomplete="name">
 
       <div class="row2">
-        <div><label>No. WhatsApp</label><input id="wa" placeholder="01x-xxxxxxx" inputmode="tel" autocomplete="tel"></div>
-        <div><label>Emel akaun</label><input id="emel" readonly></div>
+        <div><label>WhatsApp number</label><input id="wa" placeholder="01x-xxxxxxx" inputmode="tel" autocomplete="tel"></div>
+        <div><label>Account email</label><input id="emel" readonly></div>
       </div>
 
       <div id="medanKhas"></div>
 
-      <label>Dokumen sokongan (pautan Drive — pilihan)</label>
-      <input id="dokumen" placeholder="Tampal pautan Google Drive fail SSM/lesen (jika ada)">
+      <label>Supporting documents (Drive link — optional)</label>
+      <input id="dokumen" placeholder="Paste a Google Drive link for your SSM/licence file (if any)">
 
-      <label>Nota tambahan kepada Mr Tanah (pilihan)</label>
-      <textarea id="nota" rows="2" placeholder="Contoh: saya kontraktor bumbung, sudah bekerja dengan MT sejak 2024"></textarea>
+      <label>Additional note for Mr Tanah (optional)</label>
+      <textarea id="nota" rows="2" placeholder="Example: I am a roofing contractor, I have worked with MT since 2024"></textarea>
 
       <div class="consent-item">
         <input type="checkbox" id="consent">
-        <span>Saya sahkan maklumat di atas benar, dan bersetuju Mr Tanah menyemak &amp; menyimpan maklumat ini untuk tujuan pengesahan peranan.</span>
+        <span>I confirm the information above is true, and I agree to Mr Tanah reviewing &amp; storing this information to verify my role.</span>
       </div>
 
-      <button class="btn" id="btnHantar">📨 Hantar permohonan</button>
-      <a class="btn ghost" href="masuk.html" style="display:block;text-align:center;text-decoration:none">← Kembali ke Menu Utama</a>
+      <button class="btn" id="btnHantar">📨 Submit application</button>
+      <a class="btn ghost" href="masuk.html" style="display:block;text-align:center;text-decoration:none">← Back to Main Menu</a>
     </div>
 
     <div class="msg" id="msg"></div>
 
     <div class="note">
-      Nota: peranan <b>Ejen</b> dan <b>Pengurusan</b> tidak boleh dimohon sendiri — ia diberikan melalui jemputan Mr Tanah.
-      Selepas dihantar, permohonan akan masuk ke <b>senarai kelulusan Mr Tanah</b>; anda dimaklumkan melalui emel sebaik diluluskan.
+      Note: the <b>Agent</b> and <b>Management</b> roles cannot be self-requested — they are granted by invitation from Mr Tanah.
+      Once submitted, your application goes to <b>Mr Tanah approval list</b>; you will be notified by email as soon as it is approved.
     </div>
   </div>
 </div>
 
-<div class="foot">Portal Mr Tanah — Mr Tanah (ZMJ Solutions) · 016-3119076</div>
+<div class="foot">Zentra Portal · Mr Tanah — ZMJ Solutions · 016-3119076</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/auth-config.js?v=2"></script>
@@ -102,13 +102,13 @@ var API = A.api;
 var sb = null, TOKEN = "", EMEL = "";
 
 var PERANAN = {
-  KONTRAKTOR:        { nama:"Kontraktor", ico:"🔧", medan:[["Nama syarikat / nama tukang","Cth: Kamsis Renovation"],["No. pendaftaran SSM (pilihan)","Cth: 202301234567"],["Jenis kerja","Cth: Renovasi, paip, elektrik, bumbung"],["Kawasan servis","Cth: Lembah Klang"],["Pengalaman (tahun)","Cth: 8"]] },
-  PENYEWA:           { nama:"Penyewa", ico:"🧾", medan:[["Unit / hartanah yang disewa","Cth: Apartment Miro 2 — Blok A-12-3"],["Tarikh mula sewa","Cth: 01/10/2026"],["Sewa bulanan (RM)","Cth: 1,300"],["Nama pemilik (jika tahu)","Cth: Puan Aisyah"]] },
-  PEMILIK_LADANG:    { nama:"Pemilik Ladang", ico:"🌴", medan:[["Lokasi ladang","Cth: Kuala Selangor"],["Keluasan (ekar)","Cth: 12"],["Jenis tanaman","Cth: Sawit, durian"],["No. geran / lot (jika ada)","Cth: Lot 1234, Mukim X"]] },
-  PEMBELI_HARTANAH:  { nama:"Pembeli Hartanah", ico:"🛒", medan:[["Jenis hartanah dicari","Cth: Teres 2 tingkat"],["Bajet (RM)","Cth: 450,000"],["Kawasan dicari","Cth: Bandar Baru Bangi"],["Pembiayaan","Cth: Bank / tunai / belum pasti"]] },
-  PENJUAL_HARTANAH:  { nama:"Penjual Hartanah", ico:"🏷️", medan:[["Hartanah yang dijual","Cth: Rumah teres Seksyen 4"],["Harga diminta (RM)","Cth: 480,000"],["Status milikan","Cth: Geran individu / sedang bayar bank"],["No. hakmilik (pilihan)","Cth: HSD 123456"]] },
-  SOLICITOR:         { nama:"Peguamcara", ico:"⚖️", medan:[["Nama firma guaman","Cth: Tetuan Harmoni & Co"],["No. lesen / bar","Cth: B/1234/2020"],["Bidang kepakaran","Cth: Urus niaga hartanah"],["Cawangan / kawasan","Cth: Kajang, Bangi"]] },
-  MORTGAGE_OFFICER:  { nama:"Penasihat Pembiayaan", ico:"🏦", medan:[["Syarikat / agensi","Cth: Mortgage Hub Sdn Bhd"],["Bank panel","Cth: Maybank, CIMB, RHB"],["Wilayah liputan","Cth: Selangor & KL"],["Pengalaman (tahun)","Cth: 6"]] }
+  KONTRAKTOR:        { nama:"Contractor", ico:"🔧", medan:[["Company / tradesman name","e.g. Kamsis Renovation"],["SSM registration no. (optional)","e.g. 202301234567"],["Type of work","e.g. Renovation, plumbing, electrical, roofing"],["Service area","e.g. Klang Valley"],["Experience (years)","Cth: 8"]] },
+  PENYEWA:           { nama:"Tenant", ico:"🧾", medan:[["Property rented","e.g. Apartment Miro 2 — Block A-12-3"],["Tenancy start date","e.g. 01/10/2026"],["Monthly rent (RM)","e.g. 1,300"],["Owner's name (if known)","e.g. Puan Aisyah"]] },
+  PEMILIK_LADANG:    { nama:"Farm Owner", ico:"🌴", medan:[["Farm location","e.g. Kuala Selangor"],["Area (acres)","e.g. 12"],["Crop type","e.g. Oil palm, durian"],["Title / lot no. (if any)","e.g. Lot 1234, Mukim X"]] },
+  PEMBELI_HARTANAH:  { nama:"Property Buyer", ico:"🛒", medan:[["Property type sought","e.g. 2-storey terrace"],["Budget (RM)","e.g. 450,000"],["Preferred area","e.g. Bandar Baru Bangi"],["Financing","e.g. Bank / cash / not sure"]] },
+  PENJUAL_HARTANAH:  { nama:"Property Seller", ico:"🏷️", medan:[["Property for sale","e.g. Terrace house Section 4"],["Asking price (RM)","e.g. 480,000"],["Ownership status","e.g. Individual title / still paying the bank"],["Title no. (optional)","e.g. HSD 123456"]] },
+  SOLICITOR:         { nama:"Solicitor", ico:"⚖️", medan:[["Law firm name","e.g. Tetuan Harmoni & Co"],["Bar / licence no.","e.g. B/1234/2020"],["Area of practice","e.g. Property transactions"],["Branch / area","e.g. Kajang, Bangi"]] },
+  MORTGAGE_OFFICER:  { nama:"Financing Officer", ico:"🏦", medan:[["Company / agency","e.g. Mortgage Hub Sdn Bhd"],["Panel banks","e.g. Maybank, CIMB, RHB"],["Coverage area","e.g. Selangor & KL"],["Experience (years)","e.g. 6"]] }
 };
 var urutan = Object.keys(PERANAN);
 var dipilih = "KONTRAKTOR";
@@ -132,7 +132,7 @@ function chips() {
 }
 
 function medanKhas() {
-  var d = PERANAN[dipilih], h = '<label style="margin-top:16px">Maklumat peranan — ' + d.nama + "</label>";
+  var d = PERANAN[dipilih], h = '<label style="margin-top:16px">Role details — ' + d.nama + "</label>";
   d.medan.forEach(function (m, i) {
     h += '<label style="font-weight:600">' + m[0] + "</label>" +
          '<input data-khas="' + m[0] + '" id="kh' + i + '" placeholder="' + m[1] + '" style="margin-bottom:6px">';
@@ -174,19 +174,19 @@ function mula(cuba) {
 chips(); medanKhas(); mula();
 
 document.getElementById("btnHantar").onclick = async function () {
-  if (!TOKEN) { mesej("⚠️ Sesi tidak dijumpai. Sila log masuk semula.", "err"); return; }
+  if (!TOKEN) { mesej("⚠️ Session not found. Please sign in again.", "err"); return; }
   var nama = document.getElementById("nama").value.trim();
   var wa = document.getElementById("wa").value.trim();
-  if (nama.length < 2) { mesej("⚠️ Nama penuh diperlukan.", "err"); return; }
-  if (!/^0?1\d{8,9}$/.test(wa.replace(/[\s-]/g, ""))) { mesej("⚠️ No. WhatsApp tidak sah (cth: 0123456789).", "err"); return; }
-  if (!document.getElementById("consent").checked) { mesej("⚠️ Sila tanda persetujuan sebelum hantar.", "err"); return; }
+  if (nama.length < 2) { mesej("⚠️ Full name is required.", "err"); return; }
+  if (!/^0?1\d{8,9}$/.test(wa.replace(/[\s-]/g, ""))) { mesej("⚠️ Invalid WhatsApp number (e.g. 0123456789).", "err"); return; }
+  if (!document.getElementById("consent").checked) { mesej("⚠️ Please tick the consent box before submitting.", "err"); return; }
 
   var medan = kutipKhas();
   var nota = document.getElementById("nota").value.trim();
-  if (nota) medan["Nota kepada MT"] = nota;
+  if (nota) medan["Note to MT"] = nota;
 
   var b = document.getElementById("btnHantar");
-  b.disabled = true; b.textContent = "⏳ Menghantar…";
+  b.disabled = true; b.textContent = "⏳ Submitting…";
   try {
     var r = await fetch(API, {
       method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" },
@@ -197,16 +197,16 @@ document.getElementById("btnHantar").onclick = async function () {
       })
     });
     var d = await r.json();
-    if (!d.ok) { mesej("⚠️ " + (d.error || "Permohonan gagal dihantar."), "err"); }
+    if (!d.ok) { mesej("⚠️ " + (d.error || "The application could not be submitted."), "err"); }
     else {
-      mesej("✅ Permohonan <b>" + PERANAN[dipilih].nama + "</b> dihantar (No <b>" + d.no + "</b>). " +
-            "Status: menunggu kelulusan Mr Tanah. Anda akan dimaklumkan melalui emel.", "ok");
-      b.textContent = "✅ Dihantar";
+      mesej("✅ <b>" + PERANAN[dipilih].nama + "</b> application submitted (No <b>" + d.no + "</b>). " +
+            "Status: waiting for Mr Tanah approval. You will be notified by email.", "ok");
+      b.textContent = "✅ Submitted";
     }
   } catch (e) {
-    mesej("⚠️ Ralat rangkaian: " + String(e).slice(0, 90), "err");
+    mesej("⚠️ Network error: " + String(e).slice(0, 90), "err");
   }
-  if (b.textContent.indexOf("Dihantar") < 0) { b.disabled = false; b.textContent = "📨 Hantar permohonan"; }
+  if (b.textContent.indexOf("Submitted") < 0) { b.disabled = false; b.textContent = "📨 Submit application"; }
 };
 </script>
 </body>

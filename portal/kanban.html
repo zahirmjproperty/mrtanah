@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Papan Kanban Kerja + SLA — Mr Tanah (dalaman)</title>
+<title>Work Kanban + SLA Board — Zentra Portal (internal)</title>
 <style>
   :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; --merah:#c0392b; }
   * { box-sizing:border-box; margin:0; padding:0; }
@@ -51,11 +51,11 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>🗂️ Papan Kanban Kerja + SLA</h1>
-    <p>Mr Tanah · ZMJ Solutions — pandangan dalaman (tiket, keutamaan, SLA)</p>
+    <h1>🗂️ Work Kanban + SLA Board</h1>
+    <p>Mr Tanah · ZMJ Solutions — internal view (tickets, priority, SLA)</p>
   </div>
-  <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
-  <div class="foot">Dalaman MT — jangan kongsi pautan ini.</div>
+  <div class="wrap" id="wrap"><div class="splash">Loading…</div></div>
+  <div class="foot">MT internal — do not share this link.</div>
 
 <script>
 var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
@@ -67,11 +67,11 @@ function tkh(s){ if(!s) return "—"; var d=String(s).substring(0,10).split("-")
 function splash(m){ document.getElementById("wrap").innerHTML = '<div class="splash">'+m+'</div>'; }
 
 function login(){
-  document.getElementById("wrap").innerHTML = '<div class="card"><h2>Log masuk papan MT</h2>'
-    + '<p class="hint">Masukkan token admin MT (disimpan dalam telefon ini sahaja).</p>'
-    + '<label style="display:block;font-size:12.5px;font-weight:600;margin:11px 0 4px">Token admin</label>'
+  document.getElementById("wrap").innerHTML = '<div class="card"><h2>Sign in to the MT board</h2>'
+    + '<p class="hint">Enter the MT admin token (stored on this phone only).</p>'
+    + '<label style="display:block;font-size:12.5px;font-weight:600;margin:11px 0 4px">Admin token</label>'
     + '<input type="password" id="tk" placeholder="mtadm-…">'
-    + '<div class="btnrow" style="margin-top:12px"><button class="btn" id="bIn">Masuk</button></div>'
+    + '<div class="btnrow" style="margin-top:12px"><button class="btn" id="bIn">Sign in</button></div>'
     + '<div id="lg"></div></div>';
   document.getElementById("bIn").onclick = function(){
     var v = document.getElementById("tk").value.trim();
@@ -84,59 +84,68 @@ function muat(){
     .then(function(r){ return r.json(); })
     .then(function(d){
       if (!d.ok) { localStorage.removeItem("mt_admin_token"); login();
-        document.getElementById("lg").innerHTML = '<div class="err" style="margin-top:10px">'+esc(d.error||"Token tidak sah.")+'</div>'; return; }
-      KAD = d.kad || []; lukis(d.kpi || {});
+        document.getElementById("lg").innerHTML = '<div class="err" style="margin-top:10px">'+esc(d.error||"Invalid token.")+'</div>'; return; }
+      KAD = (d.kad || []).map(function(x){ x.lajur = lajurEN(x.lajur); return x; }); lukis(d.kpi || {});
     })
-    .catch(function(e){ splash("⚠️ Gagal memuatkan: " + esc(e)); });
+    .catch(function(e){ splash("⚠️ Failed to load: " + esc(e)); });
 }
 function lolos(k){
   if (tapis === "semua") return true;
-  if (tapis === "aktif") return k.lajur !== "Selesai";
+  if (tapis === "aktif") return k.lajur !== "Completed";
   if (tapis === "lewat") return k.sla.keadaan === "late";
   if (tapis === "p12") return /^P1|^P2/.test(String(k.keutamaan||"").toUpperCase());
-  if (tapis === "selesai") return k.lajur === "Selesai";
+  if (tapis === "selesai") return k.lajur === "Completed";
   return true;
 }
-var KOL = ["Baru / Triage","Sebut Harga / Kelulusan","Sedang Dibaiki","QC / Pengesahan","Selesai"];
+var KOL = ["New / Triage","Quotation / Approval","Repair in Progress","QC / Approval","Completed"];
+/* The server sends the raw stage value; map it to the English column title (fragment match,
+   so the matching keeps working even if the wording on the server side changes). */
+function lajurEN(l){ var s = String(l==null?"":l);
+  if (/triage/i.test(s)) return KOL[0];
+  if (/harga/i.test(s))  return KOL[1];
+  if (/dibaik/i.test(s)) return KOL[2];
+  if (/qc/i.test(s))     return KOL[3];
+  if (/selesai/i.test(s))return KOL[4];
+  return s; }
 function lukis(kpi){
   var h = '<div class="kpi">'
-    + '<div><b>' + KAD.length + '</b><span>Tiket</span></div>'
-    + '<div class="hijau"><b>' + (kpi.kerja||0) + '</b><span>Sedang Dibaiki</span></div>'
-    + '<div class="oren"><b>' + (kpi.menunggu||0) + '</b><span>Menunggu</span></div>'
-    + '<div class="merah"><b>' + (kpi.lewat||0) + '</b><span>Lewat SLA</span></div>'
-    + '<div><b>' + (kpi.selesai||0) + '</b><span>Selesai</span></div></div>';
+    + '<div><b>' + KAD.length + '</b><span>Tickets</span></div>'
+    + '<div class="hijau"><b>' + (kpi.kerja||0) + '</b><span>In Repair</span></div>'
+    + '<div class="oren"><b>' + (kpi.menunggu||0) + '</b><span>Waiting</span></div>'
+    + '<div class="merah"><b>' + (kpi.lewat||0) + '</b><span>SLA Overdue</span></div>'
+    + '<div><b>' + (kpi.selesai||0) + '</b><span>Completed</span></div></div>';
 
-  h += '<div class="card"><h2>Tapisan</h2><div class="btnrow">'
-    + ["aktif:aktif","lewat:Lewat SLA","p12:Keutamaan P1/P2","selesai:Selesai","semua:Semua"].map(function(x){
+  h += '<div class="card"><h2>Filters</h2><div class="btnrow">'
+    + ["aktif:Active","lewat:SLA Overdue","p12:Priority P1/P2","selesai:Completed","semua:All"].map(function(x){
         var a = x.split(":");
         return '<span class="pill' + (tapis===a[0] ? " on" : "") + '" data-f="' + a[0] + '">' + a[1] + '</span>';
       }).join("")
-    + '<span style="flex:1"></span><button class="btn ghost" id="bOut">Log keluar</button></div>'
-    + '<div class="hint">SLA dari medan <b>Keutamaan</b> tiket: P1 4 jam · P2 24 jam · P3 72 jam · P4 7 hari. Kad <b style="color:#c0392b">merah</b> = lewat, <b style="color:#e8862e">kuning</b> = hampir tamat. Klik kad untuk butiran.</div></div>';
+    + '<span style="flex:1"></span><button class="btn ghost" id="bOut">Sign out</button></div>'
+    + '<div class="hint">SLA comes from the ticket <b>Priority</b> field: P1 4 hours · P2 24 hours · P3 72 hours · P4 7 days. A <b style="color:#c0392b">red</b> card = overdue, <b style="color:#e8862e">amber</b> = nearly due. Click a card for details.</div></div>';
 
   h += '<div class="card" style="padding:12px"><div class="kanban">';
   KOL.forEach(function(k){
     var kad = KAD.filter(function(x){ return x.lajur === k && lolos(x); });
     h += '<div class="col"><h3>' + k + '<em>' + kad.length + '</em></h3>';
-    if (!kad.length) h += '<div class="hint" style="padding:6px 4px">Tiada kad</div>';
+    if (!kad.length) h += '<div class="hint" style="padding:6px 4px">No cards</div>';
     kad.forEach(function(x){
-      var s = x.sla, kelas = s.keadaan, lbl = kelas === "late" ? ("LEWAT " + Math.abs(s.baki) + "j") : (s.baki + "j baki");
+      var s = x.sla, kelas = s.keadaan, lbl = kelas === "late" ? ("OVERDUE " + Math.abs(s.baki) + "h") : (s.baki + "h left");
       h += '<div class="kcard ' + kelas + '" data-ref="' + esc(x.ref) + '">'
         + '<div class="r">' + esc(x.ref) + (x.keutamaan ? " · " + esc(x.keutamaan) : "") + '</div>'
         + '<div class="u">' + esc(x.unit) + '</div>'
         + '<div class="m">' + esc(x.jenis) + '<br>' + tkh(x.tarikh) + ' · ' + esc(x.pemilik || x.pelapor) + '</div>'
         + '<div class="f"><span class="sla ' + kelas + '">' + lbl + '</span><span class="amt">' + (x.nilai ? rm(x.nilai) : "—") + '</span></div>'
-        + '<div class="m" style="margin-top:5px">' + (x.kontraktor ? "Kontraktor: <b>" + esc(x.kontraktor) + "</b>" : "Kontraktor: — belum dipilih") + (x.no_wo ? " · " + esc(x.no_wo) : "") + '</div>'
+        + '<div class="m" style="margin-top:5px">' + (x.kontraktor ? "Contractor: <b>" + esc(x.kontraktor) + "</b>" : "Contractor: — not selected yet") + (x.no_wo ? " · " + esc(x.no_wo) : "") + '</div>'
         + '</div>';
     });
     h += '</div>';
   });
-  h += '</div><div class="hint">Data langsung dari tab <b>Tickets</b>, <b>Sebutharga</b> dan <b>Work Order</b> — tiada taip semula.</div></div>';
+  h += '</div><div class="hint">Live data from the <b>Tickets</b>, <b>Sebutharga</b> and <b>Work Order</b> tabs — nothing is retyped.</div></div>';
 
-  h += '<div class="card"><h2>🔗 Jana pautan portal penyewa</h2><div class="btnrow">'
-    + '<input id="uJana" placeholder="cth U-0001" style="flex:1;min-width:140px;padding:11px;border:1.5px solid #cfdcd4;border-radius:10px;font-size:14px">'
-    + '<button class="btn" id="bJana">Jana / ambil pautan</button></div>'
-    + '<div id="hJana" class="hint">Pautan bertoken untuk penyewa lihat bil, resit, status aduan &amp; bayar (DuitNow QR). Token sedia ada akan diguna semula (idempotent).</div></div>';
+  h += '<div class="card"><h2>🔗 Generate tenant portal link</h2><div class="btnrow">'
+    + '<input id="uJana" placeholder="e.g. U-0001" style="flex:1;min-width:140px;padding:11px;border:1.5px solid #cfdcd4;border-radius:10px;font-size:14px">'
+    + '<button class="btn" id="bJana">Generate / get link</button></div>'
+    + '<div id="hJana" class="hint">A token link so the tenant can see bills, receipts, complaint status &amp; pay (DuitNow QR). An existing token will be reused (idempotent).</div></div>';
 
   document.getElementById("wrap").innerHTML = h;
   document.getElementById("bOut").onclick = function(){ localStorage.removeItem("mt_admin_token"); login(); };
@@ -144,17 +153,17 @@ function lukis(kpi){
   if (bJ) bJ.onclick = function(){
     var u = (document.getElementById("uJana").value || "").trim().toUpperCase();
     if (!u) return;
-    document.getElementById("hJana").innerHTML = "Menjana…";
+    document.getElementById("hJana").innerHTML = "Generating…";
     fetch(API, { method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"},
       body: JSON.stringify({ form:"aksespenyewa", admin_token:T, unit:u }) })
       .then(function(r){ return r.json(); })
       .then(function(d){
-        if (!d.ok) { document.getElementById("hJana").innerHTML = "⚠️ " + esc(d.error || "Gagal"); return; }
+        if (!d.ok) { document.getElementById("hJana").innerHTML = "⚠️ " + esc(d.error || "Failed"); return; }
         document.getElementById("hJana").innerHTML = '✅ <b>' + esc(d.unit) + '</b> · ' + esc(d.penyewa || "") + ' — ' + d.bil_belum_bayar + ' bil belum bayar<br>'
           + '<a href="' + esc(d.link) + '" target="_blank">' + esc(d.link) + '</a><br>'
-          + '<button class="btn ghost" onclick="navigator.clipboard.writeText(\'' + esc(d.link) + '\')">Salin pautan</button> '
-          + '<a class="btn" href="https://wa.me/?text=' + encodeURIComponent("Pautan portal penyewa anda: " + d.link) + '" target="_blank">Hantar WhatsApp</a>'
-          + '<div class="hint">' + (d.sedia_ada ? "Token sedia ada diguna semula." : "Token baharu dicipta.") + '</div>';
+          + '<button class="btn ghost" onclick="navigator.clipboard.writeText(\'' + esc(d.link) + '\')">Copy link</button> '
+          + '<a class="btn" href="https://wa.me/?text=' + encodeURIComponent("Your tenant portal link: " + d.link) + '" target="_blank">Send WhatsApp</a>'
+          + '<div class="hint">' + (d.sedia_ada ? "The existing token was reused." : "A new token was created.") + '</div>';
       })
       .catch(function(e){ document.getElementById("hJana").innerHTML = "⚠️ " + esc(e); });
   };
@@ -171,20 +180,20 @@ function detail(ref){
   var s = x.sla;
   var h = '<div class="box"><h2 style="font-size:15px;color:#0a1f44">' + esc(x.ref) + ' · ' + esc(x.lajur) + '</h2>'
     + '<div class="meta" style="margin-top:9px">'
-    + '<div class="row"><span>Unit</span><b>' + esc(x.unit) + '</b></div>'
-    + '<div class="row"><span>Jenis</span><b>' + esc(x.jenis) + '</b></div>'
-    + '<div class="row"><span>Pelapor</span><b>' + esc(x.pelapor) + '</b></div>'
-    + '<div class="row"><span>Pemilik</span><b>' + esc(x.pemilik) + '</b></div>'
-    + '<div class="row"><span>Keutamaan / SLA</span><b>' + esc(x.keutamaan || "—") + ' · ' + s.jam + ' jam (' + s.berlaku + ' jam berlalu)</b></div>'
-    + '<div class="row"><span>Kontraktor</span><b>' + esc(x.kontraktor || "—") + (x.rating ? " ⭐ " + x.rating : "") + '</b></div>'
+    + '<div class="row"><span>Property</span><b>' + esc(x.unit) + '</b></div>'
+    + '<div class="row"><span>Type</span><b>' + esc(x.jenis) + '</b></div>'
+    + '<div class="row"><span>Reported by</span><b>' + esc(x.pelapor) + '</b></div>'
+    + '<div class="row"><span>Owner</span><b>' + esc(x.pemilik) + '</b></div>'
+    + '<div class="row"><span>Priority / SLA</span><b>' + esc(x.keutamaan || "—") + ' · ' + s.jam + ' hours (' + s.berlaku + ' hours elapsed)</b></div>'
+    + '<div class="row"><span>Contractor</span><b>' + esc(x.kontraktor || "—") + (x.rating ? " ⭐ " + x.rating : "") + '</b></div>'
     + '<div class="row"><span>Work Order</span><b>' + esc(x.no_wo || "—") + '</b></div>'
-    + '<div class="row"><span>Nilai</span><b>' + (x.nilai ? rm(x.nilai) : "—") + '</b></div>'
-    + '<div class="row"><span>Sebut harga</span><b>' + x.bil_sh + ' diterima</b></div>'
-    + '<div class="row"><span>Status sistem</span><b>' + esc(x.status || "—") + '</b></div></div>'
+    + '<div class="row"><span>Value</span><b>' + (x.nilai ? rm(x.nilai) : "—") + '</b></div>'
+    + '<div class="row"><span>Quotation</span><b>' + x.bil_sh + ' received</b></div>'
+    + '<div class="row"><span>System status</span><b>' + esc(x.status || "—") + '</b></div></div>'
     + '<div class="btnrow" style="margin-top:13px">'
-    + '<a class="btn" href="/portal/aduan-mt.html?t=' + encodeURIComponent(T) + '" style="text-decoration:none">Buka aliran penuh (Papan MT)</a>'
-    + '<button class="btn ghost" id="bTutup">Tutup</button></div>'
-    + '<div class="hint">Aksi (RFQ, kelulusan, WO, QC, bayaran) dibuat di Papan MT — papan kanban ini untuk pemantauan &amp; SLA sahaja.</div></div>';
+    + '<a class="btn" href="/portal/aduan-mt.html?t=' + encodeURIComponent(T) + '" style="text-decoration:none">Open full flow (MT Board)</a>'
+    + '<button class="btn ghost" id="bTutup">Close</button></div>'
+    + '<div class="hint">Actions (RFQ, approval, WO, QC, payment) are done on the MT Board — this kanban board is for monitoring &amp; SLA only.</div></div>';
   document.getElementById("modal").innerHTML = h;
   document.getElementById("modal").classList.add("on");
   document.getElementById("bTutup").onclick = function(){ document.getElementById("modal").classList.remove("on"); };
