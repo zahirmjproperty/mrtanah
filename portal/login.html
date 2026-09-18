@@ -1,82 +1,88 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Log Masuk — Portal Mr Tanah</title>
-<meta name="description" content="Log masuk portal pengurusan Mr Tanah — untuk pemilik, penyewa, kontraktor dan pasukan MT.">
+<title>Sign In — Zentra Portal</title>
+<meta name="description" content="Sign in to Zentra Portal — for property owners, tenants, contractors, agents and the Zentra team.">
 <style>
-  :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; }
+  :root { --mt:#0B2D4A; --mt-tua:#071E33; --hijau:#43B02A; --teal:#00A3B5; }
   * { box-sizing:border-box; }
-  body { margin:0; font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5;
+  body { margin:0; font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#F3F5F8; color:#0B2D4A; line-height:1.5;
          display:flex; min-height:100vh; flex-direction:column; }
-  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 58%,#14905c 100%); color:#fff; padding:16px; }
+  .topbar { background:linear-gradient(135deg,#0B2D4A 0%,#00A3B5 100%); color:#fff; padding:16px; }
   .topbar h1 { margin:0 0 3px; font-size:19px; }
   .topbar p { margin:0; font-size:12.5px; opacity:.95; }
   .wrap { flex:1; display:flex; align-items:flex-start; justify-content:center; padding:22px 14px 40px; }
-  .card { background:#fff; border:1px solid #dde5f2; border-radius:14px; padding:20px; width:100%; max-width:430px; box-shadow:0 4px 18px rgba(15,23,42,.06); }
+  .card { background:#fff; border:1px solid #dde5f2; border-radius:14px; padding:20px; width:100%; max-width:430px; box-shadow:0 4px 18px rgba(11,45,74,.06); }
   .card h2 { margin:0 0 4px; font-size:18px; color:var(--mt-tua); }
-  .hint { font-size:12.5px; color:#5a6b61; margin:0 0 14px; }
+  .hint { font-size:12.5px; color:#6B7280; margin:0 0 14px; }
   label { display:block; font-size:12.8px; font-weight:700; margin:12px 0 5px; color:#33465e; }
   input { width:100%; padding:12px; border:1.5px solid #cfdcd4; border-radius:10px; font-size:15px; }
   input:focus { outline:2px solid var(--mt); outline-offset:-1px; }
   .btn { width:100%; margin-top:16px; background:var(--mt); color:#fff; border:none; border-radius:10px; padding:13px; font-size:15px; font-weight:700; cursor:pointer; }
   .btn:disabled { opacity:.6; cursor:default; }
   .btn.ghost { background:#fff; color:var(--mt); border:1.5px solid #c9d6ec; }
+  .btn.naik { background:var(--hijau); }
   .msg { margin-top:13px; font-size:13px; border-radius:10px; padding:10px 12px; display:none; }
   .msg.err { background:#fdeaea; color:#a11; border-left:4px solid #b3261e; display:block; }
-  .msg.ok { background:#e6f5ee; color:#0e5a33; border-left:4px solid var(--hijau); display:block; }
+  .msg.ok { background:#E9F7F4; color:#2F7D1D; border-left:4px solid var(--hijau); display:block; }
   .msg.warn { background:#fff4e2; color:#8a4c00; border-left:4px solid #8a4c00; display:block; }
   .row { display:flex; justify-content:space-between; align-items:center; margin-top:12px; gap:10px; flex-wrap:wrap; }
   .row a { font-size:12.5px; color:var(--mt); }
-  .note { margin-top:16px; font-size:11.8px; color:#5a6b61; border-top:1px dashed #cfdcd4; padding-top:12px; }
-  .foot { text-align:center; font-size:11.5px; color:#5a6b61; padding:14px 10px 26px; }
+  .note { margin-top:16px; font-size:11.8px; color:#6B7280; border-top:1px dashed #cfdcd4; padding-top:12px; }
+  .foot { text-align:center; font-size:11.5px; color:#6B7280; padding:14px 10px 26px; }
 </style>
 </head>
 <body>
   <div class="topbar">
-    <h1>🔐 Log Masuk — Portal Mr Tanah</h1>
-    <p>Untuk pemilik, penyewa, kontraktor &amp; pasukan MT</p>
+    <h1>🔐 Zentra Portal — Sign In</h1>
+    <p>For property owners, tenants, contractors, agents &amp; the Zentra team</p>
   </div>
   <div class="wrap">
     <div class="card">
-      <h2>Masuk ke akaun anda</h2>
-      <p class="hint">Gunakan emel dan kata laluan yang diberi Mr Tanah.</p>
+      <h2>Sign in to your account</h2>
+      <p class="hint">Use the email and password for your Zentra ID.</p>
 
       <form id="fLogin" autocomplete="on">
-        <label for="emel">Emel</label>
-        <input type="email" id="emel" name="emel" autocomplete="username" required placeholder="nama@contoh.com">
-        <label for="kata">Kata laluan</label>
+        <label for="emel">Email</label>
+        <input type="email" id="emel" name="emel" autocomplete="username" required placeholder="name@example.com">
+        <label for="kata">Password</label>
         <input type="password" id="kata" name="kata" autocomplete="current-password" required placeholder="••••••••">
-        <button class="btn" id="bMasuk" type="submit">Log masuk</button>
+        <button class="btn" id="bMasuk" type="submit">Sign in</button>
       </form>
 
       <p class="hint" id="tajukReset" style="margin:10px 0 12px"></p>
       <form id="fReset" style="display:none" autocomplete="on">
-        <label for="kata2">Kata laluan baharu</label>
-        <input type="password" id="kata2" autocomplete="new-password" required minlength="8" placeholder="min 8 aksara">
-        <label for="kata3">Ulang kata laluan baharu</label>
+        <label for="kata2">New password</label>
+        <input type="password" id="kata2" autocomplete="new-password" required minlength="8" placeholder="at least 8 characters">
+        <label for="kata3">Repeat new password</label>
         <input type="password" id="kata3" autocomplete="new-password" required minlength="8" placeholder="••••••••">
-        <button class="btn" id="bSimpan" type="submit">Simpan kata laluan baharu</button>
+        <button class="btn" id="bSimpan" type="submit">Save new password</button>
       </form>
 
       <div class="row">
-        <a href="#" id="aLupa">Lupa kata laluan?</a>
-        <a href="/">← Portal</a>
+        <a href="#" id="aLupa">Forgot password?</a>
+        <a href="/">← Home</a>
       </div>
       <div class="msg" id="msg"></div>
 
+      <div style="margin-top:16px;border:1.8px dashed #00A3B5;background:#F3F9FB;border-radius:12px;padding:13px">
+        <strong style="font-size:13.8px;color:#071E33">New to Zentra?</strong>
+        <p style="margin:4px 0 9px;font-size:12.3px;color:#6B7280">Create your Zentra ID with your email — if your details match our records, your access opens automatically.</p>
+        <a class="btn naik" href="daftar.html" style="text-decoration:none;display:block;text-align:center;margin-top:0">➕ Create account</a>
+      </div>
+
       <div class="note">
-        Akaun dicipta <b>atas jemputan</b> Mr Tanah sahaja (tiada pendaftaran terbuka). Untuk akaun baharu atau
-        masalah log masuk — WhatsApp <b>016-3119076</b>.
+        Need help? WhatsApp <b>016-3119076</b>. Accounts are personal — do not share your password.
       </div>
     </div>
   </div>
-  <div class="foot">Mr Tanah · ZMJ Solutions · Strategic Agro Technology</div>
+  <div class="foot">© Zentra Property Group · Zentra Portal — operated by ZMJ Solutions Sdn Bhd</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="assets/auth-config.js?v=2"></script>
+<script src="assets/auth-config.js?v=3"></script>
 <script src="assets/auth-nav.js?v=9"></script>
 <script>
 var A = window.AUTH || {};
@@ -89,20 +95,20 @@ function mesej(teks, jenis) {
 }
 function sedia() {
   if (!A.url || !A.key) {
-    mesej("⚙️ <b>Sistem log masuk belum diaktifkan.</b> Pautan ini sedang disediakan — sementara itu gunakan pautan bertoken yang diberi Mr Tanah.", "warn");
+    mesej("⚙️ <b>Sign-in is not activated yet.</b> This link is being prepared — in the meantime use the token link you were given.", "warn");
     document.getElementById("bMasuk").disabled = true;
     return false;
   }
   if (typeof window.supabase === "undefined") {
-    mesej("⚠️ Perpustakaan log masuk gagal dimuatkan (rangkaian). Muat semula halaman atau cuba guna data mudah alih.", "err");
+    mesej("⚠️ The sign-in library failed to load (network). Reload the page or try mobile data.", "err");
     return false;
   }
   sb = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true } });
   return true;
 }
 
-/* Mod tetapan kata laluan: pautan dari emel membawa token dalam URL
-   type=recovery (lupa kata laluan) · type=invite (jemputan akaun baharu) · type=signup (sahkan emel) */
+/* Password setup mode: links from email carry a token in the URL
+   type=recovery (forgot password) · type=invite (new account invite) · type=signup (confirm email) */
 function modReset() {
   var href = location.href;
   if (!/type=(recovery|invite|signup)/.test(href) && !/reset=1/.test(href)) return false;
@@ -110,41 +116,41 @@ function modReset() {
   document.getElementById("fLogin").style.display = "none";
   document.getElementById("fReset").style.display = "block";
   document.getElementById("tajukReset").innerHTML = jemputan
-    ? "🔑 <b>Selamat datang!</b> Tetapkan kata laluan untuk akaun portal anda."
-    : "🔑 <b>Tetapkan kata laluan baharu</b> untuk akaun portal anda.";
+    ? "🔑 <b>Welcome!</b> Set a password for your portal account."
+    : "🔑 <b>Set a new password</b> for your portal account.";
   mesej(jemputan
-    ? "Akaun anda telah dijemput. Tetapkan kata laluan di bawah, kemudian anda akan dibawa ke dashboard."
-    : "Isi kata laluan baharu di bawah.", "ok");
+    ? "Your account was invited. Set a password below and you will be taken to your dashboard."
+    : "Enter your new password below.", "ok");
   return true;
 }
 async function kePortal(sesi) {
   var tok = (sesi && sesi.access_token) || "";
   var r = await fetch(A.api + "?aksi=sesi&access_token=" + encodeURIComponent(tok) + "&_=" + Date.now());
   var d = await r.json();
-  if (!d.ok) { mesej("⚠️ " + (d.error || "Akaun tidak dikenali."), "err"); return; }
+  if (!d.ok) { mesej("⚠️ " + (d.error || "Account not recognised."), "err"); return; }
   var ps = d.peranans && d.peranans.length ? d.peranans : [d.peranan];
   var nama = d.nama || d.emel;
-  /* Senarai dashboard mengikut SEMUA peranan akaun ini (satu sumber: auth-nav.js) */
+  /* Dashboard list follows ALL roles on this account (single source: auth-nav.js) */
   var set = (window.PHMT ? PHMT.senarai(ps) : []);
   if (set.length > 1) {
     var b = '<div class="btnrow" style="margin-top:10px;display:flex;flex-wrap:wrap;gap:6px">';
     set.forEach(function (s) {
-      if (!s.sedia) b += '<span class="btn ghost" style="opacity:.55;text-decoration:none">' + s.ico + " " + s.nama + " (akan datang)</span>";
+      if (!s.sedia) b += '<span class="btn ghost" style="opacity:.55;text-decoration:none">' + s.ico + " " + s.nama + " (coming soon)</span>";
       else b += '<a class="btn" style="text-decoration:none" href="' + s.url + '">' + s.ico + " " + s.nama + "</a>";
     });
     b += "</div>";
-    mesej("✅ Selamat datang, <b>" + nama + "</b>. Anda ada <b>" + set.length + "</b> akses — pilih dashboard:" + b, "ok");
+    mesej("✅ Welcome, <b>" + nama + "</b>. You have <b>" + set.length + "</b> access areas — choose a dashboard:" + b, "ok");
     return;
   }
   var lompat = set.length ? set[0].url : "";
-  mesej("✅ Selamat datang, <b>" + nama + "</b> (" + ps.join(", ") + "). Membuka dashboard…", "ok");
+  mesej("✅ Welcome, <b>" + nama + "</b> (" + ps.join(", ") + "). Opening your dashboard…", "ok");
   if (lompat) setTimeout(function () { location.href = lompat; }, 900);
-  else mesej("✅ Log masuk berjaya (" + ps.join(", ") + "). Paparan untuk peranan ini akan dibuka oleh Ali.", "ok");
+  else mesej("✅ Signed in (" + ps.join(", ") + "). A view for this role will be opened for you.", "ok");
 }
 
 document.getElementById("fLogin").addEventListener("submit", async function (e) {
   e.preventDefault();
-  mesej("Memproses…", "warn");
+  mesej("Processing…", "warn");
   try {
     var out = await sb.auth.signInWithPassword({
       email: document.getElementById("emel").value.trim(),
@@ -152,58 +158,58 @@ document.getElementById("fLogin").addEventListener("submit", async function (e) 
     });
     if (out.error) {
       var m = String(out.error.message || "");
-      if (/Invalid login credentials/i.test(m)) mesej("❌ Emel atau kata laluan tidak betul.", "err");
-      else if (/Email not confirmed/i.test(m)) mesej("❌ Emel belum disahkan. Semak peti masuk anda.", "err");
-      else if (/rate limit|too many/i.test(m)) mesej("⏳ Terlalu banyak cubaan. Tunggu sebentar dan cuba lagi.", "err");
+      if (/Invalid login credentials/i.test(m)) mesej("❌ Wrong email or password.", "err");
+      else if (/Email not confirmed/i.test(m)) mesej("❌ Email not confirmed yet. Please check your inbox.", "err");
+      else if (/rate limit|too many/i.test(m)) mesej("⏳ Too many attempts. Wait a moment and try again.", "err");
       else mesej("❌ " + m, "err");
       return;
     }
     await kePortal(out.data.session);
   } catch (err) {
-    mesej("⚠️ Ralat rangkaian: " + String(err).slice(0, 90), "err");
+    mesej("⚠️ Network error: " + String(err).slice(0, 90), "err");
   }
 });
 
 document.getElementById("aLupa").addEventListener("click", async function (e) {
   e.preventDefault();
   var emel = document.getElementById("emel").value.trim();
-  if (!emel) { mesej("Isi emel anda dahulu, kemudian ketuk “Lupa kata laluan?”.", "warn"); return; }
+  if (!emel) { mesej("Enter your email first, then tap “Forgot password?”.", "warn"); return; }
   try {
     var out = await sb.auth.resetPasswordForEmail(emel, { redirectTo: location.origin + location.pathname + "?reset=1" });
     if (out.error) mesej("❌ " + out.error.message, "err");
-    else mesej("📧 Pautan tetapan semula kata laluan dihantar ke <b>" + emel + "</b>. Semak peti masuk (dan folder spam).", "ok");
-  } catch (err) { mesej("⚠️ Ralat: " + String(err).slice(0, 90), "err"); }
+    else mesej("📧 A password reset link was sent to <b>" + emel + "</b>. Check your inbox (and spam folder).", "ok");
+  } catch (err) { mesej("⚠️ Error: " + String(err).slice(0, 90), "err"); }
 });
 
-/* Simpan kata laluan baharu (selepas klik pautan dalam emel) */
+/* Save the new password (after clicking the link in the email) */
 document.getElementById("fReset").addEventListener("submit", async function (e) {
   e.preventDefault();
   var k2 = document.getElementById("kata2").value, k3 = document.getElementById("kata3").value;
-  if (k2.length < 8) { mesej("Kata laluan perlu sekurang-kurangnya 8 aksara.", "warn"); return; }
-  if (k2 !== k3) { mesej("❌ Dua kata laluan itu tidak sama. Cuba lagi.", "err"); return; }
-  mesej("Menyimpan…", "warn");
+  if (k2.length < 8) { mesej("Password must be at least 8 characters.", "warn"); return; }
+  if (k2 !== k3) { mesej("❌ The two passwords do not match. Try again.", "err"); return; }
+  mesej("Saving…", "warn");
   try {
     var s = await sb.auth.getSession();
     if (!s.data || !s.data.session) { await new Promise(function (r) { setTimeout(r, 1200); }); s = await sb.auth.getSession(); }
-    if (!s.data || !s.data.session) { mesej("❌ Pautan pemulihan tidak sah atau telah luput. Ketuk “Lupa kata laluan?” untuk pautan baharu.", "err"); return; }
+    if (!s.data || !s.data.session) { mesej("❌ This recovery link is invalid or expired. Tap “Forgot password?” for a new link.", "err"); return; }
     var out = await sb.auth.updateUser({ password: k2 });
     if (out.error) { mesej("❌ " + out.error.message, "err"); return; }
-    mesej("✅ Kata laluan baharu disimpan. Membuka dashboard…", "ok");
+    mesej("✅ New password saved. Opening your dashboard…", "ok");
     setTimeout(function () { kePortal(s.data.session); }, 800);
-  } catch (err) { mesej("⚠️ Ralat: " + String(err).slice(0, 90), "err"); }
+  } catch (err) { mesej("⚠️ Error: " + String(err).slice(0, 90), "err"); }
 });
 
-/* Petunjuk dari halaman Akses (masuk.html): ?peranan=… dan mesej selepas log keluar (?keluar=1) */
+/* Hints from the access page (masuk.html): ?peranan=… and the message after sign-out (?keluar=1) */
 (function petunjukAkses() {
   var q = new URLSearchParams(location.search);
-  if (q.get("keluar")) mesej("🚪 Anda telah log keluar. Akaun tidak lagi aktif pada peranti ini.", "ok");
+  if (q.get("keluar")) mesej("🚪 You have been signed out. Your account is no longer active on this device.", "ok");
   var pr = (q.get("peranan") || "").toUpperCase();
   if (pr && window.PHMT) {
     var s = PHMT.senarai([pr]);
     if (s.length) {
       var h = document.querySelector(".hint");
-      if (h) h.innerHTML = "Anda memilih <b>" + s[0].ico + " " + s[0].nama + "</b>. " +
-        "Log masuk dengan emel &amp; kata laluan anda — anda akan dibawa terus ke dashboard.";
+      if (h) h.innerHTML = "You selected <b>" + s[0].ico + " " + s[0].nama + "</b>. " +
+        "Sign in with your email &amp; password — you will be taken straight to your dashboard.";
     }
   }
 })();
@@ -217,9 +223,9 @@ function mula(cuba) {
     });
     return;
   }
-  // CDN lambat? cuba lagi beberapa kali sebelum melaporkan gagal
+  // slow CDN? retry a few times before reporting failure
   if (cuba < 15 && A.url && A.key && typeof window.supabase === "undefined") {
-    mesej("Memuatkan sistem log masuk…", "warn");
+    mesej("Loading sign-in…", "warn");
     setTimeout(function () { mula(cuba + 1); }, 400);
   }
 }

@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Akses Sistem — Log Masuk &amp; Dashboard | Mr Tanah</title>
-<meta name="description" content="Satu tempat untuk pengguna log masuk ke akaun mereka dan membuka dashboard: pemilik, penyewa, kontraktor, ejen, pembeli, penjual, peguamcara dan pembiayaan.">
+<title>Zentra Portal — Sign In &amp; Dashboard</title>
+<meta name="description" content="One place to sign in and open your dashboard: property owner, tenant, agent, contractor, management, farm owner, buyer, solicitor and financing.">
 <style>
-  :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --line:#dde5f2; --muted:#5a6b61; }
+  :root { --mt:#0B2D4A; --mt-tua:#071E33; --hijau:#43B02A; --line:#dde5f2; --muted:#6B7280; }
   * { box-sizing:border-box; }
-  body { margin:0; font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5;
+  body { margin:0; font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#F3F5F8; color:#0B2D4A; line-height:1.5;
          display:flex; min-height:100vh; flex-direction:column; }
-  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 58%,#14905c 100%); color:#fff; padding:18px 16px; }
+  .topbar { background:linear-gradient(135deg,#0B2D4A 0%,#00A3B5 100%); color:#fff; padding:18px 16px; }
   .topbar h1 { margin:0 0 3px; font-size:20px; }
   .topbar p { margin:0; font-size:13px; opacity:.95; }
   .wrap { flex:1; padding:20px 14px 40px; max-width:1060px; margin:0 auto; width:100%; }
-  .card { background:#fff; border:1px solid var(--line); border-radius:14px; padding:18px; box-shadow:0 4px 18px rgba(15,23,42,.06); }
+  .card { background:#fff; border:1px solid var(--line); border-radius:14px; padding:18px; box-shadow:0 4px 18px rgba(11,45,74,.06); }
   .card h2 { margin:0 0 4px; font-size:18px; color:var(--mt-tua); }
   .hint { font-size:12.8px; color:var(--muted); margin:0 0 14px; }
   .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(216px,1fr)); gap:12px; margin-top:6px; }
   .kad { background:#fff; border:1px solid var(--line); border-radius:13px; padding:14px; display:flex; flex-direction:column; gap:7px;
          transition:transform .12s ease, box-shadow .12s ease; }
-  .kad:hover { transform:translateY(-2px); box-shadow:0 8px 22px rgba(15,23,42,.10); }
+  .kad:hover { transform:translateY(-2px); box-shadow:0 8px 22px rgba(11,45,74,.10); }
   .kad .ico { font-size:22px; }
   .kad strong { font-size:14.5px; color:var(--mt-tua); }
   .kad p { margin:0; font-size:12.4px; color:var(--muted); }
@@ -29,81 +29,83 @@
          font-size:14px; font-weight:700; cursor:pointer; text-decoration:none; }
   .btn.block { width:100%; margin-top:auto; }
   .btn.ghost { background:#fff; color:var(--mt); border:1.5px solid #c9d6ec; }
+  .btn.naik { background:var(--hijau); }
   .btn.keluar { background:#fff; color:#a11; border:1.6px solid #e7b4b4; }
   .btn.keluar:hover { background:#fdeaea; }
   .btnrow { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
   .msg { margin-top:12px; font-size:13px; border-radius:10px; padding:10px 12px; display:none; }
   .msg.err { background:#fdeaea; color:#a11; border-left:4px solid #b3261e; display:block; }
-  .msg.ok { background:#e6f5ee; color:#0e5a33; border-left:4px solid var(--hijau); display:block; }
+  .msg.ok { background:#E9F7F4; color:#2F7D1D; border-left:4px solid var(--hijau); display:block; }
   .msg.warn { background:#fff4e2; color:#8a4c00; border-left:4px solid #8a4c00; display:block; }
   .keselamatan { background:#fff9ec; border:1px solid #f0dfb5; border-radius:12px; padding:11px 13px; font-size:12.6px; color:#7a5300; margin-top:14px; }
   .note { margin-top:14px; font-size:11.9px; color:var(--muted); border-top:1px dashed #cfdcd4; padding-top:12px; }
-  .fasa { font-size:11.5px; color:#0e5a33; background:#e6f5ee; border:1px solid #b9e2cd; border-radius:999px; padding:3px 9px; display:inline-block; }
+  .fasa { font-size:11.5px; color:#2F7D1D; background:#E9F7F4; border:1px solid #b9e2cd; border-radius:999px; padding:3px 9px; display:inline-block; }
   .foot { text-align:center; font-size:11.5px; color:var(--muted); padding:14px 10px 26px; }
   @media (max-width:520px){ .topbar h1{font-size:17.5px} .grid{grid-template-columns:1fr} }
 </style>
 </head>
 <body>
   <div class="topbar">
-    <h1>🔐 Akses Sistem — Mr Tanah &amp; Zahir MJ Property</h1>
-    <p>Satu tempat untuk log masuk akaun anda dan buka dashboard. Tak perlu simpan atau ingat URL.</p>
+    <h1>🔐 Zentra Portal</h1>
+    <p>One place to sign in and open your dashboard — no need to save or remember links.</p>
   </div>
 
   <div class="wrap">
-    <!-- ====== KEADAAN 1: SUDAH LOG MASUK ====== -->
+    <!-- ====== STATE 1: ALREADY SIGNED IN ====== -->
     <div class="card" id="kadMasuk" style="display:none">
-      <h2 id="tajukMasuk">Selamat kembali</h2>
-      <p class="hint" id="hintMasuk">Akaun anda aktif pada peranti ini. Pilih dashboard, atau log keluar jika anda menggunakan peranti kongsi.</p>
+      <h2 id="tajukMasuk">Welcome back</h2>
+      <p class="hint" id="hintMasuk">Your account is active on this device. Open a dashboard, or sign out if you are using a shared device.</p>
       <div id="senaraiDash" class="btnrow"></div>
 
-      <div style="margin-top:14px;border:1.8px dashed #14905c;background:#f4fdf8;border-radius:12px;padding:13px">
-        <strong style="font-size:14.2px;color:#0a1f44">➕ Daftar peranan baharu</strong>
-        <p style="margin:4px 0 9px;font-size:12.4px;color:#5a6b61">Mohon tambah peranan lain pada akaun anda — contoh: jadi Kontraktor, Penyewa, Pemilik Ladang, Pembeli/Penjual, Peguamcara. Permohonan akan dinilai oleh Mr Tanah.</p>
-        <a class="btn ghost" href="daftar-peranan.html" style="text-decoration:none;display:inline-block">Mohon peranan baharu →</a>
+      <div style="margin-top:14px;border:1.8px dashed #00A3B5;background:#F3F9FB;border-radius:12px;padding:13px">
+        <strong style="font-size:14.2px;color:#071E33">➕ Add another role</strong>
+        <p style="margin:4px 0 9px;font-size:12.4px;color:#6B7280">Request an additional role on your account — for example Contractor, Tenant, Farm Owner, Buyer/Seller or Solicitor. Your existing records are matched automatically.</p>
+        <a class="btn ghost" href="daftar-peranan.html" style="text-decoration:none;display:inline-block">Request a new role →</a>
       </div>
 
       <div class="btnrow" style="margin-top:14px">
-        <button class="btn keluar" id="bKeluar" type="button">🚪 Log Keluar</button>
-        <button class="btn ghost" id="bKeluarSemua" type="button">Log keluar dari semua peranti</button>
+        <button class="btn keluar" id="bKeluar" type="button">🚪 Sign out</button>
+        <button class="btn ghost" id="bKeluarSemua" type="button">Sign out of all devices</button>
       </div>
 
       <div class="keselamatan">
-        <strong>Keselamatan peranti kongsi:</strong> jika anda menggunakan komputer atau telefon orang lain,
-        tekan <b>Log Keluar</b> selepas selesai. Akaun anda akan ditutup pada peranti ini serta-merta.
-        Untuk keselamatan lebih ketat (hilangkan sesi pada semua peranti), guna
-        <b>Log keluar dari semua peranti</b>.
+        <strong>Shared-device safety:</strong> if you are using someone else's computer or phone,
+        tap <b>Sign out</b> when you are done. Your account closes on this device immediately.
+        For stricter security (end the session on every device), use
+        <b>Sign out of all devices</b>.
       </div>
       <div class="msg" id="msg"></div>
     </div>
 
-    <!-- ====== KEADAAN 2: BELUM LOG MASUK ====== -->
+    <!-- ====== STATE 2: NOT SIGNED IN ====== -->
     <div class="card" id="kadPilih">
-      <h2>Masuk ke akaun anda</h2>
-      <p class="hint">Pilih peranan anda di bawah untuk mula. Satu akaun boleh ada lebih daripada satu peranan
-        (contoh: anda pemilik <em>dan</em> penyewa) — semuanya akan disenaraikan selepas log masuk.</p>
+      <h2>Sign in to your account</h2>
+      <p class="hint">Pick your role below to start. One account can hold more than one role
+        (for example you are both an owner <em>and</em> a tenant) — all of them are listed after you sign in.</p>
 
       <div class="btnrow" style="margin-bottom:14px">
-        <a class="btn" href="login.html" style="padding:12px 20px">🔐 Log Masuk</a>
-        <a class="btn ghost" href="https://mrtanah.com/" style="padding:12px 20px">← Kembali ke laman utama</a>
+        <a class="btn" href="login.html" style="padding:12px 20px">🔐 Sign in</a>
+        <a class="btn naik" href="daftar.html" style="padding:12px 20px">➕ Create account</a>
+        <a class="btn ghost" href="https://mrtanah.com/" style="padding:12px 20px">← Back to home</a>
       </div>
 
       <div class="grid">
-        <div class="kad"><span class="ico">🏠</span><strong>Pemilik Hartanah</strong><p>Unit, sewa, bil &amp; laporan</p><a class="btn block" href="login.html?peranan=PEMILIK_HARTANAH">Log Masuk →</a></div>
-        <div class="kad"><span class="ico">🧾</span><strong>Penyewa</strong><p>Sewa, resit, aduan &amp; notis</p><a class="btn block" href="login.html?peranan=PENYEWA">Log Masuk →</a></div>
-        <div class="kad"><span class="ico">🧑‍💼</span><strong>Ejen</strong><p>Listing, papan COA, serahan dokumen</p><a class="btn block" href="login.html?peranan=EJEN">Log Masuk →</a></div>
-        <div class="kad"><span class="ico">🔧</span><strong>Kontraktor</strong><p>Tugasan, kerja &amp; tuntutan bayaran</p><a class="btn block" href="login.html?peranan=KONTRAKTOR">Log Masuk →</a></div>
-        <div class="kad"><span class="ico">📊</span><strong>Pengurusan (Admin)</strong><p>Dashboard operasi penuh</p><a class="btn block" href="login.html?peranan=ADMIN">Log Masuk →</a></div>
-        <div class="kad"><span class="ico">🌴</span><strong>Pemilik Ladang</strong><p>Ladang, hasil &amp; kos</p><a class="btn block" href="login.html?peranan=PEMILIK_LADANG">Log Masuk →</a></div>
-        <div class="kad"><span class="ico">🛒</span><strong>Pembeli</strong><p>Proses belian &amp; dokumen</p><a class="btn block" href="login.html?peranan=PEMBELI_HARTANAH">Log Masuk →</a></div>
-        <div class="kad" style="border:1.8px dashed #14905c;background:#f4fdf8"><span class="ico">➕</span><strong>Peranan baharu</strong><p>Mohon peranan tambahan pada akaun anda</p><a class="btn block" href="daftar-peranan.html">Mohon →</a></div>
-        <div class="kad"><span class="ico">⚖️</span><strong>Peguamcara / Pembiayaan</strong><p>Kes, dokumen &amp; status</p><a class="btn block" href="login.html">Log Masuk →</a></div>
+        <div class="kad"><span class="ico">🏠</span><strong>Property Owner</strong><p>Units, rent, bills &amp; reports</p><a class="btn block" href="login.html?peranan=PEMILIK_HARTANAH">Sign in →</a></div>
+        <div class="kad"><span class="ico">🧾</span><strong>Tenant</strong><p>Rent, receipts, complaints &amp; notices</p><a class="btn block" href="login.html?peranan=PENYEWA">Sign in →</a></div>
+        <div class="kad"><span class="ico">🧑‍💼</span><strong>Agent</strong><p>Listings, COA board, document handover</p><a class="btn block" href="login.html?peranan=EJEN">Sign in →</a></div>
+        <div class="kad"><span class="ico">🔧</span><strong>Contractor</strong><p>Assignments, works &amp; payment claims</p><a class="btn block" href="login.html?peranan=KONTRAKTOR">Sign in →</a></div>
+        <div class="kad"><span class="ico">📊</span><strong>Management (Admin)</strong><p>Full operations dashboard</p><a class="btn block" href="login.html?peranan=ADMIN">Sign in →</a></div>
+        <div class="kad"><span class="ico">🌴</span><strong>Farm Owner</strong><p>Farm, produce &amp; costs</p><a class="btn block" href="login.html?peranan=PEMILIK_LADANG">Sign in →</a></div>
+        <div class="kad"><span class="ico">🛒</span><strong>Buyer</strong><p>Purchase process &amp; documents</p><a class="btn block" href="login.html?peranan=PEMBELI_HARTANAH">Sign in →</a></div>
+        <div class="kad" style="border:1.8px dashed #00A3B5;background:#F3F9FB"><span class="ico">➕</span><strong>New role</strong><p>Request an additional role on your account</p><a class="btn block" href="daftar-peranan.html">Request →</a></div>
+        <div class="kad"><span class="ico">⚖️</span><strong>Solicitor / Financing</strong><p>Cases, documents &amp; status</p><a class="btn block" href="login.html">Sign in →</a></div>
       </div>
 
       <div class="note">
-        <span class="fasa">Portal Mr Tanah</span>
-        Belum ada akaun? Hubungi Mr Tanah (016-3119076) untuk dijemput masuk.
-        Akaun ejen/COA Zahir MJ Property menggunakan pintu log masuk yang sama.
-        Halaman ini juga tersedia di <a href="https://zahirmjproperty.com/portal/masuk.html">zahirmjproperty.com</a>.
+        <span class="fasa">Zentra Portal</span>
+        No account yet? <a href="daftar.html">Create your Zentra ID →</a>
+        Agent/COA accounts for Zahir MJ Property use the same sign-in door.
+        This page is also available at <a href="https://zahirmjproperty.com/portal/masuk.html">zahirmjproperty.com</a>.
       </div>
     </div>
 
@@ -111,7 +113,7 @@
   </div>
 
   <div class="foot">
-    © Mr Tanah · Portal Pengurusan Hartanah &amp; Ladang — Zoo Management Journey Sdn Bhd
+    © Zentra Property Group · Zentra Portal — operated by ZMJ Solutions Sdn Bhd
   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -120,7 +122,7 @@
 <script>
 (function () {
   "use strict";
-  var A = window.AUTH || window.A || {};   /* auth-config.js mentakrifkan window.AUTH */
+  var A = window.AUTH || window.A || {};   /* auth-config.js defines window.AUTH */
   var sb = null, sesi = null;
 
   function el(id) { return document.getElementById(id); }
@@ -136,7 +138,7 @@
     } catch (e) {}
   }
 
-  /* Bina Supabase (kalau perpustakaan gagal dimuat, halaman tetap boleh guna pautan login) */
+  /* Build Supabase (if the library fails to load, the page still works via the login links) */
   try {
     if (typeof window.supabase !== "undefined" && A.url && A.key) {
       sb = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true } });
@@ -146,19 +148,19 @@
   function lukisPeranan(d) {
     var ps = (d.peranans && d.peranans.length) ? d.peranans : [d.peranan];
     var set = (window.PHMT ? PHMT.senarai(ps) : []);
-    var nama = d.nama || d.emel || "pengguna";
-    el("tajukMasuk").innerHTML = "✅ Selamat kembali, <b>" + nama + "</b>";
-    el("hintMasuk").innerHTML = "Akaun anda aktif pada peranti ini (" + ps.join(", ") + "). Pilih dashboard, " +
-      "atau tekan <b>Log Keluar</b> jika anda menggunakan peranti kongsi.";
+    var nama = d.nama || d.emel || "user";
+    el("tajukMasuk").innerHTML = "✅ Welcome back, <b>" + nama + "</b>";
+    el("hintMasuk").innerHTML = "Your account is active on this device (" + ps.join(", ") + "). Choose a dashboard, " +
+      "or tap <b>Sign out</b> if you are using a shared device.";
     var h = "";
     if (set.length) {
       set.forEach(function (s) {
         h += s.sedia
           ? '<a class="btn" href="' + s.url + '">' + s.ico + " " + s.nama + "</a>"
-          : '<span class="btn ghost" style="opacity:.55">' + s.ico + " " + s.nama + " (akan datang)</span>";
+          : '<span class="btn ghost" style="opacity:.55">' + s.ico + " " + s.nama + " (coming soon)</span>";
       });
     } else {
-      h = '<a class="btn" href="index.html">📊 Buka portal</a>';
+      h = '<a class="btn" href="index.html">📊 Open portal</a>';
     }
     el("senaraiDash").innerHTML = h;
     el("kadPilih").style.display = "none";
@@ -168,18 +170,18 @@
   async function keluar(semua) {
     var t = el("bKeluar"), t2 = el("bKeluarSemua");
     if (t) t.disabled = true; if (t2) t2.disabled = true;
-    tunjuk("msg", "Sedang log keluar…", "warn");
+    tunjuk("msg", "Signing out…", "warn");
     try {
       if (sb) {
         if (semua && sb.auth.signOut.length) { try { await sb.auth.signOut({ scope: "global" }); } catch (e) { await sb.auth.signOut(); } }
         else await sb.auth.signOut();
       }
       try { sessionStorage.removeItem("mt_sesi_token"); localStorage.removeItem("mt_admin_token"); } catch (e) {}
-      tunjuk("msg", "✅ Anda telah log keluar. Akaun tidak lagi aktif pada peranti ini. " +
-        "Membawa anda ke halaman log masuk…", "ok");
+      tunjuk("msg", "✅ You have been signed out. Your account is no longer active on this device. " +
+        "Taking you to the sign-in page…", "ok");
       setTimeout(function () { location.href = "login.html?keluar=1"; }, 900);
     } catch (e) {
-      tunjuk("msg", "⚠️ Log keluar tidak berjaya sepenuhnya. Tutup pelayar atau tekan semula.", "err");
+      tunjuk("msg", "⚠️ Sign-out did not complete. Close the browser or tap again.", "err");
       if (t) t.disabled = false; if (t2) t2.disabled = false;
     }
   }
@@ -188,21 +190,21 @@
     if (el("bKeluar")) el("bKeluar").addEventListener("click", function () { keluar(false); });
     if (el("bKeluarSemua")) el("bKeluarSemua").addEventListener("click", function () { keluar(true); });
     if (!sb) {
-      tunjuk("msg2", "ℹ️ Mod semakan akaun tidak tersedia (perpustakaan log masuk tidak dimuat). " +
-        "Anda masih boleh terus ke <a href='login.html'>halaman log masuk</a>.", "warn");
+      tunjuk("msg2", "ℹ️ Account check is unavailable (sign-in library did not load). " +
+        "You can still go to the <a href='login.html'>sign-in page</a>.", "warn");
       return;
     }
     try {
       var r = await sb.auth.getSession();
       sesi = r && r.data ? r.data.session : null;
-      if (!sesi) return;                       /* belum log masuk → papar kad peranan sahaja */
+      if (!sesi) return;                       /* not signed in → show role cards only */
       simpanSesi(sesi);
       var resp = await fetch(A.api + "?aksi=sesi&access_token=" + encodeURIComponent(sesi.access_token) + "&_=" + Date.now());
       var d = await resp.json();
       if (d && d.ok) lukisPeranan(d);
     } catch (e) {
-      tunjuk("msg2", "ℹ️ Tidak dapat menyemak sesi sekarang (rangkaian). Anda masih boleh " +
-        "<a href='login.html'>log masuk</a> seperti biasa.", "warn");
+      tunjuk("msg2", "ℹ️ Could not check your session right now (network). You can still " +
+        "<a href='login.html'>sign in</a> as usual.", "warn");
     }
   });
 })();
