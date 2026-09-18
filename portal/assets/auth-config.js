@@ -3,5 +3,9 @@
 window.AUTH = {
   url: "https://ntvlqfsisanztdeqhpxh.supabase.co",
   key: "sb_publishable_rPZ8734eOqaX3Mx-yyhN4w_Ta44wsCS",
-  api: "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec"
+  api: "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec",
+  // Pendaftaran akaun (portal/daftar.html). captcha.siteKey = Cloudflare Turnstile SITE key (awam).
+  // Kosong = widget CAPTCHA tidak dipaparkan. Isi selepas Turnstile dihidupkan di Supabase.
+  captcha: { siteKey: "" },
+  daftarRedirect: "https://mrtanah.com/portal/login.html"
 };

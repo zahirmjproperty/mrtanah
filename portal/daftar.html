@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Daftar Akaun — Portal Mr Tanah</title>
+<meta name="description" content="Cipta akaun Portal Mr Tanah — satu akaun untuk pemilik, penyewa, kontraktor, pembeli, penjual dan peguamcara.">
+<style>
+  :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5;
+         display:flex; min-height:100vh; flex-direction:column; }
+  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 58%,#14905c 100%); color:#fff; padding:16px; }
+  .topbar h1 { margin:0 0 3px; font-size:19px; }
+  .topbar p { margin:0; font-size:12.5px; opacity:.95; }
+  .wrap { flex:1; display:flex; align-items:flex-start; justify-content:center; padding:22px 14px 40px; }
+  .card { background:#fff; border:1px solid #dde5f2; border-radius:14px; padding:20px; width:100%; max-width:470px; box-shadow:0 4px 18px rgba(15,23,42,.06); }
+  .card h2 { margin:0 0 4px; font-size:18px; color:var(--mt-tua); }
+  .hint { font-size:12.5px; color:#5a6b61; margin:0 0 14px; }
+  label { display:block; font-size:12.8px; font-weight:700; margin:12px 0 5px; color:#33465e; }
+  input[type=text], input[type=email], input[type=tel], input[type=password] { width:100%; padding:12px; border:1.5px solid #cfdcd4; border-radius:10px; font-size:15px; }
+  input:focus { outline:2px solid var(--mt); outline-offset:-1px; }
+  input.bad { border-color:#b3261e; background:#fff7f6; }
+  .err { color:#b3261e; font-size:12.2px; margin-top:5px; display:none; }
+  .err.on { display:block; }
+  .btn { width:100%; margin-top:16px; background:var(--mt); color:#fff; border:none; border-radius:10px; padding:13px; font-size:15px; font-weight:700; cursor:pointer; }
+  .btn:disabled { opacity:.55; cursor:default; }
+  .btn.ghost { background:#fff; color:var(--mt); border:1.5px solid #c9d6ec; }
+  .msg { margin-top:13px; font-size:13px; border-radius:10px; padding:10px 12px; display:none; }
+  .msg.err { background:#fdeaea; color:#a11; border-left:4px solid #b3261e; display:block; }
+  .msg.ok { background:#e6f5ee; color:#0e5a33; border-left:4px solid var(--hijau); display:block; }
+  .msg.warn { background:#fff4e2; color:#8a4c00; border-left:4px solid #8a4c00; display:block; }
+  .row { display:flex; justify-content:space-between; align-items:center; margin-top:12px; gap:10px; flex-wrap:wrap; }
+  .row a { font-size:12.5px; color:var(--mt); }
+  .note { margin-top:16px; font-size:11.8px; color:#5a6b61; border-top:1px dashed #cfdcd4; padding-top:12px; }
+  .foot { text-align:center; font-size:11.5px; color:#5a6b61; padding:14px 10px 26px; }
+  .pwrow { display:flex; gap:8px; align-items:center; margin-top:8px; }
+  .pwbar { flex:1; height:6px; border-radius:99px; background:#e6ebf1; overflow:hidden; }
+  .pwbar i { display:block; height:100%; width:0; background:#b3261e; transition:width .25s; }
+  .pwlab { font-size:11.6px; font-weight:700; color:#5a6b61; min-width:74px; text-align:right; }
+  .rules { list-style:none; margin:9px 0 0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:3px 12px; }
+  .rules li { font-size:11.8px; color:#5a6b61; }
+  .rules li.ok { color:var(--hijau); font-weight:700; }
+  .chk { display:flex; gap:9px; align-items:flex-start; margin-top:14px; font-size:12.6px; color:#33465e; line-height:1.5; }
+  .chk input { margin-top:2px; width:17px; height:17px; flex:0 0 auto; }
+  .ts { margin-top:14px; }
+  .done { display:none; }
+  .done.on { display:block; }
+  ol.langkah { margin:14px 0 0; padding-left:20px; font-size:13px; color:#33465e; }
+  ol.langkah li { margin-bottom:6px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>🆕 Daftar Akaun — Portal Mr Tanah</h1>
+    <p>Satu akaun untuk semua sistem: pemilik, penyewa, kontraktor, pembeli, penjual, peguamcara</p>
+  </div>
+  <div class="wrap">
+    <div class="card">
+
+      <div id="kadBorang">
+        <h2>Cipta akaun anda</h2>
+        <p class="hint">Isi maklumat di bawah. Kami akan hantar pautan pengesahan ke emel anda — <b>akaun hanya aktif selepas emel disahkan</b>.</p>
+
+        <form id="fDaftar" autocomplete="on" novalidate>
+          <label for="nama">Nama penuh <span style="font-weight:600;color:#5a6b61">(ikut IC / SSM)</span></label>
+          <input type="text" id="nama" autocomplete="name" placeholder="cth. Ahmad bin Abdullah">
+          <div class="err" id="e-nama">Sila isi nama penuh anda.</div>
+
+          <label for="emel">Emel</label>
+          <input type="email" id="emel" autocomplete="username" placeholder="nama@contoh.com">
+          <div class="err" id="e-emel">Emel tidak sah. Emel ini menjadi nama pengguna anda (kekal).</div>
+
+          <label for="tel">No. telefon (Malaysia)</label>
+          <input type="tel" id="tel" autocomplete="tel" placeholder="cth. 012-345 6789">
+          <div class="err" id="e-tel">Sila isi no. telefon yang sah (cth. 012-345 6789).</div>
+          <p class="hint" style="margin:6px 0 0">Digunakan untuk menghubungi anda dan memadankan rekod sedia ada — kami tidak akan cipta akaun kedua untuk orang yang sama.</p>
+
+          <label for="kata">Kata laluan</label>
+          <input type="password" id="kata" autocomplete="new-password" placeholder="Sekurang-kurangnya 10 aksara">
+          <div class="pwrow"><div class="pwbar"><i id="pwfill"></i></div><div class="pwlab" id="pwlab">—</div></div>
+          <ul class="rules">
+            <li id="r1">Sekurang-kurangnya 10 aksara</li>
+            <li id="r2">Huruf besar &amp; kecil</li>
+            <li id="r3">Ada nombor</li>
+            <li id="r4">Bukan kata laluan biasa</li>
+          </ul>
+          <div class="err" id="e-kata">Kata laluan tidak memenuhi syarat di atas.</div>
+
+          <label for="kata2">Ulang kata laluan</label>
+          <input type="password" id="kata2" autocomplete="new-password" placeholder="••••••••">
+          <div class="err" id="e-kata2">Kata laluan tidak sama.</div>
+
+          <div class="ts" id="tsBox" style="display:none">
+            <label style="margin:0 0 6px">Sahkan anda manusia</label>
+            <div id="tsWidget"></div>
+            <div class="err" id="e-ts">Sila selesaikan pengesahan keselamatan.</div>
+          </div>
+
+          <div class="chk">
+            <input type="checkbox" id="consent">
+            <label for="consent" style="margin:0;font-weight:500;font-size:12.6px;color:#33465e">
+              Saya telah baca dan bersetuju dengan <a href="/dasar-privasi.html" target="_blank" rel="noopener">Notis Privasi</a>
+              dan bersetuju Mr Tanah / ZMJ Solutions menyimpan maklumat ini untuk menguruskan akaun saya (PDPA 2010).
+            </label>
+          </div>
+          <div class="err" id="e-consent">Sila tandakan persetujuan untuk teruskan.</div>
+
+          <button class="btn" id="bDaftar" type="submit">Cipta akaun</button>
+        </form>
+
+        <div class="row">
+          <a href="login.html">Sudah ada akaun? Log masuk →</a>
+          <a href="/">← Portal</a>
+        </div>
+        <div class="msg" id="msg"></div>
+
+        <div class="note">
+          <b>Peranan &amp; akses:</b> akaun baharu <b>tiada akses dashboard</b> sehingga peranan diluluskan Mr Tanah.
+          Peranan <b>Ejen</b> dan <b>Pengurusan</b> hanya melalui jemputan. Masalah pendaftaran — WhatsApp <b>016-3119076</b>.
+        </div>
+      </div>
+
+      <div class="done" id="kadSelesai">
+        <h2>✅ Akaun dicipta — sahkan emel anda</h2>
+        <p class="hint">Kami telah hantar pautan pengesahan ke <b id="emelPapar">emel anda</b>. Klik pautan itu untuk mengaktifkan akaun.</p>
+        <ol class="langkah">
+          <li>Buka peti masuk emel anda (semak juga folder <b>Spam</b>).</li>
+          <li>Klik <b>Confirm your email</b> / <b>Sahkan emel</b>.</li>
+          <li>Tetapkan kata laluan (jika diminta) — kemudian log masuk dan <b>mohon peranan</b> anda.</li>
+        </ol>
+        <button class="btn ghost" id="bHantarSemula" type="button">Hantar semula emel pengesahan</button>
+        <div class="msg" id="msg2"></div>
+        <div class="note">Pautan sah selama 24 jam. Emel dihantar dari sistem pengesahan Mr Tanah — jika tiada dalam 10 minit, hubungi WhatsApp <b>016-3119076</b>.</div>
+        <div class="row"><a href="login.html">Ke halaman log masuk →</a><a href="/">← Portal</a></div>
+      </div>
+
+    </div>
+  </div>
+  <div class="foot">Mr Tanah · ZMJ Solutions · Strategic Agro Technology</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/auth-config.js?v=3"></script>
+<script>
+/* Daftar Akaun Portal MT — guna Supabase Auth (satu identiti untuk semua dashboard).
+   Nota keselamatan:
+   - Hanya kunci AWAM (sb_publishable) digunakan di sini.
+   - Nama/telefon TIDAK disimpan dalam Supabase — dihantar ke sistem MT (Apps Script) sahaja.
+   - Mesej ralat sengaja umum supaya tiada siapa boleh menyemak emel siapa yang sudah berdaftar. */
+(function () {
+  var A = window.AUTH || {};
+  var SB = null, tsToken = "", tsId = null;
+
+  function $(id) { return document.getElementById(id); }
+  function el(id) { return document.getElementById(id); }
+
+  function mesej(kotak, teks, jenis) {
+    var m = el(kotak); if (!m) return;
+    m.className = "msg " + (jenis || "warn");
+    m.textContent = teks;
+  }
+
+  function semuaKosong() {
+    ["nama", "emel", "tel", "kata", "kata2"].forEach(function (k) { el(k).value = ""; });
+  }
+
+  /* ---------- kekuatan kata laluan ---------- */
+  function semakKata() {
+    var v = el("kata").value;
+    var ok = [v.length >= 10, /[a-z]/.test(v) && /[A-Z]/.test(v), /[0-9]/.test(v),
+              v.length > 0 && !/^(123456|12345678|password|katalaluan|qwerty|111111|abc123|admin)$/i.test(v.trim())];
+    var n = ok.filter(Boolean).length;
+    var pct = [0, 25, 50, 75, 100][n];
+    var warna = n < 3 ? "#b3261e" : (n === 3 ? "#b8860b" : "#14905c");
+    el("pwfill").style.width = pct + "%";
+    el("pwfill").style.background = warna;
+    el("pwlab").textContent = v ? (n < 3 ? "Lemah" : (n === 3 ? "Sederhana" : "Kuat")) : "—";
+    ["r1", "r2", "r3", "r4"].forEach(function (id, i) { el(id).classList.toggle("ok", ok[i]); });
+    return n >= 3;
+  }
+
+  /* ---------- pengesahan borang ---------- */
+  function sahkan() {
+    var nama = el("nama").value.trim();
+    var emel = el("emel").value.trim();
+    var tel = el("tel").value.trim();
+    var vNama = nama.length > 2;
+    var vEmel = /^[^@\s]+@[^@\s]+\.[A-Za-z]{2,}$/.test(emel);
+    var vTel = tel.replace(/\D/g, "").length >= 9;
+    var vKata = el("kata").value.length >= 10;
+    var vSama = el("kata").value === el("kata2").value && el("kata").value.length > 0;
+    var vTs = !tsId || !!tsToken;
+    var vConsent = el("consent").checked;
+
+    el("nama").classList.toggle("bad", !vNama); el("e-nama").classList.toggle("on", !vNama);
+    el("emel").classList.toggle("bad", !vEmel); el("e-emel").classList.toggle("on", !vEmel);
+    el("tel").classList.toggle("bad", !vTel); el("e-tel").classList.toggle("on", !vTel);
+    el("kata").classList.toggle("bad", !vKata); el("e-kata").classList.toggle("on", !vKata);
+    el("kata2").classList.toggle("bad", !vSama); el("e-kata2").classList.toggle("on", !vSama);
+    if (el("e-ts")) el("e-ts").classList.toggle("on", !vTs);
+    el("e-consent").classList.toggle("on", !vConsent);
+
+    return vNama && vEmel && vTel && vKata && vSama && vTs && vConsent;
+  }
+
+  /* ---------- CAPTCHA (Cloudflare Turnstile) — hanya hidup bila kunci dikonfigurasi ---------- */
+  function pasangTurnstile() {
+    var kunci = (A.captcha && A.captcha.siteKey) || "";
+    if (!kunci) { return; }                    /* belum dikonfigurasi → tiada widget */
+    el("tsBox").style.display = "block";
+    var s = document.createElement("script");
+    s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+    s.async = true; s.defer = true;
+    s.onload = function () {
+      try {
+        tsId = window.turnstile.render("#tsWidget", {
+          sitekey: kunci,
+          callback: function (t) { tsToken = t; },
+          "expired-callback": function () { tsToken = ""; },
+          "error-callback": function () { tsToken = ""; }
+        });
+      } catch (e) { el("tsBox").style.display = "none"; }
+    };
+    s.onerror = function () { el("tsBox").style.display = "none"; };
+    document.head.appendChild(s);
+  }
+
+  /* ---------- hantar ---------- */
+  async function hantar(e) {
+    if (e) e.preventDefault();
+    if (!SB) { mesej("msg", "⚠️ Perpustakaan log masuk gagal dimuatkan (rangkaian). Muat semula halaman.", "err"); return; }
+    if (!sahkan()) { mesej("msg", "Sila betulkan ruangan yang bertanda merah.", "err"); return; }
+
+    var btn = el("bDaftar"); btn.disabled = true;
+    mesej("msg", "Mencipta akaun…", "warn");
+
+    var nama = el("nama").value.trim(), emel = el("emel").value.trim(), tel = el("tel").value.trim();
+    var pilihan = { emailRedirectTo: A.daftarRedirect || (location.origin + "/portal/login.html") };
+    if (tsToken) pilihan.captchaToken = tsToken;
+
+    try {
+      var out = await SB.auth.signUp({ email: emel, password: el("kata").value, options: pilihan });
+      if (out.error) {
+        var kod = String(out.error.code || "") + " " + String(out.error.message || "");
+        if (/rate limit|too many|429/i.test(kod)) {
+          mesej("msg", "Terlalu banyak percubaan. Cuba lagi sebentar (15–60 minit).", "warn");
+        } else if (/already registered|already exists|email_exists|user_already_exists/i.test(kod)) {
+          /* mesej umum — jangan dedah sama ada emel berdaftar */
+          mesej("msg", "Kami tidak dapat mencipta akaun dengan emel ini. Jika anda rasa anda sudah ada akaun, cuba <a href='login.html'>log masuk</a> atau guna “Lupa kata laluan?”.", "warn");
+        } else if (/captcha/i.test(kod)) {
+          mesej("msg", "Pengesahan keselamatan gagal. Muat semula halaman dan cuba lagi.", "err");
+        } else if (/signup.*not allowed|signup_disabled|disabled/i.test(kod)) {
+          mesej("msg", "Pendaftaran akaun belum dibuka. Sila WhatsApp 016-3119076 untuk membuka akaun.", "warn");
+        } else {
+          mesej("msg", "❌ Akaun tidak dapat dicipta buat masa ini: " + (out.error.message || "cuba lagi sebentar"), "err");
+        }
+        if (tsId && window.turnstile) { try { window.turnstile.reset(tsId); } catch (x) {} }
+        tsToken = "";
+        btn.disabled = false;
+        return;
+      }
+
+      /* Rekod nama/telefon dalam sistem MT (Sheets) — best effort, bukan penghalang pendaftaran */
+      cubaRekod(nama, emel, tel);
+
+      el("emelPapar").textContent = emel;
+      mesej("msg", "", "ok");
+      el("kadBorang").style.display = "none";
+      el("kadSelesai").classList.add("on");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } catch (err) {
+      mesej("msg", "❌ Ralat sambungan: " + (err && err.message ? err.message : err), "err");
+      btn.disabled = false;
+    }
+  }
+
+  /* Hantar maklumat pendaftaran ke Apps Script (tab Pendaftaran Akaun + notifikasi MT).
+     Sengaja tidak menghalang pendaftaran jika gagal — peranan tetap perlu kelulusan manusia. */
+  function cubaRekod(nama, emel, tel) {
+    if (!A.api) return;
+    try {
+      var badan = new URLSearchParams({ form: "daftar", nama: nama, emel: emel, wa: tel, laman: "portal-mt" });
+      fetch(A.api, { method: "POST", mode: "no-cors", body: badan }).catch(function () {});
+    } catch (e) { /* diabaikan */ }
+  }
+
+  async function hantarSemula() {
+    var b = el("bHantarSemula"), emel = el("emelPapar").textContent.trim();
+    b.disabled = true; mesej("msg2", "Menghantar…", "warn");
+    try {
+      var r = await SB.auth.resend({ type: "signup", email: emel,
+        options: { emailRedirectTo: A.daftarRedirect || (location.origin + "/portal/login.html") } });
+      if (r.error && /rate limit|too many|429/i.test(String(r.error.message)) ) {
+        mesej("msg2", "Terlalu banyak permintaan. Cuba lagi dalam 15–60 minit.", "warn");
+      } else {
+        mesej("msg2", "✅ Emel pengesahan dihantar semula. Semak peti masuk (dan Spam).", "ok");
+      }
+    } catch (e) {
+      mesej("msg2", "Tidak dapat menghantar semula sekarang. Cuba sebentar lagi.", "err");
+    }
+    b.disabled = false;
+  }
+
+  function mula() {
+    if (typeof window.supabase === "undefined") { mesej("msg", "⚠️ Memuatkan sistem…", "warn"); return setTimeout(mula, 400); }
+    if (!A.url || !A.key) { mesej("msg", "⚠️ Konfigurasi log masuk tiada. Hubungi pentadbir.", "err"); return; }
+    SB = window.supabase.createClient(A.url, A.key, { auth: { persistSession: false } });
+    pasangTurnstile();
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    ["nama", "emel", "tel", "kata", "kata2", "consent"].forEach(function (k) {
+      var n = el(k); if (!n) return;
+      n.addEventListener("input", function () { if (k === "kata") semakKata(); });
+      n.addEventListener("change", function () {});
+    });
+    el("fDaftar").addEventListener("submit", hantar);
+    el("bHantarSemula").addEventListener("click", hantarSemula);
+    mula();
+  });
+})();
+</script>
+</body>
+</html>
