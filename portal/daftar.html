@@ -275,13 +275,18 @@
     }
   }
 
-  /* Hantar maklumat pendaftaran ke Apps Script (tab Pendaftaran Akaun + notifikasi MT).
-     Sengaja tidak menghalang pendaftaran jika gagal — peranan tetap perlu kelulusan manusia. */
+  /* Hantar maklumat pendaftaran ke Apps Script: tab Pendaftaran Akaun + notifikasi MT.
+     Auto-lulus dibuat di pelayan (padanan emel/telefon dengan tab Akses).
+     Sengaja tidak menghalang pendaftaran jika gagal — akaun tetap tercipta. */
   function cubaRekod(nama, emel, tel) {
     if (!A.api) return;
     try {
-      var badan = new URLSearchParams({ form: "daftar", nama: nama, emel: emel, wa: tel, laman: "portal-mt" });
-      fetch(A.api, { method: "POST", mode: "no-cors", body: badan }).catch(function () {});
+      fetch(A.api, {
+        method: "POST", mode: "no-cors", keepalive: true,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ form: "daftar", nama: nama, emel: emel, wa: tel,
+                               consent: true, laman: "portal-mt" })
+      }).catch(function () {});
     } catch (e) { /* diabaikan */ }
   }
 
