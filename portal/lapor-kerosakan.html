@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lapor Kerosakan Unit — Mr Tanah</title>
+<title>Property Damage Report — Zentra Portal</title>
 <style>
   :root { --mt:#123a7a; --mt-tua:#0a1f44; --oren:#e8862e; }
   * { box-sizing:border-box; margin:0; padding:0; }
@@ -41,48 +41,48 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>🏠 Lapor Kerosakan Unit</h1>
-    <p>Mr Tanah — Pengurusan Penyelenggaraan · ZMJ Solutions</p>
+    <h1>🏠 Property Damage Report</h1>
+    <p>Mr Tanah — Maintenance Management · ZMJ Solutions</p>
   </div>
   <div class="wrap">
     <div class="card">
-      <h2>📋 Maklumat Pelapor</h2>
+      <h2>📋 Reporter Details</h2>
       <form id="f">
-        <label>Nama anda (penyewa / ejen / pemilik)</label>
-        <input type="text" id="nama" autocomplete="name" placeholder="cth. Ahmad bin Ali" required>
-        <label>No. WhatsApp anda</label>
-        <input type="tel" id="wa" autocomplete="tel" placeholder="cth. 012-3456789" required>
-        <label>Emel anda</label>
-        <input type="email" id="emel" autocomplete="email" placeholder="cth. ahmad@gmail.com" required>
-        <label>Unit / Alamat rumah</label>
-        <input type="text" id="unit" placeholder="cth. Blok A-3-2, Pangsapuri Mewah, Bandar Baru Bangi" required>
+        <label>Your name (tenant / agent / owner)</label>
+        <input type="text" id="nama" autocomplete="name" placeholder="e.g. Ahmad bin Ali" required>
+        <label>Your WhatsApp number</label>
+        <input type="tel" id="wa" autocomplete="tel" placeholder="e.g. 012-3456789" required>
+        <label>Your email</label>
+        <input type="email" id="emel" autocomplete="email" placeholder="e.g. ahmad@gmail.com" required>
+        <label>Property / Home address</label>
+        <input type="text" id="unit" placeholder="e.g. Block A-3-2, Pangsapuri Mewah, Bandar Baru Bangi" required>
       </form>
     </div>
 
     <div class="card">
-      <h2>🧰 Kerosakan <span style="font-weight:400;font-size:12px;color:#5a6b61">(boleh lebih satu)</span></h2>
-      <div class="emelnote">📷 Gambar boleh <b>muat naik terus di bawah</b> — ATAU hantar kemudian melalui emel: selepas hantar borang, kami hantar <b>salinan laporan ke emel anda</b> — <b>BALAS emel itu</b> untuk gambar/maklumat tambahan (No. Rujukan dipadan automatik).</div>
+      <h2>🧰 Damage <span style="font-weight:400;font-size:12px;color:#5a6b61">(more than one allowed)</span></h2>
+      <div class="emelnote">📷 Photos can be <b>uploaded directly below</b> — OR sent later by email: after you submit the form, we email you a <b>copy of the report</b> — <b>REPLY to that email</b> to add photos/details (the Reference No. is matched automatically).</div>
       <div id="items"></div>
-      <button type="button" class="add-btn" id="addItem">➕ Tambah kerosakan lain</button>
+      <button type="button" class="add-btn" id="addItem">➕ Add another damage item</button>
 
       <form id="f2">
         <div class="chk"><input type="checkbox" id="consent" required>
-          <span>Saya memberi kebenaran kepada Mr Tanah (ZMJ Solutions) untuk menyimpan maklumat ini bagi tujuan penyelenggaraan unit, dan saya faham maklumat peribadi saya tidak akan dikongsi kepada pihak lain tanpa kebenaran. (PDPA)</span></div>
-        <!-- honeypot anti-spam (jangan isi) -->
+          <span>I give Mr Tanah (ZMJ Solutions) permission to store this information for unit maintenance purposes, and I understand that my personal data will not be shared with other parties without consent. (PDPA)</span></div>
+        <!-- honeypot anti-spam (do not fill in) -->
         <input type="text" name="website" id="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off">
-        <button type="submit" class="btn" id="sb">🚀 Hantar Laporan</button>
+        <button type="submit" class="btn" id="sb">🚀 Submit Report</button>
         <div class="ok" id="ok"></div>
         <div class="err" id="err"></div>
-        <div class="wa-fallback" id="wafb">Hantaran gagal. <a id="wafbLink" href="#" target="_blank">Klik sini untuk hantar terus melalui WhatsApp</a></div>
+        <div class="wa-fallback" id="wafb">Submission failed. <a id="wafbLink" href="#" target="_blank">Click here to submit directly via WhatsApp</a></div>
       </form>
     </div>
-    <p style="font-size:11px;color:#6a7a71;text-align:center">Setelah dihantar, anda akan terima No. Rujukan. Gunakan No. Rujukan itu untuk hantar gambar tambahan melalui emel atau bertanya status. ⏱️ Respons dalam 1 hari bekerja.</p>
+    <p style="font-size:11px;color:#6a7a71;text-align:center">After submitting, you will receive a Reference No. Use that Reference No. to send extra photos by email or to ask for a status update. ⏱️ Response within 1 working day.</p>
   </div>
 
 <script>
 var WEBHOOK = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
-var JENIS = ["Plumbing","Elektrik","Bocor / Bumbung","Cat / Kemasan","Perkakas (Appliance)",
-  "Kunci / Pintu / Tingkap","Kaca","Perosak / Serangga","Penghawa Dingin","Lain"];
+var JENIS = ["Plumbing","Electrical","Leak / Roof","Paint / Finishing","Appliances",
+  "Locks / Doors / Windows","Glass","Pests / Insects","Air Conditioning","Other"];
 (function(){
   var itemsBox=document.getElementById('items'), f2=document.getElementById('f2'), sb=document.getElementById('sb');
   var ok=document.getElementById('ok'), err=document.getElementById('err'), wafb=document.getElementById('wafb');
@@ -92,29 +92,29 @@ var JENIS = ["Plumbing","Elektrik","Bocor / Bumbung","Cat / Kemasan","Perkakas (
   function blockHTML(n){
     var opts=JENIS.map(function(j){return '<option>'+esc(j)+'</option>';}).join('');
     return '<div class="item" data-i="'+n+'">'+
-      '<h3>Kerosakan '+(n+1)+'</h3>'+
-      (n>0?'<button type="button" class="btn-del" data-del="'+n+'">✕ Buang</button>':'')+
-      '<label>Jenis kerosakan</label>'+
-      '<select data-k="jenis" required><option value="">— Pilih jenis —</option>'+opts+'</select>'+
-      '<div class="lainbox hide"><label>Nyatakan jenis kerosakan lain</label>'+
-      '<input type="text" data-k="lain" placeholder="cth. Kolam bocor, siling mengelupas"></div>'+
-      '<label>Keterangan kerosakan ini</label>'+
-      '<textarea data-k="ket" placeholder="Apa yang rosak, sejak bila (cth. paip bawah sinki bocor sejak semalam)"></textarea>'+
-      '<label>Gambar kerosakan ini (pilihan — maks 2)</label>'+
+      '<h3>Damage '+(n+1)+'</h3>'+
+      (n>0?'<button type="button" class="btn-del" data-del="'+n+'">✕ Remove</button>':'')+
+      '<label>Type of damage</label>'+
+      '<select data-k="jenis" required><option value="">— Select a type —</option>'+opts+'</select>'+
+      '<div class="lainbox hide"><label>Describe the other type of damage</label>'+
+      '<input type="text" data-k="lain" placeholder="e.g. leaking pond, peeling ceiling"></div>'+
+      '<label>Description of this damage</label>'+
+      '<textarea data-k="ket" placeholder="What is damaged and since when (e.g. the pipe under the sink has been leaking since yesterday)"></textarea>'+
+      '<label>Photos of this damage (optional — max 2)</label>'+
       '<div class="foto-box"><input type="file" data-k="foto" accept="image/*" multiple style="width:auto">'+
-      '<div class="hint">Setiap gambar &lt; ~1.5MB. Gambar lebih besar/banyak — hantar kemudian dengan membalas emel salinan laporan (No. Rujukan auto).</div></div>'+
+      '<div class="hint">Each photo &lt; ~1.5MB. Larger or more photos — send them later by replying to the report copy email (Reference No. matched automatically).</div></div>'+
       '</div>';
   }
   function count(){ return itemsBox.querySelectorAll('.item').length; }
   function addBlock(){
-    if(count()>=MAX_ITEMS){ showErr('Maksimum '+MAX_ITEMS+' kerosakan dalam satu laporan.'); return; }
+    if(count()>=MAX_ITEMS){ showErr('Maximum '+MAX_ITEMS+' damage items per report.'); return; }
     var div=document.createElement('div'); div.innerHTML=blockHTML(count());
     itemsBox.appendChild(div.firstChild);
   }
   itemsBox.addEventListener('change',function(ev){
     if(ev.target.dataset.k==='jenis'){
       var box=ev.target.closest('.item').querySelector('.lainbox');
-      if(box) box.classList.toggle('hide', ev.target.value!=='Lain');
+      if(box) box.classList.toggle('hide', ev.target.value!=='Other');
     }
   });
   itemsBox.addEventListener('click',function(ev){
@@ -122,12 +122,12 @@ var JENIS = ["Plumbing","Elektrik","Bocor / Bumbung","Cat / Kemasan","Perkakas (
   });
   function renumber(){
     var its=itemsBox.querySelectorAll('.item');
-    its.forEach(function(el,i){ el.querySelector('h3').textContent='Kerosakan '+(i+1);
+    its.forEach(function(el,i){ el.querySelector('h3').textContent='Damage '+(i+1);
       var d=el.querySelector('.btn-del'); if(d){ d.dataset.del=i; }
       el.dataset.i=i; });
   }
   document.getElementById('addItem').addEventListener('click',addBlock);
-  addBlock(); // item pertama
+  addBlock(); // first item
   document.getElementById('f').addEventListener('submit',function(ev){ ev.preventDefault(); });
 
   function readFoto(input, cb){
@@ -149,8 +149,8 @@ var JENIS = ["Plumbing","Elektrik","Bocor / Bumbung","Cat / Kemasan","Perkakas (
   f2.addEventListener('submit',function(ev){
     ev.preventDefault();
     if(document.getElementById('website').value){ return; }
-    if(!document.getElementById('consent').checked){ showErr('Sila beri kebenaran PDPA dahulu.'); return; }
-    if(!WEBHOOK){ showErr('Borang belum disambung ke sistem. Guna WhatsApp buat masa ini.'); waFallback(); return; }
+    if(!document.getElementById('consent').checked){ showErr('Please give PDPA consent first.'); return; }
+    if(!WEBHOOK){ showErr('The form is not connected to the system yet. Please use WhatsApp for now.'); waFallback(); return; }
     var its=itemsBox.querySelectorAll('.item');
     var items=[];
     for(var i=0;i<its.length;i++){
@@ -161,15 +161,15 @@ var JENIS = ["Plumbing","Elektrik","Bocor / Bumbung","Cat / Kemasan","Perkakas (
                   fotoEl:el.querySelector('[data-k=foto]')});
     }
     var filled=items.filter(function(x){ return x.jenis!=='' || x.ket!=='' || x.fotoEl.files.length; });
-    if(!filled.length){ showErr('Sila pilih jenis & isi keterangan kerosakan.'); return; }
+    if(!filled.length){ showErr('Please select a damage type and fill in the description.'); return; }
     for(var j=0;j<items.length;j++){
       var it=items[j];
       if(!it.jenis && !it.ket && !it.fotoEl.files.length) continue;
-      if(!it.jenis){ showErr('Kerosakan '+(j+1)+': pilih jenis kerosakan.'); return; }
-      if(it.jenis==='Lain' && it.lain.length<2){ showErr('Kerosakan '+(j+1)+': nyatakan jenis kerosakan lain.'); return; }
-      if(it.ket.length<5 && !it.fotoEl.files.length){ showErr('Kerosakan '+(j+1)+': isi keterangan atau tambah gambar.'); return; }
+      if(!it.jenis){ showErr('Damage '+(j+1)+': select a damage type.'); return; }
+      if(it.jenis==='Other' && it.lain.length<2){ showErr('Damage '+(j+1)+': describe the other type of damage.'); return; }
+      if(it.ket.length<5 && !it.fotoEl.files.length){ showErr('Damage '+(j+1)+': add a description or attach a photo.'); return; }
     }
-    sb.disabled=true; sb.textContent='⏳ Menghantar…'; hideMsg();
+    sb.disabled=true; sb.textContent='⏳ Submitting…'; hideMsg();
     var todo=0, ready=0;
     items.forEach(function(it){ if(it.jenis||it.ket||it.fotoEl.files.length) todo++; });
     if(!todo){ sb.disabled=false; return; }
@@ -185,23 +185,23 @@ var JENIS = ["Plumbing","Elektrik","Bocor / Bumbung","Cat / Kemasan","Perkakas (
                    body:JSON.stringify(payload)})
       .then(function(r){return r.json();})
       .then(function(j){
-        sb.disabled=false; sb.textContent='🚀 Hantar Laporan';
+        sb.disabled=false; sb.textContent='🚀 Submit Report';
         if(j.ok&&!j.spam){
-          ok.innerHTML='✅ <b>Laporan diterima!</b><br><br>No. Rujukan anda:<br><span class="ref">'+esc(j.ref)+'</span>'+
-            '<br><br>📩 <b>Salinan laporan dihantar ke:</b> '+esc(val('emel'))+
-            '<br><span class="hint">Untuk <b>gambar / maklumat tambahan</b> — <b>BALAS emel salinan</b> tersebut (No. Rujukan dipadan automatik).<br>Tiada emel diterima? Semak folder Spam, atau WhatsApp kami dengan No. Rujukan + gambar.</span>';
+          ok.innerHTML='✅ <b>Report received!</b><br><br>Your Reference No.:<br><span class="ref">'+esc(j.ref)+'</span>'+
+            '<br><br>📩 <b>Report copy sent to:</b> '+esc(val('emel'))+
+            '<br><span class="hint">To add <b>photos / extra details</b> — <b>REPLY to that copy email</b> (the Reference No. is matched automatically).<br>Didn&rsquo;t get the email? Check your Spam folder, or WhatsApp us with the Reference No. + photos.</span>';
           ok.style.display='block'; document.getElementById('f').classList.add('hide');
           itemsBox.classList.add('hide'); document.getElementById('addItem').classList.add('hide');
           document.querySelector('.topbar').classList.add('hide'); wafb.style.display='none';
-        } else if(j.ok&&j.spam){ ok.innerHTML='✅ Diterima.'; ok.style.display='block'; }
-        else { showErr('Ralat: '+esc(j.error||'tidak diketahui')); waFallback(); }
+        } else if(j.ok&&j.spam){ ok.innerHTML='✅ Received.'; ok.style.display='block'; }
+        else { showErr('Error: '+esc(j.error||'unknown')); waFallback(); }
       })
-      .catch(function(){ sb.disabled=false; sb.textContent='🚀 Hantar Laporan'; showErr('Ralat rangkaian. Cuba sekali lagi, atau guna WhatsApp.'); waFallback(); });
+      .catch(function(){ sb.disabled=false; sb.textContent='🚀 Submit Report'; showErr('Network error. Please try again, or use WhatsApp.'); waFallback(); });
   }
   function val(id){ var el=document.getElementById(id); return el? el.value.trim():''; }
   function waFallback(){
-    var txt='Lapor Kerosakan Unit%0A%0ANama: '+encodeURIComponent(val('nama'))+
-      '%0AUnit: '+encodeURIComponent(val('unit'))+'%0A%0A';
+    var txt='Property Damage Report%0A%0AName: '+encodeURIComponent(val('nama'))+
+      '%0AProperty: '+encodeURIComponent(val('unit'))+'%0A%0A';
     itemsBox.querySelectorAll('.item').forEach(function(el,i){
       txt+=(i+1)+') '+encodeURIComponent(el.querySelector('[data-k=jenis]').value+' — '+
             el.querySelector('[data-k=ket]').value)+'%0A';

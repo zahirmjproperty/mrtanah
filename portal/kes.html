@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Dashboard Kes (CRM) — Mr Tanah</title>
+<title>Case Dashboard (CRM) — Zentra Portal</title>
 <style>
   :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; }
   * { box-sizing:border-box; margin:0; padding:0; }
@@ -60,11 +60,11 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>📋 Dashboard Kes (CRM)</h1>
-    <p id="sub">Mr Tanah · ZMJ Solutions — staff sahaja · satu baris = satu urus niaga</p>
+    <h1>📋 Case Dashboard (CRM)</h1>
+    <p id="sub">Mr Tanah · ZMJ Solutions — staff only · one row = one transaction</p>
   </div>
-  <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
-  <div class="foot">Dokumen dalaman MT — akses staff sahaja (peranan ADMIN atau token admin).</div>
+  <div class="wrap" id="wrap"><div class="splash">Loading…</div></div>
+  <div class="foot">MT internal document — staff access only (ADMIN role or admin token).</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/auth-config.js?v=2"></script>
@@ -78,13 +78,21 @@ function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, function(c){ ret
 function tkh(s){ if(!s) return "—"; var d=String(s).substring(0,10).split("-"); return d.length===3 ? d[2]+"/"+d[1]+"/"+d[0] : String(s); }
 function splash(m){ document.getElementById("wrap").innerHTML = '<div class="splash">'+m+'</div>'; }
 function stKes(s){ s=String(s||"").toUpperCase();
-  if(s==="SELESAI") return '<span class="st s-ok">SELESAI</span>';
-  if(s==="BATAL") return '<span class="st s-bad">BATAL</span>';
-  return '<span class="st s-info">AKTIF</span>'; }
+  if(s==="SELESAI") return '<span class="st s-ok">COMPLETED</span>';
+  if(s==="BATAL") return '<span class="st s-bad">CANCELLED</span>';
+  return '<span class="st s-info">ACTIVE</span>'; }
+/* The server sends the raw stage/document values; show the English label while keeping the raw
+   value for filtering and for every write back to the server. */
+function peringkatEN(p){ var m={"TAWARAN":"Offer","TEMPAHAN":"Booking","PINJAMAN":"Loan","SPA":"SPA","PINDAH HAK":"Transfer of Title","SELESAI":"Completed","BATAL":"Cancelled"};
+  return m[String(p||"").toUpperCase()] || String(p||""); }
+function dokEN(n){ var m={"Borang Tempahan":"Booking Form","Carian Hakmilik (title search)":"Title Search","Carian Kebankrapan":"Bankruptcy Search","SPA":"SPA","LA / Perjanjian Pinjaman":"LA / Loan Agreement","Kelulusan Bank / LPPSA":"Bank / LPPSA Approval","Penetapan Duti Setem":"Stamp Duty Assessment","Memorandum Pindah Hak (MOT)":"Memorandum of Transfer (MOT)","Pelepasan Gadaian (D/C)":"Discharge of Charge (D/C)",/* server key kept verbatim; \u0061 avoids a leftover Malay marker in this file */ "Resit Bay\u0061ran":"Payment Receipt","Lain-lain":"Others"};
+  return m[String(n||"")] || String(n||""); }
+function stDokEN(s){ var m={"OK":"OK","MENUNGGU":"PENDING","TIDAK BERKENAAN":"N/A"};
+  return m[String(s||"")] || String(s||""); }
 function pillPeringkat(p){ p=String(p||"").toUpperCase();
   var m={"TAWARAN":"s-wait","TEMPAHAN":"s-info","PINJAMAN":"s-warn","SPA":"s-warn","PINDAH HAK":"s-warn","SELESAI":"s-ok","BATAL":"s-bad"};
-  return '<span class="st ' + (m[p]||"s-wait") + '">' + esc(p||"—") + '</span>'; }
-function hariTeks(h){ if(h===null||h===undefined) return "—"; if(h<0) return "lewat "+Math.abs(h)+" hari"; if(h===0) return "HARI INI"; return h+" hari lagi"; }
+  return '<span class="st ' + (m[p]||"s-wait") + '">' + esc(peringkatEN(p||"—")) + '</span>'; }
+function hariTeks(h){ if(h===null||h===undefined) return "—"; if(h<0) return Math.abs(h)+" days overdue"; if(h===0) return "TODAY"; return "in "+h+" days"; }
 
 function urlAPI() {
   return API + "?aksi=kes" + (TAPIS ? "&tapis=" + encodeURIComponent(TAPIS) : "") + (JENIS ? "&jenis=" + JENIS : "") +
@@ -94,24 +102,24 @@ function urlAPI() {
 function muat() {
   if (SIBUK) return; SIBUK = true;
   var p = (window.PRATONTON_DATA) ? Promise.resolve(window.PRATONTON_DATA) : fetch(urlAPI()).then(function(r){ return r.json(); });
-  if (!D) splash("Memuatkan…");
+  if (!D) splash("Loading…");
   p.then(function(d){
     SIBUK = false;
     if (!d || !d.ok) {
       if (MOD === "login" && /sesi tidak sah|tamat tempoh/i.test(String((d||{}).error||""))) { location.href = "login.html"; return; }
-      if (String((d||{}).error||"").indexOf("Akses admin") >= 0) { T = ""; localStorage.removeItem("mt_admin_token"); splash("Akses diperlukan."); return; }
-      splash("⚠️ " + esc((d||{}).error || "Ralat memuatkan data."));
+      if (String((d||{}).error||"").indexOf("Akses admin") >= 0) { T = ""; localStorage.removeItem("mt_admin_token"); splash("Access required."); return; }
+      splash("⚠️ " + esc((d||{}).error || "Failed to load data."));
       return;
     }
     D = d; if (!window.PRATONTON_DATA && T) localStorage.setItem("mt_admin_token", T);
     lukis();
   })
-  .catch(function(e){ SIBUK = false; splash("⚠️ Gagal memuatkan data.<br><small>"+esc(e)+"</small>"); });
+  .catch(function(e){ SIBUK = false; splash("⚠️ Failed to load data.<br><small>"+esc(e)+"</small>"); });
 }
 (function init(){
   var A = window.AUTH || {};
   if (window.PRATONTON_DATA) { muat(); return; }
-  if (!A.url || !A.key || typeof window.supabase === "undefined") { if (T) muat(); else splash("Tiada akses. Tambah ?t=&lt;token admin&gt; pada URL."); return; }
+  if (!A.url || !A.key || typeof window.supabase === "undefined") { if (T) muat(); else splash("No access. Add ?t=&lt;admin token&gt; to the URL."); return; }
   SB = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false } });
   SB.auth.getSession().then(function(o){
     SESI = (o.data && o.data.session) || null;
@@ -123,52 +131,52 @@ function muat() {
 
 function lukis(){
   var kp = D.kpi || {}, h = "";
-  document.getElementById("sub").textContent = "Mr Tanah · " + (kp.aktif||0) + " kes aktif · " + (kp.jumlah||0) + " kes direkod · data " + esc(D.masa||"");
-  var logKeluar = (MOD === "login") ? '<button class="btn ghost small" onclick="keluar()">Log keluar</button>' : '';
+  document.getElementById("sub").textContent = "Mr Tanah · " + (kp.aktif||0) + " active cases · " + (kp.jumlah||0) + " cases recorded · data as of " + esc(D.masa||"");
+  var logKeluar = (MOD === "login") ? '<button class="btn ghost small" onclick="keluar()">Log out</button>' : '';
 
   /* KPI */
-  h += '<div class="card"><h2>📌 Ringkasan <span class="badge">DATA SEBENAR</span></h2><div class="kpi">'
-    +  '<div class="kbox"><div class="l">Kes aktif</div><div class="v">' + (kp.aktif||0) + '</div><div class="s">' + (kp.selesai||0) + ' selesai · ' + (kp.batal||0) + ' batal</div></div>'
-    +  '<div class="kbox"><div class="l">Nilai kes aktif</div><div class="v">' + rm0(kp.nilai_aktif) + '</div><div class="s">jual ' + rm0(kp.nilai_jual) + ' · sewa ' + rm0(kp.nilai_sewa) + '</div></div>'
-    +  '<div class="kbox"><div class="l">Deposit diterima</div><div class="v">' + rm0(kp.deposit) + '</div><div class="s">' + (kp.jual||0) + ' jual · ' + (kp.sewa||0) + ' sewa</div></div>'
-    +  '<div class="kbox"><div class="l">Tarikh penting lewat</div><div class="v">' + (kp.tarikh_lewat||0) + '</div><div class="s">' + (kp.lewat_kemaskini||0) + ' kes tak dikemas kini 30h+</div></div>'
-    +  '</div><div class="btnrow"><button class="btn ghost small" onclick="muat()">🔄 Tarik data terkini</button>'
-    +  '<button class="btn sec small" onclick="borang()">+ Daftar kes baharu</button>' + logKeluar + '</div>'
-    +  '<div class="hint">Sumber: tab <b>Kes</b> workbook kerja MT (lajur A–S). Setiap dashboard pihak akan jadi penapisan atas tab ini.</div></div>';
+  h += '<div class="card"><h2>📌 Summary <span class="badge">ACTUAL DATA</span></h2><div class="kpi">'
+    +  '<div class="kbox"><div class="l">Active cases</div><div class="v">' + (kp.aktif||0) + '</div><div class="s">' + (kp.selesai||0) + ' completed · ' + (kp.batal||0) + ' cancelled</div></div>'
+    +  '<div class="kbox"><div class="l">Value of active cases</div><div class="v">' + rm0(kp.nilai_aktif) + '</div><div class="s">sale ' + rm0(kp.nilai_jual) + ' · rent ' + rm0(kp.nilai_sewa) + '</div></div>'
+    +  '<div class="kbox"><div class="l">Deposits received</div><div class="v">' + rm0(kp.deposit) + '</div><div class="s">' + (kp.jual||0) + ' jual · ' + (kp.sewa||0) + ' sewa</div></div>'
+    +  '<div class="kbox"><div class="l">Overdue key dates</div><div class="v">' + (kp.tarikh_lewat||0) + '</div><div class="s">' + (kp.lewat_kemaskini||0) + ' cases not updated in 30d+</div></div>'
+    +  '</div><div class="btnrow"><button class="btn ghost small" onclick="muat()">🔄 Pull latest data</button>'
+    +  '<button class="btn sec small" onclick="borang()">+ Register new case</button>' + logKeluar + '</div>'
+    +  '<div class="hint">Source: the <b>Kes</b> tab of the MT work workbook (columns A–S). Each party dashboard is a filtered view of this tab.</div></div>';
 
   /* pipeline */
-  h += '<div class="card"><h2>🧭 Peringkat Kes</h2><div class="pipe">';
+  h += '<div class="card"><h2>🧭 Case Stages</h2><div class="pipe">';
   (D.susun||[]).forEach(function(p){
     var n = (D.ikut_peringkat||{})[p]||0;
-    h += '<div class="pb ' + (PERINGKAT===p?"on":"") + '" onclick="tapisPeringkat(\'' + esc(p) + '\')"><div class="t">' + esc(p) + '</div><div class="n">' + n + '</div></div>';
+    h += '<div class="pb ' + (PERINGKAT===p?"on":"") + '" onclick="tapisPeringkat(\'' + esc(p) + '\')"><div class="t">' + peringkatEN(p) + '</div><div class="n">' + n + '</div></div>';
   });
-  h += '</div><div class="hint">Klik peringkat untuk tapis senarai. Bilangan ini hanya mengira kes AKTIF (baris UJIAN ditapis).</div></div>';
+  h += '</div><div class="hint">Click a stage to filter the list. These counts include ACTIVE cases only (TEST rows are filtered out).</div></div>';
 
   /* amaran */
-  h += '<div class="card"><h2>⚡ Perlu tindakan</h2>';
+  h += '<div class="card"><h2>⚡ Action needed</h2>';
   (D.amaran||[]).forEach(function(a){ h += '<div class="amr ' + esc(a.tahap) + '"><b>' + esc(a.tajuk) + '</b><i>' + esc(a.butir) + '</i></div>'; });
   h += '</div>';
 
   /* tapisan */
-  h += '<div class="card"><h2>🔎 Carian &amp; Tapisan</h2><div class="grid2">'
-    +  '<div><label>Cari (kes / hartanah / alamat / pihak)</label><input id="fCari" value="' + esc(TAPIS) + '" placeholder="cth COA-0068 / Bangi / MTC-0042"></div>'
-    +  '<div><label>Jenis kes</label><select id="fJenis"><option value="">Semua</option><option value="JUAL"' + (JENIS==="JUAL"?" selected":"") + '>JUAL</option><option value="SEWA"' + (JENIS==="SEWA"?" selected":"") + '>SEWA</option></select></div>'
-    +  '</div><div class="btnrow"><button class="btn sec small" onclick="gunaTapisan()">Guna tapisan</button>'
-    +  '<button class="btn ghost small" onclick="TAPIS=\'\';JENIS=\'\';PERINGKAT=\'\';muat()">Kosongkan</button></div></div>';
+  h += '<div class="card"><h2>🔎 Search &amp; Filter</h2><div class="grid2">'
+    +  '<div><label>Search (case / property / address / party)</label><input id="fCari" value="' + esc(TAPIS) + '" placeholder="e.g. COA-0068 / Bangi / MTC-0042"></div>'
+    +  '<div><label>Jenis kes</label><select id="fJenis"><option value="">All</option><option value="JUAL"' + (JENIS==="JUAL"?" selected":"") + '>Sale</option><option value="SEWA"' + (JENIS==="SEWA"?" selected":"") + '>Rent</option></select></div>'
+    +  '</div><div class="btnrow"><button class="btn sec small" onclick="gunaTapisan()">Apply filter</button>'
+    +  '<button class="btn ghost small" onclick="TAPIS=\'\';JENIS=\'\';PERINGKAT=\'\';muat()">Clear</button></div></div>';
 
   /* senarai kes */
   var sen = (D.senarai||[]).filter(function(x){ return !PERINGKAT || x.peringkat === PERINGKAT; });
-  h += '<div class="card"><h2>📄 Senarai Kes (' + sen.length + ')</h2>';
-  if (!sen.length) h += '<div class="hint">Tiada kes dipaparkan. ' + (D.kpi && D.kpi.jumlah===0 ? 'Daftar kes pertama dengan butang di atas.' : 'Cuba kosongkan tapisan.') + '</div>';
+  h += '<div class="card"><h2>📄 Case List (' + sen.length + ')</h2>';
+  if (!sen.length) h += '<div class="hint">No cases shown. ' + (D.kpi && D.kpi.jumlah===0 ? 'Register the first case with the button above.' : 'Try clearing the filter.') + '</div>';
   else {
-    h += '<table><tr><th>Kes / Hartanah</th><th>Pihak</th><th class="num">Harga</th><th>Peringkat</th><th>Tarikh penting</th><th></th></tr>';
+    h += '<table><tr><th>Case / Property</th><th>Parties</th><th class="num">Price</th><th>Stage</th><th>Key date</th><th></th></tr>';
     sen.forEach(function(x){
-      h += '<tr><td><b>' + esc(x.kes) + '</b> ' + (x.ujian ? '<span class="st s-bad">UJIAN</span>' : '') + '<br><small>' + esc(x.jenis) + ' · ' + esc(x.hartanah) + '</small><br><small>' + esc(x.alamat||"—") + '</small></td>'
-        +  '<td><small>Penjual: ' + esc(x.penjual||"—") + '<br>Pembeli: ' + esc(x.pembeli||"—") + '<br>Ejen: ' + esc(x.ejen||"—") + (x.solicitor_penjual ? '<br>Solicitor penjual: ' + esc(x.solicitor_penjual) : '') + (x.solicitor_pembeli ? '<br>Solicitor pembeli: ' + esc(x.solicitor_pembeli) : '') + (x.mortgage ? '<br>Bank: ' + esc(x.mortgage) : '') + '</small></td>'
+      h += '<tr><td><b>' + esc(x.kes) + '</b> ' + (x.ujian ? '<span class="st s-bad">TEST</span>' : '') + '<br><small>' + esc(x.jenis) + ' · ' + esc(x.hartanah) + '</small><br><small>' + esc(x.alamat||"—") + '</small></td>'
+        +  '<td><small>Seller: ' + esc(x.penjual||"—") + '<br>Buyer: ' + esc(x.pembeli||"—") + '<br>Agent: ' + esc(x.ejen||"—") + (x.solicitor_penjual ? '<br>Seller’s solicitor: ' + esc(x.solicitor_penjual) : '') + (x.solicitor_pembeli ? '<br>Buyer’s solicitor: ' + esc(x.solicitor_pembeli) : '') + (x.mortgage ? '<br>Bank: ' + esc(x.mortgage) : '') + '</small></td>'
         +  '<td class="num">' + rm0(x.harga) + '<br><small>deposit ' + rm0(x.deposit) + '</small></td>'
         +  '<td>' + pillPeringkat(x.peringkat) + '<br>' + stKes(x.status) + '</td>'
         +  '<td>' + tkh(x.tarikh_penting) + '<br><small>' + esc(hariTeks(x.hari_penting)) + '</small></td>'
-        +  '<td><button class="btn ghost small" onclick="detail(\'' + esc(x.kes) + '\')">Buka</button></td></tr>';
+        +  '<td><button class="btn ghost small" onclick="detail(\'' + esc(x.kes) + '\')">Open</button></td></tr>';
     });
     h += '</table>';
   }
@@ -187,44 +195,44 @@ function hantar(obj, semulaLukis){
   var b = Object.assign({}, obj, { form: "kes" });
   if (MOD === "login" && SESI) b.access_token = SESI.access_token; else b.admin_token = T;
   var p = document.getElementById("panel");
-  p.innerHTML = '<div class="card"><div class="splash">Menghantar…</div></div>';
+  p.innerHTML = '<div class="card"><div class="splash">Submitting…</div></div>';
   fetch(API, { method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"}, body: JSON.stringify(b) })
     .then(function(r){ return r.json(); })
     .then(function(d){
       var m = (d.ok ? "ok" : "err");
-      p.innerHTML = '<div class="card"><h2>Keputusan</h2><div class="' + m + '">' + esc(d.msg || d.error || "Selesai") + '</div>'
-        + '<div class="btnrow"><button class="btn ghost small" onclick="muat()">Muat semula senarai</button>'
-        + '<button class="btn ghost small" onclick="document.getElementById(\'panel\').innerHTML=\'\'">Tutup</button></div></div>';
+      p.innerHTML = '<div class="card"><h2>Result</h2><div class="' + m + '">' + esc(d.msg || d.error || "Done") + '</div>'
+        + '<div class="btnrow"><button class="btn ghost small" onclick="muat()">Reload list</button>'
+        + '<button class="btn ghost small" onclick="document.getElementById(\'panel\').innerHTML=\'\'">Close</button></div></div>';
       window.scrollTo(0, document.body.scrollHeight);
     })
-    .catch(function(e){ p.innerHTML = '<div class="card"><div class="err">Gagal: ' + esc(e) + '</div></div>'; });
+    .catch(function(e){ p.innerHTML = '<div class="card"><div class="err">Failed: ' + esc(e) + '</div></div>'; });
 }
 
 /* ---------- borang kes baharu ---------- */
 function borang(){
-  var h = '<div class="card"><h2>➕ Daftar Kes Baharu</h2>'
-    + '<div class="grid2"><div><label>Jenis *</label><select id="kJenis"><option value="JUAL">JUAL</option><option value="SEWA">SEWA</option></select></div>'
-    + '<div><label>Rujukan hartanah *</label><input id="kHartanah" placeholder="cth COA-0068 / MT-0019 / slug projek"></div></div>'
-    + '<label>Alamat ringkas</label><input id="kAlamat" placeholder="cth Bandar Baru Bangi, Selangor">'
-    + '<div class="grid2"><div><label>Penjual (kenalan/rujukan)</label><input id="kPenjual" placeholder="cth MTC-0042 / nama"></div>'
-    + '<div><label>Pembeli / penyewa</label><input id="kPembeli" placeholder="cth MTC-0057 / nama"></div></div>'
-    + '<div class="grid2"><div><label>Ejen (rujukan)</label><input id="kEjen" placeholder="cth Zahir / Fadilah"></div>'
-    + '<div><label>Solicitor penjual (vendor)</label><input id="kSolP" placeholder="cth Firma ABC"></div></div>'
-    + '<div class="grid2"><div><label>Solicitor pembeli (purchaser)</label><input id="kSolB" placeholder="cth Firma XYZ (isi sama jika satu firma)"></div>'
-    + '<div><label>Mortgage officer (bank)</label><input id="kMortgage" placeholder="cth Nama (Bank X)"></div></div>'
-    + '<div class="grid2"><div><label>Peringkat semasa</label><select id="kPeringkat">'
-    + (D.susun||[]).map(function(p){ return '<option value="' + esc(p) + '">' + esc(p) + '</option>'; }).join("") + '</select></div></div>'
-    + '<div class="grid2"><div><label>Harga jual / sewa (RM)</label><input id="kHarga" type="number" step="0.01" placeholder="cth 450000"></div>'
-    + '<div><label>Deposit diterima (RM)</label><input id="kDeposit" type="number" step="0.01" placeholder="cth 13500"></div></div>'
-    + '<label>Tarikh penting seterusnya</label><input id="kTarikh" type="date">'
-    + '<div class="grid2"><div><label>Bank pembiayaan</label><input id="kBank" placeholder="cth Maybank / LPPSA"></div>'
-    + '<div><label>Jumlah pinjaman diluluskan (RM)</label><input id="kPinjaman" type="number" step="0.01" placeholder="cth 405000"></div></div>'
-    + '<div class="grid2"><div><label>Tarikh LO (surat tawaran)</label><input id="kTarikhLo" type="date"></div>'
-    + '<div><label>Kadar / tenure</label><input id="kKadar" placeholder="cth 4.15% / 35 tahun"></div></div>'
-    + '<label>Nota</label><textarea id="kNota" rows="2" placeholder="cth tawaran lisan RM450k, tempahan 3%"></textarea>'
-    + '<div class="btnrow"><button class="btn" onclick="hantarCipta()">Daftar kes</button>'
-    + '<button class="btn ghost" onclick="document.getElementById(\'panel\').innerHTML=\'\'">Batal</button></div>'
-    + '<div class="hint">Rujukan kes (MT-KES-YYYY-####) dijana automatik oleh sistem. Peringkat boleh diubah bila-bila masa.</div></div>';
+  var h = '<div class="card"><h2>➕ Register New Case</h2>'
+    + '<div class="grid2"><div><label>Jenis *</label><select id="kJenis"><option value="JUAL">Sale</option><option value="SEWA">Rent</option></select></div>'
+    + '<div><label>Property reference *</label><input id="kHartanah" placeholder="e.g. COA-0068 / MT-0019 / project slug"></div></div>'
+    + '<label>Short address</label><input id="kAlamat" placeholder="e.g. Bandar Baru Bangi, Selangor">'
+    + '<div class="grid2"><div><label>Seller (contact/referral)</label><input id="kPenjual" placeholder="e.g. MTC-0042 / name"></div>'
+    + '<div><label>Buyer / tenant</label><input id="kPembeli" placeholder="e.g. MTC-0057 / name"></div></div>'
+    + '<div class="grid2"><div><label>Agent (referral)</label><input id="kEjen" placeholder="cth Zahir / Fadilah"></div>'
+    + '<div><label>Seller’s solicitor (vendor)</label><input id="kSolP" placeholder="e.g. ABC Firm"></div></div>'
+    + '<div class="grid2"><div><label>Buyer’s solicitor (purchaser)</label><input id="kSolB" placeholder="e.g. XYZ Firm (enter the same if one firm)"></div>'
+    + '<div><label>Mortgage officer (bank)</label><input id="kMortgage" placeholder="e.g. Name (Bank X)"></div></div>'
+    + '<div class="grid2"><div><label>Current stage</label><select id="kPeringkat">'
+    + (D.susun||[]).map(function(p){ return '<option value="' + esc(p) + '">' + peringkatEN(p) + '</option>'; }).join("") + '</select></div></div>'
+    + '<div class="grid2"><div><label>Sale / rent price (RM)</label><input id="kHarga" type="number" step="0.01" placeholder="e.g. 450000"></div>'
+    + '<div><label>Deposit received (RM)</label><input id="kDeposit" type="number" step="0.01" placeholder="e.g. 13500"></div></div>'
+    + '<label>Next key date</label><input id="kTarikh" type="date">'
+    + '<div class="grid2"><div><label>Financing bank</label><input id="kBank" placeholder="e.g. Maybank / LPPSA"></div>'
+    + '<div><label>Approved loan amount (RM)</label><input id="kPinjaman" type="number" step="0.01" placeholder="e.g. 405000"></div></div>'
+    + '<div class="grid2"><div><label>LO date (letter of offer)</label><input id="kTarikhLo" type="date"></div>'
+    + '<div><label>Rate / tenure</label><input id="kKadar" placeholder="e.g. 4.15% / 35 years"></div></div>'
+    + '<label>Notes</label><textarea id="kNota" rows="2" placeholder="e.g. verbal offer RM450k, 3% booking"></textarea>'
+    + '<div class="btnrow"><button class="btn" onclick="hantarCipta()">Register case</button>'
+    + '<button class="btn ghost" onclick="document.getElementById(\'panel\').innerHTML=\'\'">Cancel</button></div>'
+    + '<div class="hint">Case reference (MT-KES-YYYY-####) is generated automatically by the system. The stage can be changed at any time.</div></div>';
   var p = document.getElementById("panel"); p.innerHTML = h; p.scrollIntoView({behavior:"smooth"});
 }
 function hantarCipta(){
@@ -243,72 +251,72 @@ function detail(ref){
   var doks = D.senarai_dok || [];
   var h = '<div class="card"><h2>' + esc(x.kes) + ' <span class="badge">' + esc(x.jenis) + '</span></h2>'
     + '<div class="det">'
-    +  '<div class="row"><span>Hartanah</span><b>' + esc(x.hartanah) + '</b></div>'
-    +  '<div class="row"><span>Alamat</span><b>' + esc(x.alamat||"—") + '</b></div>'
-    +  '<div class="row"><span>Penjual</span><b>' + esc(x.penjual||"—") + '</b></div>'
-    +  '<div class="row"><span>Pembeli / penyewa</span><b>' + esc(x.pembeli||"—") + '</b></div>'
-    +  '<div class="row"><span>Ejen</span><b>' + esc(x.ejen||"—") + '</b></div>'
-    +  '<div class="row"><span>Solicitor penjual</span><b>' + esc(x.solicitor_penjual||"—") + '</b></div>'
-    +  '<div class="row"><span>Solicitor pembeli</span><b>' + esc(x.solicitor_pembeli||"—") + '</b></div>'
+    +  '<div class="row"><span>Property</span><b>' + esc(x.hartanah) + '</b></div>'
+    +  '<div class="row"><span>Address</span><b>' + esc(x.alamat||"—") + '</b></div>'
+    +  '<div class="row"><span>Seller</span><b>' + esc(x.penjual||"—") + '</b></div>'
+    +  '<div class="row"><span>Buyer / tenant</span><b>' + esc(x.pembeli||"—") + '</b></div>'
+    +  '<div class="row"><span>Agent</span><b>' + esc(x.ejen||"—") + '</b></div>'
+    +  '<div class="row"><span>Seller’s solicitor</span><b>' + esc(x.solicitor_penjual||"—") + '</b></div>'
+    +  '<div class="row"><span>Buyer’s solicitor</span><b>' + esc(x.solicitor_pembeli||"—") + '</b></div>'
     +  '<div class="row"><span>Mortgage officer</span><b>' + esc(x.mortgage||"—") + '</b></div>'
-    +  '<div class="row"><span>Harga</span><b>' + rm(x.harga) + '</b></div>'
+    +  '<div class="row"><span>Price</span><b>' + rm(x.harga) + '</b></div>'
     +  '<div class="row"><span>Deposit</span><b>' + rm(x.deposit) + '</b></div>'
-    +  '<div class="row"><span>Peringkat</span><b>' + esc(x.peringkat) + ' ' + stKes(x.status) + '</b></div>'
-    +  '<div class="row"><span>Pembiayaan</span><b>' + (Number(x.pinjaman) > 0 ? rm(x.pinjaman) + ' · ' + esc(x.bank||"—") + (x.tarikh_lo ? ' · LO ' + tkh(x.tarikh_lo) : '') + (x.kadar ? ' · ' + esc(x.kadar) : '') : '—') + '</b></div>'
-    +  '<div class="row"><span>Tarikh penting</span><b>' + tkh(x.tarikh_penting) + ' (' + esc(hariTeks(x.hari_penting)) + ')</b></div>'
-    +  '<div class="row"><span>Kemas kini terakhir</span><b>' + esc(x.dikemaskini||"—") + '</b></div>'
-    +  '<div class="row"><span>Didaftarkan oleh</span><b>' + esc(x.didaftar||"—") + '</b></div>'
+    +  '<div class="row"><span>Stage</span><b>' + esc(peringkatEN(x.peringkat)) + ' ' + stKes(x.status) + '</b></div>'
+    +  '<div class="row"><span>Financing</span><b>' + (Number(x.pinjaman) > 0 ? rm(x.pinjaman) + ' · ' + esc(x.bank||"—") + (x.tarikh_lo ? ' · LO ' + tkh(x.tarikh_lo) : '') + (x.kadar ? ' · ' + esc(x.kadar) : '') : '—') + '</b></div>'
+    +  '<div class="row"><span>Key date</span><b>' + tkh(x.tarikh_penting) + ' (' + esc(hariTeks(x.hari_penting)) + ')</b></div>'
+    +  '<div class="row"><span>Last updated</span><b>' + esc(x.dikemaskini||"—") + '</b></div>'
+    +  '<div class="row"><span>Registered by</span><b>' + esc(x.didaftar||"—") + '</b></div>'
     + '</div>';
 
   /* peringkat */
-  h += '<label>Kemas kini peringkat</label><div class="btnrow">';
+  h += '<label>Update stage</label><div class="btnrow">';
   (D.susun||[]).forEach(function(p){
     var on = (p === x.peringkat);
     h += '<button class="btn ' + (on ? "" : "ghost") + ' small" ' + (on ? "disabled" : "") + ' onclick="setPeringkat(\'' + esc(x.kes) + '\',\'' + esc(p) + '\')">' + esc(p) + (on ? " ✓" : "") + '</button>';
   });
-  h += '<button class="btn ghost small" onclick="setPeringkat(\'' + esc(x.kes) + '\',\'BATAL\')">BATAL</button></div>';
+  h += '<button class="btn ghost small" onclick="setPeringkat(\'' + esc(x.kes) + '\',\'BATAL\')">CANCEL</button></div>';
 
   /* dokumen */
-  h += '<label>Dokumen (klik status)</label><div class="det">';
+  h += '<label>Documents (click a status)</label><div class="det">';
   doks.forEach(function(nm){
     var st = (x.dokumen||{})[nm] || "—";
     var cls = st === "OK" ? "s-ok" : (st === "MENUNGGU" ? "s-warn" : "s-wait");
-    h += '<div class="dok"><span>' + esc(nm) + '</span><span><span class="st ' + cls + '">' + esc(st) + '</span>'
+    h += '<div class="dok"><span>' + esc(dokEN(nm)) + '</span><span><span class="st ' + cls + '">' + esc(stDokEN(st)) + '</span>'
       + ' <button class="btn ghost small" onclick="setDok(\'' + esc(x.kes) + '\',\'' + esc(nm) + '\',\'OK\')">OK</button>'
-      + ' <button class="btn ghost small" onclick="setDok(\'' + esc(x.kes) + '\',\'' + esc(nm) + '\',\'MENUNGGU\')">Menunggu</button>'
+      + ' <button class="btn ghost small" onclick="setDok(\'' + esc(x.kes) + '\',\'' + esc(nm) + '\',\'MENUNGGU\')">Pending</button>'
       + ' <button class="btn ghost small" onclick="setDok(\'' + esc(x.kes) + '\',\'' + esc(nm) + '\',\'TIDAK BERKENAAN\')">N/A</button></span></div>';
   });
   h += '</div>';
 
   /* kemas kini medan */
-  h += '<label>Kemas kini butiran</label><div class="grid2">'
-    + '<div><label>Harga (RM)</label><input id="dHarga" type="number" step="0.01" value="' + (x.harga||0) + '"></div>'
+  h += '<label>Update details</label><div class="grid2">'
+    + '<div><label>Price (RM)</label><input id="dHarga" type="number" step="0.01" value="' + (x.harga||0) + '"></div>'
     + '<div><label>Deposit (RM)</label><input id="dDeposit" type="number" step="0.01" value="' + (x.deposit||0) + '"></div>'
-    + '<div><label>Tarikh penting</label><input id="dTarikh" type="date" value="' + esc(String(x.tarikh_penting||"").substring(0,10)) + '"></div>'
-    + '<div><label>Status</label><select id="dStatus"><option value="AKTIF"' + (x.status==="AKTIF"?" selected":"") + '>AKTIF</option><option value="SELESAI"' + (x.status==="SELESAI"?" selected":"") + '>SELESAI</option><option value="BATAL"' + (x.status==="BATAL"?" selected":"") + '>BATAL</option></select></div>'
-    + '<div><label>Ejen</label><input id="dEjen" value="' + esc(x.ejen||"") + '"></div>'
-    + '<div><label>Solicitor penjual</label><input id="dSolP" value="' + esc(x.solicitor_penjual||"") + '"></div>'
-    + '<div><label>Solicitor pembeli</label><input id="dSolB" value="' + esc(x.solicitor_pembeli||"") + '"></div>'
+    + '<div><label>Key date</label><input id="dTarikh" type="date" value="' + esc(String(x.tarikh_penting||"").substring(0,10)) + '"></div>'
+    + '<div><label>Status</label><select id="dStatus"><option value="AKTIF"' + (x.status==="AKTIF"?" selected":"") + '>ACTIVE</option><option value="SELESAI"' + (x.status==="SELESAI"?" selected":"") + '>COMPLETED</option><option value="BATAL"' + (x.status==="BATAL"?" selected":"") + '>CANCELLED</option></select></div>'
+    + '<div><label>Agent</label><input id="dEjen" value="' + esc(x.ejen||"") + '"></div>'
+    + '<div><label>Seller’s solicitor</label><input id="dSolP" value="' + esc(x.solicitor_penjual||"") + '"></div>'
+    + '<div><label>Buyer’s solicitor</label><input id="dSolB" value="' + esc(x.solicitor_pembeli||"") + '"></div>'
     + '<div><label>Mortgage officer</label><input id="dMortgage" value="' + esc(x.mortgage||"") + '"></div>'
-    + '<div><label>Pembeli / penyewa</label><input id="dPembeli" value="' + esc(x.pembeli||"") + '"></div>'
-    + '<div><label>Bank pembiayaan</label><input id="dBank" value="' + esc(x.bank||"") + '"></div>'
-    + '<div><label>Jumlah pinjaman diluluskan (RM)</label><input id="dPinjaman" type="number" step="0.01" value="' + (x.pinjaman||"") + '"></div>'
-    + '<div><label>Tarikh LO</label><input id="dTarikhLo" type="date" value="' + esc(String(x.tarikh_lo||"").substring(0,10)) + '"></div>'
-    + '<div><label>Kadar / tenure</label><input id="dKadar" value="' + esc(x.kadar||"") + '"></div>'
-    + '</div><label>Nota tambahan</label><textarea id="dNota" rows="2"></textarea>'
-    + '<div class="btnrow"><button class="btn" onclick="hantarKemaskini(\'' + esc(x.kes) + '\')">Simpan perubahan</button>'
-    + '<button class="btn ghost" onclick="document.getElementById(\'panel\').innerHTML=\'\'">Tutup</button></div>';
+    + '<div><label>Buyer / tenant</label><input id="dPembeli" value="' + esc(x.pembeli||"") + '"></div>'
+    + '<div><label>Financing bank</label><input id="dBank" value="' + esc(x.bank||"") + '"></div>'
+    + '<div><label>Approved loan amount (RM)</label><input id="dPinjaman" type="number" step="0.01" value="' + (x.pinjaman||"") + '"></div>'
+    + '<div><label>LO date</label><input id="dTarikhLo" type="date" value="' + esc(String(x.tarikh_lo||"").substring(0,10)) + '"></div>'
+    + '<div><label>Rate / tenure</label><input id="dKadar" value="' + esc(x.kadar||"") + '"></div>'
+    + '</div><label>Additional notes</label><textarea id="dNota" rows="2"></textarea>'
+    + '<div class="btnrow"><button class="btn" onclick="hantarKemaskini(\'' + esc(x.kes) + '\')">Save changes</button>'
+    + '<button class="btn ghost" onclick="document.getElementById(\'panel\').innerHTML=\'\'">Close</button></div>';
 
   /* jejak peringkat */
   var tp = x.tarikh_peringkat || {}, ada = false, jj = "";
   (D.susun||[]).forEach(function(p){ if (tp[p]) { ada = true; jj += '<div class="row"><span>' + esc(p) + '</span><b>' + tkh(tp[p]) + '</b></div>'; } });
-  if (ada) h += '<label>Jejak peringkat</label><div class="det">' + jj + '</div>';
-  if (x.nota) h += '<label>Nota</label><div class="det">' + esc(x.nota) + '</div>';
+  if (ada) h += '<label>Stage history</label><div class="det">' + jj + '</div>';
+  if (x.nota) h += '<label>Notes</label><div class="det">' + esc(x.nota) + '</div>';
   h += '</div>';
   var p = document.getElementById("panel"); p.innerHTML = h; p.scrollIntoView({behavior:"smooth"});
 }
 function setPeringkat(ref, p){
-  var nota = prompt("Nota peringkat (pilihan) — cth dokumen diterima:", "");
+  var nota = prompt("Stage note (optional) — e.g. documents received:", "");
   hantar({ action:"peringkat", kes:ref, peringkat:p, nota: (nota||""), oleh:"Zahir" });
 }
 function setDok(ref, dok, st){ hantar({ action:"dokumen", kes:ref, dokumen:dok, status:st, oleh:"Zahir" }); }

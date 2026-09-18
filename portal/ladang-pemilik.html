@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Portal Pemilik Ladang — Mr Tanah / SAT</title>
+<title>Farm Owner Portal — Zentra Portal</title>
 <style>
   :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; }
   * { box-sizing:border-box; margin:0; padding:0; }
@@ -37,10 +37,10 @@
 </style>
 </head>
 <body>
-  <div class="topbar"><h1>🌴 Portal Pemilik Ladang</h1><p id="sub">Mr Tanah · pengendali Strategic Agro Technology (SAT)</p></div>
+  <div class="topbar"><h1>🌴 Farm Owner Portal</h1><p id="sub">Mr Tanah · operator of Strategic Agro Technology (SAT)</p></div>
   <div id="navPhmt" style="max-width:760px;margin:14px auto 0;padding:0 14px"></div>
-  <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
-  <div class="foot">Dokumen peribadi — pautan/akaun ini khas untuk anda. Jangan kongsi.</div>
+  <div class="wrap" id="wrap"><div class="splash">Loading…</div></div>
+  <div class="foot">Private document — this link/account is exclusively yours. Do not share.</div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/auth-config.js?v=2"></script>
 <script src="assets/auth-nav.js?v=9"></script>
@@ -59,25 +59,25 @@ function urlAPI() {
     : API + "?aksi=ladangpemilik&token=" + encodeURIComponent(TOKEN) + "&_=" + Date.now();
 }
 function muat() {
-  if (!D) splash("Memuatkan…");
+  if (!D) splash("Loading…");
   var p = (window.PRATONTON_DATA) ? Promise.resolve(window.PRATONTON_DATA) : fetch(urlAPI()).then(function(r){ return r.json(); });
   p.then(function(d){
     if (!d || !d.ok) {
       if (MOD === "login" && /sesi tidak sah|tamat tempoh/i.test(String((d||{}).error||""))) { location.href = "login.html"; return; }
-      splash("⚠️ " + esc((d||{}).error || "Pautan tidak sah atau telah dimatikan."));
+      splash("⚠️ " + esc((d||{}).error || "Invalid or disabled link."));
       return;
     }
     D = d; lukis(d);
     var nav = document.getElementById("navPhmt");
     if (nav && window.PHMT && d.peranans) PHMT.lukis(nav, d.peranans, "PEMILIK_LADANG");
   })
-  .catch(function(e){ splash("⚠️ Gagal memuatkan: " + esc(e)); });
+  .catch(function(e){ splash("⚠️ Failed to load: " + esc(e)); });
 }
 (function init(){
   var A = window.AUTH || {};
   if (window.PRATONTON_DATA) { muat(); return; }
   if (!A.url || !A.key || typeof window.supabase === "undefined") {
-    if (TOKEN) muat(); else splash("⚠️ Pautan tidak lengkap (tiada token). Guna pautan dari Mr Tanah, atau log masuk.");
+    if (TOKEN) muat(); else splash("⚠️ Incomplete link (no token). Use the link from Mr Tanah, or log in.");
     return;
   }
   SB = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false } });
@@ -93,41 +93,42 @@ function lukis(d){
   var r = d.ringkasan, b = d.blok || {};
   document.getElementById("sub").textContent = "Mr Tanah · SAT · " + d.nama + " (" + d.id_pemilik + ")";
   var h = '';
-  h += '<div class="kpi"><div><b>'+esc(b.id||"—")+'</b><span>Blok</span></div>'
-    + '<div><b>'+(Number(d.bahagian)*100).toFixed(2)+'%</b><span>Bahagian anda</span></div>'
-    + '<div class="hijau"><b>'+rm(r.bahagian_rm)+'</b><span>Bahagian bersih</span></div></div>';
+  h += '<div class="kpi"><div><b>'+esc(b.id||"—")+'</b><span>Block</span></div>'
+    + '<div><b>'+(Number(d.bahagian)*100).toFixed(2)+'%</b><span>Your share</span></div>'
+    + '<div class="hijau"><b>'+rm(r.bahagian_rm)+'</b><span>Net share</span></div></div>';
 
-  h += '<div class="card"><h2>💰 Penyata Kedudukan</h2><div class="meta">'
-    + '<div class="row"><span>Blok</span><b>'+esc(b.id||"—")+' · '+esc(b.nama||"—")+'</b></div>'
-    + '<div class="row"><span>Luas blok / bahagian anda</span><b>'+(b.ha?Number(b.ha).toFixed(2):"—")+' ha / '+(d.luas_bahagian?Number(d.luas_bahagian).toFixed(4):"—")+' ha</b></div>'
-    + '<div class="row"><span>Hasil FFB blok (setakat ini)</span><b>'+Number(r.ffb).toFixed(2)+' tan</b></div>'
-    + '<div class="row"><span>Kasar blok</span><b>'+rm(r.kasar)+'</b></div>'
-    + '<div class="row"><span>Bersih blok (selepas potongan)</span><b>'+rm(r.bersih)+'</b></div>'
-    + '<div class="row"><span><b>Bahagian anda ('+(Number(d.bahagian)*100).toFixed(2)+'%)</b></span><b style="color:#0C7A4B">'+rm(r.bahagian_rm)+'</b></div>'
-    + '<div class="row"><span>Agihan telah direkod</span><b>'+rm(r.agihan_direkod)+'</b></div>'
-    + '</div><div class="hint">Pengiraan: bersih blok × bahagian milik. Agihan bulanan mengikut tab Agihan (bulan).</div></div>';
+  h += '<div class="card"><h2>💰 Position Statement</h2><div class="meta">'
+    + '<div class="row"><span>Block</span><b>'+esc(b.id||"—")+' · '+esc(b.nama||"—")+'</b></div>'
+    + '<div class="row"><span>Block area / your share</span><b>'+(b.ha?Number(b.ha).toFixed(2):"—")+' ha / '+(d.luas_bahagian?Number(d.luas_bahagian).toFixed(4):"—")+' ha</b></div>'
+    + '<div class="row"><span>Block FFB yield (to date)</span><b>'+Number(r.ffb).toFixed(2)+' tonnes</b></div>'
+    + '<div class="row"><span>Block gross</span><b>'+rm(r.kasar)+'</b></div>'
+    + '<div class="row"><span>Block net (after deductions)</span><b>'+rm(r.bersih)+'</b></div>'
+    + '<div class="row"><span><b>Your share ('+(Number(d.bahagian)*100).toFixed(2)+'%)</b></span><b style="color:#0C7A4B">'+rm(r.bahagian_rm)+'</b></div>'
+    + '<div class="row"><span>Distribution recorded</span><b>'+rm(r.agihan_direkod)+'</b></div>'
+    + '</div><div class="hint">Calculation: block net × ownership share. Monthly distribution follows the Distribution (month) tab.</div></div>';
 
-  h += '<div class="card"><h2>📅 Agihan Bulanan</h2><table><tr><th>Bulan</th><th class="num">Bahagian</th><th class="num">Agihan (RM)</th></tr>';
-  if (!(d.agihan||[]).length) h += '<tr><td colspan="3">Tiada rekod agihan</td></tr>';
+  h += '<div class="card"><h2>📅 Monthly Distribution</h2><table><tr><th>Month</th><th class="num">Share</th><th class="num">Distribution (RM)</th></tr>';
+  if (!(d.agihan||[]).length) h += '<tr><td colspan="3">No distribution records</td></tr>';
   (d.agihan||[]).forEach(function(a){ h += '<tr><td>'+esc(a.bulan)+'</td><td class="num">'+(Number(a.bahagian)*100).toFixed(2)+'%</td><td class="num">'+rm(a.amaun)+'</td></tr>'; });
   h += '</table></div>';
 
-  h += '<div class="card"><h2>🧾 Rekod Jualan Blok Anda</h2><table><tr><th>Tarikh</th><th class="num">Tan</th><th class="num">Harga</th><th class="num">Bersih</th><th>Chit</th></tr>';
-  if (!(d.hasil||[]).length) h += '<tr><td colspan="5">Tiada rekod</td></tr>';
+  h += '<div class="card"><h2>🧾 Your Block Sales Records</h2><table><tr><th>Date</th><th class="num">Tonnes</th><th class="num">Price</th><th class="num">Net</th><th>Slip</th></tr>';
+  if (!(d.hasil||[]).length) h += '<tr><td colspan="5">No records</td></tr>';
   (d.hasil||[]).forEach(function(x){ h += '<tr><td>'+tkh(x.tarikh)+'</td><td class="num">'+Number(x.tan).toFixed(2)+'</td><td class="num">'+rm(x.harga)+'</td><td class="num">'+rm(x.bersih)+'</td><td>'+esc(x.chit||"—")+'</td></tr>'; });
   h += '</table></div>';
 
   var hr = d.harga || {};
-  h += '<div class="card"><h2>📊 Harga Pasaran Rujukan</h2><div class="meta">'
-    + '<div class="row"><span>CPO MPOB (rujukan terkini)</span><b>'+(hr.cpo?"RM "+Number(hr.cpo).toLocaleString("ms-MY",{minimumFractionDigits:2})+" / tan":"—")+'</b></div>'
-    + '<div class="row"><span>Rujukan BTS (RM / 1% OER)</span><b>'+(hr.rm_1oer?Number(hr.rm_1oer).toFixed(2):"—")+'</b></div>'
+  h += '<div class="card"><h2>📊 Reference Market Prices</h2><div class="meta">'
+    + '<div class="row"><span>CPO MPOB (latest reference)</span><b>'+(hr.cpo?"RM "+Number(hr.cpo).toLocaleString("ms-MY",{minimumFractionDigits:2})+" / tonne":"—")+'</b></div>'
+    + '<div class="row"><span>BTS reference (RM / 1% OER)</span><b>'+(hr.rm_1oer?Number(hr.rm_1oer).toFixed(2):"—")+'</b></div>'
     + '<div class="row"><span>Snapshot</span><b>'+esc(hr.bulan||"—")+' · '+tkh(hr.tarikh_ambil)+'</b></div></div>'
-    + '<div class="hint">Harga BTS dirujuk dalam RM per 1% OER. Harga diterima anda = (rujukan × OER%) tolak margin kilang.</div></div>';
+    + '<div class="hint">BTS prices are quoted in RM per 1% OER. Your received price = (reference × OER%) less the mill margin.</div></div>';
 
-  h += '<div class="card"><h2>💬 Hubungi</h2><div class="btnrow">'
-    + '<a class="btn" href="https://wa.me/60163119076?text='+encodeURIComponent("Portal pemilik ladang "+d.id_pemilik+" — ")+'">WhatsApp Mr Tanah</a>'
-    + '<a class="btn ghost" href="mailto:mrtanahmy@gmail.com">Emel</a></div>'
-    + '<div class="hint">Pengendali: Strategic Agro Technology (SAT) · diurus oleh Mr Tanah.</div></div>';
+  h += '<div class="card"><h2>💬 Contact</h2><div class="btnrow">'
+    + '<a class="btn" href="https://wa.me/60163119076?text='+encodeURIComponent("Farm owner portal "+d.id_pemilik+" — ")+'">WhatsApp Mr Tanah</a>'
+    + '<a class="btn ghost" href="mailto:mrtanahmy@gmail.com">Email</a></div>'
+    + '<div class="hint">Operator: Strategic Agro Technology (SAT) · managed by Mr Tanah.</div></div>';
+
 
   document.getElementById("wrap").innerHTML = h;
   window.scrollTo(0,0);
