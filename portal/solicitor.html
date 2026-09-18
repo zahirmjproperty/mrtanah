@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Dashboard Peguamcara — Mr Tanah</title>
+<title>Solicitor Dashboard — Zentra Portal</title>
 <style>
   :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; --emas:#8a6d1f; }
   * { box-sizing:border-box; margin:0; padding:0; }
@@ -54,12 +54,12 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>⚖️ Dashboard Peguamcara</h1>
-    <p id="sub">Mr Tanah · ZMJ Solutions — kes konveyans, urusan peguam &amp; pihak lawan</p>
+    <h1>⚖️ Solicitor Dashboard</h1>
+    <p id="sub">Mr Tanah · ZMJ Solutions — conveyancing cases, solicitor tasks &amp; counterparties</p>
   </div>
   <div id="navPhmt" style="max-width:900px;margin:14px auto 0;padding:0 14px"></div>
-  <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
-  <div class="foot">Dokumen peribadi firma — pautan/akaun ini khas untuk firma anda. Jangan kongsi.</div>
+  <div class="wrap" id="wrap"><div class="splash">Loading…</div></div>
+  <div class="foot">Private firm document — this link/account is exclusively for your firm. Do not share.</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/auth-config.js?v=2"></script>
@@ -73,14 +73,14 @@ function rm0(n){ return "RM " + Number(n||0).toLocaleString("ms-MY", {maximumFra
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
 function tkh(s){ if(!s) return "—"; var d=String(s).substring(0,10).split("-"); return d.length===3 ? d[2]+"/"+d[1]+"/"+d[0] : String(s); }
 function splash(m){ document.getElementById("wrap").innerHTML = '<div class="splash">'+m+'</div>'; }
-function hariTeks(h){ if(h===null||h===undefined) return ""; if(h<0) return "lewat "+Math.abs(h)+" hari"; if(h===0) return "HARI INI"; return h+" hari lagi"; }
+function hariTeks(h){ if(h===null||h===undefined) return ""; if(h<0) return Math.abs(h)+" days overdue"; if(h===0) return "TODAY"; return h+" days to go"; }
 function stDok(s){ s=String(s||"").toUpperCase();
-  if(s==="OK") return '<span class="st s-ok">SIAP</span>';
-  if(s==="MENUNGGU") return '<span class="st s-warn">MENUNGGU</span>';
+  if(s==="OK") return '<span class="st s-ok">DONE</span>';
+  if(s==="MENUNGGU") return '<span class="st s-warn">PENDING</span>';
   if(s.indexOf("TIDAK")>=0) return '<span class="st s-wait">N/A</span>';
   return '<span class="st s-wait">'+esc(s||"—")+'</span>'; }
 function badgeSisi(s){ s=String(s||""); var c = s.indexOf("kedua")>=0 ? "s-and" : (s==="penjual" ? "s-info" : "s-warn");
-  return '<span class="st '+c+'">Pihak anda: '+esc(s)+'</span>'; }
+  return '<span class="st '+c+'">Your side: '+esc(s)+'</span>'; }
 function wa(nombor, teks){ var n=String(nombor||"").replace(/[^0-9]/g,""); if(n.indexOf("0")===0) n="6"+n; else if(n.indexOf("60")!==0) n="6"+n; return "https://wa.me/"+n+"?text="+encodeURIComponent(teks||""); }
 
 function urlAPI() {
@@ -91,25 +91,25 @@ function urlAPI() {
 function muat() {
   if (SIBUK) return; SIBUK = true;
   var p = (window.PRATONTON_DATA) ? Promise.resolve(window.PRATONTON_DATA) : fetch(urlAPI()).then(function(r){ return r.json(); });
-  if (!D) splash("Memuatkan…");
+  if (!D) splash("Loading…");
   p.then(function(d){
     SIBUK = false;
     if (!d || !d.ok) {
       if (MOD === "login" && /sesi tidak sah|tamat tempoh/i.test(String((d||{}).error||""))) { location.href = "login.html"; return; }
-      splash("⚠️ " + esc((d||{}).error || "Pautan tidak sah atau telah dimatikan."));
+      splash("⚠️ " + esc((d||{}).error || "This link is invalid or has been disabled."));
       return;
     }
     D = d; lukis();
     var nav = document.getElementById("navPhmt");
     if (nav && window.PHMT && D.peranans) PHMT.lukis(nav, D.peranans, "SOLICITOR");
   })
-  .catch(function(e){ SIBUK = false; splash("⚠️ Gagal memuatkan data.<br><small>"+esc(e)+"</small>"); });
+  .catch(function(e){ SIBUK = false; splash("⚠️ Failed to load data.<br><small>"+esc(e)+"</small>"); });
 }
 (function init(){
   var A = window.AUTH || {};
   if (window.PRATONTON_DATA) { muat(); return; }
   if (!A.url || !A.key || typeof window.supabase === "undefined") {
-    if (TOKEN) muat(); else splash("⚠️ Pautan tidak lengkap (tiada token). Guna pautan firma dari Mr Tanah, atau log masuk.");
+    if (TOKEN) muat(); else splash("⚠️ Incomplete link (missing token). Use the firm link from Mr Tanah, or sign in.");
     return;
   }
   SB = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false } });
@@ -127,7 +127,7 @@ function garisPeringkat(k){
   susun.forEach(function(p, i){
     var tp = (k.tarikh_peringkat || {})[p] || "";
     var cls = (i === idx) ? "on" : (i < idx ? "past" : "");
-    h += '<div class="step"><div class="dot ' + cls + '">' + (i + 1) + '</div><div><div class="t">' + esc(p) + (i === idx ? " ← sekarang" : "") + '</div>'
+    h += '<div class="step"><div class="dot ' + cls + '">' + (i + 1) + '</div><div><div class="t">' + esc(p) + (i === idx ? " ← current" : "") + '</div>'
       + (tp ? '<div class="d">' + tkh(tp) + '</div>' : '<div class="d">—</div>') + '</div></div>';
   });
   return h;
@@ -136,72 +136,72 @@ function samaFirma(a, b){ return a && b && String(a).toLowerCase() === String(b)
 
 function lukis(){
   var kp = D.kpi || {}, h = "";
-  document.getElementById("sub").textContent = "Mr Tanah · " + (D.firma || "") + " · " + (kp.kes_jumlah||0) + " kes konveyans";
-  var logKeluar = (MOD === "login") ? '<div class="btnrow"><button class="btn ghost" onclick="keluar()">Log keluar</button></div>' : "";
+  document.getElementById("sub").textContent = "Mr Tanah · " + (D.firma || "") + " · " + (kp.kes_jumlah||0) + " conveyancing cases";
+  var logKeluar = (MOD === "login") ? '<div class="btnrow"><button class="btn ghost" onclick="keluar()">Sign out</button></div>' : "";
 
-  h += '<div class="card"><h2>📌 Ringkasan Firma <span class="badge">DATA SEBENAR</span></h2><div class="kpi">'
-    +  '<div class="kbox"><div class="l">Kes aktif</div><div class="v">' + (kp.aktif||0) + '</div><div class="s">' + (kp.selesai||0) + ' selesai · ' + (kp.kes_jumlah||0) + ' jumlah</div></div>'
-    +  '<div class="kbox"><div class="l">Pihak yang anda wakili</div><div class="v">' + (kp.sisi_penjual||0) + ' / ' + (kp.sisi_pembeli||0) + '</div><div class="s">penjual / pembeli · ' + (kp.sisi_kedua||0) + ' kes kedua-dua pihak</div></div>'
-    +  '<div class="kbox"><div class="l">Nilai kes</div><div class="v">' + rm0(kp.nilai) + '</div><div class="s">harga urus niaga</div></div>'
-    +  '<div class="kbox"><div class="l">Dokumen menunggu</div><div class="v">' + (kp.dokumen_menunggu||0) + '</div><div class="s">' + (kp.tarikh_lewat||0) + ' tarikh penting lewat</div></div>'
-    +  '</div><div class="btnrow"><button class="btn ghost" onclick="muat()">🔄 Tarik data terkini</button></div>'
-    +  '<div class="hint">Data setakat <b>' + esc(D.masa||"") + '</b> — dikemas kini oleh pejabat Mr Tanah.</div>' + logKeluar + '</div>';
+  h += '<div class="card"><h2>📌 Firm Overview <span class="badge">LIVE DATA</span></h2><div class="kpi">'
+    +  '<div class="kbox"><div class="l">Active cases</div><div class="v">' + (kp.aktif||0) + '</div><div class="s">' + (kp.selesai||0) + ' completed · ' + (kp.kes_jumlah||0) + ' total</div></div>'
+    +  '<div class="kbox"><div class="l">Parties you represent</div><div class="v">' + (kp.sisi_penjual||0) + ' / ' + (kp.sisi_pembeli||0) + '</div><div class="s">seller / buyer · ' + (kp.sisi_kedua||0) + ' cases for both parties</div></div>'
+    +  '<div class="kbox"><div class="l">Case value</div><div class="v">' + rm0(kp.nilai) + '</div><div class="s">transaction price</div></div>'
+    +  '<div class="kbox"><div class="l">Documents pending</div><div class="v">' + (kp.dokumen_menunggu||0) + '</div><div class="s">' + (kp.tarikh_lewat||0) + ' key dates overdue</div></div>'
+    +  '</div><div class="btnrow"><button class="btn ghost" onclick="muat()">🔄 Pull latest data</button></div>'
+    +  '<div class="hint">Data as of <b>' + esc(D.masa||"") + '</b> — updated by the Mr Tanah office.</div>' + logKeluar + '</div>';
 
-  h += '<div class="card"><h2>⏰ Perlu perhatian</h2>';
+  h += '<div class="card"><h2>⏰ Needs attention</h2>';
   (D.amaran||[]).forEach(function(a){ h += '<div class="amr ' + esc(a.tahap) + '"><b>' + esc(a.tajuk) + '</b><i>' + esc(a.butir) + '</i></div>'; });
   if ((D.tindakan||[]).length) {
-    h += '<div style="margin-top:10px"><b style="font-size:12.5px;color:#0a1f44">Dokumen perlu diselesaikan</b>';
+    h += '<div style="margin-top:10px"><b style="font-size:12.5px;color:#0a1f44">Documents to complete</b>';
     D.tindakan.forEach(function(t){ h += '<div class="amr kuning" style="margin-top:8px"><b>' + esc(t.perkara) + '</b><i>' + esc(t.kes) + ' · ' + esc(t.butir) + '</i></div>'; });
     h += '</div>';
   }
   h += '</div>';
 
   if (!(D.kes||[]).length) {
-    h += '<div class="card"><div class="hint">Tiada kes konveyans didaftarkan untuk firma anda buat masa ini. Jika ini tidak betul, hubungi Mr Tanah.</div></div>';
+    h += '<div class="card"><div class="hint">No conveyancing cases are registered for your firm at the moment. If this is not correct, contact Mr Tanah.</div></div>';
   }
 
   (D.kes||[]).forEach(function(k){
     var kedua = samaFirma(k.solicitor_penjual, k.solicitor_pembeli);
     h += '<div class="card"><h2>' + esc(k.kes) + ' ' + badgeSisi(k.sisi) + '</h2>'
-      +  '<div class="meta"><div class="row"><span>Hartanah</span><b>' + esc(k.hartanah) + '</b></div>'
-      +  '<div class="row"><span>Alamat</span><b>' + esc(k.alamat||"—") + '</b></div>'
-      +  '<div class="row"><span>Jenis / Harga</span><b>' + esc(k.jenis) + ' · ' + rm(k.harga) + '</b></div>'
-      +  '<div class="row"><span>Deposit direkod / Baki</span><b>' + rm(k.deposit) + ' / ' + rm(k.baki) + '</b></div>'
-      +  '<div class="row"><span>Penjual / Pembeli</span><b>' + esc(k.penjual||"—") + ' / ' + esc(k.pembeli||"—") + '</b></div>'
+      +  '<div class="meta"><div class="row"><span>Property</span><b>' + esc(k.hartanah) + '</b></div>'
+      +  '<div class="row"><span>Address</span><b>' + esc(k.alamat||"—") + '</b></div>'
+      +  '<div class="row"><span>Type / Price</span><b>' + esc(k.jenis) + ' · ' + rm(k.harga) + '</b></div>'
+      +  '<div class="row"><span>Deposit recorded / Balance</span><b>' + rm(k.deposit) + ' / ' + rm(k.baki) + '</b></div>'
+      +  '<div class="row"><span>Seller / Buyer</span><b>' + esc(k.penjual||"—") + ' / ' + esc(k.pembeli||"—") + '</b></div>'
       +  '<div class="row"><span>Status</span><b>' + esc(k.status) + '</b></div>'
-      +  (k.tarikh_penting ? '<div class="row"><span>Tarikh penting</span><b>' + tkh(k.tarikh_penting) + ' (' + esc(hariTeks(k.hari_penting)) + ')</b></div>' : '')
+      +  (k.tarikh_penting ? '<div class="row"><span>Key date</span><b>' + tkh(k.tarikh_penting) + ' (' + esc(hariTeks(k.hari_penting)) + ')</b></div>' : '')
       +  '</div>'
-      +  '<h2 style="margin-top:12px">⚖️ Peguamcara</h2><div class="meta">'
-      +  '<div class="row"><span>Peguamcara PENJUAL</span><b>' + esc(k.solicitor_penjual||"Belum dilantik") + (k.sisi==="penjual"||kedua ? ' <span class="st s-and">(anda)</span>' : '') + '</b></div>'
-      +  '<div class="row"><span>Peguamcara PEMBELI</span><b>' + esc(k.solicitor_pembeli||"Belum dilantik") + (k.sisi==="pembeli"||kedua ? ' <span class="st s-and">(anda)</span>' : '') + '</b></div>'
-      +  (kedua ? '<div class="row"><span>Nota</span><b>Firma yang sama bertindak untuk KEDUA-DUA pihak</b></div>' : '')
-      +  (k.lawan_firma ? '<div class="row"><span>Pihak lawan</span><b>' + esc(k.lawan_firma) + '</b></div>' : '')
+      +  '<h2 style="margin-top:12px">⚖️ Solicitors</h2><div class="meta">'
+      +  '<div class="row"><span>Seller&#39;s solicitor</span><b>' + esc(k.solicitor_penjual||"Not yet appointed") + (k.sisi==="penjual"||kedua ? ' <span class="st s-and">(you)</span>' : '') + '</b></div>'
+      +  '<div class="row"><span>Buyer&#39;s solicitor</span><b>' + esc(k.solicitor_pembeli||"Not yet appointed") + (k.sisi==="pembeli"||kedua ? ' <span class="st s-and">(you)</span>' : '') + '</b></div>'
+      +  (kedua ? '<div class="row"><span>Note</span><b>The same firm acts for BOTH parties</b></div>' : '')
+      +  (k.lawan_firma ? '<div class="row"><span>Counterparty</span><b>' + esc(k.lawan_firma) + '</b></div>' : '')
       +  '</div>'
-      +  '<div class="box" style="margin-top:10px"><b>Urusan peguam pada peringkat ' + esc(k.peringkat) + ':</b> ' + esc(k.urusan||"—") + '</div>'
-      +  '<h2 style="margin-top:12px">🧭 Peringkat Urus Niaga</h2>' + garisPeringkat(k);
+      +  '<div class="box" style="margin-top:10px"><b>Solicitor tasks at stage ' + esc(k.peringkat) + ':</b> ' + esc(k.urusan||"—") + '</div>'
+      +  '<h2 style="margin-top:12px">🧭 Transaction Stages</h2>' + garisPeringkat(k);
 
     if ((k.dokumen||[]).length) {
-      h += '<h2 style="margin-top:12px">📄 Dokumen Konveyans</h2><table><tr><th>Dokumen</th><th>Status</th></tr>';
+      h += '<h2 style="margin-top:12px">📄 Conveyancing Documents</h2><table><tr><th>Document</th><th>Status</th></tr>';
       k.dokumen.forEach(function(dd){ h += '<tr><td>' + esc(dd.nama) + '</td><td>' + stDok(dd.status) + '</td></tr>'; });
-      h += '</table><div class="hint">Status diselenggara oleh pejabat MT (satu sumber untuk semua pihak). Kemas kini melalui MT supaya pembeli/penjual nampak keadaan yang sama.</div>';
+      h += '</table><div class="hint">Status is maintained by the MT office (a single source for all parties). Update it through MT so the buyer/seller see the same state.</div>';
     }
 
-    h += '<h2 style="margin-top:12px">👥 Pihak lain</h2><div class="meta">'
-      +  '<div class="row"><span>Ejen</span><b>' + esc(k.ejen||"—") + '</b></div>'
-      +  (k.ejen_telefon ? '<div class="row"><span>Telefon ejen</span><b>' + esc(k.ejen_telefon) + '</b></div>' : '')
-      +  '<div class="row"><span>Pegawai pinjaman / bank</span><b>' + esc(k.mortgage||"—") + '</b></div>'
+    h += '<h2 style="margin-top:12px">👥 Other parties</h2><div class="meta">'
+      +  '<div class="row"><span>Agent</span><b>' + esc(k.ejen||"—") + '</b></div>'
+      +  (k.ejen_telefon ? '<div class="row"><span>Agent phone</span><b>' + esc(k.ejen_telefon) + '</b></div>' : '')
+      +  '<div class="row"><span>Loan officer / bank</span><b>' + esc(k.mortgage||"—") + '</b></div>'
       +  '</div><div class="btnrow">';
-    if (k.ejen_telefon) h += '<a class="btn ghost" href="' + esc(wa(k.ejen_telefon, "Assalamualaikum " + (k.ejen||"") + ", berkenaan kes " + k.kes + " (" + k.hartanah + ") — ")) + '" target="_blank">WhatsApp ejen</a>';
-    h += '<a class="btn ghost" href="https://wa.me/60163119076?text=' + encodeURIComponent("Peguamcara " + (D.firma||"") + " — kes " + k.kes + " (" + k.hartanah + "): ") + '" target="_blank">WhatsApp MT</a></div>'
-      +  '<div class="hint">Kemas kini terakhir rekod: ' + esc(k.dikemaskini||"—") + '</div>';
+    if (k.ejen_telefon) h += '<a class="btn ghost" href="' + esc(wa(k.ejen_telefon, "Hello " + (k.ejen||"") + ", regarding case " + k.kes + " (" + k.hartanah + ") — ")) + '" target="_blank">WhatsApp agent</a>';
+    h += '<a class="btn ghost" href="https://wa.me/60163119076?text=' + encodeURIComponent("Solicitor " + (D.firma||"") + " — case " + k.kes + " (" + k.hartanah + "): ") + '" target="_blank">WhatsApp MT</a></div>'
+      +  '<div class="hint">Last record update: ' + esc(k.dikemaskini||"—") + '</div>';
     h += '</div>';
   });
 
-  h += '<div class="card"><h2>💬 Hubungi Mr Tanah</h2><div class="btnrow">'
-    +  '<a class="btn" href="https://wa.me/60163119076?text=' + encodeURIComponent("Peguamcara " + (D.firma||"") + " — ") + '" target="_blank">WhatsApp MT 016-311 9076</a>'
-    +  '<a class="btn ghost" href="mailto:mrtanahmy@gmail.com" target="_blank">Emel MT</a></div>'
+  h += '<div class="card"><h2>💬 Contact Mr Tanah</h2><div class="btnrow">'
+    +  '<a class="btn" href="https://wa.me/60163119076?text=' + encodeURIComponent("Solicitor " + (D.firma||"") + " — ") + '" target="_blank">WhatsApp MT 016-311 9076</a>'
+    +  '<a class="btn ghost" href="mailto:mrtanahmy@gmail.com" target="_blank">Email MT</a></div>'
     +  '<div class="note" style="margin-top:10px">' + esc(D.nota||"") + '</div>'
-    +  '<div class="hint">Waktu pejabat Isnin–Jumaat 9:00 pg–6:00 ptg.</div></div>';
+    +  '<div class="hint">Office hours Monday–Friday 9:00 am–6:00 pm.</div></div>';
 
   document.getElementById("wrap").innerHTML = h;
   window.scrollTo(0,0);
