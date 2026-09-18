@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Dashboard MT — Pengurusan Hartanah (dalaman)</title>
-<meta name="description" content="Papan pemuka pengurusan Mr Tanah — portfolio unit, kutipan sewa, bil utiliti, tiket penyelenggaraan & work order. Akses khas pasukan MT.">
+<title>MT Dashboard — Property Management (Internal) — Zentra Portal</title>
+<meta name="description" content="Mr Tanah management dashboard — property portfolio, rent collection, utility bills, maintenance tickets and work orders. MT team access only.">
 <style>
   :root { --mt:#123a7a; --mt-tua:#0a1f44; --mt-soft:#e8eefb; --hijau:#14905c; }
   * { box-sizing:border-box; }
@@ -53,13 +53,13 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>📊 Dashboard MT</h1>
-    <p>Pengurusan hartanah — ZMJ Solutions · data langsung</p>
+    <h1>📊 MT Dashboard</h1>
+    <p>Property management — ZMJ Solutions · live data</p>
     <p style="margin:2px 0 0;font-size:11px;opacity:.85">versi v3-snapshot</p>
-    <div class="crumbs"><a href="/">← Portal</a> · <a href="kanban.html">Papan Kanban Kerja + SLA</a></div>
+    <div class="crumbs"><a href="/">← Portal</a> · <a href="kanban.html">Work Kanban + SLA Board</a></div>
   </div>
-  <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
-  <div class="foot">Dalaman MT — jangan kongsi pautan ini.</div>
+  <div class="wrap" id="wrap"><div class="splash">Loading…</div></div>
+  <div class="foot">MT internal — do not share this link.</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/auth-config.js?v=2"></script>
@@ -67,11 +67,11 @@
 <script>
 var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
 var T = new URLSearchParams(location.search).get("t") || localStorage.getItem("mt_admin_token") || "";
-var MOD = "token";        /* "token" = admin_token lama · "login" = sesi log masuk */
+var MOD = "token";        /* "token" = legacy admin_token · "login" = signed-in session */
 var SESI = null, SB = null;
 var D = null;
 
-/* ===== Kelulusan Peranan (arahan Zahir 15/9/2026) — senarai permohonan peranan perlu approval ===== */
+/* ===== Role approvals (Zahir, 15/9/2026) — role applications that need approval ===== */
 function authKuiri_() {
   return (MOD === "login" && SESI && SESI.access_token)
     ? "access_token=" + encodeURIComponent(SESI.access_token)
@@ -92,31 +92,31 @@ function ringkasMedan_(json) {
 function muatPeranan() {
   var box = document.getElementById("kadPeranan");
   if (!box) return;
-  box.innerHTML = '<div class="card"><h2>🆕 Kelulusan peranan</h2><p class="nota">Memuatkan…</p></div>';
+  box.innerHTML = '<div class="card"><h2>🆕 Role approvals</h2><p class="nota">Loading…</p></div>';
   fetch(API + "?aksi=peranan-senarai&" + authKuiri_() + "&_=" + Date.now())
     .then(function (r) { return r.json(); })
     .then(function (d) {
       if (!d || !d.ok) {
-        box.innerHTML = '<div class="card"><h2>🆕 Kelulusan peranan</h2><p class="nota">' + esc((d && d.error) || "Tidak dapat dimuatkan.") + "</p></div>";
+        box.innerHTML = '<div class="card"><h2>🆕 Role approvals</h2><p class="nota">' + esc((d && d.error) || "Could not be loaded.") + "</p></div>";
         return;
       }
       var semua = d.senarai || [], tunggu = [], sudah = [];
       semua.forEach(function (r) { (String(r.status).toUpperCase() === "MENUNGGU" ? tunggu : sudah).push(r); });
-      var h = '<div class="card"><h2>🆕 Kelulusan peranan <span class="badge">' + tunggu.length + " menunggu</span></h2>";
-      if (!tunggu.length) h += '<p class="nota">Tiada permohonan menunggu kelulusan.</p>';
+      var h = '<div class="card"><h2>🆕 Role approvals <span class="badge">' + tunggu.length + " pending</span></h2>";
+      if (!tunggu.length) h += '<p class="nota">No applications waiting for approval.</p>';
       else {
-        h += '<div style="overflow-x:auto"><table><thead><tr><th>No</th><th>Tarikh</th><th>Nama</th><th>Emel</th><th>Peranan dimohon</th><th>Maklumat</th><th>Tindakan</th></tr></thead><tbody>';
+        h += '<div style="overflow-x:auto"><table><thead><tr><th>No</th><th>Date</th><th>Name</th><th>Email</th><th>Role applied for</th><th>Details</th><th>Action</th></tr></thead><tbody>';
         tunggu.forEach(function (r) {
           h += "<tr><td><b>" + esc(r.no) + "</b></td><td>" + esc(r.tarikh) + "</td><td>" + esc(r.nama) + "</td><td>" + esc(r.emel) + "</td>"
             + "<td><b>" + esc(namaPeranan_(r.peranan)) + "</b></td>"
             + '<td style="font-size:12px;color:#5a6b76">' + esc(ringkasMedan_(r.medan)) + "</td>"
-            + '<td style="white-space:nowrap"><button class="btn" data-lulus="' + esc(r.no) + '">✅ Lulus</button> '
-            + '<button class="btn ghost" data-tolak="' + esc(r.no) + '">❌ Tolak</button></td></tr>';
+            + '<td style="white-space:nowrap"><button class="btn" data-lulus="' + esc(r.no) + '">✅ Approve</button> '
+            + '<button class="btn ghost" data-tolak="' + esc(r.no) + '">❌ Reject</button></td></tr>';
         });
         h += "</tbody></table></div>";
       }
       if (sudah.length) {
-        h += '<p class="nota" style="margin-top:10px"><b>Sejarah terkini:</b> ';
+        h += '<p class="nota" style="margin-top:10px"><b>Recent history:</b> ';
         sudah.slice(0, 6).forEach(function (r) {
           h += "<br>" + esc(r.no) + " — " + esc(r.nama) + " · " + esc(namaPeranan_(r.peranan)) + " · <b>" + esc(r.status) + "</b> (" + esc(r.tindakan || r.tarikh) + ")";
         });
@@ -132,29 +132,29 @@ function muatPeranan() {
       });
     })
     .catch(function (e) {
-      box.innerHTML = '<div class="card"><h2>🆕 Kelulusan peranan</h2><p class="nota">Ralat: ' + esc(String(e).slice(0, 80)) + "</p></div>";
+      box.innerHTML = '<div class="card"><h2>🆕 Role approvals</h2><p class="nota">Error: ' + esc(String(e).slice(0, 80)) + "</p></div>";
     });
 }
 function tindakanPeranan_(no, jenis) {
   var sebab = "";
   if (jenis === "tolak") {
-    sebab = prompt("Sebab ditolak (akan dihantar kepada pemohon):", "");
+    sebab = prompt("Reason for rejection (this will be sent to the applicant):", "");
     if (sebab === null) return;
   }
   var soalan = jenis === "lulus"
-    ? ("Luluskan permohonan No " + no + "?\nPeranan akan diberikan serta-merta kepada akaun pemohon.")
-    : ("Tolak permohonan No " + no + "?");
+    ? ("Approve application No " + no + "?\nThe role will be granted to the applicant's account immediately.")
+    : ("Reject application No " + no + "?");
   if (!confirm(soalan)) return;
   var b = { form: jenis === "lulus" ? "peranan-lulus" : "peranan-tolak", consent: true, no: no, sebab: sebab };
   if (MOD === "login" && SESI && SESI.access_token) b.access_token = SESI.access_token; else b.admin_token = T;
   fetch(API, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(b) })
     .then(function (r) { return r.json(); })
     .then(function (d) {
-      if (!d || !d.ok) { alert("Gagal: " + ((d && d.error) || "ralat")); return; }
-      alert(d.mesej || (jenis === "lulus" ? "Diluluskan." : "Ditolak."));
+      if (!d || !d.ok) { alert("Failed: " + ((d && d.error) || "error")); return; }
+      alert(d.mesej || (jenis === "lulus" ? "Approved." : "Rejected."));
       muatPeranan();
     })
-    .catch(function (e) { alert("Ralat rangkaian: " + String(e).slice(0, 90)); });
+    .catch(function (e) { alert("Network error: " + String(e).slice(0, 90)); });
 }
 
 function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
@@ -163,11 +163,11 @@ function tkh(s) { if (!s) return "—"; var d = String(s).substring(0, 10).split
 function splash(m) { document.getElementById("wrap").innerHTML = '<div class="splash">' + esc(m) + '</div>'; }
 
 function login() {
-  document.getElementById("wrap").innerHTML = '<div class="card" style="max-width:430px;margin:24px auto"><h2>Log masuk papan MT</h2>'
-    + '<p class="hint">Masukkan token admin MT (token sama seperti papan kanban; disimpan dalam peranti ini sahaja).</p>'
-    + '<label style="display:block;font-size:12.5px;font-weight:600;margin:11px 0 4px">Token admin</label>'
+  document.getElementById("wrap").innerHTML = '<div class="card" style="max-width:430px;margin:24px auto"><h2>Sign in to the MT board</h2>'
+    + '<p class="hint">Enter the MT admin token (the same token as the kanban board; stored on this device only).</p>'
+    + '<label style="display:block;font-size:12.5px;font-weight:600;margin:11px 0 4px">Admin token</label>'
     + '<input type="password" id="tk" placeholder="mtadm-…">'
-    + '<div class="btnrow" style="margin-top:12px"><button class="btn" id="bIn">Masuk</button></div>'
+    + '<div class="btnrow" style="margin-top:12px"><button class="btn" id="bIn">Sign in</button></div>'
     + '<div id="lg"></div></div>';
   document.getElementById("bIn").onclick = function () {
     var v = document.getElementById("tk").value.trim();
@@ -177,17 +177,17 @@ function login() {
 }
 
 function muat() {
-  /* Snapshot dahulu (fail sama-domain, laju & PASTI) — elak had masa Apps Script */
-  splash("Memuatkan…");
+  /* Snapshot first (same-domain file, fast and RELIABLE) — avoids Apps Script timeout limits */
+  splash("Loading…");
   var snap = "data/pemuka-" + encodeURIComponent(T) + ".json";
   fetch(snap + "?t=" + Date.now(), { cache: "no-store" })
-    .then(function (r) { if (!r.ok) throw new Error("tiada snapshot"); return r.json(); })
-    .then(function (d) { if (!d.ok) throw new Error("snapshot tidak sah"); D = d; D.__snap = 1; lukis(); })
+    .then(function (r) { if (!r.ok) throw new Error("no snapshot"); return r.json(); })
+    .then(function (d) { if (!d.ok) throw new Error("invalid snapshot"); D = d; D.__snap = 1; lukis(); })
     .catch(function () { muatLive(true); });
 }
 
 function muatLive(gunaSandaran) {
-  splash("Menghubungi pelayan… (boleh ambil 10–30 saat)");
+  splash("Contacting the server… (this may take 10–30 seconds)");
   var ctrl = (typeof AbortController !== "undefined") ? new AbortController() : null;
   var tamat = setTimeout(function () { if (ctrl) ctrl.abort(); }, 45000);
   var urlAPI = (MOD === "login")
@@ -200,20 +200,20 @@ function muatLive(gunaSandaran) {
         localStorage.removeItem("mt_admin_token");
         login();
         var el = document.getElementById("lg");
-        if (el) el.innerHTML = '<div class="err" style="margin-top:10px">' + esc(d.error || "Token tidak sah.") + '</div>';
+        if (el) el.innerHTML = '<div class="err" style="margin-top:10px">' + esc(d.error || "Invalid token.") + '</div>';
         return;
       }
       D = d; D.__snap = 0; lukis();
     })
     .catch(function (e) {
       clearTimeout(tamat);
-      if (D) { lukis(); amaranKecil("⚠️ Data langsung gagal (" + String(e).slice(0, 60) + "). Paparan ini snapshot " + (D.masa || "") + "."); return; }
+      if (D) { lukis(); amaranKecil("⚠️ Live data failed (" + String(e).slice(0, 60) + "). This view is the snapshot from " + (D.masa || "") + "."); return; }
       document.getElementById("wrap").innerHTML = '<div class="card" style="max-width:520px;margin:24px auto">'
-        + '<h2>⚠️ Data tidak dapat dimuatkan</h2>'
-        + '<p class="hint">Snapshot belum tersedia dan sambungan langsung gagal. Cuba lagi sebentar; jika berulang maklumkan Ali.</p>'
+        + '<h2>⚠️ Data could not be loaded</h2>'
+        + '<p class="hint">The snapshot is not available yet and the live connection failed. Try again in a moment; if it keeps happening, tell Ali.</p>'
         + '<p class="hint" style="color:#a11">' + esc(String(e).slice(0, 120)) + '</p>'
-        + '<div class="btnrow" style="margin-top:12px"><button class="btn" id="bCuba">🔄 Cuba lagi</button>'
-        + '<a class="btn ghost" style="text-decoration:none" href="kanban.html">Buka Papan Kanban</a></div></div>';
+        + '<div class="btnrow" style="margin-top:12px"><button class="btn" id="bCuba">🔄 Try again</button>'
+        + '<a class="btn ghost" style="text-decoration:none" href="kanban.html">Open Work Kanban</a></div></div>';
       var b = document.getElementById("bCuba"); if (b) b.onclick = function () { muatLive(true); };
     });
 }
@@ -245,34 +245,34 @@ function lukis() {
     return '<div class="kpi"><b style="color:' + (w || "#123a7a") + '">' + esc(nilai) + '</b><span>' + esc(label) + '</span>'
       + (nota ? '<em>' + esc(nota) + '</em>' : '') + '</div>';
   }
-  var badge = D.__snap ? ('📦 Snapshot ' + esc(D.masa || '')) : ('🟢 Data langsung ' + esc(D.masa || ''));
+  var badge = D.__snap ? ('📦 Snapshot ' + esc(D.masa || '')) : ('🟢 Live data ' + esc(D.masa || ''));
   var h = '<div id="navPhmt"></div>'
     + '<div id="kadPeranan"></div>'
-    + '<p class="hint" style="margin:0 0 10px">Data setakat: <b>' + badge + '</b>'
-    + (MOD === "login" ? ' · <a href="#" id="bKeluar" style="color:#0a5">Log keluar</a>' : '') + '</p>'
+    + '<p class="hint" style="margin:0 0 10px">Data as at: <b>' + badge + '</b>'
+    + (MOD === "login" ? ' · <a href="#" id="bKeluar" style="color:#0a5">Sign out</a>' : '') + '</p>'
     + '<div class="kpis">'
-    + kpi(k.unit_sewaan, "Unit disewa", k.unit_jumlah + " unit didaftar · " + k.unit_peribadi + " tidak disewa")
-    + kpi(rm(k.sewa_bulanan, 0), "Sewa bulanan (kontrak)", "tempoh " + (k.inv_tempoh || "—"))
-    + kpi(rm(k.inv_dibayar), "Kutipan diterima", Math.round(pct) + "% daripada " + rm(k.inv_jumlah), "#14905c")
-    + kpi(rm(k.inv_tertunggak), "Invois belum bayar", k.inv_bilangan_belum + " invois", "#b3261e")
-    + kpi(rm(k.bil_belum_jumlah), "Bil utiliti tertunggak", k.bil_belum_bilangan + " bil", "#8a4c00")
-    + kpi(k.tiket_aktif, "Tiket aktif", (k.tiket_lewat_sla || 0) + " lewat SLA · " + (k.tiket_ujian_ditapis || 0) + " ujian ditapis")
-    + kpi(rm(k.wo_nilai, 0), "Nilai WO berjalan", k.wo_aktif + " work order")
+    + kpi(k.unit_sewaan, "Units rented", k.unit_jumlah + " units registered · " + k.unit_peribadi + " not rented")
+    + kpi(rm(k.sewa_bulanan, 0), "Monthly rent (contract)", "period " + (k.inv_tempoh || "—"))
+    + kpi(rm(k.inv_dibayar), "Collected", Math.round(pct) + "% of " + rm(k.inv_jumlah), "#14905c")
+    + kpi(rm(k.inv_tertunggak), "Unpaid invoices", k.inv_bilangan_belum + " invoices", "#b3261e")
+    + kpi(rm(k.bil_belum_jumlah), "Overdue utility bills", k.bil_belum_bilangan + " bills", "#8a4c00")
+    + kpi(k.tiket_aktif, "Active tickets", (k.tiket_lewat_sla || 0) + " past SLA · " + (k.tiket_ujian_ditapis || 0) + " test tickets filtered")
+    + kpi(rm(k.wo_nilai, 0), "Running WO value", k.wo_aktif + " work orders")
     + '</div>';
 
-  h += '<div class="card"><h2>⚡ Perlu tindakan</h2>';
+  h += '<div class="card"><h2>⚡ Needs action</h2>';
   (D.amaran || []).forEach(function (a) {
     h += '<div class="al" style="background:' + (latar[a.tahap] || "#eef1f4") + ';border-left:5px solid ' + (warna[a.tahap] || "#5a6b61") + '">'
       + '<b>' + esc(a.tajuk) + '</b><span>' + esc(a.butir) + '</span></div>';
   });
   h += '</div>';
 
-  h += '<div class="card"><h2>💵 Kutipan sewa ' + esc(k.inv_tempoh || "") + '</h2>'
+  h += '<div class="card"><h2>💵 Rent collection ' + esc(k.inv_tempoh || "") + '</h2>'
     + '<div class="bar"><i style="width:' + Math.max(0, Math.min(100, pct)).toFixed(1) + '%"></i></div>'
-    + '<p class="nota">Diterima <b>' + rm(k.inv_dibayar) + '</b> daripada dijana <b>' + rm(k.inv_jumlah) + '</b>'
-    + ' · tertunggak <b>' + rm(k.inv_tertunggak) + '</b> · ' + Math.round(pct) + '% kutipan.</p>'
-    + '<div style="overflow-x:auto"><table><thead><tr><th>Invois</th><th>Unit</th><th>Penyewa</th>'
-    + '<th class="kanan">Sewa</th><th class="kanan">Utiliti</th><th class="kanan">Jumlah</th><th>Due</th><th>Status</th></tr></thead><tbody>'
+    + '<p class="nota">Received <b>' + rm(k.inv_dibayar) + '</b> out of <b>' + rm(k.inv_jumlah) + '</b>'
+    + ' · overdue <b>' + rm(k.inv_tertunggak) + '</b> · ' + Math.round(pct) + '% collection.</p>'
+    + '<div style="overflow-x:auto"><table><thead><tr><th>Invoice</th><th>Property</th><th>Tenant</th>'
+    + '<th class="kanan">Rent</th><th class="kanan">Utilities</th><th class="kanan">Amount</th><th>Due</th><th>Status</th></tr></thead><tbody>'
     + (D.invois || []).map(function (i) {
         return '<tr><td><b>' + esc(i.id) + '</b></td><td>' + esc(i.unit) + '</td><td>' + esc(i.penyewa) + '</td>'
           + '<td class="kanan">' + rm(i.sewa) + '</td><td class="kanan">' + rm(i.utiliti) + '</td>'
@@ -281,38 +281,38 @@ function lukis() {
     + '</tbody></table></div></div>';
 
   h += '<div class="dua">'
-    + '<div class="card"><h2>🏠 Portfolio unit</h2><div style="overflow-x:auto"><table>'
-    + '<thead><tr><th>Unit</th><th>Nama</th><th>Status</th><th>Penyewa</th><th class="kanan">Sewa/bln</th></tr></thead><tbody>'
+    + '<div class="card"><h2>🏠 Property portfolio</h2><div style="overflow-x:auto"><table>'
+    + '<thead><tr><th>Property</th><th>Name</th><th>Status</th><th>Tenant</th><th class="kanan">Rent/mth</th></tr></thead><tbody>'
     + (D.unit || []).map(function (u) {
         return '<tr><td><b>' + esc(u.id) + '</b></td><td>' + esc(u.nama) + '</td>'
-          + '<td>' + pilStatus(u.status || (u.pemilikan ? "Peribadi" : "")) + '</td>'
+          + '<td>' + pilStatus(u.status || (u.pemilikan ? "Own account" : "")) + '</td>'
           + '<td>' + esc(u.penyewa || "—") + '</td><td class="kanan">' + (u.sewa ? rm(u.sewa, 0) : "—") + '</td></tr>';
       }).join('')
-    + '</tbody></table></div><p class="nota">Sewa kontrak bulanan = <b>' + rm(k.sewa_bulanan, 0) + '</b> (' + k.unit_sewaan + ' unit disewa).</p></div>'
-    + '<div class="card"><h2>🧾 Bil utiliti belum bayar</h2><div style="overflow-x:auto"><table>'
-    + '<thead><tr><th>Bil</th><th>Unit</th><th>Jenis</th><th class="kanan">Amaun</th><th>Due</th><th>Tanggungjawab</th></tr></thead><tbody>'
+    + '</tbody></table></div><p class="nota">Monthly contract rent = <b>' + rm(k.sewa_bulanan, 0) + '</b> (' + k.unit_sewaan + ' units rented).</p></div>'
+    + '<div class="card"><h2>🧾 Unpaid utility bills</h2><div style="overflow-x:auto"><table>'
+    + '<thead><tr><th>Bill</th><th>Property</th><th>Type</th><th class="kanan">Amount</th><th>Due</th><th>Responsibility</th></tr></thead><tbody>'
     + (D.bil_belum || []).map(function (b) {
         return '<tr><td><b>' + esc(b.id) + '</b></td><td>' + esc(b.unit) + '</td><td>' + esc(b.jenis + " " + b.tempoh) + '</td>'
           + '<td class="kanan">' + rm(b.amaun) + '</td><td>' + tkh(b.due) + '</td><td>' + esc(b.tanggungjawab || "—") + '</td></tr>';
       }).join('')
-    + '</tbody></table></div><p class="nota">Dibayar terkumpul <b>' + rm(k.bil_dibayar_jumlah) + '</b> · belum bayar <b>' + rm(k.bil_belum_jumlah) + '</b>.</p></div>'
+    + '</tbody></table></div><p class="nota">Paid to date <b>' + rm(k.bil_dibayar_jumlah) + '</b> · unpaid <b>' + rm(k.bil_belum_jumlah) + '</b>.</p></div>'
     + '</div>';
 
-  h += '<div class="card"><h2>🔧 Tiket penyelenggaraan</h2><div style="overflow-x:auto"><table>'
-    + '<thead><tr><th>Rujukan</th><th>Tarikh</th><th>Unit</th><th>Jenis</th><th>Status</th><th>Keutamaan</th>'
-    + '<th class="kanan">Diluluskan</th><th>Kontraktor</th></tr></thead><tbody>'
+  h += '<div class="card"><h2>🔧 Maintenance tickets</h2><div style="overflow-x:auto"><table>'
+    + '<thead><tr><th>Reference</th><th>Date</th><th>Property</th><th>Type</th><th>Status</th><th>Priority</th>'
+    + '<th class="kanan">Approved</th><th>Contractor</th></tr></thead><tbody>'
     + (D.tiket || []).map(function (t) {
         var sla = t.sla || {};
         return '<tr><td><b>' + esc(t.ref) + '</b></td><td>' + tkh(t.tarikh) + '</td><td>' + esc(t.unit) + '</td>'
           + '<td>' + esc(t.jenis) + '</td><td>' + pilStatus(t.status) + '</td>'
-          + '<td>' + (t.keutamaan ? esc(t.keutamaan) + ' · ' + sla.baki + 'j baki' : '<span class="hint">belum diisi</span>') + '</td>'
+          + '<td>' + (t.keutamaan ? esc(t.keutamaan) + ' · ' + sla.baki + 'h left' : '<span class="hint">not set</span>') + '</td>'
           + '<td class="kanan">' + (t.nilai ? rm(t.nilai) : "—") + '</td><td>' + esc(t.kontraktor || "—") + '</td></tr>';
       }).join('')
-    + '</tbody></table></div><p class="nota">SLA bermula hanya bila medan <b>Keutamaan</b> (P1 4j · P2 24j · P3 72j · P4 7hari) diisi pada tiket.</p></div>';
+    + '</tbody></table></div><p class="nota">SLA starts only when the <b>Priority</b> field (P1 4h · P2 24h · P3 72h · P4 7 days) is filled in on the ticket.</p></div>';
 
   h += '<div class="card"><h2>🛠️ Work Order</h2><div style="overflow-x:auto"><table>'
-    + '<thead><tr><th>No WO</th><th>Tiket</th><th>Kontraktor</th><th class="kanan">Kontrak</th>'
-    + '<th class="kanan">Kos pengurusan</th><th>Mula</th><th>Siap sasar</th><th>Status</th></tr></thead><tbody>'
+    + '<thead><tr><th>WO No.</th><th>Ticket</th><th>Contractor</th><th class="kanan">Contract</th>'
+    + '<th class="kanan">Management cost</th><th>Start</th><th>Target complete</th><th>Status</th></tr></thead><tbody>'
     + (D.wo || []).map(function (w) {
         return '<tr><td><b>' + esc(w.no) + '</b></td><td>' + esc(w.ref) + '</td><td>' + esc(w.kontraktor) + '</td>'
           + '<td class="kanan">' + rm(w.kontrak, 0) + '</td><td class="kanan">' + rm(w.kos) + '</td>'
@@ -320,20 +320,20 @@ function lukis() {
       }).join('')
     + '</tbody></table></div></div>';
 
-  h += '<div class="card"><h2>ℹ️ Sumber data</h2><ul class="nota" style="margin:0;padding-left:18px">'
-    + '<li>Unit · Bil · Invois — workbook <b>DB Unit &amp; Bil</b> (tab Unit/Bil/Invois).</li>'
-    + '<li>Tiket · Work Order — workbook kerja MT (tab Tickets/Work Order).</li>'
-    + '<li>Tiada taip semula — angka dibaca dari workbook tersebut. Cap masa data: <b>' + esc(D.masa || "—") + '</b>.</li>'
-    + '</ul><div class="btnrow" style="margin-top:12px"><button class="btn ghost" id="bRe">🔄 Tarik data terkini</button>'
-    + '<button class="btn ghost" id="bOut">Log keluar</button></div>'
-    + '<p class="nota">Paparan biasa = <b>snapshot</b> (dikemas kini automatik setiap 15 minit) supaya halaman sentiasa laju. '
-    + 'Butang <b>Tarik data terkini</b> cuba menarik data langsung dari pangkalan data MT (10–30 saat).</p></div>';
+  h += '<div class="card"><h2>ℹ️ Data sources</h2><ul class="nota" style="margin:0;padding-left:18px">'
+    + '<li>Property · Bill · Invoice — workbook <b>DB &amp; Bill</b> (property/bill/invoice tabs).</li>'
+    + '<li>Ticket · Work Order — MT work workbook (Tickets/Work Order tabs).</li>'
+    + '<li>No re-typing — the figures are read from that workbook. Data timestamp: <b>' + esc(D.masa || "—") + '</b>.</li>'
+    + '</ul><div class="btnrow" style="margin-top:12px"><button class="btn ghost" id="bRe">🔄 Pull latest data</button>'
+    + '<button class="btn ghost" id="bOut">Sign out</button></div>'
+    + '<p class="nota">The normal view is a <b>snapshot</b> (updated automatically every 15 minutes) so the page always stays fast. '
+    + 'The <b>Pull latest data</b> button tries to pull live data from the MT database (10–30 seconds).</p></div>';
 
   document.getElementById("wrap").innerHTML = h;
   muatPeranan();
   var bRe = document.getElementById("bRe"); if (bRe) bRe.onclick = function () { muatLive(false); };
   var bOut = document.getElementById("bOut");
-  if (bOut) bOut.onclick = function () { localStorage.removeItem("mt_admin_token"); T = ""; splash("Telah log keluar."); login(); };
+  if (bOut) bOut.onclick = function () { localStorage.removeItem("mt_admin_token"); T = ""; splash("You have been signed out."); login(); };
   var navEl = document.getElementById("navPhmt");
   if (navEl && window.PHMT && D.peranans) PHMT.lukis(navEl, D.peranans, "ADMIN");
   var bK = document.getElementById("bKeluar");

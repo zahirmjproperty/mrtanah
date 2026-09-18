@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Dashboard Penjual — Mr Tanah</title>
+<title>Seller Dashboard — Zentra Portal</title>
 <style>
   :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; --oren:#e8862e; }
   * { box-sizing:border-box; margin:0; padding:0; }
@@ -52,12 +52,12 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>🏷️ Dashboard Penjual</h1>
-    <p id="sub">Mr Tanah · ZMJ Solutions — peringkat, dokumen &amp; bayaran penjualan anda</p>
+    <h1>🏷️ Seller Dashboard</h1>
+    <p id="sub">Mr Tanah · ZMJ Solutions — your sale stages, documents &amp; payments</p>
   </div>
   <div id="navPhmt" style="max-width:900px;margin:14px auto 0;padding:0 14px"></div>
-  <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
-  <div class="foot">Dokumen peribadi — pautan/akaun ini khas untuk anda. Jangan kongsi.</div>
+  <div class="wrap" id="wrap"><div class="splash">Loading…</div></div>
+  <div class="foot">Private document — this link/account is exclusively yours. Do not share.</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/auth-config.js?v=2"></script>
@@ -71,10 +71,10 @@ function rm0(n){ return "RM " + Number(n||0).toLocaleString("ms-MY", {maximumFra
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
 function tkh(s){ if(!s) return "—"; var d=String(s).substring(0,10).split("-"); return d.length===3 ? d[2]+"/"+d[1]+"/"+d[0] : String(s); }
 function splash(m){ document.getElementById("wrap").innerHTML = '<div class="splash">'+m+'</div>'; }
-function hariTeks(h){ if(h===null||h===undefined) return ""; if(h<0) return "lewat "+Math.abs(h)+" hari"; if(h===0) return "HARI INI"; return h+" hari lagi"; }
+function hariTeks(h){ if(h===null||h===undefined) return ""; if(h<0) return Math.abs(h)+" days overdue"; if(h===0) return "TODAY"; return "in "+h+" days"; }
 function stDok(s){ s=String(s||"").toUpperCase();
-  if(s==="OK") return '<span class="st s-ok">SIAP</span>';
-  if(s==="MENUNGGU") return '<span class="st s-warn">MENUNGGU</span>';
+  if(s==="OK") return '<span class="st s-ok">COMPLETED</span>';
+  if(s==="MENUNGGU") return '<span class="st s-warn">PENDING</span>';
   if(s.indexOf("TIDAK")>=0) return '<span class="st s-wait">N/A</span>';
   return '<span class="st s-wait">'+esc(s||"—")+'</span>'; }
 function wa(nombor, teks){ var n=String(nombor||"").replace(/[^0-9]/g,""); if(n.indexOf("0")===0) n="6"+n; else if(n.indexOf("60")!==0) n="6"+n; return "https://wa.me/"+n+"?text="+encodeURIComponent(teks||""); }
@@ -87,25 +87,25 @@ function urlAPI() {
 function muat() {
   if (SIBUK) return; SIBUK = true;
   var p = (window.PRATONTON_DATA) ? Promise.resolve(window.PRATONTON_DATA) : fetch(urlAPI()).then(function(r){ return r.json(); });
-  if (!D) splash("Memuatkan…");
+  if (!D) splash("Loading…");
   p.then(function(d){
     SIBUK = false;
     if (!d || !d.ok) {
       if (MOD === "login" && /sesi tidak sah|tamat tempoh/i.test(String((d||{}).error||""))) { location.href = "login.html"; return; }
-      splash("⚠️ " + esc((d||{}).error || "Pautan tidak sah atau telah dimatikan."));
+      splash("⚠️ " + esc((d||{}).error || "Invalid or expired link."));
       return;
     }
     D = d; lukis();
     var nav = document.getElementById("navPhmt");
     if (nav && window.PHMT && D.peranans) PHMT.lukis(nav, D.peranans, "PENJUAL_HARTANAH");
   })
-  .catch(function(e){ SIBUK = false; splash("⚠️ Gagal memuatkan data.<br><small>"+esc(e)+"</small>"); });
+  .catch(function(e){ SIBUK = false; splash("⚠️ Failed to load data.<br><small>"+esc(e)+"</small>"); });
 }
 (function init(){
   var A = window.AUTH || {};
   if (window.PRATONTON_DATA) { muat(); return; }
   if (!A.url || !A.key || typeof window.supabase === "undefined") {
-    if (TOKEN) muat(); else splash("⚠️ Pautan tidak lengkap (tiada token). Guna pautan dari Mr Tanah, atau log masuk.");
+    if (TOKEN) muat(); else splash("⚠️ Incomplete link (no token). Use the link sent by Mr Tanah, or sign in.");
     return;
   }
   SB = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false } });
@@ -123,7 +123,7 @@ function garisPeringkat(k){
   susun.forEach(function(p, i){
     var tp = (k.tarikh_peringkat || {})[p] || "";
     var cls = (i === idx) ? "on" : (i < idx ? "past" : "");
-    h += '<div class="step"><div class="dot ' + cls + '">' + (i + 1) + '</div><div><div class="t">' + esc(p) + (i === idx ? " ← sekarang" : "") + '</div>'
+    h += '<div class="step"><div class="dot ' + cls + '">' + (i + 1) + '</div><div><div class="t">' + esc(p) + (i === idx ? " ← current" : "") + '</div>'
       + (tp ? '<div class="d">' + tkh(tp) + '</div>' : '<div class="d">—</div>') + '</div></div>';
   });
   return h;
@@ -131,68 +131,68 @@ function garisPeringkat(k){
 
 function lukis(){
   var kp = D.kpi || {}, h = "";
-  document.getElementById("sub").textContent = "Mr Tanah · " + (D.penjual || "") + (kp.kes_jumlah ? " · " + kp.kes_jumlah + " kes" : "");
-  var logKeluar = (MOD === "login") ? '<div class="btnrow"><button class="btn ghost" onclick="keluar()">Log keluar</button></div>' : "";
+  document.getElementById("sub").textContent = "Mr Tanah · " + (D.penjual || "") + (kp.kes_jumlah ? " · " + kp.kes_jumlah + " cases" : "");
+  var logKeluar = (MOD === "login") ? '<div class="btnrow"><button class="btn ghost" onclick="keluar()">Sign out</button></div>' : "";
 
-  h += '<div class="card"><h2>📌 Ringkasan Penjualan <span class="badge">DATA SEBENAR</span></h2><div class="kpi">'
-    +  '<div class="kbox"><div class="l">Kes aktif</div><div class="v">' + (kp.kes_aktif||0) + '</div><div class="s">' + (kp.kes_selesai||0) + ' selesai · peringkat ' + esc(kp.peringkat_semasa||"—") + '</div></div>'
-    +  '<div class="kbox"><div class="l">Harga jualan</div><div class="v">' + rm0(kp.nilai) + '</div><div class="s">' + (kp.kes_jumlah||0) + ' kes direkod</div></div>'
-    +  '<div class="kbox"><div class="l">Deposit diterima</div><div class="v">' + rm0(kp.deposit) + '</div><div class="s">direkod oleh MT</div></div>'
-    +  '<div class="kbox"><div class="l">Baki belum diterima</div><div class="v">' + rm0(kp.baki) + '</div><div class="s">harga − deposit</div></div>'
-    +  '</div><div class="btnrow"><button class="btn ghost" onclick="muat()">🔄 Tarik data terkini</button></div>'
-    +  '<div class="hint">Data setakat <b>' + esc(D.masa||"") + '</b> — dikemas kini oleh pejabat Mr Tanah.</div>' + logKeluar + '</div>';
+  h += '<div class="card"><h2>📌 Sale Summary <span class="badge">ACTUAL DATA</span></h2><div class="kpi">'
+    +  '<div class="kbox"><div class="l">Active cases</div><div class="v">' + (kp.kes_aktif||0) + '</div><div class="s">' + (kp.kes_selesai||0) + ' completed · stage ' + esc(kp.peringkat_semasa||"—") + '</div></div>'
+    +  '<div class="kbox"><div class="l">Sale price</div><div class="v">' + rm0(kp.nilai) + '</div><div class="s">' + (kp.kes_jumlah||0) + ' cases recorded</div></div>'
+    +  '<div class="kbox"><div class="l">Deposit received</div><div class="v">' + rm0(kp.deposit) + '</div><div class="s">recorded by MT</div></div>'
+    +  '<div class="kbox"><div class="l">Balance outstanding</div><div class="v">' + rm0(kp.baki) + '</div><div class="s">price − deposit</div></div>'
+    +  '</div><div class="btnrow"><button class="btn ghost" onclick="muat()">🔄 Pull latest data</button></div>'
+    +  '<div class="hint">Data as of <b>' + esc(D.masa||"") + '</b> — updated by the Mr Tanah office.</div>' + logKeluar + '</div>';
 
-  h += '<div class="card"><h2>⏰ Perlu perhatian</h2>';
+  h += '<div class="card"><h2>⏰ Needs attention</h2>';
   (D.amaran||[]).forEach(function(a){ h += '<div class="amr ' + esc(a.tahap) + '"><b>' + esc(a.tajuk) + '</b><i>' + esc(a.butir) + '</i></div>'; });
   if ((D.tindakan||[]).length) {
-    h += '<div style="margin-top:10px"><b style="font-size:12.5px;color:#0a1f44">Tindakan dalam rekod sistem</b>';
+    h += '<div style="margin-top:10px"><b style="font-size:12.5px;color:#0a1f44">Actions in the system record</b>';
     D.tindakan.forEach(function(t){ h += '<div class="amr kuning" style="margin-top:8px"><b>' + esc(t.perkara) + '</b><i>' + esc(t.kes) + ' · ' + esc(t.butir) + '</i></div>'; });
     h += '</div>';
   }
-  h += '<div class="amr biru"><b>Peringatan penting</b><i>Jangan serahkan kunci atau barang dalam unit sebelum bayaran baki disahkan selesai oleh MT/peguamcara.</i></div>';
+  h += '<div class="amr biru"><b>Important reminder</b><i>Do not hand over the keys or any items in the property before the balance payment has been confirmed settled by MT/the solicitor.</i></div>';
   h += '</div>';
 
   if (!(D.kes||[]).length) {
-    h += '<div class="card"><div class="hint">Tiada kes penjualan didaftarkan atas nama anda buat masa ini. Jika ini tidak betul, hubungi Mr Tanah.</div></div>';
+    h += '<div class="card"><div class="hint">No sale cases are registered under your name at the moment. If this is not correct, contact Mr Tanah.</div></div>';
   }
 
   (D.kes||[]).forEach(function(k){
     h += '<div class="card"><h2>' + esc(k.kes) + ' <span class="badge">' + esc(k.jenis) + '</span></h2>'
-      +  '<div class="meta"><div class="row"><span>Hartanah</span><b>' + esc(k.hartanah) + '</b></div>'
-      +  '<div class="row"><span>Alamat</span><b>' + esc(k.alamat||"—") + '</b></div>'
-      +  '<div class="row"><span>Harga jualan</span><b>' + rm(k.harga) + '</b></div>'
-      +  '<div class="row"><span>Deposit diterima</span><b>' + rm(k.deposit) + '</b></div>'
-      +  '<div class="row"><span>Baki belum diterima</span><b>' + rm(k.baki) + '</b></div>'
+      +  '<div class="meta"><div class="row"><span>Property</span><b>' + esc(k.hartanah) + '</b></div>'
+      +  '<div class="row"><span>Address</span><b>' + esc(k.alamat||"—") + '</b></div>'
+      +  '<div class="row"><span>Sale price</span><b>' + rm(k.harga) + '</b></div>'
+      +  '<div class="row"><span>Deposit received</span><b>' + rm(k.deposit) + '</b></div>'
+      +  '<div class="row"><span>Balance outstanding</span><b>' + rm(k.baki) + '</b></div>'
       +  '<div class="row"><span>Status</span><b>' + esc(k.status) + '</b></div>'
-      +  (k.tarikh_penting ? '<div class="row"><span>Tarikh penting</span><b>' + tkh(k.tarikh_penting) + ' (' + esc(hariTeks(k.hari_penting)) + ')</b></div>' : '')
+      +  (k.tarikh_penting ? '<div class="row"><span>Key date</span><b>' + tkh(k.tarikh_penting) + ' (' + esc(hariTeks(k.hari_penting)) + ')</b></div>' : '')
       +  '</div>'
-      +  '<h2 style="margin-top:12px">🧭 Peringkat</h2>' + garisPeringkat(k)
-      +  (k.panduan ? '<div class="note" style="margin-top:8px"><b>Langkah seterusnya:</b> ' + esc(k.panduan) + '</div>' : '');
+      +  '<h2 style="margin-top:12px">🧭 Stages</h2>' + garisPeringkat(k)
+      +  (k.panduan ? '<div class="note" style="margin-top:8px"><b>Next step:</b> ' + esc(k.panduan) + '</div>' : '');
 
     if ((k.dokumen||[]).length) {
-      h += '<h2 style="margin-top:12px">📄 Dokumen</h2><table><tr><th>Dokumen</th><th>Status</th></tr>';
+      h += '<h2 style="margin-top:12px">📄 Documents</h2><table><tr><th>Document</th><th>Status</th></tr>';
       k.dokumen.forEach(function(dd){ h += '<tr><td>' + esc(dd.nama) + '</td><td>' + stDok(dd.status) + '</td></tr>'; });
-      h += '</table><div class="hint">Status diselenggara oleh pejabat MT. Salinan dokumen hak milik/geran diserahkan kepada peguamcara melalui MT — jangan hantar kepada pihak tidak dikenali.</div>';
+      h += '</table><div class="hint">Status is maintained by the MT office. Copies of title/deed documents are passed to the solicitor through MT — do not send them to unknown parties.</div>';
     }
 
-    h += '<h2 style="margin-top:12px">👥 Pihak berkaitan</h2><div class="meta">'
-      +  '<div class="row"><span>Ejen</span><b>' + esc(k.ejen||"—") + (k.ejen_agensi ? " · " + esc(k.ejen_agensi) : "") + '</b></div>'
-      +  (k.ejen_telefon ? '<div class="row"><span>Telefon ejen</span><b>' + esc(k.ejen_telefon) + '</b></div>' : '')
-      +  '<div class="row"><span>Peguamcara anda</span><b>' + esc(k.solicitor_saya||"Belum dilantik") + '</b></div>'
-      +  '<div class="row"><span>Pegawai pinjaman pembeli</span><b>' + esc(k.mortgage||"—") + '</b></div>'
-      +  '<div class="row"><span>' + esc(k.lawan_label || "Pembeli") + '</span><b>' + esc(k.lawan_nama||"—") + '</b></div>'
+    h += '<h2 style="margin-top:12px">👥 Related parties</h2><div class="meta">'
+      +  '<div class="row"><span>Agent</span><b>' + esc(k.ejen||"—") + (k.ejen_agensi ? " · " + esc(k.ejen_agensi) : "") + '</b></div>'
+      +  (k.ejen_telefon ? '<div class="row"><span>Agent phone</span><b>' + esc(k.ejen_telefon) + '</b></div>' : '')
+      +  '<div class="row"><span>Your solicitor</span><b>' + esc(k.solicitor_saya||"Not yet appointed") + '</b></div>'
+      +  '<div class="row"><span>Buyer&#39;s mortgage officer</span><b>' + esc(k.mortgage||"—") + '</b></div>'
+      +  '<div class="row"><span>Buyer</span><b>' + esc(k.lawan_nama||"—") + '</b></div>'
       +  '</div><div class="btnrow">';
-    if (k.ejen_telefon) h += '<a class="btn ghost" href="' + esc(wa(k.ejen_telefon, "Assalamualaikum " + (k.ejen||"") + ", saya penjual untuk kes " + k.kes + " (" + k.hartanah + "). Boleh saya bertanya perkembangan?")) + '" target="_blank">WhatsApp ejen</a>';
-    h += '<a class="btn ghost" href="https://wa.me/60163119076?text=' + encodeURIComponent("Penjual " + (D.penjual||"") + " — kes " + k.kes + " (" + k.hartanah + "): ") + '" target="_blank">WhatsApp MT</a></div>'
-      +  '<div class="hint">Kemas kini terakhir rekod: ' + esc(k.dikemaskini||"—") + '</div></div>';
+    if (k.ejen_telefon) h += '<a class="btn ghost" href="' + esc(wa(k.ejen_telefon, "Hello " + (k.ejen||"") + ", I am the seller for case " + k.kes + " (" + k.hartanah + "). May I ask for an update?")) + '" target="_blank">WhatsApp agent</a>';
+    h += '<a class="btn ghost" href="https://wa.me/60163119076?text=' + encodeURIComponent("Seller " + (D.penjual||"") + " — case " + k.kes + " (" + k.hartanah + "): ") + '" target="_blank">WhatsApp MT</a></div>'
+      +  '<div class="hint">Last record update: ' + esc(k.dikemaskini||"—") + '</div></div>';
     h += '</div>';
   });
 
-  h += '<div class="card"><h2>💬 Hubungi Mr Tanah</h2><div class="btnrow">'
-    +  '<a class="btn" href="https://wa.me/60163119076?text=' + encodeURIComponent("Penjual " + (D.penjual||"") + " — ") + '" target="_blank">WhatsApp MT 016-311 9076</a>'
-    +  '<a class="btn ghost" href="mailto:mrtanahmy@gmail.com" target="_blank">Emel MT</a></div>'
+  h += '<div class="card"><h2>💬 Contact Mr Tanah</h2><div class="btnrow">'
+    +  '<a class="btn" href="https://wa.me/60163119076?text=' + encodeURIComponent("Seller " + (D.penjual||"") + " — ") + '" target="_blank">WhatsApp MT 016-311 9076</a>'
+    +  '<a class="btn ghost" href="mailto:mrtanahmy@gmail.com" target="_blank">Email MT</a></div>'
     +  '<div class="note" style="margin-top:10px">' + esc(D.nota||"") + '</div>'
-    +  '<div class="hint">Waktu pejabat Isnin–Jumaat 9:00 pg–6:00 ptg.</div></div>';
+    +  '<div class="hint">Office hours Monday–Friday 9:00 am–6:00 pm.</div></div>';
 
   document.getElementById("wrap").innerHTML = h;
   window.scrollTo(0,0);

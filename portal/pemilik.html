@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Dashboard Pemilik — Portfolio Hartanah | Mr Tanah</title>
+<title>Owner Dashboard — Property Portfolio — Zentra Portal</title>
 <meta name="description" content="Papan pemuka pemilik hartanah — portfolio unit, kutipan sewa, bil utiliti, kos penyelenggaraan & anggaran bersih. Mr Tanah.">
 <style>
   :root { --mt:#123a7a; --mt-tua:#0a1f44; --hijau:#14905c; }
@@ -54,13 +54,13 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>🏠 Dashboard Pemilik</h1>
-    <p>Portfolio hartanah anda — dikendalikan ZMJ Solutions (Mr Tanah)</p>
+    <h1>🏠 Owner Dashboard</h1>
+    <p>Your property portfolio — managed by ZMJ Solutions (Mr Tanah)</p>
     <p style="margin:2px 0 0;font-size:11px;opacity:.85">versi v3-snapshot</p>
-    <div class="crumbs"><a href="/">← Portal Mr Tanah</a></div>
+    <div class="crumbs"><a href="/">← Zentra Portal</a></div>
   </div>
-  <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
-  <div class="foot">Pautan peribadi — jangan kongsi. Pertanyaan: WhatsApp 016-3119076.</div>
+  <div class="wrap" id="wrap"><div class="splash">Loading…</div></div>
+  <div class="foot">Private link — do not share. Enquiries: WhatsApp 016-3119076.</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/auth-config.js?v=2"></script>
@@ -69,7 +69,7 @@
 var API = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
 var T = new URLSearchParams(location.search).get("t") || localStorage.getItem("mt_pemilik_token") || "";
 var D = null;
-var MOD = "token";        /* "token" = pautan lama · "login" = sesi log masuk */
+var MOD = "token";        /* "token" = legacy link · "login" = signed-in session */
 var SESI = null, SB = null;
 
 function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
@@ -88,23 +88,23 @@ function pilStatus(txt) {
 
 function tiadaAkses(m) {
   document.getElementById("wrap").innerHTML = '<div class="card" style="max-width:520px;margin:24px auto">'
-    + '<h2>Pautan tidak sah</h2><p class="hint">' + esc(m) + ' Jika anda pemilik unit yang diuruskan Mr Tanah, '
-    + 'hubungi WhatsApp <b>016-3119076</b> untuk pautan baharu.</p></div>';
+    + '<h2>Invalid link</h2><p class="hint">' + esc(m) + ' If you are an owner of a unit managed by Mr Tanah, '
+    + 'contact WhatsApp <b>016-3119076</b> for a new link.</p></div>';
 }
 
 function muat() {
-  /* Snapshot dahulu (fail sama-domain, laju & PASTI) — dicegah masalah had masa Apps Script */
-  splash("Memuatkan…");
+  /* Snapshot first (same-domain file, fast and RELIABLE) — avoids Apps Script timeout limits */
+  splash("Loading…");
   const snap = "data/pemilik-" + encodeURIComponent(T) + ".json";
   fetch(snap + "?t=" + Date.now(), { cache: "no-store" })
-    .then(function (r) { if (!r.ok) throw new Error("tiada snapshot"); return r.json(); })
-    .then(function (d) { if (!d.ok) throw new Error("snapshot tidak sah"); D = d; D.__snap = 1; lukis(); })
+    .then(function (r) { if (!r.ok) throw new Error("no snapshot"); return r.json(); })
+    .then(function (d) { if (!d.ok) throw new Error("invalid snapshot"); D = d; D.__snap = 1; lukis(); })
     .catch(function () { muatLive(true); });
 }
 
 function muatLive(gunaSandaran) {
-  /* Data langsung (Apps Script) — lebih perlahan; guna bila pengguna minta atau snapshot tiada */
-  splash("Menghubungi pelayan… (boleh ambil 10–30 saat)");
+  /* Live data (Apps Script) — slower; use when the user asks for it or no snapshot exists */
+  splash("Contacting the server… (this may take 10–30 seconds)");
   var ctrl = (typeof AbortController !== "undefined") ? new AbortController() : null;
   var tamat = setTimeout(function () { if (ctrl) ctrl.abort(); }, 45000);
   var urlAPI = (MOD === "login")
@@ -116,21 +116,21 @@ function muatLive(gunaSandaran) {
       if (!d.ok) {
         var em = String(d.error || "");
         if (MOD === "login") {
-          if (/sesi tidak sah|tamat tempoh/i.test(em)) { document.getElementById("wrap").innerHTML = '<div class="card" style="max-width:520px;margin:24px auto"><h2>Sesi tamat</h2><p class="hint">Sila log masuk semula.</p><div class="btnrow" style="margin-top:12px"><a class="btn" style="text-decoration:none" href="login.html">🔐 Log masuk</a></div></div>'; return; }
-          tiadaAkses(em || "Akaun ini belum didaftarkan untuk portal."); return;
+          if (/sesi tidak sah|tamat tempoh/i.test(em)) { document.getElementById("wrap").innerHTML = '<div class="card" style="max-width:520px;margin:24px auto"><h2>Session expired</h2><p class="hint">Please sign in again.</p><div class="btnrow" style="margin-top:12px"><a class="btn" style="text-decoration:none" href="login.html">🔐 Sign in</a></div></div>'; return; }
+          tiadaAkses(em || "This account is not yet registered for the portal."); return;
         }
-        localStorage.removeItem("mt_pemilik_token"); tiadaAkses(em || "Pautan tidak sah atau telah dimatikan."); return;
+        localStorage.removeItem("mt_pemilik_token"); tiadaAkses(em || "Invalid or expired link."); return;
       }
       D = d; D.__snap = 0; lukis();
     })
     .catch(function (e) {
       clearTimeout(tamat);
-      if (D) { lukis(); amaranKecil("⚠️ Data langsung gagal dimuatkan (" + String(e).slice(0, 60) + "). Paparan ini ialah snapshot " + (D.masa || "") + "."); return; }
+      if (D) { lukis(); amaranKecil("⚠️ Live data failed to load (" + String(e).slice(0, 60) + "). This view is the snapshot from " + (D.masa || "") + "."); return; }
       document.getElementById("wrap").innerHTML = '<div class="card" style="max-width:520px;margin:24px auto">'
-        + '<h2>⚠️ Data tidak dapat dimuatkan</h2><p class="hint">Snapshot belum tersedia dan sambungan langsung gagal. '
-        + 'Cuba lagi sebentar; jika berulang hubungi WhatsApp 016-3119076.</p>'
+        + '<h2>⚠️ Data could not be loaded</h2><p class="hint">The snapshot is not available yet and the live connection failed. '
+        + 'Try again in a moment; if it keeps happening, contact WhatsApp 016-3119076.</p>'
         + '<p class="hint" style="color:#a11">' + esc(String(e).slice(0, 110)) + '</p>'
-        + '<div class="btnrow" style="margin-top:12px"><button class="btn" id="bCuba">🔄 Cuba lagi</button></div></div>';
+        + '<div class="btnrow" style="margin-top:12px"><button class="btn" id="bCuba">🔄 Try again</button></div></div>';
       var b = document.getElementById("bCuba"); if (b) b.onclick = function () { muatLive(true); };
     });
 }
@@ -150,77 +150,77 @@ function lukis() {
     return '<div class="kpi"><b style="color:' + (w || "#123a7a") + '">' + esc(nilai) + '</b><span>' + esc(label) + '</span>'
       + (nota ? '<em>' + esc(nota) + '</em>' : '') + '</div>';
   }
-  var badge = D.__snap ? ('📦 Snapshot ' + esc(D.masa || '')) : ('🟢 Data langsung ' + esc(D.masa || ''));
+  var badge = D.__snap ? ('📦 Snapshot ' + esc(D.masa || '')) : ('🟢 Live data ' + esc(D.masa || ''));
   var h = '<div id="navPhmt"></div>'
-    + '<p class="hint" style="margin:0 0 10px">Pemilik: <b>' + esc(D.pemilik) + '</b> · ' + badge
-    + (MOD === "login" ? ' · <a href="#" id="bKeluar" style="color:#0a5">Log keluar</a>' : '') + '</p>'
+    + '<p class="hint" style="margin:0 0 10px">Owner: <b>' + esc(D.pemilik) + '</b> · ' + badge
+    + (MOD === "login" ? ' · <a href="#" id="bKeluar" style="color:#0a5">Sign out</a>' : '') + '</p>'
     + '<div class="kpis">'
-    + kpi(k.unit_sewaan, "Unit disewa", k.unit_jumlah + " unit dalam portfolio")
-    + kpi(rm(k.sewa_bulanan, 0), "Sewa bulanan (kontrak)", "tempoh " + (k.inv_tempoh || "—"))
-    + kpi(rm(k.inv_diterima), "Kutipan tempoh ini", "dijana " + rm(k.inv_dijana), "#14905c")
-    + kpi(rm(k.inv_tertunggak), "Belum dibayar penyewa", k.inv_belum_bilangan + " invois", "#b3261e")
-    + kpi(rm(k.bil_pemilik_belum), "Bil utiliti (tanggungjawab anda)", "unit tanpa penyewa", "#8a4c00")
-    + kpi(rm(k.kos_kerja_pemilik), "Kos penyelenggaraan", "termasuk kos pengurusan MT")
-    + kpi(rm(k.anggaran_bersih), "Anggaran bersih", "sewa diterima − kos", k.anggaran_bersih < 0 ? "#b3261e" : "#14905c")
+    + kpi(k.unit_sewaan, "Units rented", k.unit_jumlah + " units in the portfolio")
+    + kpi(rm(k.sewa_bulanan, 0), "Monthly rent (contract)", "period " + (k.inv_tempoh || "—"))
+    + kpi(rm(k.inv_diterima), "Collected this period", "raised " + rm(k.inv_dijana), "#14905c")
+    + kpi(rm(k.inv_tertunggak), "Unpaid by tenants", k.inv_belum_bilangan + " invoices", "#b3261e")
+    + kpi(rm(k.bil_pemilik_belum), "Utility bills (your responsibility)", "units without a tenant", "#8a4c00")
+    + kpi(rm(k.kos_kerja_pemilik), "Maintenance cost", "including MT management cost")
+    + kpi(rm(k.anggaran_bersih), "Estimated net", "rent received − costs", k.anggaran_bersih < 0 ? "#b3261e" : "#14905c")
     + '</div>';
 
-  h += '<div class="card"><h2>⚡ Perlu perhatian</h2>';
+  h += '<div class="card"><h2>⚡ Needs attention</h2>';
   (D.amaran || []).forEach(function (a) {
     h += '<div class="al" style="background:' + (latar[a.tahap] || "#eef1f4") + ';border-left:5px solid ' + (warna[a.tahap] || "#5a6b61") + '">'
       + '<b>' + esc(a.tajuk) + '</b><span>' + esc(a.butir) + '</span></div>';
   });
   h += '</div>';
 
-  h += '<div class="card"><h2>🏠 Portfolio unit saya</h2><div style="overflow-x:auto"><table>'
-    + '<thead><tr><th>Unit</th><th>Nama</th><th>Jenis</th><th>Status</th><th>Penyewa</th><th class="kanan">Sewa/bln</th></tr></thead><tbody>'
+  h += '<div class="card"><h2>🏠 My unit portfolio</h2><div style="overflow-x:auto"><table>'
+    + '<thead><tr><th>Property</th><th>Name</th><th>Type</th><th>Status</th><th>Tenant</th><th class="kanan">Rent/mth</th></tr></thead><tbody>'
     + (D.unit || []).map(function (u) {
         return '<tr><td><b>' + esc(u.id) + '</b></td><td>' + esc(u.nama) + '</td><td>' + esc(u.jenis) + '</td>'
-          + '<td>' + pilStatus(u.status || (u.pemilikan ? "Peribadi" : "")) + '</td>'
+          + '<td>' + pilStatus(u.status || (u.pemilikan ? "Own account" : "")) + '</td>'
           + '<td>' + esc(u.penyewa || "—") + '</td><td class="kanan">' + (u.sewa ? rm(u.sewa, 0) : "—") + '</td></tr>';
       }).join('')
     + '</tbody></table></div></div>';
 
-  h += '<div class="card"><h2>💵 Invois sewa ' + esc(k.inv_tempoh || "") + '</h2><div style="overflow-x:auto"><table>'
-    + '<thead><tr><th>Invois</th><th>Unit</th><th>Penyewa</th><th class="kanan">Sewa</th><th class="kanan">Utiliti</th>'
-    + '<th class="kanan">Jumlah</th><th>Due</th><th>Status</th></tr></thead><tbody>'
+  h += '<div class="card"><h2>💵 Rent invoices ' + esc(k.inv_tempoh || "") + '</h2><div style="overflow-x:auto"><table>'
+    + '<thead><tr><th>Invoice</th><th>Property</th><th>Tenant</th><th class="kanan">Rent</th><th class="kanan">Utilities</th>'
+    + '<th class="kanan">Amount</th><th>Due</th><th>Status</th></tr></thead><tbody>'
     + (D.invois || []).map(function (i) {
         return '<tr><td><b>' + esc(i.id) + '</b></td><td>' + esc(i.unit) + '</td><td>' + esc(i.penyewa) + '</td>'
           + '<td class="kanan">' + rm(i.sewa) + '</td><td class="kanan">' + rm(i.utiliti) + '</td>'
           + '<td class="kanan"><b>' + rm(i.jumlah) + '</b></td><td>' + tkh(i.due) + '</td><td>' + pilStatus(i.status) + '</td></tr>';
       }).join('')
-    + '</tbody></table></div><p class="nota">Utiliti dalam invois adalah <b>pass-through</b> — ditagih kepada penyewa, bukan pendapatan pemilik.</p></div>';
+    + '</tbody></table></div><p class="nota">Utilities in the invoice are a <b>pass-through</b> — charged to the tenant, not owner income.</p></div>';
 
   h += '<div class="dua">'
-    + '<div class="card"><h2>🧾 Bil utiliti belum bayar</h2><div style="overflow-x:auto"><table>'
-    + '<thead><tr><th>Bil</th><th>Unit</th><th>Jenis</th><th class="kanan">Amaun</th><th>Due</th><th>Ditanggung</th></tr></thead><tbody>'
+    + '<div class="card"><h2>🧾 Unpaid utility bills</h2><div style="overflow-x:auto"><table>'
+    + '<thead><tr><th>Bill</th><th>Property</th><th>Type</th><th class="kanan">Amount</th><th>Due</th><th>Borne by</th></tr></thead><tbody>'
     + (D.bil_belum || []).map(function (b) {
         return '<tr><td><b>' + esc(b.id) + '</b></td><td>' + esc(b.unit) + '</td><td>' + esc(b.jenis + " " + b.tempoh) + '</td>'
           + '<td class="kanan">' + rm(b.amaun) + '</td><td>' + tkh(b.due) + '</td>'
-          + '<td>' + (b.passthru ? '<span class="pil biru">Penyewa</span>' : '<span class="pil kuning">Pemilik</span>') + '</td></tr>';
+          + '<td>' + (b.passthru ? '<span class="pil biru">Tenant</span>' : '<span class="pil kuning">Owner</span>') + '</td></tr>';
       }).join('')
-    + '</tbody></table></div><p class="nota">Belum bayar: <b>' + rm(k.bil_pemilik_belum) + '</b> tanggungjawab pemilik · <b>'
-    + rm(k.bil_penyewa_belum) + '</b> pass-through penyewa.</p></div>'
-    + '<div class="card"><h2>🔧 Penyelenggaraan pada unit saya</h2><div style="overflow-x:auto"><table>'
-    + '<thead><tr><th>Rujukan</th><th>Unit</th><th>Jenis</th><th>Status</th><th class="kanan">Kos</th></tr></thead><tbody>'
+    + '</tbody></table></div><p class="nota">Unpaid: <b>' + rm(k.bil_pemilik_belum) + '</b> owner&#39;s responsibility · <b>'
+    + rm(k.bil_penyewa_belum) + '</b> tenant pass-through.</p></div>'
+    + '<div class="card"><h2>🔧 Maintenance on my units</h2><div style="overflow-x:auto"><table>'
+    + '<thead><tr><th>Reference</th><th>Property</th><th>Type</th><th>Status</th><th class="kanan">Cost</th></tr></thead><tbody>'
     + ((D.tiket || []).length ? (D.tiket || []).map(function (t) {
         return '<tr><td><b>' + esc(t.ref) + '</b></td><td>' + esc(t.unit) + '</td><td>' + esc(t.jenis) + '</td>'
           + '<td>' + pilStatus(t.status) + '</td><td class="kanan">' + (t.nilai ? rm(t.nilai) : "—")
-          + (t.kos_pengurusan ? '<br><span class="nota">+ ' + rm(t.kos_pengurusan) + ' urus</span>' : '') + '</td></tr>';
-      }).join('') : '<tr><td colspan="5" class="hint">Tiada rekod penyelenggaraan pada unit anda.</td></tr>')
+          + (t.kos_pengurusan ? '<br><span class="nota">+ ' + rm(t.kos_pengurusan) + ' mgmt</span>' : '') + '</td></tr>';
+      }).join('') : '<tr><td colspan="5" class="hint">No maintenance records for your units.</td></tr>')
     + '</tbody></table></div></div>'
     + '</div>';
 
-  h += '<div class="card"><h2>ℹ️ Bagaimana angka ini dikira</h2>'
+  h += '<div class="card"><h2>ℹ️ How these figures are calculated</h2>'
     + '<div class="formula">' + esc(D.nota || "") + '</div>'
     + '<ul class="nota" style="padding-left:18px">'
-    + '<li>Sumber: DB Unit &amp; Bil (tab Unit/Bil/Invois) + rekod kerja MT — dibaca langsung, tiada taip semula.</li>'
-    + '<li>Sewa diterima tempoh ini: <b>' + rm(k.sewa_diterima) + '</b> · utiliti pass-through diterima: <b>' + rm(k.utiliti_diterima) + '</b>.</li>'
-    + '<li>Kutipan keseluruhan semua tempoh: <b>' + rm(k.diterima_semua_tempoh) + '</b>.</li>'
-    + '<li>Anggaran bersih adalah anggaran bulan semasa sahaja (bukan penyata akaun rasmi).</li>'
-    + '</ul><div class="btnrow" style="margin-top:12px"><button class="btn ghost" id="bRe">🔄 Tarik data terkini</button>'
-    + '<a class="btn ghost" style="text-decoration:none" href="https://wa.me/60163119076?text=Saya%20ada%20pertanyaan%20tentang%20portfolio%20hartanah%20saya">💬 Tanya Mr Tanah</a></div>'
-    + '<p class="nota">Paparan biasa ialah <b>snapshot</b> (dikemas kini automatik setiap 15 minit) supaya halaman sentiasa laju. '
-    + 'Butang <b>Tarik data terkini</b> cuba menarik data langsung dari pangkalan data MT (boleh ambil 10–30 saat).</p></div>';
+    + '<li>Source: the DB &amp; Bill workbook (property/bill/invoice tabs) + MT work records — read directly, with no re-typing.</li>'
+    + '<li>Rent received this period: <b>' + rm(k.sewa_diterima) + '</b> · pass-through utilities received: <b>' + rm(k.utiliti_diterima) + '</b>.</li>'
+    + '<li>Total collected across all periods: <b>' + rm(k.diterima_semua_tempoh) + '</b>.</li>'
+    + '<li>The estimated net is for the current month only (not an official statement of account).</li>'
+    + '</ul><div class="btnrow" style="margin-top:12px"><button class="btn ghost" id="bRe">🔄 Pull latest data</button>'
+    + '<a class="btn ghost" style="text-decoration:none" href="https://wa.me/60163119076?text=Saya%20ada%20pertanyaan%20tentang%20portfolio%20hartanah%20saya">💬 Ask Mr Tanah</a></div>'
+    + '<p class="nota">The normal view is a <b>snapshot</b> (updated automatically every 15 minutes) so the page always stays fast. '
+    + 'The <b>Pull latest data</b> button tries to pull live data from the MT database (this may take 10–30 seconds).</p></div>';
 
   document.getElementById("wrap").innerHTML = h;
   var bRe = document.getElementById("bRe"); if (bRe) bRe.onclick = function () { muatLive(false); };
@@ -233,9 +233,9 @@ function lukis() {
 (function init() {
   var A = window.AUTH || {};
   if (!A.url || !A.key || typeof window.supabase === "undefined") {
-    /* SDK/config tiada → guna laluan token lama sahaja */
+    /* No SDK/config → use the legacy token route only */
     if (T) { localStorage.setItem("mt_pemilik_token", T); muat(); }
-    else tiadaAkses("Tiada token dalam pautan. Buka pautan penuh yang diberi Mr Tanah (…/pemilik.html?t=…) atau log masuk.");
+    else tiadaAkses("No token in the link. Open the full link given by Mr Tanah (…/pemilik.html?t=…) or sign in.");
     return;
   }
   SB = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false } });
