@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>Dashboard Pembeli Hasil Ladang — Mr Tanah</title>
+<title>Farm Produce Buyer Portal — Zentra Portal</title>
 <style>
   :root{ --ijau:#0e6b3a; --ijau2:#12854a; --bg:#f4f7f5; --kad:#fff; --garis:#dbe4de; --teks:#16281e; --redup:#5f7269; }
   *{box-sizing:border-box}
@@ -40,10 +40,10 @@
 </style>
 </head>
 <body>
-  <div class="topbar"><h1>🌾 Portal Pembeli Hasil Ladang</h1><p id="sub">Mr Tanah · pengendali Strategic Agro Technology (SAT)</p></div>
+  <div class="topbar"><h1>🌾 Farm Produce Buyer Portal</h1><p id="sub">Mr Tanah · operator of Strategic Agro Technology (SAT)</p></div>
   <div id="navPhmt" style="max-width:760px;margin:14px auto 0;padding:0 14px"></div>
-  <div class="wrap" id="wrap"><div class="splash">Memuatkan…</div></div>
-  <div class="foot">Dokumen peribadi — pautan/akaun ini khas untuk anda. Jangan kongsi.</div>
+  <div class="wrap" id="wrap"><div class="splash">Loading…</div></div>
+  <div class="foot">Private document — this link/account is exclusively yours. Do not share.</div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/auth-config.js?v=2"></script>
 <script src="assets/auth-nav.js?v=9"></script>
@@ -55,7 +55,7 @@ function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, function(c){ ret
 function rm(n){ return "RM " + Number(n||0).toLocaleString("ms-MY", {minimumFractionDigits:2, maximumFractionDigits:2}); }
 function rm0(n){ return "RM " + Number(n||0).toLocaleString("ms-MY", {maximumFractionDigits:0}); }
 function tkh(s){ if(!s) return "—"; var d=String(s).substring(0,10).split("-"); return d.length===3 ? d[2]+"/"+d[1]+"/"+d[0] : String(s); }
-function bln(s){ if(!s) return "—"; var b=["Jan","Feb","Mac","Apr","Mei","Jun","Jul","Ogos","Sep","Okt","Nov","Dis"]; var d=String(s).substring(0,7).split("-"); return d.length>=2 ? b[Number(d[1])-1]+" "+d[0] : String(s); }
+function bln(s){ if(!s) return "—"; var b=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]; var d=String(s).substring(0,7).split("-"); return d.length>=2 ? b[Number(d[1])-1]+" "+d[0] : String(s); }
 function splash(m){ document.getElementById("wrap").innerHTML = '<div class="splash">'+m+'</div>'; }
 
 function urlAPI() {
@@ -64,17 +64,17 @@ function urlAPI() {
     : API + "?aksi=pembeliladang-dash&token=" + encodeURIComponent(TOKEN) + "&_=" + Date.now();
 }
 function muat() {
-  if (!D) splash("Memuatkan…");
+  if (!D) splash("Loading…");
   var p = (window.PRATONTON_DATA) ? Promise.resolve(window.PRATONTON_DATA) : fetch(urlAPI()).then(function(r){ return r.json(); });
   p.then(function(d){
     if (!d || !d.ok) {
       if (MOD === "login" && /sesi tidak sah|tamat tempoh/i.test(String((d||{}).error||""))) { location.href = "login.html"; return; }
-      splash("⚠️ " + esc((d||{}).error || "Pautan tidak sah atau telah dimatikan.")); return;
+      splash("⚠️ " + esc((d||{}).error || "Invalid or expired link.")); return;
     }
     D = d; lukis(d);
     var nav = document.getElementById("navPhmt");
     if (nav && window.PHMT && d.peranans) PHMT.lukis(nav, d.peranans, "PEMBELI_HASIL_LADANG");
-  }).catch(function(e){ splash("⚠️ Gagal memuatkan: " + esc(e)); });
+  }).catch(function(e){ splash("⚠️ Failed to load: " + esc(e)); });
 }
 
 function lukis(d) {
@@ -82,11 +82,11 @@ function lukis(d) {
   var neg = Number(k.beza_bts_pct || 0) < -5;
   var h = '';
   h += '<div class="kpis">'
-    +  '<div class="kbox"><div class="l">Penghantaran direkod</div><div class="v">' + (k.bil_penghantaran||0) + '</div><div class="s">' + (k.bil_blok||0) + ' blok</div></div>'
-    +  '<div class="kbox"><div class="l">Jumlah tan FFB</div><div class="v">' + Number(k.tan||0).toFixed(2) + '</div><div class="s">' + tkh(k.tarikh_mula) + ' – ' + tkh(k.tarikh_akhir) + '</div></div>'
-    +  '<div class="kbox"><div class="l">Nilai dibeli</div><div class="v">' + rm0(k.kasar) + '</div><div class="s">bersih selepas potongan ' + rm0(k.bersih) + '</div></div>'
-    +  '<div class="kbox"><div class="l">Harga purata diterima</div><div class="v">' + rm0(k.harga_purata) + '/tan</div>'
-    +    '<div class="s">rujukan BTS ' + rm0(k.bts) + '/tan · <b class="' + (neg ? "badge kurang" : "badge more") + '">' + (Number(k.beza_bts_pct||0) >= 0 ? "+" : "") + Number(k.beza_bts_pct||0).toFixed(1) + '%</b></div></div>'
+    +  '<div class="kbox"><div class="l">Deliveries recorded</div><div class="v">' + (k.bil_penghantaran||0) + '</div><div class="s">' + (k.bil_blok||0) + ' blocks</div></div>'
+    +  '<div class="kbox"><div class="l">Total FFB tonnes</div><div class="v">' + Number(k.tan||0).toFixed(2) + '</div><div class="s">' + tkh(k.tarikh_mula) + ' – ' + tkh(k.tarikh_akhir) + '</div></div>'
+    +  '<div class="kbox"><div class="l">Value purchased</div><div class="v">' + rm0(k.kasar) + '</div><div class="s">net after deductions ' + rm0(k.bersih) + '</div></div>'
+    +  '<div class="kbox"><div class="l">Average price received</div><div class="v">' + rm0(k.harga_purata) + '/tonne</div>'
+    +    '<div class="s">BTS reference ' + rm0(k.bts) + '/tonne · <b class="' + (neg ? "badge kurang" : "badge more") + '">' + (Number(k.beza_bts_pct||0) >= 0 ? "+" : "") + Number(k.beza_bts_pct||0).toFixed(1) + '%</b></div></div>'
     +  '</div>';
 
   var am = d.amaran || [];
@@ -95,11 +95,11 @@ function lukis(d) {
     h += '<div class="amaran' + (ok ? " ok" : "") + '">' + esc(am[i]) + '</div>';
   }
 
-  h += '<div class="kad"><h2>📊 Penghantaran FFB anda</h2>';
+  h += '<div class="kad"><h2>📊 Your FFB Deliveries</h2>';
   if (!(d.penghantaran||[]).length) {
-    h += '<div class="hint">Tiada rekod penghantaran lagi. Rekod akan muncul selepas penyata pertama direkodkan.</div>';
+    h += '<div class="hint">No delivery records yet. Records will appear once the first statement is recorded.</div>';
   } else {
-    h += '<table><tr><th>Tarikh</th><th>Blok</th><th>Tan</th><th>Harga</th><th>Kasar</th><th>No. Penyata</th></tr>';
+    h += '<table><tr><th>Date</th><th>Block</th><th>Tonnes</th><th>Price</th><th>Gross</th><th>Statement No.</th></tr>';
     (d.penghantaran||[]).forEach(function(x){
       h += '<tr><td>' + tkh(x.tarikh) + '</td><td>' + esc(x.blok) + '</td><td>' + Number(x.tan||0).toFixed(2) + '</td><td>' + rm0(x.harga) + '</td><td>' + rm(x.kasar) + '</td><td>' + esc(x.chit||"—") + '</td></tr>';
     });
@@ -107,10 +107,10 @@ function lukis(d) {
   }
   h += '</div>';
 
-  h += '<div class="kad"><h2>🗓️ Ikhtisar bulanan</h2>';
-  if (!(d.bulanan||[]).length) h += '<div class="hint">Belum ada data bulanan.</div>';
+  h += '<div class="kad"><h2>🗓️ Monthly Summary</h2>';
+  if (!(d.bulanan||[]).length) h += '<div class="hint">No monthly data yet.</div>';
   else {
-    h += '<table><tr><th>Bulan</th><th>Bilangan</th><th>Tan</th><th>Nilai</th><th>Harga purata</th></tr>';
+    h += '<table><tr><th>Month</th><th>Count</th><th>Tonnes</th><th>Value</th><th>Average price</th></tr>';
     (d.bulanan||[]).forEach(function(x){
       h += '<tr><td>' + bln(x.bulan) + '</td><td>' + (x.bil||0) + '</td><td>' + Number(x.tan||0).toFixed(2) + '</td><td>' + rm0(x.nilai) + '</td><td>' + rm0(x.harga_purata) + '</td></tr>';
     });
@@ -118,10 +118,10 @@ function lukis(d) {
   }
   h += '</div>';
 
-  h += '<div class="kad"><h2>📄 Bil &amp; tuntutan</h2>';
-  if (!(d.bil||[]).length) h += '<div class="hint">Tiada bil atau tuntutan direkodkan. (Kos potong/rawatan diambil dari nilai FFB sebelum bayaran.)</div>';
+  h += '<div class="kad"><h2>📄 Bills &amp; Claims</h2>';
+  if (!(d.bil||[]).length) h += '<div class="hint">No bills or claims recorded. (Cut/processing costs are deducted from the FFB value before payment.)</div>';
   else {
-    h += '<table><tr><th>Tarikh</th><th>No. Bil</th><th>Tempoh</th><th>Jumlah kos</th><th>Diclaim</th><th>Baki</th></tr>';
+    h += '<table><tr><th>Date</th><th>Bill No.</th><th>Period</th><th>Total cost</th><th>Claimed</th><th>Balance</th></tr>';
     (d.bil||[]).forEach(function(x){
       h += '<tr><td>' + tkh(x.tarikh) + '</td><td>' + esc(x.no_bil||"—") + '</td><td>' + tkh(x.dari) + ' – ' + tkh(x.hingga) + '</td><td>' + rm(x.jumlah_kos) + '</td><td>' + rm(x.diclaim) + '</td><td>' + rm(x.baki_hadapan) + '</td></tr>';
     });
@@ -129,31 +129,31 @@ function lukis(d) {
   }
   h += '</div>';
 
-  h += '<div class="kad"><h2>🏭 Profil pihak berdaftar</h2>';
-  if (!d.profil) h += '<div class="hint">Rekod pendaftaran/licence belum dimasukkan ke dalam sistem. Sila hubungi SAT untuk pengemaskinian.</div>';
+  h += '<div class="kad"><h2>🏭 Registered Party Profile</h2>';
+  if (!d.profil) h += '<div class="hint">Registration/licence records have not been entered into the system yet. Please contact SAT for an update.</div>';
   else {
     var p = d.profil;
-    h += '<div class="row"><span>Nama</span><b>' + esc(p.nama) + '</b></div>'
-      +  '<div class="row"><span>Peranan</span><b>' + esc(p.peranan||"—") + '</b></div>'
-      +  '<div class="row"><span>No. SSM</span><b>' + esc(p.ssm||"—") + '</b></div>'
-      +  '<div class="row"><span>Lesen</span><b>' + esc((p.jenis_lesen||"—") + (p.no_lesen ? " · " + p.no_lesen : "")) + '</b></div>'
+    h += '<div class="row"><span>Name</span><b>' + esc(p.nama) + '</b></div>'
+      +  '<div class="row"><span>Role</span><b>' + esc(p.peranan||"—") + '</b></div>'
+      +  '<div class="row"><span>SSM No.</span><b>' + esc(p.ssm||"—") + '</b></div>'
+      +  '<div class="row"><span>Licence</span><b>' + esc((p.jenis_lesen||"—") + (p.no_lesen ? " · " + p.no_lesen : "")) + '</b></div>'
       +  '<div class="row"><span>PIC</span><b>' + esc(p.pic||"—") + '</b></div>'
       +  '<div class="row"><span>Status</span><b>' + esc(p.status||"—") + '</b></div>';
   }
   h += '</div>';
 
   var hr = d.harga || {};
-  h += '<div class="kad"><h2>💹 Harga rujukan BTS/MPOB</h2>'
-    +  '<div class="row"><span>CPO MPOB (bulan semasa)</span><b>' + rm0(hr.cpo) + '/tan</b></div>'
+  h += '<div class="kad"><h2>💹 BTS/MPOB Reference Prices</h2>'
+    +  '<div class="row"><span>CPO MPOB (current month)</span><b>' + rm0(hr.cpo) + '/tonne</b></div>'
     +  '<div class="row"><span>RM per 1% OER</span><b>' + Number(hr.rm_1oer||0).toFixed(2) + '</b></div>'
-    +  '<div class="row"><span>FFB anggaran (CPO × OER 20%)</span><b>' + rm0(hr.ffb_anggaran) + '/tan</b></div>'
-    +  '<div class="row"><span>Bulan rujukan</span><b>' + esc(hr.bulan||"—") + '</b></div>'
-    +  '<div class="hint">Harga rujukan sahaja — harga sebenar dinilai ikut gred/OER dan potongan di kilang.</div>'
+    +  '<div class="row"><span>Estimated FFB (CPO × OER 20%)</span><b>' + rm0(hr.ffb_anggaran) + '/tonne</b></div>'
+    +  '<div class="row"><span>Reference month</span><b>' + esc(hr.bulan||"—") + '</b></div>'
+    +  '<div class="hint">Reference prices only — the actual price is assessed by grade/OER and mill deductions.</div>'
     +  '</div>'
-    +  '<div class="kad"><h2>☎️ Hubungi SAT</h2>'
-    +  '<a class="btn" href="https://wa.me/60163119076?text=' + encodeURIComponent("Salam, saya pembeli hasil ladang — ingin tanya tentang penyata FFB.") + '">WhatsApp Mr Tanah</a>'
-    +  '<a class="btn alt" href="mailto:mrtanahmy@gmail.com">Emel</a>'
-    +  '<div class="hint">Pengendali: Strategic Agro Technology (SAT) · diurus oleh Mr Tanah.</div></div>';
+    +  '<div class="kad"><h2>☎️ Contact SAT</h2>'
+    +  '<a class="btn" href="https://wa.me/60163119076?text=' + encodeURIComponent("Hello, I am a farm produce buyer — I would like to ask about the FFB statement.") + '">WhatsApp Mr Tanah</a>'
+    +  '<a class="btn alt" href="mailto:mrtanahmy@gmail.com">Email</a>'
+    +  '<div class="hint">Operator: Strategic Agro Technology (SAT) · managed by Mr Tanah.</div></div>';
 
   document.getElementById("wrap").innerHTML = h;
 }
@@ -162,7 +162,7 @@ function lukis(d) {
   var A = window.AUTH || {};
   if (window.PRATONTON_DATA) { muat(); return; }
   if (!A.url || !A.key || typeof window.supabase === "undefined") {
-    if (TOKEN) muat(); else splash("⚠️ Pautan tidak lengkap (tiada token). Guna pautan dari Mr Tanah, atau log masuk.");
+    if (TOKEN) muat(); else splash("⚠️ Incomplete link (no token). Use the link sent by Mr Tanah, or sign in.");
     return;
   }
   SB = window.supabase.createClient(A.url, A.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false } });
