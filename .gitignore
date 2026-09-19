@@ -1,0 +1,6 @@
+
+# P0-1: snapshot data portal — JANGAN jejak (nama fail mengandungi token)
+portal/data/
+*.snapshot.json
+pemuka-*.json
+pemilik-*.json
