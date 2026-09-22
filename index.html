@@ -2,60 +2,620 @@
 <html lang="ms">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mr Tanah — Cari Hartanah: Rumah, Tanah &amp; Komersial</title>
-<meta name="description" content="Senarai hartanah untuk dijual oleh Mr Tanah — rumah teres, semi-D, tanah dan komersial di Selangor, Kuala Lumpur &amp; seluruh Malaysia. Ejen hartanah berdaftar (PEA 2684 &amp; 2313).">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Mr Tanah — Pakar Tanah &amp; Hartanah Malaysia</title>
+<meta name="description" content="Listing tanah, bangunan, kilang, gudang dan ruang komersial di seluruh Malaysia — disemak dari sudut hakmilik, lokasi dan potensi pasaran.">
 <link rel="canonical" href="https://mrtanah.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Mr Tanah">
-<meta property="og:title" content="Mr Tanah — Cari Hartanah: Rumah, Tanah &amp; Komersial">
-<meta property="og:description" content="Senarai hartanah untuk dijual oleh Mr Tanah — rumah teres, semi-D, tanah dan komersial di Selangor, Kuala Lumpur &amp; seluruh Malaysia. Ejen hartanah berdaftar (PEA 2684 &amp; 2313).">
+<meta property="og:title" content="Mr Tanah — Pakar Tanah &amp; Hartanah Malaysia">
+<meta property="og:description" content="Listing tanah, bangunan, kilang, gudang dan ruang komersial di seluruh Malaysia.">
 <meta property="og:url" content="https://mrtanah.com/">
 <meta property="og:image" content="https://mrtanah.com/assets/og-card.jpg">
 <meta property="og:locale" content="ms_MY">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  "name": "Mr Tanah",
-  "url": "https://mrtanah.com/",
-  "telephone": "+60163119076",
-  "image": "https://mrtanah.com/assets/og-card.jpg",
-  "areaServed": "MY",
-  "address": {"@type": "PostalAddress", "addressCountry": "MY"}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=68">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+
+<style>
+/* ===== DESIGN TOKENS ===== */
+:root {
+  --mt-bg: #030B0C; --mt-forest: #071714; --mt-navy: #071824;
+  --mt-surface: #0A1E1E; --mt-glass: rgba(7,25,27,.82);
+  --mt-glass-2: rgba(7,25,27,.60);
+  --mt-gold: #D7B469; --mt-gold-light: #F1D28B; --mt-gold-dim: rgba(215,180,105,.20);
+  --mt-ivory: #F4F0E7; --mt-text: #F4F6F8; --mt-muted: #A8B5B3;
+  --mt-teal: #20C8B5; --mt-teal-dim: rgba(32,200,181,.12);
+  --mt-line: rgba(144,193,184,.20); --mt-line-gold: rgba(215,180,105,.20);
+  --mt-whatsapp: #25D366;
+  --mt-radius: 14px; --mt-radius-sm: 10px;
+  --mt-shadow: 0 24px 70px rgba(0,0,0,.40);
+  --mt-page: min(1440px, calc(100% - 40px));
+  --font-ui: 'Manrope', 'Inter', system-ui, sans-serif;
+  --font-heading: 'Cormorant Garamond', 'DM Serif Display', Georgia, serif;
 }
-</script>
-<link rel="stylesheet" href="style.css?v=67">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+* { box-sizing: border-box; }
+
+body {
+  background: #030B0C !important;
+  color: var(--mt-text) !important;
+  font-family: var(--font-ui) !important;
+  margin: 0; padding: 0;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; }
+
+/* ===== HEADER ===== */
+.site-header {
+  position: fixed !important;
+  inset: 0 0 auto !important;
+  z-index: 100 !important;
+  height: 72px !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 max(20px, calc((100% - 1440px) / 2)) !important;
+  background: transparent !important;
+  border: none !important;
+  transition: background .3s ease, border-color .3s ease !important;
+}
+.site-header.is-scrolled {
+  background: rgba(3,11,12,.88) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid var(--mt-line) !important;
+}
+
+.header-inner {
+  display: flex !important;
+  align-items: center !important;
+  gap: 32px !important;
+  width: 100% !important;
+  padding: 0 !important;
+  max-width: none !important;
+}
+
+/* Logo */
+.brand { display: flex !important; align-items: center !important; gap: 12px !important; flex-shrink: 0 !important; }
+.logo-img-header { height: 52px !important; width: auto !important; display: block !important; border-radius: 6px !important; }
+.brand-text strong { 
+  color: #fff !important; 
+  letter-spacing: .20em !important; 
+  font-size: 16px !important; 
+  font-weight: 800 !important; 
+  font-family: var(--font-ui) !important;
+}
+.brand-text small { 
+  display: block !important; 
+  color: var(--mt-gold-light) !important; 
+  font-size: 9.5px !important; 
+  letter-spacing: .10em !important; 
+  margin-top: -1px !important;
+  font-weight: 600 !important;
+}
+
+/* Desktop nav */
+.nav { 
+  display: flex !important; 
+  align-items: center !important; 
+  gap: clamp(8px, 1.2vw, 24px) !important; 
+  flex: 1 !important; 
+  justify-content: center !important;
+}
+.nav a {
+  position: relative !important;
+  color: rgba(244,240,231,.80) !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  font-family: var(--font-ui) !important;
+  padding: 6px 0 !important;
+  transition: color .2s !important;
+}
+.nav a::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: -2px !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 2px !important;
+  background: var(--mt-gold) !important;
+  transition: width .25s !important;
+}
+.nav a:hover, .nav a.active { color: var(--mt-gold-light) !important; }
+.nav a:hover::after, .nav a.active::after { width: 100% !important; }
+
+.navdrop button {
+  background: transparent !important; 
+  border: none !important; 
+  color: var(--mt-gold-light) !important; 
+  cursor: pointer !important; 
+  font-weight: 700 !important; 
+  font-size: 14px !important;
+  font-family: var(--font-ui) !important;
+}
+
+/* Header actions */
+.header-actions { display: flex !important; align-items: center !important; gap: 12px !important; flex-shrink: 0 !important; }
+.header-actions .btn-gold {
+  background: linear-gradient(110deg, #F1D28B, #D7B469) !important;
+  color: #101511 !important;
+  border: none !important;
+  min-height: 42px !important;
+  padding: 0 20px !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  letter-spacing: .04em !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.nav-toggle {
+  background: transparent !important;
+  border: none !important;
+  color: var(--mt-gold-light) !important;
+  font-size: 28px !important;
+  cursor: pointer !important;
+  display: none !important;
+  line-height: 1 !important;
+}
+
+/* ===== HERO ===== */
+.hero-f1 {
+  position: relative !important;
+  min-height: 640px !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  background: linear-gradient(90deg, rgba(3,11,12,.92) 0%, rgba(3,11,12,.50) 40%, rgba(3,11,12,.08) 70%), 
+              linear-gradient(0deg, #030b0c 0%, transparent 50%),
+              url('assets/images/mr-tanah-hero.webp') center / cover no-repeat !important;
+}
+
+.hero-f1 .grid-overlay {
+  position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: .20;
+  background-image: linear-gradient(rgba(32,200,181,.14) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(32,200,181,.14) 1px, transparent 1px);
+  background-size: 72px 72px;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 40%, #000);
+  mask-image: linear-gradient(to right, transparent, #000 40%, #000);
+}
+
+.hero-f1 .hero-content {
+  position: relative; z-index: 2;
+  width: var(--mt-page); margin: 0 auto;
+  display: flex; align-items: center; gap: 48px;
+  padding: 100px 20px 0;
+}
+
+.hero-f1 .hero-left { flex: 1; max-width: 620px; }
+.hero-f1 .hero-right { flex: 0 0 280px; margin-top: -40px; }
+
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 11px; font-weight: 800; letter-spacing: .18em;
+  color: var(--mt-teal); margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.hero-left h1 {
+  font-family: var(--font-heading) !important;
+  font-size: clamp(48px, 5vw, 78px) !important;
+  line-height: .92 !important;
+  letter-spacing: -.035em !important;
+  margin: 8px 0 0 !important;
+  max-width: 680px !important;
+  color: var(--mt-text) !important;
+  font-weight: 700 !important;
+}
+.hero-left h1 .gold { color: var(--mt-gold-light) !important; }
+.hero-left .lead {
+  max-width: 560px; margin: 22px 0 30px;
+  color: var(--mt-ivory); font-size: 17px; line-height: 1.55;
+  font-weight: 400;
+}
+
+/* Hero tags */
+.hero-tags {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px;
+}
+.hero-tag {
+  display: inline-block;
+  padding: 5px 14px;
+  border: 1px solid var(--mt-line-gold);
+  border-radius: 20px;
+  font-size: 11px; font-weight: 700; letter-spacing: .06em;
+  color: var(--mt-gold-light);
+  background: rgba(215,180,105,.08);
+  text-transform: uppercase;
+}
+
+/* Hero buttons */
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+.btn-gold {
+  display: inline-flex; align-items: center; gap: 8px;
+  min-height: 48px; padding: 0 28px;
+  border: none; border-radius: var(--mt-radius-sm);
+  background: linear-gradient(110deg, var(--mt-gold-light), var(--mt-gold)) !important;
+  color: #101511 !important;
+  font-weight: 800; font-size: 14px; letter-spacing: .05em;
+  cursor: pointer; transition: transform .2s, box-shadow .2s;
+  font-family: var(--font-ui);
+}
+.btn-gold:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(215,180,105,.25); }
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  min-height: 48px; padding: 0 28px;
+  border: 1px solid var(--mt-gold) !important;
+  border-radius: var(--mt-radius-sm);
+  background: rgba(3,11,12,.40) !important;
+  color: var(--mt-gold-light) !important;
+  font-weight: 700; font-size: 14px;
+  cursor: pointer; transition: transform .2s;
+  font-family: var(--font-ui);
+}
+.btn-outline:hover { transform: translateY(-2px); }
+
+/* ===== ASSET DATA CARD (floating) ===== */
+.asset-data {
+  width: 270px !important;
+  padding: 0 !important;
+  color: var(--mt-text) !important;
+  position: relative !important;
+  display: block !important;
+}
+.asset-data .ad-panel {
+  padding: 18px 20px !important;
+}
+.asset-data .ad-head {
+  display: block !important;
+  font-size: 10px !important;
+  font-weight: 800 !important;
+  letter-spacing: .14em !important;
+  color: var(--mt-gold) !important;
+  margin-bottom: 10px !important;
+}
+.asset-data dl { margin: 0 !important; }
+.asset-data div {
+  display: flex !important;
+  justify-content: space-between !important;
+  padding: 8px 0 !important;
+  border-bottom: 1px solid var(--mt-line) !important;
+}
+.asset-data div:last-child { border: none !important; }
+.asset-data dt { color: var(--mt-teal) !important; font-size: 13px !important; font-weight: 600 !important; }
+.asset-data dd { margin: 0 !important; font-size: 14px !important; font-weight: 700 !important; color: #fff !important; }
+
+/* ===== SEARCH CONSOLE (glass panel) ===== */
+.search-panel {
+  padding: 16px 18px 18px !important;
+  margin-top: 10px !important;
+  background: var(--mt-glass) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid var(--mt-line) !important;
+  border-radius: var(--mt-radius) !important;
+  color: var(--mt-text) !important;
+  box-shadow: var(--mt-shadow) !important;
+}
+
+.search-panel .deal-tabs {
+  display: flex !important; gap: 0 !important;
+  border: none !important; margin: 0 0 10px !important; padding: 0 !important;
+}
+.search-panel .deal-tab {
+  background: transparent !important; border: none !important;
+  cursor: pointer !important; min-width: auto !important; min-height: 34px !important;
+  padding: 8px 18px !important;
+  border-bottom: 2px solid var(--mt-line) !important;
+  color: var(--mt-muted) !important;
+  font-weight: 700 !important; font-size: 13px !important;
+  transition: all .2s !important;
+  font-family: var(--font-ui) !important;
+}
+.search-panel .deal-tab.active {
+  color: #05100e !important;
+  background: var(--mt-teal) !important;
+  border-radius: 6px 6px 0 0 !important;
+  border-bottom-color: var(--mt-teal) !important;
+  font-weight: 800 !important;
+}
+
+.search-panel .search-row {
+  display: grid !important;
+  grid-template-columns: 1.8fr 1fr 1fr 1fr 1fr auto !important;
+  gap: 10px !important;
+}
+.search-panel input,
+.search-panel select {
+  width: 100% !important; min-height: 44px !important; padding: 0 14px !important;
+  background: rgba(4,16,24,.85) !important;
+  border: 1px solid rgba(164,193,214,.25) !important;
+  border-radius: 8px !important;
+  color: var(--mt-text) !important; font-size: 14px !important;
+  font-family: var(--font-ui) !important;
+}
+.search-panel input::placeholder { color: var(--mt-muted) !important; }
+.search-panel select option { background: #0A1E1E !important; color: #fff !important; }
+
+.search-panel .search-row-2 {
+  grid-template-columns: 1fr 1fr auto !important;
+  margin-top: 10px !important;
+}
+
+/* Reset button */
+.btn-clear {
+  display: inline-flex !important; align-items: center; justify-content: center;
+  min-height: 44px !important; padding: 0 16px !important;
+  border: 1px solid var(--mt-line) !important; border-radius: 8px !important;
+  background: rgba(3,11,12,.40) !important;
+  color: var(--mt-muted) !important;
+  font-size: 13px; font-weight: 600;
+  cursor: pointer; font-family: var(--font-ui);
+}
+
+/* ===== GLASS PANEL UTILITY ===== */
+.glass-panel {
+  background: var(--mt-glass) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid var(--mt-line) !important;
+  border-radius: var(--mt-radius) !important;
+}
+
+/* ===== SPARK BORDER ===== */
+@property --border-angle { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+.spark-border { position: relative; isolation: isolate; }
+.spark-border::before {
+  content: ''; position: absolute; inset: -1px; z-index: -1; padding: 1px; border-radius: inherit;
+  background: conic-gradient(from var(--border-angle), transparent 0 75%, var(--mt-teal) 82%, var(--mt-gold-light) 88%, transparent 94%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  animation: border-travel 7s linear infinite;
+  pointer-events: none;
+}
+@keyframes border-travel { to { --border-angle: 360deg; } }
+@media (prefers-reduced-motion: reduce) { .spark-border::before { animation: none !important; } }
+
+/* ===== TRUST ROW ===== */
+.trust-section {
+  background: transparent !important;
+  border-block: 1px solid var(--mt-line) !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  width: var(--mt-page) !important;
+}
+.trust-row {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  list-style: none !important; padding: 0 !important; margin: 0 !important;
+}
+.trust-item {
+  display: flex !important; align-items: center !important; gap: 14px !important;
+  padding: 24px 22px !important;
+  font-size: 14px !important; font-weight: 700 !important;
+  color: var(--mt-text) !important;
+}
+.trust-item + .trust-item { border-left: 1px solid var(--mt-line) !important; }
+.trust-item .ti-icon { font-size: 24px; color: var(--mt-gold-light); flex: 0 0 auto; }
+.trust-item .ti-label { font-size: 12px; font-weight: 500; color: var(--mt-muted); display: block; margin-top: 2px; }
+
+/* ===== ASSET CATEGORIES ===== */
+.section-heading {
+  display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 12px;
+}
+.section-heading .eyebrow { 
+  font-size: 11px; font-weight: 800; letter-spacing: .18em; 
+  color: var(--mt-teal); margin: 0 0 4px; text-transform: uppercase;
+}
+.section-heading h2 {
+  font-family: var(--font-heading) !important;
+  font-size: clamp(30px, 2.8vw, 42px); margin: 0; line-height: 1.05;
+  color: var(--mt-text);
+}
+.section-heading > a {
+  color: var(--mt-gold-light); font-weight: 600;
+  border-bottom: 1px solid var(--mt-gold); font-size: 14px;
+  white-space: nowrap;
+  transition: color .2s;
+}
+.section-heading > a:hover { color: #fff; }
+
+.cat-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 14px !important;
+}
+.cat-card {
+  position: relative !important;
+  min-height: 200px !important;
+  display: flex !important;
+  align-items: end !important;
+  padding: 20px !important;
+  overflow: hidden !important;
+  border: 1px solid var(--mt-gold) !important;
+  border-radius: var(--mt-radius-sm) !important;
+  text-decoration: none !important;
+}
+.cat-card img {
+  position: absolute !important; inset: 0 !important;
+  width: 100% !important; height: 100% !important;
+  object-fit: cover !important; z-index: 0 !important;
+  transition: transform .5s !important;
+}
+.cat-card:hover img { transform: scale(1.06) !important; }
+.cat-card .ov {
+  position: absolute !important; inset: 0 !important; z-index: 1 !important;
+  background: linear-gradient(0deg, rgba(3,11,12,.92) 0%, rgba(3,11,12,.04) 70%) !important;
+}
+.cat-card .ct { position: relative; z-index: 2; }
+.cat-card h3 { margin: 0 0 4px; font-size: 18px; color: #fff !important; font-weight: 700; }
+.cat-card p { margin: 0; font-size: 12.5px; color: var(--mt-muted); }
+.cat-card .arrow {
+  position: absolute !important; right: 14px !important; bottom: 14px !important; z-index: 2 !important;
+  width: 32px; height: 32px; display: grid; place-items: center;
+  border: 1px solid var(--mt-gold); border-radius: 50%;
+  color: var(--mt-gold-light); font-size: 14px; font-weight: 700;
+}
+
+/* ===== LISTING CARDS (override old style.css) ===== */
+.grid { display: grid !important; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important; gap: 16px !important; }
+
+.card {
+  background: var(--mt-surface) !important;
+  border: 1px solid var(--mt-line) !important;
+  border-radius: var(--mt-radius-sm) !important;
+  overflow: hidden !important;
+  transition: transform .2s, box-shadow .2s, border-color .2s !important;
+}
+.card:hover { transform: translateY(-4px) !important; box-shadow: 0 16px 48px rgba(0,0,0,.30) !important; border-color: var(--mt-gold-dim) !important; }
+.card .card-body { padding: 16px 16px 14px !important; }
+.card .card-title a { color: var(--mt-text) !important; font-weight: 700 !important; font-size: 16px !important; font-family: var(--font-ui); }
+.card .card-title a:hover { color: var(--mt-gold-light) !important; }
+.card .card-loc { color: var(--mt-muted) !important; font-size: 13px !important; margin: 6px 0 !important; }
+.card .price { color: var(--mt-gold-light) !important; font-weight: 800 !important; font-size: 19px !important; }
+.card .price-psf { color: var(--mt-muted) !important; font-size: 13px !important; }
+.card .specs { display: flex !important; flex-wrap: wrap !important; gap: 6px !important; margin: 10px 0 !important; }
+.card .specs > * { background: rgba(215,180,105,.10) !important; border: 1px solid rgba(215,180,105,.15) !important; border-radius: 6px !important; padding: 4px 10px !important; font-size: 12px !important; color: var(--mt-ivory) !important; }
+.card .card-actions { display: grid !important; grid-template-columns: 1fr 1fr 1fr !important; gap: 6px !important; margin: 12px 0 8px !important; }
+.card .btn { text-align: center !important; font-size: 12px !important; font-weight: 700 !important; border-radius: 6px !important; padding: 9px 4px !important; }
+.card .btn-wa-card { background: var(--mt-whatsapp) !important; color: #fff !important; }
+.card .btn-call { background: rgba(215,180,105,.12) !important; border: 1px solid var(--mt-gold) !important; color: var(--mt-gold-light) !important; }
+.card .btn-detail { background: rgba(32,200,181,.10) !important; border: 1px solid var(--mt-teal) !important; color: var(--mt-teal) !important; }
+.card .card-foot { color: var(--mt-muted) !important; font-size: 11px !important; opacity: .70 !important; }
+
+/* Old style.css sets .grid a.btn-detail {...} etc – blanket override */
+.grid a.btn, .grid .btn { text-decoration: none !important; display: block !important; }
+#listingGrid .empty { color: var(--mt-muted) !important; }
+
+/* ===== CARD MEDIA (image overlays) ===== */
+.card-media { display: block !important; position: relative !important; overflow: hidden !important; }
+.card-media img { width: 100% !important; height: 200px !important; object-fit: cover !important; display: block !important; }
+.badges { position: absolute !important; top: 10px !important; left: 10px !important; display: flex !important; gap: 6px !important; z-index: 2 !important; }
+.badge { display: inline-block !important; padding: 3px 10px !important; border-radius: 5px !important; font-size: 11px !important; font-weight: 700 !important; letter-spacing: .05em !important; text-transform: uppercase !important; }
+.badge-jual { background: var(--mt-gold) !important; color: #0a0f09 !important; }
+.badge-sewa { background: var(--mt-teal) !important; color: #05100e !important; }
+.badge-jv { background: #8B5CF6 !important; color: #fff !important; }
+.badge-baru { background: #22C55E !important; color: #041007 !important; }
+.badge-promo { background: var(--mt-gold-light) !important; color: #0a0f09 !important; }
+
+.price-chip {
+  position: absolute !important; bottom: 10px !important; left: 10px !important; z-index: 2 !important;
+  background: rgba(3,11,12,.78) !important; backdrop-filter: blur(8px) !important;
+  padding: 6px 12px !important; border-radius: 6px !important;
+  color: var(--mt-gold-light) !important; font-weight: 700 !important; font-size: 13px !important;
+  border: 1px solid rgba(215,180,105,.20) !important;
+}
+.placeholder { height: 200px !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; color: var(--mt-muted) !important; }
+.placeholder .ph-icon { font-size: 38px !important; margin-bottom: 6px !important; }
+.placeholder .ph-text { font-size: 14px !important; font-weight: 600 !important; }
+
+/* ===== F1 BAR (mobile sticky bottom) ===== */
+.f1-bar { background: var(--mt-surface) !important; border-top: 1px solid var(--mt-line) !important; }
+.f1-bar .f1-b1, .f1-bar .f1-b2 { color: var(--mt-gold-light) !important; }
+
+/* ===== TANYA ALI widget ===== */
+.ali-chat-toggle { background: #030B0C !important; border: 1px solid var(--mt-line) !important; color: var(--mt-gold-light) !important; }
+.ali-chat-box { background: var(--mt-surface) !important; border: 1px solid var(--mt-line) !important; }
+.ali-chat-box .msg-user { background: rgba(215,180,105,.12) !important; color: var(--mt-ivory) !important; }
+.ali-chat-box .msg-ai { background: rgba(32,200,181,.08) !important; color: var(--mt-text) !important; }
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background: #030B0C !important;
+  color: var(--mt-muted) !important;
+  border-top: 1px solid var(--mt-line) !important;
+  padding: 48px 0 20px !important;
+}
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+.site-footer h3 { color: var(--mt-gold-light) !important; font-size: 16px; margin: 0 0 12px; }
+.site-footer p { font-size: 14px; line-height: 1.6; }
+.site-footer a { color: var(--mt-gold) !important; font-size: 14px; display: block; margin-bottom: 6px; }
+.footer-bottom { border-top: 1px solid var(--mt-line); padding-top: 20px; margin-top: 40px; text-align: center; font-size: 13px; }
+
+/* ===== WHATSAPP FLOAT ===== */
+.wa-float {
+  position: fixed !important;
+  bottom: 24px !important; right: 24px !important;
+  z-index: 999 !important;
+  width: 58px !important; height: 58px !important;
+  border-radius: 50% !important;
+  background: var(--mt-whatsapp) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 30px !important;
+  box-shadow: 0 6px 24px rgba(37, 211, 102, .35) !important;
+  transition: transform .2s, box-shadow .2s !important;
+  color: #fff !important;
+}
+.wa-float:hover { transform: scale(1.08) !important; box-shadow: 0 8px 32px rgba(37, 211, 102, .45) !important; }
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 1120px) {
+  .hero-f1 .hero-right { display: none !important; }
+  .search-panel .search-row { grid-template-columns: 1.5fr 1fr 1fr; }
+  .cat-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .trust-row { grid-template-columns: repeat(2, 1fr) !important; }
+  .trust-item:nth-child(n+3) { border-left: none !important; border-top: 1px solid var(--mt-line) !important; }
+  .trust-item:nth-child(even) { border-left: 1px solid var(--mt-line) !important; }
+  .footer-grid { grid-template-columns: 1fr 1fr !important; }
+}
+@media (max-width: 1000px) {
+  .nav { display: none !important; }
+  .nav-toggle { display: block !important; }
+  .header-actions .btn-gold { display: none !important; }
+}
+@media (max-width: 767px) {
+  .hero-f1 {
+    background: linear-gradient(180deg, rgba(3,11,12,.60), rgba(3,11,12,.20) 52%, #030b0c 100%),
+                url('assets/images/mr-tanah-hero-mobile.webp') center top / cover no-repeat !important;
+    min-height: auto !important;
+    padding: 80px 16px 300px;
+  }
+  .hero-f1 .hero-content { flex-direction: column; padding: 80px 16px 0; gap: 20px; }
+  .hero-left h1 { font-size: clamp(42px, 12vw, 56px) !important; }
+  .hero-left .lead { font-size: 15px; }
+  .hero-tags { margin-bottom: 20px; }
+  .search-panel .search-row { grid-template-columns: 1fr !important; }
+  .search-panel .search-row-2 { grid-template-columns: 1fr !important; }
+  .cat-grid { grid-template-columns: 1fr !important; gap: 12px !important; }
+  .cat-grid { display: flex !important; overflow-x: auto !important; scroll-snap-type: x mandatory !important; gap: 12px !important; }
+  .cat-card { flex: 0 0 300px !important; min-height: 200px !important; scroll-snap-align: start !important; }
+  .trust-row { grid-template-columns: 1fr !important; }
+  .trust-item + .trust-item { border-left: none !important; border-top: 1px solid var(--mt-line) !important; }
+  .footer-grid { grid-template-columns: 1fr !important; }
+}
+</style>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container header-inner">
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="mtHeader">
+  <div class="header-inner">
     <a href="/" class="brand">
-      <span class="logo"><img src="assets/logo.png" alt="Mr Tanah" class="logo-img-header"></span>
-      <span class="brand-text">
-        <strong>Mr Tanah</strong>
-        <small>Pakar Tanah &amp; Hartanah Malaysia</small>
-      </span>
+      <span class="logo"><img src="assets/logo.webp" alt="Mr Tanah" class="logo-img-header"></span>
+      <span class="brand-text"><strong>MR TANAH</strong><small>Pakar Tanah &amp; Hartanah Malaysia</small></span>
     </a>
     <nav class="nav" id="nav">
       <a href="/" class="active">Utama</a>
+      <a href="/#listing">Listing</a>
       <a href="projek-baharu/">Projek Baharu</a>
       <a href="artikel/">Artikel</a>
       <a href="tentang.html">Tentang</a>
-      <div class="navdrop">
-        <button type="button" aria-haspopup="true">Untuk Pemilik &amp; Ejen ▾</button>
-        <div class="menu">
-          <a href="jual-sewa-develop.html">Serah Listing</a>
-          <a href="https://mrtanah.com/serah-dokumen.html">Serah Dokumen</a>
-          <a href="https://mrtanah.com/portal/">Portal Pengurusan</a>
-        </div>
+    <a class="navdrop" href="#" style="display:inline-flex;align-items:center;gap:4px;font-size:14px;font-weight:600;color:var(--mt-gold-light)" onclick="var m=this.nextElementSibling;m.style.display=m.style.display==='block'?'none':'block';return false">Pemilik/Ejen ▾</a>
+      <div class="menu" style="position:absolute;top:100%;left:-10px;right:auto;min-width:180px;background:var(--mt-surface);border:1px solid var(--mt-line);border-radius:var(--mt-radius-sm);display:none;z-index:200">
+        <a href="jual-sewa-develop.html">Serah Listing</a>
+        <a href="serah-dokumen.html">Serah Dokumen</a>
+        <a href="https://mrtanah.com/portal/">Portal Pengurusan</a>
       </div>
-    </nav>
     <div class="header-actions">
-      <a class="btn-wa" href="https://wa.me/60163119076" target="_blank" rel="noopener">📲 016-3119076</a>
+      <a class="btn-gold" href="https://wa.me/60163119076" target="_blank" rel="noopener">📲 &nbsp;016-3119076</a>
       <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
     </div>
   </div>
@@ -68,15 +628,50 @@
   </div>
 </header>
 
-<section class="hero hero-f1">
-  <div class="bg"><img src="assets/hero.jpg" width="1600" height="1200" fetchpriority="high"
-    alt="Pemandangan udara kawasan tanah — contoh listing Mr Tanah"></div>
-  <div class="veil"></div>
-  <div class="container"><div class="inner">
-    <span class="eyebrow">Pakar tanah &amp; lot banglo · PEA 2684 &amp; 2313</span>
-    <h1>Cari Tanah &amp; Lot Banglo</h1>
-    <p class="lead">Tanah pertanian, lot banglo geran individu, komersial &amp; industri. Kami paparkan keluasan, hakmilik, sekatan dan guna tanah — supaya anda boleh buat keputusan dengan yakin.</p>
-    <div class="search-panel" id="searchPanel">
+<!-- ===== HERO ===== -->
+<section class="hero hero-f1" id="heroSection">
+  <div class="grid-overlay"></div>
+  
+  <div class="hero-content">
+    <!-- Left: Copy + Tags + Search -->
+    <div class="hero-left">
+      <span class="hero-eyebrow">‣ KOMERSIAL · INDUSTRI · TANAH</span>
+      <h1>Tanah strategik. <br>Aset bernilai. <br><span class="gold">Peluang tanpa batas.</span></h1>
+      <p class="lead">Temui tanah, bangunan, kilang dan ruang komersial terpilih — disemak dari sudut hakmilik, lokasi dan potensi pasaran.</p>
+      
+      <!-- Tags -->
+      <div class="hero-tags">
+        <span class="hero-tag">✦ FREEHOLD</span>
+        <span class="hero-tag">✦ ZON KOMERSIAL</span>
+        <span class="hero-tag">✦ LIPUTAN SELURUH MY</span>
+        <span class="hero-tag">✦ SEMAKAN HAKMILIK</span>
+      </div>
+      
+      <div class="hero-actions">
+        <a class="btn-gold" href="#listing">Teroka Listing →</a>
+        <a class="btn-outline" href="jual-sewa-develop.html">Jual Hartanah Anda</a>
+      </div>
+    </div>
+    
+    <!-- Right: Floating technical data card -->
+    <div class="hero-right">
+      <div class="asset-data">
+        <div class="glass-panel spark-border ad-panel">
+          <span class="ad-head">CONTOH DATA TEKNIKAL</span>
+          <dl>
+            <div><dt>Zoning</dt><dd>Komersial</dd></div>
+            <div><dt>Tenure</dt><dd>Freehold</dd></div>
+            <div><dt>Keluasan</dt><dd>1 - 10 ekar</dd></div>
+            <div><dt>Akses</dt><dd>Lebuh Raya</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Search Console -->
+  <div style="width:var(--mt-page);margin:20px auto 0;position:relative;z-index:3;padding:0 20px">
+    <div class="search-panel spark-border" id="searchPanel">
       <div class="deal-tabs" id="dealTabs">
         <button type="button" class="deal-tab active" data-deal="">Semua</button>
         <button type="button" class="deal-tab" data-deal="JUAL">Jual</button>
@@ -84,120 +679,147 @@
         <button type="button" class="deal-tab" data-deal="JV">JV</button>
       </div>
       <div class="search-row">
-        <input type="text" id="searchInput" placeholder="Cari lokasi, jenis hartanah..." autocomplete="off">
-        <select id="stateFilter" aria-label="Negeri"><option value="">Semua Negeri</option></select>
-        <select id="typeFilter" aria-label="Jenis"><option value="">Semua Jenis</option></select>
+        <input type="text" id="searchInput" placeholder="Cari lokasi, jenis aset atau nombor rujukan" autocomplete="off">
+        <select id="stateFilter"><option value="">Semua Negeri</option></select>
+        <select id="typeFilter"><option value="">Semua Jenis</option></select>
+        <select id="minPrice"><option value="">Harga Min</option></select>
+        <select id="maxPrice"><option value="">Harga Maks</option></select>
+        <button class="btn-gold" type="button" id="btnCari" style="min-height:44px;padding:0 20px;font-size:13px">Cari Aset</button>
       </div>
-      <div class="search-row search-row-2">
-        <div class="price-field"><span>Harga min</span>
-          <input type="number" id="minPrice" placeholder="cth: 500000" min="0" step="10000"></div>
-        <div class="price-field"><span>Harga maks</span>
-          <input type="number" id="maxPrice" placeholder="cth: 1000000" min="0" step="10000"></div>
-        <select id="sortSelect" aria-label="Susun">
-          <option value="newest">Terbaru</option>
-          <option value="priceAsc">Harga: Rendah → Tinggi</option>
-          <option value="priceDesc">Harga: Tinggi → Rendah</option>
-        </select>
-        <button class="btn btn-clear" id="clearBtn" type="button">Reset</button>
+      <div class="search-row search-row-2" id="advRow">
+        <select id="bedFilter"><option value="">Bilik</option></select>
+        <select id="tenureFilter"><option value="">Pegangan</option></select>
+        <button class="btn-clear" id="clearBtn" type="button">Reset Semua</button>
       </div>
-        <div class="search-row search-row-3">
-          <select id="bedFilter" aria-label="Bilik tidur"><option value="">Semua Bilik</option></select>
-          <select id="tenureFilter" aria-label="Pegangan"><option value="">Semua Pegangan</option></select>
-          <div class="chipset" id="priceChips"></div>
-        </div>
     </div>
-  </div></div>
-</section>
-
-<section class="trust-f1"><div class="container"><ul>
-  <li><span class="ic">🗺️</span><span id="statAktif">Listing</span> aktif disemak</li>
-  <li><span class="ic">📄</span>Status hakmilik &amp; sekatan dijelaskan awal</li>
-  <li><span class="ic">📐</span>Data teknikal tanah dipaparkan</li>
-  <li><span class="ic">🤝</span>Ejen berdaftar PEA 2684 &amp; 2313 · IQI Realty Sdn Bhd (E(1)1584)</li>
-</ul></div></section>
-
-<section class="container" style="padding:34px 0 6px">
-  <h2 class="f1-hd" style="font-size:clamp(20px,2.4vw,26px);margin-bottom:14px">Pilih jenis tanah</h2>
-  <div class="seg-f1">
-    <a class="seg" href="#listing" data-seg="tanah">
-      <img src="assets/seg-pertanian.jpg" width="900" height="600" loading="lazy" alt="Tanah pertanian">
-      <span class="ov"></span><span class="n">Pertanian</span>
-      <span class="tx"><h3>Tanah Pertanian &amp; Dusun</h3><p>Sawit, getah, dusun durian, tanah tepi sungai — untuk pertanian &amp; pelaburan.</p></span></a>
-    <a class="seg" href="#listing" data-seg="bangunan">
-      <img src="assets/seg-banglo.jpg" width="900" height="600" loading="lazy" alt="Lot banglo">
-      <span class="ov"></span><span class="n">Lot Banglo</span>
-      <span class="tx"><h3>Lot Banglo</h3><p>Lot sedia bina, geran individu, kawasan berpagar atau berhampiran bandar.</p></span></a>
-    <a class="seg" href="#listing" data-seg="komersial">
-      <img src="assets/seg-komersial.jpg" width="900" height="600" loading="lazy" alt="Tanah komersial dan industri">
-      <span class="ov"></span><span class="n">Komersial</span>
-      <span class="tx"><h3>Komersial &amp; Industri</h3><p>Tanah komersial, industri &amp; bangunan — potensi pembangunan.</p></span></a>
   </div>
 </section>
 
-
-<main class="container main">
-  <div class="results-bar">
-    <p id="resultCount">Memuatkan listing...</p>
+<!-- ===== TRUST ROW ===== -->
+<section class="trust-section">
+  <div style="padding:0;width:100%">
+    <ul class="trust-row">
+      <li class="trust-item"><span class="ti-icon">🗺️</span><div><span>Hakmilik Disemak</span><span class="ti-label">Maklumat sahih &amp; terjamin</span></div></li>
+      <li class="trust-item"><span class="ti-icon">📐</span><div><span>Data Teknikal</span><span class="ti-label">Zoning, keluasan &amp; potensi</span></div></li>
+      <li class="trust-item"><span class="ti-icon">◇</span><div><span>Liputan Malaysia</span><span class="ti-label">Dari Perlis ke Sabah</span></div></li>
+      <li class="trust-item"><span class="ti-icon">◉</span><div><span>Ejen Berdaftar</span><span class="ti-label">Profesional &amp; beretika</span></div></li>
+    </ul>
   </div>
-  <p class="listing-note">Senarai hartanah yang dipaparkan di laman ini adalah untuk rujukan dan mungkin tidak terkini sepenuhnya. Sesetengah hartanah mungkin telah terjual, disewa atau tidak lagi tersedia. Sekiranya anda mendapati sebarang listing yang tidak sepatutnya dipaparkan di laman ini, sila <a href="https://wa.me/60163119076?text=Assalamualaikum%20dan%20salam%20sejahtera%2C%20saya%20melihat%20ada%20listing%20yang%20tidak%20sepatutnya%20dipaparkan%20di%20laman%20web%20ini." target="_blank" rel="noopener">hubungi kami</a> — kami akan mengemas kininya dengan kadar segera.</p>
+</section>
+
+<!-- ===== ASSET CATEGORIES ===== -->
+<section class="container" style="padding:48px 20px 20px;width:var(--mt-page);margin:0 auto">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">PILIHAN ASET</p>
+      <h2>Teroka Mengikut Jenis Aset</h2>
+    </div>
+    <a href="/#listing">Lihat Semua →</a>
+  </div>
+  <div class="cat-grid">
+    <a class="cat-card" href="/#listing">
+      <img src="assets/images/category-land.webp" width="1200" height="675" loading="lazy" alt="">
+      <span class="ov"></span>
+      <span class="ct"><h3>Tanah &amp; Ladang</h3><p>Tanah pembangunan, pertanian, industri</p></span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="cat-card" href="/#listing" data-seg="komersial">
+      <img src="assets/images/category-commercial.webp" width="1200" height="675" loading="lazy" alt="">
+      <span class="ov"></span>
+      <span class="ct"><h3>Bangunan Komersial</h3><p>Kedai, pejabat, kompleks komersial</p></span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="cat-card" href="/#listing" data-seg="industri">
+      <img src="assets/images/category-industrial.webp" width="1200" height="675" loading="lazy" alt="">
+      <span class="ov"></span>
+      <span class="ct"><h3>Kilang &amp; Gudang</h3><p>Kilang, gudang, logistik, DC</p></span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="cat-card" href="/#listing" data-seg="pejabat">
+      <img src="assets/images/category-office.webp" width="1200" height="675" loading="lazy" alt="">
+      <span class="ov"></span>
+      <span class="ct"><h3>Pejabat</h3><p>Ruang pejabat &amp; menara korporat</p></span>
+      <span class="arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<!-- ===== FEATURED LISTINGS ===== -->
+<main class="container main" id="listing" style="width:var(--mt-page);margin:0 auto;padding:0 20px 40px">
+  <div class="section-heading" style="margin-bottom:16px">
+    <div>
+      <p class="eyebrow">ASET TERPILIH</p>
+      <h2>Peluang Pilihan</h2>
+    </div>
+    <a href="/#listing">Lihat Semua →</a>
+  </div>
+
+  <div class="results-bar"><p id="resultCount" style="color:var(--mt-muted)">Memuatkan listing...</p></div>
+  <p class="listing-note" style="color:var(--mt-muted);font-size:13px;margin:0 0 16px">Senarai hartanah yang dipaparkan adalah untuk rujukan dan mungkin tidak terkini sepenuhnya. Sesetengah mungkin telah terjual, disewa atau tidak lagi tersedia. Sila <a href="https://wa.me/60163119076" target="_blank" style="color:var(--mt-gold)">hubungi kami</a> untuk pengesanan.</p>
   <div id="listingGrid" class="grid"></div>
-  <div id="emptyMsg" class="empty" style="display:none">
-    <p>Tiada listing dijumpai.</p>
-    <p class="empty-sub">Cuba ubah carian atau filter — atau hubungi kami, mungkin ada listing yang belum disenaraikan.</p>
-    <a class="btn btn-wa" href="https://wa.me/60163119076?text=Assalamualaikum%20dan%20salam%20sejahtera%2C%20saya%20mencari%20hartanah..." target="_blank" rel="noopener">Tanya kami di WhatsApp</a>
+  <div id="emptyMsg" style="display:none;text-align:center;padding:40px">
+    <p style="font-size:18px">Tiada listing dijumpai.</p>
+    <p class="empty-sub" style="color:var(--mt-muted);margin:8px 0 20px">Cuba ubah carian atau hubungi kami.</p>
+    <a class="btn-gold" href="https://wa.me/60163119076" target="_blank">Tanya di WhatsApp</a>
   </div>
 </main>
 
-<section class="agent-teaser">
-  <div class="container agent-teaser-inner">
-    <div class="agent-avatar">👨‍💼</div>
-    <div class="agent-copy">
-      <h2>Kenali Pasukan Kami</h2>
-      <p>Pasukan ejen hartanah berdaftar yang membantu anda beli, jual dan sewa tanah &amp; hartanah dengan telus — dari semakan dokumen dan harga pasaran hingga kunci di tangan.</p>
-      <a class="btn btn-outline-light" href="tentang.html">Lihat Profil Pasukan →</a>
-    </div>
+<!-- ===== AGENT TEASER ===== -->
+<section style="background:var(--mt-surface);border-top:1px solid var(--mt-line);padding:48px 0">
+  <div class="container" style="width:var(--mt-page);margin:0 auto;text-align:center;padding:0 20px">
+    <div style="width:80px;height:80px;border-radius:50%;background:var(--mt-gold);color:#07100e;display:grid;place-items:center;font-size:40px;margin:0 auto 16px">👨‍💼</div>
+    <h2 style="color:var(--mt-gold);margin-bottom:8px;font-family:var(--font-heading);font-size:28px">Kenali Pasukan Kami</h2>
+    <p style="color:var(--mt-muted);max-width:600px;margin:0 auto 20px;line-height:1.6">Pasukan ejen hartanah berdaftar yang membantu anda beli, jual dan sewa tanah &amp; hartanah dengan telus — dari semakan dokumen hingga kunci di tangan.</p>
+    <a class="btn-outline" href="tentang.html">Lihat Profil Pasukan →</a>
   </div>
 </section>
 
+<!-- ===== FOOTER ===== -->
 <footer class="site-footer">
-  <div class="container footer-grid">
+  <div class="container footer-grid" style="width:var(--mt-page);margin:0 auto;padding:0 20px">
     <div>
       <h3>Mr Tanah</h3>
-      <p>Pakar Tanah &amp; Hartanah Malaysia — Jual, Beli &amp; Sewa.</p>
+      <p>Pakar Tanah &amp; Hartanah Malaysia — Jual, Beli &amp; Sewa.<br><br>Zahir MJ (PEA 2684) × Fadilah Yusof (PEA 2313)<br>IQI Realty Sdn Bhd (E(1)1584)</p>
     </div>
     <div>
       <h3>Pautan</h3>
       <a href="/">Utama</a>
       <a href="/#listing">Senarai Hartanah</a>
       <a href="projek-baharu/">Projek Baharu</a>
-      <a href="tentang.html">Tentang Kami</a>
+      <a href="artikel/">Artikel</a>
+      <a href="tentang.html">Tentang</a>
       <a href="jual-sewa-develop.html">Serah Listing</a>
+      <a href="serah-dokumen.html">Serah Dokumen</a>
     </div>
     <div>
       <h3>Hubungi</h3>
       <p>📞 <a href="tel:+60163119076">016-3119076</a></p>
-      <p>📲 <a href="https://wa.me/60163119076" target="_blank" rel="noopener">WhatsApp</a></p>
+      <p>📲 <a href="https://wa.me/60163119076" target="_blank">WhatsApp</a></p>
+      <p style="margin-top:10px;font-size:12px;color:var(--mt-muted)">Ejen Berdaftar LPEPH</p>
     </div>
   </div>
-  <div class="container footer-bottom">
-    <p>© 2026 Mr Tanah · Ejen Hartanah Berdaftar · IQI Realty Sdn Bhd (E(1)1584) · Zahir MJ (PEA 2684) × Fadilah Yusof (PEA 2313)</p>
+  <div class="container footer-bottom" style="width:var(--mt-page);margin:0 auto;padding:20px 20px 0">
+    <p>© 2026 Mr Tanah · Zahir MJ (PEA 2684) × Fadilah Yusof (PEA 2313) · IQI Realty Sdn Bhd (E(1)1584)</p>
   </div>
 </footer>
 
-<!-- Navigasi mobile baharu (10/9/2026): menu grid + bottom bar -->
+<!-- ===== WhatsApp Floating ===== -->
+<a class="wa-float" href="https://wa.me/60163119076" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<!-- ===== MOBILE MENU ===== -->
 <div class="menupanel" id="menuPanel">
   <div class="sheet">
     <div class="tajuk">SEMUA PERKHIDMATAN</div>
     <div class="menugrid">
       <a href="projek-baharu/"><span class="ikon">🏗️</span><span class="t">Projek Baharu</span></a>
       <a href="jual-sewa-develop.html"><span class="ikon">📤</span><span class="t">Serah Listing</span></a>
-      <a href="https://mrtanah.com/serah-dokumen.html"><span class="ikon">📄</span><span class="t">Serah Dokumen</span></a>
+      <a href="serah-dokumen.html"><span class="ikon">📄</span><span class="t">Serah Dokumen</span></a>
       <a href="https://mrtanah.com/portal/"><span class="ikon">🏢</span><span class="t">Portal Pengurusan</span></a>
-      <a href="portal/ladang/index.html"><span class="ikon">🌴</span><span class="t">Ladang</span></a>
       <a href="tentang.html"><span class="ikon">ℹ️</span><span class="t">Tentang</span></a>
+      <a href="artikel/"><span class="ikon">📰</span><span class="t">Artikel</span></a>
     </div>
     <div class="menucta">
-      <a class="b1" href="https://wa.me/60163119076" target="_blank" rel="noopener">📲 WhatsApp 016-3119076</a>
+      <a class="b1" href="https://wa.me/60163119076" target="_blank">📲 WhatsApp 016-3119076</a>
       <a class="b2" href="#" onclick="document.getElementById('menuPanel').classList.remove('buka');return false">Tutup</a>
     </div>
   </div>
@@ -205,19 +827,58 @@
 <div class="bottomnav">
   <a class="bi aktif" href="/"><span class="ikon">🏠</span>Utama</a>
   <a class="bi" href="tentang.html"><span class="ikon">ℹ️</span>Tentang</a>
-  <a class="bi" href="tentang.html"><span class="ikon">✅</span>Hubungi</a>
+  <a class="bi" href="artikel/"><span class="ikon">📰</span>Artikel</a>
   <a class="bi" href="jual-sewa-develop.html"><span class="ikon">📄</span>Serah</a>
-  <a class="bwa" href="https://wa.me/60163119076" target="_blank" rel="noopener">💬</a>
+  <a class="bwa" href="https://wa.me/60163119076" target="_blank">💬</a>
 </div>
 
+<!-- ===== SCRIPTS ===== -->
 <script src="data/listings.js?v=67"></script>
 <script src="app.js?v=52"></script>
 <script src="assets/fasa1.js?v=1"></script>
 <script src="assets/ali-config.js?v=1"></script>
 <script src="assets/ali-chat.js?v=2"></script>
 <script src="/assets/ga4.js" defer></script>
-<!-- Akses: tab Log Masuk / Dashboard + Log Keluar (arahan Zahir 15/09/2026) -->
 <script src="/portal/assets/auth-config.js" defer></script>
 <script src="/portal/assets/akses-nav.js" defer></script>
+
+<!-- ===== INTERACTIVE JS ===== -->
+<script>
+(function() {
+  // Header scroll
+  var h = document.getElementById('mtHeader');
+  var ck = function() { h?.classList.toggle('is-scrolled', window.scrollY > 16); };
+  ck(); window.addEventListener('scroll', ck, {passive:true});
+
+  // Mobile hero switch
+  var hero = document.getElementById('heroSection');
+  if (hero) {
+    var mq = window.matchMedia('(max-width: 767px)');
+    var setBg = function() {
+      hero.style.backgroundImage = mq.matches
+        ? 'linear-gradient(180deg, rgba(3,11,12,.60), rgba(3,11,12,.20) 52%, #030b0c 100%),url("assets/images/mr-tanah-hero-mobile.webp")'
+        : 'linear-gradient(90deg, rgba(3,11,12,.92) 0%, rgba(3,11,12,.50) 40%, rgba(3,11,12,.08) 70%),linear-gradient(0deg, #030b0c 0%, transparent 50%),url("assets/images/mr-tanah-hero.webp")';
+      hero.style.backgroundPosition = mq.matches ? 'center top' : 'center center';
+    };
+    setBg(); mq.addEventListener('change', setBg);
+  }
+
+  // Menu toggle
+  document.getElementById('navToggle')?.addEventListener('click', function() {
+    document.getElementById('menuPanel')?.classList.toggle('buka');
+  });
+
+  // Search controls
+  document.getElementById('btnCari')?.addEventListener('click', function() {
+    document.getElementById('searchInput')?.dispatchEvent(new Event('input'));
+  });
+  document.getElementById('clearBtn')?.addEventListener('click', function() {
+    ['searchInput','stateFilter','typeFilter','minPrice','maxPrice','bedFilter','tenureFilter'].forEach(function(id) {
+      var e = document.getElementById(id); if (e) e.value = '';
+    });
+    document.getElementById('searchInput')?.dispatchEvent(new Event('input'));
+  });
+})();
+</script>
 </body>
 </html>
