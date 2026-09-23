@@ -377,6 +377,21 @@ h1,h2,h3,h4{font-family:var(--head);margin:0;line-height:1.15;letter-spacing:-.0
 .fact{padding:8px 14px;border-radius:999px;border:1px solid var(--line);
   background:rgba(57,255,136,.07);font-size:.82rem;font-weight:600;color:var(--gold-pale)}
 
+/* ---------- EJEN / TEAM ---------- */
+.agent{display:grid;grid-template-columns:300px 1fr;gap:32px;align-items:start}
+.agent-photo{border-radius:var(--r-lg);overflow:hidden}
+.agent-photo img{width:100%;height:auto;display:block;object-fit:cover}
+.agent h2{margin:0 0 8px;font-size:clamp(1.5rem,2.6vw,2rem)}
+.agent-role{color:var(--gold-pale);font-weight:600;margin:0 0 16px;font-size:.95rem}
+.agent p{color:var(--muted)}
+.agent-facts{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 22px}
+.fact{padding:8px 14px;border-radius:999px;border:1px solid var(--line);
+  background:rgba(57,255,136,.07);font-size:.82rem;font-weight:600;color:var(--gold-pale)}
+@media(max-width:740px){
+  .agent{grid-template-columns:1fr}
+  .agent-photo{max-width:360px}
+}
+
 /* ---------- FOOTER + WA FLOAT ---------- */
 footer{background:var(--mt-deep);border-top:1px solid var(--line);padding:60px 0 26px;margin-top:20px}
 .f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:34px}
@@ -757,7 +772,7 @@ body:has(.ali-panel.on) .wa-float{opacity:0;visibility:hidden;pointer-events:non
 <section class="sec" id="tentang">
   <div class="wrap agent">
     <div class="agent-photo">
-      <img src="assets/mr-tanah-team.jpg" alt="Pasukan Mr Tanah — Zahir MJ &amp; Fadilah Yusof" width="480" height="600" loading="lazy">
+      <img src="assets/mr-tanah-team.jpg" alt="Pasukan Mr Tanah — Zahir MJ &amp; Fadilah Yusof" width="441" height="332" loading="lazy">
     </div>
     <div>
       <h2>Kenali Pasukan Mr Tanah</h2>
