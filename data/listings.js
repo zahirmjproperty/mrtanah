@@ -4229,6 +4229,64 @@ window.LISTINGS = [
     "active": true
   },
   {
+    "tracking": "MTCOA-0049",
+    "title": "Tanah Pembangunan Bercampur 4.2 Ekar, Batu 10 Cheras — RM11,005,000",
+    "type": "Tanah",
+    "location": "Batu 10, Cheras, Selangor",
+    "state": "Selangor",
+    "price": 11005000,
+    "price_label": "RM11,005,000",
+    "price_old": null,
+    "land_area": "4.2 ekar (182,952 sqft)",
+    "built_up": "-",
+    "tenure": "Freehold",
+    "sekatan": "Melayu Reserved",
+    "kategori": "Pembangunan",
+    "zoning": "Pembangunan Bercampur",
+    "psf": 60,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "sewa_price": null,
+    "sewa_label": null,
+    "highlights": [
+      "Tanah pembangunan 4.2 ekar (182,952 sqft) di Batu 10, Cheras, Selangor",
+      "Zoning Pembangunan Bercampur — potensi komersial & kediaman",
+      "Pegangan Freehold, rizab Melayu",
+      "Harga RM60 psf — RM11,005,000 (boleh runding)",
+      "Berhampiran kawasan perumahan sedia ada & kemudahan",
+      "Akses mudah ke Jalan Cheras & lebuh raya utama"
+    ],
+    "description": "Tanah pembangunan bercampur seluas 4.2 ekar (182,952 kaki persegi) untuk dijual di Batu 10, Cheras, Selangor dengan harga RM11,005,000 (RM60 kaki persegi — boleh runding). Pegangan Freehold, rizab Melayu, zoning Pembangunan Bercampur — sesuai untuk pembangunan komersial, kediaman atau campuran. Lokasi sangat strategik di koridor Cheras yang pesat membangun, berhampiran kawasan perumahan sedia ada, sekolah, pusat komersial dan mudah diakses melalui Jalan Cheras serta lebuh raya utama. Potensi nilai tinggi untuk pemaju atau pelabur tanah. Hubungi kami untuk viewing.",
+    "amenities": [
+      "Zoning Pembangunan Bercampur",
+      "4.2 ekar (182,952 sqft)",
+      "Freehold rizab Melayu",
+      "RM60 psf — potensi nilai tinggi"
+    ],
+    "nearby": [
+      "Batu 10 Cheras commercial hub",
+      "Kawasan perumahan sedia ada",
+      "Sekolah & kemudahan awam",
+      "Jalan Cheras & lebuh raya utama"
+    ],
+    "map_url": "https://www.google.com/maps/search/?api=1&query=Batu+10+Cheras,+Selangor",
+    "project": "",
+    "project_name": "",
+    "unit": "",
+    "source": "Mr Tanah",
+    "date": "2026-09-24",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1Bzt5nnrKi3lP_pOup0xk9CFLLjweT9GI=w1000",
+      "https://lh3.googleusercontent.com/d/1PGYlKPSWhkFQKX-NdSqNgneOnplVKZL8=w1000",
+      "https://lh3.googleusercontent.com/d/1d9K5oXmA1enqW-4DVdSwieaf2RfUMwk_=w1000",
+      "https://lh3.googleusercontent.com/d/1z_z7iALJc7AL7ITZiekX2bfz6CVc7knX=w1000",
+      "https://lh3.googleusercontent.com/d/1mHpArxrty_zeop0incfw9RPmvVeImL1k=w1000"
+    ],
+    "active": true
+  },
+  {
     "tracking": "MTCOA-0003",
     "title": "Tanah Pembangunan Bukit Damar Dengkil",
     "type": "Tanah",
