@@ -283,12 +283,13 @@ h1,h2,h3,h4{font-family:var(--head);margin:0;line-height:1.15;letter-spacing:-.0
 /* ---------- KAD HARTANAH ---------- */
 .grid-prop{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .p-card{
-  border-radius:var(--r-lg);overflow:hidden;background:linear-gradient(180deg,rgba(15,36,27,.6),rgba(5,15,13,.85));
+  border-radius:var(--r-lg);overflow:visible;background:linear-gradient(180deg,rgba(15,36,27,.6),rgba(5,15,13,.85));
   border:1px solid rgba(170,159,144,.14);display:flex;flex-direction:column;
-  transition:transform .3s,border-color .3s,box-shadow .3s;position:relative;
+  transition:transform .3s,border-color .3s,box-shadow .3s;position:relative;isolation:isolate;
+  height:100%;
 }
-.p-card:hover{transform:translateY(-6px);border-color:rgba(179,140,74,.5);box-shadow:0 26px 60px rgba(0,0,0,.5)}
-.p-media{position:relative;aspect-ratio:16/10;overflow:hidden;display:block;background:#0A1A14}
+.p-card:hover{transform:translateY(-4px);box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.p-media{position:relative;aspect-ratio:16/10;overflow:hidden;display:block;background:#0A1A14;border-radius:var(--r-lg) var(--r-lg) 0 0;}
 .p-media img{width:100%;height:100%;object-fit:cover;transition:transform .55s ease}
 .p-card:hover .p-media img{transform:scale(1.03)}
 .p-media::after{
@@ -895,7 +896,7 @@ body:has(.ali-panel.on) .wa-float{opacity:0;visibility:hidden;pointer-events:non
       var locParts = (l.location || '').split(',').map(function(t){ return t.trim(); }).filter(Boolean);
       var locShort = locParts.length >= 2 ? locParts.slice(-2).join(', ') : (locParts[0] || l.state || '');
       var waMsg = encodeURIComponent('Assalamualaikum, saya berminat dengan listing ' + l.tracking + ' - ' + l.title + ' (' + (l.price_label || '') + '). Masih tersedia?');
-      return '<article class="p-card">' +
+      return '<article class="p-card luxury-border">' +
         '<a class="p-media" href="' + url + '" aria-label="' + (l.title||'').replace(/[<>&"]/g,'') + '">' +
           (img ? '<img src="' + img + '" alt="' + (l.title||'') + '" loading="lazy" width="640" height="400">' : '<div class="p-media-placeholder"><span>\ud83c\udfe1</span></div>') +
           '<span class="badge ' + badgeClass + '">' + badgeText + '</span>' +
