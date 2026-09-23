@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Mr Tanah — Pakar Tanah & Hartanah Malaysia</title>
+  <meta name="description" content="Listing tanah, bangunan, kilang, gudang dan ruang komersial di seluruh Malaysia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/mrtanah-redesign.css">
+  <script defer src="/assets/js/mrtanah-redesign.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Langkau ke kandungan utama</a>
+
+  <header class="site-header" data-site-header>
+    <a class="brand" href="/" aria-label="Mr Tanah — halaman utama">
+      <span class="brand-mark" aria-hidden="true">MT</span>
+      <span><strong>MR TANAH</strong><small>Pakar Tanah & Hartanah Malaysia</small></span>
+    </a>
+
+    <button class="menu-button" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="primary-nav" data-menu-button>
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Navigasi utama" data-primary-nav>
+      <a aria-current="page" href="/">Utama</a>
+      <a href="/listing/">Listing</a>
+      <a href="/listing/?jenis=tanah">Tanah</a>
+      <a href="/listing/?jenis=komersial">Komersial</a>
+      <a href="/listing/?jenis=industri">Industri</a>
+      <a href="/projek-baharu/">Projek Baharu</a>
+      <a href="/artikel/">Artikel</a>
+      <a href="/tentang.html">Tentang</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="button button-outline" href="/serah-listing.html">Serah Listing</a>
+      <a class="button button-whatsapp" href="https://wa.me/60163119076" rel="noopener">WhatsApp&nbsp; 016-3119076</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">PEA 2684 &amp; PEA 2313 · LISTING SELURUH MALAYSIA</p>
+        <h1 id="hero-title">Tanah strategik. Aset bernilai. <span>Peluang tanpa batas.</span></h1>
+        <p class="hero-lead">Temui tanah, bangunan, kilang dan ruang komersial terpilih — disemak dari sudut hakmilik, lokasi dan potensi pasaran.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#peluang">Teroka Listing <span aria-hidden="true">→</span></a>
+          <a class="button button-outline" href="/serah-listing.html">Jual Hartanah Anda</a>
+        </div>
+      </div>
+
+      <aside class="asset-data glass-panel spark-border" aria-label="Contoh data teknikal aset">
+        <dl>
+          <div><dt>Zoning</dt><dd>Komersial</dd></div>
+          <div><dt>Tenure</dt><dd>Freehold</dd></div>
+          <div><dt>Price / sqft</dt><dd>—</dd></div>
+          <div><dt>Access</dt><dd>Lebuh Raya</dd></div>
+        </dl>
+      </aside>
+
+      <form class="property-search glass-panel spark-border" action="/listing/" method="get" data-property-search>
+        <fieldset class="transaction-tabs" aria-label="Jenis urus niaga">
+          <legend class="sr-only">Jenis urus niaga</legend>
+          <label><input type="radio" name="urusniaga" value="" checked><span>Semua</span></label>
+          <label><input type="radio" name="urusniaga" value="jual"><span>Jual</span></label>
+          <label><input type="radio" name="urusniaga" value="sewa"><span>Sewa</span></label>
+          <label><input type="radio" name="urusniaga" value="jv"><span>JV</span></label>
+        </fieldset>
+
+        <div class="search-fields">
+          <label class="search-field">
+            <span class="sr-only">Cari listing</span>
+            <input type="search" name="q" placeholder="Cari lokasi, jenis aset atau nombor rujukan" autocomplete="off">
+          </label>
+          <label><span class="sr-only">Jenis aset</span><select name="jenis"><option value="">Jenis Aset</option><option>Tanah</option><option>Bangunan</option><option>Kilang</option><option>Gudang</option><option>Pejabat</option></select></label>
+          <label><span class="sr-only">Negeri</span><select name="negeri"><option value="">Negeri</option><option>Selangor</option><option>Kuala Lumpur</option><option>Putrajaya</option><option>Pahang</option></select></label>
+          <label><span class="sr-only">Julat harga</span><select name="harga"><option value="">Julat Harga</option><option value="0-500000">Bawah RM500K</option><option value="500000-2000000">RM500K–RM2J</option><option value="2000000+">RM2J ke atas</option></select></label>
+          <label><span class="sr-only">Keluasan</span><select name="keluasan"><option value="">Keluasan</option><option value="0-43560">Bawah 1 ekar</option><option value="43560-217800">1–5 ekar</option><option value="217800+">5 ekar ke atas</option></select></label>
+          <button class="button button-gold" type="submit">Cari Aset</button>
+        </div>
+        <button class="advanced-toggle" type="button" aria-expanded="false" data-advanced-toggle>Carian Lanjutan</button>
+        <div class="advanced-filters" hidden data-advanced-filters>
+          <!-- Hermes: connect these controls only to real supported listing fields. -->
+          <label>Tenure<select name="tenure"><option value="">Semua</option><option>Freehold</option><option>Leasehold</option></select></label>
+          <label>Zoning<select name="zoning"><option value="">Semua</option><option>Komersial</option><option>Industri</option><option>Pertanian</option></select></label>
+          <button type="reset" class="text-button">Reset carian</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="trust-row" aria-label="Mengapa pilih Mr Tanah">
+      <article><span aria-hidden="true">✓</span><div><h2>Hakmilik Disemak</h2><p>Maklumat sahih &amp; dipercayai</p></div></article>
+      <article><span aria-hidden="true">⌖</span><div><h2>Data Teknikal Tanah</h2><p>Zoning, keluasan &amp; potensi</p></div></article>
+      <article><span aria-hidden="true">◇</span><div><h2>Liputan Seluruh Malaysia</h2><p>Dari utara ke selatan</p></div></article>
+      <article><span aria-hidden="true">◉</span><div><h2>Ejen Berdaftar</h2><p>Profesional &amp; beretika</p></div></article>
+    </section>
+
+    <section class="content-section" aria-labelledby="asset-heading">
+      <div class="section-heading"><div><p class="eyebrow">PILIHAN ASET</p><h2 id="asset-heading">Teroka Mengikut Jenis Aset</h2></div><a href="/listing/">Lihat Semua <span aria-hidden="true">→</span></a></div>
+      <div class="asset-categories">
+        <a class="category-card" href="/listing/?jenis=tanah" style="--image:url('/assets/images/category-land.webp')"><span><strong>Tanah &amp; Ladang</strong><small>Tanah pembangunan, pertanian, industri</small></span></a>
+        <a class="category-card" href="/listing/?jenis=komersial" style="--image:url('/assets/images/category-commercial.webp')"><span><strong>Bangunan Komersial</strong><small>Kedai, pejabat, kompleks komersial</small></span></a>
+        <a class="category-card" href="/listing/?jenis=industri" style="--image:url('/assets/images/category-industrial.webp')"><span><strong>Kilang &amp; Gudang</strong><small>Kilang, gudang, logistik, DC</small></span></a>
+        <a class="category-card" href="/listing/?jenis=pejabat" style="--image:url('/assets/images/category-office.webp')"><span><strong>Pejabat</strong><small>Ruang pejabat, menara korporat</small></span></a>
+      </div>
+    </section>
+
+    <section class="content-section" id="peluang" aria-labelledby="featured-heading">
+      <div class="section-heading"><div><p class="eyebrow">ASET TERPILIH</p><h2 id="featured-heading">Peluang Pilihan</h2></div><a href="/listing/">Lihat Semua Listing <span aria-hidden="true">→</span></a></div>
+      <p class="results-status sr-only" aria-live="polite" data-results-status></p>
+      <div class="listing-grid" data-listing-grid>
+        <!-- Render real active listings here. This reference card must be replaced/updated from the authoritative listing source. -->
+        <article class="listing-card spark-border" data-transaction="jual" data-type="tanah" data-state="selangor">
+          <a class="listing-image" href="/listing/MTCOA-0020.html">
+            <img src="/assets/images/listings/MTCOA-0020-cover.webp" alt="Tanah 1 ekar di tepi Jalan Beranang, Selangor" width="720" height="480" loading="lazy">
+            <span class="status-badge">Untuk Dijual</span>
+          </a>
+          <div class="listing-copy">
+            <p class="listing-location">Beranang, Selangor</p>
+            <h3><a href="/listing/MTCOA-0020.html">Tanah 1 Ekar Tepi Jalan Beranang</a></h3>
+            <p class="listing-price">RM2,500,000</p>
+            <p class="listing-specs">1 Ekar · Freehold · Zoning Komersial</p>
+            <button class="favourite-button" type="button" aria-label="Simpan Tanah 1 Ekar Tepi Jalan Beranang" aria-pressed="false" data-favourite="MTCOA-0020">♡</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/60163119076" rel="noopener" aria-label="Hubungi Mr Tanah melalui WhatsApp">WA</a>
+</body>
+</html>
+
