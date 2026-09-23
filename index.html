@@ -920,7 +920,10 @@ body:has(.ali-panel.on) .wa-float{opacity:0;visibility:hidden;pointer-events:non
       '</article>';
     };
     // Replace the card function used by app.js
-    if (typeof window.card === 'undefined') window.card = window.kad;
+    window.card = window.kad;
+    // Re-render with new card style
+    var si = document.getElementById('searchInput');
+    if (si) si.dispatchEvent(new Event('input', {bubbles:true}));
     // Fix the render function to use resultCount
     var origRender = window.render || function(){};
     console.log('MT kad override loaded');
