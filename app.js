@@ -183,6 +183,33 @@ let bed = params.get("bed") || "";
 let ten = params.get("tenure") || "";
 let sort = params.get("sort") || "newest";
 
+// --- Pagination "Tunjuk Lagi" ---
+const PER_PAGE = 12;          // bilangan kad setiap batch
+let shownCount = PER_PAGE;    // bilangan kad yang sedang dipapar
+let lastSig = null;           // tandatangan penapis — reset bila penapis berubah
+
+function renderMore(total) {
+  const grid = document.getElementById("listingGrid");
+  if (!grid || !grid.parentNode) return;
+  let wrap = document.getElementById("moreWrap");
+  if (!wrap) {
+    wrap = document.createElement("div");
+    wrap.id = "moreWrap";
+    wrap.style.cssText = "text-align:center;margin:26px 0 0";
+    grid.parentNode.insertBefore(wrap, grid.nextSibling);
+  }
+  const baki = total - shownCount;
+  if (baki <= 0) { wrap.innerHTML = ""; wrap.style.display = "none"; return; }
+  wrap.style.display = "block";
+  wrap.innerHTML = '<button type="button" id="moreBtn" class="btn btn-gold" style="padding:13px 30px">'
+    + 'Tunjuk Lagi <span style="opacity:.75;font-weight:600">(' + baki + ' lagi)</span></button>';
+  const btn = document.getElementById("moreBtn");
+  if (btn) btn.addEventListener("click", () => {
+    shownCount += PER_PAGE;
+    apply();
+  });
+}
+
 function apply() {
   const items = DATA.filter(l => {
     if (state && l.state !== state) return false;
@@ -214,13 +241,24 @@ function apply() {
 
   const grid = document.getElementById("listingGrid");
   const empty = document.getElementById("emptyMsg");
-  grid.innerHTML = merged.map(x => x.__proj ? projectCard(x.__proj) : card(x)).join("");
+
+  // Reset batch bila penapis/susunan berubah (bukan bila "Tunjuk Lagi" diklik)
+  const sig = [q, state, type, deal, min, max, bed, ten, sort].join("|");
+  if (sig !== lastSig) { lastSig = sig; shownCount = PER_PAGE; }
+
+  const visible = merged.slice(0, shownCount);
+  grid.innerHTML = visible.map(x => x.__proj ? projectCard(x.__proj) : card(x)).join("");
+
   const count = document.getElementById("resultCount");
   const dealNote = deal ? ` · ${DEAL_LABEL[deal] || deal}` : "";
   count.textContent = merged.length
-    ? `${merged.length} listing dijumpai` + (state ? ` · ${state}` : "") + (type ? ` · ${type}` : "") + dealNote
+    ? (visible.length < merged.length
+        ? `Menunjuk ${visible.length} daripada ${merged.length} listing`
+        : `${merged.length} listing dijumpai`)
+      + (state ? ` · ${state}` : "") + (type ? ` · ${type}` : "") + dealNote
     : "Tiada hasil";
   empty.style.display = merged.length ? "none" : "block";
+  renderMore(merged.length);
 
   const p = new URLSearchParams();
   if (q) p.set("q", q);
