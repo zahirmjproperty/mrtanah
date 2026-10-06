@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "tajuk": "Hartanah Komersial & Industri — Mr Tanah",
+    "versi": "1.1",
+    "tarikh": "2026-10-06",
+    "nota": "Sumber projek baharu: brosur berpermit + surat pelantikan pemaju + kit agensi pelantik. Sumber senarai: data/listings.js (zoning Komersial/Perindustrian). Medan bernilai 'perlu_isi' bermakna belum diperoleh secara bertulis — halaman butiran akan noindex sehingga dilengkapkan."
+  },
+  "projek": [
+    {
+      "slug": "xme-business-park-2",
+      "active": true,
+      "nama": "XME Business Park 2, Nilai Impian",
+      "pemaju": "Sime Darby Property Berhad",
+      "pemaju_lesen_no": "perlu_isi — minta bertulis daripada pemaju/agensi pelantik",
+      "permit_iklan_no": "perlu_isi — minta bertulis daripada pemaju/agensi pelantik",
+      "pbt": "Majlis Perbandaran Nilai (MPN)",
+      "pbt_rujukan_pelan": "perlu_isi",
+      "lokasi": "Nilai Impian, Nilai",
+      "negeri": "Negeri Sembilan",
+      "jenis": "Kilang industri ringan — Semi-D & Linked",
+      "segmen": "industri",
+      "kps": "3,422 – 7,286 kps",
+      "bilangan_unit": "59 unit (20 semi-detached + 39 linked) — Phase 3B",
+      "pegangan": "Freehold — industri ringan, converted with full infrastructure",
+      "sekatan": "Kategori kegunaan: bangunan industri ringan. Semak syarat nyata, kaveat/gadaian tanah induk, dan kuota bumiputera.",
+      "dijangka_siap": "Anggaran Q3 2029 (3 tahun dari Jun 2026)",
+      "harga_label": "Dari RM1,648,888",
+      "harga_rasmi": "Julat SPA RM1,648,888 – RM5,080,888. Nilai senarai 59 unit: RM131,046,064. Bayaran tempahan RM30,000 (semi-D) / RM10,000 (linked).",
+      "status_fasa": "Lancaran baharu",
+      "status_pembinaan": "Phase 3B dilancarkan (kit agensi 24 September 2026) — 38 daripada 59 unit tersedia. XME Business Park Phase 1 habis dijual.",
+      "ringkasan": [
+        "Freehold industri ringan dalam perbandaran Nilai Impian, koridor Malaysia Vision Valley 2.0 (MVV 2.0)",
+        "Ketinggian ruang gudang 9 m (triple volume); akses trak kontena 40 kaki (semi-D) / 20 kaki (linked)",
+        "Taman industri berpagar & berpengawal 24 jam — CCTV, kad akses, palang, pagar perimeter",
+        "Harga masuk serendah RM1.65 juta untuk kilang linked 3,422 kps — antara paling kompetitif di koridor Nilai",
+        "Akses NSE 2 km, ELITE 4.4 km, LEKAS 7.1 km, KLIA 25 km, Nilai Inland Port 4.2 km",
+        "Didorong permintaan pusat data & rantaian bekalan di Nilai (pusat data aktif dalam Nilai Impian)"
+      ],
+      "penafian": "Harga, unit & spesifikasi tertakluk kepada Permit Iklan & Jualan pemaju dan SPA. Nombor DL/APDL belum diperoleh secara bertulis — tidak boleh diiklankan secara awam sebelum diperoleh.",
+      "sumber": "INTERNAL SALES KIT XME BUSINESS PARK 2 PHASE 3B + AVAILABLE CHART (agensi pelantik: Esprit Estate Agent Sdn Bhd, 1036697-P), diterima 24 September 2026; laman & siaran media Sime Darby Property."
+    },
+    {
+      "slug": "budiman-semenyih",
+      "active": true,
+      "nama": "Pusat Perindustrian Budiman, Semenyih",
+      "pemaju": "Pujangga Budiman — Magna Bay Sdn Bhd (586989-H)",
+      "pemaju_lesen_no": "perlu_isi — minta bertulis daripada pemaju/agensi pelantik",
+      "permit_iklan_no": "perlu_isi — minta bertulis daripada pemaju/agensi pelantik",
+      "pbt": "Majlis Perbandaran Kajang (MPKj)",
+      "pbt_rujukan_pelan": "perlu_isi",
+      "lokasi": "Sungai Lalang, Semenyih",
+      "negeri": "Selangor",
+      "jenis": "Kilang industri — Semi-D & Detached",
+      "segmen": "industri",
+      "kps": "13,500 – 27,600 kps (binaan)",
+      "bilangan_unit": "15 unit (10 semi-D + 5 detached)",
+      "pegangan": "Freehold — hakmilik individu",
+      "sekatan": "Semak syarat nyata, kaveat/gadaian tanah induk, dan kuota bumiputera sebelum pemindahan hakmilik.",
+      "dijangka_siap": "perlu_isi — minta tarikh rasmi daripada pemaju",
+      "harga_label": "Harga atas permintaan",
+      "harga_rasmi": "perlu_isi — harga rasmi & bilangan unit setiap jenis belum diperoleh",
+      "status_fasa": "Lancaran baharu",
+      "status_pembinaan": "Peringkat pemasaran lancaran. 10 unit semi-D + 5 unit detached (low-density, 15 unit sahaja).",
+      "ringkasan": [
+        "Freehold hakmilik individu — pembangunan industri berkepadatan rendah (15 unit sahaja)",
+        "Kilang 2 tingkat dengan pejabat: showroom, pejabat, kilang & gudang di bawah satu bumbung",
+        "Binaan semi-D 13,500 – 14,400 kps; detached 23,100 – 27,600 kps",
+        "Bekalan elektrik 3 fasa 150 AMP (semi-D) / 300 AMP (detached); beban lantai gudang 2 tan/m²",
+        "Kedudukan Sungai Lalang, Semenyih — bersebelahan Kawasan Perindustrian Hi-Tech & Taman Industri Villaraya",
+        "Akses mudah melalui SILK Kajang Highway & LEKAS Highway; 66 kaki jalan utama hadapan"
+      ],
+      "penafian": "Harga, unit & spesifikasi tertakluk kepada Permit Iklan & Jualan pemaju dan SPA. Nombor DL/APDL, tarikh siap dan harga rasmi belum diperoleh secara bertulis — tidak boleh diiklankan secara awam sebelum diperoleh.",
+      "sumber": "Kit pemasaran projek Pusat Perindustrian Budiman (Magna Bay Sdn Bhd) — brosur rasmi & bahan pemaju."
+    }
+  ],
+  "listing_kod": [
+    "MT-0012",
+    "MT-0018",
+    "MT-0019",
+    "MT-0020",
+    "MT-0021",
+    "MT-0022",
+    "MTCOA-0007",
+    "MTCOA-0013",
+    "MTCOA-0020",
+    "MTCOA-0041",
+    "MTCOA-0043"
+  ]
+}
