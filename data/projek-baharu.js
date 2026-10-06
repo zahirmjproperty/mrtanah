@@ -19,7 +19,7 @@ window.PROJECTS = [
   "sekatan": "Tanah tidak boleh dipindah milik, dipajak atau digadai melainkan dengan kebenaran Pihak Berkuasa Negeri",
   "dijangka_siap": "Julai 2028",
   "harga_label": "Dari RM803,800",
-  "harga_rasmi": "Harga senarai berpermit: RM1,004,750 – RM1,856,000 (dipasarkan dari RM803,800 — rebat ≈20% disahkan tidak? → perlu sahkan dengan sales gallery)",
+  "harga_rasmi": "Harga senarai berpermit: RM1,004,750 – RM1,856,000",
   "status_fasa": "Bawah pembinaan",
   "status_pembinaan": "Phase 1 (166 unit) habis dijual (15 Jul 2025) · Phase 2 dilancarkan Oktober 2025 · kemas kini tapak Jun 2026 di laman pemaju",
   "unit_list": [
@@ -93,9 +93,9 @@ window.PROJECTS = [
    "Tarikh CCC/VP rasmi",
    "Baki unit sebenar & senarai unit tersedia",
    "Jarak km rasmi setiap kemudahan",
-   "Klaim rebat bertulis daripada pemaju"
+   "Senarai harga rasmi berpermit"
   ],
-  "penafian": "Render = artist's impression. Harga senarai mengikut blok iklan berpermit; harga dipasarkan selepas rebat perlu disahkan bertulis oleh pemaju.",
+  "penafian": "Render = artist's impression. Harga senarai mengikut blok iklan berpermit; sebarang tawaran pemaju hanya dinyatakan secara 1-ke-1 (tidak dipaparkan di laman awam).",
   "sumber": [
    "Brosur rasmi Avalon @ Cybersouth (blok iklan/permit KPKT)",
    "cybersouth.my/projects/avalon (laman pemaju)",
@@ -196,7 +196,7 @@ window.PROJECTS = [
   "perlu_isi": [
    "Tarikh CCC/VP rasmi kedua-dua blok",
    "Baki unit sebenar mengikut jenis",
-   "Pakej rebat bertulis",
+   "Senarai harga rasmi berpermit",
    "Pandangan setiap unit (tasik/kolam) mengikut pelan tapak"
   ],
   "penafian": "Render = artist's impression. Status siap berbeza antara permit (Nov 2027) dan portal (Built 2025) — pembeli dinasihatkan mengesahkan CCC/VP dengan sales gallery.",
@@ -402,7 +402,7 @@ window.PROJECTS = [
   "sekatan": "perlu_isi",
   "dijangka_siap": "2027 (sumber ejen/portal — sahkan dengan permit)",
   "harga_label": "Dari RM548,905",
-  "harga_rasmi": "Harga SPA sebelum rebat: RM548,905 – RM831,659 (RM366 – RM554 psf) — sumber portal/pemaju, perlu sahkan dengan senarai harga berpermit",
+  "harga_rasmi": "Harga senarai rasmi: RM548,905 – RM831,659 (RM366 – RM554 psf) — sumber portal/pemaju, perlu sahkan dengan senarai harga berpermit",
   "status_fasa": "Bawah pembinaan",
   "status_pembinaan": "Fasa terdahulu Saujana KLIA (Primrose) siap & diserahkan Januari 2024 · Allamanda dilancarkan 2024/2025",
   "unit_list": [
@@ -411,7 +411,7 @@ window.PROJECTS = [
     "kps": "1,500",
     "bilik": "4R + 3BA",
     "kereta": "2",
-    "harga": "RM548,905 – RM831,659 (sebelum rebat)",
+    "harga": "RM548,905 – RM831,659",
     "ciri": "Lot 20'×60' · layout terbuka, tingkap besar · reka bentuk kontemporari"
    }
   ],
@@ -456,13 +456,13 @@ window.PROJECTS = [
    "Rujukan pelan bangunan PBT",
    "Bilangan unit tepat & baki unit",
    "Tarikh siap mengikut permit",
-   "Senarai harga rasmi selepas rebat (bertulis)",
+   "Senarai harga rasmi berpermit (bertulis)",
    "Sekatan kepentingan tanah"
   ],
-  "penafian": "Render = artist's impression. Harga sebelum rebat; rebat & pakej adalah tawaran pemaju dan tertakluk kepada syarat. Sahkan semua butiran dengan sales gallery.",
+  "penafian": "Render = artist's impression. Harga yang dipaparkan ialah harga senarai rasmi mengikut permit/brosur pemaju. Sahkan semua butiran dengan sales gallery.",
   "sumber": [
    "glomac.com.my/project-development/saujana-klia (laman rasmi pemaju)",
-   "myrumahbaru.com (julat harga SPA sebelum rebat)",
+   "myrumahbaru.com (julat harga SPA)",
    "Laporan kewangan/press release Glomac (GDV fasa Allamanda)"
   ],
   "ejen_kuasa": "IQI Realty — Zahir (PEA 2684) & Fadilah (PEA 2313)",
@@ -470,7 +470,7 @@ window.PROJECTS = [
    "Rumah teres 2 tingkat (4 bilik + 3 bilik air) dalam township Saujana KLIA (239 ekar) — fasa terdahulu habis dijual.",
    "Keluasan 1,500–2,900 kps, lot 20'×60', 2 petak kereta, hakmilik individu.",
    "3.3 km ke ERL Salak Tinggi, 1.6 km ke KIP Mall Kota Warisan, 11.7 km ke KLIA/KLIA2.",
-   "Pilihan mampu milik (SPA sebelum rebat dari RM548,905) di koridor pertumbuhan Sepang–KLIA."
+   "Pilihan mampu milik (harga senarai dari RM548,905) di koridor pertumbuhan Sepang–KLIA."
   ]
  },
  {
