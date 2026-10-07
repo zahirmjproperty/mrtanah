@@ -4,3 +4,7 @@ portal/data/
 *.snapshot.json
 pemuka-*.json
 pemilik-*.json
+
+# Sandaran tempatan (bukan kandungan laman)
+.arkib/
+

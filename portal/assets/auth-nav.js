@@ -40,7 +40,7 @@
     var set = senarai(peranans);
     var h = '<div class="phmt-nav" style="margin:0 0 12px;padding:10px 12px;background:#f4f7f9;border:1px solid #dbe4ea;border-radius:10px">';
     h += '<div style="display:flex;flex-wrap:wrap;gap:7px;align-items:center">'
-      + '<a class="btn ghost" style="text-decoration:none;font-size:13px" href="/portal/masuk.html">🏠 Menu Utama</a>'
+      + '<a class="btn ghost" style="text-decoration:none;font-size:13px" href="https://zentrapropertygroup.com">🏠 Menu Utama</a>'
       + '<span style="font-size:12px;color:#5a6b76">Peranan anda' + (set.length ? " (" + set.length + ")" : "") + ":</span>";
     if (!set.length) h += '<span style="font-size:12.5px;color:#5a6b76">tiada dashboard dikaitkan</span>';
     set.forEach(function (s) {
