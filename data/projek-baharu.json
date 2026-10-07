@@ -584,6 +584,191 @@
     "Kemudahan lengkap: kolam panjang gaya olimpik, kolam khas wanita, gim, sky garden aras 22, nursery & tadika dalam bangunan.",
     "Dalam Presint 15 dengan akses SKVE, MEX, PLUS dan KESAS — laman pemaju: Setia Putrajaya Galleria, Jalan P15H."
    ]
+  },
+  {
+   "slug": "armani-putra-dengkil",
+   "nama": "Residensi Armani Putra",
+   "pemaju": "Golden Chain Development Sdn Bhd (Armani Group)",
+   "pemaju_lesen_no": "30799/06-2029/0141(A) — sah 24/06/2024 – 23/06/2029 (KPKT TEDUH)",
+   "permit_iklan_no": "30799-1/06-2029/0421(A)-(S) — sah 10/06/2026 – 09/06/2029 (KPKT TEDUH)",
+   "pbt": "Majlis Perbandaran Sepang (MP Sepang)",
+   "pbt_rujukan_pelan": "Rujukan pelan PBT perlu disahkan dengan sales gallery",
+   "lokasi": "Dengkil, Selangor (sempadan Putrajaya)",
+   "negeri": "Selangor",
+   "jenis": "SOHO & Servis Apartmen (pembangunan bercampur 2 menara)",
+   "kps": "450 – 1,000 kps",
+   "bilik": "1 – 3 bilik tidur",
+   "petak_kereta": "1 – 3 bay mengikut jenis (2,186 petak keseluruhan)",
+   "bilangan_unit": "990 unit (SOHO 488 + Servis Apartmen 496 + 6 retail) · 2 blok · 32 tingkat",
+   "pegangan": "Leasehold (pajakan) — komersial",
+   "sekatan": "Malay Reserved — warganegara bukan Melayu tidak dibenarkan membeli (FAQ rasmi pemaju)",
+   "dijangka_siap": "48 bulan dari pensteman SPA (unjuran progres: 2030)",
+   "harga_label": "Dari RM230,000",
+   "harga_rasmi": "Harga SPA mengikut carta rasmi: RM230,000 – RM647,500 (Type C mampu milik RM230,000 · Type G mampu milik RM250,000 · Type B RM343,800 · Type F RM379,500 · Type A RM420,000 · Type D/E RM538,800–572,500 · Type D1/E1 RM647,500)",
+   "status_fasa": "Lancaran Baharu",
+   "status_pembinaan": "Berdaftar sebagai projek LANCAR di KPKT TEDUH (0 projek sakit, 0 terbengkalai). Foto tapak Jun 2026 menunjukkan kerja pembersihan tanah; struktur menara belum bermula.",
+   "unit_list": [
+    {
+     "kod": "Type A — SOHO",
+     "kps": "550",
+     "bilik": "1R + 1BA",
+     "kereta": "2",
+     "harga": "RM420,000",
+     "ciri": "422 unit · SOHO Blok A"
+    },
+    {
+     "kod": "Type A1 — SOHO",
+     "kps": "550",
+     "bilik": "1R + 1BA",
+     "kereta": "2",
+     "harga": "RM420,000",
+     "ciri": "Susun atur alternatif Type A · 450 kps foyer"
+    },
+    {
+     "kod": "Type B — SOHO",
+     "kps": "450",
+     "bilik": "2R + 1BA",
+     "kereta": "1",
+     "harga": "RM343,800",
+     "ciri": "16 unit · unit terhad"
+    },
+    {
+     "kod": "Type C — SOHO Mampu Milik",
+     "kps": "450",
+     "bilik": "2R + 1BA",
+     "kereta": "1",
+     "harga": "RM230,000",
+     "ciri": "50 unit · mampu milik (Malay Reserved)"
+    },
+    {
+     "kod": "Type D — Servis Apartmen",
+     "kps": "850",
+     "bilik": "3R + 2BA",
+     "kereta": "2",
+     "harga": "RM538,800 – RM572,500",
+     "ciri": "298 unit · sesetengah unit 3 bay (+RM30,000)"
+    },
+    {
+     "kod": "Type D1 — Servis Apartmen",
+     "kps": "1,000",
+     "bilik": "3R + 2BA",
+     "kereta": "2",
+     "harga": "RM647,500",
+     "ciri": "6 unit sahaja · keluasan terbesar"
+    },
+    {
+     "kod": "Type E — Servis Apartmen",
+     "kps": "850",
+     "bilik": "3R + 2BA",
+     "kereta": "2",
+     "harga": "RM538,800 – RM572,500",
+     "ciri": "122 unit · susun atur alternatif Type D"
+    },
+    {
+     "kod": "Type E1 — Servis Apartmen",
+     "kps": "1,000",
+     "bilik": "3R + 2BA",
+     "kereta": "2",
+     "harga": "RM647,500",
+     "ciri": "2 unit sahaja"
+    },
+    {
+     "kod": "Type F — Servis Apartmen",
+     "kps": "550",
+     "bilik": "1R + 1BA",
+     "kereta": "2",
+     "harga": "RM379,500",
+     "ciri": "18 unit · servis apartmen 1 bilik"
+    },
+    {
+     "kod": "Type G — Servis Apartmen Mampu Milik",
+     "kps": "550",
+     "bilik": "1R + 1BA",
+     "kereta": "2",
+     "harga": "RM250,000",
+     "ciri": "50 unit · mampu milik (Malay Reserved)"
+    }
+   ],
+   "fasiliti": [
+    "Kolam renang 25m × 13m (3,850 kps) + dek kolam",
+    "Gimnasium 2,562 kps",
+    "Dewan serbaguna 3,809 kps (boleh disewa, tertakluk kelulusan MO)",
+    "Surau",
+    "Taska 1,199 kps (pengendali dilantik MO)",
+    "Ruang komersial / retail di aras bawah (6 unit)",
+    "Kawalan keselamatan 3 lapis: boom gate kenderaan, kad akses lobi lif, kad akses lobi aras unit",
+    "Bilik sampah setiap aras (kutipan manual) · MP Sepang mengutip sampah",
+    "Pencawang elektrik sandaran (common area)",
+    "Kemudahan di Aras 5 (pejabat pengurusan juga di Aras 5)",
+    "Pengurusan hospitaliti oleh 5Senses Hospitality Group"
+   ],
+   "jarak": [
+    {
+     "label": "PICC Putrajaya",
+     "km": 4.5
+    },
+    {
+     "label": "Marina Putrajaya",
+     "km": 5.8
+    },
+    {
+     "label": "Heriot-Watt University Malaysia",
+     "km": 9.1
+    },
+    {
+     "label": "Hospital Putrajaya",
+     "km": 9.2
+    },
+    {
+     "label": "Cyberjaya",
+     "km": 9.6
+    },
+    {
+     "label": "Alamanda Putrajaya",
+     "km": 9.7
+    },
+    {
+     "label": "Putrajaya Sentral (MRT/ERL)",
+     "km": 10.5
+    },
+    {
+     "label": "Dengkil Town",
+     "km": 10.5
+    },
+    {
+     "label": "IOI City Mall",
+     "km": 16.5
+    },
+    {
+     "label": "Bandar Baru Bangi",
+     "km": 17.7
+    },
+    {
+     "label": "KLIA",
+     "km": 28.4
+    }
+   ],
+   "perlu_isi": [],
+   "penafian": "Render = artist's impression. Harga, unit dan spesifikasi tertakluk kepada Permit Iklan & Jualan pemaju dan Perjanjian Jual Beli (SPA). Gambar & bahan adalah hak pemaju — digunakan di sini untuk pratonton reka bentuk sahaja.",
+   "sumber": [
+    "Carta harga rasmi pemaju (SOHO & Servis Apartmen) — 9 April 2026",
+    "Sales Kit rasmi Residensi Armani Putra — 6 Mei 2026",
+    "FAQ rasmi projek Dengkil — 8 Mei 2026",
+    "KPKT TEDUH — semakan lesen pemaju & permit iklan projek (kod 30799-1)",
+    "residensiarmaniputra.com (laman rasmi projek)",
+    "Jarak pemanduan dikira melalui OSRM (OpenStreetMap)"
+   ],
+   "ejen_kuasa": "IQI Realty — Zahir (PEA 2684) & Fadilah (PEA 2313)",
+   "ringkasan": [
+    "Pembangunan bercampur 5.07 ekar di Dengkil, bersebelahan sempadan Putrajaya — akses terus ke Putrajaya, Cyberjaya dan KLIA.",
+    "Dua menara 32 tingkat: SOHO (Blok A) dan Servis Apartmen (Blok B), dengan kemudahan utama di Aras 5.",
+    "Julat luas luas 450 – 1,000 kps, daripada studio 1 bilik sehingga rumah keluarga 3 bilik.",
+    "Mampu milik bermula RM230,000 — titik masuk terendah dalam koridor Dengkil/Putrajaya.",
+    "Dibangunkan Armani Group (pemenang PropertyGuru Asia Property Awards) dan diuruskan 5Senses Hospitality Group.",
+    "Malay Reserved — komuniti dan persekitaran gaya hidup Muslim-friendly (surau, dasar tanpa arak/babi di kawasan yang dibenarkan undang-undang).",
+    "Dilindungi Akta Pemajuan Perumahan 1966 (Jadual H) — lesen pemaju & permit iklan sah sehingga 2029."
+   ],
+   "vr": []
   }
  ]
 }
