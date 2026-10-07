@@ -768,7 +768,16 @@
     "Malay Reserved — komuniti dan persekitaran gaya hidup Muslim-friendly (surau, dasar tanpa arak/babi di kawasan yang dibenarkan undang-undang).",
     "Dilindungi Akta Pemajuan Perumahan 1966 (Jadual H) — lesen pemaju & permit iklan sah sehingga 2029."
    ],
-   "vr": []
+   "vr": [],
+   "pemaju_ssm": "969873-V",
+   "unit_pecahan": {
+    "soho": 488,
+    "servis_apartmen": 496,
+    "retail": 6,
+    "jumlah": 990
+   },
+   "bilangan_jenis": 10,
+   "status_kod": "LANCAR"
   }
  ]
 }
