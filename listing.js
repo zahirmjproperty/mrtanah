@@ -35,6 +35,26 @@ function waPrice(l) {
   return isDual(l) ? `Jual ${l.price_label} / Sewa ${l.sewa_label}` : (l.price_label || "");
 }
 
+// Video promosi YouTube — terima URL watch/youtu.be/embed/shorts atau ID mentah
+function ytId(u) {
+  if (!u) return "";
+  const m = String(u).match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/|live\/))([A-Za-z0-9_-]{11})/);
+  if (m) return m[1];
+  return /^[A-Za-z0-9_-]{11}$/.test(String(u).trim()) ? String(u).trim() : "";
+}
+function videoHTML(l) {
+  const v = ytId(l.video);
+  if (!v) return "";
+  return `<section class="detail-section">
+      <h2>Video</h2>
+      <div class="video-wrap" data-yt="${v}" data-tajuk="Video ${l.title}">
+        <img loading="lazy" decoding="async" src="https://i.ytimg.com/vi/${v}/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${v}/hqdefault.jpg'" alt="Video ${l.title}" width="1280" height="720">
+        <button class="video-play" type="button" aria-label="Mainkan video">&#9654;</button>
+        <span class="video-src">YouTube</span>
+      </div>
+    </section>`;
+}
+
 // --- Galeri / Lightbox ---
 let lbIndex = 0, lbImgs = [], mainIdx = 0;
 
@@ -198,6 +218,8 @@ function renderDetail(l) {
       <p class="detail-desc">${l.description}</p>
     </section>` : ""}
 
+    ${videoHTML(l)}
+
     ${l.highlights && l.highlights.length ? `<section class="detail-section">
       <h2>Ciri Utama</h2>
       <ul class="detail-list">${l.highlights.map(h => `<li>${h}</li>`).join("")}</ul>
@@ -299,3 +321,19 @@ if (root) {
 const toggle = document.getElementById("navToggle");
 const nav = document.getElementById("nav");
 if (toggle) toggle.addEventListener("click", () => nav.classList.toggle("open"));
+
+// --- Video promosi: facade YouTube (iframe dimuat hanya bila diklik) ---
+document.querySelectorAll(".video-wrap").forEach(function (f) {
+  f.addEventListener("click", function () {
+    var id = f.getAttribute("data-yt");
+    if (!id) return;
+    var w = document.createElement("iframe");
+    w.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0";
+    w.setAttribute("title", f.getAttribute("data-tajuk") || "Video");
+    w.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    w.setAttribute("allowfullscreen", "");
+    w.style.cssText = "position:absolute;inset:0;width:100%;height:100%;border:0";
+    f.innerHTML = "";
+    f.appendChild(w);
+  }, { once: true });
+});
