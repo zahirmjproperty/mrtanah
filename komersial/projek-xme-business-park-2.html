@@ -85,11 +85,12 @@
       <div class="pj-note"><b>Status: Lancaran baharu</b><p>Harga & jadual unit diterbitkan hanya selepas Permit Iklan &amp; Jualan (APDL) diperoleh secara bertulis.</p></div></div>
   </section>
   <section class="pj-sec"><h2 class="pj-h2">Kad fakta rasmi</h2><table class="pj-facts"><tr><th>Jenis pembangunan</th><td>Kilang industri ringan — Semi-D &amp; Linked</td></tr><tr><th>Unit</th><td>59 unit (20 semi-detached + 39 linked) — Phase 3B</td></tr><tr><th>Keluasan</th><td>3,422 – 7,286 kps</td></tr><tr><th>Pegangan tanah</th><td>Freehold — industri ringan, converted with full infrastructure</td></tr><tr><th>Sekatan kepentingan tanah</th><td>Kategori kegunaan: bangunan industri ringan. Semak syarat nyata, kaveat/gadaian tanah induk, dan kuota bumiputera.</td></tr><tr><th>Tarikh jangkaan siap</th><td>Anggaran Q3 2029 (3 tahun dari Jun 2026)</td></tr><tr><th>Pihak berkuasa (PBT)</th><td>Majlis Perbandaran Nilai (MPN)</td></tr><tr><th>Rujukan pelan bangunan</th><td class="todo">Akan dikemas kini</td></tr></table></section>
+  
   <section class="pj-sec"><h2 class="pj-h2">Maklumat Permit Iklan &amp; Jualan</h2>
     <div class="pj-permit"><h3>Permit Iklan &amp; Jualan — XME Business Park 2, Nilai Impian</h3>
       <p class="pj-mut-l">Butiran wajib Peraturan 6, Peraturan-Peraturan Pemajuan Perumahan (Kawalan &amp; Pelesenan) 1989.</p>
       <table><tr><th>Nama pemajuan</th><td>XME Business Park 2, Nilai Impian</td></tr><tr><th>Pemaju berlesen</th><td>Sime Darby Property Berhad</td></tr><tr><th>No. lesen pemaju + tempoh sah</th><td class="todo">Akan dikemas kini</td></tr><tr><th>No. Permit Iklan & Jualan + tempoh sah</th><td class="todo">Akan dikemas kini</td></tr><tr><th>Pihak berkuasa tempatan</th><td>Majlis Perbandaran Nilai (MPN)</td></tr><tr><th>Rujukan pelan bangunan</th><td class="todo">Akan dikemas kini</td></tr><tr><th>Pegangan tanah & sekatan</th><td>Freehold — industri ringan, converted with full infrastructure · Kategori kegunaan: bangunan industri ringan. Semak syarat nyata, kaveat/gadaian tanah induk, dan kuota bumiputera.</td></tr><tr><th>Tarikh jangkaan siap</th><td>Anggaran Q3 2029 (3 tahun dari Jun 2026)</td></tr><tr><th>Harga & bilangan unit setiap jenis</th><td>Belum diterbitkan — menunggu nombor Permit Iklan &amp; Jualan (APDL) bertulis daripada pemaju.</td></tr><tr><th>Ejen diberi kuasa</th><td>IQI Realty — Zahir (PEA 2684) &amp; Fadilah (PEA 2313) — ejen diberi kuasa pemaju</td></tr></table>
-      <p class="pj-foot">Dikemas kini 2026-10-06 · Semak status permit di portal TEDUH KPKT.</p></div></section>
+      <p class="pj-foot">Dikemas kini 2026-10-08 · Semak status permit di portal TEDUH KPKT.</p></div></section>
   <section class="pj-sec"><div class="pj-cta">
     <h3>Nak lihat unit sebenar / harga terkini?</h3>
     <p>Kami aturkan lawatan tapak &amp; semak kelayakan pembiayaan perniagaan — tanpa kos.</p>
@@ -99,7 +100,7 @@
       <p><b>Penafian:</b> Harga, unit &amp; spesifikasi tertakluk kepada Permit Iklan &amp; Jualan pemaju dan SPA. Nombor DL/APDL belum diperoleh secara bertulis — tidak boleh diiklankan secara awam sebelum diperoleh.</p>
       <p><b>Dijual oleh:</b> IQI Realty — Zahir (PEA 2684) &amp; Fadilah (PEA 2313) — ejen diberi kuasa pemaju.</p>
       <p><b>Pemaju:</b> Sime Darby Property Berhad</p>
-      <p><b>Dikemas kini:</b> 2026-10-06</p></div></section>
+      <p><b>Dikemas kini:</b> 2026-10-08</p></div></section>
 </main><footer class="site-footer">
   <div class="container footer-grid">
     <div><h3>Mr Tanah</h3><p>Pakar Tanah &amp; Hartanah Malaysia — Jual, Beli &amp; Sewa.</p></div>
@@ -126,6 +127,19 @@
 
 <script src="../data/listings.js?v=72"></script>
 <script src="../assets/pjb.js?v=1"></script>
+<script>/* Facade video YouTube — pjb.js tiada pengendali .video-wrap; iframe dimuat hanya bila diklik. */
+(function(){document.querySelectorAll('.video-wrap').forEach(function(f){
+  f.addEventListener('click',function(){
+    var id=f.getAttribute('data-yt'); if(!id) return;
+    var w=document.createElement('iframe');
+    w.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0';
+    w.setAttribute('title',f.getAttribute('data-tajuk')||'Video');
+    w.setAttribute('allow','accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+    w.setAttribute('allowfullscreen','');
+    w.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:0';
+    f.innerHTML=''; f.appendChild(w);
+  },{once:true});
+});})();</script>
 <script>window.ALI_LAMAN="mt";window.ALI_LISTING_BASE="listing/";</script>
 <script src="../assets/ali-config.js?v=2"></script>
 <script src="../assets/ali-chat.js?v=4"></script>
