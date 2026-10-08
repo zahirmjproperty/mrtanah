@@ -61,6 +61,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1PpBgYOv9ay3iwsxVtflZOs6_rdSRCMth=w1000"
     ],
     "video": "https://www.youtube.com/watch?v=sSE2K1HUEUU",
+    "videos": ["https://www.youtube.com/watch?v=sSE2K1HUEUU", "https://youtube.com/shorts/O-CTnzeBtGk"],
     "active": true
   },
   {

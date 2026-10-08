@@ -43,14 +43,24 @@ function ytId(u) {
   return /^[A-Za-z0-9_-]{11}$/.test(String(u).trim()) ? String(u).trim() : "";
 }
 function videoHTML(l) {
-  const v = ytId(l.video);
-  if (!v) return "";
-  return `<section class="detail-section">
-      <h2>Video</h2>
-      <div class="video-wrap" data-yt="${v}" data-tajuk="Video ${l.title}">
+  const vids = (Array.isArray(l.videos) && l.videos.length ? l.videos : [l.video])
+    .map(ytId).filter(Boolean);
+  if (!vids.length) return "";
+  const facade = v => `<div class="video-wrap" data-yt="${v}" data-tajuk="Video ${l.title}">
         <img loading="lazy" decoding="async" src="https://i.ytimg.com/vi/${v}/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${v}/hqdefault.jpg'" alt="Video ${l.title}" width="1280" height="720">
         <button class="video-play" type="button" aria-label="Mainkan video">&#9654;</button>
         <span class="video-src">YouTube</span>
+      </div>`;
+  if (vids.length === 1) {
+    return `<section class="detail-section">
+      <h2>Video</h2>
+      ${facade(vids[0])}
+    </section>`;
+  }
+  return `<section class="detail-section">
+      <h2>Video (${vids.length})</h2>
+      <div class="video-grid">
+      ${vids.map(facade).join("\n      ")}
       </div>
     </section>`;
 }
