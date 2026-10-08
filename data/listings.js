@@ -60,6 +60,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1IUzGZwmcF6F86t_u7ZWTnPmqv829ntls=w1000",
       "https://lh3.googleusercontent.com/d/1PpBgYOv9ay3iwsxVtflZOs6_rdSRCMth=w1000"
     ],
+    "video": "https://www.youtube.com/watch?v=sSE2K1HUEUU",
     "active": true
   },
   {
