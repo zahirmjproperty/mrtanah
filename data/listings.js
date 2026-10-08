@@ -297,6 +297,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/13mJ6FmG6oubahL4IlxeELP737gNuf9yk=w1000",
       "https://lh3.googleusercontent.com/d/1FPXPexAyk-qErsskEFNmnOaroWPsZE97=w1000"
     ],
+    "video": "https://youtu.be/iHAaLrlFNFs?si=6PdP3MesVFFV4Ttw",
     "active": true
   },
   {
