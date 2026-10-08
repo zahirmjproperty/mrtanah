@@ -3,224 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contractor Registration — Zentra Portal</title>
-<meta name="description" content="Register as a contractor / handyman for renovation & repair work on homes managed by Mr Tanah — ZMJ Solutions.">
+<meta name="robots" content="noindex,nofollow">
+<title>Contractor / Tradesman Registration — Moved to Zentra Property Group</title>
+<link rel="canonical" href="https://zentrapropertygroup.com/">
+<meta http-equiv="refresh" content="0; url=https://zentrapropertygroup.com/">
+<script>location.replace("https://zentrapropertygroup.com/");</script>
 <style>
-  :root { --mt:#123a7a; --mt-tua:#0a1f44; --oren:#e8862e; }
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; }
-  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 60%,#14905c 100%); color:#fff; padding:16px 16px 18px; }
-  .topbar h1 { font-size:19px; margin-bottom:2px; }
-  .topbar p { font-size:12.5px; opacity:.92; }
-  .crumbs { font-size:12px; opacity:.85; margin-top:3px; }
-  .crumbs a { color:#fff; }
-  .wrap { max-width:620px; margin:0 auto; padding:16px 14px 40px; }
-  .card { background:#fff; border-radius:14px; padding:18px 16px; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:14px; }
-  .card h2 { font-size:15px; color:var(--mt-tua); margin-bottom:4px; }
-  .card .sub { font-size:12.5px; color:#5a6b61; margin-bottom:10px; }
-  .emelnote { background:#eef6f1; border:1.5px dashed var(--mt); border-radius:10px; padding:11px 12px; font-size:12.8px; color:#155a35; margin:0 0 12px; }
-  .emelnote b { color:var(--mt-tua); }
-  label { display:block; font-size:13px; font-weight:600; margin:12px 0 4px; }
-  label .req { color:#c0392b; }
-  input[type=text],input[type=tel],input[type=email],input[type=number],textarea,select { width:100%; padding:11px 12px; border:1.5px solid #cfdcd4; border-radius:10px; font-size:15px; background:#fbfdfc; font-family:inherit; }
-  input:focus,textarea:focus,select:focus { outline:none; border-color:var(--mt); }
-  textarea { resize:vertical; min-height:64px; }
-  .f2 { display:grid; grid-template-columns:1fr 1fr; column-gap:14px; }
-  @media (max-width:520px){ .f2 { grid-template-columns:1fr; } }
-  .hint { font-size:11.5px; color:#5a6b61; margin-top:3px; }
-  .sec-tag { display:inline-block; background:var(--mt); color:#fff; border-radius:20px; padding:2px 11px; font-size:11.5px; font-weight:700; margin-bottom:6px; }
-  .chips { display:flex; flex-wrap:wrap; gap:7px; margin-top:8px; }
-  .chip { background:#eef6f1; border:1px solid #cfe3d8; color:#155a35; border-radius:20px; padding:4px 12px; font-size:12.5px; font-weight:600; }
-  .foto-box { border:1.5px dashed #b9c9bf; border-radius:10px; padding:10px; text-align:center; font-size:12.5px; color:#5a6b61; margin-top:6px; background:#fff; }
-  .file-list { font-size:12px; color:var(--mt-tua); margin-top:6px; white-space:pre-line; }
-  .chk { display:flex; gap:9px; align-items:flex-start; font-size:12.5px; margin-top:12px; font-weight:400; }
-  .chk input { margin-top:2px; width:17px; height:17px; accent-color:var(--mt); flex:0 0 auto; }
-  .btn { width:100%; padding:14px; background:var(--oren); color:#fff; border:0; border-radius:12px; font-size:16px; font-weight:700; cursor:pointer; margin-top:16px; }
-  .btn:disabled { opacity:.6; cursor:not-allowed; }
-  .ok { background:#e5f4ec; border:1px solid #bfe3cf; color:#0e5a33; border-radius:10px; padding:13px; font-size:13.5px; margin-top:12px; display:none; white-space:pre-line; }
-  .ok .ref { font-size:17px; font-weight:800; color:var(--mt-tua); }
-  .err { background:#fdeaea; border:1px solid #f2c2c2; color:#8c1f1f; border-radius:10px; padding:12px; font-size:13px; margin-top:12px; display:none; }
-  .wa-fallback { display:none; font-size:13px; margin-top:14px; text-align:center; }
-  .wa-fallback a { color:var(--mt-tua); font-weight:700; }
+  :root { --navy:#071525; --gold:#C8A96A; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; line-height:1.55;
+         background:linear-gradient(135deg,#071525 0%,#0F2A45 100%); color:#E8EEF6; padding:24px; }
+  .card { max-width:520px; width:100%; background:rgba(255,255,255,.06); border:1px solid rgba(200,169,106,.35);
+          border-radius:16px; padding:30px 26px; text-align:center; }
+  .mark { font-size:34px; margin-bottom:10px; }
+  h1 { margin:0 0 8px; font-size:21px; color:#fff; font-weight:700; }
+  p { margin:0 0 18px; font-size:14.5px; color:#B9C7D8; }
+  a.btn { display:inline-block; background:var(--gold); color:#071525; text-decoration:none;
+          font-weight:700; font-size:15px; padding:13px 26px; border-radius:11px; }
+  .small { margin-top:16px; font-size:12.5px; color:#8FA3B8; }
+  .small a { color:#C8A96A; }
 </style>
 </head>
 <body>
-  <div class="topbar">
-    <h1>🛠️ Contractor / Handyman Registration</h1>
-    <p>Contractor panel for renovation &amp; repair work · Mr Tanah — ZMJ Solutions</p>
-    <div class="crumbs"><a href="/">← Zentra Portal</a></div>
+  <div class="card">
+    <div class="mark">&#10022;</div>
+    <h1>This form has moved</h1>
+    <p>&ldquo;Daftar Kontraktor&rdquo; is now handled by the Zentra Property Group system. Redirecting&hellip;</p>
+    <a class="btn" href="https://zentrapropertygroup.com/">Continue to Zentra Property Group &rarr;</a>
+    <div class="small">Not redirected automatically? <a href="https://zentrapropertygroup.com/">Tap here</a>.</div>
   </div>
-  <div class="wrap">
-
-    <div class="card">
-      <div class="emelnote">📩 After you submit, an <b>email copy</b> is sent to your email (a Reference No. is given). Additional documents / photos: <b>REPLY to that email copy</b> — the reference is matched automatically. Enquiries: WhatsApp <b>016-3119076</b>.</div>
-      <div class="sub" style="margin-bottom:4px">Register to receive <b>renovation / repair / property maintenance</b> jobs managed by Mr Tanah. Registration is reviewed before you are listed as an active panel member.</div>
-    </div>
-
-    <form id="f">
-      <!-- 1: details -->
-      <div class="card">
-        <span class="sec-tag">STEP 1</span>
-        <h2>👷 Contractor / Handyman Details</h2>
-        <div class="f2">
-          <div><label>Company name / handyman name <span class="req">*</span></label><input type="text" id="nama" autocomplete="name" placeholder="e.g. Maju Renovation / Ali bin Abu" required></div>
-          <div><label>No. WhatsApp <span class="req">*</span></label><input type="tel" id="wa" autocomplete="tel" placeholder="012-3456789" required></div>
-        </div>
-        <label>Email <span class="req">*</span></label>
-        <input type="email" id="emel" autocomplete="email" placeholder="e.g. yourname@gmail.com" required>
-        <div class="f2">
-          <div><label>SSM Registration No. (optional)</label><input type="text" id="nossm" placeholder="e.g. 201501012345 / 1234567-A"></div>
-          <div><label>Service area</label><input type="text" id="kawasan" placeholder="e.g. Bangi, Kajang, Serdang, KL"></div>
-        </div>
-        <label>Experience (years)</label>
-        <input type="number" id="pengalaman" min="0" max="60" placeholder="e.g. 5">
-      </div>
-
-      <!-- 2: expertise -->
-      <div class="card">
-        <span class="sec-tag">STEP 2</span>
-        <h2>🛠️ Expertise</h2>
-        <label>Main expertise <span class="req">*</span></label>
-        <select id="kepakaran" required>
-          <option value="">— select —</option>
-          <option value="Am / Renovasi">General / Renovation</option><option value="Plumbing">Plumbing</option><option value="Elektrik">Electrical</option>
-          <option value="Bumbung / Bocor">Roofing / Leaks</option><option value="Cat">Painting</option><option value="Perosak">Pest Control</option>
-          <option value="Penghawa Dingin">Air Conditioning</option><option value="Lain">Other</option>
-        </select>
-        <div id="fldLain" style="display:none"><label>State your other expertise</label>
-          <input type="text" id="kepakaran_lain" placeholder="e.g. Metal / glass / tile work"></div>
-        <label>Types of renovation / repair work you usually do</label>
-        <textarea id="kerja" placeholder="e.g. kitchen & bathroom renovation, home remodelling, leak repair, repainting..."></textarea>
-        <div class="chips"><span class="chip">Renovation</span><span class="chip">Repair</span><span class="chip">Maintenance</span></div>
-        <label>Related licences / approvals</label>
-        <div class="f2">
-          <div><label>Licence type</label>
-            <select id="jenis_lesen">
-              <option value="">— none / select —</option>
-              <option value="SSM sahaja (tiada lesen khas)">SSM only (no special licence)</option><option value="CIDB">CIDB</option><option value="KPKT">KPKT</option><option value="Lain">Other</option>
-            </select></div>
-          <div><label>Licence No.</label><input type="text" id="no_lesen" placeholder="Licence no. (if any)"></div>
-        </div>
-      </div>
-
-      <!-- 3: documents -->
-      <div class="card">
-        <span class="sec-tag">STEP 3</span>
-        <h2>📎 Supporting Documents</h2>
-        <div class="sub">Optional — SSM, skills / CIDB certificates, business registration card, sample work (before/after photos).</div>
-        <div class="foto-box"><input type="file" id="files" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" multiple style="width:auto">
-          <div class="hint">Max 5 files · each file max 10MB. The more evidence, the faster the review.</div>
-        </div>
-        <div class="file-list" id="fileList"></div>
-        <label>Notes</label>
-        <textarea id="nota" placeholder="e.g. 5-person team, own lorry, usual project completion time..."></textarea>
-      </div>
-
-      <!-- 4: confirmation -->
-      <div class="card">
-        <span class="sec-tag">STEP 4</span>
-        <h2>✅ Confirmation</h2>
-        <div class="chk"><input type="checkbox" id="consent" required>
-          <span>I confirm that the information &amp; documents submitted are true, and I give Mr Tanah (ZMJ Solutions) permission to store this information for contractor selection purposes. (PDPA)</span></div>
-        <input type="text" name="website" id="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off">
-        <button type="submit" class="btn" id="sb">🚀 Submit Registration</button>
-        <div class="ok" id="ok"></div>
-        <div class="err" id="err"></div>
-        <div class="wa-fallback" id="wafb">Submission failed. <a id="wafbLink" href="#" target="_blank">Click here to send directly via WhatsApp</a></div>
-      </div>
-    </form>
-    <p style="font-size:11px;color:#6a7a71;text-align:center">Once submitted, you will receive a Reference No. & an email copy. Mr Tanah will review & verify before your name is listed as an active panel member. ⏱️ Response within 1-2 working days.</p>
-  </div>
-
-<script>
-var WEBHOOK = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
-(function(){
-  function $(id){ return document.getElementById(id); }
-  var ok=$('ok'), err=$('err'), wafb=$('wafb');
-  function showOk(t){ ok.style.display='block'; ok.innerHTML=t; err.style.display='none'; }
-  function showErr(t){ err.style.display='block'; err.textContent=t; ok.style.display='none'; }
-  function hideMsg(){ ok.style.display='none'; err.style.display='none'; }
-
-  $('kepakaran').addEventListener('change', function(){
-    var lain = this.value === 'Lain';
-    $('fldLain').style.display = lain ? 'block' : 'none';
-    $('kepakaran_lain').required = lain;
-  });
-
-  $('files').addEventListener('change', function(){
-    var out=[]; for(var i=0;i<this.files.length;i++){ var f=this.files[i]; out.push('📄 '+f.name+' ('+(f.size/1048576).toFixed(2)+' MB)'); }
-    $('fileList').textContent = out.join('\n');
-  });
-
-  function fileToB64(file){
-    return new Promise(function(res,rej){
-      var r=new FileReader();
-      r.onload=function(){ res({name:file.name, mime:file.type||'application/octet-stream', b64:r.result.split(',')[1]}); };
-      r.onerror=rej; r.readAsDataURL(file);
-    });
-  }
-
-  $('f').addEventListener('submit', async function(ev){
-    ev.preventDefault(); hideMsg();
-    var nama=$('nama').value.trim(), wa=$('wa').value.trim(), emel=$('emel').value.trim();
-    var kepakaran=$('kepakaran').value;
-    if(nama.length<2){ showErr('Please fill in the company / handyman name in Step 1.'); return; }
-    if(!/^0?1\d{8,9}$/.test(wa.replace(/[\s-]/g,''))){ showErr('Invalid WhatsApp number.'); return; }
-    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emel)){ showErr('Email is required — the registration copy is sent to your email.'); return; }
-    if(!kepakaran){ showErr('Please select the main expertise in Step 2.'); return; }
-    if(kepakaran==='Lain' && !$('kepakaran_lain').value.trim()){ showErr('Please state your other expertise.'); return; }
-    if(!$('consent').checked){ showErr('Please give PDPA consent before submitting.'); return; }
-    if($('website').value) return; // honeypot
-
-    var files=[];
-    if($('files').files.length){
-      if($('files').files.length>5){ showErr('Maximum 5 document files.'); return; }
-      for(var i=0;i<$('files').files.length;i++){
-        if($('files').files[i].size>10*1024*1024){ showErr('File "'+$('files').files[i].name+'" exceeds 10MB.'); return; }
-        files.push(await fileToB64($('files').files[i]));
-      }
-    }
-
-    var payload={
-      form:'kontraktor', consent:true, website:$('website').value,
-      nama:nama, wa:wa, emel:emel,
-      kepakaran:kepakaran, kepakaran_lain:$('kepakaran_lain').value.trim(),
-      kerja:$('kerja').value.trim(), pengalaman:$('pengalaman').value,
-      nossm:$('nossm').value.trim(), jenis_lesen:$('jenis_lesen').value, no_lesen:$('no_lesen').value.trim(),
-      kawasan:$('kawasan').value.trim(), nota:$('nota').value.trim(), files:files
-    };
-
-    var sb=$('sb'); sb.disabled=true; sb.textContent='⏳ Sending...';
-    try{
-      var resp=await fetch(WEBHOOK,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)});
-      var data=await resp.json();
-      if(!data.ok) throw new Error(data.error||'Server rejected');
-      showOk('✅ Contractor registration RECEIVED.<br><span class="ref">'+data.ref+'</span>'+
-        '<br>📩 Email copy sent — <b>reply to that email</b> for additional documents.'+
-        '<br>Mr Tanah will review & verify before your name is listed as a panel member.');
-      $('f').reset(); $('fileList').textContent=''; $('fldLain').style.display='none';
-    }catch(ex){
-      showErr('⚠️ Error: '+ex.message+'\nPlease try again, or send via WhatsApp 016-3119076.');
-      wafb.style.display='block';
-    }
-    sb.disabled=false; sb.textContent='🚀 Submit Registration';
-  });
-
-  // demo preview: ?demo=1
-  try{
-    if(new URLSearchParams(location.search).get('demo')==='1'){
-      $('nama').value='Maju Renovation (sample)'; $('wa').value='012-3456789'; $('emel').value='maju.renovation@gmail.com';
-      $('nossm').value='201501012345 (sample)'; $('kawasan').value='Bangi, Kajang, Serdang (sample)'; $('pengalaman').value='8';
-      $('kepakaran').value='Am / Renovasi';
-      $('kerja').value='Kitchen & bathroom renovation, home remodelling, leak repair, repainting (sample)';
-      $('jenis_lesen').value='CIDB'; $('no_lesen').value='CIDB-12345 (sample)';
-      $('nota').value='Sample entry for preview only.';
-    }
-  }catch(e){}
-})();
-</script>
-<script src="../assets/fasa1.js?v=1"></script>
-<script src="../assets/ali-config.js?v=1"></script>
-<script src="../assets/ali-chat.js?v=2"></script>
 </body>
 </html>

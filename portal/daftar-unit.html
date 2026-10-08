@@ -3,263 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Register a Property — Zentra Portal</title>
-<meta name="description" content="Register a rental property managed by Mr Tanah that did not go through a ZMJ Solutions sale/purchase/rental process — owner, tenant & related-party details.">
+<meta name="robots" content="noindex,nofollow">
+<title>Register a Property — Moved to Zentra Property Group</title>
+<link rel="canonical" href="https://zentrapropertygroup.com/">
+<meta http-equiv="refresh" content="0; url=https://zentrapropertygroup.com/">
+<script>location.replace("https://zentrapropertygroup.com/");</script>
 <style>
-  :root { --mt:#123a7a; --mt-tua:#0a1f44; --oren:#e8862e; }
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; }
-  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 60%,#14905c 100%); color:#fff; padding:16px 16px 18px; }
-  .topbar h1 { font-size:19px; margin-bottom:2px; }
-  .topbar p { font-size:12.5px; opacity:.92; }
-  .crumbs { font-size:12px; opacity:.85; margin-top:3px; }
-  .crumbs a { color:#fff; }
-  .wrap { max-width:620px; margin:0 auto; padding:16px 14px 40px; }
-  .card { background:#fff; border-radius:14px; padding:18px 16px; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:14px; }
-  .card h2 { font-size:15px; color:var(--mt-tua); margin-bottom:4px; }
-  .card .sub { font-size:12.5px; color:#5a6b61; margin-bottom:10px; }
-  .emelnote { background:#eef6f1; border:1.5px dashed var(--mt); border-radius:10px; padding:11px 12px; font-size:12.8px; color:#155a35; margin:0 0 12px; }
-  .emelnote b { color:var(--mt-tua); }
-  label { display:block; font-size:13px; font-weight:600; margin:12px 0 4px; }
-  label .req { color:#c0392b; }
-  input[type=text],input[type=tel],input[type=email],input[type=date],input[type=number],textarea,select { width:100%; padding:11px 12px; border:1.5px solid #cfdcd4; border-radius:10px; font-size:15px; background:#fbfdfc; font-family:inherit; }
-  input:focus,textarea:focus,select:focus { outline:none; border-color:var(--mt); }
-  textarea { resize:vertical; min-height:64px; }
-  .f2 { display:grid; grid-template-columns:1fr 1fr; column-gap:14px; }
-  @media (max-width:520px){ .f2 { grid-template-columns:1fr; } }
-  .hint { font-size:11.5px; color:#5a6b61; margin-top:3px; }
-  .sec-tag { display:inline-block; background:var(--mt); color:#fff; border-radius:20px; padding:2px 11px; font-size:11.5px; font-weight:700; margin-bottom:6px; }
-  .auto-note { background:#f0f7f3; border:1px solid #cfe3d8; border-radius:8px; padding:7px 11px; font-size:12px; color:#155a35; margin-top:8px; }
-  .foto-box { border:1.5px dashed #b9c9bf; border-radius:10px; padding:10px; text-align:center; font-size:12.5px; color:#5a6b61; margin-top:6px; background:#fff; }
-  .file-list { font-size:12px; color:var(--mt-tua); margin-top:6px; white-space:pre-line; }
-  .chk { display:flex; gap:9px; align-items:flex-start; font-size:12.5px; margin-top:12px; font-weight:400; }
-  .chk input { margin-top:2px; width:17px; height:17px; accent-color:var(--mt); flex:0 0 auto; }
-  .btn { width:100%; padding:14px; background:var(--oren); color:#fff; border:0; border-radius:12px; font-size:16px; font-weight:700; cursor:pointer; margin-top:16px; }
-  .btn:disabled { opacity:.6; cursor:not-allowed; }
-  .mailbtn { display:block; text-align:center; background:var(--mt); color:#fff; text-decoration:none; border-radius:12px; padding:13px; font-size:15px; font-weight:700; margin-top:12px; }
-  .ok { background:#e5f4ec; border:1px solid #bfe3cf; color:#0e5a33; border-radius:10px; padding:13px; font-size:13.5px; margin-top:12px; display:none; white-space:pre-line; }
-  .ok .ref { font-size:17px; font-weight:800; color:var(--mt-tua); }
-  .err { background:#fdeaea; border:1px solid #f2c2c2; color:#8c1f1f; border-radius:10px; padding:12px; font-size:13px; margin-top:12px; display:none; }
-  .wa-fallback { display:none; font-size:13px; margin-top:14px; text-align:center; }
-  .wa-fallback a { color:var(--mt-tua); font-weight:700; }
+  :root { --navy:#071525; --gold:#C8A96A; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; line-height:1.55;
+         background:linear-gradient(135deg,#071525 0%,#0F2A45 100%); color:#E8EEF6; padding:24px; }
+  .card { max-width:520px; width:100%; background:rgba(255,255,255,.06); border:1px solid rgba(200,169,106,.35);
+          border-radius:16px; padding:30px 26px; text-align:center; }
+  .mark { font-size:34px; margin-bottom:10px; }
+  h1 { margin:0 0 8px; font-size:21px; color:#fff; font-weight:700; }
+  p { margin:0 0 18px; font-size:14.5px; color:#B9C7D8; }
+  a.btn { display:inline-block; background:var(--gold); color:#071525; text-decoration:none;
+          font-weight:700; font-size:15px; padding:13px 26px; border-radius:11px; }
+  .small { margin-top:16px; font-size:12.5px; color:#8FA3B8; }
+  .small a { color:#C8A96A; }
 </style>
 </head>
 <body>
-  <div class="topbar">
-    <h1>🏠 Register a Property — Mr Tanah Management</h1>
-    <p>Register a rental property under Mr Tanah management · ZMJ Solutions</p>
-    <div class="crumbs"><a href="/">← Zentra Portal</a></div>
+  <div class="card">
+    <div class="mark">&#10022;</div>
+    <h1>This form has moved</h1>
+    <p>&ldquo;Pendaftaran Unit&rdquo; is now handled by the Zentra Property Group system. Redirecting&hellip;</p>
+    <a class="btn" href="https://zentrapropertygroup.com/">Continue to Zentra Property Group &rarr;</a>
+    <div class="small">Not redirected automatically? <a href="https://zentrapropertygroup.com/">Tap here</a>.</div>
   </div>
-  <div class="wrap">
-
-    <div class="card">
-      <div class="emelnote">📩 After submitting, an <b>email copy</b> is sent to your email (a Reference No. is given). Extra photos / documents / information: <b>REPLY to that emailed copy</b> — the reference is matched automatically. Enquiries: WhatsApp <b>016-3119076</b>.</div>
-      <div class="sub" style="margin-bottom:4px">This form is for a property that has <b>never</b> gone through a ZMJ Solutions sale / purchase / rental process — so Mr Tanah can complete the owner, tenant & related-party details before managing it. Fill in the parts you know.</div>
-    </div>
-
-    <form id="f">
-      <!-- 1: registrant -->
-      <div class="card">
-        <span class="sec-tag">STEP 1</span>
-        <h2>📝 I am registering this property as</h2>
-        <div class="sub">Your details are used for the email copy & follow-up contact.</div>
-        <label>Your role <span class="req">*</span></label>
-        <select id="peranan" required>
-          <option value="">— select —</option>
-          <option value="Owner">Owner</option>
-          <option value="Owner Representative">Owner's representative (child / relative / administrator)</option>
-          <option value="Tenant">Tenant</option>
-          <option value="Agent">Agent / agency</option>
-          <option value="Other">Other</option>
-        </select>
-        <div class="f2">
-          <div><label>Your name <span class="req">*</span></label><input type="text" id="nama" autocomplete="name" placeholder="e.g. Ahmad bin Ali" required></div>
-          <div><label>WhatsApp number <span class="req">*</span></label><input type="tel" id="wa" autocomplete="tel" placeholder="012-3456789" required></div>
-        </div>
-        <label>Email <span class="req">*</span></label>
-        <input type="email" id="emel" autocomplete="email" placeholder="e.g. name@gmail.com" required>
-      </div>
-
-      <!-- 2: property -->
-      <div class="card">
-        <span class="sec-tag">STEP 2</span>
-        <h2>🏢 Property Details</h2>
-        <div class="sub">The property managed / to be managed by Mr Tanah.</div>
-        <div class="f2">
-          <div><label>Property (block / floor / unit no.) <span class="req">*</span></label><input type="text" id="unit" placeholder="e.g. Block A-3-2 / No. 12" required></div>
-          <div><label>Property type</label>
-            <select id="jenis_unit">
-              <option value="">— select (if any) —</option>
-              <option>Flat</option><option>Apartment</option><option>Condominium</option>
-              <option>Terrace House</option><option>Semi-Detached House</option><option>Bungalow</option>
-              <option>Shop</option><option>Office</option><option>Factory</option><option>Other</option>
-            </select></div>
-        </div>
-        <label>Project / area name <span class="req">*</span></label>
-        <input type="text" id="kawasan" placeholder="e.g. Pangsapuri Mewah, Bandar Baru Bangi" required>
-        <label>Full address / location guide</label>
-        <input type="text" id="alamat" placeholder="e.g. Jalan 3/9, Seksyen 9, 43650 Bangi, Selangor">
-      </div>
-
-      <!-- 3: owner -->
-      <div class="card">
-        <span class="sec-tag">STEP 3</span>
-        <h2>👤 Property Owner</h2>
-        <div class="sub">Name & contact of the registered owner. If you are the owner yourself, you may leave this blank — the Step 1 details will be used.</div>
-        <div class="f2">
-          <div><label>Owner's name</label><input type="text" id="n_pemilik" placeholder="Owner's full name"></div>
-          <div><label>Owner's phone number</label><input type="tel" id="t_pemilik" placeholder="012-3456789"></div>
-        </div>
-        <label>Owner's email</label>
-        <input type="email" id="e_pemilik" placeholder="e.g. owner@gmail.com">
-        <div class="auto-note" id="autoPemilik" style="display:none">ℹ️ You are registering as the <b>Owner</b> — the owner fields above may be left blank; your name / WhatsApp / email will be recorded as the owner.</div>
-      </div>
-
-      <!-- 4: tenant -->
-      <div class="card">
-        <span class="sec-tag">STEP 4</span>
-        <h2>🏠 Current Tenant</h2>
-        <div class="sub">If the property is currently rented out — the current tenant's details (optional).</div>
-        <div class="f2">
-          <div><label>Tenant's name</label><input type="text" id="n_penyewa" placeholder="Tenant's full name"></div>
-          <div><label>Tenant's phone number</label><input type="tel" id="t_penyewa" placeholder="012-3456789"></div>
-        </div>
-        <div class="f2">
-          <div><label>Tenant's email</label><input type="email" id="e_penyewa" placeholder="e.g. tenant@gmail.com"></div>
-          <div><label>Tenancy start date</label><input type="date" id="t_mula"></div>
-        </div>
-        <label>Monthly rent (RM)</label>
-        <input type="number" id="sewa" min="0" step="0.01" placeholder="e.g. 1200">
-        <div class="hint">Optional — for management records only.</div>
-      </div>
-
-      <!-- 5: other parties + documents -->
-      <div class="card">
-        <span class="sec-tag">STEP 5</span>
-        <h2>🤝 Other Parties & Documents</h2>
-        <label>Other related parties / references</label>
-        <textarea id="pihak_lain" placeholder="e.g. the agent who handled it before, building manager, the owner's heirs/relatives, notices received — include names & phone numbers if available"></textarea>
-        <label>Supporting documents (optional)</label>
-        <div class="foto-box"><input type="file" id="files" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" multiple style="width:auto">
-          <div class="hint">Max 5 files · each file max 10MB — authorisation letter, existing tenancy agreement, copy of the title, utility bills, etc.</div>
-        </div>
-        <div class="file-list" id="fileList"></div>
-        <label>Additional notes</label>
-        <textarea id="nota" placeholder="Any other information that helps Mr Tanah manage this property"></textarea>
-      </div>
-
-      <!-- 6: confirmation -->
-      <div class="card">
-        <span class="sec-tag">STEP 6</span>
-        <h2>✅ Confirmation</h2>
-        <div class="chk"><input type="checkbox" id="consent" required>
-          <span>I give Mr Tanah (ZMJ Solutions) permission to store this information for property management & maintenance purposes, and I understand that personal information will not be shared with other parties without consent. (PDPA)</span></div>
-        <input type="text" name="website" id="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off">
-        <button type="submit" class="btn" id="sb">🚀 Submit Property Registration</button>
-        <div class="ok" id="ok"></div>
-        <div class="err" id="err"></div>
-        <div class="wa-fallback" id="wafb">Submission failed. <a id="wafbLink" href="#" target="_blank">Click here to send it directly via WhatsApp</a></div>
-      </div>
-    </form>
-    <p style="font-size:11px;color:#6a7a71;text-align:center">After submitting, you will receive a Reference No. & an email copy. Mr Tanah will verify the details before the property is managed. ⏱️ Response within 1 business day.</p>
-  </div>
-
-<script>
-var WEBHOOK = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
-(function(){
-  function $(id){ return document.getElementById(id); }
-  var ok=$('ok'), err=$('err'), wafb=$('wafb');
-
-  function showOk(t){ ok.style.display='block'; ok.innerHTML=t; err.style.display='none'; }
-  function showErr(t){ err.style.display='block'; err.textContent=t; ok.style.display='none'; }
-  function hideMsg(){ ok.style.display='none'; err.style.display='none'; }
-
-  // show the auto-owner note when the role = Owner
-  $('peranan').addEventListener('change', function(){
-    $('autoPemilik').style.display = this.value === 'Owner' ? 'block' : 'none';
-  });
-
-  $('files').addEventListener('change', function(){
-    var out=[]; for(var i=0;i<this.files.length;i++){ var f=this.files[i]; out.push('📄 '+f.name+' ('+(f.size/1048576).toFixed(2)+' MB)'); }
-    $('fileList').textContent = out.join('\n');
-  });
-
-  function fileToB64(file){
-    return new Promise(function(res,rej){
-      var r=new FileReader();
-      r.onload=function(){ res({name:file.name, mime:file.type||'application/octet-stream', b64:r.result.split(',')[1]}); };
-      r.onerror=rej; r.readAsDataURL(file);
-    });
-  }
-
-  $('f').addEventListener('submit', async function(ev){
-    ev.preventDefault(); hideMsg();
-    var peranan=$('peranan').value, nama=$('nama').value.trim(), wa=$('wa').value.trim(), emel=$('emel').value.trim();
-    var unit=$('unit').value.trim(), kawasan=$('kawasan').value.trim();
-    if(!peranan){ showErr('Please select your role in Step 1.'); return; }
-    if(nama.length<2){ showErr('Please enter your name in Step 1.'); return; }
-    if(!/^0?1\d{8,9}$/.test(wa.replace(/[\s-]/g,''))){ showErr('Invalid WhatsApp number.'); return; }
-    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emel)){ showErr('Email is required — the registration copy is sent to your email.'); return; }
-    if(!unit || unit.length<2 || !kawasan){ showErr('Please fill in the Property and the Project/area name in Step 2.'); return; }
-    if(!$('consent').checked){ showErr('Please give PDPA consent before submitting.'); return; }
-    if($('website').value) return; // honeypot
-
-    // owner: auto from the registrant if the role = Owner and the field is blank
-    var nPem=$('n_pemilik').value.trim(), tPem=$('t_pemilik').value.trim(), ePem=$('e_pemilik').value.trim();
-    if(peranan==='Owner' && !nPem){ nPem=nama; if(!tPem) tPem=wa; if(!ePem) ePem=emel; }
-
-    var files=[];
-    if($('files').files.length){
-      if($('files').files.length>5){ showErr('Maximum 5 document files.'); return; }
-      for(var i=0;i<$('files').files.length;i++){
-        if($('files').files[i].size>10*1024*1024){ showErr('Fail "'+$('files').files[i].name+'" exceeds 10MB.'); return; }
-        files.push(await fileToB64($('files').files[i]));
-      }
-    }
-
-    var payload={
-      form:'daftarunit', consent:true, website:$('website').value,
-      peranan:peranan, nama:nama, wa:wa, emel:emel,
-      unit:unit, kawasan:kawasan, alamat:$('alamat').value.trim(), jenis_unit:$('jenis_unit').value,
-      nama_pemilik:nPem, tel_pemilik:tPem, emel_pemilik:ePem,
-      nama_penyewa:$('n_penyewa').value.trim(), tel_penyewa:$('t_penyewa').value.trim(),
-      emel_penyewa:$('e_penyewa').value.trim(), t_mula:$('t_mula').value, sewa:$('sewa').value,
-      pihak_lain:$('pihak_lain').value.trim(), nota:$('nota').value.trim(), files:files
-    };
-
-    var sb=$('sb'); sb.disabled=true; sb.textContent='⏳ Submitting...';
-    try{
-      var resp=await fetch(WEBHOOK,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)});
-      var data=await resp.json();
-      if(!data.ok) throw new Error(data.error||'The server rejected the request');
-      showOk('✅ Property registration RECEIVED.<br><span class="ref">'+data.ref+'</span>'+
-        '<br>📩 Email copy sent — <b>reply to that email</b> for extra documents/information.'+
-        '<br>Mr Tanah will verify the details before the property is managed.');
-      $('f').reset(); $('fileList').textContent=''; $('autoPemilik').style.display='none';
-    }catch(ex){
-      showErr('⚠️ Error: '+ex.message+'\nPlease try again, or send it via WhatsApp 016-3119076.');
-      wafb.style.display='block';
-    }
-    sb.disabled=false; sb.textContent='🚀 Submit Property Registration';
-  });
-
-  // demo preview: ?demo=1
-  try{
-    if(new URLSearchParams(location.search).get('demo')==='1'){
-      $('peranan').value='Tenant'; $('nama').value='Ahmad bin Ali (example)'; $('wa').value='012-3456789'; $('emel').value='ahmad@gmail.com';
-      $('unit').value='Blok A-3-2'; $('jenis_unit').value='Apartment'; $('kawasan').value='Pangsapuri Mewah, Bandar Baru Bangi (example)';
-      $('alamat').value='Jalan 3/9, Seksyen 9, 43650 Bangi (example)';
-      $('n_pemilik').value='Rosli bin Hassan (example)'; $('t_pemilik').value='019-8765432'; $('e_pemilik').value='rosli@gmail.com';
-      $('n_penyewa').value='Ahmad bin Ali'; $('t_penyewa').value='012-3456789'; $('e_penyewa').value='ahmad@gmail.com';
-      $('t_mula').value='2026-03-01'; $('sewa').value='1200';
-      $('pihak_lain').value='Previous agent: Puan Salina (012-1112223) (example)';
-      $('nota').value='Sample entry for review only.';
-    }
-  }catch(e){}
-})();
-</script>
-<script src="../assets/fasa1.js?v=1"></script>
-<script src="../assets/ali-config.js?v=1"></script>
-<script src="../assets/ali-chat.js?v=2"></script>
 </body>
 </html>

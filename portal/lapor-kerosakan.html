@@ -3,218 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Property Damage Report — Zentra Portal</title>
+<meta name="robots" content="noindex,nofollow">
+<title>Property Damage Report — Moved to Zentra Property Group</title>
+<link rel="canonical" href="https://zentrapropertygroup.com/">
+<meta http-equiv="refresh" content="0; url=https://zentrapropertygroup.com/">
+<script>location.replace("https://zentrapropertygroup.com/");</script>
 <style>
-  :root { --mt:#123a7a; --mt-tua:#0a1f44; --oren:#e8862e; }
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:#f2f6f4; color:#1d2b24; line-height:1.5; }
-  .topbar { background:linear-gradient(135deg,#0a5c3c 0%,#123a7a 60%,#14905c 100%); color:#fff; padding:16px 16px 18px; }
-  .topbar h1 { font-size:19px; margin-bottom:2px; }
-  .topbar p { font-size:12.5px; opacity:.92; }
-  .wrap { max-width:560px; margin:0 auto; padding:16px 14px 40px; }
-  .card { background:#fff; border-radius:14px; padding:18px 16px; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:14px; }
-  .card h2 { font-size:15px; color:var(--mt-tua); margin-bottom:12px; }
-  label { display:block; font-size:13px; font-weight:600; margin:12px 0 4px; }
-  input[type=text],input[type=tel],input[type=email],textarea,select { width:100%; padding:11px 12px; border:1.5px solid #cfdcd4; border-radius:10px; font-size:15px; background:#fbfdfc; }
-  input:focus,textarea:focus,select:focus { outline:none; border-color:var(--mt); }
-  textarea { resize:vertical; min-height:80px; }
-  .hint { font-size:11.5px; color:#5a6b61; margin-top:3px; }
-  .emelnote { background:#eef6f1; border:1.5px dashed var(--mt); border-radius:10px; padding:11px 12px; font-size:12.8px; color:#155a35; margin:4px 0 6px; }
-  .emelnote b { color:var(--mt-tua); }
-  .item { border:1px solid #e0eae3; border-radius:12px; padding:13px 13px 9px; margin-bottom:11px; background:#f8fbf9; position:relative; }
-  .item h3 { font-size:13px; color:var(--mt-tua); margin-bottom:2px; }
-  .btn-del { position:absolute; top:9px; right:9px; background:#fdeaea; color:#a12; border:1px solid #f2c9c9; border-radius:8px; font-size:12px; padding:4px 9px; cursor:pointer; }
-  .foto-box { border:1.5px dashed #b9c9bf; border-radius:10px; padding:10px; text-align:center; font-size:12.5px; color:#5a6b61; margin-top:6px; background:#fff; }
-  .add-btn { width:100%; padding:12px; background:#e9f4ee; color:var(--mt-tua); border:1.5px dashed var(--mt); border-radius:12px; font-size:14.5px; font-weight:700; cursor:pointer; }
-  .chk { display:flex; gap:9px; align-items:flex-start; font-size:12.5px; margin-top:12px; font-weight:400; }
-  .chk input { margin-top:2px; width:17px; height:17px; accent-color:var(--mt); }
-  .btn { width:100%; padding:14px; background:var(--oren); color:#fff; border:0; border-radius:12px; font-size:16px; font-weight:700; cursor:pointer; margin-top:16px; }
-  .btn:disabled { opacity:.6; cursor:not-allowed; }
-  .mailbtn { display:block; text-align:center; background:var(--mt); color:#fff; text-decoration:none; border-radius:12px; padding:13px; font-size:15px; font-weight:700; margin-top:12px; }
-  .ok { background:#e5f4ec; border:1px solid #bfe3cf; color:#0e5a33; border-radius:10px; padding:13px; font-size:13.5px; margin-top:12px; display:none; }
-  .ok .ref { font-size:17px; font-weight:800; color:var(--mt-tua); }
-  .err { background:#fdeaea; border:1px solid #f2c2c2; color:#8c1f1f; border-radius:10px; padding:12px; font-size:13px; margin-top:12px; display:none; }
-  .wa-fallback { display:none; font-size:13px; margin-top:14px; text-align:center; }
-  .wa-fallback a { color:var(--mt-tua); font-weight:700; }
-  .hide { display:none !important; }
+  :root { --navy:#071525; --gold:#C8A96A; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; line-height:1.55;
+         background:linear-gradient(135deg,#071525 0%,#0F2A45 100%); color:#E8EEF6; padding:24px; }
+  .card { max-width:520px; width:100%; background:rgba(255,255,255,.06); border:1px solid rgba(200,169,106,.35);
+          border-radius:16px; padding:30px 26px; text-align:center; }
+  .mark { font-size:34px; margin-bottom:10px; }
+  h1 { margin:0 0 8px; font-size:21px; color:#fff; font-weight:700; }
+  p { margin:0 0 18px; font-size:14.5px; color:#B9C7D8; }
+  a.btn { display:inline-block; background:var(--gold); color:#071525; text-decoration:none;
+          font-weight:700; font-size:15px; padding:13px 26px; border-radius:11px; }
+  .small { margin-top:16px; font-size:12.5px; color:#8FA3B8; }
+  .small a { color:#C8A96A; }
 </style>
 </head>
 <body>
-  <div class="topbar">
-    <h1>🏠 Property Damage Report</h1>
-    <p>Mr Tanah — Maintenance Management · ZMJ Solutions</p>
+  <div class="card">
+    <div class="mark">&#10022;</div>
+    <h1>This form has moved</h1>
+    <p>&ldquo;Aduan Kerosakan&rdquo; is now handled by the Zentra Property Group system. Redirecting&hellip;</p>
+    <a class="btn" href="https://zentrapropertygroup.com/">Continue to Zentra Property Group &rarr;</a>
+    <div class="small">Not redirected automatically? <a href="https://zentrapropertygroup.com/">Tap here</a>.</div>
   </div>
-  <div class="wrap">
-    <div class="card">
-      <h2>📋 Reporter Details</h2>
-      <form id="f">
-        <label>Your name (tenant / agent / owner)</label>
-        <input type="text" id="nama" autocomplete="name" placeholder="e.g. Ahmad bin Ali" required>
-        <label>Your WhatsApp number</label>
-        <input type="tel" id="wa" autocomplete="tel" placeholder="e.g. 012-3456789" required>
-        <label>Your email</label>
-        <input type="email" id="emel" autocomplete="email" placeholder="e.g. ahmad@gmail.com" required>
-        <label>Property / Home address</label>
-        <input type="text" id="unit" placeholder="e.g. Block A-3-2, Pangsapuri Mewah, Bandar Baru Bangi" required>
-      </form>
-    </div>
-
-    <div class="card">
-      <h2>🧰 Damage <span style="font-weight:400;font-size:12px;color:#5a6b61">(more than one allowed)</span></h2>
-      <div class="emelnote">📷 Photos can be <b>uploaded directly below</b> — OR sent later by email: after you submit the form, we email you a <b>copy of the report</b> — <b>REPLY to that email</b> to add photos/details (the Reference No. is matched automatically).</div>
-      <div id="items"></div>
-      <button type="button" class="add-btn" id="addItem">➕ Add another damage item</button>
-
-      <form id="f2">
-        <div class="chk"><input type="checkbox" id="consent" required>
-          <span>I give Mr Tanah (ZMJ Solutions) permission to store this information for unit maintenance purposes, and I understand that my personal data will not be shared with other parties without consent. (PDPA)</span></div>
-        <!-- honeypot anti-spam (do not fill in) -->
-        <input type="text" name="website" id="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off">
-        <button type="submit" class="btn" id="sb">🚀 Submit Report</button>
-        <div class="ok" id="ok"></div>
-        <div class="err" id="err"></div>
-        <div class="wa-fallback" id="wafb">Submission failed. <a id="wafbLink" href="#" target="_blank">Click here to submit directly via WhatsApp</a></div>
-      </form>
-    </div>
-    <p style="font-size:11px;color:#6a7a71;text-align:center">After submitting, you will receive a Reference No. Use that Reference No. to send extra photos by email or to ask for a status update. ⏱️ Response within 1 working day.</p>
-  </div>
-
-<script>
-var WEBHOOK = "https://script.google.com/macros/s/AKfycbwafaViIuCpc-Q0XnUpSHgkKVTFcyfPProf0GvSi9C-L22hUsZ_NA-03wXjd2F-GRIS/exec";
-var JENIS = ["Plumbing","Electrical","Leak / Roof","Paint / Finishing","Appliances",
-  "Locks / Doors / Windows","Glass","Pests / Insects","Air Conditioning","Other"];
-(function(){
-  var itemsBox=document.getElementById('items'), f2=document.getElementById('f2'), sb=document.getElementById('sb');
-  var ok=document.getElementById('ok'), err=document.getElementById('err'), wafb=document.getElementById('wafb');
-  var MAX_ITEMS=5;
-  function esc(s){return s.replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
-
-  function blockHTML(n){
-    var opts=JENIS.map(function(j){return '<option>'+esc(j)+'</option>';}).join('');
-    return '<div class="item" data-i="'+n+'">'+
-      '<h3>Damage '+(n+1)+'</h3>'+
-      (n>0?'<button type="button" class="btn-del" data-del="'+n+'">✕ Remove</button>':'')+
-      '<label>Type of damage</label>'+
-      '<select data-k="jenis" required><option value="">— Select a type —</option>'+opts+'</select>'+
-      '<div class="lainbox hide"><label>Describe the other type of damage</label>'+
-      '<input type="text" data-k="lain" placeholder="e.g. leaking pond, peeling ceiling"></div>'+
-      '<label>Description of this damage</label>'+
-      '<textarea data-k="ket" placeholder="What is damaged and since when (e.g. the pipe under the sink has been leaking since yesterday)"></textarea>'+
-      '<label>Photos of this damage (optional — max 2)</label>'+
-      '<div class="foto-box"><input type="file" data-k="foto" accept="image/*" multiple style="width:auto">'+
-      '<div class="hint">Each photo &lt; ~1.5MB. Larger or more photos — send them later by replying to the report copy email (Reference No. matched automatically).</div></div>'+
-      '</div>';
-  }
-  function count(){ return itemsBox.querySelectorAll('.item').length; }
-  function addBlock(){
-    if(count()>=MAX_ITEMS){ showErr('Maximum '+MAX_ITEMS+' damage items per report.'); return; }
-    var div=document.createElement('div'); div.innerHTML=blockHTML(count());
-    itemsBox.appendChild(div.firstChild);
-  }
-  itemsBox.addEventListener('change',function(ev){
-    if(ev.target.dataset.k==='jenis'){
-      var box=ev.target.closest('.item').querySelector('.lainbox');
-      if(box) box.classList.toggle('hide', ev.target.value!=='Other');
-    }
-  });
-  itemsBox.addEventListener('click',function(ev){
-    if(ev.target.dataset.del){ ev.target.closest('.item').remove(); renumber(); }
-  });
-  function renumber(){
-    var its=itemsBox.querySelectorAll('.item');
-    its.forEach(function(el,i){ el.querySelector('h3').textContent='Damage '+(i+1);
-      var d=el.querySelector('.btn-del'); if(d){ d.dataset.del=i; }
-      el.dataset.i=i; });
-  }
-  document.getElementById('addItem').addEventListener('click',addBlock);
-  addBlock(); // first item
-  document.getElementById('f').addEventListener('submit',function(ev){ ev.preventDefault(); });
-
-  function readFoto(input, cb){
-    var files=input.files;
-    if(!files.length) return cb([]);
-    var out=[], wait=files.length, bad=false;
-    Array.prototype.slice.call(files,0,2).forEach(function(f){
-      if(f.size>1572864){ bad=true; return done(); }
-      var rd=new FileReader();
-      rd.onload=function(){ out.push({name:f.name,mime:f.type||'image/jpeg',b64:String(rd.result).split(',')[1]}); done(); };
-      rd.onerror=function(){ bad=true; done(); };
-      rd.readAsDataURL(f);
-    });
-    function done(){ if(--wait<=0) cb(bad?[]:out); }
-    if(files.length>2) bad=true;
-    if(!wait) cb([]);
-  }
-
-  f2.addEventListener('submit',function(ev){
-    ev.preventDefault();
-    if(document.getElementById('website').value){ return; }
-    if(!document.getElementById('consent').checked){ showErr('Please give PDPA consent first.'); return; }
-    if(!WEBHOOK){ showErr('The form is not connected to the system yet. Please use WhatsApp for now.'); waFallback(); return; }
-    var its=itemsBox.querySelectorAll('.item');
-    var items=[];
-    for(var i=0;i<its.length;i++){
-      var el=its[i];
-      items.push({jenis:el.querySelector('[data-k=jenis]').value,
-                  lain:el.querySelector('[data-k=lain]').value.trim(),
-                  ket:el.querySelector('[data-k=ket]').value.trim(),
-                  fotoEl:el.querySelector('[data-k=foto]')});
-    }
-    var filled=items.filter(function(x){ return x.jenis!=='' || x.ket!=='' || x.fotoEl.files.length; });
-    if(!filled.length){ showErr('Please select a damage type and fill in the description.'); return; }
-    for(var j=0;j<items.length;j++){
-      var it=items[j];
-      if(!it.jenis && !it.ket && !it.fotoEl.files.length) continue;
-      if(!it.jenis){ showErr('Damage '+(j+1)+': select a damage type.'); return; }
-      if(it.jenis==='Other' && it.lain.length<2){ showErr('Damage '+(j+1)+': describe the other type of damage.'); return; }
-      if(it.ket.length<5 && !it.fotoEl.files.length){ showErr('Damage '+(j+1)+': add a description or attach a photo.'); return; }
-    }
-    sb.disabled=true; sb.textContent='⏳ Submitting…'; hideMsg();
-    var todo=0, ready=0;
-    items.forEach(function(it){ if(it.jenis||it.ket||it.fotoEl.files.length) todo++; });
-    if(!todo){ sb.disabled=false; return; }
-    items.forEach(function(it){
-      if(!(it.jenis||it.ket||it.fotoEl.files.length)){ it.fotos=[]; return; }
-      readFoto(it.fotoEl,function(fs){ it.fotos=fs; if(++ready>=todo) submit(items); });
-    });
-  });
-  function submit(items){
-    var payload={nama:val('nama'),wa:val('wa'),emel:val('emel'),unit:val('unit'),
-                 items:items,consent:true,website:document.getElementById('website').value};
-    fetch(WEBHOOK,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},
-                   body:JSON.stringify(payload)})
-      .then(function(r){return r.json();})
-      .then(function(j){
-        sb.disabled=false; sb.textContent='🚀 Submit Report';
-        if(j.ok&&!j.spam){
-          ok.innerHTML='✅ <b>Report received!</b><br><br>Your Reference No.:<br><span class="ref">'+esc(j.ref)+'</span>'+
-            '<br><br>📩 <b>Report copy sent to:</b> '+esc(val('emel'))+
-            '<br><span class="hint">To add <b>photos / extra details</b> — <b>REPLY to that copy email</b> (the Reference No. is matched automatically).<br>Didn&rsquo;t get the email? Check your Spam folder, or WhatsApp us with the Reference No. + photos.</span>';
-          ok.style.display='block'; document.getElementById('f').classList.add('hide');
-          itemsBox.classList.add('hide'); document.getElementById('addItem').classList.add('hide');
-          document.querySelector('.topbar').classList.add('hide'); wafb.style.display='none';
-        } else if(j.ok&&j.spam){ ok.innerHTML='✅ Received.'; ok.style.display='block'; }
-        else { showErr('Error: '+esc(j.error||'unknown')); waFallback(); }
-      })
-      .catch(function(){ sb.disabled=false; sb.textContent='🚀 Submit Report'; showErr('Network error. Please try again, or use WhatsApp.'); waFallback(); });
-  }
-  function val(id){ var el=document.getElementById(id); return el? el.value.trim():''; }
-  function waFallback(){
-    var txt='Property Damage Report%0A%0AName: '+encodeURIComponent(val('nama'))+
-      '%0AProperty: '+encodeURIComponent(val('unit'))+'%0A%0A';
-    itemsBox.querySelectorAll('.item').forEach(function(el,i){
-      txt+=(i+1)+') '+encodeURIComponent(el.querySelector('[data-k=jenis]').value+' — '+
-            el.querySelector('[data-k=ket]').value)+'%0A';
-    });
-    wafb.querySelector('a').href='https://wa.me/60163119076?text='+txt;
-    wafb.style.display='block';
-  }
-  function showErr(m){ err.innerHTML=m; err.style.display='block'; }
-  function hideMsg(){ ok.style.display='none'; err.style.display='none'; }
-})();
-</script>
-<script src="../assets/fasa1.js?v=1"></script>
-<script src="../assets/ali-config.js?v=1"></script>
-<script src="../assets/ali-chat.js?v=2"></script>
 </body>
 </html>
