@@ -3,7 +3,8 @@
 window.SITE = {
   "name": "Mr Tanah",
   "phone": "016-3119076",
-  "whatsapp": "60163119076"
+  "whatsapp": "60163119076",
+  "domain": "https://mrtanah.com/"
 };
 
 window.LISTINGS = [

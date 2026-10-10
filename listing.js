@@ -172,7 +172,7 @@ function chipList(items) {
 function renderDetail(l) {
   document.title = l.title + " — " + (SITE.name || "Zahir MJ Property");
   const waMsg = encodeURIComponent(`Assalamualaikum dan salam sejahtera, saya berminat dengan listing ${l.tracking} - ${l.title} (${waPrice(l)}). Boleh kongsi maklumat lanjut?`);
-  const shareMsg = encodeURIComponent(`${l.title} - ${waPrice(l)} — ${SITE.domain || ""}listing/${encodeURIComponent(l.tracking)}.html`);
+  const shareMsg = encodeURIComponent(`${l.title} - ${waPrice(l)} — ${(SITE.domain || "").replace(/\/?$/, "/")}listing/${encodeURIComponent(l.tracking)}.html`);
   const badges = [];
   dealsOf(l).forEach(d => badges.push(`<span class="badge badge-${String(d).toLowerCase()}">${d}</span>`));
   if (l.status === "BARU") badges.push('<span class="badge badge-baru">BARU</span>');
@@ -308,7 +308,7 @@ if (root) {
     // canonical ke halaman static (SEO)
     const canon = document.createElement("link");
     canon.rel = "canonical";
-    canon.href = (SITE.domain || "") + "listing/" + encodeURIComponent(l.tracking) + ".html";
+    canon.href = (SITE.domain || "").replace(/\/?$/, "/") + "listing/" + encodeURIComponent(l.tracking) + ".html";
     document.head.appendChild(canon);
     renderDetail(l);
     bindGallery();
