@@ -8,3 +8,7 @@ pemilik-*.json
 # Sandaran tempatan (bukan kandungan laman)
 .arkib/
 
+
+# Sandaran manual (*.bak) — jangan jejak
+*.bak
+*.bak-*
