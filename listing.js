@@ -6,6 +6,20 @@ const WA = SITE.whatsapp || "60" + PHONE.replace(/^0/, "");
 
 function fmt(n) { return "RM" + Number(n).toLocaleString("en-MY"); }
 
+// Google Maps iframe src for a listing.
+// Prefers an exact coordinate pair carried in the listing's own map_url (Notion `Peta`)
+// over the `location` area label — an agent-supplied pin is the most precise thing we have.
+// Deliberately coordinate-only: map_url place names are frequently LESS specific than
+// `location` (state qualifier dropped), so preferring them wholesale would degrade pins.
+function mapEmbed(l) {
+  const m = /(-?\d{1,2}\.\d{3,})\s*,\s*(-?\d{1,3}\.\d{3,})/.exec(l.map_url || "");
+  const q = m ? m[1] + "," + m[2] : (l.location || "");
+  // Escape !'()* too — encodeURIComponent leaves them literal, Python's quote(safe="")
+  // does not. Keeps the client render byte-identical to the static one.
+  const enc = encodeURIComponent(q).replace(/[!'()*]/g, c => "%" + c.charCodeAt(0).toString(16).toUpperCase());
+  return "https://www.google.com/maps?q=" + enc + "&output=embed";
+}
+
 const TYPE_ICON = {
   "Rumah Teres": "🏠", "Rumah Semi-D": "🏡", "Rumah": "🏠",
   "Tanah": "🌳", "Komersial": "🏢", "Bangunan Komersial": "🏢",
@@ -178,7 +192,7 @@ function renderDetail(l) {
   if (l.status === "BARU") badges.push('<span class="badge badge-baru">BARU</span>');
   if (l.status === "PROMOSI") badges.push('<span class="badge badge-promo">⚡ PROMOSI</span>');
   const oldPrice = l.price_old ? `<p class="price-old-line">Harga asal: ${fmt(l.price_old)}</p>` : "";
-  const mapSrc = "https://www.google.com/maps?q=" + encodeURIComponent(l.location) + "&output=embed";
+  const mapSrc = mapEmbed(l);
 
   // Unit serupa: sama jenis dulu, kemudian sama negeri
   const related = DATA.filter(x => x.tracking !== l.tracking && (x.type === l.type || x.state === l.state)).slice(0, 3);

@@ -164,7 +164,7 @@ window.LISTINGS = [
       "KLCC (45km)",
       "Lebuhraya Karak (32km)"
     ],
-    "map_url": "https://www.google.com/maps?q=Janda+Baik,+Bentong,+Pahang",
+    "map_url": "https://www.google.com/maps?q=3.318444,101.873417",
     "project": "",
     "project_name": "",
     "unit": "",
