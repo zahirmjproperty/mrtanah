@@ -290,21 +290,25 @@ if (gridEl) {
   const setDealTab = () => dealBtns.forEach(b => b.classList.toggle("active", b.dataset.deal === deal));
   setDealTab();
   document.getElementById("searchInput").value = q;
-  document.getElementById("minPrice").value = min;
-  document.getElementById("maxPrice").value = max;
-  document.getElementById("sortSelect").value = sort;
+  const minI0 = document.getElementById("minPrice"), maxI0 = document.getElementById("maxPrice");
+  if (minI0) minI0.value = min;
+  if (maxI0) maxI0.value = max;
+  const sortI0 = document.getElementById("sortSelect");
+  if (sortI0) sortI0.value = sort;
 
   const sync = () => {
     q = document.getElementById("searchInput").value.trim();
     state = stSel.value; type = tySel.value;
-    min = document.getElementById("minPrice").value;
-    max = document.getElementById("maxPrice").value;
-    sort = document.getElementById("sortSelect").value;
+    const mn = document.getElementById("minPrice"), mx = document.getElementById("maxPrice");
+    if (mn) min = mn.value;
+    if (mx) max = mx.value;
+    const srt = document.getElementById("sortSelect");
+    if (srt) sort = srt.value;
     apply();
   };
-  ["searchInput", "stateFilter", "typeFilter", "minPrice", "maxPrice", "sortSelect"].forEach(id =>
-    document.getElementById(id).addEventListener(id === "searchInput" ? "input" : "change", sync)
-  );
+  const bind = (id, ev) => { const n = document.getElementById(id); if (n) n.addEventListener(ev, sync); };
+  bind("searchInput", "input"); bind("stateFilter", "change"); bind("typeFilter", "change");
+  bind("minPrice", "change"); bind("maxPrice", "change"); bind("sortSelect", "change");
   dealBtns.forEach(b => b.addEventListener("click", () => {
     deal = b.dataset.deal || "";
     setDealTab();
@@ -313,9 +317,9 @@ if (gridEl) {
   document.getElementById("clearBtn").addEventListener("click", () => {
     document.getElementById("searchInput").value = "";
     stSel.value = ""; tySel.value = "";
-    document.getElementById("minPrice").value = "";
-    document.getElementById("maxPrice").value = "";
-    document.getElementById("sortSelect").value = "newest";
+    const mn = document.getElementById("minPrice"), mx = document.getElementById("maxPrice");
+    if (mn) mn.value = ""; if (mx) mx.value = "";
+    const srt = document.getElementById("sortSelect"); if (srt) srt.value = "newest";
     state = type = q = min = max = ""; sort = "newest";
     deal = ""; setDealTab();
     apply();
@@ -359,17 +363,10 @@ if (menuPanel) menuPanel.addEventListener("click", (e) => { if (e.target === men
   const chipSet = document.getElementById("priceChips");
   const minI = document.getElementById("minPrice"), maxI = document.getElementById("maxPrice");
   const PRESET = [
-    { lbl: "Bawah RM500k", min: "", max: "499999" },
-    { lbl: "RM500k–1j", min: "500000", max: "999999" },
-    { lbl: "RM1j–2j", min: "1000000", max: "1999999" },
-    { lbl: "RM2j–5j", min: "2000000", max: "4999999" },
-    { lbl: "Atas RM5j", min: "5000000", max: "" }
-  ];
-  const PRESET_SEWA = [
-    { lbl: "Bawah RM2k", min: "", max: "1999" },
-    { lbl: "RM2k–5k", min: "2000", max: "4999" },
-    { lbl: "RM5k–10k", min: "5000", max: "9999" },
-    { lbl: "Atas RM10k", min: "10000", max: "" }
+    { lbl: "Bawah RM500k", min: "", max: "500000" },
+    { lbl: "RM500k–1j", min: "500000", max: "1000000" },
+    { lbl: "RM1j–2j", min: "1000000", max: "2000000" },
+    { lbl: "Atas RM2j", min: "2000000", max: "" }
   ];
   const tandaChip = () => { if (!chipSet) return; [...chipSet.children].forEach(c => c.classList.toggle("active", c.dataset.min === min && c.dataset.max === max)); };
   if (chipSet && minI && maxI) {
@@ -382,33 +379,8 @@ if (menuPanel) menuPanel.addEventListener("click", (e) => { if (e.target === men
     });
     tandaChip();
   }
-  // Penapis julat harga di borang hero (select) — bucket ikut tab urus niaga
-  const priceSel = document.getElementById("priceFilter");
-  const presetBagi = () => (deal === "SEWA" ? PRESET_SEWA : PRESET);
-  const isiPriceSel = () => {
-    if (!priceSel) return;
-    const cur = min + "|" + max;
-    priceSel.innerHTML = '<option value="">Julat Harga</option>';
-    presetBagi().forEach(p => {
-      const o = document.createElement("option");
-      o.value = p.min + "|" + p.max; o.textContent = p.lbl;
-      priceSel.appendChild(o);
-    });
-    priceSel.value = presetBagi().some(p => p.min + "|" + p.max === cur) ? cur : "";
-  };
-  if (priceSel && minI && maxI) {
-    isiPriceSel();
-    priceSel.addEventListener("change", () => {
-      const [a, b] = (priceSel.value || "|").split("|");
-      minI.value = a; maxI.value = b; min = a; max = b;
-      tandaChip(); apply();
-    });
-    [...document.querySelectorAll(".deal-tab")].forEach(b => b.addEventListener("click", () => {
-      min = max = ""; minI.value = ""; maxI.value = ""; isiPriceSel();
-    }));
-  }
   const clr = document.getElementById("clearBtn");
-  if (clr) clr.addEventListener("click", () => { if (bedSel) bedSel.value = ""; if (tenSel) tenSel.value = ""; bed = ""; ten = ""; if (priceSel) priceSel.value = ""; tandaChip(); });
+  if (clr) clr.addEventListener("click", () => { if (bedSel) bedSel.value = ""; if (tenSel) tenSel.value = ""; bed = ""; ten = ""; tandaChip(); });
   if (minI) minI.addEventListener("input", tandaChip);
   if (maxI) maxI.addEventListener("input", tandaChip);
 })();

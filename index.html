@@ -232,7 +232,7 @@ h1,h2,h3,h4{font-family:var(--head);margin:0;line-height:1.15;letter-spacing:-.0
 }
 .deal-tab.active{background:linear-gradient(135deg,var(--gold-pale),var(--gold) 60%,var(--gold-dark));
   color:#0A1510;box-shadow:0 8px 24px rgba(74,124,63,.30);}
-.search-form{display:grid;grid-template-columns:1.7fr 1fr 1fr .65fr auto;gap:12px;align-items:end}
+.search-form{display:grid;grid-template-columns:1.7fr 1fr 1fr auto;gap:12px;align-items:end}
 .f{display:flex;flex-direction:column;gap:6px;position:relative}
 .f-ico{position:absolute;left:14px;bottom:15px;width:19px;height:19px;pointer-events:none;opacity:.75}
 .f-ico svg{width:19px;height:19px;stroke:var(--gold);fill:none;stroke-width:1.7}
@@ -624,11 +624,6 @@ body:has(.ali-panel.on) .wa-float{opacity:0;visibility:hidden;pointer-events:non
                       <span class="sr">Negeri</span>
                       <select id="stateFilter"><option value="">Semua Negeri</option></select>
                     </label>
-                    <label class="f f-bilik">
-                      <span class="f-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 18v-5h18v5"/><path d="M3 13V8a2 2 2 0 0 1 2-2h6v7"/><circle cx="7" cy="9" r="1.3"/></svg></span>
-                      <span class="sr">Julat Harga</span>
-                      <select id="priceFilter" aria-label="Julat harga"><option value="">Julat Harga</option></select>
-                    </label>
                     <button class="btn btn-gold btn-search" type="submit">
                       Cari Aset
                       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -849,7 +844,7 @@ body:has(.ali-panel.on) .wa-float{opacity:0;visibility:hidden;pointer-events:non
 
 <!-- ===== LISTING DATA + APP RENDER ===== -->
 <script src="data/listings.js?v=7905cd2e"></script>
-<script src="app.js?v=53"></script>
+<script src="app.js?v=54"></script>
 <script src="assets/fasa1.js?v=1"></script>
 <script src="assets/ali-config.js?v=1"></script>
 <script src="assets/ali-chat.js?v=2"></script>
