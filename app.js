@@ -184,7 +184,7 @@ let ten = params.get("tenure") || "";
 let sort = params.get("sort") || "newest";
 
 // --- Pagination "Tunjuk Lagi" ---
-const PER_PAGE = 12;          // bilangan kad setiap batch
+const PER_PAGE = 24;          // bilangan kad setiap batch
 let shownCount = PER_PAGE;    // bilangan kad yang sedang dipapar
 let lastSig = null;           // tandatangan penapis — reset bila penapis berubah
 
