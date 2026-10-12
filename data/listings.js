@@ -48,7 +48,7 @@ window.LISTINGS = [
       "KLCC (47km)",
       "Lebuhraya Karak (35km)"
     ],
-    "map_url": "https://www.google.com/maps?q=Janda+Baik,+Pahang",
+    "map_url": "https://www.google.com/maps?q=3.307778,101.882111",
     "project": "",
     "project_name": "",
     "unit": "",
@@ -229,7 +229,7 @@ window.LISTINGS = [
       "Hospital Kuala Lumpur — 3.9km",
       "Institut Jantung Negara — 5.2km"
     ],
-    "map_url": "https://www.google.com/maps?q=Sentul,+Kuala+Lumpur",
+    "map_url": "https://www.google.com/maps?q=3.178111,101.690972",
     "project": "",
     "project_name": "",
     "unit": "",
@@ -290,7 +290,7 @@ window.LISTINGS = [
       "Alamanda Shopping Mall Putrajaya — 9.6km",
       "UKM — 5.9km"
     ],
-    "map_url": "https://www.google.com/maps?q=Sg+Merab,+Selangor",
+    "map_url": "https://www.google.com/maps?q=2.924389,101.738250",
     "project": "",
     "project_name": "",
     "unit": "",
@@ -353,7 +353,7 @@ window.LISTINGS = [
       "Pantai Port Dickson — 4km",
       "Pantai Cermin — 7km"
     ],
-    "map_url": "https://www.google.com/maps?q=Teluk+Kemang,+Port+Dickson,+Negeri+Sembilan",
+    "map_url": "https://www.google.com/maps?q=2.470167,101.854139",
     "project": "",
     "project_name": "",
     "unit": "",
