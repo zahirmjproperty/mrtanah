@@ -28,10 +28,10 @@
    ============================================================ */
 :root{
   --mt-deep:#050F0D; --mt-forest:#0A1A14; --mt-surface:#0F241B; --mt-mid:#132D21;
-  --gold:#4A7C3F; --gold-pale:#6DAF5E; --gold-dark:#386330;
+  --gold:#5E9E4E; --gold-pale:#9BDB85; --gold-dark:#3F7A37;
   --neon:#39FF88; --neon-dim:rgba(57,255,136,.35);
   --brown:#6B4F38; --tan:#9C8060; --moss:#5B7F4A; --cream:#F0EBE0;
-  --silver:#AA9F90; --warm-white:#E8E2D4; --muted:#8A8275;
+  --silver:#CFC8BA; --warm-white:#F4F1E8; --muted:#B3AE9F;
   --line:rgba(74,124,63,.22); --line-cool:rgba(91,127,74,.20);
   --whatsapp:#25D366;
   --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
@@ -66,8 +66,8 @@ h1,h2,h3,h4{font-family:var(--head);margin:0;line-height:1.15;letter-spacing:-.0
   transition:transform .22s,box-shadow .22s,background .22s,color .22s,border-color .22s;
   position:relative;overflow:hidden;
 }
-.btn-gold{background:linear-gradient(135deg,var(--gold-pale),var(--gold) 55%,var(--gold-dark));color:#0A1510;box-shadow:0 10px 30px rgba(74,124,63,.28)}
-.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(74,124,63,.42)}
+.btn-gold{background:linear-gradient(135deg,#B4EC9E,#7CC46A 55%,#5AA94C);color:#06140B;box-shadow:0 10px 30px rgba(120,200,100,.35)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(120,200,100,.5)}
 .btn-gold::after{
   content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;
   background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);
@@ -159,14 +159,14 @@ h1,h2,h3,h4{font-family:var(--head);margin:0;line-height:1.15;letter-spacing:-.0
   position:relative;margin-top:-76px;padding-top:76px;
   min-height:clamp(720px,86vh,850px);
   background:
-    linear-gradient(90deg,rgba(5,15,13,.96) 0%,rgba(5,15,13,.78) 32%,rgba(5,15,13,.18) 68%,rgba(5,15,13,.08) 100%),
-    linear-gradient(0deg,#0A1510 0%,rgba(10,21,16,0) 32%),
+    linear-gradient(90deg,rgba(5,15,13,.84) 0%,rgba(5,15,13,.52) 34%,rgba(5,15,13,.06) 70%,rgba(5,15,13,0) 100%),
+    linear-gradient(0deg,rgba(10,21,16,.85) 0%,rgba(10,21,16,0) 28%),
     url("assets/images/mr-tanah-hero.webp") center/cover no-repeat;
   display:flex;flex-direction:column;justify-content:center;overflow:hidden;
 }
 .hero::after{
   content:"";position:absolute;inset:0;pointer-events:none;
-  background:radial-gradient(120% 80% at 18% 45%,rgba(5,15,13,.55),transparent 55%);
+  background:radial-gradient(120% 80% at 18% 45%,rgba(5,15,13,.25),transparent 55%);
 }
 .hero-inner{position:relative;z-index:2;padding:56px 0 30px}
 .eyebrow{
