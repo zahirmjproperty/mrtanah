@@ -1571,56 +1571,6 @@ window.LISTINGS = [
     "active": true
   },
   {
-    "tracking": "MTCOA-0005",
-    "title": "3 Ekar Tanah Pertanian Meru Kapar",
-    "type": "Tanah",
-    "location": "Jalan Jambu, Meru, Kapar, Klang, Selangor",
-    "state": "Selangor",
-    "price": 3000000,
-    "price_label": "RM3,000,000",
-    "price_old": null,
-    "land_area": "3 ekar",
-    "built_up": "-",
-    "tenure": "Freehold",
-    "sekatan": "Melayu Reserved",
-    "kategori": "Pertanian",
-    "zoning": "Perumahan",
-    "psf": 23,
-    "bedrooms": 0,
-    "bathrooms": 0,
-    "status": "BARU",
-    "jenis": "JUAL",
-    "sewa_price": null,
-    "sewa_label": null,
-    "highlights": [
-      "3 ekar Freehold",
-      "Zoning perumahan",
-      "Harga turun RM3.4M -> RM3M",
-      "Malay Reserved"
-    ],
-    "description": "Tanah pertanian 3 ekar di Jalan Jambu, Meru, Kapar, Klang. Freehold, Malay Reserved dengan zoning perumahan. Harga telah diturunkan daripada RM3.4 juta kepada RM3 juta — peluang pelaburan menarik.",
-    "amenities": [
-      "Zoning perumahan"
-    ],
-    "nearby": [
-      "Jalan Jambu, Meru",
-      "Kapar, Klang, Selangor"
-    ],
-    "map_url": "https://www.google.com/maps?q=Meru,+Kapar,+Klang",
-    "project": "",
-    "project_name": "",
-    "unit": "",
-    "source": "Mr Tanah",
-    "date": "2026-08-31",
-    "images": [
-      "https://lh3.googleusercontent.com/d/1uUQTGOjoOG3-nfzhEcJM3gJwEtM0Qky8=w1000",
-      "https://lh3.googleusercontent.com/d/1EKvP3jVJXEL_lXQHoPGHYsDzolApt69K=w1000",
-      "https://lh3.googleusercontent.com/d/1nMR769TR0FM-cxk1WyaOBFppsRFMYEux=w1000"
-    ],
-    "video": "",
-    "active": true
-  },
-  {
     "tracking": "MTCOA-0006",
     "title": "6 Ekar Tanah Durian Bentong",
     "type": "Tanah",
@@ -3800,67 +3750,6 @@ window.LISTINGS = [
     "active": true
   },
   {
-    "tracking": "MTCOA-0043",
-    "title": "Tanah Stesen Minyak 16 Sierra, Puchong (Untuk Disewa)",
-    "type": "Tanah",
-    "location": "16 Sierra, Puchong, Selangor",
-    "state": "Selangor",
-    "price": 36350,
-    "price_label": "RM36,350 / bulan",
-    "price_old": null,
-    "land_area": "1.39 ekar (60,548 sqft)",
-    "built_up": "-",
-    "tenure": "Leasehold",
-    "sekatan": "Tidak dinyatakan",
-    "kategori": "Komersial",
-    "zoning": "Komersial",
-    "psf": 0.6,
-    "bedrooms": 0,
-    "bathrooms": 0,
-    "status": "BARU",
-    "jenis": "SEWA",
-    "sewa_price": null,
-    "sewa_label": null,
-    "highlights": [
-      "Tanah komersial untuk stesen minyak di Bandar 16 Sierra, Puchong South",
-      "Keluasan 1.39 ekar (60,548 kaki persegi)",
-      "Kadar sewa RM0.60 sekaki persegi sebulan",
-      "Tempoh pajakan 15 tahun",
-      "Hakmilik Leasehold, kegunaan tanah komersial",
-      "Lokasi strategik dengan akses mudah ke lebuh raya utama"
-    ],
-    "description": "Tanah berstatus komersial (land use: Commercial) untuk pembangunan stesen minyak di Bandar 16 Sierra, Puchong South, Selangor. Keluasan 1.39 ekar (60,548 kaki persegi) ditawarkan untuk disewa pada RM36,350 sebulan, bersamaan RM0.60 sekaki persegi sebulan, dengan tempoh pajakan 15 tahun. Hakmilik Leasehold, kategori kegunaan komersial. Lokasi berpotensi tinggi dengan pendedahan trafik daripada kawasan kediaman 16 Sierra dan akses mudah ke lebuh raya utama sekitar Puchong dan Putrajaya — sesuai untuk pengendali stesen minyak atau pelaburan komersial jangka panjang. Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
-    "amenities": [
-      "Tanah komersial",
-      "Keluasan 1.39 ekar (60,548 kp)",
-      "Sewa RM0.60 sekaki persegi sebulan",
-      "Tempoh pajakan 15 tahun",
-      "Hakmilik Leasehold"
-    ],
-    "nearby": [
-      "Bandar 16 Sierra",
-      "Puchong South",
-      "Puchong",
-      "Putrajaya",
-      "Cyberjaya",
-      "Seri Kembangan"
-    ],
-    "map_url": "https://www.google.com/maps?q=2.97618,101.65589",
-    "project": "",
-    "project_name": "",
-    "unit": "",
-    "source": "Mr Tanah",
-    "date": "2026-09-13",
-    "images": [
-      "https://lh3.googleusercontent.com/d/1ZvWoJi-8gHFHH_mnsGNUxfeb5qXmzHxw=w1000",
-      "https://lh3.googleusercontent.com/d/1UEeK6_Dtrg9bRFAp3fFEqCYIC6vKR4b1=w1000",
-      "https://lh3.googleusercontent.com/d/1qQR5Yr6aafTtxsiWhTFx-krysK8a_lps=w1000",
-      "https://lh3.googleusercontent.com/d/1fNQwYLCF73IEfD_zBXoh7aAW-92x73fK=w1000"
-    ],
-    "video": "",
-    "active": true
-  },
-  {
     "tracking": "MTCOA-0044",
     "title": "Tanah Pertanian 3.781 Ekar Sungai Merab, Kajang",
     "type": "Tanah",
@@ -5467,6 +5356,56 @@ window.LISTINGS = [
     "active": false
   },
   {
+    "tracking": "MTCOA-0005",
+    "title": "3 Ekar Tanah Pertanian Meru Kapar",
+    "type": "Tanah",
+    "location": "Jalan Jambu, Meru, Kapar, Klang, Selangor",
+    "state": "Selangor",
+    "price": 3000000,
+    "price_label": "RM3,000,000",
+    "price_old": null,
+    "land_area": "3 ekar",
+    "built_up": "-",
+    "tenure": "Freehold",
+    "sekatan": "Melayu Reserved",
+    "kategori": "Pertanian",
+    "zoning": "Perumahan",
+    "psf": 23,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "DIJUAL",
+    "jenis": "JUAL",
+    "sewa_price": null,
+    "sewa_label": null,
+    "highlights": [
+      "3 ekar Freehold",
+      "Zoning perumahan",
+      "Harga turun RM3.4M -> RM3M",
+      "Malay Reserved"
+    ],
+    "description": "Tanah pertanian 3 ekar di Jalan Jambu, Meru, Kapar, Klang. Freehold, Malay Reserved dengan zoning perumahan. Harga telah diturunkan daripada RM3.4 juta kepada RM3 juta — peluang pelaburan menarik.",
+    "amenities": [
+      "Zoning perumahan"
+    ],
+    "nearby": [
+      "Jalan Jambu, Meru",
+      "Kapar, Klang, Selangor"
+    ],
+    "map_url": "https://www.google.com/maps?q=Meru,+Kapar,+Klang",
+    "project": "",
+    "project_name": "",
+    "unit": "",
+    "source": "Mr Tanah",
+    "date": "2026-08-31",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1uUQTGOjoOG3-nfzhEcJM3gJwEtM0Qky8=w1000",
+      "https://lh3.googleusercontent.com/d/1EKvP3jVJXEL_lXQHoPGHYsDzolApt69K=w1000",
+      "https://lh3.googleusercontent.com/d/1nMR769TR0FM-cxk1WyaOBFppsRFMYEux=w1000"
+    ],
+    "video": "",
+    "active": false
+  },
+  {
     "tracking": "MTCOA-0024",
     "title": "Tanah Lot Banglo Kg Selangor Dredging Dengkil (Ada Rumah)",
     "type": "Tanah",
@@ -5664,6 +5603,67 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1kh86boryy_NiQzZ2F6ejzz3HMeKXAQ99=w1000",
       "https://lh3.googleusercontent.com/d/1BR-gjuURjVtFxnHDROmxd5EpzkaCpcIo=w1000",
       "https://lh3.googleusercontent.com/d/1Q-YZj3lLttmeo-e_j-IXGc_5phdx3zvh=w1000"
+    ],
+    "video": "",
+    "active": false
+  },
+  {
+    "tracking": "MTCOA-0043",
+    "title": "Tanah Stesen Minyak 16 Sierra, Puchong (Untuk Disewa)",
+    "type": "Tanah",
+    "location": "16 Sierra, Puchong, Selangor",
+    "state": "Selangor",
+    "price": 36350,
+    "price_label": "RM36,350 / bulan",
+    "price_old": null,
+    "land_area": "1.39 ekar (60,548 sqft)",
+    "built_up": "-",
+    "tenure": "Leasehold",
+    "sekatan": "Tidak dinyatakan",
+    "kategori": "Komersial",
+    "zoning": "Komersial",
+    "psf": 0.6,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "DIJUAL",
+    "jenis": "SEWA",
+    "sewa_price": null,
+    "sewa_label": null,
+    "highlights": [
+      "Tanah komersial untuk stesen minyak di Bandar 16 Sierra, Puchong South",
+      "Keluasan 1.39 ekar (60,548 kaki persegi)",
+      "Kadar sewa RM0.60 sekaki persegi sebulan",
+      "Tempoh pajakan 15 tahun",
+      "Hakmilik Leasehold, kegunaan tanah komersial",
+      "Lokasi strategik dengan akses mudah ke lebuh raya utama"
+    ],
+    "description": "Tanah berstatus komersial (land use: Commercial) untuk pembangunan stesen minyak di Bandar 16 Sierra, Puchong South, Selangor. Keluasan 1.39 ekar (60,548 kaki persegi) ditawarkan untuk disewa pada RM36,350 sebulan, bersamaan RM0.60 sekaki persegi sebulan, dengan tempoh pajakan 15 tahun. Hakmilik Leasehold, kategori kegunaan komersial. Lokasi berpotensi tinggi dengan pendedahan trafik daripada kawasan kediaman 16 Sierra dan akses mudah ke lebuh raya utama sekitar Puchong dan Putrajaya — sesuai untuk pengendali stesen minyak atau pelaburan komersial jangka panjang. Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
+    "amenities": [
+      "Tanah komersial",
+      "Keluasan 1.39 ekar (60,548 kp)",
+      "Sewa RM0.60 sekaki persegi sebulan",
+      "Tempoh pajakan 15 tahun",
+      "Hakmilik Leasehold"
+    ],
+    "nearby": [
+      "Bandar 16 Sierra",
+      "Puchong South",
+      "Puchong",
+      "Putrajaya",
+      "Cyberjaya",
+      "Seri Kembangan"
+    ],
+    "map_url": "https://www.google.com/maps?q=2.97618,101.65589",
+    "project": "",
+    "project_name": "",
+    "unit": "",
+    "source": "Mr Tanah",
+    "date": "2026-09-13",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1ZvWoJi-8gHFHH_mnsGNUxfeb5qXmzHxw=w1000",
+      "https://lh3.googleusercontent.com/d/1UEeK6_Dtrg9bRFAp3fFEqCYIC6vKR4b1=w1000",
+      "https://lh3.googleusercontent.com/d/1qQR5Yr6aafTtxsiWhTFx-krysK8a_lps=w1000",
+      "https://lh3.googleusercontent.com/d/1fNQwYLCF73IEfD_zBXoh7aAW-92x73fK=w1000"
     ],
     "video": "",
     "active": false
