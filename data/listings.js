@@ -183,6 +183,10 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1yhiMGPLzMB_1bcsB4TK4sCZF2ZOjELrC=w1000"
     ],
     "video": "https://www.youtube.com/watch?v=okZ6mdDkbX0",
+    "videos": [
+      "https://www.youtube.com/watch?v=okZ6mdDkbX0",
+      "https://youtu.be/j3MMqi3oF_g?si=7EEwnEMAOh-B2wfm"
+    ],
     "active": true
   },
   {
@@ -1469,7 +1473,7 @@ window.LISTINGS = [
   },
   {
     "tracking": "MT-0025",
-    "title": "Bungalow Lot Jenderam Hulu, Dengkil — Tanah Rata Sedia Bina",
+    "title": "Bungalow Lot Jenderam Hulu, Dengkil",
     "type": "Tanah",
     "location": "Jenderam Hulu, Dengkil, Selangor",
     "state": "Selangor",
@@ -1532,6 +1536,78 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1mdM1GjouPBQX52ar_f6A9mQmDr0V_wOM=w1000",
       "https://lh3.googleusercontent.com/d/1pkUMKH_lmTMy2nhH-ej0NjdFjamL0VtB=w1000",
       "https://lh3.googleusercontent.com/d/1da_gzB-0NXGyH7y50LNo-iAGw82jBs2t=w1000"
+    ],
+    "video": "",
+    "active": true
+  },
+  {
+    "tracking": "MT-0026",
+    "title": "Lot Bungalow + Bangunan 4 Tingkat, Jalan Duta Bukit Tunku, KL",
+    "type": "Tanah",
+    "location": "Jalan Duta, Bukit Tunku, Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "price": 7000000,
+    "price_label": "RM7,000,000",
+    "price_old": null,
+    "land_area": "22,473 sqft",
+    "built_up": "Tanah 22,473 sqft",
+    "tenure": "Leasehold",
+    "sekatan": "Melayu Reserved",
+    "kategori": "Bangunan",
+    "zoning": "Perumahan",
+    "psf": 311,
+    "bedrooms": 16,
+    "bathrooms": 16,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "sewa_price": null,
+    "sewa_label": null,
+    "highlights": [
+      "Lot bangunan bersama banglo 4 tingkat — lokasi prime Jalan Duta, Bukit Tunku",
+      "Tanah luas 22,473 sqft, siap dengan CCC",
+      "4 apartment — setiap satu 4 bilik tidur + 4 bilik air (jumlah 16 + 16)",
+      "Leasehold Bumi, tempoh hingga 2067",
+      "Sedang disewa (tenanted) — pulangan segera",
+      "1.4 km dari Parlimen Malaysia, 5.2 km dari KLCC"
+    ],
+    "description": "Lot bangunan bersama banglo 4 tingkat untuk dijual di Jalan Duta, Bukit Tunku, Kuala Lumpur. Tanah seluas 22,473 kaki persegi dengan bangunan 4 tingkat yang telah siap dengan CCC (Certificate of Completion and Compliance). Terdiri daripada 4 unit apartment, setiap satu dengan 4 bilik tidur dan 4 bilik air — jumlah keseluruhan 16 bilik tidur dan 16 bilik air. Status Leasehold Bumi dengan tempoh pajakan sehingga 2067. Kini disewakan (tenanted) kepada pekerja pemaju berdekatan, menjadikannya pelaburan dengan potensi pulangan segera. Lokasi strategik berhampiran Parlimen Malaysia, Muzium Negara, Bank Negara Malaysia dan KLCC, dengan akses mudah melalui NKVE, Jalan Duta dan Jalan Tuanku Abdul Halim. Sesuai untuk lodging mingguan, alumni house, eco resort, rumah kebajikan, mahupun kuarters pekerja. Harga permintaan RM7,000,000 (boleh runding).",
+    "amenities": [
+      "1.4 km Malaysian House of Parliament",
+      "1.6 km Kuala Lumpur Butterfly Park",
+      "2.8 km Muzium Negara",
+      "3.7 km Bank Negara Malaysia",
+      "4.4 km Petaling Street Market",
+      "5.2 km KLCC Park",
+      "Akses NKVE Highway",
+      "Jalan Tuanku Abdul Halim"
+    ],
+    "nearby": [
+      "Bukit Tunku",
+      "Jalan Duta",
+      "Parlimen Malaysia",
+      "Muzium Negara",
+      "Bank Negara Malaysia",
+      "KLCC",
+      "Petaling Street",
+      "Mont Kiara"
+    ],
+    "map_url": "https://www.google.com/maps/search/?api=1&query=Jalan%20Duta%2C%20Bukit%20Tunku%2C%20Kuala%20Lumpur",
+    "project": "",
+    "project_name": "",
+    "unit": "",
+    "source": "Mr Tanah",
+    "date": "2026-10-13",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1Nj9S1Exka46N6Sh8G831uA1CiyN3Rw_a=w1000",
+      "https://lh3.googleusercontent.com/d/1So3hQRPDvICeHO6bbGww5zk0piH7QoTK=w1000",
+      "https://lh3.googleusercontent.com/d/10Fpm6PzAn_1QKCHYIp-hGr5iXFg4ufRv=w1000",
+      "https://lh3.googleusercontent.com/d/1fczfcmhHtLu7hRO8sTIbXo-SMyeq5IUz=w1000",
+      "https://lh3.googleusercontent.com/d/1ys5IZoNRGTVMQ1O5FLXURERQ9oDtkh1B=w1000",
+      "https://lh3.googleusercontent.com/d/1XilZJPEZwyMKmypub9PY5YwoqGivfptb=w1000",
+      "https://lh3.googleusercontent.com/d/166YI2nWoOr7xEjpgUgF7sRH7psCaYOI2=w1000",
+      "https://lh3.googleusercontent.com/d/1umRg9s0AstuqezYkLOKcmqV9bH7QQ4VN=w1000",
+      "https://lh3.googleusercontent.com/d/1YNOammvynUHzBa-JJDlbA9ewcY6ioIfW=w1000",
+      "https://lh3.googleusercontent.com/d/1gZ_Fg3fT8p0-vUwaLgI4vl7QNG7-XCvJ=w1000"
     ],
     "video": "",
     "active": true
