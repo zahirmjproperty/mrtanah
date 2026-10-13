@@ -1794,7 +1794,7 @@ window.LISTINGS = [
       "Pekan Bentong — 7.7 km",
       "Lemang Tok'ki — 4.6 km"
     ],
-    "map_url": "https://www.google.com/maps?q=Bentong,+Pahang",
+    "map_url": "https://www.google.com/maps?q=3.585303,101.885173",
     "project": "",
     "project_name": "",
     "unit": "",
