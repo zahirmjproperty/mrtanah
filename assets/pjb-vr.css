@@ -42,3 +42,62 @@
   .vr-play{width:52px;height:52px;font-size:18px}
   .vr-postxt b{font-size:15px}
 }
+
+/* ── Panel 360° RASMI PEMAJU (Pano2VR hos pemaju) ──────────────────────
+   Dibezakan daripada tour ZENTRA VR3D di bawahnya: bingkai gelap,
+   lencana "RASMI PEMAJU", dan bar navigasi 15 lokasi. */
+.pjv-360{margin:0 0 30px}
+.pjv-360 h3{margin:0 0 6px;font-size:19px;font-weight:700;
+  color:var(--pjb-ink,#334155);letter-spacing:-.01em}
+.pjv-360 .pjv-nota{margin:0 0 14px;font-size:13.5px;line-height:1.55;
+  color:var(--pjb-mut,#64748B)}
+
+.pjv-badge{display:inline-flex;align-items:center;gap:6px;vertical-align:middle;
+  margin-left:9px;padding:3px 9px;border-radius:999px;
+  font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  color:#0a1510;background:#C8A96A;border:1px solid #b8995a}
+
+.pjv-frame{position:relative;width:100%;aspect-ratio:16/9;min-height:340px;
+  border-radius:var(--r,14px);overflow:hidden;background:#071525;
+  border:1px solid var(--pjb-line,#E2E8F0)}
+.pjv-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.pjv-load{position:absolute;inset:0;z-index:2;display:flex;align-items:center;
+  justify-content:center;gap:12px;background:#071525;color:#c7d1dc;
+  font-size:13.5px;transition:opacity .45s}
+.pjv-load.sorok{opacity:0;pointer-events:none}
+.pjv-spin{width:18px;height:18px;border-radius:50%;
+  border:2px solid rgba(200,169,106,.3);border-top-color:#C8A96A;
+  animation:pjvspin .8s linear infinite}
+@keyframes pjvspin{to{transform:rotate(360deg)}}
+
+.pjv-bar{display:grid;grid-template-columns:1fr auto;gap:10px 16px;
+  padding:12px 16px;background:#071525;
+  border-top:1px solid rgba(255,255,255,.08)}
+.pjv-info{display:flex;flex-direction:column;min-width:0}
+.pjv-info strong{color:#fff;font-size:13.5px;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis}
+.pjv-info span{display:block;color:#C8A96A;font-size:12.5px;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis}
+.pjv-nav{grid-column:1/-1;display:flex;gap:6px;flex-wrap:nowrap;
+  overflow-x:auto;padding-bottom:3px;scrollbar-width:thin;
+  overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+.pjv-nav::-webkit-scrollbar{height:4px}
+.pjv-nav::-webkit-scrollbar-thumb{background:rgba(200,169,106,.4);border-radius:4px}
+.pjv-btn{flex:0 0 auto;white-space:nowrap;cursor:pointer;font-family:inherit;
+  padding:6px 12px;border-radius:999px;font-size:11.5px;
+  color:#d5dde5;background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.12);transition:.18s}
+.pjv-btn:hover{background:rgba(200,169,106,.2);border-color:#C8A96A;color:#fff}
+.pjv-btn.aktif{background:#C8A96A;border-color:#C8A96A;color:#0a1510;font-weight:700}
+.pjv-fs{justify-self:end;white-space:nowrap;cursor:pointer;font-family:inherit;
+  padding:6px 12px;border-radius:999px;font-size:11.5px;text-decoration:none;
+  color:#C8A96A;background:transparent;border:1px solid rgba(200,169,106,.4)}
+.pjv-fs:hover{background:rgba(200,169,106,.15)}
+
+@media(max-width:640px){
+  .pjv-frame{aspect-ratio:4/3;min-height:260px}
+  .pjv-bar{padding:10px 12px;gap:8px}
+  .pjv-info strong{font-size:12.5px}
+  .pjv-360 h3{font-size:17px}
+  .pjv-badge{font-size:9.5px;padding:2px 7px;margin-left:6px}
+}
