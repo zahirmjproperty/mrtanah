@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ms-MY">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Rujukan Projek Baharu — semakan kelengkapan | Mr Tanah</title>
+<link rel="icon" href="/favicon.ico">
+<style>
+  :root{
+    --brand:#0A1510; --brand-2:#12251b; --gold:#C8A96A; --gold-d:#b8995a;
+    --ink:#16212e; --muted:#5f6b7a; --line:#e4e9ee; --bg:#f5f7f9; --card:#fff;
+    --ok:#1a7f4b; --ok-bg:#e6f5ec; --warn:#8a6100; --warn-bg:#fdf3d8;
+    --bad:#b3261e; --bad-bg:#fbe9e7; --r:14px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,-apple-system,"Segoe UI",Roboto,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+
+  header.top{background:var(--brand);color:#fff;padding:14px 0;
+    position:sticky;top:0;z-index:50;box-shadow:0 2px 14px rgba(10,21,16,.18)}
+  header.top .wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  header.top h1{font-size:16px;margin:0;font-weight:700;letter-spacing:-.01em}
+  header.top .sub{font-size:12.5px;color:rgba(255,255,255,.62)}
+  header.top .spacer{flex:1}
+  .pill{display:inline-flex;align-items:center;gap:6px;padding:4px 11px;border-radius:999px;
+    font-size:11.5px;font-weight:700;background:rgba(200,169,106,.16);color:#E8CE86;
+    border:1px solid rgba(200,169,106,.38)}
+  .btn{font:inherit;cursor:pointer;border-radius:9px;padding:7px 13px;font-size:12.5px;
+    font-weight:600;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);
+    color:#fff;transition:.15s}
+  .btn:hover{background:rgba(255,255,255,.16)}
+
+  main{padding:26px 0 70px}
+
+  /* Gerbang auth */
+  #gerbang{display:flex;align-items:center;justify-content:center;min-height:62vh;text-align:center}
+  #gerbang .box{background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:34px 30px;max-width:420px;box-shadow:0 12px 34px -18px rgba(10,21,16,.24)}
+  #gerbang h2{margin:0 0 8px;font-size:19px}
+  #gerbang p{margin:0 0 18px;color:var(--muted);font-size:13.5px}
+  #gerbang a.cta{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;
+    padding:11px 22px;border-radius:10px;font-weight:600;font-size:13.5px}
+  #gerbang a.cta:hover{background:var(--brand-2)}
+
+  #kandungan{display:none}
+
+  /* Ringkasan kad */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-bottom:22px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:15px 17px}
+  .stat .n{font-size:25px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+  .stat .l{font-size:11.5px;color:var(--muted);margin-top:3px;font-weight:600;
+    text-transform:uppercase;letter-spacing:.04em}
+  .stat.ok .n{color:var(--ok)} .stat.bad .n{color:var(--bad)}
+
+  .nota{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);
+    border-radius:12px;padding:14px 17px;margin-bottom:22px;font-size:13px;color:var(--muted)}
+  .nota b{color:var(--ink)}
+  .nota code{background:#eef2f6;padding:1px 6px;border-radius:5px;font-size:12px;color:var(--ink)}
+
+  /* Jadual projek */
+  .kad{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+    overflow:hidden;margin-bottom:16px}
+  .kad-h{display:flex;align-items:center;gap:12px;padding:14px 17px;cursor:pointer;
+    border-bottom:1px solid var(--line);flex-wrap:wrap}
+  .kad-h:hover{background:#fafbfc}
+  .kad-h .nm{font-weight:700;font-size:14.5px}
+  .kad-h .sl{font-size:11.5px;color:var(--muted);font-family:ui-monospace,Menlo,monospace}
+  .kad-h .spacer{flex:1}
+  .bar{width:120px;height:7px;border-radius:99px;background:#e9edf1;overflow:hidden;flex:none}
+  .bar i{display:block;height:100%;border-radius:99px}
+  .pct{font-size:13px;font-weight:800;min-width:44px;text-align:right}
+  .tag{font-size:10.5px;font-weight:800;padding:3px 9px;border-radius:99px;
+    text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
+  .tag.ok{background:var(--ok-bg);color:var(--ok)}
+  .tag.bad{background:var(--bad-bg);color:var(--bad)}
+
+  .kad-b{display:none;padding:6px 0 12px}
+  .kad.on .kad-b{display:block}
+
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:8px 17px;border-bottom:1px solid #f0f3f6;vertical-align:top}
+  th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);
+    font-weight:700;background:#fafbfc;position:sticky;top:52px}
+  tr:last-child td{border-bottom:0}
+  td.k{font-weight:600;width:38%}
+  td.k small{display:block;font-weight:400;color:var(--muted);font-size:11px;
+    font-family:ui-monospace,Menlo,monospace;margin-top:1px}
+  td.v{color:var(--ink);word-break:break-word}
+  td.v .none{color:var(--bad);font-weight:600}
+  td.s{width:96px;text-align:right;white-space:nowrap}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:middle}
+  .dot.ok{background:var(--ok)} .dot.bad{background:var(--bad)} .dot.flex{background:#c3ccd6}
+
+  .grp td{background:#f7f9fb;font-size:10.5px;font-weight:800;text-transform:uppercase;
+    letter-spacing:.07em;color:var(--muted);padding:7px 17px}
+
+  .nota-isi{margin:10px 17px 0;padding:10px 13px;background:var(--warn-bg);
+    border-left:3px solid #e0b34a;border-radius:8px;font-size:12.5px;color:var(--warn)}
+  .nota-isi b{display:block;margin-bottom:3px}
+  .nota-isi ul{margin:4px 0 0 17px;padding:0}
+  .nota-isi li{margin:2px 0}
+
+  footer{padding:22px 0;text-align:center;font-size:11.5px;color:var(--muted);
+    border-top:1px solid var(--line);margin-top:30px}
+
+  @media(max-width:720px){
+    th{position:static}
+    td.k{width:52%}
+    .bar{width:70px}
+    .kad-h .sl{width:100%;order:5}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div>
+      <h1>Rujukan Projek Baharu</h1>
+      <div class="sub">Semakan kelengkapan medan — sumber induk <code style="font-size:11px;opacity:.8">data/projek-baharu.json</code></div>
+    </div>
+    <div class="spacer"></div>
+    <span class="pill" id="pillJumlah">memuatkan…</span>
+    <button class="btn" id="btnMuat" type="button">Muat semula</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- GERBANG AUTH -->
+  <div id="gerbang">
+    <div class="box">
+      <h2>Log masuk diperlukan</h2>
+      <p>Halaman semakan ini dalaman — untuk Zahir &amp; Ali sahaja.</p>
+      <a class="cta" href="/portal/login.html?next=/projek-baharu/rujukan.html">Log masuk</a>
+    </div>
+  </div>
+
+  <!-- KANDUNGAN -->
+  <div id="kandungan">
+    <div class="stats" id="stats"></div>
+
+    <div class="nota">
+      <b>Aliran kerja rujukan:</b> kemas kini <code>data/projek-baharu.json</code> dahulu,
+      kemudian jalankan <code>semak_rujukan_projek.py</code> untuk lihat jurang, dan
+      <code>gen_projek_baharu.py</code> untuk menjana semula semua halaman projek.
+      Halaman ini membaca <code>data/rujukan-projek.json</code> yang dijana oleh skrip semakan.
+      <br><br>
+      <span id="masaJana"></span>
+    </div>
+
+    <div id="senarai"></div>
+
+    <footer>
+      Mr Tanah · Rujukan dalaman · <span id="versi"></span>
+    </footer>
+  </div>
+</main>
+
+<script src="/portal/assets/auth-config.js"></script>
+<script>
+(function () {
+  "use strict";
+  var CFG = window.AUTH || {};
+  var RUJUKAN = (String(CFG.url || "").replace(/^https?:\/\//, "").split(".")[0]) || "";
+  var KUNCI = RUJUKAN ? ("sb-" + RUJUKAN + "-auth-token") : "";
+
+  var LABEL_TAHAP = { wajib: "Wajib", disyorkan: "Disyorkan", fleksibel: "Fleksibel" };
+
+  function bacaToken() {
+    try {
+      var raw = localStorage.getItem(KUNCI);
+      if (!raw) return null;
+      var o = JSON.parse(raw);
+      return o && (o.access_token ? o : (o.currentSession || null));
+    } catch (e) { return null; }
+  }
+
+  function tunjuk(id, ya) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    // Guna nilai eksplisit — CSS asal menetapkan display:none, jadi "" tidak cukup.
+    if (ya) {
+      el.style.display = (id === "gerbang") ? "flex" : "block";
+    } else {
+      el.style.display = "none";
+    }
+  }
+
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function warnaSkor(s) {
+    if (s >= 95) return "var(--ok)";
+    if (s >= 75) return "#c98a00";
+    return "var(--bad)";
+  }
+
+  function render(lap) {
+    var projek = lap.projek || [];
+    var lengkap = projek.filter(function (p) { return p.lengkap; }).length;
+    var jumlahJurangWajib = projek.reduce(function (a, p) { return a + (p.jurang_wajib || []).length; }, 0);
+    var purata = projek.length
+      ? Math.round(projek.reduce(function (a, p) { return a + p.skor; }, 0) / projek.length) : 0;
+
+    document.getElementById("pillJumlah").textContent =
+      lengkap + "/" + projek.length + " lengkap";
+
+    document.getElementById("stats").innerHTML =
+      '<div class="stat"><div class="n">' + projek.length + '</div><div class="l">Projek</div></div>' +
+      '<div class="stat ' + (lengkap === projek.length ? "ok" : "bad") + '"><div class="n">' + lengkap +
+        '</div><div class="l">Lengkap medan wajib</div></div>' +
+      '<div class="stat ' + (jumlahJurangWajib ? "bad" : "ok") + '"><div class="n">' + jumlahJurangWajib +
+        '</div><div class="l">Jurang medan wajib</div></div>' +
+      '<div class="stat"><div class="n">' + purata + '%</div><div class="l">Purata skor</div></div>' +
+      '<div class="stat"><div class="n">' + (lap.jumlah_medan_skema || 0) +
+        '</div><div class="l">Medan skema</div></div>';
+
+    document.getElementById("masaJana").innerHTML =
+      "Dijana: <b>" + esc((lap.dijana || "").replace("T", " ").slice(0, 19)) + "</b>" +
+      " · Sumber: <code>" + esc(lap.sumber || "") + "</code>";
+
+    document.getElementById("versi").textContent = "skema v" + (lap.skema_versi || 1);
+
+    var html = "";
+    projek.forEach(function (p, i) {
+      var jw = p.jurang_wajib || [];
+      var jd = p.jurang_disyorkan || [];
+      var w = p.kira ? (p.kira.wajib_ada + "/" + p.kira.wajib_jumlah) : "—";
+
+      html += '<div class="kad" id="kad' + i + '">';
+      html += '<div class="kad-h" data-i="' + i + '">';
+      html += '<span class="tag ' + (p.lengkap ? "ok" : "bad") + '">' + (p.lengkap ? "Lengkap" : "Jurang") + '</span>';
+      html += '<span class="nm">' + esc(p.nama) + '</span>';
+      html += '<span class="sl">' + esc(p.slug) + '</span>';
+      if (p.status_kod) html += '<span class="sl">' + esc(p.status_kod) + '</span>';
+      html += '<span class="spacer"></span>';
+      html += '<span class="sl">wajib ' + w + '</span>';
+      html += '<span class="bar"><i style="width:' + p.skor + '%;background:' + warnaSkor(p.skor) + '"></i></span>';
+      html += '<span class="pct" style="color:' + warnaSkor(p.skor) + '">' + p.skor + '%</span>';
+      html += '</div>';
+
+      html += '<div class="kad-b">';
+
+      if (p.perlu_isi && p.perlu_isi.length) {
+        html += '<div class="nota-isi"><b>Nota perlu_isi</b><ul>';
+        p.perlu_isi.forEach(function (t) { html += "<li>" + esc(t) + "</li>"; });
+        html += "</ul></div>";
+      }
+
+      html += '<table><thead><tr><th>Medan</th><th>Nilai</th><th>Status</th></tr></thead><tbody>';
+      var kumpulanSemasa = "";
+      (p.medan || []).forEach(function (m) {
+        if (m.kumpulan !== kumpulanSemasa) {
+          kumpulanSemasa = m.kumpulan;
+          html += '<tr class="grp"><td colspan="3">' + esc(kumpulanSemasa) + '</td></tr>';
+        }
+        var dot;
+        if (m.status === "ok") dot = '<span class="dot ok"></span>ok';
+        else if (m.tahap === "fleksibel") dot = '<span class="dot flex"></span>tiada';
+        else dot = '<span class="dot bad"></span>' + (m.status === "tiada_kunci" ? "tiada kunci" : "kosong");
+
+        html += "<tr>";
+        html += '<td class="k">' + esc(m.label) +
+                "<small>" + esc(m.kunci) + " · " + LABEL_TAHAP[m.tahap] + "</small></td>";
+        html += '<td class="v">' + (m.nilai ? esc(m.nilai) : '<span class="none">— belum diisi —</span>') + "</td>";
+        html += '<td class="s">' + dot + "</td>";
+        html += "</tr>";
+      });
+      html += "</tbody></table>";
+
+      html += "</div></div>";
+    });
+
+    var el = document.getElementById("senarai");
+    el.innerHTML = html;
+
+    // Klik header untuk buka/tutup
+    el.querySelectorAll(".kad-h").forEach(function (h) {
+      h.addEventListener("click", function () {
+        document.getElementById("kad" + h.dataset.i).classList.toggle("on");
+      });
+    });
+
+    // Buka kad yang ada jurang secara lalai
+    projek.forEach(function (p, i) {
+      if (!p.lengkap) {
+        var k = document.getElementById("kad" + i);
+        if (k) k.classList.add("on");
+      }
+    });
+
+    tunjuk("gerbang", false);
+    tunjuk("kandungan", true);
+  }
+
+  function gagal(mesej) {
+    var el = document.getElementById("senarai");
+    if (el) {
+      el.innerHTML = '<div class="nota" style="border-left-color:var(--bad)">' +
+        "<b>Tidak dapat memuatkan data rujukan.</b><br>" + esc(mesej) +
+        "<br><br>Jana fail dahulu:<br><code>python3 ~/.hermes/scripts/semak_rujukan_projek.py " +
+        "--tulis ~/mrtanah-site/data/rujukan-projek.json</code></div>";
+    }
+    tunjuk("gerbang", false);
+    tunjuk("kandungan", true);
+  }
+
+  function muat() {
+    fetch("/data/rujukan-projek.json?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(render)
+      .catch(function (e) { gagal(e.message); });
+  }
+
+  document.getElementById("btnMuat").addEventListener("click", muat);
+
+  // Gerbang: token sesi mesti ada
+  if (!bacaToken()) {
+    tunjuk("gerbang", true);
+    tunjuk("kandungan", false);
+    return;
+  }
+  muat();
+})();
+</script>
+</body>
+</html>

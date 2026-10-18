@@ -1,0 +1,2274 @@
+{
+ "dijana": "2026-10-18T17:49:28+08:00",
+ "sumber": "/home/ubuntu/mrtanah-site/data/projek-baharu.json",
+ "skema_versi": 1,
+ "jumlah_projek": 7,
+ "jumlah_medan_skema": 33,
+ "projek": [
+  {
+   "slug": "armani-putra-dengkil",
+   "nama": "Residensi Armani Putra",
+   "status_kod": "LANCAR",
+   "skor": 97,
+   "lengkap": false,
+   "kira": {
+    "wajib_ada": 23,
+    "wajib_jumlah": 24,
+    "disyorkan_ada": 8,
+    "disyorkan_jumlah": 8,
+    "fleksibel_ada": 0,
+    "fleksibel_jumlah": 1
+   },
+   "jurang_wajib": [
+    {
+     "kunci": "pbt_rujukan_pelan",
+     "label": "Rujukan pelan bangunan PBT"
+    }
+   ],
+   "jurang_disyorkan": [],
+   "perlu_isi": [],
+   "medan": [
+    {
+     "kunci": "nama",
+     "label": "Nama projek",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Residensi Armani Putra"
+    },
+    {
+     "kunci": "slug",
+     "label": "Slug URL",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "armani-putra-dengkil"
+    },
+    {
+     "kunci": "pemaju",
+     "label": "Pemaju",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Golden Chain Development Sdn Bhd (Armani Group)"
+    },
+    {
+     "kunci": "pemaju_ssm",
+     "label": "No. SSM pemaju",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "969873-V"
+    },
+    {
+     "kunci": "pemaju_lesen_no",
+     "label": "No. lesen pemaju + tempoh",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "30799/06-2029/0141(A) — sah 24/06/2024 – 23/06/2029 (KPKT TEDUH)"
+    },
+    {
+     "kunci": "ejen_kuasa",
+     "label": "Ejen diberi kuasa",
+     "kumpulan": "Identiti",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "IQI Realty — Zahir (PEA 2684) & Fadilah (PEA 2313)"
+    },
+    {
+     "kunci": "lokasi",
+     "label": "Lokasi",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Dengkil, Selangor (sempadan Putrajaya)"
+    },
+    {
+     "kunci": "negeri",
+     "label": "Negeri",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Selangor"
+    },
+    {
+     "kunci": "pbt",
+     "label": "Pihak berkuasa tempatan (PBT)",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Majlis Perbandaran Sepang (MP Sepang)"
+    },
+    {
+     "kunci": "pbt_rujukan_pelan",
+     "label": "Rujukan pelan bangunan PBT",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "jarak",
+     "label": "Jarak ke kemudahan",
+     "kumpulan": "Lokasi",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[11 item]"
+    },
+    {
+     "kunci": "jenis",
+     "label": "Jenis pembangunan",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "SOHO & Servis Apartmen (pembangunan bercampur 2 menara)"
+    },
+    {
+     "kunci": "kps",
+     "label": "Keluasan binaan (kps)",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "450 – 1,000 kps"
+    },
+    {
+     "kunci": "bilik",
+     "label": "Bilik",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "1 – 3 bilik tidur"
+    },
+    {
+     "kunci": "petak_kereta",
+     "label": "Petak kereta",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "1 – 3 bay mengikut jenis (2,186 petak keseluruhan)"
+    },
+    {
+     "kunci": "bilangan_unit",
+     "label": "Bilangan unit",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "990 unit (SOHO 488 + Servis Apartmen 496 + 6 retail) · 2 blok · 32 tin…"
+    },
+    {
+     "kunci": "bilangan_jenis",
+     "label": "Bilangan jenis unit",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "10"
+    },
+    {
+     "kunci": "unit_list",
+     "label": "Senarai unit & harga",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "[10 item]"
+    },
+    {
+     "kunci": "unit_pecahan",
+     "label": "Pecahan unit mengikut jenis",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "{soho, servis_apartmen, retail…}"
+    },
+    {
+     "kunci": "fasiliti",
+     "label": "Kemudahan",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[11 item]"
+    },
+    {
+     "kunci": "pegangan",
+     "label": "Pegangan tanah",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Leasehold (pajakan) — komersial"
+    },
+    {
+     "kunci": "sekatan",
+     "label": "Sekatan kepentingan tanah",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Malay Reserved — warganegara bukan Melayu tidak dibenarkan membeli (FA…"
+    },
+    {
+     "kunci": "permit_iklan_no",
+     "label": "No. permit iklan + tempoh",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "30799-1/06-2029/0421(A)-(S) — sah 10/06/2026 – 09/06/2029 (KPKT TEDUH)"
+    },
+    {
+     "kunci": "penafian",
+     "label": "Penafian",
+     "kumpulan": "Pematuhan",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "Render = artist's impression. Harga, unit dan spesifikasi tertakluk ke…"
+    },
+    {
+     "kunci": "sumber",
+     "label": "Sumber data",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "[6 item]"
+    },
+    {
+     "kunci": "harga_label",
+     "label": "Label harga",
+     "kumpulan": "Harga",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Dari RM230,000"
+    },
+    {
+     "kunci": "harga_rasmi",
+     "label": "Harga rasmi berpermit",
+     "kumpulan": "Harga",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Harga SPA mengikut carta rasmi: RM230,000 – RM647,500 (Type C mampu mi…"
+    },
+    {
+     "kunci": "status_fasa",
+     "label": "Status fasa",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Lancaran Baharu"
+    },
+    {
+     "kunci": "status_kod",
+     "label": "Kod status KPKT",
+     "kumpulan": "Status",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "LANCAR"
+    },
+    {
+     "kunci": "status_pembinaan",
+     "label": "Status pembinaan",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Berdaftar sebagai projek LANCAR di KPKT TEDUH (0 projek sakit, 0 terbe…"
+    },
+    {
+     "kunci": "dijangka_siap",
+     "label": "Tarikh jangkaan siap",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "48 bulan dari pensteman SPA (unjuran progres: 2030)"
+    },
+    {
+     "kunci": "ringkasan",
+     "label": "Ringkasan jualan",
+     "kumpulan": "Kandungan",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[7 item]"
+    },
+    {
+     "kunci": "vr",
+     "label": "Lawatan maya 360°",
+     "kumpulan": "Media",
+     "tahap": "fleksibel",
+     "status": "kosong",
+     "nilai": ""
+    }
+   ]
+  },
+  {
+   "slug": "avalon-cybersouth",
+   "nama": "Avalon @ Cybersouth",
+   "status_kod": "",
+   "skor": 88,
+   "lengkap": false,
+   "kira": {
+    "wajib_ada": 23,
+    "wajib_jumlah": 24,
+    "disyorkan_ada": 5,
+    "disyorkan_jumlah": 8,
+    "fleksibel_ada": 0,
+    "fleksibel_jumlah": 1
+   },
+   "jurang_wajib": [
+    {
+     "kunci": "pemaju_ssm",
+     "label": "No. SSM pemaju"
+    }
+   ],
+   "jurang_disyorkan": [
+    {
+     "kunci": "bilangan_jenis",
+     "label": "Bilangan jenis unit"
+    },
+    {
+     "kunci": "unit_pecahan",
+     "label": "Pecahan unit mengikut jenis"
+    },
+    {
+     "kunci": "status_kod",
+     "label": "Kod status KPKT"
+    }
+   ],
+   "perlu_isi": [
+    "Tarikh CCC/VP rasmi",
+    "Baki unit sebenar & senarai unit tersedia",
+    "Jarak km rasmi setiap kemudahan",
+    "Senarai harga rasmi berpermit"
+   ],
+   "medan": [
+    {
+     "kunci": "nama",
+     "label": "Nama projek",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Avalon @ Cybersouth"
+    },
+    {
+     "kunci": "slug",
+     "label": "Slug URL",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "avalon-cybersouth"
+    },
+    {
+     "kunci": "pemaju",
+     "label": "Pemaju",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Ecolake Residence Sdn Bhd (Avaland Berhad — kumpulan Ayala Land)"
+    },
+    {
+     "kunci": "pemaju_ssm",
+     "label": "No. SSM pemaju",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "pemaju_lesen_no",
+     "label": "No. lesen pemaju + tempoh",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "30240/10-2027/0239(A) — sah 12/10/2022 – 11/10/2027"
+    },
+    {
+     "kunci": "ejen_kuasa",
+     "label": "Ejen diberi kuasa",
+     "kumpulan": "Identiti",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "IQI Realty — Zahir (PEA 2684) & Fadilah (PEA 2313)"
+    },
+    {
+     "kunci": "lokasi",
+     "label": "Lokasi",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Cybersouth, Dengkil"
+    },
+    {
+     "kunci": "negeri",
+     "label": "Negeri",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Selangor"
+    },
+    {
+     "kunci": "pbt",
+     "label": "Pihak berkuasa tempatan (PBT)",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Majlis Perbandaran Sepang (MP Sepang)"
+    },
+    {
+     "kunci": "pbt_rujukan_pelan",
+     "label": "Rujukan pelan bangunan PBT",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "MPSEPANG 600-34/4/316(7)"
+    },
+    {
+     "kunci": "jarak",
+     "label": "Jarak ke kemudahan",
+     "kumpulan": "Lokasi",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[6 item]"
+    },
+    {
+     "kunci": "jenis",
+     "label": "Jenis pembangunan",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Rumah Teres 2 Tingkat (strata)"
+    },
+    {
+     "kunci": "kps",
+     "label": "Keluasan binaan (kps)",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "2,004 – 2,454 kps"
+    },
+    {
+     "kunci": "bilik",
+     "label": "Bilik",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "4 bilik tidur + 4 bilik air"
+    },
+    {
+     "kunci": "petak_kereta",
+     "label": "Petak kereta",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "2 bay"
+    },
+    {
+     "kunci": "bilangan_unit",
+     "label": "Bilangan unit",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "343 unit (fasa berpermit: 166 unit)"
+    },
+    {
+     "kunci": "bilangan_jenis",
+     "label": "Bilangan jenis unit",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "unit_list",
+     "label": "Senarai unit & harga",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "[3 item]"
+    },
+    {
+     "kunci": "unit_pecahan",
+     "label": "Pecahan unit mengikut jenis",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "fasiliti",
+     "label": "Kemudahan",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[7 item]"
+    },
+    {
+     "kunci": "pegangan",
+     "label": "Pegangan tanah",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Pajakan 82 tahun — tamat 14 November 2104"
+    },
+    {
+     "kunci": "sekatan",
+     "label": "Sekatan kepentingan tanah",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Tanah tidak boleh dipindah milik, dipajak atau digadai melainkan denga…"
+    },
+    {
+     "kunci": "permit_iklan_no",
+     "label": "No. permit iklan + tempoh",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "30240-3/07-2028/0539(N)-(S) — sah 07/07/2025 – 06/07/2028"
+    },
+    {
+     "kunci": "penafian",
+     "label": "Penafian",
+     "kumpulan": "Pematuhan",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "Render = artist's impression. Harga senarai mengikut blok iklan berper…"
+    },
+    {
+     "kunci": "sumber",
+     "label": "Sumber data",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "[3 item]"
+    },
+    {
+     "kunci": "harga_label",
+     "label": "Label harga",
+     "kumpulan": "Harga",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Dari RM803,800"
+    },
+    {
+     "kunci": "harga_rasmi",
+     "label": "Harga rasmi berpermit",
+     "kumpulan": "Harga",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Harga senarai berpermit: RM1,004,750 – RM1,856,000"
+    },
+    {
+     "kunci": "status_fasa",
+     "label": "Status fasa",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Bawah pembinaan"
+    },
+    {
+     "kunci": "status_kod",
+     "label": "Kod status KPKT",
+     "kumpulan": "Status",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "status_pembinaan",
+     "label": "Status pembinaan",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Phase 1 (166 unit) habis dijual (15 Jul 2025) · Phase 2 dilancarkan Ok…"
+    },
+    {
+     "kunci": "dijangka_siap",
+     "label": "Tarikh jangkaan siap",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Julai 2028"
+    },
+    {
+     "kunci": "ringkasan",
+     "label": "Ringkasan jualan",
+     "kumpulan": "Kandungan",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[4 item]"
+    },
+    {
+     "kunci": "vr",
+     "label": "Lawatan maya 360°",
+     "kumpulan": "Media",
+     "tahap": "fleksibel",
+     "status": "tiada_kunci",
+     "nilai": ""
+    }
+   ]
+  },
+  {
+   "slug": "terra-residences",
+   "nama": "Terra Residences",
+   "status_kod": "",
+   "skor": 81,
+   "lengkap": false,
+   "kira": {
+    "wajib_ada": 22,
+    "wajib_jumlah": 24,
+    "disyorkan_ada": 4,
+    "disyorkan_jumlah": 8,
+    "fleksibel_ada": 0,
+    "fleksibel_jumlah": 1
+   },
+   "jurang_wajib": [
+    {
+     "kunci": "pemaju_ssm",
+     "label": "No. SSM pemaju"
+    },
+    {
+     "kunci": "dijangka_siap",
+     "label": "Tarikh jangkaan siap"
+    }
+   ],
+   "jurang_disyorkan": [
+    {
+     "kunci": "bilangan_jenis",
+     "label": "Bilangan jenis unit"
+    },
+    {
+     "kunci": "unit_pecahan",
+     "label": "Pecahan unit mengikut jenis"
+    },
+    {
+     "kunci": "penafian",
+     "label": "Penafian"
+    },
+    {
+     "kunci": "status_kod",
+     "label": "Kod status KPKT"
+    }
+   ],
+   "perlu_isi": [
+    "Tarikh CCC/VP rasmi kedua-dua blok",
+    "Baki unit sebenar mengikut jenis",
+    "Senarai harga rasmi berpermit",
+    "Pandangan setiap unit (tasik/kolam) mengikut pelan tapak"
+   ],
+   "medan": [
+    {
+     "kunci": "nama",
+     "label": "Nama projek",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Terra Residences"
+    },
+    {
+     "kunci": "slug",
+     "label": "Slug URL",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "terra-residences"
+    },
+    {
+     "kunci": "pemaju",
+     "label": "Pemaju",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Putrajaya Homes Sdn Bhd (Putrajaya Holdings — kumpulan KLCC Holdings)"
+    },
+    {
+     "kunci": "pemaju_ssm",
+     "label": "No. SSM pemaju",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "pemaju_lesen_no",
+     "label": "No. lesen pemaju + tempoh",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "7479/03-2028/0489(R) — sah 31/03/2023 – 30/03/2028"
+    },
+    {
+     "kunci": "ejen_kuasa",
+     "label": "Ejen diberi kuasa",
+     "kumpulan": "Identiti",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "IQI Realty — Zahir (PEA 2684) & Fadilah (PEA 2313)"
+    },
+    {
+     "kunci": "lokasi",
+     "label": "Lokasi",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Presint 8, Putrajaya"
+    },
+    {
+     "kunci": "negeri",
+     "label": "Negeri",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Putrajaya"
+    },
+    {
+     "kunci": "pbt",
+     "label": "Pihak berkuasa tempatan (PBT)",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Perbadanan Putrajaya"
+    },
+    {
+     "kunci": "pbt_rujukan_pelan",
+     "label": "Rujukan pelan bangunan PBT",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "PPJ/PER/KBKB/2017/P08-124(27)"
+    },
+    {
+     "kunci": "jarak",
+     "label": "Jarak ke kemudahan",
+     "kumpulan": "Lokasi",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[6 item]"
+    },
+    {
+     "kunci": "jenis",
+     "label": "Jenis pembangunan",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Kondominium (pembangunan bersepadu tepi tasik)"
+    },
+    {
+     "kunci": "kps",
+     "label": "Keluasan binaan (kps)",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "700 – 1,184 kps"
+    },
+    {
+     "kunci": "bilik",
+     "label": "Bilik",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "1 – 3 bilik tidur"
+    },
+    {
+     "kunci": "petak_kereta",
+     "label": "Petak kereta",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "1 – 2 bay mengikut jenis"
+    },
+    {
+     "kunci": "bilangan_unit",
+     "label": "Bilangan unit",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "348 unit kondominium (Blok B 182 + Blok C 166) · 28 tingkat · maks 8 u…"
+    },
+    {
+     "kunci": "bilangan_jenis",
+     "label": "Bilangan jenis unit",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "unit_list",
+     "label": "Senarai unit & harga",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "[3 item]"
+    },
+    {
+     "kunci": "unit_pecahan",
+     "label": "Pecahan unit mengikut jenis",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "fasiliti",
+     "label": "Kemudahan",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[8 item]"
+    },
+    {
+     "kunci": "pegangan",
+     "label": "Pegangan tanah",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Freehold (kekal) — tiada liabiliti"
+    },
+    {
+     "kunci": "sekatan",
+     "label": "Sekatan kepentingan tanah",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Tiada dinyatakan dalam permit"
+    },
+    {
+     "kunci": "permit_iklan_no",
+     "label": "No. permit iklan + tempoh",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "7479-49/02-2028/0094(N)-(s) — sah 03/02/2025 – 02/02/2028"
+    },
+    {
+     "kunci": "penafian",
+     "label": "Penafian",
+     "kumpulan": "Pematuhan",
+     "tahap": "disyorkan",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "sumber",
+     "label": "Sumber data",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "[3 item]"
+    },
+    {
+     "kunci": "harga_label",
+     "label": "Label harga",
+     "kumpulan": "Harga",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Dari RM485,800"
+    },
+    {
+     "kunci": "harga_rasmi",
+     "label": "Harga rasmi berpermit",
+     "kumpulan": "Harga",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Harga berpermit: RM485,800 – RM1,158,800 (Type C 700 kps dari RM489,80…"
+    },
+    {
+     "kunci": "status_fasa",
+     "label": "Status fasa",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Bawah pembinaan / sebahagian siap"
+    },
+    {
+     "kunci": "status_kod",
+     "label": "Kod status KPKT",
+     "kumpulan": "Status",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "status_pembinaan",
+     "label": "Status pembinaan",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Komponen hotel Fraser Residence Putrajaya (283 unit) soft opening 18 O…"
+    },
+    {
+     "kunci": "dijangka_siap",
+     "label": "Tarikh jangkaan siap",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "ringkasan",
+     "label": "Ringkasan jualan",
+     "kumpulan": "Kandungan",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[4 item]"
+    },
+    {
+     "kunci": "vr",
+     "label": "Lawatan maya 360°",
+     "kumpulan": "Media",
+     "tahap": "fleksibel",
+     "status": "tiada_kunci",
+     "nilai": ""
+    }
+   ]
+  },
+  {
+   "slug": "setia-seraya-p15",
+   "nama": "Setia Seraya Residences @ Presint 15",
+   "status_kod": "",
+   "skor": 78,
+   "lengkap": false,
+   "kira": {
+    "wajib_ada": 20,
+    "wajib_jumlah": 24,
+    "disyorkan_ada": 5,
+    "disyorkan_jumlah": 8,
+    "fleksibel_ada": 0,
+    "fleksibel_jumlah": 1
+   },
+   "jurang_wajib": [
+    {
+     "kunci": "pemaju_ssm",
+     "label": "No. SSM pemaju"
+    },
+    {
+     "kunci": "petak_kereta",
+     "label": "Petak kereta"
+    },
+    {
+     "kunci": "sekatan",
+     "label": "Sekatan kepentingan tanah"
+    },
+    {
+     "kunci": "permit_iklan_no",
+     "label": "No. permit iklan + tempoh"
+    }
+   ],
+   "jurang_disyorkan": [
+    {
+     "kunci": "bilangan_jenis",
+     "label": "Bilangan jenis unit"
+    },
+    {
+     "kunci": "unit_pecahan",
+     "label": "Pecahan unit mengikut jenis"
+    },
+    {
+     "kunci": "status_kod",
+     "label": "Kod status KPKT"
+    }
+   ],
+   "perlu_isi": [
+    "Harga pasaran semasa (transaksi NAPIC/asking) sebelum papar angka",
+    "Baki unit pemaju (jika ada) & permit/surat kuasa semasa",
+    "Bilangan petak kereta setiap jenis",
+    "Sekatan kepentingan tanah",
+    "Jarak km rasmi setiap kemudahan"
+   ],
+   "medan": [
+    {
+     "kunci": "nama",
+     "label": "Nama projek",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Setia Seraya Residences @ Presint 15"
+    },
+    {
+     "kunci": "slug",
+     "label": "Slug URL",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "setia-seraya-p15"
+    },
+    {
+     "kunci": "pemaju",
+     "label": "Pemaju",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Setia Putrajaya Development Sdn Bhd (424955-P) — SP Setia Berhad"
+    },
+    {
+     "kunci": "pemaju_ssm",
+     "label": "No. SSM pemaju",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "pemaju_lesen_no",
+     "label": "No. lesen pemaju + tempoh",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "7403/10-2023/2302(R) — sah 08/10/2022 – 07/10/2023 (dari e-pamflet ras…"
+    },
+    {
+     "kunci": "ejen_kuasa",
+     "label": "Ejen diberi kuasa",
+     "kumpulan": "Identiti",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "IQI Realty — Zahir (PEA 2684) & Fadilah (PEA 2313)"
+    },
+    {
+     "kunci": "lokasi",
+     "label": "Lokasi",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Presint 15, Putrajaya"
+    },
+    {
+     "kunci": "negeri",
+     "label": "Negeri",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Putrajaya"
+    },
+    {
+     "kunci": "pbt",
+     "label": "Pihak berkuasa tempatan (PBT)",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Perbadanan Putrajaya"
+    },
+    {
+     "kunci": "pbt_rujukan_pelan",
+     "label": "Rujukan pelan bangunan PBT",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "PPj/PER/KBKB/2015/P15-165(24)"
+    },
+    {
+     "kunci": "jarak",
+     "label": "Jarak ke kemudahan",
+     "kumpulan": "Lokasi",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[5 item]"
+    },
+    {
+     "kunci": "jenis",
+     "label": "Jenis pembangunan",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Kondominium (1 blok, 40 tingkat)"
+    },
+    {
+     "kunci": "kps",
+     "label": "Keluasan binaan (kps)",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "1,002 – 1,420 kps"
+    },
+    {
+     "kunci": "bilik",
+     "label": "Bilik",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "3 – 4 bilik tidur"
+    },
+    {
+     "kunci": "petak_kereta",
+     "label": "Petak kereta",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "bilangan_unit",
+     "label": "Bilangan unit",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "363 unit (ketumpatan rendah)"
+    },
+    {
+     "kunci": "bilangan_jenis",
+     "label": "Bilangan jenis unit",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "unit_list",
+     "label": "Senarai unit & harga",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "[3 item]"
+    },
+    {
+     "kunci": "unit_pecahan",
+     "label": "Pecahan unit mengikut jenis",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "fasiliti",
+     "label": "Kemudahan",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[8 item]"
+    },
+    {
+     "kunci": "pegangan",
+     "label": "Pegangan tanah",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Freehold (kekal)"
+    },
+    {
+     "kunci": "sekatan",
+     "label": "Sekatan kepentingan tanah",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "permit_iklan_no",
+     "label": "No. permit iklan + tempoh",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "penafian",
+     "label": "Penafian",
+     "kumpulan": "Pematuhan",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "Projek sudah siap & diserahkan. Halaman ini mengekalkan data projek, f…"
+    },
+    {
+     "kunci": "sumber",
+     "label": "Sumber data",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "[2 item]"
+    },
+    {
+     "kunci": "harga_label",
+     "label": "Label harga",
+     "kumpulan": "Harga",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Harga pasaran sekunder"
+    },
+    {
+     "kunci": "harga_rasmi",
+     "label": "Harga rasmi berpermit",
+     "kumpulan": "Harga",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Projek siap — tiada harga pelancaran. Harga jualan semasa adalah pasar…"
+    },
+    {
+     "kunci": "status_fasa",
+     "label": "Status fasa",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Siap & diserahkan"
+    },
+    {
+     "kunci": "status_kod",
+     "label": "Kod status KPKT",
+     "kumpulan": "Status",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "status_pembinaan",
+     "label": "Status pembinaan",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Siap sepenuhnya — 40 tingkat, 363 unit; kemudahan lengkap termasuk sky…"
+    },
+    {
+     "kunci": "dijangka_siap",
+     "label": "Tarikh jangkaan siap",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Siap & diserahkan (VP 26/10/2022)"
+    },
+    {
+     "kunci": "ringkasan",
+     "label": "Ringkasan jualan",
+     "kumpulan": "Kandungan",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[4 item]"
+    },
+    {
+     "kunci": "vr",
+     "label": "Lawatan maya 360°",
+     "kumpulan": "Media",
+     "tahap": "fleksibel",
+     "status": "tiada_kunci",
+     "nilai": ""
+    }
+   ]
+  },
+  {
+   "slug": "allamanda-saujana-klia",
+   "nama": "Allamanda @ Saujana KLIA",
+   "status_kod": "",
+   "skor": 62,
+   "lengkap": false,
+   "kira": {
+    "wajib_ada": 16,
+    "wajib_jumlah": 24,
+    "disyorkan_ada": 4,
+    "disyorkan_jumlah": 8,
+    "fleksibel_ada": 0,
+    "fleksibel_jumlah": 1
+   },
+   "jurang_wajib": [
+    {
+     "kunci": "pemaju",
+     "label": "Pemaju"
+    },
+    {
+     "kunci": "pemaju_ssm",
+     "label": "No. SSM pemaju"
+    },
+    {
+     "kunci": "pemaju_lesen_no",
+     "label": "No. lesen pemaju + tempoh"
+    },
+    {
+     "kunci": "pbt_rujukan_pelan",
+     "label": "Rujukan pelan bangunan PBT"
+    },
+    {
+     "kunci": "bilangan_unit",
+     "label": "Bilangan unit"
+    },
+    {
+     "kunci": "sekatan",
+     "label": "Sekatan kepentingan tanah"
+    },
+    {
+     "kunci": "permit_iklan_no",
+     "label": "No. permit iklan + tempoh"
+    },
+    {
+     "kunci": "harga_rasmi",
+     "label": "Harga rasmi berpermit"
+    }
+   ],
+   "jurang_disyorkan": [
+    {
+     "kunci": "bilangan_jenis",
+     "label": "Bilangan jenis unit"
+    },
+    {
+     "kunci": "unit_pecahan",
+     "label": "Pecahan unit mengikut jenis"
+    },
+    {
+     "kunci": "penafian",
+     "label": "Penafian"
+    },
+    {
+     "kunci": "status_kod",
+     "label": "Kod status KPKT"
+    }
+   ],
+   "perlu_isi": [
+    "Nombor lesen pemaju & permit iklan + tempoh",
+    "Rujukan pelan bangunan PBT",
+    "Bilangan unit tepat & baki unit",
+    "Tarikh siap mengikut permit",
+    "Senarai harga rasmi berpermit (bertulis)",
+    "Sekatan kepentingan tanah"
+   ],
+   "medan": [
+    {
+     "kunci": "nama",
+     "label": "Nama projek",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Allamanda @ Saujana KLIA"
+    },
+    {
+     "kunci": "slug",
+     "label": "Slug URL",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "allamanda-saujana-klia"
+    },
+    {
+     "kunci": "pemaju",
+     "label": "Pemaju",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "pemaju_ssm",
+     "label": "No. SSM pemaju",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "pemaju_lesen_no",
+     "label": "No. lesen pemaju + tempoh",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "ejen_kuasa",
+     "label": "Ejen diberi kuasa",
+     "kumpulan": "Identiti",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "IQI Realty — Zahir (PEA 2684) & Fadilah (PEA 2313)"
+    },
+    {
+     "kunci": "lokasi",
+     "label": "Lokasi",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Saujana KLIA / Kota Warisan, Sepang"
+    },
+    {
+     "kunci": "negeri",
+     "label": "Negeri",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Selangor"
+    },
+    {
+     "kunci": "pbt",
+     "label": "Pihak berkuasa tempatan (PBT)",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Majlis Perbandaran Sepang"
+    },
+    {
+     "kunci": "pbt_rujukan_pelan",
+     "label": "Rujukan pelan bangunan PBT",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "jarak",
+     "label": "Jarak ke kemudahan",
+     "kumpulan": "Lokasi",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[7 item]"
+    },
+    {
+     "kunci": "jenis",
+     "label": "Jenis pembangunan",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Rumah teres 2 tingkat"
+    },
+    {
+     "kunci": "kps",
+     "label": "Keluasan binaan (kps)",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "1,500 – 2,900 kps (Type A: 1,500 kps)"
+    },
+    {
+     "kunci": "bilik",
+     "label": "Bilik",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "4 bilik tidur + 3 bilik air"
+    },
+    {
+     "kunci": "petak_kereta",
+     "label": "Petak kereta",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "2 bay"
+    },
+    {
+     "kunci": "bilangan_unit",
+     "label": "Bilangan unit",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "bilangan_jenis",
+     "label": "Bilangan jenis unit",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "unit_list",
+     "label": "Senarai unit & harga",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "[1 item]"
+    },
+    {
+     "kunci": "unit_pecahan",
+     "label": "Pecahan unit mengikut jenis",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "fasiliti",
+     "label": "Kemudahan",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[4 item]"
+    },
+    {
+     "kunci": "pegangan",
+     "label": "Pegangan tanah",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Pajakan (leasehold) — hakmilik individu"
+    },
+    {
+     "kunci": "sekatan",
+     "label": "Sekatan kepentingan tanah",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "permit_iklan_no",
+     "label": "No. permit iklan + tempoh",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "penafian",
+     "label": "Penafian",
+     "kumpulan": "Pematuhan",
+     "tahap": "disyorkan",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "sumber",
+     "label": "Sumber data",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "[3 item]"
+    },
+    {
+     "kunci": "harga_label",
+     "label": "Label harga",
+     "kumpulan": "Harga",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Dari RM548,905"
+    },
+    {
+     "kunci": "harga_rasmi",
+     "label": "Harga rasmi berpermit",
+     "kumpulan": "Harga",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "status_fasa",
+     "label": "Status fasa",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Bawah pembinaan"
+    },
+    {
+     "kunci": "status_kod",
+     "label": "Kod status KPKT",
+     "kumpulan": "Status",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "status_pembinaan",
+     "label": "Status pembinaan",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Fasa terdahulu Saujana KLIA (Primrose) siap & diserahkan Januari 2024 …"
+    },
+    {
+     "kunci": "dijangka_siap",
+     "label": "Tarikh jangkaan siap",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "2027 (sumber ejen/portal — sahkan dengan permit)"
+    },
+    {
+     "kunci": "ringkasan",
+     "label": "Ringkasan jualan",
+     "kumpulan": "Kandungan",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[4 item]"
+    },
+    {
+     "kunci": "vr",
+     "label": "Lawatan maya 360°",
+     "kumpulan": "Media",
+     "tahap": "fleksibel",
+     "status": "tiada_kunci",
+     "nilai": ""
+    }
+   ]
+  },
+  {
+   "slug": "astana-residence-p8",
+   "nama": "Astana Residence @ Presint 8",
+   "status_kod": "",
+   "skor": 59,
+   "lengkap": false,
+   "kira": {
+    "wajib_ada": 15,
+    "wajib_jumlah": 24,
+    "disyorkan_ada": 4,
+    "disyorkan_jumlah": 8,
+    "fleksibel_ada": 0,
+    "fleksibel_jumlah": 1
+   },
+   "jurang_wajib": [
+    {
+     "kunci": "pemaju_ssm",
+     "label": "No. SSM pemaju"
+    },
+    {
+     "kunci": "pemaju_lesen_no",
+     "label": "No. lesen pemaju + tempoh"
+    },
+    {
+     "kunci": "pbt_rujukan_pelan",
+     "label": "Rujukan pelan bangunan PBT"
+    },
+    {
+     "kunci": "bilangan_unit",
+     "label": "Bilangan unit"
+    },
+    {
+     "kunci": "sekatan",
+     "label": "Sekatan kepentingan tanah"
+    },
+    {
+     "kunci": "permit_iklan_no",
+     "label": "No. permit iklan + tempoh"
+    },
+    {
+     "kunci": "harga_rasmi",
+     "label": "Harga rasmi berpermit"
+    },
+    {
+     "kunci": "status_pembinaan",
+     "label": "Status pembinaan"
+    },
+    {
+     "kunci": "dijangka_siap",
+     "label": "Tarikh jangkaan siap"
+    }
+   ],
+   "jurang_disyorkan": [
+    {
+     "kunci": "bilangan_jenis",
+     "label": "Bilangan jenis unit"
+    },
+    {
+     "kunci": "unit_pecahan",
+     "label": "Pecahan unit mengikut jenis"
+    },
+    {
+     "kunci": "penafian",
+     "label": "Penafian"
+    },
+    {
+     "kunci": "status_kod",
+     "label": "Kod status KPKT"
+    }
+   ],
+   "perlu_isi": [
+    "Harga setiap jenis & bilangan unit",
+    "No. permit iklan + rujukan pelan (PBT)",
+    "Tarikh siap & status pembinaan",
+    "Butiran sekatan kepentingan tanah",
+    "Bilangan petak kereta rasmi setiap jenis"
+   ],
+   "medan": [
+    {
+     "kunci": "nama",
+     "label": "Nama projek",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Astana Residence @ Presint 8"
+    },
+    {
+     "kunci": "slug",
+     "label": "Slug URL",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "astana-residence-p8"
+    },
+    {
+     "kunci": "pemaju",
+     "label": "Pemaju",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Putrajaya Homes Sdn Bhd (PjHOMES — Putrajaya Holdings)"
+    },
+    {
+     "kunci": "pemaju_ssm",
+     "label": "No. SSM pemaju",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "pemaju_lesen_no",
+     "label": "No. lesen pemaju + tempoh",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "ejen_kuasa",
+     "label": "Ejen diberi kuasa",
+     "kumpulan": "Identiti",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "IQI Realty — Zahir (PEA 2684) & Fadilah (PEA 2313)"
+    },
+    {
+     "kunci": "lokasi",
+     "label": "Lokasi",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Presint 8, Putrajaya"
+    },
+    {
+     "kunci": "negeri",
+     "label": "Negeri",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Putrajaya"
+    },
+    {
+     "kunci": "pbt",
+     "label": "Pihak berkuasa tempatan (PBT)",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Perbadanan Putrajaya"
+    },
+    {
+     "kunci": "pbt_rujukan_pelan",
+     "label": "Rujukan pelan bangunan PBT",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "jarak",
+     "label": "Jarak ke kemudahan",
+     "kumpulan": "Lokasi",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[3 item]"
+    },
+    {
+     "kunci": "jenis",
+     "label": "Jenis pembangunan",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Boutique villa (semi-D) 2.5 – 3.5 tingkat"
+    },
+    {
+     "kunci": "kps",
+     "label": "Keluasan binaan (kps)",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "5,348 – 6,456 kps"
+    },
+    {
+     "kunci": "bilik",
+     "label": "Bilik",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "5 + 1 / 6 + 1 bilik tidur"
+    },
+    {
+     "kunci": "petak_kereta",
+     "label": "Petak kereta",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "3 bay berbumbung"
+    },
+    {
+     "kunci": "bilangan_unit",
+     "label": "Bilangan unit",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "bilangan_jenis",
+     "label": "Bilangan jenis unit",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "unit_list",
+     "label": "Senarai unit & harga",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "[2 item]"
+    },
+    {
+     "kunci": "unit_pecahan",
+     "label": "Pecahan unit mengikut jenis",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "fasiliti",
+     "label": "Kemudahan",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[6 item]"
+    },
+    {
+     "kunci": "pegangan",
+     "label": "Pegangan tanah",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Freehold (kekal)"
+    },
+    {
+     "kunci": "sekatan",
+     "label": "Sekatan kepentingan tanah",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "permit_iklan_no",
+     "label": "No. permit iklan + tempoh",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "penafian",
+     "label": "Penafian",
+     "kumpulan": "Pematuhan",
+     "tahap": "disyorkan",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "sumber",
+     "label": "Sumber data",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "[2 item]"
+    },
+    {
+     "kunci": "harga_label",
+     "label": "Label harga",
+     "kumpulan": "Harga",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Dari RM2.3 juta"
+    },
+    {
+     "kunci": "harga_rasmi",
+     "label": "Harga rasmi berpermit",
+     "kumpulan": "Harga",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "status_fasa",
+     "label": "Status fasa",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Lancaran baharu"
+    },
+    {
+     "kunci": "status_kod",
+     "label": "Kod status KPKT",
+     "kumpulan": "Status",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "status_pembinaan",
+     "label": "Status pembinaan",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "dijangka_siap",
+     "label": "Tarikh jangkaan siap",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "ringkasan",
+     "label": "Ringkasan jualan",
+     "kumpulan": "Kandungan",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[4 item]"
+    },
+    {
+     "kunci": "vr",
+     "label": "Lawatan maya 360°",
+     "kumpulan": "Media",
+     "tahap": "fleksibel",
+     "status": "tiada_kunci",
+     "nilai": ""
+    }
+   ]
+  },
+  {
+   "slug": "senna-presint-12",
+   "nama": "Senna @ Presint 12",
+   "status_kod": "",
+   "skor": 56,
+   "lengkap": false,
+   "kira": {
+    "wajib_ada": 14,
+    "wajib_jumlah": 24,
+    "disyorkan_ada": 4,
+    "disyorkan_jumlah": 8,
+    "fleksibel_ada": 0,
+    "fleksibel_jumlah": 1
+   },
+   "jurang_wajib": [
+    {
+     "kunci": "pemaju_ssm",
+     "label": "No. SSM pemaju"
+    },
+    {
+     "kunci": "pemaju_lesen_no",
+     "label": "No. lesen pemaju + tempoh"
+    },
+    {
+     "kunci": "pbt_rujukan_pelan",
+     "label": "Rujukan pelan bangunan PBT"
+    },
+    {
+     "kunci": "petak_kereta",
+     "label": "Petak kereta"
+    },
+    {
+     "kunci": "bilangan_unit",
+     "label": "Bilangan unit"
+    },
+    {
+     "kunci": "sekatan",
+     "label": "Sekatan kepentingan tanah"
+    },
+    {
+     "kunci": "permit_iklan_no",
+     "label": "No. permit iklan + tempoh"
+    },
+    {
+     "kunci": "harga_rasmi",
+     "label": "Harga rasmi berpermit"
+    },
+    {
+     "kunci": "status_pembinaan",
+     "label": "Status pembinaan"
+    },
+    {
+     "kunci": "dijangka_siap",
+     "label": "Tarikh jangkaan siap"
+    }
+   ],
+   "jurang_disyorkan": [
+    {
+     "kunci": "bilangan_jenis",
+     "label": "Bilangan jenis unit"
+    },
+    {
+     "kunci": "unit_pecahan",
+     "label": "Pecahan unit mengikut jenis"
+    },
+    {
+     "kunci": "penafian",
+     "label": "Penafian"
+    },
+    {
+     "kunci": "status_kod",
+     "label": "Kod status KPKT"
+    }
+   ],
+   "perlu_isi": [
+    "Bilangan unit & bilangan unit tersedia",
+    "Harga setiap jenis unit (senarai berpermit)",
+    "No. permit iklan + tempoh & rujukan pelan bangunan",
+    "Tarikh jangkaan siap & status pembinaan",
+    "Bilangan petak kereta setiap jenis",
+    "Jarak rasmi lain (MRT/ERL, sekolah, pusat beli-belah)"
+   ],
+   "medan": [
+    {
+     "kunci": "nama",
+     "label": "Nama projek",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Senna @ Presint 12"
+    },
+    {
+     "kunci": "slug",
+     "label": "Slug URL",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "senna-presint-12"
+    },
+    {
+     "kunci": "pemaju",
+     "label": "Pemaju",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Putrajaya Homes Sdn Bhd (PjHOMES — Putrajaya Holdings)"
+    },
+    {
+     "kunci": "pemaju_ssm",
+     "label": "No. SSM pemaju",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "pemaju_lesen_no",
+     "label": "No. lesen pemaju + tempoh",
+     "kumpulan": "Identiti",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "ejen_kuasa",
+     "label": "Ejen diberi kuasa",
+     "kumpulan": "Identiti",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "IQI Realty — Zahir (PEA 2684) & Fadilah (PEA 2313)"
+    },
+    {
+     "kunci": "lokasi",
+     "label": "Lokasi",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Presint 12, Putrajaya"
+    },
+    {
+     "kunci": "negeri",
+     "label": "Negeri",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Putrajaya"
+    },
+    {
+     "kunci": "pbt",
+     "label": "Pihak berkuasa tempatan (PBT)",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Perbadanan Putrajaya"
+    },
+    {
+     "kunci": "pbt_rujukan_pelan",
+     "label": "Rujukan pelan bangunan PBT",
+     "kumpulan": "Lokasi",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "jarak",
+     "label": "Jarak ke kemudahan",
+     "kumpulan": "Lokasi",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[3 item]"
+    },
+    {
+     "kunci": "jenis",
+     "label": "Jenis pembangunan",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Rumah berkembar (semi-D) 3 tingkat"
+    },
+    {
+     "kunci": "kps",
+     "label": "Keluasan binaan (kps)",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "3,197 – 6,706 kps"
+    },
+    {
+     "kunci": "bilik",
+     "label": "Bilik",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "6 + 1 bilik tidur"
+    },
+    {
+     "kunci": "petak_kereta",
+     "label": "Petak kereta",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "bilangan_unit",
+     "label": "Bilangan unit",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "bilangan_jenis",
+     "label": "Bilangan jenis unit",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "unit_list",
+     "label": "Senarai unit & harga",
+     "kumpulan": "Produk",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "[3 item]"
+    },
+    {
+     "kunci": "unit_pecahan",
+     "label": "Pecahan unit mengikut jenis",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "fasiliti",
+     "label": "Kemudahan",
+     "kumpulan": "Produk",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[3 item]"
+    },
+    {
+     "kunci": "pegangan",
+     "label": "Pegangan tanah",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Freehold (kekal)"
+    },
+    {
+     "kunci": "sekatan",
+     "label": "Sekatan kepentingan tanah",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "permit_iklan_no",
+     "label": "No. permit iklan + tempoh",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "penafian",
+     "label": "Penafian",
+     "kumpulan": "Pematuhan",
+     "tahap": "disyorkan",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "sumber",
+     "label": "Sumber data",
+     "kumpulan": "Pematuhan",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "[2 item]"
+    },
+    {
+     "kunci": "harga_label",
+     "label": "Label harga",
+     "kumpulan": "Harga",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Dari RM2.3 juta"
+    },
+    {
+     "kunci": "harga_rasmi",
+     "label": "Harga rasmi berpermit",
+     "kumpulan": "Harga",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "status_fasa",
+     "label": "Status fasa",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "ok",
+     "nilai": "Lancaran baharu"
+    },
+    {
+     "kunci": "status_kod",
+     "label": "Kod status KPKT",
+     "kumpulan": "Status",
+     "tahap": "disyorkan",
+     "status": "tiada_kunci",
+     "nilai": ""
+    },
+    {
+     "kunci": "status_pembinaan",
+     "label": "Status pembinaan",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "dijangka_siap",
+     "label": "Tarikh jangkaan siap",
+     "kumpulan": "Status",
+     "tahap": "wajib",
+     "status": "kosong",
+     "nilai": ""
+    },
+    {
+     "kunci": "ringkasan",
+     "label": "Ringkasan jualan",
+     "kumpulan": "Kandungan",
+     "tahap": "disyorkan",
+     "status": "ok",
+     "nilai": "[4 item]"
+    },
+    {
+     "kunci": "vr",
+     "label": "Lawatan maya 360°",
+     "kumpulan": "Media",
+     "tahap": "fleksibel",
+     "status": "tiada_kunci",
+     "nilai": ""
+    }
+   ]
+  }
+ ]
+}
