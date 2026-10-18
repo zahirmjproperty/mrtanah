@@ -211,12 +211,13 @@ window.PROJECTS = [
    "Ketumpatan rendah: hanya 348 unit, 28 tingkat, maksimum 8 unit/tingkat.",
    "Ekosistem lengkap dalam kawasan sama: hotel Fraser Residence Putrajaya (sudah beroperasi), Plaza Terra dan dewan acara Terra Acara.",
    "Type A2 dual-key — boleh didiami sendiri sambil menyewakan bahagian kedua unit."
-  ]
+  ],
+  "pemaju_ssm": "199701012103 (0427599-X)"
  },
  {
   "slug": "senna-presint-12",
   "nama": "Senna @ Presint 12",
-  "pemaju": "Putrajaya Homes Sdn Bhd (PjHOMES — Putrajaya Holdings)",
+  "pemaju": "Putrajaya Homes Sdn Bhd (PjHOMES — kumpulan Putrajaya Holdings)",
   "pemaju_lesen_no": "Lesen entiti: 7479/03-2028/0489(R) (entiti berlesen kumpulan PjH) — nombor untuk projek ini perlu disahkan dari brosur",
   "permit_iklan_no": "perlu_isi — minta daripada pemaju",
   "pbt": "Perbadanan Putrajaya",
@@ -226,15 +227,15 @@ window.PROJECTS = [
   "jenis": "Rumah berkembar (semi-D) 3 tingkat",
   "kps": "3,197 – 6,706 kps",
   "bilik": "6 + 1 bilik tidur",
-  "petak_kereta": "perlu_isi",
-  "bilangan_unit": "perlu_isi",
+  "petak_kereta": "2 bay berbumbung (car porch)",
+  "bilangan_unit": "56 unit (3 tingkat semi-D)",
   "pegangan": "Freehold (kekal)",
-  "sekatan": "perlu_isi",
-  "dijangka_siap": "perlu_isi",
-  "harga_label": "Dari RM2.3 juta",
-  "harga_rasmi": "Harga mula rasmi (laman pemaju): dari RM2.3 juta (julat penuh perlu_isi daripada senarai harga berpermit)",
-  "status_fasa": "Lancaran baharu",
-  "status_pembinaan": "perlu_isi (minta status tapak terkini daripada sales gallery)",
+  "sekatan": "Tiada sekatan kepentingan tanah dilaporkan — hakmilik individu (individual title), bebas untuk warganegara Malaysia",
+  "dijangka_siap": "Siap Q4 2021 — sedia untuk diduduki",
+  "harga_label": "Dari RM1.79 juta",
+  "harga_rasmi": "Harga mula rasmi: RM1,790,000 (sumber: SAMS/fappseremban + Facebook rasmi PjHOMES 'Priced from RM1.79M'). Julat penuh ikut jenis unit perlu disahkan dengan senarai harga berpermit.",
+  "status_fasa": "Siap (completed)",
+  "status_pembinaan": "SIAP — sedia untuk diduduki (ready to move in). Sumber: SAMS/fappseremban (56 unit, siap Q4 2021), laman rasmi PjH.",
   "unit_list": [
    {
     "kod": "Type AA1",
@@ -281,17 +282,17 @@ window.PROJECTS = [
    }
   ],
   "perlu_isi": [
-   "Bilangan unit & bilangan unit tersedia",
-   "Harga setiap jenis unit (senarai berpermit)",
-   "No. permit iklan + tempoh & rujukan pelan bangunan",
-   "Tarikh jangkaan siap & status pembinaan",
-   "Bilangan petak kereta setiap jenis",
-   "Jarak rasmi lain (MRT/ERL, sekolah, pusat beli-belah)"
+   "No. permit iklan & jualan + tempoh sah (minta salinan permit daripada pemaju)",
+   "Rujukan pelan bangunan PBT (Perbadanan Putrajaya)",
+   "Senarai harga penuh ikut jenis unit (Type AA1/AA2/AA3)",
+   "Baki unit tersedia semasa"
   ],
   "penafian": "Render = artist's impression. Maklumat produk daripada laman rasmi pemaju; butiran permit & harga perlu disahkan dengan brosur berpermit.",
   "sumber": [
-   "pjh.com.my/pjhomes (laman rasmi PjHOMES)",
-   "pjh.com.my (halaman projek Senna)"
+   "pjh.com.my/properties/senna (laman rasmi PjHOMES)",
+   "SAMS/fappseremban — pendaftaran projek (56 unit, siap Q4 2021, RM1,790,000)",
+   "Facebook rasmi PjHOMES — pengumuman harga RM1.79M",
+   "Brosur rasmi SENNA (pjh.com.my/wp-content/uploads/2026/04/SENNA-Brochure.pdf)"
   ],
   "ejen_kuasa": "IQI Realty — Zahir (PEA 2684) & Fadilah (PEA 2313)",
   "ringkasan": [
@@ -299,7 +300,8 @@ window.PROJECTS = [
    "Keluasan sehingga 6,706 kps — antara rumah berkembar terbesar dalam Presint 12.",
    "Taman pejalan kaki (walkway garden) terus di belakang rumah; master suite dengan bathtub & double vanity.",
    "Lokasi mapan: 3.5 km ke IOI City Mall, 5.3 km ke Putra Mosque dan Hospital Serdang."
-  ]
+  ],
+  "pemaju_ssm": "199701012103 (0427599-X)"
  },
  {
   "slug": "astana-residence-p8",
@@ -315,14 +317,14 @@ window.PROJECTS = [
   "kps": "5,348 – 6,456 kps",
   "bilik": "5 + 1 / 6 + 1 bilik tidur",
   "petak_kereta": "3 bay berbumbung",
-  "bilangan_unit": "perlu_isi",
+  "bilangan_unit": "58 unit (Type A 24, B1 6, B2 10, B3 16, C 1, C1 1)",
   "pegangan": "Freehold (kekal)",
-  "sekatan": "perlu_isi",
-  "dijangka_siap": "perlu_isi",
-  "harga_label": "Dari RM2.3 juta",
-  "harga_rasmi": "Harga mula rasmi (laman pemaju): dari RM2.3 juta (julat penuh perlu_isi)",
-  "status_fasa": "Lancaran baharu",
-  "status_pembinaan": "perlu_isi",
+  "sekatan": "Bumi discount 10% (bukan sekatan kepentingan tanah). Hakmilik individu freehold — tiada sekatan Malay Reserved dilaporkan.",
+  "dijangka_siap": "Siap September 2017",
+  "harga_label": "RM3.537 juta – RM5.086 juta",
+  "harga_rasmi": "RM3,537,000 – RM5,086,000 mengikut jenis unit (Type A 24 unit RM4.211j–5.086j; B1 6 unit RM3.670j–3.845j; B2 10 unit RM3.659j–3.760j; B3 16 unit RM3.537j–3.889j; C/C1 1 unit setiap satu RM4.089j–4.117j). Sumber: Malaysia Most Wanted (data projek).",
+  "status_fasa": "Siap (completed)",
+  "status_pembinaan": "SIAP — September 2017 (dilancarkan Oktober 2015). Sumber: Malaysia Most Wanted + PropertyGenie.",
   "unit_list": [
    {
     "kod": "Type A (2.5 tingkat)",
@@ -364,16 +366,16 @@ window.PROJECTS = [
    }
   ],
   "perlu_isi": [
-   "Harga setiap jenis & bilangan unit",
-   "No. permit iklan + rujukan pelan (PBT)",
-   "Tarikh siap & status pembinaan",
-   "Butiran sekatan kepentingan tanah",
-   "Bilangan petak kereta rasmi setiap jenis"
+   "No. permit iklan & jualan + tempoh sah (minta salinan permit daripada pemaju)",
+   "Rujukan pelan bangunan PBT (Perbadanan Putrajaya)",
+   "Baki unit tersedia semasa"
   ],
   "penafian": "Render = artist's impression. Maklumat produk daripada laman rasmi pemaju; butiran permit perlu disahkan dengan brosur berpermit.",
   "sumber": [
-   "pjh.com.my (halaman projek Astana Residence)",
-   "pjh.com.my/pjhomes"
+   "pjh.com.my/properties/astana-residence (laman rasmi PjHOMES)",
+   "Malaysia Most Wanted — data projek penuh (58 unit, pecahan jenis, harga, siap Sept 2017)",
+   "PropertyGenie — status siap Disember 2017",
+   "Brosur rasmi Astana (pjh.com.my/wp-content/uploads/2026/03/Astana-Brochure-1.pdf)"
   ],
   "ejen_kuasa": "IQI Realty — Zahir (PEA 2684) & Fadilah (PEA 2313)",
   "ringkasan": [
@@ -381,12 +383,58 @@ window.PROJECTS = [
    "Keluasan 5,348–6,456 kps dengan lift peribadi setiap unit dan 3 petak kereta berbumbung.",
    "Clubhouse eksklusif penduduk: kolam infiniti 25 m cantilever menghadap tasik, gim, function room dan playground.",
    "Lokasi dalam Presint 8: 800 m ke SK Putrajaya Presint 8(2), 2.1 km ke Hospital Putrajaya, 3.4 km ke Putrajaya Sentral."
-  ]
+  ],
+  "bilangan_jenis": 6,
+  "unit_pecahan": {
+   "Type A": {
+    "unit": 24,
+    "tingkat": "2.5",
+    "kps_bina": "6,456",
+    "tanah": "4,416–6,758",
+    "harga": "RM4,211,000 – RM5,086,000"
+   },
+   "Type B1": {
+    "unit": 6,
+    "tingkat": "3.5",
+    "kps_bina": "5,752",
+    "tanah": "3,505–3,717",
+    "harga": "RM3,670,000 – RM3,845,000"
+   },
+   "Type B2": {
+    "unit": 10,
+    "tingkat": "3.5",
+    "kps_bina": "5,763",
+    "tanah": "3,360–3,727",
+    "harga": "RM3,659,000 – RM3,760,000"
+   },
+   "Type B3": {
+    "unit": 16,
+    "tingkat": "3",
+    "kps_bina": "5,348",
+    "tanah": "3,654–6,588",
+    "harga": "RM3,537,000 – RM3,889,000"
+   },
+   "Type C": {
+    "unit": 1,
+    "tingkat": "3.5",
+    "kps_bina": "6,082",
+    "tanah": "5,177",
+    "harga": "RM4,117,000"
+   },
+   "Type C1": {
+    "unit": 1,
+    "tingkat": "3.5",
+    "kps_bina": "6,082",
+    "tanah": "5,177",
+    "harga": "RM4,089,000"
+   }
+  },
+  "pemaju_ssm": "199701012103 (0427599-X)"
  },
  {
   "slug": "allamanda-saujana-klia",
   "nama": "Allamanda @ Saujana KLIA",
-  "pemaju": "Glomac Berhad (entiti berlesen projek perlu_isi)",
+  "pemaju": "Magical Sterling Sdn Bhd (976288-D) — anak syarikat milik penuh Glomac Berhad (198301015139 / 110532-M)",
   "pemaju_lesen_no": "perlu_isi — daripada brosur berpermit",
   "permit_iklan_no": "perlu_isi — minta daripada pemaju",
   "pbt": "Majlis Perbandaran Sepang",
@@ -397,14 +445,14 @@ window.PROJECTS = [
   "kps": "1,500 – 2,900 kps (Type A: 1,500 kps)",
   "bilik": "4 bilik tidur + 3 bilik air",
   "petak_kereta": "2 bay",
-  "bilangan_unit": "108 unit (fasa Allamanda — perlu sahkan)",
+  "bilangan_unit": "108 unit (rumah teres 2 tingkat)",
   "pegangan": "Pajakan (leasehold) — hakmilik individu",
-  "sekatan": "perlu_isi",
-  "dijangka_siap": "2027 (sumber ejen/portal — sahkan dengan permit)",
+  "sekatan": "Hakmilik individu, pegangan pajakan (leasehold). Tiada sekatan Malay Reserved dilaporkan.",
+  "dijangka_siap": "2027 (unjuran; sahkan tarikh CCC dengan permit)",
   "harga_label": "Dari RM548,905",
-  "harga_rasmi": "Harga senarai rasmi: RM548,905 – RM831,659 (RM366 – RM554 psf) — sumber portal/pemaju, perlu sahkan dengan senarai harga berpermit",
+  "harga_rasmi": "RM548,905 – RM831,659 (harga SPA sebelum rebat; RM366–RM554 psf). Sumber: myrumahbaru (data SPA). Harga senarai semasa galeri: dari RM655,780.",
   "status_fasa": "Bawah pembinaan",
-  "status_pembinaan": "Fasa terdahulu Saujana KLIA (Primrose) siap & diserahkan Januari 2024 · Allamanda dilancarkan 2024/2025",
+  "status_pembinaan": "Bawah pembinaan. Fasa terdahulu Saujana KLIA (Primrose) siap & diserahkan Januari 2024; Allamanda dilancarkan 2024/2025. Galeri jualan dibuka (show unit).",
   "unit_list": [
    {
     "kod": "Type A",
@@ -452,18 +500,19 @@ window.PROJECTS = [
    }
   ],
   "perlu_isi": [
-   "Nombor lesen pemaju & permit iklan + tempoh",
-   "Rujukan pelan bangunan PBT",
-   "Bilangan unit tepat & baki unit",
-   "Tarikh siap mengikut permit",
-   "Senarai harga rasmi berpermit (bertulis)",
-   "Sekatan kepentingan tanah"
+   "No. lesen pemaju + tempoh sah (salinan permit KPKT)",
+   "No. permit iklan & jualan + tempoh sah",
+   "Rujukan pelan bangunan PBT (MP Sepang)",
+   "Tarikh CCC/VP rasmi",
+   "Baki unit tersedia semasa"
   ],
   "penafian": "Render = artist's impression. Harga yang dipaparkan ialah harga senarai rasmi mengikut permit/brosur pemaju. Sahkan semua butiran dengan sales gallery.",
   "sumber": [
-   "glomac.com.my/project-development/saujana-klia (laman rasmi pemaju)",
-   "myrumahbaru.com (julat harga SPA)",
-   "Laporan kewangan/press release Glomac (GDV fasa Allamanda)"
+   "saujanaklia.com.my (laman rasmi projek — Glomac)",
+   "myrumahbaru.com — julat harga SPA RM548,905–RM831,659, 108 unit, Type A 1,555 kps",
+   "PropertyGuru/iProperty — Magical Sterling Sdn Bhd (976288-D), 108 unit teres",
+   "Laporan tahunan Glomac 2024 — struktur korporat: Magical Sterling = Saujana KLIA",
+   "360 rasmi pemaju: vr.properly.com.my/glomacallamanda"
   ],
   "ejen_kuasa": "IQI Realty — Zahir (PEA 2684) & Fadilah (PEA 2313)",
   "ringkasan": [
@@ -471,7 +520,20 @@ window.PROJECTS = [
    "Keluasan 1,500–2,900 kps, lot 20'×60', 2 petak kereta, hakmilik individu.",
    "3.3 km ke ERL Salak Tinggi, 1.6 km ke KIP Mall Kota Warisan, 11.7 km ke KLIA/KLIA2.",
    "Pilihan mampu milik (harga senarai dari RM548,905) di koridor pertumbuhan Sepang–KLIA."
-  ]
+  ],
+  "pemaju_ssm": "976288-D",
+  "bilangan_jenis": 1,
+  "unit_pecahan": {
+   "Type A": {
+    "unit": 108,
+    "kps_bina": "1,555",
+    "tanah": "20' × 60'",
+    "bilik": "4",
+    "bilik_air": "3",
+    "kereta": "2"
+   }
+  },
+  "vr_rasmi": "https://vr.properly.com.my/glomacallamanda/"
  },
  {
   "slug": "setia-seraya-p15",
@@ -770,6 +832,7 @@ window.PROJECTS = [
    "jumlah": 990
   },
   "bilangan_jenis": 10,
-  "status_kod": "LANCAR"
+  "status_kod": "LANCAR",
+  "vr_rasmi": "https://armanigroup.com.my/Site/ArmaniPutraDengkil/"
  }
 ];
