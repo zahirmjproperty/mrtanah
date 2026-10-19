@@ -59,7 +59,8 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1vdU4jmic5VmkRBa04vv6KAEt0Q4pUpNl=w1000",
       "https://lh3.googleusercontent.com/d/1yfMejiuoq41PPZeN_QWmxrnzojmdLynF=w1000",
       "https://lh3.googleusercontent.com/d/1IUzGZwmcF6F86t_u7ZWTnPmqv829ntls=w1000",
-      "https://lh3.googleusercontent.com/d/1PpBgYOv9ay3iwsxVtflZOs6_rdSRCMth=w1000"
+      "https://lh3.googleusercontent.com/d/1PpBgYOv9ay3iwsxVtflZOs6_rdSRCMth=w1000",
+      "https://lh3.googleusercontent.com/d/16McaFMx7HSHEjZN88eC-inaxFI66Z_9h=w1000"
     ],
     "video": "https://www.youtube.com/watch?v=sSE2K1HUEUU",
     "videos": [
@@ -425,7 +426,11 @@ window.LISTINGS = [
     "images": [
       "https://lh3.googleusercontent.com/d/1tN4szqTDYVgf0Iad1IUsxJheI9caxmBy=w1000",
       "https://lh3.googleusercontent.com/d/1ud1oKy1sB-mdXP8zMvNyFHI9q_13PIhF=w1000",
-      "https://lh3.googleusercontent.com/d/1ioi3WsBGiwCAcGnKZFwMXmz7i1fWVnLY=w1000"
+      "https://lh3.googleusercontent.com/d/1ioi3WsBGiwCAcGnKZFwMXmz7i1fWVnLY=w1000",
+      "https://lh3.googleusercontent.com/d/1FaQL5BU3g0oMkX1LAxWGGGtocdXiboqc=w1000",
+      "https://lh3.googleusercontent.com/d/1AqKCPIHR_7RJv_DhXStM8t1gjEYoD8cf=w1000",
+      "https://lh3.googleusercontent.com/d/1j-HOzf_j4fltb-fHXHfvoC3sOurajUdy=w1000",
+      "https://lh3.googleusercontent.com/d/1E5iAAbuZUIoR3s_dl99aT9hQj9emCNc8=w1000"
     ],
     "video": "",
     "active": true
@@ -545,7 +550,9 @@ window.LISTINGS = [
     "images": [
       "https://lh3.googleusercontent.com/d/1aq22V19iDmNdlh-hAT-uJ0sTYlVODY2E=w1000",
       "https://lh3.googleusercontent.com/d/1GgU1yy-1rDqUcoVNAMdjxMNoCyKyKBx_=w1000",
-      "https://lh3.googleusercontent.com/d/1E0C03ZaEcwsuQ6A575HBf6DOO49G1bI7=w1000"
+      "https://lh3.googleusercontent.com/d/1E0C03ZaEcwsuQ6A575HBf6DOO49G1bI7=w1000",
+      "https://lh3.googleusercontent.com/d/1GhS_lvtz2IkRwUiL_1WftJ-Ekc0xTcz-=w1000",
+      "https://lh3.googleusercontent.com/d/13r7ttWOfpzBBp6Pi7073cSepeBP3iTNH=w1000"
     ],
     "video": "",
     "active": true
@@ -1096,7 +1103,9 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/19ipgKNAZAVBh-NlBJbOau1rbjiD567-8=w1000",
       "https://lh3.googleusercontent.com/d/1cqQ1msx5vqU35avN7n3-zXu3BKHggOg5=w1000",
       "https://lh3.googleusercontent.com/d/1CT_2amn096tBg2bu7wVqJJZABl7RKkBH=w1000",
-      "https://lh3.googleusercontent.com/d/1Q7JvXHlZ68z-5kg8CCE98raah-CvrrdQ=w1000"
+      "https://lh3.googleusercontent.com/d/1Q7JvXHlZ68z-5kg8CCE98raah-CvrrdQ=w1000",
+      "https://lh3.googleusercontent.com/d/1HgXXd811cPOwM8C-Is430CGtOk9mt_uV=w1000",
+      "https://lh3.googleusercontent.com/d/1bv97QBaF4NEJ2DinGrMNyX6w4aTLFEbZ=w1000"
     ],
     "video": "",
     "active": true
@@ -1164,7 +1173,11 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1BzTIM2Q1GYiXOLmMJd92bY-AmgQ6st0l=w1000",
       "https://lh3.googleusercontent.com/d/1ULTAJgHSjaHZOMrOkZufyIbww2ENlziR=w1000",
       "https://lh3.googleusercontent.com/d/1C8q_0BXtSHKt3iWk6RSDuebmsJZhzcwo=w1000",
-      "https://lh3.googleusercontent.com/d/1VuPSGTDe1XcIBAsx1-JsZA22J9-ZEQpd=w1000"
+      "https://lh3.googleusercontent.com/d/1VuPSGTDe1XcIBAsx1-JsZA22J9-ZEQpd=w1000",
+      "https://lh3.googleusercontent.com/d/1lnK8ip0od8pdCTlx58pHxwBXZXq7l3kC=w1000",
+      "https://lh3.googleusercontent.com/d/1IqFV1f6e9mqAEFYcNDT7N2l99mnqxTy7=w1000",
+      "https://lh3.googleusercontent.com/d/1-xx7VaEOeSN8U7P-7TIFGPBBWthxtTl9=w1000",
+      "https://lh3.googleusercontent.com/d/1W9oi5ahscGwsZW-XAxWG2vFrd1CoiDoA=w1000"
     ],
     "video": "",
     "active": true
@@ -1227,10 +1240,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1piiVp6RSRdUcRTGoWwyo6xblRLYpLfGx=w1000",
       "https://lh3.googleusercontent.com/d/1D8tByucOa2vlawyQtRIn2Ek_8DloBTkn=w1000",
       "https://lh3.googleusercontent.com/d/13QPPjgIHmyDbGNqSnD1fiOAFs2jd2cEB=w1000",
-      "https://lh3.googleusercontent.com/d/1IpceMslm6hygcPikDbyT-sGGfgOlV9G9=w1000",
-      "https://lh3.googleusercontent.com/d/1ixFEJddjgCPfznaR6FwQqmDOK-OrROSf=w1000",
-      "https://lh3.googleusercontent.com/d/1g3tdv4aa-MJyIPq64O-4tO-aj0y3C2YG=w1000",
-      "https://lh3.googleusercontent.com/d/1OlGbSr5O2dEPZlaivFG64UxPDkoHrKWO=w1000"
+      "https://lh3.googleusercontent.com/d/1IpceMslm6hygcPikDbyT-sGGfgOlV9G9=w1000"
     ],
     "video": "",
     "active": true
@@ -1287,9 +1297,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-09-08",
     "images": [
-      "https://lh3.googleusercontent.com/d/1YC87y3aZFwhJnYYIhrQIPw00i8CWv2Pw=w1000",
-      "https://lh3.googleusercontent.com/d/1pjYH2aB5eYc-nJFx0w-3XUNsPa58C7hA=w1000",
-      "https://lh3.googleusercontent.com/d/1JYzMCpvGrNwYS1Wyr48ZQmHM_orhVOKz=w1000",
       "https://lh3.googleusercontent.com/d/1YC87y3aZFwhJnYYIhrQIPw00i8CWv2Pw=w1000",
       "https://lh3.googleusercontent.com/d/1pjYH2aB5eYc-nJFx0w-3XUNsPa58C7hA=w1000",
       "https://lh3.googleusercontent.com/d/1JYzMCpvGrNwYS1Wyr48ZQmHM_orhVOKz=w1000",
@@ -1352,9 +1359,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-09-08",
     "images": [
-      "https://lh3.googleusercontent.com/d/1qCh1Y1Q52l7mBITJXUem63JNi8FGeMPP=w1000",
-      "https://lh3.googleusercontent.com/d/1eHTgdnYI3fI5PPLkElZThO6RHBo3A-zl=w1000",
-      "https://lh3.googleusercontent.com/d/1jCd6QdXE_cOUn03UjbGt66K9RFdwX8pZ=w1000",
       "https://lh3.googleusercontent.com/d/1qCh1Y1Q52l7mBITJXUem63JNi8FGeMPP=w1000",
       "https://lh3.googleusercontent.com/d/1eHTgdnYI3fI5PPLkElZThO6RHBo3A-zl=w1000",
       "https://lh3.googleusercontent.com/d/1jCd6QdXE_cOUn03UjbGt66K9RFdwX8pZ=w1000",
@@ -1481,8 +1485,8 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1XD8mdbnaPbeT_mWQF7wFsode_RzktRNx=w1000",
       "https://lh3.googleusercontent.com/d/1ae2h14__Vau-ocjOgjJRjMKmHpHLmR8i=w1000",
       "https://lh3.googleusercontent.com/d/1jt6aUuBb6zuO6hVivPpFJuO9rGj7j_1H=w1000",
-      "https://lh3.googleusercontent.com/d/1j64B3tQFGzFAtE4pSjT60LoOLmJb6EUD=w1000",
-      "https://lh3.googleusercontent.com/d/1XD8mdbnaPbeT_mWQF7wFsode_RzktRNx=w1000"
+      "https://lh3.googleusercontent.com/d/1if8xaYeHXBa5Gge7Yee49iEyS1e9yVN0=w1000",
+      "https://lh3.googleusercontent.com/d/1zRKzSDl7GFQUbG5_EVhQgkrc64Q4w4gK=w1000"
     ],
     "video": "",
     "active": true
@@ -1551,10 +1555,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1CYbdgvH1h22MEcmza1V-fzwQZmsYHQJV=w1000",
       "https://lh3.googleusercontent.com/d/1mdM1GjouPBQX52ar_f6A9mQmDr0V_wOM=w1000",
       "https://lh3.googleusercontent.com/d/1pkUMKH_lmTMy2nhH-ej0NjdFjamL0VtB=w1000",
-      "https://lh3.googleusercontent.com/d/1da_gzB-0NXGyH7y50LNo-iAGw82jBs2t=w1000",
-      "https://lh3.googleusercontent.com/d/1d_0ItMwJxieL0iv-0cKujMFp4ojWXku0=w1000",
-      "https://lh3.googleusercontent.com/d/13imFAc4jd0KXajWS-iQJoHqn9heufoRz=w1000",
-      "https://lh3.googleusercontent.com/d/10MY5Q9w9PMCHjpZhxUQRfIKxryUgUWBI=w1000"
+      "https://lh3.googleusercontent.com/d/1da_gzB-0NXGyH7y50LNo-iAGw82jBs2t=w1000"
     ],
     "video": "",
     "active": true
@@ -1718,10 +1719,7 @@ window.LISTINGS = [
     "images": [
       "https://lh3.googleusercontent.com/d/1pjTDpOHHQdr9yJaVVLcoMLHtPsvW0NCq=w1000",
       "https://lh3.googleusercontent.com/d/1omqUMEHsBozcjaW0Co9yIRoqLY0RGdua=w1000",
-      "https://lh3.googleusercontent.com/d/1uzjGZSNengFWG0rySiFxmGPUQqlWFWSZ=w1000",
-      "https://lh3.googleusercontent.com/d/1omqUMEHsBozcjaW0Co9yIRoqLY0RGdua=w1000",
-      "https://lh3.googleusercontent.com/d/1uzjGZSNengFWG0rySiFxmGPUQqlWFWSZ=w1000",
-      "https://lh3.googleusercontent.com/d/1pjTDpOHHQdr9yJaVVLcoMLHtPsvW0NCq=w1000"
+      "https://lh3.googleusercontent.com/d/1uzjGZSNengFWG0rySiFxmGPUQqlWFWSZ=w1000"
     ],
     "video": "",
     "active": true
@@ -1825,7 +1823,9 @@ window.LISTINGS = [
     "images": [
       "https://lh3.googleusercontent.com/d/1Zt5JH7XeHflSe99xiTXurwrnxqfHkoYO=w1000",
       "https://lh3.googleusercontent.com/d/1f_3dh23Nsb_5SHLvMYJt3iqsllNBK3sS=w1000",
-      "https://lh3.googleusercontent.com/d/1DCeU8SAcLkjYMtp-IAsPF-VTE7yTXKzi=w1000"
+      "https://lh3.googleusercontent.com/d/1DCeU8SAcLkjYMtp-IAsPF-VTE7yTXKzi=w1000",
+      "https://lh3.googleusercontent.com/d/1IoieWe-NODRupUmDRXWjZN4AOgU4xROD=w1000",
+      "https://lh3.googleusercontent.com/d/1bgmrmpE-IMaxJnNu_dVJVL63cZ_ReteM=w1000"
     ],
     "video": "",
     "active": true
@@ -1939,7 +1939,10 @@ window.LISTINGS = [
     "images": [
       "https://lh3.googleusercontent.com/d/1p9DGWqTD8_d74C2y3eNHQExfVT5QHNNo=w1000",
       "https://lh3.googleusercontent.com/d/1XgsU7qlSshthobhPsdAf1Of1n2bnq22K=w1000",
-      "https://lh3.googleusercontent.com/d/1f5JeD4uaM4Ad2vUGT5CJoR4oUYiVveWD=w1000"
+      "https://lh3.googleusercontent.com/d/1f5JeD4uaM4Ad2vUGT5CJoR4oUYiVveWD=w1000",
+      "https://lh3.googleusercontent.com/d/1riN6pPIcq0hQdekKchJUClEzAfcuvK_D=w1000",
+      "https://lh3.googleusercontent.com/d/19ofrTfV64oYl82FrBdwG7qlzQO8P54ly=w1000",
+      "https://lh3.googleusercontent.com/d/1rsbvmXwDNhIfWCWD9UKPcuz4-2UdCNya=w1000"
     ],
     "video": "",
     "active": true
@@ -2126,7 +2129,9 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1xHH4CH4Bp-o1ygc7Wp2V2wCeeZI3dsrQ=w1000",
       "https://lh3.googleusercontent.com/d/1-I-H9cnk7twrfGyHp9H0AA-fkfEAu5ay=w1000",
       "https://lh3.googleusercontent.com/d/1qh89dofl5MdSO1Al-ugnBQuw3b7pTeM9=w1000",
-      "https://lh3.googleusercontent.com/d/1g9JvL_vFEY9zUn-A04Kw14i43avuT_PW=w1000"
+      "https://lh3.googleusercontent.com/d/1g9JvL_vFEY9zUn-A04Kw14i43avuT_PW=w1000",
+      "https://lh3.googleusercontent.com/d/1nVSMsYGFDUcuYEqaBgXeLphJNu5T2Z-D=w1000",
+      "https://lh3.googleusercontent.com/d/1I9MCjOd9oeEU7sPADrRXnOp0fvy6_Ula=w1000"
     ],
     "video": "",
     "active": true
@@ -2250,11 +2255,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/17E5y3asJ_5b_qHx2r6Ze3_fTR9r278C2=w1000",
       "https://lh3.googleusercontent.com/d/1nMD7fc28sXAuUU5vDA4-hTrcKbAoa1lB=w1000",
       "https://lh3.googleusercontent.com/d/1OkxK25RScPyFogTBr7BLM2R46_paKVjk=w1000",
-      "https://lh3.googleusercontent.com/d/1Ke5S6YP-6yeRw-ec56IrRxExmUJlO4Io=w1000",
-      "https://lh3.googleusercontent.com/d/1nMD7fc28sXAuUU5vDA4-hTrcKbAoa1lB=w1000",
-      "https://lh3.googleusercontent.com/d/18t9uCqg9F5jP8f5SFrw1KhUe9TzdJ6bb=w1000",
-      "https://lh3.googleusercontent.com/d/1VXWAOet14QeWMl7lguT821chxVcB9i1G=w1000",
-      "https://lh3.googleusercontent.com/d/17E5y3asJ_5b_qHx2r6Ze3_fTR9r278C2=w1000"
+      "https://lh3.googleusercontent.com/d/1Ke5S6YP-6yeRw-ec56IrRxExmUJlO4Io=w1000"
     ],
     "video": "",
     "active": true
@@ -2317,10 +2318,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/19AToIHo3pBjAe5qHeOExRkstG4rP8HyE=w1000",
       "https://lh3.googleusercontent.com/d/1XTX4s_P1n_eVCaIgrOIdvKD5RyZqkukX=w1000",
       "https://lh3.googleusercontent.com/d/1oF0QU3hGbGdYdA-d4bCD4purKetYAX6i=w1000",
-      "https://lh3.googleusercontent.com/d/1RkW1FuKbl3TRy_HUD-nCxsw0psH6063G=w1000",
-      "https://lh3.googleusercontent.com/d/1jloVQBN9TlNuLck6rypJ6EfiCQMK32PT=w1000",
-      "https://lh3.googleusercontent.com/d/19-W0uJZX2iysHzv4Q1CTF72vmMFEY1Y5=w1000",
-      "https://lh3.googleusercontent.com/d/19AToIHo3pBjAe5qHeOExRkstG4rP8HyE=w1000"
+      "https://lh3.googleusercontent.com/d/14Hw28KqGaCasp6kaD8rd5UMWkGosrG3I=w1000"
     ],
     "video": "",
     "active": true
@@ -2364,10 +2362,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/19AToIHo3pBjAe5qHeOExRkstG4rP8HyE=w1000",
       "https://lh3.googleusercontent.com/d/1XTX4s_P1n_eVCaIgrOIdvKD5RyZqkukX=w1000",
       "https://lh3.googleusercontent.com/d/1oF0QU3hGbGdYdA-d4bCD4purKetYAX6i=w1000",
-      "https://lh3.googleusercontent.com/d/1RkW1FuKbl3TRy_HUD-nCxsw0psH6063G=w1000",
-      "https://lh3.googleusercontent.com/d/1jloVQBN9TlNuLck6rypJ6EfiCQMK32PT=w1000",
-      "https://lh3.googleusercontent.com/d/19-W0uJZX2iysHzv4Q1CTF72vmMFEY1Y5=w1000",
-      "https://lh3.googleusercontent.com/d/19AToIHo3pBjAe5qHeOExRkstG4rP8HyE=w1000"
+      "https://lh3.googleusercontent.com/d/14Hw28KqGaCasp6kaD8rd5UMWkGosrG3I=w1000"
     ],
     "video": "",
     "active": true
@@ -2691,10 +2686,6 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/19IvBYQUZm7wAlWjID_wGY0-oPxfVWTJ3=w1000",
       "https://lh3.googleusercontent.com/d/1KT9qrFYgyWPDgz-lSGeHG3RNUSJhRUiQ=w1000",
       "https://lh3.googleusercontent.com/d/1FADhz79Q9XvZ2X_oKBCZ5q64KzalR3C9=w1000",
-      "https://lh3.googleusercontent.com/d/1YO4BaUKizkwamNkmXVH2dnzRBLH2y92r=w1000",
-      "https://lh3.googleusercontent.com/d/19IvBYQUZm7wAlWjID_wGY0-oPxfVWTJ3=w1000",
-      "https://lh3.googleusercontent.com/d/1KT9qrFYgyWPDgz-lSGeHG3RNUSJhRUiQ=w1000",
-      "https://lh3.googleusercontent.com/d/1FADhz79Q9XvZ2X_oKBCZ5q64KzalR3C9=w1000",
       "https://lh3.googleusercontent.com/d/13D8tXoq0YhdrNz0KCDFEXu2Pt0WfUlm1=w1000"
     ],
     "video": "",
@@ -2758,9 +2749,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1uxjomoWWgeOOpzMwuaw7uUaCO1OLvzf0=w1000",
       "https://lh3.googleusercontent.com/d/12fZkxb-VM7hMEt1xEBTsG1FpsRnKdppj=w1000",
       "https://lh3.googleusercontent.com/d/1ZwDX04ZBGyr-lvu9NXa648SbhFJegzfR=w1000",
-      "https://lh3.googleusercontent.com/d/17EJka4tnNrOb16p5Re-U82tE1SappFBC=w1000",
-      "https://lh3.googleusercontent.com/d/1YD4Jh2z9TqFos9mFp05HluxyMKZ8xudE=w1000",
-      "https://lh3.googleusercontent.com/d/13GoLdY3VMokrREPW5Y-L0lBcKBZz3J77=w1000"
+      "https://lh3.googleusercontent.com/d/17EJka4tnNrOb16p5Re-U82tE1SappFBC=w1000"
     ],
     "video": "",
     "active": true
@@ -2956,11 +2945,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1Y0jVxIsl08nQMATZB34Pawu1P2CrmOd9=w1000",
       "https://lh3.googleusercontent.com/d/1NXwglSf1nfBbX8nnLV_WxyLMVZ9AOYP8=w1000",
       "https://lh3.googleusercontent.com/d/1v3yGUbEoLnmnmKWu_hRuK4ny5ME35BRp=w1000",
-      "https://lh3.googleusercontent.com/d/17LTJNkfozcecHSi_wmh6FNp1KKAYFbj1=w1000",
-      "https://lh3.googleusercontent.com/d/1ljTzCR2R2SIRQwtg2dIwXF10fqu2cdUg=w1000",
-      "https://lh3.googleusercontent.com/d/1Y0jVxIsl08nQMATZB34Pawu1P2CrmOd9=w1000",
-      "https://lh3.googleusercontent.com/d/1NXwglSf1nfBbX8nnLV_WxyLMVZ9AOYP8=w1000",
-      "https://lh3.googleusercontent.com/d/1v3yGUbEoLnmnmKWu_hRuK4ny5ME35BRp=w1000"
+      "https://lh3.googleusercontent.com/d/1NWeVDNi0jEPeU-LHjGDK8vkkSI5bC-r6=w1000"
     ],
     "video": "",
     "active": true
@@ -3163,9 +3148,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1BUc4URpgSwRMhcLEdsZi5YYD5S97pNsf=w1000",
       "https://lh3.googleusercontent.com/d/1pCtQqZO3t8gHX79xjONi_lFlBJsAGu-2=w1000",
       "https://lh3.googleusercontent.com/d/1fe8M5D3n84ZC1L49NmksfIWzSLAMnV-c=w1000",
-      "https://lh3.googleusercontent.com/d/1KH6jCnfw5902Zv19taJolmx7sSuOxyB8=w1000",
-      "https://lh3.googleusercontent.com/d/1f3Y94AtWVKqITwAX_m5cDR1UxMJULLpp=w1000",
-      "https://lh3.googleusercontent.com/d/1n5BdNeBVkAH9Jj6dPka_46B2S8bcpWFu=w1000"
+      "https://lh3.googleusercontent.com/d/1KH6jCnfw5902Zv19taJolmx7sSuOxyB8=w1000"
     ],
     "video": "",
     "active": true
@@ -3228,11 +3211,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1qM-zsEorJfBgRjlWIdmnGaOcdcIaOISG=w1000",
       "https://lh3.googleusercontent.com/d/1suvSP8W6hJCEqdZYZJpfbxD1DuW7gSyr=w1000",
       "https://lh3.googleusercontent.com/d/197e5QZBZn4LKtfkuuU1hRJNFVMocK3N-=w1000",
-      "https://lh3.googleusercontent.com/d/1j1DUeMqWyBu1BSbG4iCFwPQV-uhPDdq7=w1000",
-      "https://lh3.googleusercontent.com/d/1U_jHckKtyMTMC4Q1LC1JBFgmrYBgseDm=w1000",
-      "https://lh3.googleusercontent.com/d/1sqc1ipSqXXYacddM2CjWOUFV1nY4VPAY=w1000",
-      "https://lh3.googleusercontent.com/d/1qM-zsEorJfBgRjlWIdmnGaOcdcIaOISG=w1000",
-      "https://lh3.googleusercontent.com/d/1suvSP8W6hJCEqdZYZJpfbxD1DuW7gSyr=w1000"
+      "https://lh3.googleusercontent.com/d/1j1DUeMqWyBu1BSbG4iCFwPQV-uhPDdq7=w1000"
     ],
     "video": "",
     "active": true
@@ -3365,8 +3344,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1lN62CoXlrxDqTrtS7EyX2ZRT3WDNgSEg=w1000",
       "https://lh3.googleusercontent.com/d/1J5Rd_NVKFrSQd_c8RU1pnh1jHpL1rvDf=w1000",
       "https://lh3.googleusercontent.com/d/1kgQSGlkHcq8UyEp6fkdEw1FQguXMn-cz=w1000",
-      "https://lh3.googleusercontent.com/d/1f6kgQrDRQheBIxFAm90osfzSHmEr3POb=w1000",
-      "https://lh3.googleusercontent.com/d/1k6ThnclXTDVHwoSrnK-_sxrqtd3swpWk=w1000"
+      "https://lh3.googleusercontent.com/d/1f6kgQrDRQheBIxFAm90osfzSHmEr3POb=w1000"
     ],
     "video": "",
     "active": true
@@ -3429,11 +3407,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1jKCZmdbsRz0Toxsk_npYKFAwWMNex9oZ=w1000",
       "https://lh3.googleusercontent.com/d/17chr9U5w20wTZyKFkFfjCD5XW4x9Eccc=w1000",
       "https://lh3.googleusercontent.com/d/1zUNH5oJHCjLNQsGTEH6JVbBp4rPDf8mb=w1000",
-      "https://lh3.googleusercontent.com/d/1f_PbQOPcEmN8TyOa5bo7iBIpFfV3eepC=w1000",
-      "https://lh3.googleusercontent.com/d/1U8iwR9NfSsvx7TKWmmeVmPCAaYeu1RGD=w1000",
-      "https://lh3.googleusercontent.com/d/1hkC7HY7k7VB-GhNabUPS6ccOnBXJIySC=w1000",
-      "https://lh3.googleusercontent.com/d/1jKCZmdbsRz0Toxsk_npYKFAwWMNex9oZ=w1000",
-      "https://lh3.googleusercontent.com/d/17chr9U5w20wTZyKFkFfjCD5XW4x9Eccc=w1000"
+      "https://lh3.googleusercontent.com/d/1f_PbQOPcEmN8TyOa5bo7iBIpFfV3eepC=w1000"
     ],
     "video": "",
     "active": true
@@ -3892,11 +3866,6 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1uM3QjZca5qJw0VWGwBvMuTc88WtKGwnR=w1000",
       "https://lh3.googleusercontent.com/d/15r3jRPHt64MRsSaHqfz71lPEvaMSg1zg=w1000",
       "https://lh3.googleusercontent.com/d/1ZzXA37cXAE3lVNru5-0_4X-4cYqJHlb-=w1000",
-      "https://lh3.googleusercontent.com/d/1HXrhbtRw093qLau_rz83Ve0xAVSr8CRT=w1000",
-      "https://lh3.googleusercontent.com/d/1EtnPGLBcQaX2-YxZcO-xjyoKzb932eAt=w1000",
-      "https://lh3.googleusercontent.com/d/1uM3QjZca5qJw0VWGwBvMuTc88WtKGwnR=w1000",
-      "https://lh3.googleusercontent.com/d/15r3jRPHt64MRsSaHqfz71lPEvaMSg1zg=w1000",
-      "https://lh3.googleusercontent.com/d/1ZzXA37cXAE3lVNru5-0_4X-4cYqJHlb-=w1000",
       "https://lh3.googleusercontent.com/d/1HXrhbtRw093qLau_rz83Ve0xAVSr8CRT=w1000"
     ],
     "video": "",
@@ -3954,10 +3923,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-09-13",
     "images": [
-      "https://lh3.googleusercontent.com/d/19WVny5AvhU7K8ZSj2czAM-k6rIojKdVA=w1000",
-      "https://lh3.googleusercontent.com/d/1oYAdGQEZg-svoYjkIekmq4E7sfr4ZVhd=w1000",
-      "https://lh3.googleusercontent.com/d/1DzfOJGlhP2U0uqe5_7fa8bnSXRAuhgKG=w1000",
-      "https://lh3.googleusercontent.com/d/1fsTEOezUjBsD9l1LR9G8_T7Npqo61bi1=w1000",
       "https://lh3.googleusercontent.com/d/19WVny5AvhU7K8ZSj2czAM-k6rIojKdVA=w1000",
       "https://lh3.googleusercontent.com/d/1oYAdGQEZg-svoYjkIekmq4E7sfr4ZVhd=w1000",
       "https://lh3.googleusercontent.com/d/1DzfOJGlhP2U0uqe5_7fa8bnSXRAuhgKG=w1000",
@@ -4020,9 +3985,6 @@ window.LISTINGS = [
     "images": [
       "https://lh3.googleusercontent.com/d/11Xc5WWZCC0tMxXRtoOyg7XkapVnT_Nel=w1000",
       "https://lh3.googleusercontent.com/d/1KacL6k_9N0Mz2g1rWKBQi3rbRF9aOiGp=w1000",
-      "https://lh3.googleusercontent.com/d/1XlrkXrBBN1bgzGx_9nTHGcdVdDluRRvu=w1000",
-      "https://lh3.googleusercontent.com/d/11Xc5WWZCC0tMxXRtoOyg7XkapVnT_Nel=w1000",
-      "https://lh3.googleusercontent.com/d/1KacL6k_9N0Mz2g1rWKBQi3rbRF9aOiGp=w1000",
       "https://lh3.googleusercontent.com/d/1XlrkXrBBN1bgzGx_9nTHGcdVdDluRRvu=w1000"
     ],
     "video": "",
@@ -4080,9 +4042,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-09-13",
     "images": [
-      "https://lh3.googleusercontent.com/d/11Xc5WWZCC0tMxXRtoOyg7XkapVnT_Nel=w1000",
-      "https://lh3.googleusercontent.com/d/1KacL6k_9N0Mz2g1rWKBQi3rbRF9aOiGp=w1000",
-      "https://lh3.googleusercontent.com/d/1XlrkXrBBN1bgzGx_9nTHGcdVdDluRRvu=w1000",
       "https://lh3.googleusercontent.com/d/11Xc5WWZCC0tMxXRtoOyg7XkapVnT_Nel=w1000",
       "https://lh3.googleusercontent.com/d/1KacL6k_9N0Mz2g1rWKBQi3rbRF9aOiGp=w1000",
       "https://lh3.googleusercontent.com/d/1XlrkXrBBN1bgzGx_9nTHGcdVdDluRRvu=w1000"
@@ -4218,9 +4177,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/18IsYd5-yV9zLRmDV6qwTdfcsa_G_GXB7=w1000",
       "https://lh3.googleusercontent.com/d/1iffEFO54Ksyqf-TIA-n5BDEb2YIaI-HU=w1000",
       "https://lh3.googleusercontent.com/d/1_iUGHIyTUmRey9u2fDjSCbFw_SLjbXoz=w1000",
-      "https://lh3.googleusercontent.com/d/11nv95UIZtDVDk2WFCJycxFXg-UCz6bRQ=w1000",
-      "https://lh3.googleusercontent.com/d/19pk7oAWqIQAp_4l6K0c-_IN2DKMVLizz=w1000",
-      "https://lh3.googleusercontent.com/d/15HbAZjbmEQSl14AnO_kzKkTbsIuTIbvh=w1000"
+      "https://lh3.googleusercontent.com/d/11nv95UIZtDVDk2WFCJycxFXg-UCz6bRQ=w1000"
     ],
     "video": "",
     "active": true
@@ -4286,8 +4243,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1S5-6iepW2HGK4Ped8iyuNN5tyFyoYvEj=w1000",
       "https://lh3.googleusercontent.com/d/1HywziQufpLd4CpZVuxtOf-YD5OmfFifq=w1000",
       "https://lh3.googleusercontent.com/d/1YxoyEqr6g51v3_QajNZ-J9dskqICSmF4=w1000",
-      "https://lh3.googleusercontent.com/d/1_yl9AlVCj360kmJMJ3hsviHZTDyuaIcx=w1000",
-      "https://lh3.googleusercontent.com/d/1PXEglqsBmpqPba9OX9Fs6CsmvB-cJHMT=w1000"
+      "https://lh3.googleusercontent.com/d/1_yl9AlVCj360kmJMJ3hsviHZTDyuaIcx=w1000"
     ],
     "video": "",
     "active": true
@@ -4342,10 +4298,7 @@ window.LISTINGS = [
     "images": [
       "https://lh3.googleusercontent.com/d/1K9i3sLOqKwzJyaoImEsl6ecoaqhHLEMU=w1000",
       "https://lh3.googleusercontent.com/d/1TYXOMLtM3MLziENfbFQxHfQSnDc_ouhK=w1000",
-      "https://lh3.googleusercontent.com/d/1Pv1qZnUuTlHlP0c68u1mtjR8quqjOxAM=w1000",
-      "https://lh3.googleusercontent.com/d/1TYXOMLtM3MLziENfbFQxHfQSnDc_ouhK=w1000",
-      "https://lh3.googleusercontent.com/d/1Pv1qZnUuTlHlP0c68u1mtjR8quqjOxAM=w1000",
-      "https://lh3.googleusercontent.com/d/1K9i3sLOqKwzJyaoImEsl6ecoaqhHLEMU=w1000"
+      "https://lh3.googleusercontent.com/d/1Pv1qZnUuTlHlP0c68u1mtjR8quqjOxAM=w1000"
     ],
     "video": "",
     "active": true
@@ -4405,11 +4358,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1fLBd9n4HH5zIJWA4KG7iOayJ4nBDnpET=w1000",
       "https://lh3.googleusercontent.com/d/1dBvl85t-g1Ng_m7UCG78TYKzkCd8CGBe=w1000",
       "https://lh3.googleusercontent.com/d/1vxk3K-a6cyeAstby1-X2AdjaLF86TIXY=w1000",
-      "https://lh3.googleusercontent.com/d/1qSNayBFEaDibseFKAxBfOq72smc53Y2s=w1000",
-      "https://lh3.googleusercontent.com/d/1yMWrfh35lyS4ckFgotVvEz74a7aqu-RC=w1000",
-      "https://lh3.googleusercontent.com/d/1aM24lR3PVYEXMu73CGDm0iY4P4QCW_s0=w1000",
-      "https://lh3.googleusercontent.com/d/1fLBd9n4HH5zIJWA4KG7iOayJ4nBDnpET=w1000",
-      "https://lh3.googleusercontent.com/d/1dBvl85t-g1Ng_m7UCG78TYKzkCd8CGBe=w1000"
+      "https://lh3.googleusercontent.com/d/1qSNayBFEaDibseFKAxBfOq72smc53Y2s=w1000"
     ],
     "video": "",
     "active": true
@@ -4533,11 +4482,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1d9K5oXmA1enqW-4DVdSwieaf2RfUMwk_=w1000",
       "https://lh3.googleusercontent.com/d/1z_z7iALJc7AL7ITZiekX2bfz6CVc7knX=w1000",
       "https://lh3.googleusercontent.com/d/1mHpArxrty_zeop0incfw9RPmvVeImL1k=w1000",
-      "https://lh3.googleusercontent.com/d/12EOjdEKfesW8r3OGpFJJSE4q0FYiNbIC=w1000",
-      "https://lh3.googleusercontent.com/d/1Bzt5nnrKi3lP_pOup0xk9CFLLjweT9GI=w1000",
-      "https://lh3.googleusercontent.com/d/1PGYlKPSWhkFQKX-NdSqNgneOnplVKZL8=w1000",
-      "https://lh3.googleusercontent.com/d/1d9K5oXmA1enqW-4DVdSwieaf2RfUMwk_=w1000",
-      "https://lh3.googleusercontent.com/d/1z_z7iALJc7AL7ITZiekX2bfz6CVc7knX=w1000"
+      "https://lh3.googleusercontent.com/d/12EOjdEKfesW8r3OGpFJJSE4q0FYiNbIC=w1000"
     ],
     "video": "",
     "active": true
@@ -4662,10 +4607,8 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1wNz6he2uBc0uwevyptIlYFJbCjGXeFXM=w1000",
       "https://lh3.googleusercontent.com/d/1DwSzZQQ47s1xpfAf_Bd5Ac-dQh-v9svr=w1000",
       "https://lh3.googleusercontent.com/d/1OAuHhALKyJKcA9q8hj0tyuKMrfwkTXnV=w1000",
-      "https://lh3.googleusercontent.com/d/1s-FsZ0kDamTqVh01P0RPQwEdURn5K4L4=w1000",
-      "https://lh3.googleusercontent.com/d/1EGc4d8qzWGaNPWCLNugqnERB3FpdgwoQ=w1000",
-      "https://lh3.googleusercontent.com/d/1hRTMlzAOonFr9BfSYCR0yrcw3facT458=w1000",
-      "https://lh3.googleusercontent.com/d/1wNz6he2uBc0uwevyptIlYFJbCjGXeFXM=w1000"
+      "https://lh3.googleusercontent.com/d/1_UVxKfLiRm7gW3OYzyAVIbzoqSCqYsOM=w1000",
+      "https://lh3.googleusercontent.com/d/1_4lLntYpi9evfXLHE-4oJh1PGseQAAKY=w1000"
     ],
     "video": "",
     "active": true
@@ -4722,9 +4665,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/15_zbhNX6KKPYOELhcX4J6IiGWQpL8MCW=w1000",
       "https://lh3.googleusercontent.com/d/1ynDzZz440xG3jTC0S6ayOotQ6RzObqfZ=w1000",
       "https://lh3.googleusercontent.com/d/1VumDbaKqmrrtNPz6f8Bj3BDRY8iENt10=w1000",
-      "https://lh3.googleusercontent.com/d/1z_Kk8iWPqfcSO2cFkFdl2YTM85nwBc1Y=w1000",
-      "https://lh3.googleusercontent.com/d/1U32Xhatcg8LXn6jMc7n-CX1fPbKoHaRa=w1000",
-      "https://lh3.googleusercontent.com/d/1cjlb191liG97p8w4W6DL_hySmUyOXKLz=w1000"
+      "https://lh3.googleusercontent.com/d/1z_Kk8iWPqfcSO2cFkFdl2YTM85nwBc1Y=w1000"
     ],
     "video": "",
     "active": true
@@ -4838,10 +4779,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/12q30rywbgQWP-VkPQDQ9ycBfJ4MtIFub=w1000",
       "https://lh3.googleusercontent.com/d/1bGuJ4unJFsbdq92myPbECEq-oqrDVr13=w1000",
       "https://lh3.googleusercontent.com/d/1MFTevRjbHfZNjUOem6h65YOoGGLEQl3V=w1000",
-      "https://lh3.googleusercontent.com/d/1ZgqG7rgZ5uUVAZywZUHEISYHF3ixDm7p=w1000",
-      "https://lh3.googleusercontent.com/d/1uhDX29pCYHN6fccpbsC7DIgheu4sOi8C=w1000",
-      "https://lh3.googleusercontent.com/d/13oGNRLRX4TqDPm7JUsO7xel0fmHOeCFd=w1000",
-      "https://lh3.googleusercontent.com/d/10JZYY5Q5EsmxZnk-iEmmETKL6KqiZVqr=w1000"
+      "https://lh3.googleusercontent.com/d/1ZgqG7rgZ5uUVAZywZUHEISYHF3ixDm7p=w1000"
     ],
     "video": "",
     "active": true
@@ -4903,8 +4841,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1LL8WYXVNiaUho2k_uurMyb_gEH89V9Qt=w1000",
       "https://lh3.googleusercontent.com/d/1r97TOkhjVcsTLw7J0QfzlUrmQlyHJAAM=w1000",
       "https://lh3.googleusercontent.com/d/1yDP0w8rTKi2fIUGlUqr8GM9CyWU9wbg1=w1000",
-      "https://lh3.googleusercontent.com/d/13_HUpywzvxQgBaSO7jl5EBnEpdUYQAbs=w1000",
-      "https://lh3.googleusercontent.com/d/1rXMfWsqFsID5ySLAVJ4nDlEP0rFeVIuL=w1000"
+      "https://lh3.googleusercontent.com/d/13_HUpywzvxQgBaSO7jl5EBnEpdUYQAbs=w1000"
     ],
     "video": "",
     "active": true
@@ -5022,10 +4959,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1D5Q_Vm3iXHpRNXwRQCHxBpIExEBICsl6=w1000",
       "https://lh3.googleusercontent.com/d/1n6m-HjkMIvuuGJXEK_WpnH003GhpMV4g=w1000",
       "https://lh3.googleusercontent.com/d/1UP4FvIMTAP85c_fC_8zrFwlgMlPJOl8T=w1000",
-      "https://lh3.googleusercontent.com/d/1O3cQP68VoJs8rwMDIkgEyvX5_TNAPTlc=w1000",
-      "https://lh3.googleusercontent.com/d/1VDb91E5RBCRRSEOKowu15-x5ss9w_fwH=w1000",
-      "https://lh3.googleusercontent.com/d/15x28hjwKmF9m6m4li1vV0yERDZLTfnpY=w1000",
-      "https://lh3.googleusercontent.com/d/1eID_crDnATWsvagqG6M7O6KTynq8jlXh=w1000"
+      "https://lh3.googleusercontent.com/d/1O3cQP68VoJs8rwMDIkgEyvX5_TNAPTlc=w1000"
     ],
     "video": "",
     "active": true
@@ -5092,9 +5026,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1kvsih2ryeqCXK3of9nsIZ6e0CdJWWe0Z=w1000",
       "https://lh3.googleusercontent.com/d/1_EDi-MypJhMM61eqg8zdgSG3BeMgJm__=w1000",
       "https://lh3.googleusercontent.com/d/1UVWDzfiGiPpj-hCjJ7eoQlXybvVorMUR=w1000",
-      "https://lh3.googleusercontent.com/d/1jV2Nc88XhvevmqM-aT7URhTX3WOlKKWe=w1000",
-      "https://lh3.googleusercontent.com/d/18ErekCK4TE_bl699qHdRktVZl7sfM0Gg=w1000",
-      "https://lh3.googleusercontent.com/d/19eHPJcMxjsXjR1vGCvWMHADT6riwLb6j=w1000"
+      "https://lh3.googleusercontent.com/d/1jV2Nc88XhvevmqM-aT7URhTX3WOlKKWe=w1000"
     ],
     "video": "",
     "active": true
@@ -5188,7 +5120,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1ETl9gmsmFCTpNW5c2iSE0mn-C04Gzjao=w1000",
       "https://lh3.googleusercontent.com/d/1Gx9uA7U06F2Ia3GFjuuKcJcAx1VpKz1u=w1000",
       "https://lh3.googleusercontent.com/d/1g2h2jMgSVxM6Y1-0G4KEG3FwtZpUk-IN=w1000",
-      "https://lh3.googleusercontent.com/d/1piUbWB3ToxODXcwt3vOLMbULiHT69h3_=w1000"
+      "https://lh3.googleusercontent.com/d/1WcUmxyRL-WDzxjTBFxyr_noxGTwUH8Tb=w1000"
     ],
     "video": "",
     "active": true
@@ -5558,10 +5490,6 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1XUIKrFycZaa5A-cjpLkApNfxYLeiPYvi=w1000",
       "https://lh3.googleusercontent.com/d/17aIOYmj7rKrqkWRt7d1o9aH27d9W7xgL=w1000",
       "https://lh3.googleusercontent.com/d/1s2JY3rUzesZ6EEBuhtFgqbfHdXLgt3NS=w1000",
-      "https://lh3.googleusercontent.com/d/1WKhfH5t4U-eQMNtnOOlwr0kj0tABS1dU=w1000",
-      "https://lh3.googleusercontent.com/d/1XUIKrFycZaa5A-cjpLkApNfxYLeiPYvi=w1000",
-      "https://lh3.googleusercontent.com/d/17aIOYmj7rKrqkWRt7d1o9aH27d9W7xgL=w1000",
-      "https://lh3.googleusercontent.com/d/1s2JY3rUzesZ6EEBuhtFgqbfHdXLgt3NS=w1000",
       "https://lh3.googleusercontent.com/d/1WKhfH5t4U-eQMNtnOOlwr0kj0tABS1dU=w1000"
     ],
     "video": "",
@@ -5608,8 +5536,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1eCsbheR1_ipsx6fOuTVKzg5v_CFlxELW=w1000",
       "https://lh3.googleusercontent.com/d/1TncHJka4G5e9e5yxs8_p9rdzbbJotBRn=w1000",
       "https://lh3.googleusercontent.com/d/1Exf4uzS5DFaIMGK-Xgl5W0ZLaLMc7bsE=w1000",
-      "https://lh3.googleusercontent.com/d/1nfYB-PzOMyAGprEwc5mb9t1jdy5Pvf_m=w1000",
-      "https://lh3.googleusercontent.com/d/11Y3IekILMLXDzHIv4UTP08JILZfF6pvf=w1000"
+      "https://lh3.googleusercontent.com/d/1nfYB-PzOMyAGprEwc5mb9t1jdy5Pvf_m=w1000"
     ],
     "video": "",
     "active": true
@@ -5647,11 +5574,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-10-11",
     "images": [
-      "https://lh3.googleusercontent.com/d/1HWnNYR-dKpoHMbEwcTivc0ybR1F21Dy5=w1000",
-      "https://lh3.googleusercontent.com/d/16vKUxHtzVjYE3D5fz5NGdI5YU0CARBQS=w1000",
-      "https://lh3.googleusercontent.com/d/1KqmizCYl4Iqc5x-spJzzup-HOyQEcqDl=w1000",
-      "https://lh3.googleusercontent.com/d/1yyX9HVYkVx2SYrnStorh8ehlr7ZEK-RN=w1000",
-      "https://lh3.googleusercontent.com/d/1eXWKBRJOnRv9PjMH7F2jpuWW85oIh346=w1000",
       "https://lh3.googleusercontent.com/d/1HWnNYR-dKpoHMbEwcTivc0ybR1F21Dy5=w1000",
       "https://lh3.googleusercontent.com/d/16vKUxHtzVjYE3D5fz5NGdI5YU0CARBQS=w1000",
       "https://lh3.googleusercontent.com/d/1KqmizCYl4Iqc5x-spJzzup-HOyQEcqDl=w1000",
@@ -5982,7 +5904,6 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1zy9vA5nWmvDnZIU4A-DueB9LvhoW_IBp=w1000",
       "https://lh3.googleusercontent.com/d/1RQUsH1DbwDydbqgWQ-ut4ybnSdb8YaoA=w1000",
       "https://lh3.googleusercontent.com/d/1X9Q11CZbE9TPEPhrfoOPvPaYd4J843W3=w1000",
-      "https://lh3.googleusercontent.com/d/1QNfOQbg_BI6t9QLTVbm5bZ1zLb6DyLzE=w1000",
       "https://lh3.googleusercontent.com/d/13bBR3zZYv6IRoMJEiSXtBgJjXt6ghNEU=w1000"
     ],
     "video": "",
@@ -6048,11 +5969,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-10-13",
     "images": [
-      "https://lh3.googleusercontent.com/d/1buMws1fMvxlpALt7PUplwg-PuopvLJLL=w1000",
-      "https://lh3.googleusercontent.com/d/1Ts_3emNbYxJGjcKYg90l5kk8yQ6rGKuB=w1000",
-      "https://lh3.googleusercontent.com/d/1fMG0hgx20wv9LtpgChdmnYXJJi7FHXrC=w1000",
-      "https://lh3.googleusercontent.com/d/1Hzw93HRkfwwN7yddHIRAMv9wUYFOiC3T=w1000",
-      "https://lh3.googleusercontent.com/d/1MQbFu2pDoQQKlbBRLe6eS4W7tRvrg38x=w1000",
       "https://lh3.googleusercontent.com/d/1buMws1fMvxlpALt7PUplwg-PuopvLJLL=w1000",
       "https://lh3.googleusercontent.com/d/1Ts_3emNbYxJGjcKYg90l5kk8yQ6rGKuB=w1000",
       "https://lh3.googleusercontent.com/d/1fMG0hgx20wv9LtpgChdmnYXJJi7FHXrC=w1000",
@@ -6193,10 +6109,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1HnekmlDgz8QMyqHVxPYbnbIrfTuAJEa5=w1000",
       "https://lh3.googleusercontent.com/d/1MtLRqbl3fvoKJmRssdstLon0TtwqMmJe=w1000",
       "https://lh3.googleusercontent.com/d/1l-T4SJXSRqfReE24ItLlhzdEZ4_bs0T7=w1000",
-      "https://lh3.googleusercontent.com/d/10MXyMIf90KqMfY_wBHafH1TRgouZKXJu=w1000",
-      "https://lh3.googleusercontent.com/d/1R0b8k0igdUJcTsXtBpEtWvmfaNa0PZwS=w1000",
-      "https://lh3.googleusercontent.com/d/1KVYnayFidoLI-GsLFJHKjRmPs1lZYqV3=w1000",
-      "https://lh3.googleusercontent.com/d/14xCacEp7SmYCc3P9VTKDrRywzIfatbNu=w1000"
+      "https://lh3.googleusercontent.com/d/10MXyMIf90KqMfY_wBHafH1TRgouZKXJu=w1000"
     ],
     "video": "",
     "active": true
@@ -6266,10 +6179,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1me28yRnrTkP1mVUu2pCjXK_fpf7FLDtk=w1000",
       "https://lh3.googleusercontent.com/d/15LLJAfNALg9ck4tqNgxt-ANz6GjNkus1=w1000",
       "https://lh3.googleusercontent.com/d/1TTUSqfvhmyl7ddtPbq_oDazKc2j5zexj=w1000",
-      "https://lh3.googleusercontent.com/d/1vClnCvlgGlj_6aKIobhhvJIFsdgw7Enh=w1000",
-      "https://lh3.googleusercontent.com/d/1mwvHidy26XEE_w91UzIx0w6KOOe43RJh=w1000",
-      "https://lh3.googleusercontent.com/d/1DHWYYYmpg-g9ah0RgZ691TAvkSH_Uf47=w1000",
-      "https://lh3.googleusercontent.com/d/1ovgvQfsO1vPDtu_oyuEv48ChZhIFOWdg=w1000"
+      "https://lh3.googleusercontent.com/d/1vClnCvlgGlj_6aKIobhhvJIFsdgw7Enh=w1000"
     ],
     "video": "",
     "active": true
@@ -6465,11 +6375,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1qD3kVjaNbPDvViFyCXNUaDVzqWtOI3qe=w1000",
       "https://lh3.googleusercontent.com/d/1xg6oR5uIh7h7Llhipcc_qUGOuJSwTkvU=w1000",
       "https://lh3.googleusercontent.com/d/1TrATrj2i6ikOoo7b6lBlAuwk0hDT5VOL=w1000",
-      "https://lh3.googleusercontent.com/d/1J6o3hPbQH7Wt_hOM7sF6bWkengyK8cvW=w1000",
-      "https://lh3.googleusercontent.com/d/1cilV6f-i41BvFNFq3B2S4yITLIXjUupK=w1000",
-      "https://lh3.googleusercontent.com/d/1coxwKQDI6Q8mpzGx6bvkTszOtgjHArQT=w1000",
-      "https://lh3.googleusercontent.com/d/1qD3kVjaNbPDvViFyCXNUaDVzqWtOI3qe=w1000",
-      "https://lh3.googleusercontent.com/d/1xg6oR5uIh7h7Llhipcc_qUGOuJSwTkvU=w1000"
+      "https://lh3.googleusercontent.com/d/1J6o3hPbQH7Wt_hOM7sF6bWkengyK8cvW=w1000"
     ],
     "video": "",
     "active": true
@@ -6584,11 +6490,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-10-13",
     "images": [
-      "https://lh3.googleusercontent.com/d/10Tet0x2hFgKm5iCx-_XJSUD11oInoNPP=w1000",
-      "https://lh3.googleusercontent.com/d/177sTunF2dNFSwdxaFucTG2_HWV1bhtPR=w1000",
-      "https://lh3.googleusercontent.com/d/1zyGE9OLn8rFMo62ie8rgsbpNFM1OMwep=w1000",
-      "https://lh3.googleusercontent.com/d/1BjxrkRVhLUrr-aIR8gR4XJAzL9XMbAsJ=w1000",
-      "https://lh3.googleusercontent.com/d/1PBzGV3lv_gmL_fhvjALyGoBgBw6pdMLS=w1000",
       "https://lh3.googleusercontent.com/d/10Tet0x2hFgKm5iCx-_XJSUD11oInoNPP=w1000",
       "https://lh3.googleusercontent.com/d/177sTunF2dNFSwdxaFucTG2_HWV1bhtPR=w1000",
       "https://lh3.googleusercontent.com/d/1zyGE9OLn8rFMo62ie8rgsbpNFM1OMwep=w1000",
@@ -6788,9 +6689,6 @@ window.LISTINGS = [
     "images": [
       "https://lh3.googleusercontent.com/d/1bGTg37VEJDgfuoVSJf7tW43v70LiDTnj=w1000",
       "https://lh3.googleusercontent.com/d/1uiDIr4h0R1I2xmNZIHlurdjWwf-KJlhn=w1000",
-      "https://lh3.googleusercontent.com/d/1rV4gCkoW7ygiZWqjrfzhOw7_eAD-E6Ra=w1000",
-      "https://lh3.googleusercontent.com/d/1bGTg37VEJDgfuoVSJf7tW43v70LiDTnj=w1000",
-      "https://lh3.googleusercontent.com/d/1uiDIr4h0R1I2xmNZIHlurdjWwf-KJlhn=w1000",
       "https://lh3.googleusercontent.com/d/1rV4gCkoW7ygiZWqjrfzhOw7_eAD-E6Ra=w1000"
     ],
     "video": "",
@@ -6927,8 +6825,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1Ao-A9PVTwT4Xk6pMO94hEv_PicqZGVDS=w1000",
       "https://lh3.googleusercontent.com/d/1CZXdwVmJKUUvzDZrjLqmvKTei-vMMZl2=w1000",
       "https://lh3.googleusercontent.com/d/1rbTqifupztYSjlJkOeBZ0pWxV67vU64R=w1000",
-      "https://lh3.googleusercontent.com/d/1-q88pSqSDIoeKogQOsWR-C-d2WXpFBtk=w1000",
-      "https://lh3.googleusercontent.com/d/1XNr16GZiyY9aYU9k1ojjgjjqkz2XZzA9=w1000"
+      "https://lh3.googleusercontent.com/d/1-q88pSqSDIoeKogQOsWR-C-d2WXpFBtk=w1000"
     ],
     "video": "",
     "active": true
@@ -6986,10 +6883,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-10-13",
     "images": [
-      "https://lh3.googleusercontent.com/d/1Kpkhma9v815qIWB6pbR87-ZpFs_GtMxU=w1000",
-      "https://lh3.googleusercontent.com/d/11uqCmbvMN4gIERr3PnzGSEaxtwHPWqcV=w1000",
-      "https://lh3.googleusercontent.com/d/1OYEC4Mm0Iq1yzRDkI1sAF3PqGN7Zc86s=w1000",
-      "https://lh3.googleusercontent.com/d/1Te9KcDScUzN04ccwxiCtAHklgU4eiMW2=w1000",
       "https://lh3.googleusercontent.com/d/1Kpkhma9v815qIWB6pbR87-ZpFs_GtMxU=w1000",
       "https://lh3.googleusercontent.com/d/11uqCmbvMN4gIERr3PnzGSEaxtwHPWqcV=w1000",
       "https://lh3.googleusercontent.com/d/1OYEC4Mm0Iq1yzRDkI1sAF3PqGN7Zc86s=w1000",
@@ -7057,8 +6950,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/14ptCKeYqyvoAMtMLgvx_Qeh-zAxuHquu=w1000",
       "https://lh3.googleusercontent.com/d/1jn7TOeSTvh_sy8WHbFwZy83gmXQYqwhN=w1000",
       "https://lh3.googleusercontent.com/d/110XSSWZ6NJ0VHMt6H5dUgWdjsyZKFTfb=w1000",
-      "https://lh3.googleusercontent.com/d/18ElqHsS-kXKt8u_V2bOwicpRzWVjSLfR=w1000",
-      "https://lh3.googleusercontent.com/d/19Ju8IBuldjuBHCttEKPBTZH8ugTsb6cA=w1000"
+      "https://lh3.googleusercontent.com/d/18ElqHsS-kXKt8u_V2bOwicpRzWVjSLfR=w1000"
     ],
     "video": "",
     "active": true
@@ -7101,11 +6993,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/13eq6QkaHKzhszN8BAv59BYG-Nr5-xBop=w1000",
       "https://lh3.googleusercontent.com/d/1RCNG45330Hdlhwqyrfm-PltQYQvVYjsx=w1000",
       "https://lh3.googleusercontent.com/d/1Peumt5Jj0ZmpHs75q2y_Joo3Zv1k9wxT=w1000",
-      "https://lh3.googleusercontent.com/d/1hJnBHLyvkwM8-0hABHQTBU1AIXfA1ubI=w1000",
-      "https://lh3.googleusercontent.com/d/1EAp-YP6ZaYEHUwfu8H5ROS3yhKRmFEtH=w1000",
-      "https://lh3.googleusercontent.com/d/1okuujogF6PkHG3RPbEsivA9DRjAJ5flR=w1000",
-      "https://lh3.googleusercontent.com/d/13eq6QkaHKzhszN8BAv59BYG-Nr5-xBop=w1000",
-      "https://lh3.googleusercontent.com/d/1RCNG45330Hdlhwqyrfm-PltQYQvVYjsx=w1000"
+      "https://lh3.googleusercontent.com/d/1hJnBHLyvkwM8-0hABHQTBU1AIXfA1ubI=w1000"
     ],
     "video": "",
     "active": true
@@ -7149,10 +7037,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/17vLBM_tyINKgB_LZjIwtd6HPDr1C4MB_=w1000",
       "https://lh3.googleusercontent.com/d/1OZO15WGzSkPzqX9EwUy7V02gztSZK5I0=w1000",
       "https://lh3.googleusercontent.com/d/1jZp3UyyNUGjCViwJhIAcQkC81M3R2Zj-=w1000",
-      "https://lh3.googleusercontent.com/d/19CtrypCvV1NmSfBGaM9HNgLPvFGNhfop=w1000",
-      "https://lh3.googleusercontent.com/d/1-BM3TK9YoGLI7PYXCYhE6k6ML_V3zHdQ=w1000",
-      "https://lh3.googleusercontent.com/d/118WXrsZCb2B53jRhhVGUpMsgePGVuOoy=w1000",
-      "https://lh3.googleusercontent.com/d/1J97X42Ouaj-eNE6s0FYKCZCjT1ul4Qk9=w1000"
+      "https://lh3.googleusercontent.com/d/19CtrypCvV1NmSfBGaM9HNgLPvFGNhfop=w1000"
     ],
     "video": "",
     "active": true
@@ -7190,11 +7075,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-10-14",
     "images": [
-      "https://lh3.googleusercontent.com/d/1R9NQPw2uW-B3HigZufYc0GTnLLTpQh18=w1000",
-      "https://lh3.googleusercontent.com/d/1KK9sc265YTxmdU2ghSP2zp8UwZ3-Kw1g=w1000",
-      "https://lh3.googleusercontent.com/d/1KwqyqFzN_yyqWSdsvT6w3wp7EDCzDtMo=w1000",
-      "https://lh3.googleusercontent.com/d/1OopdajyJtEV0iQ0TuQtKAIsw6KG4Kp1Y=w1000",
-      "https://lh3.googleusercontent.com/d/123mkRMsMvXiQ5gU5RjMsNB1MbOVaSwW2=w1000",
       "https://lh3.googleusercontent.com/d/1R9NQPw2uW-B3HigZufYc0GTnLLTpQh18=w1000",
       "https://lh3.googleusercontent.com/d/1KK9sc265YTxmdU2ghSP2zp8UwZ3-Kw1g=w1000",
       "https://lh3.googleusercontent.com/d/1KwqyqFzN_yyqWSdsvT6w3wp7EDCzDtMo=w1000",
@@ -7240,10 +7120,6 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1qairqDP_Fqj-UpAFq4Ku34Up8v_idj9j=w1000",
       "https://lh3.googleusercontent.com/d/10wceZ0jHX3SP-kfmAUPjiP3m2tCQoHG0=w1000",
       "https://lh3.googleusercontent.com/d/1K9TWo2HsUNBhF4AzTShI83C3nJAh5TjG=w1000",
-      "https://lh3.googleusercontent.com/d/1Z2U7E__GGJDlzmhbqUXqMlOfV1FouvWm=w1000",
-      "https://lh3.googleusercontent.com/d/1qairqDP_Fqj-UpAFq4Ku34Up8v_idj9j=w1000",
-      "https://lh3.googleusercontent.com/d/10wceZ0jHX3SP-kfmAUPjiP3m2tCQoHG0=w1000",
-      "https://lh3.googleusercontent.com/d/1K9TWo2HsUNBhF4AzTShI83C3nJAh5TjG=w1000",
       "https://lh3.googleusercontent.com/d/1Z2U7E__GGJDlzmhbqUXqMlOfV1FouvWm=w1000"
     ],
     "video": "",
@@ -7282,11 +7158,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-10-14",
     "images": [
-      "https://lh3.googleusercontent.com/d/1kxy0lQSvfhfDvK1I7JT2MXU2KMKl3ikG=w1000",
-      "https://lh3.googleusercontent.com/d/11lcFkzhEXlVTmlCtNGx_p-yGn5x7fGUR=w1000",
-      "https://lh3.googleusercontent.com/d/1n02P4YtNtLghpq34Xp6YtAO-neEsN42q=w1000",
-      "https://lh3.googleusercontent.com/d/1-TQ0HosC30PgS-2P3WDNn93dCfW4g21a=w1000",
-      "https://lh3.googleusercontent.com/d/1jc-54GSxb2lB3wV04b71mWVSZsB9IOPk=w1000",
       "https://lh3.googleusercontent.com/d/1kxy0lQSvfhfDvK1I7JT2MXU2KMKl3ikG=w1000",
       "https://lh3.googleusercontent.com/d/11lcFkzhEXlVTmlCtNGx_p-yGn5x7fGUR=w1000",
       "https://lh3.googleusercontent.com/d/1n02P4YtNtLghpq34Xp6YtAO-neEsN42q=w1000",
@@ -7428,11 +7299,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1hS8lwk4g_l545ixnvB5T2h7OWmGITN3T=w1000",
       "https://lh3.googleusercontent.com/d/14q3ZhLpozHgUaKNIJMq_wizD-o82ctmZ=w1000",
       "https://lh3.googleusercontent.com/d/1J_UK93eN1fJItFb46YX5WdW4clc1w_SV=w1000",
-      "https://lh3.googleusercontent.com/d/1NOqKlewxW18yS212UBui-4SVG6a8BNnu=w1000",
-      "https://lh3.googleusercontent.com/d/100b3iLHnirmgcFLJHWV1h3XZQ__FmM89=w1000",
-      "https://lh3.googleusercontent.com/d/1Ek1PgvOUfGJfmgJN6JwbJVajzusoYs7S=w1000",
-      "https://lh3.googleusercontent.com/d/1hS8lwk4g_l545ixnvB5T2h7OWmGITN3T=w1000",
-      "https://lh3.googleusercontent.com/d/14q3ZhLpozHgUaKNIJMq_wizD-o82ctmZ=w1000"
+      "https://lh3.googleusercontent.com/d/1NOqKlewxW18yS212UBui-4SVG6a8BNnu=w1000"
     ],
     "video": "",
     "active": true
@@ -7476,10 +7343,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1NNFp-3Jm6xErEZ9l4rvh8ihbsK_7_NkR=w1000",
       "https://lh3.googleusercontent.com/d/1Z3-NDknYIYKdLrhhZxbH5zdosCdJ2aBs=w1000",
       "https://lh3.googleusercontent.com/d/17wNBAWLBy4mc-mk6taEbYHJEswpEPyzl=w1000",
-      "https://lh3.googleusercontent.com/d/1NNDpRarDyV7d3OT6-AtPQZ0RRFVFX4nf=w1000",
-      "https://lh3.googleusercontent.com/d/16MKY1ffJ2slLd5CheYTCeOlauaHFsz1L=w1000",
-      "https://lh3.googleusercontent.com/d/1XtyE6muljpkrbvbJSmJ5y5a1RzZG36fT=w1000",
-      "https://lh3.googleusercontent.com/d/1z-qg39kKVUlcjywCoBmqq8BCsa8jLSTS=w1000"
+      "https://lh3.googleusercontent.com/d/1NNDpRarDyV7d3OT6-AtPQZ0RRFVFX4nf=w1000"
     ],
     "video": "",
     "active": true
@@ -7666,8 +7530,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1UmoS_e8TISlVi16lO5fRpdzKXfmmzj6W=w1000",
       "https://lh3.googleusercontent.com/d/1kmO4YD94Ww2nSsBQs8BjtADZ3IV9nSyy=w1000",
       "https://lh3.googleusercontent.com/d/1q3bfm39_C6g2hUKcTKrIwtX2ysA8-0ou=w1000",
-      "https://lh3.googleusercontent.com/d/1sXbkXEsjEjY2WIJmfNyMl5gg06x2kqYO=w1000",
-      "https://lh3.googleusercontent.com/d/1kmUWeVGvmPPsxld5Sf5xr3tqNPnAihn0=w1000"
+      "https://lh3.googleusercontent.com/d/1sXbkXEsjEjY2WIJmfNyMl5gg06x2kqYO=w1000"
     ],
     "video": "",
     "active": true
@@ -9352,9 +9215,6 @@ window.LISTINGS = [
     "images": [
       "https://lh3.googleusercontent.com/d/1GhFLhjZegOg-Hhlvbi75roo4tftOtCIN=w1000",
       "https://lh3.googleusercontent.com/d/17LIcwLDl_1-OUCZrynxDhjFy5NtonDtJ=w1000",
-      "https://lh3.googleusercontent.com/d/12z4swpsTAuMH6bOeZxd1FbzrTSdZ4eRp=w1000",
-      "https://lh3.googleusercontent.com/d/1GhFLhjZegOg-Hhlvbi75roo4tftOtCIN=w1000",
-      "https://lh3.googleusercontent.com/d/17LIcwLDl_1-OUCZrynxDhjFy5NtonDtJ=w1000",
       "https://lh3.googleusercontent.com/d/12z4swpsTAuMH6bOeZxd1FbzrTSdZ4eRp=w1000"
     ],
     "video": "",
@@ -9401,8 +9261,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1hxoGw-heYHmxLA0Q8Naaa3Th70UCnTJq=w1000",
       "https://lh3.googleusercontent.com/d/1OyHPNx9PgNp8b3k6H_IY0OaAHOVv9tah=w1000",
       "https://lh3.googleusercontent.com/d/1vi_byJBDr7VkunXhO6EJgzaherXhehjz=w1000",
-      "https://lh3.googleusercontent.com/d/18t-lw0Sg3Xj8cy89pFhtGZGbKNKWSxpf=w1000",
-      "https://lh3.googleusercontent.com/d/1bEYBtcaQ79RnoEvxZ8jsMMHinhvlkvtf=w1000"
+      "https://lh3.googleusercontent.com/d/18t-lw0Sg3Xj8cy89pFhtGZGbKNKWSxpf=w1000"
     ],
     "video": "",
     "active": true
@@ -9493,10 +9352,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1tyMT07RY0k11AczqVda0xNGOP9emuA2k=w1000",
       "https://lh3.googleusercontent.com/d/1gxhDHGyH-pZ9hLHfDQvxm74TvD8uwq1i=w1000",
       "https://lh3.googleusercontent.com/d/1PFI4NhCmdOJhtFKmyjLj13NDFfD9aCxN=w1000",
-      "https://lh3.googleusercontent.com/d/1nbyxgSyABlh2Xjpm73406bz9LoenwqB6=w1000",
-      "https://lh3.googleusercontent.com/d/1phVjxTIIXLJBwx5TP_r4wI0dx6UNWgM9=w1000",
-      "https://lh3.googleusercontent.com/d/1F7YUBvkVTajyZNZB3j_SOtUXOYgJ_04s=w1000",
-      "https://lh3.googleusercontent.com/d/1--YCzOOrB8er6DqFVJqcL6AcrucCzPpi=w1000"
+      "https://lh3.googleusercontent.com/d/1nbyxgSyABlh2Xjpm73406bz9LoenwqB6=w1000"
     ],
     "video": "",
     "active": true
@@ -9679,11 +9535,6 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/15JXQEdRR754T3ILSlBz3zcoXdGnyxUCY=w1000",
       "https://lh3.googleusercontent.com/d/10RyJXVr0hbMe3rFIBvj_Uff80m5eAlwy=w1000",
       "https://lh3.googleusercontent.com/d/1R4ikSC07hhtOdkJLzb31od-LAafHSk8T=w1000",
-      "https://lh3.googleusercontent.com/d/1nFYSjvxYHb-WMGRjkKAk0zsqF47DiLEj=w1000",
-      "https://lh3.googleusercontent.com/d/1d6wpFg1HwbSfVJwxoxbF5CZ4gm_K0aqm=w1000",
-      "https://lh3.googleusercontent.com/d/15JXQEdRR754T3ILSlBz3zcoXdGnyxUCY=w1000",
-      "https://lh3.googleusercontent.com/d/10RyJXVr0hbMe3rFIBvj_Uff80m5eAlwy=w1000",
-      "https://lh3.googleusercontent.com/d/1R4ikSC07hhtOdkJLzb31od-LAafHSk8T=w1000",
       "https://lh3.googleusercontent.com/d/1nFYSjvxYHb-WMGRjkKAk0zsqF47DiLEj=w1000"
     ],
     "video": "",
@@ -9722,9 +9573,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-10-15",
     "images": [
-      "https://lh3.googleusercontent.com/d/1WyIzjzGOceCQ0nlVc_fB7oUaE2ndtqT8=w1000",
-      "https://lh3.googleusercontent.com/d/1D7WUTjQUcaZAQeeEbD3vnd8Arq96pL0z=w1000",
-      "https://lh3.googleusercontent.com/d/15Y1IPwtfQSO9_9qCwkMu3f8b0QNB_NKC=w1000",
       "https://lh3.googleusercontent.com/d/1WyIzjzGOceCQ0nlVc_fB7oUaE2ndtqT8=w1000",
       "https://lh3.googleusercontent.com/d/1D7WUTjQUcaZAQeeEbD3vnd8Arq96pL0z=w1000",
       "https://lh3.googleusercontent.com/d/15Y1IPwtfQSO9_9qCwkMu3f8b0QNB_NKC=w1000"
@@ -9865,10 +9713,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1cPZyRKwPVG8r5iDgZtWWn9XqUeejei2N=w1000",
       "https://lh3.googleusercontent.com/d/1KUFEJZVO42Ya-1-DDq8EWNj1k-N6cnMX=w1000",
       "https://lh3.googleusercontent.com/d/1qkxtdedWJVIzgafvaliWa-TVr9oTz5h4=w1000",
-      "https://lh3.googleusercontent.com/d/1rhRoz-ykR03G0tugxWG0clXX2ALaO2YY=w1000",
-      "https://lh3.googleusercontent.com/d/1Lp8jYRgn32Bq_fBlyOJqjnkqNAU4NRlA=w1000",
-      "https://lh3.googleusercontent.com/d/1Etv7VANrfpos1xbYvcX909Qirlqx3TGA=w1000",
-      "https://lh3.googleusercontent.com/d/1xf8YronPPlf-xWekfe027bgWP6N7311U=w1000"
+      "https://lh3.googleusercontent.com/d/1rhRoz-ykR03G0tugxWG0clXX2ALaO2YY=w1000"
     ],
     "video": "",
     "active": true
@@ -10047,10 +9892,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-10-16",
     "images": [
-      "https://lh3.googleusercontent.com/d/1dVgr3iJ8Uq6XbqvGQ-ehh61ch3qYe6wW=w1000",
-      "https://lh3.googleusercontent.com/d/1Q3QQGZ_N_PA6O1Mah0MlsTRYXHU2db9S=w1000",
-      "https://lh3.googleusercontent.com/d/1fjXGL2FUbWWAn_pLBAU4RpOLwHu4X9Or=w1000",
-      "https://lh3.googleusercontent.com/d/1ywvVyQtnOcspw4FW0qWxAhh-y0h3q7QV=w1000",
       "https://lh3.googleusercontent.com/d/1dVgr3iJ8Uq6XbqvGQ-ehh61ch3qYe6wW=w1000",
       "https://lh3.googleusercontent.com/d/1Q3QQGZ_N_PA6O1Mah0MlsTRYXHU2db9S=w1000",
       "https://lh3.googleusercontent.com/d/1fjXGL2FUbWWAn_pLBAU4RpOLwHu4X9Or=w1000",
@@ -10236,10 +10077,6 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1MuwUp_TCFHiRYGHXJ_8ONvqas0S_lTMO=w1000",
       "https://lh3.googleusercontent.com/d/14XrfXAzFwYaYd2jjSZJ4yrgTNGX24_7F=w1000",
       "https://lh3.googleusercontent.com/d/1oy3YjrCWpAg9UrLDnrgZp5eUdiXAeR2s=w1000",
-      "https://lh3.googleusercontent.com/d/1dIt81wNpiYr2iGPWOpjuwI5oDCizKdxv=w1000",
-      "https://lh3.googleusercontent.com/d/1MuwUp_TCFHiRYGHXJ_8ONvqas0S_lTMO=w1000",
-      "https://lh3.googleusercontent.com/d/14XrfXAzFwYaYd2jjSZJ4yrgTNGX24_7F=w1000",
-      "https://lh3.googleusercontent.com/d/1oy3YjrCWpAg9UrLDnrgZp5eUdiXAeR2s=w1000",
       "https://lh3.googleusercontent.com/d/1dIt81wNpiYr2iGPWOpjuwI5oDCizKdxv=w1000"
     ],
     "video": "",
@@ -10278,8 +10115,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-10-16",
     "images": [
-      "https://lh3.googleusercontent.com/d/1P_rHwRx8zq2M2zLi26gEVUFl9_kJhwMC=w1000",
-      "https://lh3.googleusercontent.com/d/187hcXQGgyj8MsF4rAjbLxzpoNg0DfCgx=w1000",
       "https://lh3.googleusercontent.com/d/1P_rHwRx8zq2M2zLi26gEVUFl9_kJhwMC=w1000",
       "https://lh3.googleusercontent.com/d/187hcXQGgyj8MsF4rAjbLxzpoNg0DfCgx=w1000"
     ],
@@ -10327,8 +10162,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1_RDDt4dxfwAVdme9_DjMj-RsdL0o5g5t=w1000",
       "https://lh3.googleusercontent.com/d/1fYve-bBLfpsKV58u3Ierk-sNsPIyPBMW=w1000",
       "https://lh3.googleusercontent.com/d/1gp75MQdWSpmX1QNY-I8NlrnDMy9Xglq4=w1000",
-      "https://lh3.googleusercontent.com/d/1woIEv-Q56c5wB6iAANyudLMOAVkyWZn3=w1000",
-      "https://lh3.googleusercontent.com/d/1kLlA7aE_uD4-jEq6mHd2T_exHvLdbnka=w1000"
+      "https://lh3.googleusercontent.com/d/1woIEv-Q56c5wB6iAANyudLMOAVkyWZn3=w1000"
     ],
     "video": "",
     "active": true
@@ -10372,10 +10206,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1zJSwJ45ctQWNBkxVG-HlQuAIfSDMa_vd=w1000",
       "https://lh3.googleusercontent.com/d/1oR9tHKqEelISS34UKzFKgHSvqf9VbgjT=w1000",
       "https://lh3.googleusercontent.com/d/1DV6WcFxelZgHHsYH7beI9KZ5jwoPbGje=w1000",
-      "https://lh3.googleusercontent.com/d/11GEUCVuxDHfoGZu63JP8ETDHVWYR-kcX=w1000",
-      "https://lh3.googleusercontent.com/d/1atu8keE-WBdxQnaa799FJO7Qlu_PFYme=w1000",
-      "https://lh3.googleusercontent.com/d/1VM5YhGOHkDI7ibE1L2ywmbwUrLKq4Uis=w1000",
-      "https://lh3.googleusercontent.com/d/1gvzsJKMzxHHbzxCJzH2ptnm0mZ2Hopm4=w1000"
+      "https://lh3.googleusercontent.com/d/11GEUCVuxDHfoGZu63JP8ETDHVWYR-kcX=w1000"
     ],
     "video": "",
     "active": true
@@ -10463,10 +10294,6 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1VmI2N3XwoDU-2k1GabftoOBLut4RVz9E=w1000",
       "https://lh3.googleusercontent.com/d/1XagB3hlsenGscZE8eG4P_GGK89zHTCkr=w1000",
       "https://lh3.googleusercontent.com/d/1Vg36J1UJIGbMvVd7wsu_QGDPUNkbayFn=w1000",
-      "https://lh3.googleusercontent.com/d/1fDrdQoyLEEyVr6CMbtNxXbfsttpehbqp=w1000",
-      "https://lh3.googleusercontent.com/d/1VmI2N3XwoDU-2k1GabftoOBLut4RVz9E=w1000",
-      "https://lh3.googleusercontent.com/d/1XagB3hlsenGscZE8eG4P_GGK89zHTCkr=w1000",
-      "https://lh3.googleusercontent.com/d/1Vg36J1UJIGbMvVd7wsu_QGDPUNkbayFn=w1000",
       "https://lh3.googleusercontent.com/d/1fDrdQoyLEEyVr6CMbtNxXbfsttpehbqp=w1000"
     ],
     "video": "",
@@ -10505,11 +10332,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-10-16",
     "images": [
-      "https://lh3.googleusercontent.com/d/1DLU4Yu2a1R1VdIcsbxMrtBBRfL3DudXs=w1000",
-      "https://lh3.googleusercontent.com/d/1rCdt5_r5ojWomk-FAX9LdI_mfENO2lIq=w1000",
-      "https://lh3.googleusercontent.com/d/1uvjdG2lvsVl_Tj2VJ1kK0GrrOlxcEnrj=w1000",
-      "https://lh3.googleusercontent.com/d/1QSsnrYR4WRvfozfjiwUNsAjKcUimVhPD=w1000",
-      "https://lh3.googleusercontent.com/d/11mRsBJkDmIALbKN5tBjrcE-B66PIyXPg=w1000",
       "https://lh3.googleusercontent.com/d/1DLU4Yu2a1R1VdIcsbxMrtBBRfL3DudXs=w1000",
       "https://lh3.googleusercontent.com/d/1rCdt5_r5ojWomk-FAX9LdI_mfENO2lIq=w1000",
       "https://lh3.googleusercontent.com/d/1uvjdG2lvsVl_Tj2VJ1kK0GrrOlxcEnrj=w1000",
@@ -10603,11 +10425,6 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1xycq9vWa_FZJSz03CPjRAhCY6cHmIsDP=w1000",
       "https://lh3.googleusercontent.com/d/1gBRwCpRKCxpsxq_pLqEI0-cFG2CVeV4F=w1000",
       "https://lh3.googleusercontent.com/d/1A4gz506mM7i7ScnFT2zxGiHiGFaRC0B7=w1000",
-      "https://lh3.googleusercontent.com/d/1eNrjqvz6UnMXn0RzNU_c1D6T5Ct0IUuN=w1000",
-      "https://lh3.googleusercontent.com/d/1OVirr8IRDDeXFfXUMGfx2LAOFzw88oKx=w1000",
-      "https://lh3.googleusercontent.com/d/1xycq9vWa_FZJSz03CPjRAhCY6cHmIsDP=w1000",
-      "https://lh3.googleusercontent.com/d/1gBRwCpRKCxpsxq_pLqEI0-cFG2CVeV4F=w1000",
-      "https://lh3.googleusercontent.com/d/1A4gz506mM7i7ScnFT2zxGiHiGFaRC0B7=w1000",
       "https://lh3.googleusercontent.com/d/1eNrjqvz6UnMXn0RzNU_c1D6T5Ct0IUuN=w1000"
     ],
     "video": "",
@@ -10695,9 +10512,7 @@ window.LISTINGS = [
     "images": [
       "https://lh3.googleusercontent.com/d/1fozJW8tyO32XozvZIkHJLOkOGdYbPiJx=w1000",
       "https://lh3.googleusercontent.com/d/11-OooaGtUS21SuanO9kHGZfFWeIRlTUD=w1000",
-      "https://lh3.googleusercontent.com/d/1fozJW8tyO32XozvZIkHJLOkOGdYbPiJx=w1000",
-      "https://lh3.googleusercontent.com/d/198JIhO96oRhGLMq79MqTaGhhus0EOIIT=w1000",
-      "https://lh3.googleusercontent.com/d/11-OooaGtUS21SuanO9kHGZfFWeIRlTUD=w1000"
+      "https://lh3.googleusercontent.com/d/198JIhO96oRhGLMq79MqTaGhhus0EOIIT=w1000"
     ],
     "video": "",
     "active": true
@@ -10742,9 +10557,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/15LGASsvfImhNw0InjSnNEqFjqb06QyiG=w1000",
       "https://lh3.googleusercontent.com/d/12tzEoLtJqbuyO2BCLIfGx9hLOMytyRos=w1000",
       "https://lh3.googleusercontent.com/d/1H1vxqUNwSvLJ7STgDUAIzA7KqJJkv4Cm=w1000",
-      "https://lh3.googleusercontent.com/d/134LpdaUYeeTZTKpUp2Ek-PeViIxOIAey=w1000",
-      "https://lh3.googleusercontent.com/d/1foszsc5rTRVTZ7ca-IC-XlBCa5FEwgFE=w1000",
-      "https://lh3.googleusercontent.com/d/1FJSw4nfJ69qhJJaZaaRUMjkFjgZw092O=w1000"
+      "https://lh3.googleusercontent.com/d/134LpdaUYeeTZTKpUp2Ek-PeViIxOIAey=w1000"
     ],
     "video": "",
     "active": true
@@ -10787,11 +10600,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1bQiApYGfXu86sDwGysfWqNIQZLpEGkNI=w1000",
       "https://lh3.googleusercontent.com/d/1svWavJoYEyPSKAaodT2za9AW2eYfeYhz=w1000",
       "https://lh3.googleusercontent.com/d/1QVLm5V1aXIpO43CO4oLJSlrVsF7W7qcT=w1000",
-      "https://lh3.googleusercontent.com/d/1fz7A8IVSnGCHh61RS1M3L3yy5_xF_suj=w1000",
-      "https://lh3.googleusercontent.com/d/1vTAKsLgjkqnYWmiNG2EaB9qpDsprm6g9=w1000",
-      "https://lh3.googleusercontent.com/d/1ugJFczVQi_ofByIUd-iQ43A0WRgsCZWE=w1000",
-      "https://lh3.googleusercontent.com/d/1bQiApYGfXu86sDwGysfWqNIQZLpEGkNI=w1000",
-      "https://lh3.googleusercontent.com/d/1svWavJoYEyPSKAaodT2za9AW2eYfeYhz=w1000"
+      "https://lh3.googleusercontent.com/d/1fz7A8IVSnGCHh61RS1M3L3yy5_xF_suj=w1000"
     ],
     "video": "",
     "active": true
@@ -10836,9 +10645,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1q7PJDfptsvLYG9P4YdUYUPtzGmzcrrl9=w1000",
       "https://lh3.googleusercontent.com/d/1yY_sQje_ksv6LOA7QupTZbgPeAgt40g4=w1000",
       "https://lh3.googleusercontent.com/d/1L-tHpKcU2Ah_DMaj_F-9rIihsIT2mtK5=w1000",
-      "https://lh3.googleusercontent.com/d/1rXxOCR9JpCJfn6OIam72MI1_sRKf3LTr=w1000",
-      "https://lh3.googleusercontent.com/d/1qm9DDJqijmfQSB7LM0wylkwYJFtr6uvf=w1000",
-      "https://lh3.googleusercontent.com/d/1nbJtoFogN4EZtXvEQ4sooW4DVKEtNnhJ=w1000"
+      "https://lh3.googleusercontent.com/d/1rXxOCR9JpCJfn6OIam72MI1_sRKf3LTr=w1000"
     ],
     "video": "",
     "active": true
@@ -10881,11 +10688,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1eYw0XgKzXN5CECEkZdpf5N3YC-OyB4zC=w1000",
       "https://lh3.googleusercontent.com/d/1yrrmg49lGwQ7xsE02M6rlA3fE5hE54yK=w1000",
       "https://lh3.googleusercontent.com/d/1HKOo2eCCc0gT0RxYB8aUH7rWkzEc8aTe=w1000",
-      "https://lh3.googleusercontent.com/d/1M4z7BKMQX7OZxy7cXcUWqR8RqMgGg3Av=w1000",
-      "https://lh3.googleusercontent.com/d/18iWJHDruwiVh4eVWxgNm8s17aV75F3lB=w1000",
-      "https://lh3.googleusercontent.com/d/153IqZPHy_3s9RDfH3H6E90AYNw5snLgr=w1000",
-      "https://lh3.googleusercontent.com/d/1eYw0XgKzXN5CECEkZdpf5N3YC-OyB4zC=w1000",
-      "https://lh3.googleusercontent.com/d/1yrrmg49lGwQ7xsE02M6rlA3fE5hE54yK=w1000"
+      "https://lh3.googleusercontent.com/d/1M4z7BKMQX7OZxy7cXcUWqR8RqMgGg3Av=w1000"
     ],
     "video": "",
     "active": true
@@ -10930,9 +10733,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1iCuEVgZkaxpmqR7gHvUihZ5fLZcFKISC=w1000",
       "https://lh3.googleusercontent.com/d/1mTLbYL20NKPoRJBHilacDxPn8IJnv4EC=w1000",
       "https://lh3.googleusercontent.com/d/1HRP_TOzwUCyaoOywkh253Z7iYbmV0yhq=w1000",
-      "https://lh3.googleusercontent.com/d/13yln6ynQLe3tmcfuW1XstuchgaseyTpP=w1000",
-      "https://lh3.googleusercontent.com/d/1OSI84DpI1Ulhc4CMXeLXM6sPFqdj7L7m=w1000",
-      "https://lh3.googleusercontent.com/d/1fVe3dTMyq7qRf8IAzaKBGpfTOGOSJ2xc=w1000"
+      "https://lh3.googleusercontent.com/d/13yln6ynQLe3tmcfuW1XstuchgaseyTpP=w1000"
     ],
     "video": "",
     "active": true
@@ -10975,11 +10776,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1sUd__Cw4w87r3ihAsUYzZTTUOGV-Eh69=w1000",
       "https://lh3.googleusercontent.com/d/1rW8Amiqm8twPHeX5JyHGkDWMHI5ToIvg=w1000",
       "https://lh3.googleusercontent.com/d/1DVJ_jhBTnlV872dg_diQOkDLqvSP8tP_=w1000",
-      "https://lh3.googleusercontent.com/d/1cqv5TpkqRgPpg8Nzes9pXSmXQ8-wRPX3=w1000",
-      "https://lh3.googleusercontent.com/d/1r9NsCVSuUmHnZE12LzynQuYvhDJSbpmh=w1000",
-      "https://lh3.googleusercontent.com/d/19Up50LR7bMRbuetodxk4T4zad-HtVdjy=w1000",
-      "https://lh3.googleusercontent.com/d/1sUd__Cw4w87r3ihAsUYzZTTUOGV-Eh69=w1000",
-      "https://lh3.googleusercontent.com/d/1rW8Amiqm8twPHeX5JyHGkDWMHI5ToIvg=w1000"
+      "https://lh3.googleusercontent.com/d/19Up50LR7bMRbuetodxk4T4zad-HtVdjy=w1000"
     ],
     "video": "",
     "active": true
@@ -11024,9 +10821,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1Z305cULpgnruN8tClUreGEVOhEjrvcj-=w1000",
       "https://lh3.googleusercontent.com/d/1xfDoU9td_SuvGpz9XuMlz3kOonw6O9am=w1000",
       "https://lh3.googleusercontent.com/d/13ESXv4S0X5UuLAmWmu7kdh-k-vs8ogtk=w1000",
-      "https://lh3.googleusercontent.com/d/1mzzieP0OBar4NW15S32y3R0FmNgFL-n3=w1000",
-      "https://lh3.googleusercontent.com/d/1ABoul3AsmpqIG8Yj06SJc_jTrI3oCyiq=w1000",
-      "https://lh3.googleusercontent.com/d/16eY7RUFjW87F_9oiAGWR6mWnKinSfhOV=w1000"
+      "https://lh3.googleusercontent.com/d/1mzzieP0OBar4NW15S32y3R0FmNgFL-n3=w1000"
     ],
     "video": "",
     "active": true
@@ -11349,10 +11144,6 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1kGrz6KV0d_hXmUMfb3aBC9mMa_skgEYX=w1000",
       "https://lh3.googleusercontent.com/d/160Ew1Jv9j_U2x0Gm8FMk4PHgOWQ6pIPr=w1000",
       "https://lh3.googleusercontent.com/d/13MrWzQs-iz_mQIqqtMGiUPUOuXPG2Av9=w1000",
-      "https://lh3.googleusercontent.com/d/1sd0hZxIxhONuPgKdq0eSqktfDR0xNj2B=w1000",
-      "https://lh3.googleusercontent.com/d/1kGrz6KV0d_hXmUMfb3aBC9mMa_skgEYX=w1000",
-      "https://lh3.googleusercontent.com/d/160Ew1Jv9j_U2x0Gm8FMk4PHgOWQ6pIPr=w1000",
-      "https://lh3.googleusercontent.com/d/13MrWzQs-iz_mQIqqtMGiUPUOuXPG2Av9=w1000",
       "https://lh3.googleusercontent.com/d/1sd0hZxIxhONuPgKdq0eSqktfDR0xNj2B=w1000"
     ],
     "video": "",
@@ -11398,9 +11189,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/17YiesL07Vc8yK1iQNaJcx0aofC9ViNmb=w1000",
       "https://lh3.googleusercontent.com/d/1WbmWxgA71mu2tUuBi6bncRJ2vueZwNu9=w1000",
       "https://lh3.googleusercontent.com/d/10C7U2h36xbJLzHeM8RK-JiAZRMUZIlX_=w1000",
-      "https://lh3.googleusercontent.com/d/1ExVz6poGwQ-UI8nEvYKikpKFeg5L735I=w1000",
-      "https://lh3.googleusercontent.com/d/1kDnAzsSXNaMP8hLX0S7_0bI0mWLSSUWn=w1000",
-      "https://lh3.googleusercontent.com/d/113_Q-5B33zJECZ8Ln3PzVIMtjaQIcuns=w1000"
+      "https://lh3.googleusercontent.com/d/1ExVz6poGwQ-UI8nEvYKikpKFeg5L735I=w1000"
     ],
     "video": "",
     "active": true
@@ -11444,10 +11233,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1Rq4Yxugnr6BoUe9rWtf24VNazPhDBiT0=w1000",
       "https://lh3.googleusercontent.com/d/1h5qdkeyiNcVSPYVWu_I7gzUj_hze-ZCL=w1000",
       "https://lh3.googleusercontent.com/d/1RvysWKdYSPq7swtDmC1yyF8APpP5IGBn=w1000",
-      "https://lh3.googleusercontent.com/d/12UKEJVgVUDQGEzxJwTggyiWz9SpTDLGs=w1000",
-      "https://lh3.googleusercontent.com/d/1Op-q3zDukfL1EPCpT1zhbRRWx5BUlBuU=w1000",
-      "https://lh3.googleusercontent.com/d/1x0QV7at7Azh7xzkWjnOyOZMENClLjXmP=w1000",
-      "https://lh3.googleusercontent.com/d/1HqH0ePT_p4TWFALKx6OtJKWKTm764_4l=w1000"
+      "https://lh3.googleusercontent.com/d/12UKEJVgVUDQGEzxJwTggyiWz9SpTDLGs=w1000"
     ],
     "video": "",
     "active": true
@@ -11540,8 +11326,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1QdjKuYyi7GWzcrYVqto6uE3lDkkuquCR=w1000",
       "https://lh3.googleusercontent.com/d/1pv8SoLNrPw_twqn9b_Et1h0syzeFUs79=w1000",
       "https://lh3.googleusercontent.com/d/1QGBJdj7uyLEjnSKHGmBBEgPJWKTYr6dF=w1000",
-      "https://lh3.googleusercontent.com/d/16QxdRw1j-RJjs50yLfG1OVzQ-mg37yW5=w1000",
-      "https://lh3.googleusercontent.com/d/1YFxDRQu3ChqALmlMgs0onzQuK-An5MZk=w1000"
+      "https://lh3.googleusercontent.com/d/16QxdRw1j-RJjs50yLfG1OVzQ-mg37yW5=w1000"
     ],
     "video": "",
     "active": true
@@ -11776,7 +11561,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1XTHID6ZKqLlKmxMfaKasPH1LAHRuyXTL=w1000",
       "https://lh3.googleusercontent.com/d/1UYvADKvJDMeXx68_g08WbuQHtQDLmvRB=w1000",
       "https://lh3.googleusercontent.com/d/1oGjGgrrgofZhpgweDgbEC_IOMExDFkcV=w1000",
-      "https://lh3.googleusercontent.com/d/15s-_zTWCJIYf9gFU218PcfY0k_Wset5C=w1000"
+      "https://lh3.googleusercontent.com/d/1kuopOHhMjryx9jZQeOOM85TXyi3i7Xs5=w1000"
     ],
     "video": "",
     "active": true
@@ -11822,8 +11607,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1c3rpo2hnOz9DKA1kX6ZuXJ9LYtD7mKX2=w1000",
       "https://lh3.googleusercontent.com/d/17V8tU0rN4zJRhJhtVpDT2XmBvEdgFCU2=w1000",
       "https://lh3.googleusercontent.com/d/1XdFLuP9p_1l8eAGYQV5itgwY5gqsTTgK=w1000",
-      "https://lh3.googleusercontent.com/d/1H2B3w3hfQPy-iIhPcpZ8WMoAEGkXO_ZB=w1000",
-      "https://lh3.googleusercontent.com/d/1v-bDGDU69VEihL2pCQOJUlgxc9FyqidK=w1000"
+      "https://lh3.googleusercontent.com/d/1H2B3w3hfQPy-iIhPcpZ8WMoAEGkXO_ZB=w1000"
     ],
     "video": "",
     "active": true
@@ -11908,9 +11692,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-10-16",
     "images": [
-      "https://lh3.googleusercontent.com/d/1lQT6g88DW11NJg-T0omJLtJ0YnaovMjP=w1000",
-      "https://lh3.googleusercontent.com/d/1lw1xzZz-uN3_Zuwv_-iA_bwyYaM_717E=w1000",
-      "https://lh3.googleusercontent.com/d/1EcgUm4FZ0rMmlFi3laeRdgS8AOxTvXBu=w1000",
       "https://lh3.googleusercontent.com/d/1lQT6g88DW11NJg-T0omJLtJ0YnaovMjP=w1000",
       "https://lh3.googleusercontent.com/d/1lw1xzZz-uN3_Zuwv_-iA_bwyYaM_717E=w1000",
       "https://lh3.googleusercontent.com/d/1EcgUm4FZ0rMmlFi3laeRdgS8AOxTvXBu=w1000"
@@ -12097,11 +11878,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1Aduu8Z-YiHYj-vabc8frSB1UsWyjfcnS=w1000",
       "https://lh3.googleusercontent.com/d/16NRcIMKzj648jM9oTOg6b7gA6KTbWZcp=w1000",
       "https://lh3.googleusercontent.com/d/1aCVMCM93WodousIui8plqXGVCVY5NULj=w1000",
-      "https://lh3.googleusercontent.com/d/1DIAVkisdLriXJtUZMEa411gk54lz8RDE=w1000",
-      "https://lh3.googleusercontent.com/d/10JgVi6MfcH65xwvIR5dMtnSDFdRflFdL=w1000",
-      "https://lh3.googleusercontent.com/d/1PAiR1CSaE3xatLty9ijALaYUMhy21Tgj=w1000",
-      "https://lh3.googleusercontent.com/d/1Aduu8Z-YiHYj-vabc8frSB1UsWyjfcnS=w1000",
-      "https://lh3.googleusercontent.com/d/16NRcIMKzj648jM9oTOg6b7gA6KTbWZcp=w1000"
+      "https://lh3.googleusercontent.com/d/1DIAVkisdLriXJtUZMEa411gk54lz8RDE=w1000"
     ],
     "video": "",
     "active": true
@@ -12190,11 +11967,6 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1uqDl_KKSPeWfUa_IRoYHtreU7G4kxFpr=w1000",
       "https://lh3.googleusercontent.com/d/16VNDzIQ3pKK4FzxsGw1oixjO43pt4GlD=w1000",
       "https://lh3.googleusercontent.com/d/1-TV8Ji837MUwrZQ4dmUL1BknMuv95_sb=w1000",
-      "https://lh3.googleusercontent.com/d/1N0O1I61NOkc5OmDuzsqbVt-AFguVWAJK=w1000",
-      "https://lh3.googleusercontent.com/d/1G4vfLIzgYNAlkRYCdjOx4SdGNLlHoa-L=w1000",
-      "https://lh3.googleusercontent.com/d/1uqDl_KKSPeWfUa_IRoYHtreU7G4kxFpr=w1000",
-      "https://lh3.googleusercontent.com/d/16VNDzIQ3pKK4FzxsGw1oixjO43pt4GlD=w1000",
-      "https://lh3.googleusercontent.com/d/1-TV8Ji837MUwrZQ4dmUL1BknMuv95_sb=w1000",
       "https://lh3.googleusercontent.com/d/1N0O1I61NOkc5OmDuzsqbVt-AFguVWAJK=w1000"
     ],
     "video": "",
@@ -12241,8 +12013,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1Xw4e1tuR0yH2f7Amruc0QYbtTtjbed3P=w1000",
       "https://lh3.googleusercontent.com/d/1v-lQvXzH38DmLjE4Yur25nEoPcs5aZJW=w1000",
       "https://lh3.googleusercontent.com/d/1ZimNI_Q0QE_OLr9goMLkygSs6QiZXznI=w1000",
-      "https://lh3.googleusercontent.com/d/1oV6jXOZOP0AHhEMgmI7_FXNdaja6ldQo=w1000",
-      "https://lh3.googleusercontent.com/d/1ko8XdU691duHCW9LcPklRfxc0lftYOzK=w1000"
+      "https://lh3.googleusercontent.com/d/1oV6jXOZOP0AHhEMgmI7_FXNdaja6ldQo=w1000"
     ],
     "video": "",
     "active": true
@@ -12332,11 +12103,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/19h_YUMiayL92BiYvV_QipQZNtp-EzEp-=w1000",
       "https://lh3.googleusercontent.com/d/1gj9C_-_ay45QMFmMqv4gY94tX15xyYpb=w1000",
       "https://lh3.googleusercontent.com/d/1UxS5Bq-TvM52CzJdnCrU7dOAr_g2iuCf=w1000",
-      "https://lh3.googleusercontent.com/d/17vftOEVsci6h_R7LFbDfiS8eP8Q4gMmw=w1000",
-      "https://lh3.googleusercontent.com/d/1baj-bgi9FOvBBaBnnn3P9mLpwmVIAIy7=w1000",
-      "https://lh3.googleusercontent.com/d/1aIBqDZrgFt1lZ50UAL8liVx1_Y08d-bX=w1000",
-      "https://lh3.googleusercontent.com/d/19h_YUMiayL92BiYvV_QipQZNtp-EzEp-=w1000",
-      "https://lh3.googleusercontent.com/d/1gj9C_-_ay45QMFmMqv4gY94tX15xyYpb=w1000"
+      "https://lh3.googleusercontent.com/d/17vftOEVsci6h_R7LFbDfiS8eP8Q4gMmw=w1000"
     ],
     "video": "",
     "active": true
@@ -12374,11 +12141,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-10-16",
     "images": [
-      "https://lh3.googleusercontent.com/d/1_tgawMZMQly7oBC97dOFpC6ULDsOpU4n=w1000",
-      "https://lh3.googleusercontent.com/d/1vw9hAOSTu_N5WdeamgxyIenu14geOr-2=w1000",
-      "https://lh3.googleusercontent.com/d/1pF9OkPjC-Ai1YSRA1lnvJxLMmJNTn46t=w1000",
-      "https://lh3.googleusercontent.com/d/1zR2L4ECJmVg5bOmKj46bthdjVcl7YYus=w1000",
-      "https://lh3.googleusercontent.com/d/1E2NoIx-43-7-N8qtD0bEI0OC332PUumv=w1000",
       "https://lh3.googleusercontent.com/d/1_tgawMZMQly7oBC97dOFpC6ULDsOpU4n=w1000",
       "https://lh3.googleusercontent.com/d/1vw9hAOSTu_N5WdeamgxyIenu14geOr-2=w1000",
       "https://lh3.googleusercontent.com/d/1pF9OkPjC-Ai1YSRA1lnvJxLMmJNTn46t=w1000",
@@ -12421,9 +12183,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-10-16",
     "images": [
-      "https://lh3.googleusercontent.com/d/1APnRJJrXXlmepubtAVPkzwKG4Ol1F78n=w1000",
-      "https://lh3.googleusercontent.com/d/17A091dtWlDtN4_PTtV_3bdQHARcE6Ojt=w1000",
-      "https://lh3.googleusercontent.com/d/1bnNhehGoQ1B3ZvaWazg-FdgKs8pcKr4m=w1000",
       "https://lh3.googleusercontent.com/d/1APnRJJrXXlmepubtAVPkzwKG4Ol1F78n=w1000",
       "https://lh3.googleusercontent.com/d/17A091dtWlDtN4_PTtV_3bdQHARcE6Ojt=w1000",
       "https://lh3.googleusercontent.com/d/1bnNhehGoQ1B3ZvaWazg-FdgKs8pcKr4m=w1000",
@@ -12706,10 +12465,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1tIWcIwCdTCNux_915TLUGGqVfkx7i77H=w1000",
       "https://lh3.googleusercontent.com/d/1vDFlrycb2GtGhzJ9d2XmCvaCbsgXK1Ev=w1000",
       "https://lh3.googleusercontent.com/d/1yckHhp6jLe-p_rHU1Sga9K5EGvrAYMzR=w1000",
-      "https://lh3.googleusercontent.com/d/18b7DQCEs3ReSAgswYEwkVMTdgKf6UR16=w1000",
-      "https://lh3.googleusercontent.com/d/1b6e4FTA8nR8ziEmCvVS5XkmVdOEZZTUT=w1000",
-      "https://lh3.googleusercontent.com/d/1icYi9s8N7Ck-HwAz2u9vQmygMSfwnxBa=w1000",
-      "https://lh3.googleusercontent.com/d/1LOrEpzW7QVAY6ojzH4hTvzz_WmL_L3dR=w1000"
+      "https://lh3.googleusercontent.com/d/18b7DQCEs3ReSAgswYEwkVMTdgKf6UR16=w1000"
     ],
     "video": "",
     "active": true
@@ -12752,11 +12508,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1--qWmBFGbnh342uIV_9RY16_A22Jqi66=w1000",
       "https://lh3.googleusercontent.com/d/1Aeo2mjemSIsQwOLvlz5En4McbVZkJs7B=w1000",
       "https://lh3.googleusercontent.com/d/1ZNq8D5edJwz-mBkLO26bIbtdZtDwtdax=w1000",
-      "https://lh3.googleusercontent.com/d/1kB1nYpvJ6kDrMmh0knclouH5h62XNkpm=w1000",
-      "https://lh3.googleusercontent.com/d/1ojAH2c1WvrkqSa9CDwdh0lv4QWwMf_Ku=w1000",
-      "https://lh3.googleusercontent.com/d/17mkiVICDJ9sbtcnihEAtTZefgncHT6Ed=w1000",
-      "https://lh3.googleusercontent.com/d/1--qWmBFGbnh342uIV_9RY16_A22Jqi66=w1000",
-      "https://lh3.googleusercontent.com/d/1Aeo2mjemSIsQwOLvlz5En4McbVZkJs7B=w1000"
+      "https://lh3.googleusercontent.com/d/1kB1nYpvJ6kDrMmh0knclouH5h62XNkpm=w1000"
     ],
     "video": "",
     "active": true
@@ -12801,9 +12553,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1AU0owPMiSGLw1vU4QnGr85qGbI4KpqnF=w1000",
       "https://lh3.googleusercontent.com/d/1YFnrqLUbF9wFRutyMEJClxehbFJvzJWf=w1000",
       "https://lh3.googleusercontent.com/d/1DXktdQC9qf2b_V2O1MhtVTEwLypxGm1V=w1000",
-      "https://lh3.googleusercontent.com/d/1-FzofnLf2kc9qZOerNX2CE16m1kbyDjR=w1000",
-      "https://lh3.googleusercontent.com/d/1NBVoVFR17zNjX3dH_yOOrSuia-vPy-qp=w1000",
-      "https://lh3.googleusercontent.com/d/14pYyA0j4u0fqhwM7mMLbhsjhdUa9U75e=w1000"
+      "https://lh3.googleusercontent.com/d/1-FzofnLf2kc9qZOerNX2CE16m1kbyDjR=w1000"
     ],
     "video": "",
     "active": true
@@ -12846,11 +12596,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1m2se6GiadviWl6Ee_THDe4RM27c_m_Bg=w1000",
       "https://lh3.googleusercontent.com/d/1yY3jPkaphR2fNIxo4hExUJ6tv7N6oa0Y=w1000",
       "https://lh3.googleusercontent.com/d/1_hzphKMEeFXrrAllzyt3CuRbfj4diTZs=w1000",
-      "https://lh3.googleusercontent.com/d/16KbfpouKNLjA5g2twqsK6TauSfQJWbV8=w1000",
-      "https://lh3.googleusercontent.com/d/1jYN0tBtMI6m0CY3e6noW2qmzL6A0h71g=w1000",
-      "https://lh3.googleusercontent.com/d/1HYM16TNL9LduwTbuOnzN8_AzMiglR11o=w1000",
-      "https://lh3.googleusercontent.com/d/1m2se6GiadviWl6Ee_THDe4RM27c_m_Bg=w1000",
-      "https://lh3.googleusercontent.com/d/1yY3jPkaphR2fNIxo4hExUJ6tv7N6oa0Y=w1000"
+      "https://lh3.googleusercontent.com/d/16KbfpouKNLjA5g2twqsK6TauSfQJWbV8=w1000"
     ],
     "video": "",
     "active": true
@@ -12893,11 +12639,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1zRodNRzU6GD0UqdqPHsz_NV88jN1cpUC=w1000",
       "https://lh3.googleusercontent.com/d/16RgbsieAUT9WdrY4K27nkbK_QtwWnGz-=w1000",
       "https://lh3.googleusercontent.com/d/1qfLsgVf4YPKvAZGN_AxZej1rwbicjCwx=w1000",
-      "https://lh3.googleusercontent.com/d/1UsoCIODON9ANwqMZoMjwjkPQqhVZcMOz=w1000",
-      "https://lh3.googleusercontent.com/d/1jA0tQagFEiWk4Ruun3PqljEnDMvRziPV=w1000",
-      "https://lh3.googleusercontent.com/d/1_qdaS7ZJoDE9R0BOfhsPfeoRc02BZ1Kb=w1000",
-      "https://lh3.googleusercontent.com/d/1zRodNRzU6GD0UqdqPHsz_NV88jN1cpUC=w1000",
-      "https://lh3.googleusercontent.com/d/16RgbsieAUT9WdrY4K27nkbK_QtwWnGz-=w1000"
+      "https://lh3.googleusercontent.com/d/1UsoCIODON9ANwqMZoMjwjkPQqhVZcMOz=w1000"
     ],
     "video": "",
     "active": true
@@ -12940,11 +12682,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1eaFi7_gT_Ag11Yw_G2e_YMmiH-rq38em=w1000",
       "https://lh3.googleusercontent.com/d/1XCLomHSyBnO-LMcTpx_Ns0de2DaTgQAy=w1000",
       "https://lh3.googleusercontent.com/d/1rIuYOthdl3WdEesJ3KEjOVAZkE3UUKgT=w1000",
-      "https://lh3.googleusercontent.com/d/1kFw5gVcVbF973-VqihxtiMBwB39Bj9NL=w1000",
-      "https://lh3.googleusercontent.com/d/13roItTcAoRMMacVlaCEdh-YAlk61JhiJ=w1000",
-      "https://lh3.googleusercontent.com/d/1g4IIfBzzut2malN5RSYOs9bn1qJdT2Bu=w1000",
-      "https://lh3.googleusercontent.com/d/1eaFi7_gT_Ag11Yw_G2e_YMmiH-rq38em=w1000",
-      "https://lh3.googleusercontent.com/d/1XCLomHSyBnO-LMcTpx_Ns0de2DaTgQAy=w1000"
+      "https://lh3.googleusercontent.com/d/1kFw5gVcVbF973-VqihxtiMBwB39Bj9NL=w1000"
     ],
     "video": "",
     "active": true
@@ -12985,12 +12723,9 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1EIRZ7mpS_WUQzL-iIxfyR6Rf9tQXJ-h_=w1000",
       "https://lh3.googleusercontent.com/d/1NDJFczg3vxyTbSRZhmClomtYXkXmCbLN=w1000",
       "https://lh3.googleusercontent.com/d/1emt8Q6fgVPSxl2nrHB9YmG9NmzO7gfjo=w1000",
-      "https://lh3.googleusercontent.com/d/1EIRZ7mpS_WUQzL-iIxfyR6Rf9tQXJ-h_=w1000",
       "https://lh3.googleusercontent.com/d/1aCtp-C0t6E4tmxt3-W5ADwNs8oQoPkNd=w1000",
-      "https://lh3.googleusercontent.com/d/1NDJFczg3vxyTbSRZhmClomtYXkXmCbLN=w1000",
       "https://lh3.googleusercontent.com/d/1Jz4FmAHWdAE6CvWfnSLuFfzRwMhmcE-9=w1000",
-      "https://lh3.googleusercontent.com/d/1neAd0FhyfUNAO8u7ZjMdzAtn-xzd67Rs=w1000",
-      "https://lh3.googleusercontent.com/d/1emt8Q6fgVPSxl2nrHB9YmG9NmzO7gfjo=w1000"
+      "https://lh3.googleusercontent.com/d/1neAd0FhyfUNAO8u7ZjMdzAtn-xzd67Rs=w1000"
     ],
     "video": "",
     "active": true
@@ -13028,11 +12763,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-10-17",
     "images": [
-      "https://lh3.googleusercontent.com/d/1J0BBeKVQD-tZrkzrnOmJF5UknG5RU8rh=w1000",
-      "https://lh3.googleusercontent.com/d/1_Wq7UY2wAYwNK3JSo41BUIUtWdHiKKS2=w1000",
-      "https://lh3.googleusercontent.com/d/1uYG_z_wOX9kkKCBsuBg3YlF7dCB3cIwS=w1000",
-      "https://lh3.googleusercontent.com/d/10GyWgGhSCJAs5iHDv9QO10jcoh6W2cJ8=w1000",
-      "https://lh3.googleusercontent.com/d/1OpYZb1Rv4SY7ny5s7RpgYD1OUA11IrNn=w1000",
       "https://lh3.googleusercontent.com/d/1J0BBeKVQD-tZrkzrnOmJF5UknG5RU8rh=w1000",
       "https://lh3.googleusercontent.com/d/1_Wq7UY2wAYwNK3JSo41BUIUtWdHiKKS2=w1000",
       "https://lh3.googleusercontent.com/d/1uYG_z_wOX9kkKCBsuBg3YlF7dCB3cIwS=w1000",
@@ -13075,10 +12805,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-10-17",
     "images": [
-      "https://lh3.googleusercontent.com/d/1vHttibRLjZI3TL9E_tqAUJ9e9u41Jbdb=w1000",
-      "https://lh3.googleusercontent.com/d/1fUy6eMJBgq3YtUjUQzLecURuq_sByW9j=w1000",
-      "https://lh3.googleusercontent.com/d/1WkuSTRtKCmrth8ROND86HDGZXfVZeg8V=w1000",
-      "https://lh3.googleusercontent.com/d/1Bt2iwb07J4ROBdqfIkukf5VVm_5hE4SL=w1000",
       "https://lh3.googleusercontent.com/d/1vHttibRLjZI3TL9E_tqAUJ9e9u41Jbdb=w1000",
       "https://lh3.googleusercontent.com/d/1fUy6eMJBgq3YtUjUQzLecURuq_sByW9j=w1000",
       "https://lh3.googleusercontent.com/d/1WkuSTRtKCmrth8ROND86HDGZXfVZeg8V=w1000",
