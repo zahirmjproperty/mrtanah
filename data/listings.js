@@ -13205,6 +13205,57 @@ window.LISTINGS = [
     "active": true
   },
   {
+    "tracking": "MTCOA-0231",
+    "title": "Tanah 36,369 sqft Tepi SKVE",
+    "type": "Tanah",
+    "location": "Tepi Lebuhraya SKVE, Selangor",
+    "state": "Selangor",
+    "price": 499000,
+    "price_label": "RM499,000",
+    "price_old": null,
+    "land_area": "36,369 sqft (~0.835 ekar / 3,378 m2)",
+    "built_up": "-",
+    "tenure": "Leasehold",
+    "sekatan": "Melayu Reserved",
+    "kategori": "Pertanian",
+    "zoning": "Pertanian",
+    "psf": 14,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "sewa_price": null,
+    "sewa_label": null,
+    "highlights": [
+      "Tepi Lebuhraya SKVE — pendedahan tinggi",
+      "36,369 sqft (0.835 ekar)",
+      "Leasehold sehingga 5 April 2097",
+      "Rezab Melayu",
+      "Status pertanian",
+      "RM13.72 psf — harga berpatutan"
+    ],
+    "description": "Tanah 36,369 kaki persegi (0.835 ekar) di tepi Lebuhraya SKVE — lokasi strategik dengan pendedahan terus ke lebuh raya utama. Status pertanian, Rezab Melayu, leasehold sehingga 5 April 2097. Harga RM499,000 (RM13.72 psf). Sesuai untuk pelaburan tanah jangka panjang dan pembangunan masa hadapan berhampiran koridor SKVE.",
+    "amenities": [],
+    "nearby": [
+      "Lebuhraya SKVE (E26) — tepi tanah",
+      "Rimbayu — kawasan perumahan berhampiran",
+      "Akses terus ke Kuala Lumpur & Putrajaya"
+    ],
+    "map_url": "",
+    "project": "",
+    "project_name": "",
+    "unit": "",
+    "source": "Mr Tanah",
+    "date": "2026-10-20",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1kl9EnbVhth2WgI9UKQbzTejg9INeIY3f=w1000",
+      "https://lh3.googleusercontent.com/d/1ehQQlo3Q13pi4UMUjQanT0RNUeaq2U50=w1000",
+      "https://lh3.googleusercontent.com/d/1XyNaYQy3zb3u9UWSINlCYRau83OFxgET=w1000"
+    ],
+    "video": "",
+    "active": true
+  },
+  {
     "tracking": "MTCOA-0003",
     "title": "Tanah Pembangunan Bukit Damar Dengkil",
     "type": "Tanah",
