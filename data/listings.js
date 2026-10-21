@@ -13548,13 +13548,7 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-10-20",
     "images": [
-      "https://lh3.googleusercontent.com/d/1xf7hBQSJBoBVr4HCm3o6OxhnuCMpWfJF=w1000",
-      "https://lh3.googleusercontent.com/d/1r1-nByrrkk2zea8oe2WU76gIe53VQplC=w1000",
-      "https://lh3.googleusercontent.com/d/1X51tfz4d1bFANuRB-Z_-5cUcD0vYxPTD=w1000",
-      "https://lh3.googleusercontent.com/d/17WThXoIzhukSYeHeDe9rrgU4uzjOgpe2=w1000",
-      "https://lh3.googleusercontent.com/d/18-AyIs32jMvBkivcej0yufxqx9RrqCqL=w1000",
-      "https://lh3.googleusercontent.com/d/1jgWdXf_hu2cyUhBQ3pd4Sa7xFGW3S3mW=w1000",
-      "https://lh3.googleusercontent.com/d/1IPWxEMab1A2fmRUVzLaeKBiqrxN_40FE=w1000"
+      "https://lh3.googleusercontent.com/d/1xf7hBQSJBoBVr4HCm3o6OxhnuCMpWfJF=w1000"
     ],
     "video": "",
     "active": true
@@ -13639,15 +13633,10 @@ window.LISTINGS = [
     "date": "2026-10-20",
     "images": [
       "https://lh3.googleusercontent.com/d/1pFjn3xNb9ukQcm-3A0lHx_Yh_tr7WViQ=w1000",
-      "https://lh3.googleusercontent.com/d/1Pn1LsI0sBZw_g371tXL7M15RpW_pf8gy=w1000",
       "https://lh3.googleusercontent.com/d/1V6gAJsCTTaDXcfXHv55PpMw4avJTnEEJ=w1000",
-      "https://lh3.googleusercontent.com/d/1BS2iEK-4jdOfzWvuAU57TreI_ke47Fzl=w1000",
-      "https://lh3.googleusercontent.com/d/1uOZVL3cVoG7CHz__RI8IEHQLQhyz83uR=w1000",
-      "https://lh3.googleusercontent.com/d/1bVYWwHiuBeCKd_JoKWIKpCuecA5BMLu9=w1000",
-      "https://lh3.googleusercontent.com/d/1diFMpwcZIXN_xSmV8q576uBUYA8vMi9c=w1000",
-      "https://lh3.googleusercontent.com/d/1FwFwEUS6nNOak-c0aFAEyAbpVu20U10Q=w1000",
-      "https://lh3.googleusercontent.com/d/13KAOexdZmqOiNTxCvrnYNHn3m90MOlXf=w1000",
-      "https://lh3.googleusercontent.com/d/1_8qVRjNFHHWBGrvsOtw30eyetUWIOh2d=w1000"
+      "https://lh3.googleusercontent.com/d/1Cd1I7mySBWqUF56i9uaxOZBcBSy4krPW=w1000",
+      "https://lh3.googleusercontent.com/d/1CQes5esCG6vh_qYfJODFQ_6iUjX7JSHR=w1000",
+      "https://lh3.googleusercontent.com/d/1fRbIAbEcZIQ3hQoWXpP7laeTdjmCaYj0=w1000"
     ],
     "video": "",
     "active": true
