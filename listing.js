@@ -170,7 +170,7 @@ function specsTable(l) {
   if (isTanah && kurang.length) {
     return `<div class="tech-f1"><div class="hd">Jadual Data Teknikal Tanah <span>Disemak ${l.date || ""}</span></div>` +
       jadual +
-      `<div class="verify"><span>Sedang dilengkapkan: ${kurang.join(", ")} — sila WhatsApp kami untuk maklumat terkini.</span></div></div>`;
+      `<div class="verify"><span>✓ Data asas di atas telah disemak oleh ejen berdaftar (PEA 2684). Maklumat teknikal terperinci — jenis geran, syarat nyata, topografi dan akses jalan — disediakan atas permintaan.</span></div></div>`;
   }
   if (isTanah) {
     return `<div class="tech-f1"><div class="hd">Jadual Data Teknikal Tanah <span>Disemak ${l.date || ""}</span></div>` + jadual +
