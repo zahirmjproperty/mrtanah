@@ -3305,7 +3305,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/197e5QZBZn4LKtfkuuU1hRJNFVMocK3N-=w1000",
       "https://lh3.googleusercontent.com/d/1j1DUeMqWyBu1BSbG4iCFwPQV-uhPDdq7=w1000"
     ],
-    "video": "",
+    "video": "https://youtube.com/shorts/QgTCg0tRMOk",
     "active": true
   },
   {
