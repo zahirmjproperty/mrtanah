@@ -15836,7 +15836,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1ZPcftA8Q5FQwppzZfDZtP15dQ4JHDWBR=w1000",
       "https://lh3.googleusercontent.com/d/1n7FB6PokwvVotLxX1BlzvREWKit83aHa=w1000"
     ],
-    "video": "",
+    "video": "https://youtu.be/TEXWQEGqfkA",
     "active": true
   },
   {
