@@ -119,9 +119,17 @@ window.LISTINGS = [
     "date": "2026-08-31",
     "images": [
       "https://lh3.googleusercontent.com/d/1NLi2ZKIcTDOW8Y4ZOEE_14XqKmp_ioH8=w1000",
-      "https://lh3.googleusercontent.com/d/1VH0nRgIvoJe_9dBlWpt4lNDyW3XvPNcV=w1000"
+      "https://lh3.googleusercontent.com/d/1VH0nRgIvoJe_9dBlWpt4lNDyW3XvPNcV=w1000",
+      "https://lh3.googleusercontent.com/d/1GqD3eF-TNsAKKd8PjcZPpnCra08nWClz=w1000",
+      "https://lh3.googleusercontent.com/d/1P2OVjBKzYTqHQ4G1ri70sTn21qTJql8r=w1000",
+      "https://lh3.googleusercontent.com/d/1uo3qk3xKSCQAPMoh4PEPNYTvBgWoPNWo=w1000",
+      "https://lh3.googleusercontent.com/d/1zVPdq_qvX0rgsr1PC19CZfYvwyMOTU6d=w1000",
+      "https://lh3.googleusercontent.com/d/14wFqwXftXprqzSFJtsGcFdE9u1vXp13E=w1000",
+      "https://lh3.googleusercontent.com/d/1eE3wSm86Ua4TbHgxBWFQ2lYqCsuRoESc=w1000",
+      "https://lh3.googleusercontent.com/d/1MioBdoTV34XkKeJ3GuN4F2mMa8YHvsHW=w1000",
+      "https://lh3.googleusercontent.com/d/1ixbjS4NTOuM4KgQlsILj7xXt6fYaZ3VN=w1000"
     ],
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=w_-Q1Ay-PQc",
     "active": true
   },
   {
