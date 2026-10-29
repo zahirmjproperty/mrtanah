@@ -17395,6 +17395,244 @@ window.LISTINGS = [
     "active": true
   },
   {
+    "tracking": "MTCOA-0332",
+    "title": "Tanah Pertanian 3.21 Ekar Bukit Damar, Berhampiran Cyberjaya",
+    "type": "Tanah",
+    "location": "Bukit Damar, near PKNS Cyberjaya, Sepang",
+    "state": "Selangor",
+    "price": 2000000,
+    "price_label": "RM2,000,000",
+    "price_old": null,
+    "land_area": "1.298 Hektare / 3.21 Ekar",
+    "built_up": "-",
+    "tenure": "Leasehold",
+    "sekatan": "Melayu Reserved",
+    "kategori": "Pertanian",
+    "zoning": "Pertanian",
+    "psf": 14,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "sewa_price": null,
+    "sewa_label": null,
+    "highlights": [
+      "Leasehold (Rezab Melayu), tanah pertanian 3.21 ekar",
+      "Berhampiran PKNS Cyberjaya, Raudhah City & Gamuda Cove",
+      "Berpotensi untuk lot bungalow / semi-D",
+      "Boleh diakses melalui jalan raya"
+    ],
+    "description": "Peluang memiliki tanah pertanian berpotensi seluas 3.21 ekar (1.298 hektar) di Bukit Damar, berhampiran PKNS Cyberjaya. Kedudukan strategik berdekatan Raudhah City dan Gamuda Cove, dengan akses jalan raya sedia ada. Berpotensi untuk pembangunan lot bungalow atau semi-D. Tanah leasehold berstatus rezab Melayu. Harga RM2,000,000.",
+    "amenities": [
+      "PKNS Cyberjaya",
+      "Raudhah City",
+      "Gamuda Cove",
+      "Putrajaya",
+      "Lebuhraya MEX"
+    ],
+    "nearby": [
+      {
+        "name": "PKNS Cyberjaya",
+        "distance": "berdekatan"
+      },
+      {
+        "name": "Raudhah City",
+        "distance": "berdekatan"
+      },
+      {
+        "name": "Gamuda Cove",
+        "distance": "berdekatan"
+      },
+      {
+        "name": "Putrajaya",
+        "distance": "±15 minit"
+      }
+    ],
+    "map_url": "https://www.google.com/maps/search/?api=1&query=Bukit%20Damar%2C%20near%20PKNS%20Cyberjaya%2C%20Sepang",
+    "project": "",
+    "project_name": "",
+    "unit": "",
+    "source": "Mr Tanah",
+    "date": "2026-10-29",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1oEfJk5k6jnOlW_1sPSRgec6Gr7EgdZ5K=w1000",
+      "https://lh3.googleusercontent.com/d/17fmb4xDwo7G03wEfbQr8VivS1aCwuPuk=w1000",
+      "https://lh3.googleusercontent.com/d/154eBka5M-1XrSPT7FBCuYAYb3ZzooonL=w1000",
+      "https://lh3.googleusercontent.com/d/1tTJ6jSC70ItiWz1wYitsFTpj8LKO6lZe=w1000",
+      "https://lh3.googleusercontent.com/d/1okqUCeOFtOpOwTpI0tjFTr-OY9LrH9_U=w1000",
+      "https://lh3.googleusercontent.com/d/1vNvZCivqRIwwpEG8OeR8qepV5JfriT2-=w1000",
+      "https://lh3.googleusercontent.com/d/1SfzGaVDy1ysW_MQ23yd9e0VILv-P1KYt=w1000",
+      "https://lh3.googleusercontent.com/d/1oV1aljPidXQcS-ni7TRfbOIeV9_dHbHJ=w1000",
+      "https://lh3.googleusercontent.com/d/1FUTlU4tmcACILZ_Ub6Mo3LzwlwhLeUc8=w1000",
+      "https://lh3.googleusercontent.com/d/1g0IEuFeln1OQypaYMBsn2WljwIrTsZvr=w1000",
+      "https://lh3.googleusercontent.com/d/14lUyJadiWafW-6qDMM81WsipMRlLyJYs=w1000",
+      "https://lh3.googleusercontent.com/d/1Eb3DS14eiYX-CI7GwF4nYYgH6nMCyRaT=w1000",
+      "https://lh3.googleusercontent.com/d/1LqVUz8lrBXE3Zu4q2U4mzKNjQ2bOOlsA=w1000",
+      "https://lh3.googleusercontent.com/d/1WEs4Ys9ED0Dv43FsLOwP-VhU3FUdt9N9=w1000",
+      "https://lh3.googleusercontent.com/d/1l6frgYb8QLUO4o5BOu10ihBOK16jmYHD=w1000"
+    ],
+    "video": "",
+    "active": true
+  },
+  {
+    "tracking": "MTCOA-0333",
+    "title": "Lot Bangunan 7,868 kp Putra Hill View, Desa Putra Kajang",
+    "type": "Tanah",
+    "location": "Desa Putra, Kajang, Selangor",
+    "state": "Selangor",
+    "price": 350000,
+    "price_label": "RM350,000",
+    "price_old": null,
+    "land_area": "7868 sqft (731 sqm)",
+    "built_up": "-",
+    "tenure": "Freehold",
+    "sekatan": "Melayu Reserved",
+    "kategori": "Bangunan Kediaman",
+    "zoning": "Bangunan Kediaman",
+    "psf": 44,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "sewa_price": null,
+    "sewa_label": null,
+    "highlights": [
+      "Freehold (Rezab Melayu), geran individu",
+      "Lot bangunan 7,868 sqft (731 sqm)",
+      "Infrastruktur jalan, elektrik & SYABAS sedia ada",
+      "Kawasan bebas banjir, boleh loan LPPSA/bank"
+    ],
+    "description": "Lot bangunan 7,868 sqft (731 sqm) di Putra Hill View, Desa Putra Kajang. Status freehold (rezab Melayu) dengan geran individu. Infrastruktur lengkap — jalan, elektrik dan paip SYABAS — serta kawasan bebas banjir. Layak untuk pinjaman LPPSA atau bank. Berdekatan SK Desa Putra, Putrajaya (Mydin, Alamanda, IOI City Plaza), UKM, UNITEN dan Bandar Baru Bangi. Harga RM350,000.",
+    "amenities": [
+      "SK Desa Putra (1km)",
+      "Sekolah Rendah Agama Desa Putra (1km)",
+      "Mydin & Alamanda Putrajaya",
+      "IOI City Plaza",
+      "UKM & UNITEN",
+      "Bandar Baru Bangi",
+      "Hospital Serdang & An-Nur"
+    ],
+    "nearby": [
+      {
+        "name": "SK Desa Putra",
+        "distance": "1 km"
+      },
+      {
+        "name": "Putrajaya (Mydin, Alamanda, IOI City Plaza)",
+        "distance": "berdekatan"
+      },
+      {
+        "name": "UKM / UNITEN / GMI",
+        "distance": "berdekatan"
+      },
+      {
+        "name": "Bandar Baru Bangi",
+        "distance": "berdekatan"
+      },
+      {
+        "name": "Hospital Serdang & An-Nur",
+        "distance": "berdekatan"
+      }
+    ],
+    "map_url": "https://www.google.com/maps/search/?api=1&query=Desa%20Putra%2C%20Kajang%2C%20Selangor",
+    "project": "",
+    "project_name": "",
+    "unit": "",
+    "source": "Mr Tanah",
+    "date": "2026-10-29",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1Z0_vAJuoZkE_49lHgmrRqW3gY8IGXk_l=w1000",
+      "https://lh3.googleusercontent.com/d/1MyhgBd9rdaXiqOMNZET2XnMWPmtWXmLr=w1000",
+      "https://lh3.googleusercontent.com/d/1COSBULbbMNZMn2JHowvvbQAIdjwp-Rya=w1000",
+      "https://lh3.googleusercontent.com/d/14hxVGarYrqBVdWxnHo2RyNuYHjgjXCdp=w1000",
+      "https://lh3.googleusercontent.com/d/11Yw38F4TyxgzSfi2GkcBawV6IMQ8xWOX=w1000",
+      "https://lh3.googleusercontent.com/d/1PDAkJ2CH6c9eWudkxyzAdKhzNUfb5pk9=w1000",
+      "https://lh3.googleusercontent.com/d/16puIyOWOcrOCMBpEzpqB8-s9YZMhPsO4=w1000",
+      "https://lh3.googleusercontent.com/d/1_qacavtU8QBJDRMYVsJ5f9VUMwvY-TmC=w1000",
+      "https://lh3.googleusercontent.com/d/1INTY-4z-53F5jekgeP66hENXygfzqHwb=w1000",
+      "https://lh3.googleusercontent.com/d/1tJ1KAeEPF3bizRKpXSunTkGc8KTTqjbs=w1000",
+      "https://lh3.googleusercontent.com/d/1b3E6Iu5gNpa8bJPtCP9OJa7IW9rTRkkO=w1000",
+      "https://lh3.googleusercontent.com/d/1MSgW7NbkQIsv5qi5t0747pJqbAFkhvBh=w1000",
+      "https://lh3.googleusercontent.com/d/1aOcSLxqWjxFS7dRepoxD9VfdAOlq_-Pu=w1000",
+      "https://lh3.googleusercontent.com/d/1RBT7fFrMQhGAhxhW8jxUmui84liu7Ija=w1000",
+      "https://lh3.googleusercontent.com/d/1gDqJDO0CVWn-Y_IN-UDBigmFUlj6hkCk=w1000"
+    ],
+    "video": "",
+    "active": true
+  },
+  {
+    "tracking": "MTCOA-0334",
+    "title": "Tanah Pertanian 3.91 Ekar Bukit Damar, Berhampiran Cyberjaya",
+    "type": "Tanah",
+    "location": "Bukit Damar, near PKNS Cyberjaya, Sepang",
+    "state": "Selangor",
+    "price": 2050000,
+    "price_label": "RM2,050,000",
+    "price_old": null,
+    "land_area": "3.91 Ekar",
+    "built_up": "-",
+    "tenure": "Leasehold",
+    "sekatan": "Melayu Reserved",
+    "kategori": "Pertanian",
+    "zoning": "Pertanian",
+    "psf": 12,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "status": "BARU",
+    "jenis": "JUAL",
+    "sewa_price": null,
+    "sewa_label": null,
+    "highlights": [
+      "Leasehold sehingga 2094 (Rezab Melayu)",
+      "Tanah pertanian 3.91 ekar",
+      "Berhampiran Cyberjaya & Gamuda Cove",
+      "Berpotensi untuk lot bungalow / semi-D"
+    ],
+    "description": "Tanah pertanian berpotensi seluas 3.91 ekar di Bukit Damar, berhampiran PKNS Cyberjaya. Leasehold sehingga tahun 2094, berstatus rezab Melayu. Berdekatan Cyberjaya dan Gamuda Cove dengan akses jalan raya. Berpotensi untuk pembangunan lot bungalow atau semi-D. Harga RM2,050,000.",
+    "amenities": [
+      "PKNS Cyberjaya",
+      "Gamuda Cove",
+      "Putrajaya",
+      "Lebuhraya MEX"
+    ],
+    "nearby": [
+      {
+        "name": "Cyberjaya",
+        "distance": "berdekatan"
+      },
+      {
+        "name": "Gamuda Cove",
+        "distance": "berdekatan"
+      },
+      {
+        "name": "Putrajaya",
+        "distance": "±15 minit"
+      }
+    ],
+    "map_url": "https://www.google.com/maps/search/?api=1&query=Bukit%20Damar%2C%20near%20PKNS%20Cyberjaya%2C%20Sepang",
+    "project": "",
+    "project_name": "",
+    "unit": "",
+    "source": "Mr Tanah",
+    "date": "2026-10-29",
+    "images": [
+      "https://lh3.googleusercontent.com/d/1n2s3kpTXHfr9FEm6IE0Bxd__vpgUe2h5=w1000",
+      "https://lh3.googleusercontent.com/d/1fgAB54R_QKjH9pDxFOpGsUVwJS1TBG16=w1000",
+      "https://lh3.googleusercontent.com/d/1kFo2uhfZTPUQxz54jlOMv4N4ElhQErxB=w1000",
+      "https://lh3.googleusercontent.com/d/1nvrIaUabUxBh1Veubzaqv0sCCIQmOy6R=w1000",
+      "https://lh3.googleusercontent.com/d/1Gu-gsmPFGiDL0QEqbnkwInAQg1SyOflK=w1000",
+      "https://lh3.googleusercontent.com/d/1wAofN5_sLnCFU79c-PiXK8c-eSR7E2Br=w1000",
+      "https://lh3.googleusercontent.com/d/1KB5xfyW-l5mpL7uFkFvSLn8GwWPWtpZ4=w1000",
+      "https://lh3.googleusercontent.com/d/1JEX8xwDXQZrzpg5IdznDd0fc9CRZmzpJ=w1000",
+      "https://lh3.googleusercontent.com/d/1vsUvaFutl-affGPeKehws6-DT6Hmgl2d=w1000",
+      "https://lh3.googleusercontent.com/d/1z2vHg9395gEJFthZtcibGqURFFoJnoMv=w1000",
+      "https://lh3.googleusercontent.com/d/1rouIDqFbUpRiO6XJXLYk8g-IbQRjraBS=w1000",
+      "https://lh3.googleusercontent.com/d/1Z-r9k6RfHKl4GaibT-tIdaxPqV4aUJfa=w1000"
+    ],
+    "video": "",
+    "active": true
+  },
+  {
     "tracking": "COA-0433",
     "title": "Double Storey Semi-D Verdale, Setia Alam Sari, Bangi",
     "type": "Rumah Semi-D",
