@@ -4271,7 +4271,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1_iUGHIyTUmRey9u2fDjSCbFw_SLjbXoz=w1000",
       "https://lh3.googleusercontent.com/d/11nv95UIZtDVDk2WFCJycxFXg-UCz6bRQ=w1000"
     ],
-    "video": "",
+    "video": "https://youtube.com/shorts/D00-47IyJN4",
     "active": true
   },
   {
