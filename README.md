@@ -71,3 +71,4 @@
 - Token: GITHUB_TOKEN dalam `~/.hermes/.env` (push guna token inline, remote kekal bersih)
 - Butang WhatsApp terapung: `.wa-float` (fixed bottom-right)
 - Borang → WhatsApp: JS bina mesej + `window.open("https://wa.me/60163119076?text=...")`
+# ujian gate Fri Oct 30 07:45:28 +08 2026
