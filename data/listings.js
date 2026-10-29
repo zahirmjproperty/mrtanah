@@ -16876,7 +16876,7 @@ window.LISTINGS = [
     "location": "Dengkil, Selangor",
     "state": "Selangor",
     "price": 6000,
-    "price_label": "RM6,000",
+    "price_label": "RM6,000 / bulan",
     "price_old": null,
     "land_area": "2 ekar",
     "built_up": "-",
