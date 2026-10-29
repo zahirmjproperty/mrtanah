@@ -937,12 +937,53 @@ body:has(.ali-panel.on) .wa-float{opacity:0;visibility:hidden;pointer-events:non
     };
     // Replace the card function used by app.js
     window.card = window.kad;
+    // Override projectCard to match compact p-card style (fix: kad projek terlalu panjang di mobile)
+    window.projectCardKad = function(units){
+      var sorted = units.slice().sort(function(a,b){ return (a.price||0)-(b.price||0); });
+      var best = sorted[0];
+      var slug = best.project || (typeof projSlug==='function'?projSlug(best):(best.title||'').toLowerCase());
+      var url = 'projek/' + (typeof urlSlug==='function'?urlSlug(slug):slug.replace(/[^a-z0-9]+/g,'-')) + '.html';
+      var name = best.project_name || best.title;
+      var count = units.length;
+      var minP = best.price_label || (typeof fmt==='function'?fmt(best.price):'RM'+best.price);
+      var priceText = 'Dari ' + minP;
+      var waMsg = encodeURIComponent('Assalamualaikum, saya berminat dengan ' + name + ' (' + priceText + '). Unit mana yang masih tersedia?');
+      var img = (best.images && best.images.length) ? best.images[0] : '';
+      var locParts = (best.location||'').split(',').map(function(t){return t.trim();}).filter(Boolean);
+      var locShort = locParts.length>=2 ? locParts.slice(-2).join(', ') : (locParts[0]||best.state||'');
+      var specsHtml = '<span>🏠 '+count+' unit tersedia</span>';
+      if(best.tenure && best.tenure!=='-') specsHtml += '<span>📜 '+best.tenure+'</span>';
+      return '<article class="p-card luxury-border">' +
+        '<a class="p-media" href="'+url+'" aria-label="'+(name||'').replace(/[<>&"]/g,'')+'">' +
+          (img?'<img src="'+img+'" alt="'+(name||'')+'" loading="lazy" width="640" height="400">':'<div class="p-media-placeholder"><span>🏠</span></div>') +
+          '<span class="badge badge-jual">'+count+' UNIT</span>' +
+          '<span class="p-ref">'+(best.tracking||'')+'</span>' +
+        '</a>' +
+        '<div class="p-body">' +
+          '<a class="p-hit" href="'+url+'" aria-label="Lihat unit: '+(name||'').replace(/[<>&"]/g,'')+'">' +
+            '<div class="p-top">' +
+              '<div style="min-width:0">' +
+                '<h3 class="p-title">'+(name||'')+'</h3>' +
+                '<div class="p-price">'+priceText+'</div>' +
+              '</div>' +
+              '<div class="p-loc">' +
+                '<svg viewBox="0 0 24 24" width="14" height="14" style="stroke:var(--neon);fill:none;stroke-width:1.9"><circle cx="12" cy="10.5" r="3.8"/><path d="M19.4 11c0 4.5-7.4 9.6-7.4 9.6S4.6 15.5 4.6 11a7.4 7.4 0 0 1 14.8 0Z"/></svg>' +
+                '<span>'+(locShort||'')+'</span>' +
+              '</div>' +
+            '</div>' +
+          '</a>' +
+          '<div class="p-specs">'+specsHtml+'</div>' +
+        '</div>' +
+        '<a class="p-wa" href="https://wa.me/60163119076?text='+waMsg+'" target="_blank" rel="noopener" title="WhatsApp">' +
+          '<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2Zm5.1 14.2c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.4-.9-2.4-1-3.9-3.5-4-3.7-.2-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2.1.2-.2.5-.3.6-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.3.3.5l-.4.5-.3.3c-.1.1-.2.2-.1.4.1.2.6 1 1.3 1.6.9.8 1.6 1 1.8 1.1.2.1.4.1.5 0l.7-.8c.2-.2.3-.2.5-.1l1.8.9c.2.1.4.2.4.3.1.2.1.7-.1 1.3Z"/></svg>' +
+        '</a>' +
+      '</article>';
+    };
+    window.projectCard = window.projectCardKad;
     // Re-render with new card style
     var si = document.getElementById('searchInput');
     if (si) si.dispatchEvent(new Event('input', {bubbles:true}));
-    // Fix the render function to use resultCount
-    var origRender = window.render || function(){};
-    console.log('MT kad override loaded');
+    console.log('MT kad + projectCard override loaded');
   }
   waitCard();
 
