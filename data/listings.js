@@ -17963,7 +17963,7 @@ window.LISTINGS = [
     "price": 1100000,
     "price_label": "RM1,100,000",
     "price_old": null,
-    "land_area": "4 sqft",
+    "land_area": "182,952 sqft",
     "built_up": "-",
     "tenure": "Leasehold",
     "sekatan": "Malay Reserve",
