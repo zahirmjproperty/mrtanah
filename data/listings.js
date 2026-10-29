@@ -9359,7 +9359,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1vi_byJBDr7VkunXhO6EJgzaherXhehjz=w1000",
       "https://lh3.googleusercontent.com/d/18t-lw0Sg3Xj8cy89pFhtGZGbKNKWSxpf=w1000"
     ],
-    "video": "",
+    "video": "https://youtu.be/9w5O3DFQ6mI",
     "active": true
   },
   {
