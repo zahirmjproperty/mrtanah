@@ -17187,9 +17187,7 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1ajaqVW-5IUYN3CGzwQPvgmGAIt6ZyCfx=w1000",
       "https://lh3.googleusercontent.com/d/1SWpHrjsD5gYBRuJqfdAUbLkOhzE2_13g=w1000",
       "https://lh3.googleusercontent.com/d/1rnDp3qKTRBa6t8Q1DZzHh25BWNZKqIXo=w1000",
-      "https://lh3.googleusercontent.com/d/1NJrNXKOy_beBE6YIBuhbvxLu3_bEuEQy=w1000",
-      "https://lh3.googleusercontent.com/d/1O1qgBKnQ_AnDisWFKOGYpJf93JAE0ZZE=w1000",
-      "https://lh3.googleusercontent.com/d/1eZoKYF5wCAS68hiHprneNfQGafAbS4PT=w1000"
+      "https://lh3.googleusercontent.com/d/1NJrNXKOy_beBE6YIBuhbvxLu3_bEuEQy=w1000"
     ],
     "video": "",
     "active": true
