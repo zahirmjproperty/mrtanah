@@ -17396,7 +17396,7 @@ window.LISTINGS = [
   },
   {
     "tracking": "MTCOA-0332",
-    "title": "Tanah Pertanian 3.21 Ekar Bukit Damar, Berhampiran Cyberjaya",
+    "title": "Tanah Pertanian 3.21 Ekar Bukit Damar Cyberjaya",
     "type": "Tanah",
     "location": "Bukit Damar, near PKNS Cyberjaya, Sepang",
     "state": "Selangor",
@@ -17476,7 +17476,7 @@ window.LISTINGS = [
   },
   {
     "tracking": "MTCOA-0333",
-    "title": "Lot Bangunan 7,868 kp Putra Hill View, Desa Putra Kajang",
+    "title": "Tanah Lot Bangunan Putra Hill View Desa Putra Kajang",
     "type": "Tanah",
     "location": "Desa Putra, Kajang, Selangor",
     "state": "Selangor",
@@ -17562,7 +17562,7 @@ window.LISTINGS = [
   },
   {
     "tracking": "MTCOA-0334",
-    "title": "Tanah Pertanian 3.91 Ekar Bukit Damar, Berhampiran Cyberjaya",
+    "title": "Tanah Pertanian 3.91 Ekar Bukit Damar Cyberjaya",
     "type": "Tanah",
     "location": "Bukit Damar, near PKNS Cyberjaya, Sepang",
     "state": "Selangor",
