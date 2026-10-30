@@ -10388,7 +10388,6 @@ window.LISTINGS = [
     "date": "2026-10-16",
     "images": [
       "https://lh3.googleusercontent.com/d/1VmI2N3XwoDU-2k1GabftoOBLut4RVz9E=w1000",
-      "https://lh3.googleusercontent.com/d/1XagB3hlsenGscZE8eG4P_GGK89zHTCkr=w1000",
       "https://lh3.googleusercontent.com/d/1Vg36J1UJIGbMvVd7wsu_QGDPUNkbayFn=w1000",
       "https://lh3.googleusercontent.com/d/1fDrdQoyLEEyVr6CMbtNxXbfsttpehbqp=w1000"
     ],
