@@ -30479,8 +30479,6 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/13sAF6yXT2e2aPPA6GZa2B-2GV6SrfjcL=w1000",
       "https://lh3.googleusercontent.com/d/1Heh4iWvjjRDfE6PR4zDUmYSOUNTs-3j-=w1000",
       "https://lh3.googleusercontent.com/d/1rOw1Ga2E99igiFWfQdsWSMd9CHUkRrQD=w1000",
-      "https://lh3.googleusercontent.com/d/1pJWUbKckeIhzcOuhqq-agcrzTSsc_N69=w1000",
-      "https://lh3.googleusercontent.com/d/1hSIfT6V2WXUU0U5Jyt747eyKB102jFZV=w1000",
       "https://lh3.googleusercontent.com/d/1btyD3AZoxsxFe7X7uYFxb_gXPk0MaGq0=w1000"
     ],
     "video": "",
@@ -30872,7 +30870,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-11-01",
     "images": [
-      "https://lh3.googleusercontent.com/d/1asUMoytV0n71I672EI-08R7uGrbNJYWP=w1000",
       "https://lh3.googleusercontent.com/d/17uHPWJFBT4zE4E7KF_9XP6yTHOekuwut=w1000",
       "https://lh3.googleusercontent.com/d/1Lekv98i-b8l3txHJpcEdoWAwmU-1HnbY=w1000",
       "https://lh3.googleusercontent.com/d/1E_2tURHKbvCZ9pV8MGZP_3JFwYEfZn91=w1000",
