@@ -21016,7 +21016,7 @@ window.LISTINGS = [
     "description": "Tanah 12,905 sqft di Bangi, Selangor dijual pada RM1,300,000. Hakmilik: Leasehold. Sekatan: Non-Bumi. Anggaran RM101 sekaki persegi.",
     "amenities": [],
     "nearby": [],
-    "map_url": "https://www.google.com/maps/search/?api=1&query=Bangi%2C%20Selangor",
+    "map_url": "https://www.google.com/maps?q=2.939107,101.774255",
     "project": "",
     "project_name": "",
     "unit": "",
