@@ -35866,7 +35866,6 @@ window.LISTINGS = [
     "source": "Mr Tanah",
     "date": "2026-11-09",
     "images": [
-      "https://lh3.googleusercontent.com/d/17uvqtL5tNE_EGw4H87QUzOYLJyXJKL-w=w1000",
       "https://lh3.googleusercontent.com/d/1RuihDfSL2rOtZywHLfOP3B8_B-gcrsCu=w1000",
       "https://lh3.googleusercontent.com/d/1t1bFYm_0T55KEBliBRxmQNBt0x30x1Oi=w1000",
       "https://lh3.googleusercontent.com/d/1L3ryM-2ua53xU8LjN-8YrTBpf9RjoROD=w1000",
