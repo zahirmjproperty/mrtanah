@@ -39164,7 +39164,7 @@ window.LISTINGS = [
     "price": 420000,
     "price_label": "RM420,000",
     "price_old": null,
-    "land_area": "1 sqft",
+    "land_area": "1 ekar (43,560 sqft)",
     "built_up": "-",
     "tenure": "Tidak dinyatakan",
     "sekatan": "Malay Reserve",
