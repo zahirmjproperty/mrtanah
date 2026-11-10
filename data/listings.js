@@ -36197,7 +36197,7 @@ window.LISTINGS = [
     "active": true
   },
   {
-    "tracking": "MTCOA-0754",
+    "tracking": "MTCOA-0970",
     "title": "Tanah Sangat Murah Batu 23 Sg Lawing Sg Lui, Gunung Hitam Hulu Langat Selangor.",
     "type": "Tanah",
     "location": "Hulu Langat, Selangor",
