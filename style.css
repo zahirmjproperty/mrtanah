@@ -170,6 +170,11 @@ a { color: inherit; text-decoration: none; }
 .badge-baru { background: var(--red); }
 .badge-promo { background: var(--amber); }
 .badge-proj { background: var(--purple); }
+/* SOLD / BOOKED — listing kekal dipapar, hanya bertanda (arahan Zahir 10 Nov 2026) */
+.badge-sold { background: #B91C1C; }
+.badge-booked { background: #B45309; }
+.card-sold .card-media img, .card-booked .card-media img { filter: grayscale(.75) brightness(.82); }
+.card-sold .price, .card-booked .price { text-decoration: line-through; opacity: .7; }
 .card-proj { border: 2px solid var(--purple); box-shadow: 0 4px 14px rgba(124, 58, 237, .15); }
 .price-range { color: var(--muted); font-size: 13px; }
 

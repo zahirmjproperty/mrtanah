@@ -189,6 +189,8 @@ function renderDetail(l) {
   const shareMsg = encodeURIComponent(`${l.title} - ${waPrice(l)} — ${(SITE.domain || "").replace(/\/?$/, "/")}listing/${encodeURIComponent(l.tracking)}.html`);
   const badges = [];
   dealsOf(l).forEach(d => badges.push(`<span class="badge badge-${String(d).toLowerCase()}">${d}</span>`));
+  if (l.sold) badges.push('<span class="badge badge-sold">🔴 SOLD</span>');
+  if (l.booked) badges.push('<span class="badge badge-booked">🟡 BOOKED</span>');
   if (l.status === "BARU") badges.push('<span class="badge badge-baru">BARU</span>');
   if (l.status === "PROMOSI") badges.push('<span class="badge badge-promo">⚡ PROMOSI</span>');
   const oldPrice = l.price_old ? `<p class="price-old-line">Harga asal: ${fmt(l.price_old)}</p>` : "";

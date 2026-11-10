@@ -75,6 +75,8 @@ function mediaHTML(l, link, extra = []) {
   const img = l.images && l.images.length ? l.images[0] : "";
   const badges = [];
   dealsOf(l).forEach(d => badges.push(`<span class="badge badge-${String(d).toLowerCase()}">${d}</span>`));
+  if (l.sold) badges.push('<span class="badge badge-sold">🔴 SOLD</span>');
+  if (l.booked) badges.push('<span class="badge badge-booked">🟡 BOOKED</span>');
   if (l.status === "BARU") badges.push('<span class="badge badge-baru">BARU</span>');
   if (l.status === "PROMOSI") badges.push('<span class="badge badge-promo">⚡ PROMOSI</span>');
   badges.push(...extra);
@@ -114,7 +116,7 @@ function card(l) {
   const oldPrice = l.price_old ? `<span class="price-old">${fmt(l.price_old)}</span>` : "";
 
   return `
-  <article class="card">
+  <article class="card${l.sold ? " card-sold" : ""}${l.booked ? " card-booked" : ""}">
     ${mediaHTML(l, url)}
     <div class="card-body">
       <h3 class="card-title"><a href="${url}">${l.title}</a></h3>
