@@ -39333,7 +39333,7 @@ window.LISTINGS = [
   },
   {
     "tracking": "MTCOA-0821",
-    "title": "TANAH & RIMBA RESORT VILLA NAK DIJUAL.  Sesuai dijadi pelaburan pelancongan. Kawasan yang luas untuk mengadakan sebarang majlis keramaian. View atas bukit sangat nyaman dan tenang dengan keh",
+    "title": "TANAH & RIMBA RESORT VILLAN NAK DIJUAL",
     "type": "Tanah",
     "location": "Hulu Langat, Selangor",
     "state": "Selangor",
