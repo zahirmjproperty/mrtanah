@@ -46144,7 +46144,6 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/137mY9cmx2shBXmxZX8wapXPq3bvLfjem=w1000",
       "https://lh3.googleusercontent.com/d/1FsRQNHmEekEpEF534Jr-XpL2P_u6KtfJ=w1000",
       "https://lh3.googleusercontent.com/d/1nTdvVoAmpTNg00DbEffYNvElrJeeIvwf=w1000",
-      "https://lh3.googleusercontent.com/d/1FLGC3NYWZY8PfgJ8KLFNMfY4ta4suY0I=w1000",
       "https://lh3.googleusercontent.com/d/1I7Hu4yPKUQeEKa6gnkoPguTxSu1J10Qa=w1000",
       "https://lh3.googleusercontent.com/d/1QG0858bF5aqENvtC0Ekakd7cb8Scljaz=w1000",
       "https://lh3.googleusercontent.com/d/1dQGtL5dT-ipZ99Wj_mx6FwPz9xoAwjjj=w1000"
