@@ -46276,10 +46276,10 @@ window.LISTINGS = [
     "location": "Bandar Puteri Kajang, Selangor",
     "state": "Selangor",
     "price": 27000,
-    "price_label": "RM27,000",
+    "price_label": "RM27,000 / bulan",
     "price_old": null,
-    "land_area": "2,939 sqft",
-    "built_up": "-",
+    "land_area": "-",
+    "built_up": "2,939 sq ft (setiap tingkat)",
     "tenure": "Tidak dinyatakan",
     "sekatan": "Tidak dinyatakan",
     "kategori": "Komersil",
@@ -46302,7 +46302,7 @@ window.LISTINGS = [
       "Flexible rental by floor",
       "Uppermost floor is not available for rental"
     ],
-    "description": "Komersial 2,939 sqft di Bandar Puteri Kajang, Selangor dijual pada RM27,000. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan. Anggaran RM9 sekaki persegi.",
+    "description": "Komersial di Bandar Puteri Kajang, Selangor ditawarkan untuk disewa pada RM27,000 / bulan. Anggaran RM9 sekaki persegi sebulan.",
     "amenities": [],
     "nearby": [
       "Easy access to major highways",
