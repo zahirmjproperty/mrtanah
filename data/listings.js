@@ -1082,7 +1082,7 @@ window.LISTINGS = [
       "Land category: Industry",
       "Akses WCE, LATAR, NKVE, GCE, DASH"
     ],
-    "description": "Tanah industri 60 ekar di Banting, Sepang — terletak dalam IDRISS (Integrated Development Region South Selangor), tepat di hadapan pintu masuk NCT Smart Industry Park dan hanya 12km ke KLIA. Leasehold Malay Reserve, land category Industry. Akses terus ke lebuh raya utama WCE, LATAR, North South, GCE, DASH & NKVE. 26km ke Sepang Gold Coast, 56km ke Port Klang. Harga RM75,000,000.",
+    "description": "IDRISS, depan pintu masuk NCT Smart Industry Park, 12km KLIA. Land Category Industry. Leasehold Malay Reserve. Album foto: 406 (8)+414 (3). Hubungi Mr Tanah 6016-3119076.",
     "amenities": [
       "Land category: Industry",
       "Depan pintu masuk NCT Smart Industry Park",
@@ -1115,7 +1115,10 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1bv97QBaF4NEJ2DinGrMNyX6w4aTLFEbZ=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "IDRISS, depan pintu masuk NCT Smart Industry Park, 12km KLIA. Land Category Industry. Leasehold Malay Reserve. Album foto: 406 (8)+414 (3). Hubungi Mr Tanah 6016-3119076."
+    ]
   },
   {
     "tracking": "MT-0019",
@@ -5927,7 +5930,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 4,380 sqft (binaan) | tanah 2,940 sqft (28' x 105') di Nouvelle Industrial Park, Meru, Klang dijual pada RM2,300,000. Hakmilik: Freehold. Sekatan: Non-Bumi Lot. Anggaran RM525 sekaki persegi.",
+    "description": "Kembar Zahir: COA-0176 | Anchor: MTCOA-0069 | Kilang link 2 tingkat (corporate link factory / warehouse / office), freehold non-bumi, binaan 4,380 sqft, tanah 2,940 sqft (28'x105'), loading area 780 sqft, 1-ton cargo lift, motorised roller shutter, siling 23ft (GF) / 13ft (1F), 4 tandas. Sumber: Hakim Samsudin REN 81835 (dalaman sahaja).",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Nouvelle%20Industrial%20Park%2C%20Meru%2C%20Klang",
@@ -5948,7 +5951,10 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1nfYB-PzOMyAGprEwc5mb9t1jdy5Pvf_m=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "Kembar Zahir: COA-0176 | Anchor: MTCOA-0069 | Kilang link 2 tingkat (corporate link factory / warehouse / office), freehold non-bumi, binaan 4,380 sqft, tanah 2,940 sqft (28'x105'), loading area 780 sqft, 1-ton cargo lift, motorised roller shutter, siling 23ft (GF) / 13ft (1F), 4 tandas. Sumber: Hakim Samsudin REN 81835 (dalaman sahaja)."
+    ]
   },
   {
     "tracking": "MTCOA-0070",
@@ -5973,7 +5979,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 12,000 sqft (binaan) | tanah 32,840 sqft (3,051 sqm) di Elmina Business Park, Bandar Elmina, Shah Alam dijual pada RM12,500,000. Hakmilik: Freehold. Sekatan: Individual Title. Anggaran RM1042 sekaki persegi.",
+    "description": "Kembar Zahir: COA-0177 | Anchor: MTCOA-0070 | Detached factory corner lot (warehouse + factory), Elmina Business Park, Bandar Elmina, Shah Alam. Freehold individual title. Binaan 12,000 sqft, tanah 32,840 sqft (3,051 sqm). Eaves height 30 kaki (9 m), floor loading 15 kN/m2, power 200 Amp, hadapan barat daya. Sewa diminta RM40,000/bulan. Sumber: Zahir Ajran REN42509 (rekod dalaman sahaja).",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Elmina%20Business%20Park%2C%20Bandar%20Elmina%2C%20Shah%20Alam",
@@ -5990,7 +5996,10 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1eXWKBRJOnRv9PjMH7F2jpuWW85oIh346=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "Kembar Zahir: COA-0177 | Anchor: MTCOA-0070 | Detached factory corner lot (warehouse + factory), Elmina Business Park, Bandar Elmina, Shah Alam. Freehold individual title. Binaan 12,000 sqft, tanah 32,840 sqft (3,051 sqm). Eaves height 30 kaki (9 m), floor loading 15 kN/m2, power 200 Amp, hadapan barat daya. Sewa diminta RM40,000/bulan. Sumber: Zahir Ajran REN42509 (rekod dalaman sahaja)."
+    ]
   },
   {
     "tracking": "MTCOA-0071",
@@ -6015,7 +6024,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 37,355 sqft (binaan) | tanah 1.1809 ekar (51,441 sqft) di Elmina Business Park, Bandar Elmina, Shah Alam dijual pada RM25,000,000. Hakmilik: Freehold. Sekatan: Individual Title. Anggaran RM669 sekaki persegi.",
+    "description": "Kembar Zahir: COA-0178 | Anchor: MTCOA-0071 | Detached factory warehouse (intermediate), Elmina Business Park, Bandar Elmina, Shah Alam. Freehold individual title. Binaan 37,355 sqft, tanah 1.1809 ekar (51,440.60 sqft / 4,779 sqm). Eaves height 39 kaki (12 m), floor loading 30 kN/m2, power 400 Amp, sistem sprinkle disediakan. Sewa diminta RM90,000/bulan. Sumber: Zahir Ajran REN42509 (rekod dalaman sahaja).",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Elmina%20Business%20Park%2C%20Bandar%20Elmina%2C%20Shah%20Alam",
@@ -6037,7 +6046,10 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1uAENh0FrocLkZiG4pjuZlrVYfSK9TVJe=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "Kembar Zahir: COA-0178 | Anchor: MTCOA-0071 | Detached factory warehouse (intermediate), Elmina Business Park, Bandar Elmina, Shah Alam. Freehold individual title. Binaan 37,355 sqft, tanah 1.1809 ekar (51,440.60 sqft / 4,779 sqm). Eaves height 39 kaki (12 m), floor loading 30 kN/m2, power 400 Amp, sistem sprinkle disediakan. Sewa diminta RM90,000/bulan. Sumber: Zahir Ajran REN42509 (rekod dalaman sahaja)."
+    ]
   },
   {
     "tracking": "MTCOA-0072",
@@ -6417,7 +6429,7 @@ window.LISTINGS = [
       "Sesuai workshop, warehouse, showroom, car wash",
       "Dekat Presint Diplomatik & IOI City Mall"
     ],
-    "description": "Kilang/warehouse single storey terrace untuk dijual pada RM1,500,000 di Presint Diplomatik, Putrajaya — satu-satunya Lot Service Industry di kawasan ini. Berstatus freehold non-Bumi, unit intermediate dengan keluasan tanah 1,916 kaki persegi dan zoning Service Industry. Sesuai untuk workshop, warehouse, showroom, car wash, storage, central kitchen dan seumpamanya. Unit kini disewa pada RM3,900 sebulan sehingga Mei 2025 — pulangan sewa segera untuk pembeli. Lokasi berhampiran Presint Diplomatik, Alamanda dan IOI City Mall serta pejabat-pejabat kerajaan.",
+    "description": "Lot Service Industry, disewa RM3,900/bulan hingga Mei 2025. Sesuai workshop/warehouse/showroom. Agen: Azizirrahim 017-5602008 | Kembar Zahir: COA-0203",
     "amenities": [
       "Kilang/warehouse",
       "Service Industry zoning",
@@ -6451,7 +6463,10 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1JodX9G_lXzZ4PFJXP9vb6VoTLyRSPDP0=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "Lot Service Industry, disewa RM3,900/bulan hingga Mei 2025. Sesuai workshop/warehouse/showroom. Agen: Azizirrahim 017-5602008 | Kembar Zahir: COA-0203"
+    ]
   },
   {
     "tracking": "MTCOA-0078",
@@ -7831,7 +7846,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 15,791 sqft (built-up 11,964 sqft) di Taman Shamelin Perkasa, Cheras, Kuala Lumpur dijual pada RM15,000,000. Hakmilik: Leasehold. Sekatan: Tidak dinyatakan. Anggaran RM950 sekaki persegi.",
+    "description": "2.5 storey semi-D kilang industri ringan, leasehold baki 58 tahun. Solar panel dipasang. Ground 5,745 / 1st 2,873 / 2nd 3,346 sqft. Cukai tanah RM2,700, assessment RM16,920. Sedang disewa RM30K/bulan sehingga 31/08/2026. Dekat 1 Shamelin Mall, LRT Pandan Jaya, IKEA Cheras.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Taman%20Shamelin%20Perkasa%2C%20Cheras%2C%20Kuala%20Lumpur",
@@ -7853,7 +7868,10 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1CEY62kSRrda5J8-pGF5jlrVeRpFIVKi-=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "2.5 storey semi-D kilang industri ringan, leasehold baki 58 tahun. Solar panel dipasang. Ground 5,745 / 1st 2,873 / 2nd 3,346 sqft. Cukai tanah RM2,700, assessment RM16,920. Sedang disewa RM30K/bulan sehingga 31/08/2026. Dekat 1 Shamelin Mall, LRT Pandan Jaya, IKEA Cheras."
+    ]
   },
   {
     "tracking": "MTCOA-0103",
@@ -7878,7 +7896,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Tanah 12.937 ekar (563,535.72 sqft) di Arab Malaysian Industrial Park, Nilai, Negeri Sembilan dijual pada RM11,500,000. Hakmilik: Freehold. Sekatan: Malay Reserved. Anggaran RM20 sekaki persegi.",
+    "description": "Tanah industri berat, pemilikan tunggal, flatland, infra ready. Freehold Malay Reserved / mixed development. Syarat nyata tiada. Dekat PLUS Highway & kawasan Recron Industrial. Sesuai recycle/battery/automobile business. 35 min ke KL, 30 min ke KLIA, 1 jam ke Port Klang.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Arab%20Malaysian%20Industrial%20Park%2C%20Nilai%2C%20Negeri%20Sembilan",
@@ -7900,7 +7918,10 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1ducPZwJULz72g0GCeMuvwFYiv9e5Wcor=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "Tanah industri berat, pemilikan tunggal, flatland, infra ready. Freehold Malay Reserved / mixed development. Syarat nyata tiada. Dekat PLUS Highway & kawasan Recron Industrial. Sesuai recycle/battery/automobile business. 35 min ke KL, 30 min ke KLIA, 1 jam ke Port Klang."
+    ]
   },
   {
     "tracking": "MTCOA-0104",
@@ -47087,7 +47108,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 12,000 sqft di MTCOA 179814 ditawarkan untuk disewa pada Hubungi / bulan.",
+    "description": "Semi D Factory At Taman Villaraya Semenyih, Selangor\n\nWTL / FOR RENT\nRM 12,500 Monthly\n\n+ Semenyih, Selangor\n+ Factory\n+ Built-up Size : 6,400 sqft\n+ Land Area : 12,000 sqft\n\n\n\n**********************************************************************\n\n\nWTL\n\nSemi D Factory At Taman Villaraya\nSemenyih, Selangor\n\nDetails :\nLand : 12,000 sqft\nBuild-up : 6,400 sqft\nCeiling height : 28.5 ft \nPower supply : 150 Amp\n\nAvailable from December 2026\n\nRental price : 12,500\n\nInterested? Contact Me Now!\n\nMr Tanah\nIQI REALTY SDN. BHD. (E (1) 1584/11)\nTel: +60163119076\n\n#LR2611000396",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=MTCOA%20179814",
@@ -47105,7 +47126,28 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1_1moh7pABpOHU4sIb0wBG-HLKcXLhrOi=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "Semi D Factory At Taman Villaraya Semenyih, Selangor",
+      "WTL / FOR RENT",
+      "RM 12,500 Monthly",
+      "+ Semenyih, Selangor",
+      "+ Factory",
+      "+ Built-up Size : 6,400 sqft",
+      "+ Land Area : 12,000 sqft",
+      "WTL",
+      "Semi D Factory At Taman Villaraya",
+      "Semenyih, Selangor",
+      "Details :",
+      "Land : 12,000 sqft",
+      "Build-up : 6,400 sqft",
+      "Ceiling height : 28.5 ft",
+      "Power supply : 150 Amp",
+      "Available from December 2026",
+      "Rental price : 12,500",
+      "Mr Tanah",
+      "#LR2611000396"
+    ]
   },
   {
     "tracking": "MTCOA-0988",
@@ -47130,7 +47172,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 13,600 sqft di MTCOA 179039 ditawarkan untuk disewa pada Hubungi / bulan.",
+    "description": "2.5 Storey Semi D Factory At Taman Industri Selesa Jaya Seri Kembangan, Selangor\n\nWTL / FOR RENT\nRM 27,800 Monthly\n\n+ Seri Kembangan, Selangor\n+ Factory\n+ Built-up Size : 10,000 sqft\n+ Land Area : 13,600 sqft\n\n\n\n**********************************************************************\n\n\nWTL\n\n2.5 Storey Semi D Factory At Taman Industri Selesa Jaya\nSeri Kembangan, Selangor\n\nDetails :\n- Land Area : 13,600 sqf.\n- Grd Flr BU 4300sqf.\n- 1st Flr BU 1400sqf.\n- 2nd Flr BU 4300sqf.\n- Total Built Up Approx 10,000 sqf\n- Ceiling Height : office 10ft， factory 24ft.\n- Power Supply : 150 Amp\n- Floor Load: 1 ton/m2\n- Cargo Lift 5000kg.\n- Main Road  66ft.\n- With CF / CCC.\n\nRental price : RM 27,800\n\nInterested? Contact Me Now!\n\nMr Tanah\nIQI REALTY SDN. BHD. (E (1) 1584/11)\nTel: +60163119076\n\n#LR2611000187",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=MTCOA%20179039",
@@ -47148,7 +47190,34 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1neczK3ONJB7Aa0H1JZQ3xiONZshknTN7=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "2.5 Storey Semi D Factory At Taman Industri Selesa Jaya Seri Kembangan, Selangor",
+      "WTL / FOR RENT",
+      "RM 27,800 Monthly",
+      "+ Seri Kembangan, Selangor",
+      "+ Factory",
+      "+ Built-up Size : 10,000 sqft",
+      "+ Land Area : 13,600 sqft",
+      "WTL",
+      "2.5 Storey Semi D Factory At Taman Industri Selesa Jaya",
+      "Seri Kembangan, Selangor",
+      "Details :",
+      "Land Area : 13,600 sqf.",
+      "Grd Flr BU 4300sqf.",
+      "1st Flr BU 1400sqf.",
+      "2nd Flr BU 4300sqf.",
+      "Total Built Up Approx 10,000 sqf",
+      "Ceiling Height : office 10ft， factory 24ft.",
+      "Power Supply : 150 Amp",
+      "Floor Load: 1 ton/m2",
+      "Cargo Lift 5000kg.",
+      "Main Road  66ft.",
+      "With CF / CCC.",
+      "Rental price : RM 27,800",
+      "Mr Tanah",
+      "#LR2611000187"
+    ]
   },
   {
     "tracking": "MTCOA-0989",
@@ -47173,7 +47242,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 50,094 sqft di Puncak Alam, Selangor dijual pada RM11,800,000. Hakmilik: Leasehold. Sekatan: Non-Bumi. Anggaran RM236 sekaki persegi.",
+    "description": "FOR SALE BRAND NEW DETACHED FACTORY Semanja Industrial Park, Puncak Alam Selangor\n\nWTS / FOR SALE\nAsking RM 11,800,000\n\n+ Puncak Alam, Selangor\n+ Factory, Leasehold, Non-bumi Lot, Individual Title\n+ Built-up Size : 27,554 sqft\n+ Land Area : 50,094 sqft\n\n\n\n**********************************************************************\n\n\n🏭🔥 FOR SALE | BRAND NEW DETACHED FACTORY\n📍 Semanja Industrial Park, Puncak Alam\n\nLooking for a brand-new detached factory for your business expansion or industrial investment?\n\nThis spacious industrial property offers 1.15 acres of land, a large warehouse floor area and dedicated office space, making it suitable for manufacturing, warehousing and logistics operations.\n\n🏢 PROPERTY SPECIFICATIONS\n\n✅ Factory Type: 1-Storey Detached Factory with 2-Storey Office\n✅ Tenure: Leasehold\n✅ Land Area: Approx. 1.15 Acres (144' × 346')\n✅ Total Built-Up: Approx. 27,554 SQFT\n✅ Ground Floor: Approx. 23,731 SQFT (90' × 262')\n✅ 1st Floor Office: Approx. 3,615 SQFT\n✅ Eave Height: 40 FT\n✅ Power Supply: 400 AMP\n✅ Floor Loading: To Be Confirmed\n✅ Status: Vacant & Brand New\n✅ CCC: Estimated Q1 2027\n\n💰 SELLING PRICE: RM11,800,000\n🔥 Approx. RM428 PSF\n\n🌟 KEY SELLING POINTS\n\n✔️ Generous 1.15-acre industrial land\n✔️ Spacious warehouse and production area\n✔️ 40 FT eave height\n✔️ 400 AMP electrical capacity\n✔️ Dedicated office space\n✔️ Brand-new detached factory\n✔️ Suitable for own business operations or industrial investment\n\n🎯 IDEAL FOR:\n\nManufacturing & Production\n\nWarehousing & Storage\n\nLogistics & Distribution\n\nE-commerce Fulfilment\n\nIndustrial Business Expansion\n\n📩 SALE / RENT ENQUIRIES WELCOME!\n\nContact us for further details and viewing arrangements.\n\nInterested? Contact Me Now!\n\nMr Tanah\nIQI REALTY SDN. BHD. (E (1) 1584/11)\nTel: +60163119076\n\n#LS2611001139",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Puncak%20Alam%2C%20Selangor",
@@ -47191,7 +47260,52 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/14Hj0ZbnpGQrSvaJ78eziEsvShPZplEXn=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "FOR SALE BRAND NEW DETACHED FACTORY Semanja Industrial Park, Puncak Alam Selangor",
+      "WTS / FOR SALE",
+      "Asking RM 11,800,000",
+      "+ Puncak Alam, Selangor",
+      "+ Factory, Leasehold, Non-bumi Lot, Individual Title",
+      "+ Built-up Size : 27,554 sqft",
+      "+ Land Area : 50,094 sqft",
+      "🔥 FOR SALE | BRAND NEW DETACHED FACTORY",
+      "📍 Semanja Industrial Park, Puncak Alam",
+      "Looking for a brand-new detached factory for your business expansion or industrial investment?",
+      "This spacious industrial property offers 1.15 acres of land, a large warehouse floor area and dedicated office space, making it suitable for manufacturing, warehousing and logistics operations.",
+      "🏢 PROPERTY SPECIFICATIONS",
+      "Factory Type: 1-Storey Detached Factory with 2-Storey Office",
+      "Tenure: Leasehold",
+      "Land Area: Approx. 1.15 Acres (144' × 346')",
+      "Total Built-Up: Approx. 27,554 SQFT",
+      "Ground Floor: Approx. 23,731 SQFT (90' × 262')",
+      "1st Floor Office: Approx. 3,615 SQFT",
+      "Eave Height: 40 FT",
+      "Power Supply: 400 AMP",
+      "Floor Loading: To Be Confirmed",
+      "Status: Vacant & Brand New",
+      "CCC: Estimated Q1 2027",
+      "💰 SELLING PRICE: RM11,800,000",
+      "🔥 Approx. RM428 PSF",
+      "🌟 KEY SELLING POINTS",
+      "Generous 1.15-acre industrial land",
+      "Spacious warehouse and production area",
+      "40 FT eave height",
+      "400 AMP electrical capacity",
+      "Dedicated office space",
+      "Brand-new detached factory",
+      "Suitable for own business operations or industrial investment",
+      "🎯 IDEAL FOR:",
+      "Manufacturing & Production",
+      "Warehousing & Storage",
+      "Logistics & Distribution",
+      "E-commerce Fulfilment",
+      "Industrial Business Expansion",
+      "📩 SALE / RENT ENQUIRIES WELCOME!",
+      "Contact us for further details and viewing arrangements.",
+      "Mr Tanah",
+      "#LS2611001139"
+    ]
   },
   {
     "tracking": "MTCOA-0990",
@@ -47216,7 +47330,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 50,094 sqft di MTCOA 179904 ditawarkan untuk disewa pada Hubungi / bulan.",
+    "description": "FOR RENT BRAND NEW DETACHED FACTORY Semanja Industrial Park, Puncak Alam Selangor\n\nWTL / FOR RENT\nRM 63,806 Monthly\n\n+ Puncak Alam, Selangor\n+ Factory\n+ Built-up Size : 31,903 sqft\n+ Land Area : 50,094 sqft\n\n\n\n**********************************************************************\n\n\n🏭🔥 FOR RENT BRAND NEW DETACHED FACTORY\n📍 Semanja Industrial Park, Puncak Alam\n\nLooking for a spacious industrial facility for your business expansion?\n\nThis brand-new detached factory offers a generous 1.15-acre land area, spacious warehouse space and a 3-storey office building — ideal for manufacturing, warehousing, logistics and distribution operations.\n\n🏢 PROPERTY SPECIFICATIONS\n\n✅ Factory Type: 1-Storey Detached Factory with 3-Storey Office\n✅ Tenure: Leasehold\n✅ Land Area: Approx. 1.15 Acres (145' × 346')\n✅ Total Built-Up: Approx. 31,903 SQFT\n✅ Ground Floor: Approx. 24,022 SQFT (89' × 261')\n✅ 1st Floor Office: Approx. 3,602 SQFT\n✅ 2nd Floor Office: Approx. 3,235 SQFT\n✅ Eave Height: 40 FT\n✅ Power Supply: 200 AMP\n✅ Floor Loading: 3 Tonnes/m²\n✅ Status: Vacant & Brand New\n✅ CCC: Estimated Q4 2026\n\n💰 MONTHLY RENTAL: RM63,806\n(RM2.00 PSF)\n\n🌟 WHY CONSIDER THIS FACTORY?\n\n✔️ Spacious 1.15-acre industrial land\n✔️ Large warehouse floor area\n✔️ 40 FT eave height for industrial operations\n✔️ Dedicated 3-storey office space\n✔️ 3 tonnes/m² floor loading\n✔️ Brand-new industrial facility\n✔️ Suitable for business expansion and long-term operations\n\n🎯 SUITABLE FOR:\n\nManufacturing & Production\n\nWarehousing & Storage\n\nLogistics & Distribution\n\nE-commerce Fulfilment\n\nIndustrial & Commercial Operations\n\n📩 Interested in SALE or RENT?\nContact us for more details and enquiries.\n\nInterested? Contact Me Now!\n\nMr Tanah\nIQI REALTY SDN. BHD. (E (1) 1584/11)\nTel: +60163119076\n\n#LR2611000427",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=MTCOA%20179904",
@@ -47234,7 +47348,53 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1hOG6iIYy7X_5oop4dhy9cn8L5aXx_HLR=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "FOR RENT BRAND NEW DETACHED FACTORY Semanja Industrial Park, Puncak Alam Selangor",
+      "WTL / FOR RENT",
+      "RM 63,806 Monthly",
+      "+ Puncak Alam, Selangor",
+      "+ Factory",
+      "+ Built-up Size : 31,903 sqft",
+      "+ Land Area : 50,094 sqft",
+      "🔥 FOR RENT BRAND NEW DETACHED FACTORY",
+      "📍 Semanja Industrial Park, Puncak Alam",
+      "Looking for a spacious industrial facility for your business expansion?",
+      "This brand-new detached factory offers a generous 1.15-acre land area, spacious warehouse space and a 3-storey office building — ideal for manufacturing, warehousing, logistics and distribution operations.",
+      "🏢 PROPERTY SPECIFICATIONS",
+      "Factory Type: 1-Storey Detached Factory with 3-Storey Office",
+      "Tenure: Leasehold",
+      "Land Area: Approx. 1.15 Acres (145' × 346')",
+      "Total Built-Up: Approx. 31,903 SQFT",
+      "Ground Floor: Approx. 24,022 SQFT (89' × 261')",
+      "1st Floor Office: Approx. 3,602 SQFT",
+      "2nd Floor Office: Approx. 3,235 SQFT",
+      "Eave Height: 40 FT",
+      "Power Supply: 200 AMP",
+      "Floor Loading: 3 Tonnes/m²",
+      "Status: Vacant & Brand New",
+      "CCC: Estimated Q4 2026",
+      "💰 MONTHLY RENTAL: RM63,806",
+      "(RM2.00 PSF)",
+      "🌟 WHY CONSIDER THIS FACTORY?",
+      "Spacious 1.15-acre industrial land",
+      "Large warehouse floor area",
+      "40 FT eave height for industrial operations",
+      "Dedicated 3-storey office space",
+      "3 tonnes/m² floor loading",
+      "Brand-new industrial facility",
+      "Suitable for business expansion and long-term operations",
+      "🎯 SUITABLE FOR:",
+      "Manufacturing & Production",
+      "Warehousing & Storage",
+      "Logistics & Distribution",
+      "E-commerce Fulfilment",
+      "Industrial & Commercial Operations",
+      "📩 Interested in SALE or RENT?",
+      "Contact us for more details and enquiries.",
+      "Mr Tanah",
+      "#LR2611000427"
+    ]
   },
   {
     "tracking": "MTCOA-0991",
@@ -47259,7 +47419,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 18,823 sqft di Puncak Alam, Selangor dijual pada RM14,000,000. Hakmilik: Leasehold. Sekatan: Non-Bumi. Anggaran RM744 sekaki persegi.",
+    "description": "FOR SALE BRAND NEW DETACHED FACTORY Semanja Industrial Park Puncak Alam Selangor\n\nWTS / FOR SALE\nAsking RM 14,000,000\n\n+ Puncak Alam, Selangor\n+ Factory, Leasehold, Non-bumi Lot, Individual Title\n+ Built-up Size : 23,198 sqft\n+ Land Area : 18,823 sqft\n\n\n\n**********************************************************************\n\n\n🏭 FOR SALE | BRAND NEW DETACHED FACTORY\n📍 Semanja Industrial Park, Puncak Alam\n\n🔥 Asking Price: RM14,000,000\n💰 Approx. RM603 PSF\n\nPROPERTY HIGHLIGHTS\n\n✅ 1-Storey Detached Factory with 2-Storey Office\n✅ Leasehold Tenure\n✅ Land Area: 1.05 Acres (135' × 338')\n✅ Total Built-Up: Approx. 23,198 SQFT\n✅ Factory Floor: Approx. 18,823 SQFT\n✅ Office Area: Approx. 4,216 SQFT\n✅ Eave Height: 40 FT\n✅ Peak Height: 50 FT\n✅ Power Supply: 600 AMP\n✅ Floor Loading: 3 Tonnes/m²\n✅ Vacant & Brand New\n✅ CCC Estimated: Q4 2026\n\nWHY THIS FACTORY?\n\n✔️ Spacious 1.05-acre industrial land\n✔️ High ceiling suitable for industrial operations\n✔️ 600 AMP power capacity for business requirements\n✔️ Heavy-duty floor loading\n✔️ Separate office space for administrative operations\n✔️ Ready for your next business expansion\n\n🎯 IDEAL FOR:\n\nManufacturing & Production\nWarehousing & Distribution\nLogistics & Supply Chain\nIndustrial Investment\n\n💰 Selling Price: RM14 MILLION\n\nA valuable opportunity to secure a brand-new detached industrial property!\n\n📩 Contact us for more information or to arrange a viewing.\n\nInterested? Contact Me Now!\n\nMr Tanah\nIQI REALTY SDN. BHD. (E (1) 1584/11)\nTel: +60163119076\n\n#LS2611001137",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Puncak%20Alam%2C%20Selangor",
@@ -47277,7 +47437,50 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1wixB7DDsgoW-u9FbxW6l4Zf4igAhbwut=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "FOR SALE BRAND NEW DETACHED FACTORY Semanja Industrial Park Puncak Alam Selangor",
+      "WTS / FOR SALE",
+      "Asking RM 14,000,000",
+      "+ Puncak Alam, Selangor",
+      "+ Factory, Leasehold, Non-bumi Lot, Individual Title",
+      "+ Built-up Size : 23,198 sqft",
+      "+ Land Area : 18,823 sqft",
+      "FOR SALE | BRAND NEW DETACHED FACTORY",
+      "📍 Semanja Industrial Park, Puncak Alam",
+      "🔥 Asking Price: RM14,000,000",
+      "💰 Approx. RM603 PSF",
+      "PROPERTY HIGHLIGHTS",
+      "1-Storey Detached Factory with 2-Storey Office",
+      "Leasehold Tenure",
+      "Land Area: 1.05 Acres (135' × 338')",
+      "Total Built-Up: Approx. 23,198 SQFT",
+      "Factory Floor: Approx. 18,823 SQFT",
+      "Office Area: Approx. 4,216 SQFT",
+      "Eave Height: 40 FT",
+      "Peak Height: 50 FT",
+      "Power Supply: 600 AMP",
+      "Floor Loading: 3 Tonnes/m²",
+      "Vacant & Brand New",
+      "CCC Estimated: Q4 2026",
+      "WHY THIS FACTORY?",
+      "Spacious 1.05-acre industrial land",
+      "High ceiling suitable for industrial operations",
+      "600 AMP power capacity for business requirements",
+      "Heavy-duty floor loading",
+      "Separate office space for administrative operations",
+      "Ready for your next business expansion",
+      "🎯 IDEAL FOR:",
+      "Manufacturing & Production",
+      "Warehousing & Distribution",
+      "Logistics & Supply Chain",
+      "Industrial Investment",
+      "💰 Selling Price: RM14 MILLION",
+      "A valuable opportunity to secure a brand-new detached industrial property!",
+      "📩 Contact us for more information or to arrange a viewing.",
+      "Mr Tanah",
+      "#LS2611001137"
+    ]
   },
   {
     "tracking": "MTCOA-0992",
@@ -47302,7 +47505,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 8,712 sqft di Semenyih, Selangor dijual pada RM3,450,000. Hakmilik: Freehold. Sekatan: Non-Bumi. Anggaran RM396 sekaki persegi.",
+    "description": "1.5 Storey Semi-D Factory Lekas 32 Industrial Park, Semenyih\n\nWTS / FOR SALE\nAsking RM 3,450,000\n\n+ Semenyih, Selangor\n+ Factory, Freehold, Non-bumi Lot, Individual Title\n+ Built-up Size : 4,175 sqft\n+ Land Area : 8,712 sqft\n\n\n\n**********************************************************************\n\n\nLekas 32 Industrial Park Semenyih\n1.5 Storey Semi-D Factory For Sale\n\nProperty Details:\n================\nFreehold\nLand Area : 8,712 sqft\nBuilt Up : 4,175 sqft\nGround Floor : 41' × 67'\nCeiling Height : 25ft\nPower Supply : 150amps - 3 phase\n\nEasy Access via Lekas Highway, Jalan Sg Lalang, Jalan Semenyih, Jalan Bangi Lama, Kajang highway, SILK highway, Sg Besi highway\n\nInterested? Contact Me Now!\n\nMr Tanah\nIQI REALTY SDN. BHD. (E (1) 1584/11)\nTel: +60163119076\n\n#LS2607000862",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Semenyih%2C%20Selangor",
@@ -47322,7 +47525,28 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1buHjXDZBRVJ7IW0-zrJy_Z9W1NxMuWiD=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "1.5 Storey Semi-D Factory Lekas 32 Industrial Park, Semenyih",
+      "WTS / FOR SALE",
+      "Asking RM 3,450,000",
+      "+ Semenyih, Selangor",
+      "+ Factory, Freehold, Non-bumi Lot, Individual Title",
+      "+ Built-up Size : 4,175 sqft",
+      "+ Land Area : 8,712 sqft",
+      "Lekas 32 Industrial Park Semenyih",
+      "1.5 Storey Semi-D Factory For Sale",
+      "Property Details:",
+      "Freehold",
+      "Land Area : 8,712 sqft",
+      "Built Up : 4,175 sqft",
+      "Ground Floor : 41' × 67'",
+      "Ceiling Height : 25ft",
+      "Power Supply : 150amps - 3 phase",
+      "Easy Access via Lekas Highway, Jalan Sg Lalang, Jalan Semenyih, Jalan Bangi Lama, Kajang highway, SILK highway, Sg Besi highway",
+      "Mr Tanah",
+      "#LS2607000862"
+    ]
   },
   {
     "tracking": "MTCOA-0993",
@@ -47347,7 +47571,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 4,000 sqft di MTCOA 179035 ditawarkan untuk disewa pada Hubungi / bulan.",
+    "description": "1.5 Storey Intermediate Terrace Factory At Taman Industri Selesa Jaya Seri Kembangan, Selangor\n\nWTL / FOR RENT\nRM 15,000 Monthly\n\n+ Seri Kembangan, Selangor\n+ Factory\n+ Built-up Size : 4,800 sqft\n+ Land Area : 4,000 sqft\n\n\n\n**********************************************************************\n\n\nWTL\n\n1.5 Storey Intermediate Terrace Factory At Taman Industri Selesa Jaya\nSeri Kembangan, Selangor\n\nDetails :\n- Land Area : 4000 sqf.\n- Ground Floor BU : 4000sqf.\n- 1st Flr BU 800sqf .\n- Total Built Up Approx 4,800 sqf\n- Power Supply : 100 Amp\n- Main Road  66ft\n- With CF\n\nRental price : RM 15,000\n\nInterested? Contact Me Now!\n\nMr Tanah\nIQI REALTY SDN. BHD. (E (1) 1584/11)\nTel: +60163119076\n\n#LR2611000185",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=MTCOA%20179035",
@@ -47365,7 +47589,30 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1Us26-gQnOQT1PLz56y8_92W73vbdT5p2=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "1.5 Storey Intermediate Terrace Factory At Taman Industri Selesa Jaya Seri Kembangan, Selangor",
+      "WTL / FOR RENT",
+      "RM 15,000 Monthly",
+      "+ Seri Kembangan, Selangor",
+      "+ Factory",
+      "+ Built-up Size : 4,800 sqft",
+      "+ Land Area : 4,000 sqft",
+      "WTL",
+      "1.5 Storey Intermediate Terrace Factory At Taman Industri Selesa Jaya",
+      "Seri Kembangan, Selangor",
+      "Details :",
+      "Land Area : 4000 sqf.",
+      "Ground Floor BU : 4000sqf.",
+      "1st Flr BU 800sqf .",
+      "Total Built Up Approx 4,800 sqf",
+      "Power Supply : 100 Amp",
+      "Main Road  66ft",
+      "With CF",
+      "Rental price : RM 15,000",
+      "Mr Tanah",
+      "#LR2611000185"
+    ]
   },
   {
     "tracking": "MTCOA-0994",
@@ -47390,7 +47637,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 19,000 sqft di MTCOA 153842 ditawarkan untuk disewa pada Hubungi / bulan.",
+    "description": "For RENT 3sty SEMI-D with lift Suria Industrial Park (SIP) Sepang KLIA\n\nWTL / FOR RENT\nRM 32,000 Monthly\n\n+ Sepang, Selangor\n+ Factory\n+ Built-up Size : 15,106 sqft\n+ Land Area : 19,000 sqft\n\n\n\n**********************************************************************\n\n\nFACTORY FOR RENT (INTER) \nNEW - 3sty SEMI-D with lift\nSuria Industrial Park (SIP)@Sepang\n\n3-Storey Office (with Lift) - inter \nLand Area : 19,000sqft\nBuilt up      : 15,106sf\nGF: 9,422 sqft \n1st F: 3,779 sqft \n2nd F: 1,905 sqft \nHeight        : 36ft - 42ft\nFloor loading : 1.5tonne/m2\nPower         : 150amp\nDual gate entrance \n\nINTER : RM32K\n\nInterested? Contact Me Now!\n\nMr Tanah\nIQI REALTY SDN. BHD. (E (1) 1584/11)\nTel: +60163119076\n\n#LR2606000309",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=MTCOA%20153842",
@@ -47411,7 +47658,32 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1h_yDC3nV89rtsAH2qFoDs4vkYhC_hpqQ=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "For RENT 3sty SEMI-D with lift Suria Industrial Park (SIP) Sepang KLIA",
+      "WTL / FOR RENT",
+      "RM 32,000 Monthly",
+      "+ Sepang, Selangor",
+      "+ Factory",
+      "+ Built-up Size : 15,106 sqft",
+      "+ Land Area : 19,000 sqft",
+      "FACTORY FOR RENT (INTER)",
+      "NEW - 3sty SEMI-D with lift",
+      "Suria Industrial Park (SIP)@Sepang",
+      "3-Storey Office (with Lift) - inter",
+      "Land Area : 19,000sqft",
+      "Built up      : 15,106sf",
+      "GF: 9,422 sqft",
+      "1st F: 3,779 sqft",
+      "2nd F: 1,905 sqft",
+      "Height        : 36ft - 42ft",
+      "Floor loading : 1.5tonne/m2",
+      "Power         : 150amp",
+      "Dual gate entrance",
+      "INTER : RM32K",
+      "Mr Tanah",
+      "#LR2606000309"
+    ]
   },
   {
     "tracking": "MTCOA-0995",
@@ -47436,7 +47708,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 20,991 sqft di MTCOA 153840 ditawarkan untuk disewa pada Hubungi / bulan.",
+    "description": "Cheap Corner Semi-Detached Factory Kota Seri Langat\n\nWTL / FOR RENT\nRM 35,000 Monthly\n\n+ Telok Panglima Garang, Selangor\n+ Factory\n+ Built-up Size : 12,371 sqft\n+ Land Area : 20,991 sqft\n\n\n\n**********************************************************************\n\n\nCorner Semi-Detached Factory Kota Seri Langat \nCompass SME Precinct\n\n📍 Corner Unit\n📍 Land Area:  20,991 sf\n📍 Built-Up: 12,371 sf \n\n⚡ Power Supply: 800 Amps\n📏 Eaves Height: 9m\n🏗️ Floor Loading: • Ground Floor Production Area: 20 kN/m²\n* First Floor Production Area: 5 kN/m²\n* Office Floor: 2.5 kN/m² \n\n🏢 3 Storey Design\n🚚 Roller Shutter Access\n🛡️ Guarded Industrial Park\n\n💰 Rental Rate: RM35,000/month\n\nSuitable for: • Manufacturing • Warehouse & Distribution • E-Commerce Fulfilment • Engineering • Automotive Related Industries\n\nInterested? Contact Me Now!\n\nMr Tanah\nIQI REALTY SDN. BHD. (E (1) 1584/11)\nTel: +60163119076\n\n#LR2606000308",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=MTCOA%20153840",
@@ -47458,7 +47730,33 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1nNO3ckil7FaT-7F5zHLpa63NOOV6WlT_=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "Cheap Corner Semi-Detached Factory Kota Seri Langat",
+      "WTL / FOR RENT",
+      "RM 35,000 Monthly",
+      "+ Telok Panglima Garang, Selangor",
+      "+ Factory",
+      "+ Built-up Size : 12,371 sqft",
+      "+ Land Area : 20,991 sqft",
+      "Corner Semi-Detached Factory Kota Seri Langat",
+      "Compass SME Precinct",
+      "📍 Corner Unit",
+      "📍 Land Area:  20,991 sf",
+      "📍 Built-Up: 12,371 sf",
+      "⚡ Power Supply: 800 Amps",
+      "📏 Eaves Height: 9m",
+      "🏗️ Floor Loading: • Ground Floor Production Area: 20 kN/m²",
+      "First Floor Production Area: 5 kN/m²",
+      "Office Floor: 2.5 kN/m²",
+      "🏢 3 Storey Design",
+      "🚚 Roller Shutter Access",
+      "🛡️ Guarded Industrial Park",
+      "💰 Rental Rate: RM35,000/month",
+      "Suitable for: • Manufacturing • Warehouse & Distribution • E-Commerce Fulfilment • Engineering • Automotive Related Industries",
+      "Mr Tanah",
+      "#LR2606000308"
+    ]
   },
   {
     "tracking": "MTCOA-0996",
@@ -47483,7 +47781,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 7,800 sqft di MTCOA 156840 ditawarkan untuk disewa pada Hubungi / bulan.",
+    "description": "2 Storey Semi-Detached Cluster Factory at Puncak Alam\n\nWTL / FOR RENT\nRM 12,000 Monthly\n\n+ Puncak Alam, Selangor\n+ Factory\n+ Built-up Size : 4,211 sqft\n+ Land Area : 7,800 sqft\n\n\n\n**********************************************************************\n\n\n2 Storey Semi-Detached Cluster Factory at Puncak Alam, Selangor for Rent\n\nBuilt-up Size : 4,211sqft (RM2.85 per sqft)\nLand Area : 7,800sqft (RM1.54 per sqft)\n\n+ Build up : 4,211 sqft\n+ Land size (intermediate) : 60' x 130' (7,800 sqft)\n+ Intermediate unit : RM12,000 monthly\n+ Corner unit : RM15,000 monthly\n+ Power supply : 150 amp\n\n\nDisclaimer:\n- Image shown is for illustration purposes only.\n- Company logo and identifying elements have been removed to protect the confidentiality and privacy of the current owner/occupant.\n\nInterested? Contact Me Now!\n\nMr Tanah\nIQI REALTY SDN. BHD. (E (1) 1584/11)\nTel: +60163119076\n\n#LR2606001124",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=MTCOA%20156840",
@@ -47505,7 +47803,29 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1knRhtvNMbEx5HzdukpBxZJth3giBOr6D=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "2 Storey Semi-Detached Cluster Factory at Puncak Alam",
+      "WTL / FOR RENT",
+      "RM 12,000 Monthly",
+      "+ Puncak Alam, Selangor",
+      "+ Factory",
+      "+ Built-up Size : 4,211 sqft",
+      "+ Land Area : 7,800 sqft",
+      "2 Storey Semi-Detached Cluster Factory at Puncak Alam, Selangor for Rent",
+      "Built-up Size : 4,211sqft (RM2.85 per sqft)",
+      "Land Area : 7,800sqft (RM1.54 per sqft)",
+      "+ Build up : 4,211 sqft",
+      "+ Land size (intermediate) : 60' x 130' (7,800 sqft)",
+      "+ Intermediate unit : RM12,000 monthly",
+      "+ Corner unit : RM15,000 monthly",
+      "+ Power supply : 150 amp",
+      "Disclaimer:",
+      "Image shown is for illustration purposes only.",
+      "Company logo and identifying elements have been removed to protect the confidentiality and privacy of the current owner/occupant.",
+      "Mr Tanah",
+      "#LR2606001124"
+    ]
   },
   {
     "tracking": "MTCOA-0997",
@@ -47530,7 +47850,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 13,324 sqft di Aman Perdana, Selangor dijual pada RM5,500,000. Hakmilik: Leasehold. Sekatan: Bumi. Anggaran RM413 sekaki persegi.",
+    "description": "3 Storey Semi D Warehouse Perdana Park Industrial, Putra Perdana Puchong\n\nWTS / FOR SALE\nAsking RM 5,500,000\n\n+ Aman Perdana, Selangor\n+ Factory, Leasehold, Bumi Lot, Individual Title\n+ Built-up Size : 8,540 sqft\n+ Land Area : 13,324 sqft\n\n\n\n**********************************************************************\n\n\nLand area 13328sft\nBuilt up 8540 sft\nLeasehold till 2113\nUse Catagory : Industry\n\nFloor loading: suitable for light industrial usage\nPower supply: 3-phase power\nFeatures: cargo lifts, loading bays, roller shutters, on-site parking, security\n\nPerdana Industrial Park is a light to medium industrial development located in Putra Perdana, Puchong, Selangor developed by Champion Transform Sdn Bhd a subsidiary of GJH Group a property development company based in Malacca with projects in Malacca and Selangor. With total units of 96 industrial units, Perdana Industrial Park commenced development in 2015 under 5 phases and was fully completed in 2026.\nThe development caters primarily to SMEs, logistics, and manufacturing-related businesses. The properties were developed under phase 1 of the project.\n\nEasy access to SKVE Highway, Bandar Puchong, ELITE Highway.\n\nRM 5 500 000 Negotiable\n\nQareem\n\nInterested? Contact Me Now!\n\nMr Tanah\nIQI REALTY SDN. BHD. (E (1) 1584/11)\nTel: +60163119076\n\n#LS2611000346",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Aman%20Perdana%2C%20Selangor",
@@ -47545,7 +47865,30 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1zYC43DOCH1Hf6EZ6wSc8DNnFoTmVYiFN=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "3 Storey Semi D Warehouse Perdana Park Industrial, Putra Perdana Puchong",
+      "WTS / FOR SALE",
+      "Asking RM 5,500,000",
+      "+ Aman Perdana, Selangor",
+      "+ Factory, Leasehold, Bumi Lot, Individual Title",
+      "+ Built-up Size : 8,540 sqft",
+      "+ Land Area : 13,324 sqft",
+      "Land area 13328sft",
+      "Built up 8540 sft",
+      "Leasehold till 2113",
+      "Use Catagory : Industry",
+      "Floor loading: suitable for light industrial usage",
+      "Power supply: 3-phase power",
+      "Features: cargo lifts, loading bays, roller shutters, on-site parking, security",
+      "Perdana Industrial Park is a light to medium industrial development located in Putra Perdana, Puchong, Selangor developed by Champion Transform Sdn Bhd a subsidiary of GJH Group a property development company based in Malacca with projects in Malacca and Selangor. With total units of 96 industrial units, Perdana Industrial Park commenced development in 2015 under 5 phases and was fully completed in 2026.",
+      "The development caters primarily to SMEs, logistics, and manufacturing-related businesses. The properties were developed under phase 1 of the project.",
+      "Easy access to SKVE Highway, Bandar Puchong, ELITE Highway.",
+      "RM 5 500 000 Negotiable",
+      "Qareem",
+      "Mr Tanah",
+      "#LS2611000346"
+    ]
   },
   {
     "tracking": "MTCOA-0998",
@@ -47570,7 +47913,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 9,000 sqft di MTCOA 178225 ditawarkan untuk disewa pada Hubungi / bulan.",
+    "description": "Second Floor Office with lift\n\nWTL / FOR RENT\nRM 3,500 Monthly\n\n+ Subang Jaya, Selangor\n+ Factory\n+ Built-up Size : 1,700 sqft\n+ Land Area : 9,000 sqft\n\n\n\n**********************************************************************\n\n\nSubang Jaya Next to Shah Alam\nOffice for rent (2nd floor)\n\n17xx sqft build up\n2 meeting rooms\n4 office rooms\n1 pantry with cabinet\nLift access\n8-10 car parks \nAvailable now\n\nRM3.5k nett\n\nInterested? Contact Me Now!\n\nMr Tanah\nIQI REALTY SDN. BHD. (E (1) 1584/11)\nTel: +60163119076\n\n#LR2610001302",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=MTCOA%20178225",
@@ -47597,7 +47940,28 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1Aehtw4ZsbLJUdM80AO8pVAaqOiYaAimr=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "Second Floor Office with lift",
+      "WTL / FOR RENT",
+      "RM 3,500 Monthly",
+      "+ Subang Jaya, Selangor",
+      "+ Factory",
+      "+ Built-up Size : 1,700 sqft",
+      "+ Land Area : 9,000 sqft",
+      "Subang Jaya Next to Shah Alam",
+      "Office for rent (2nd floor)",
+      "17xx sqft build up",
+      "2 meeting rooms",
+      "4 office rooms",
+      "1 pantry with cabinet",
+      "Lift access",
+      "8-10 car parks",
+      "Available now",
+      "RM3.5k nett",
+      "Mr Tanah",
+      "#LR2610001302"
+    ]
   },
   {
     "tracking": "MTCOA-0999",
@@ -47622,7 +47986,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 112,385 sqft di Port Klang, Selangor dijual pada RM22,500,000. Hakmilik: Leasehold. Sekatan: Non-Bumi. Anggaran RM200 sekaki persegi.",
+    "description": "Factory Industrial Telok Gong Port Klang\n\nWTS / FOR SALE\nAsking RM 22,500,000\n\n+ Port Klang, Selangor\n+ Factory, Leasehold, Non-bumi Lot, Individual Title\n+ Built-up Size : 63,800 sqft\n+ Land Area : 2.58 acre\n\n\n\n**********************************************************************\n\n\nWTS \nFactory Industrial Telok Gong Port Klang\n\nDESCRIPTIONS :-\n\n✳️ Land Tenure : Leasehold till 2083\n✳️ Zoning : Industrial\n✳️ Category Industrial : Medium\n✳️ Land Size : 2.576 acres\n✳️ Factory B/U : 61,220 sqft\n✳️ Office B/U : 2,580 sqft ( 2 storey each floor 1,290 sqft )\n✳️ Total Built-up ( Factory + office ) : 63,800 sqft\n✳️ Factory Ceiling Height : 13 metre\n✳️ Factory wall : close up with 4 feet brick wall and full high metal cladding\n✳️ Inner road : Concrete road with concrete piling\n✳️ Front set back : 40 feets\n✳️ Right, left and back set back : 30 feets\n✳️ Power : Now 1,200 amps ( Still available to upgrade anytime )\n✳️ Factory floor Loading : Piling 3 ton per sqm\n\n✳️ Price : RM 22.5 m ( Previously selling RM \n\n✳️ Rental : RM 108,460.00 \n\n✳️ Now Tenanted : warehousing\n\n✳️ Tenancy : 1 + 1 ( started May 2022 ) First 1 year tenancy finish but now not yet renew, consider monthly basis\n\n✳️ CF : Confirm by May/June 2026\n\n\nOTHERS ADVANTAGE :-\n✅ Gas pipe can be arrange ( 1.5 KM away )\n✅ Front external surrender area have huge parking area\n✅ Factory totally no flood, out side only flood one time but not serious\n✅ Excellent location !!\n✅ 15 minutes to Kesas Highway\n✅ 18 minutes to North Port\n✅ 20 minutes to West Port\n✅ 18 minutes to Bandar Bukit Tinggi\n✅ Good investment if buy and rental out to new tenant easily can get 6 % ROI\n✅ High appreciation in future\n✅ Surrounding mature factory and warehousing\n✅ Widening / upgrading main Telok Gong road to double line , going to complete soon.\n\nInterested? Contact Me Now!\n\nMr Tanah\nIQI REALTY SDN. BHD. (E (1) 1584/11)\nTel: +60163119076\n\n#LS2605002023",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Port%20Klang%2C%20Selangor",
@@ -47639,7 +48003,53 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1YIM3oe6b1FysVgi1c4FBWX7Bl4fNxdVN=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "Factory Industrial Telok Gong Port Klang",
+      "WTS / FOR SALE",
+      "Asking RM 22,500,000",
+      "+ Port Klang, Selangor",
+      "+ Factory, Leasehold, Non-bumi Lot, Individual Title",
+      "+ Built-up Size : 63,800 sqft",
+      "+ Land Area : 2.58 acre",
+      "WTS",
+      "Factory Industrial Telok Gong Port Klang",
+      "DESCRIPTIONS :",
+      "✳️ Land Tenure : Leasehold till 2083",
+      "✳️ Zoning : Industrial",
+      "✳️ Category Industrial : Medium",
+      "✳️ Land Size : 2.576 acres",
+      "✳️ Factory B/U : 61,220 sqft",
+      "✳️ Office B/U : 2,580 sqft ( 2 storey each floor 1,290 sqft )",
+      "✳️ Total Built-up ( Factory + office ) : 63,800 sqft",
+      "✳️ Factory Ceiling Height : 13 metre",
+      "✳️ Factory wall : close up with 4 feet brick wall and full high metal cladding",
+      "✳️ Inner road : Concrete road with concrete piling",
+      "✳️ Front set back : 40 feets",
+      "✳️ Right, left and back set back : 30 feets",
+      "✳️ Power : Now 1,200 amps ( Still available to upgrade anytime )",
+      "✳️ Factory floor Loading : Piling 3 ton per sqm",
+      "✳️ Price : RM 22.5 m ( Previously selling RM",
+      "✳️ Rental : RM 108,460.00",
+      "✳️ Now Tenanted : warehousing",
+      "✳️ Tenancy : 1 + 1 ( started May 2022 ) First 1 year tenancy finish but now not yet renew, consider monthly basis",
+      "✳️ CF : Confirm by May/June 2026",
+      "OTHERS ADVANTAGE :",
+      "Gas pipe can be arrange ( 1.5 KM away )",
+      "Front external surrender area have huge parking area",
+      "Factory totally no flood, out side only flood one time but not serious",
+      "Excellent location !!",
+      "15 minutes to Kesas Highway",
+      "18 minutes to North Port",
+      "20 minutes to West Port",
+      "18 minutes to Bandar Bukit Tinggi",
+      "Good investment if buy and rental out to new tenant easily can get 6 % ROI",
+      "High appreciation in future",
+      "Surrounding mature factory and warehousing",
+      "Widening / upgrading main Telok Gong road to double line , going to complete soon.",
+      "Mr Tanah",
+      "#LS2605002023"
+    ]
   },
   {
     "tracking": "MTCOA-1000",
@@ -47664,7 +48074,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "description": "Kilang 217,800 sqft di Telok Panglima Garang, Selangor dijual pada RM45,000,000. Hakmilik: Freehold. Anggaran RM207 sekaki persegi.",
+    "description": "Factory Industrial Telok Panglima Garang Klang Freehold Status\n\nWTS / FOR SALE\nAsking RM 45,000,000\n\n+ Telok Panglima Garang, Selangor\n+ Factory, Freehold, Non-bumi Lot, Individual Title\n+ Built-up Size : 139,000 sqft\n+ Land Area : 5.00 acre\n\n\n\n**********************************************************************\n\n\nWTS \nFactory Industrial Telok Panglima Garang Klang\nFreehold\n\nDESCRIPTIONS :-\n\n✳️ Land Tenure : Freehold\n✳️ Zoning : Industrial\n✳️ Category Industrial : Medium\n✳️ Land Size : 5 acres\n✳️ Factory B/U : 133,000 sqft\n✳️ Office B/U : 6,000 sqft ( 2 storey each floor 3,000 sqft )\n✳️ Total Built-up ( Factory + office ) : 139,000 sqft\n✳️ Factory Ceiling Height : 13 metre\n✳️ Factory wall : Close up with 4 feet brick wall and full high metal cladding\n✳️ Inner road : Concrete road with concrete piling\n✳️ Inner road loading : 1 ton per sqm\n✳️ Front set back : 100 feets\n✳️ Left set back : 25 feets\n✳️ Right set back : 40 feets\n✳️ Back set back : 40 feets\n✳️ Power : Now 1,000 amps ( still available to upgrade anytime )\n✳️ Factory flooring Loading : piling 3 ton per sqm\n✳️ Price : RM 45 M\n✳️ Rental : RM 236,300.00 per month ( RM 1.70 per sqft )\n✳️ Tenant : Nil\n✳️ Site stated : Construction fully completed and ready to move in\n✳️ CF : Confirm May / June 2026\n\nOTHERS ADVANTAGE :-\n✅ Gas pipe can be arrange ( 4 KM away )\n✅ Factory and outside road totally no flood.\n✅ Factory front 100 feets huge space for lorry and car parking\n✅ Huge space at front, back and side area design for container to turn\n✅ Fire sprinkler system and large power supply\n✅ Excellent location !!\n✅ Few minutes away from Jalan Banting main road.\n✅ 15 minutes to SKVE Highway\n✅ 16 minutes to WCE Highway\n✅ 20 minutes to Kesas Highway\n✅ 23 minutes to Bandar Bukit Tinggi\n✅ 35 minutes to North Port\n✅ 35 minutes to West Port\n✅ Good investment with more then 6 % ROI once rented out\n✅ High appreciation in future\n✅ Surrounding a lot of new factory under construction and many new projects is coming\n✅ Few small indu…",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Telok%20Panglima%20Garang%2C%20Selangor",
@@ -47682,7 +48092,60 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1SE5JHc_HGek-kVws69fVPlz6juwGG8ap=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "butiran": [
+      "Factory Industrial Telok Panglima Garang Klang Freehold Status",
+      "WTS / FOR SALE",
+      "Asking RM 45,000,000",
+      "+ Telok Panglima Garang, Selangor",
+      "+ Factory, Freehold, Non-bumi Lot, Individual Title",
+      "+ Built-up Size : 139,000 sqft",
+      "+ Land Area : 5.00 acre",
+      "WTS",
+      "Factory Industrial Telok Panglima Garang Klang",
+      "Freehold",
+      "DESCRIPTIONS :",
+      "✳️ Land Tenure : Freehold",
+      "✳️ Zoning : Industrial",
+      "✳️ Category Industrial : Medium",
+      "✳️ Land Size : 5 acres",
+      "✳️ Factory B/U : 133,000 sqft",
+      "✳️ Office B/U : 6,000 sqft ( 2 storey each floor 3,000 sqft )",
+      "✳️ Total Built-up ( Factory + office ) : 139,000 sqft",
+      "✳️ Factory Ceiling Height : 13 metre",
+      "✳️ Factory wall : Close up with 4 feet brick wall and full high metal cladding",
+      "✳️ Inner road : Concrete road with concrete piling",
+      "✳️ Inner road loading : 1 ton per sqm",
+      "✳️ Front set back : 100 feets",
+      "✳️ Left set back : 25 feets",
+      "✳️ Right set back : 40 feets",
+      "✳️ Back set back : 40 feets",
+      "✳️ Power : Now 1,000 amps ( still available to upgrade anytime )",
+      "✳️ Factory flooring Loading : piling 3 ton per sqm",
+      "✳️ Price : RM 45 M",
+      "✳️ Rental : RM 236,300.00 per month ( RM 1.70 per sqft )",
+      "✳️ Tenant : Nil",
+      "✳️ Site stated : Construction fully completed and ready to move in",
+      "✳️ CF : Confirm May / June 2026",
+      "OTHERS ADVANTAGE :",
+      "Gas pipe can be arrange ( 4 KM away )",
+      "Factory and outside road totally no flood.",
+      "Factory front 100 feets huge space for lorry and car parking",
+      "Huge space at front, back and side area design for container to turn",
+      "Fire sprinkler system and large power supply",
+      "Excellent location !!",
+      "Few minutes away from Jalan Banting main road.",
+      "15 minutes to SKVE Highway",
+      "16 minutes to WCE Highway",
+      "20 minutes to Kesas Highway",
+      "23 minutes to Bandar Bukit Tinggi",
+      "35 minutes to North Port",
+      "35 minutes to West Port",
+      "Good investment with more then 6 % ROI once rented out",
+      "High appreciation in future",
+      "Surrounding a lot of new factory under construction and many new projects is coming",
+      "Few small indu…"
+    ]
   },
   {
     "tracking": "COA-0433",

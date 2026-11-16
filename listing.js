@@ -244,6 +244,11 @@ function renderDetail(l) {
       <p class="detail-desc">${l.description}</p>
     </section>` : ""}
 
+    ${l.butiran && l.butiran.length ? `<section class="detail-section">
+      <h2>Butiran Hartanah</h2>
+      <ul class="detail-list">${l.butiran.map(b => `<li>${b}</li>`).join("")}</ul>
+    </section>` : ""}
+
     ${videoHTML(l)}
 
     ${l.highlights && l.highlights.length ? `<section class="detail-section">
