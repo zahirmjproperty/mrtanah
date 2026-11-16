@@ -50085,7 +50085,7 @@ window.LISTINGS = [
     "location": "Pandamaran, Selangor",
     "state": "Selangor",
     "price": 11000000,
-    "price_label": "RM11,000,000 / bulan",
+    "price_label": "RM11,000,000",
     "price_old": null,
     "land_area": "32,022 sqft",
     "built_up": "30,560 sqft",
