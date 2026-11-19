@@ -1,10 +1,6 @@
 // Data listing Mr Tanah - dikemas kini oleh sync_mrtanah_notion.py
 // SUMBER: Notion DB 'Listing Mr Tanah' (Aktif=on/off, Gambar=gambar utama)
-window.SITE = {
-  "name": "Mr Tanah",
-  "phone": "016-3119076",
-  "domain": "https://mrtanah.com/"
-};
+window.SITE = "mt";
 
 window.LISTINGS = [
   {
@@ -29,31 +25,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Sungai di atas tanah",
-      "Akses terus ke tanah",
-      "Freehold - Malay Reservation",
-      "Bersebelahan ILMU Institute",
-      "47km ke KLCC | 35km ke Lebuhraya Karak",
-      "Sesuai pelaburan & pembangunan"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah strategik 2.824 ekar di Janda Baik dengan sungai mengalir di atas tanah dan akses terus ke lot. Lokasi sangat sesuai untuk pelaburan dan pembangunan — bersebelahan ILMU Institute Latihan Memperkasa Ummah, hanya 47km ke KLCC dan 35km ke Lebuhraya Karak. Freehold, Malay Reservation, kategori pertanian.",
-    "amenities": [
-      "Sungai semula jadi",
-      "Akses jalan terus ke tanah"
-    ],
-    "nearby": [
-      "ILMU Institute (bersebelahan)",
-      "KLCC (47km)",
-      "Lebuhraya Karak (35km)"
-    ],
+    "description": "Tanah 2.824 ekar / 123,053 sqft di Janda Baik, Pahang dijual pada RM3,500,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM28 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=3.307778,101.882111",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11R_E-xft6V3NGf05YGqKEgTed8Z7WAJK=w1000",
       "https://lh3.googleusercontent.com/d/1vdU4jmic5VmkRBa04vv6KAEt0Q4pUpNl=w1000",
@@ -91,33 +73,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "4.65 ekar / 202,554 sqft",
-      "Freehold - Malay Reserve",
-      "Zoning Residential (Kategori Pertanian)",
-      "2 lot bersebelahan",
-      "Tepi jalan kawasan perumahan elit",
-      "Kawasan Zoo Negara"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah lot Freehold 4.65 ekar (202,554 sqft) di Kemensah — kawasan perumahan elit tepi jalan, berhampiran Zoo Negara. 2 lot bersebelahan dengan zoning Residential, sangat strategik untuk membina rumah di bandar dengan suasana hijauan dan eksklusif. Bersebelahan Twin Palms Kemensah residences dan The Reserve Puncak Kayangan Kemensah, serta kawasan rekreasi dan hiking trail Kemensah.",
-    "amenities": [
-      "Tepi jalan utama",
-      "Kawasan perumahan elit",
-      "Suasana hijauan & eksklusif"
-    ],
-    "nearby": [
-      "Zoo Negara",
-      "Twin Palms Kemensah residences",
-      "The Reserve Puncak Kayangan Kemensah",
-      "Hiking Trail Kemensah"
-    ],
+    "description": "Tanah 4.65 ekar / 202,554 sqft di Kemensah, Selangor dijual pada RM18,200,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM90 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Kemensah,+Ampang,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1NLi2ZKIcTDOW8Y4ZOEE_14XqKmp_ioH8=w1000",
       "https://lh3.googleusercontent.com/d/1VH0nRgIvoJe_9dBlWpt4lNDyW3XvPNcV=w1000",
@@ -155,32 +121,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Sungai di atas tanah",
-      "Guest house & camp site sedia beroperasi",
-      "Akses terus ke tanah",
-      "Freehold - Malay Reservation",
-      "45km ke KLCC | 32km ke Lebuhraya Karak",
-      "Sesuai resort & pelaburan"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah strategik 1.64 ekar di Janda Baik dengan sungai mengalir di atas tanah dan akses terus ke lot. Dilengkapi guest house dan camp site yang terselenggara baik — boleh terus beroperasi. Berhampiran Surau al-Taqwa, hanya 45km ke KLCC dan 32km ke Lebuhraya Karak. Freehold, Malay Reservation, kategori pertanian.",
-    "amenities": [
-      "Sungai semula jadi",
-      "Guest house & camp site sedia ada",
-      "Akses jalan terus ke tanah"
-    ],
-    "nearby": [
-      "Surau al-Taqwa (berhampiran)",
-      "KLCC (45km)",
-      "Lebuhraya Karak (32km)"
-    ],
+    "description": "Tanah 1.64 ekar / 71,438 sqft di Janda Baik, Pahang dijual pada RM2,400,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM34 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=3.318444,101.873417",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1p80AuX11c_XVtXoseSXZHPLpiWy4s-oP=w1000",
       "https://lh3.googleusercontent.com/d/1fZTSi2VcGnlw6i2WQzyQH3G22_ZCkUac=w1000",
@@ -222,35 +173,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "2 lot bersebelahan — 12,055 sqft",
-      "Tengah-tengah Kuala Lumpur",
-      "Leasehold Bumi, baki 87 tahun",
-      "800m Stesen Sentul",
-      "2.6km MRT Titiwangsa"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "2 lot tanah bersebelahan di Sentul, tengah-tengah Kuala Lumpur. Jumlah keluasan 12,055 sqft dengan status Leasehold Bumi dan baki tempoh pajakan 87 tahun (sehingga 11 Mei 2113). Lokasi strategik — 800m dari Stesen Sentul, 2.6km dari MRT Titiwangsa, dan berhampiran Hospital Kuala Lumpur serta Institut Jantung Negara. Sesuai untuk pembangunan kediaman di kawasan pusat bandar.",
-    "amenities": [
-      "Stesen Sentul (800m)",
-      "MRT Titiwangsa (2.6km)",
-      "Hospital Kuala Lumpur (3.9km)",
-      "Institut Jantung Negara (5.2km)",
-      "Masjid Wilayah Persekutuan (9.1km)",
-      "Hyatt Regency (6.4km)"
-    ],
-    "nearby": [
-      "Stesen Sentul — 800m",
-      "MRT Titiwangsa — 2.6km",
-      "Hospital Kuala Lumpur — 3.9km",
-      "Institut Jantung Negara — 5.2km"
-    ],
+    "description": "Tanah 12,055 sqft di Sentul, Kuala Lumpur dijual pada RM1,600,000. Hakmilik: Leasehold. Sekatan: Bumi Lot. Anggaran RM133 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=3.178111,101.690972",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11n2p7ks3VlOvpf88qLRavo6oQiLz2NxW=w1000",
       "https://lh3.googleusercontent.com/d/1xl7QT9o5IxV8grMZUg6gUZo1j3kX5WwR=w1000",
@@ -285,34 +218,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Lot banglo 6,178 sqft",
-      "FREEHOLD - Melayu Reserved",
-      "Geran individu",
-      "Tanah rata, kawasan perumahan",
-      "10-15 minit ke Putrajaya/Bangi/Dengkil"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Lot banglo 6,178 sqft di Sg Merab, Selangor — Freehold dengan sekatan Melayu Reserved dan geran individu. Tanah rata dalam kawasan perumahan, 10-15 minit ke Putrajaya, Bangi dan Dengkil. Berhampiran Alamanda Putrajaya (9.6km), Tenera Hotel Bandar Baru Bangi (6.3km) dan Universiti Kebangsaan Malaysia (5.9km). Harga RM382,000 (boleh nego) — sesuai untuk pembinaan rumah banglo.",
-    "amenities": [
-      "Alamanda Putrajaya (9.6km)",
-      "Tenera Hotel & Suites Bandar Baru Bangi (6.3km)",
-      "Sepang Vocational College (3.8km)",
-      "Universiti Kebangsaan Malaysia (5.9km)"
-    ],
-    "nearby": [
-      "Putrajaya — 10-15 minit",
-      "Bangi — 10-15 minit",
-      "Dengkil — 10-15 minit",
-      "Alamanda Shopping Mall Putrajaya — 9.6km",
-      "UKM — 5.9km"
-    ],
+    "description": "Tanah 6,178 sqft di Sg Merab, Selangor dijual pada RM382,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM62 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=2.924389,101.738250",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11uSEz5vMFwCF_xuW31LNf8_ruidEqiwh=w1000",
       "https://lh3.googleusercontent.com/d/13z-q1a45O3pK6deQd_9jmajWgua1dNlu=w1000",
@@ -345,38 +261,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Lot bungalow 9,127.70 sqft",
-      "Leasehold Bumi, baki 89 tahun",
-      "Walking distance ke Dickson Dragon Cruise",
-      "Berhampiran World Marina Resort PD",
-      "4km ke Pantai Port Dickson",
-      "RM380,000 — harga menarik"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Lot bungalow 9,127.70 sqft di Teluk Kemang, Port Dickson, Negeri Sembilan — Leasehold Bumi dengan baki tempoh pajakan 89 tahun (sehingga Mac 2115). Walking distance ke Dickson Dragon Cruise dan World Marina Resort; 1.7km ke Hospital Port Dickson, 2.5km ke Avillion Admiral Cove, 4km ke Pantai Port Dickson dan 7km ke Pantai Cermin. Harga RM380,000 — sesuai untuk pembinaan rumah percutian atau pelaburan di kawasan pelancongan pantai.",
-    "amenities": [
-      "Dickson Dragon Cruise (walking distance)",
-      "World Marina Resort PD (walking distance)",
-      "Hospital Port Dickson (1.7km)",
-      "Avillion Admiral Cove (2.5km)",
-      "Pantai Port Dickson (4km)",
-      "Pantai Cermin (7km)"
-    ],
-    "nearby": [
-      "Dickson Dragon Cruise — walking distance",
-      "World Marina Resort PD — walking distance",
-      "Hospital Port Dickson — 1.7km",
-      "Avillion Admiral Cove — 2.5km",
-      "Pantai Port Dickson — 4km",
-      "Pantai Cermin — 7km"
-    ],
+    "description": "Tanah 9,127.70 sqft di Teluk Kemang, Negeri Sembilan dijual pada RM380,000. Hakmilik: Leasehold. Sekatan: Bumi Lot. Anggaran RM42 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=2.470167,101.854139",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1lVbkxL8SIVhGOQew6WUIIZyNcChClusM=w1000",
       "https://lh3.googleusercontent.com/d/1FcciBaVll8YvJpdEFTDsziqBOIJUsb6N=w1000",
@@ -411,32 +306,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Freehold Malay Reserve",
-      "Berhadapan Jalan Saleh Aman",
-      "Zoning Residential",
-      "5 minit ke Istana Mahkota Pahang",
-      "10 minit ke Pekan Pahang",
-      "Berhampiran SK Sri Maulana"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah rata pertanian Freehold seluas 84,066 sqft di Kelat Rendang, Pahang, berhadapan terus Jalan Saleh Aman dengan zoning Residential. Lokasi strategik hanya 5 minit ke Istana Mahkota Pahang dan 10 minit ke Pekan Pahang — berpotensi untuk pembangunan perumahan atau simpanan pelaburan jangka panjang.",
-    "amenities": [
-      "Istana Mahkota Pahang (5 minit)",
-      "Pekan Pahang (10 minit)",
-      "SK Sri Maulana"
-    ],
-    "nearby": [
-      "Istana Mahkota Pahang — 5 minit",
-      "Pekan Pahang — 10 minit",
-      "SK Sri Maulana — berhampiran"
-    ],
+    "description": "Tanah 84,066 sqft di Kelat Rendang, Pahang dijual pada RM430,000. Hakmilik: Freehold. Sekatan: Malay Reserve. Anggaran RM5 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Kelat+Rendang,+Pekan,+Pahang",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1tN4szqTDYVgf0Iad1IUsxJheI9caxmBy=w1000",
       "https://lh3.googleusercontent.com/d/1ud1oKy1sB-mdXP8zMvNyFHI9q_13PIhF=w1000",
@@ -471,37 +351,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Leasehold Bumi Lot",
-      "Berhadapan Jalan Selangor Dredging",
-      "Berhampiran Lebuhraya Elite",
-      "Zoning Residential",
-      "Harga RM40 psf (nilai pasaran RM60 psf)",
-      "Berhampiran Gamuda Cove & Kota Warisan"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah lot banglo seluas 16,800 sqft di Dengkil, Selangor, berhadapan Jalan Selangor Dredging dan berhampiran Lebuhraya Elite. Zoning Residential dengan harga asking RM680,000 (RM40 psf) — jauh di bawah nilai pasaran RM60 psf. Dikelilingi kawasan perumahan sedia ada dan berhampiran Gamuda Cove, Kota Warisan, UiTM Dengkil, Cybersouth serta KLIA.",
-    "amenities": [
-      "SK Dengkil (7.5 km)",
-      "SMK Dengkil (7.3 km)",
-      "Klinik Kesihatan Dengkil (6.8 km)",
-      "Balai Polis Dengkil (6.3 km)",
-      "Restoran (2.5 km)"
-    ],
-    "nearby": [
-      "Gamuda Cove — berhampiran",
-      "Kota Warisan — berhampiran",
-      "UiTM Dengkil — berhampiran",
-      "Cybersouth — berhampiran",
-      "KLIA — berhampiran",
-      "Paya Indah Wetland"
-    ],
+    "description": "Tanah 16,800 sqft di Dengkil, Selangor dijual pada RM680,000. Hakmilik: Leasehold. Sekatan: Bumi Lot. Anggaran RM40 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Dengkil,+Selangor",
-    "project": "tanah-lot-banglo-dengkil-single",
+    "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1A3epKffs6nJXoWgZSPdoHI3jjz0P5XMC=w1000",
       "https://lh3.googleusercontent.com/d/1BWw_wfyReYcSU_t0Kr7KVCbBpUlasLFz=w1000",
@@ -532,37 +392,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Freehold Malay Reserve",
-      "Tanah rata (flat land)",
-      "100m dari jalan utama Sg Merab - BB Bangi",
-      "Harga RM64 psf (nilai pasaran RM85 psf)",
-      "Dikelilingi bungalow & Taman Pesona",
-      "12 minit ke Putrajaya & Bangi"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Bungalow lot Freehold Malay Reserve seluas 6,340 sqft di Sungai Merab, Selangor — hanya 100 meter dari jalan utama Sg Merab ke Bandar Baru Bangi, tanah rata dan dikelilingi bungalow sedia ada serta Taman Pesona Mekar/Impian. Harga RM405,000 (RM64 psf, nilai pasaran RM85 psf). 12 minit ke Presint 16 Putrajaya dan Seksyen 9 Bangi.",
-    "amenities": [
-      "UniKL MFI (3.6 km)",
-      "Akademi Kelulut Malaysia (1.2 km)",
-      "Masjid Al-Hasanah Bandar Baru Bangi (5.5 km)",
-      "Alamanda Shopping Centre (10.7 km)",
-      "Putrajaya ICC (11.8 km)"
-    ],
-    "nearby": [
-      "Nasi Lemak Maklong Sg Merab — 850m",
-      "Surau Al-islah — 2.2 km",
-      "Warung Bunian — 4.2 km",
-      "Tenera Hotel & Suites — 5.2 km",
-      "German-Malaysian Institute — 8.7 km",
-      "Presint 16 Putrajaya — 12 minit"
-    ],
+    "description": "Tanah 6,340 sqft di Sungai Merab, Selangor dijual pada RM405,000. Hakmilik: Freehold. Sekatan: Malay Reserve. Anggaran RM64 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Sungai+Merab,+Sepang,+Selangor",
-    "project": "bungalow-lot-sungai-merab",
+    "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1aq22V19iDmNdlh-hAT-uJ0sTYlVODY2E=w1000",
       "https://lh3.googleusercontent.com/d/1GgU1yy-1rDqUcoVNAMdjxMNoCyKyKBx_=w1000",
@@ -595,29 +435,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Freehold Open — corner lot",
-      "Keluasan 21,388 sqft (1,987 sqm)",
-      "200m dari Surau Jumaat baharu",
-      "650m dari kediaman Perdana Menteri",
-      "Kawasan kediaman eksklusif Presint 10",
-      "Akses Lebuh Sentosa ke IOI City Mall"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Corner bungalow lot Freehold Open seluas 21,388 sqft (1,987 sqm) di Presint 10, Putrajaya — kawasan kediaman eksklusif dalam lingkungan kediaman Perdana Menteri. Corner lot, kategori Bangunan (kediaman), tanah rata dan terurus. Harga RM2,800,000 (RM131 psf). 200m dari Surau Jumaat baharu, 650m dari kediaman PM, akses pantas Lebuh Sentosa ke IOI City Mall.",
+    "description": "Tanah 21,388 sqft / 1,987 sqm di Presint 10, Putrajaya dijual pada RM2,800,000. Hakmilik: Freehold. Sekatan: Open. Anggaran RM131 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "Surau Jumaat Presint 10 — 200m",
-      "Kediaman Perdana Putrajaya — 650m",
-      "Lebuh Sentosa — akses ke IOI City Mall",
-      "IOI City Mall — dalam 10 minit"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Presint+10+Putrajaya",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-03",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1GIsSCY_smFnLGCDpdru0gP4GVl5Q1m1m=w1000",
       "https://lh3.googleusercontent.com/d/1TiAhP3rhv_1Vugbq_aKP8i3FG7AIahQ0=w1000",
@@ -642,8 +470,8 @@ window.LISTINGS = [
     "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Open",
-    "kategori": "Bangunan",
-    "zoning": "Perumahan",
+    "kategori": "",
+    "zoning": "",
     "psf": 129,
     "bedrooms": 0,
     "bathrooms": 0,
@@ -651,29 +479,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah rata & petak menarik",
-      "Kawasan privasi",
-      "Freehold — ownership individu",
-      "Zoning residensi (kategori bangunan)",
-      "Sesuai bina rumah banglo idaman"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah lot banglo rata dan menarik di Perdana Hills, Presint 11 Putrajaya — kawasan privasi dan tenang. Keluasan 8,374 sqft, freehold, ownership individu, kategori bangunan dengan zoning residensi. Sesuai untuk bina rumah idaman. Harga RM1.08 juta (market value RM160/sqft).",
-    "amenities": [
-      "8,374 sqft tanah banglo"
-    ],
-    "nearby": [
-      "Presint 11 Putrajaya",
-      "Persiaran Perdana",
-      "Pusat pentadbiran Putrajaya (berdekatan)"
-    ],
+    "description": "Tanah 8,374 sqft di Perdana Hills, Presint 11, Putrajaya dijual pada RM1,080,000. Hakmilik: Freehold. Sekatan: Open. Anggaran RM129 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Perdana+Hills+Presint+11+Putrajaya",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-05",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1RXOYQ15sH34f5uPm9HYmi8tI2hmal75s=w1000",
       "https://lh3.googleusercontent.com/d/1mId64XTkAFSt4qiknkipAOViPYO3jX01=w1000",
@@ -694,7 +510,7 @@ window.LISTINGS = [
     "price_label": "RM24,000,000",
     "price_old": null,
     "land_area": "Bangunan 26,728 sqft · Tanah 8,428 sqft",
-    "built_up": "26,728 sqft",
+    "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Melayu Reserved",
     "kategori": "Bangunan",
@@ -706,35 +522,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Bangunan pejabat 6 tingkat di pusat tumpuan pelancong Kampung Baru",
-      "7 tingkat termasuk 1 tingkat parkir",
-      "Ruang rooftop dengan pemandangan KLCC",
-      "Sistem keselamatan lengkap 24/7, lift & akses OKU",
-      "Freehold komersial — Tanah Simpanan Melayu",
-      "ROI 4.57% — peluang pelaburan strategik"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Peluang pelaburan strategik di Kampung Baru, Kuala Lumpur: bangunan pejabat 6 tingkat (7 tingkat termasuk 1 tingkat parkir) dengan keluasan binaan 26,728 sqft di atas tanah 8,428 sqft. Struktur moden dan kukuh, ruang fleksibel untuk pelbagai acara, rooftop dengan pemandangan KLCC, sistem keselamatan lengkap 24/7, lift dan akses OKU, parking luas serta pendingin berpusat. Berhampiran KLCC, Jalan Ampang dan Bukit Bintang; mudah akses LRT KLCC, MRT/LRT Ampang Park, Monorail Bukit Nanas dan laluan bas GoKL.",
-    "amenities": [
-      "Parking luas & selesa",
-      "Lift & akses OKU",
-      "Sistem keselamatan 24/7",
-      "Pendingin berpusat",
-      "Ruang rooftop pemandangan KLCC"
-    ],
-    "nearby": [
-      "KLCC & Jalan Ampang",
-      "Bukit Bintang",
-      "LRT KLCC / MRT Ampang Park / Monorail Bukit Nanas",
-      "Laluan bas GoKL"
-    ],
+    "description": "Komersial Bangunan 26,728 sqft · Tanah 8,428 sqft di Kampung Baru, Kuala Lumpur dijual pada RM24,000,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM898 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Kampung+Baru+Kuala+Lumpur",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-07",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YYJkls0_xhGqAq_O8HASs3zttT0xva_o=w1000",
       "https://lh3.googleusercontent.com/d/10s-FTr-lrgxPqbJgvbRNLhV3UeAq_ZWR=w1000",
@@ -772,36 +570,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "3 lot banglo bersebelahan — beli 1 atau semua",
-      "Leasehold sehingga 19 Mac 2094",
-      "Status residential",
-      "Berhadapan Jalan Selangor Dredging",
-      "Berhampiran Lebuhraya Elite",
-      "Dari RM248,000 per lot"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah lot banglo di Dengkil, Selangor — 3 lot bersebelahan di Jalan Selangor Dredging, status residential, leasehold sehingga 19 Mac 2094. Harga dari RM248,000 per lot (5,145 sqft, 5,748 sqft & 5,963 sqft). Berhampiran Lebuhraya Elite, Gamuda Cove, Kota Warisan dan KLIA — sesuai bina rumah banglo idaman.",
-    "amenities": [
-      "Jalan Selangor Dredging",
-      "Status residential",
-      "Berhampiran Lebuhraya Elite"
-    ],
-    "nearby": [
-      "Gamuda Cove",
-      "Kota Warisan",
-      "Dengkil town",
-      "KLIA",
-      "Paya Indah Wetland",
-      "UiTM Dengkil",
-      "Cybersouth"
-    ],
+    "description": "Tanah 5,145 sqft di Dengkil, Selangor dijual pada RM248,000. Hakmilik: Leasehold. Anggaran RM48 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Dengkil,+Selangor",
-    "project": "tanah-lot-banglo-dengkil",
-    "project_name": "Tanah Lot Banglo Dengkil (3 Lot)",
-    "unit": "Lot 1 · 5,145 sqft",
+    "project": "",
+    "project_name": "",
+    "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-07",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1XAipKkXRcjMZ5UzWniCiUqzdhx6hEQZ3=w1000",
       "https://lh3.googleusercontent.com/d/1Bt1gZsip8t-LUuKUFUvqQaxK4HuV5SUD=w1000",
@@ -833,36 +612,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "3 lot banglo bersebelahan — beli 1 atau semua",
-      "Leasehold sehingga 19 Mac 2094",
-      "Status residential",
-      "Berhadapan Jalan Selangor Dredging",
-      "Berhampiran Lebuhraya Elite",
-      "Dari RM248,000 per lot"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah lot banglo di Dengkil, Selangor — Lot 2 (5,748 sqft) antara 3 lot bersebelahan di Jalan Selangor Dredging, status residential, leasehold sehingga 19 Mac 2094. Harga dari RM248,000 per lot. Berhampiran Lebuhraya Elite, Gamuda Cove, Kota Warisan dan KLIA.",
-    "amenities": [
-      "Jalan Selangor Dredging",
-      "Status residential",
-      "Berhampiran Lebuhraya Elite"
-    ],
-    "nearby": [
-      "Gamuda Cove",
-      "Kota Warisan",
-      "Dengkil town",
-      "KLIA",
-      "Paya Indah Wetland",
-      "UiTM Dengkil",
-      "Cybersouth"
-    ],
+    "description": "Tanah 5,748 sqft di Dengkil, Selangor dijual pada RM248,000. Hakmilik: Leasehold. Anggaran RM43 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Dengkil,+Selangor",
-    "project": "tanah-lot-banglo-dengkil",
-    "project_name": "Tanah Lot Banglo Dengkil (3 Lot)",
-    "unit": "Lot 2 · 5,748 sqft",
+    "project": "",
+    "project_name": "",
+    "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-07",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Bt1gZsip8t-LUuKUFUvqQaxK4HuV5SUD=w1000",
       "https://lh3.googleusercontent.com/d/1k_Bv-Z5Ilx2rs5Svda2WZ8msoyo_7lxJ=w1000",
@@ -894,36 +654,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "3 lot banglo bersebelahan — beli 1 atau semua",
-      "Leasehold sehingga 19 Mac 2094",
-      "Status residential",
-      "Berhadapan Jalan Selangor Dredging",
-      "Berhampiran Lebuhraya Elite",
-      "Dari RM248,000 per lot"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah lot banglo di Dengkil, Selangor — Lot 3 (5,963 sqft) antara 3 lot bersebelahan di Jalan Selangor Dredging, status residential, leasehold sehingga 19 Mac 2094. Harga dari RM248,000 per lot. Berhampiran Lebuhraya Elite, Gamuda Cove, Kota Warisan dan KLIA.",
-    "amenities": [
-      "Jalan Selangor Dredging",
-      "Status residential",
-      "Berhampiran Lebuhraya Elite"
-    ],
-    "nearby": [
-      "Gamuda Cove",
-      "Kota Warisan",
-      "Dengkil town",
-      "KLIA",
-      "Paya Indah Wetland",
-      "UiTM Dengkil",
-      "Cybersouth"
-    ],
+    "description": "Tanah 5,963 sqft di Dengkil, Selangor dijual pada RM248,000. Hakmilik: Leasehold. Anggaran RM42 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Dengkil,+Selangor",
-    "project": "tanah-lot-banglo-dengkil",
-    "project_name": "Tanah Lot Banglo Dengkil (3 Lot)",
-    "unit": "Lot 3 · 5,963 sqft",
+    "project": "",
+    "project_name": "",
+    "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-07",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1k_Bv-Z5Ilx2rs5Svda2WZ8msoyo_7lxJ=w1000",
       "https://lh3.googleusercontent.com/d/1QEtvOvVcoDbDAV-VQt5RXAkAWS3acqn8=w1000",
@@ -940,7 +681,7 @@ window.LISTINGS = [
     "location": "Kayangan Heights, Seksyen U9, Shah Alam, Selangor",
     "state": "Selangor",
     "price": 2605069.5,
-    "price_label": "RM2,605,069.50",
+    "price_label": "RM2,605,069",
     "price_old": null,
     "land_area": "18,586 sqft",
     "built_up": "-",
@@ -955,37 +696,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "2.5 Storey Bungalow Type Begonia Crescent",
-      "CF completed — sedia huni",
-      "Built up 4,232 sqft",
-      "6 bilik 7 bilik air",
-      "Leasehold",
-      "Gated & guarded 24 jam, clubhouse infinity pool"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Bungalow 2.5 tingkat Type Begonia Crescent di Kayangan Heights, Seksyen U9 Shah Alam — CF completed, built up 4,232 sqft dengan tanah 18,586 sqft. 6 bilik 7 bilik air, gated & guarded 24 jam, security fees RM250/bulan. Berhampiran Kelab Impiana Kayangan, Real International School dan Elmina Lakeside Mall. Harga dari RM2,605,069.50.",
-    "amenities": [
-      "Gated & guarded 24 jam",
-      "Clubhouse infinity pool & gymnasium",
-      "Tennis court",
-      "Security fees RM250/bln",
-      "CF completed"
-    ],
-    "nearby": [
-      "Kelab Impiana Kayangan (di hadapan)",
-      "Real International School (1.2km)",
-      "Mudtrekker Paintball Park Cahaya SPK (2.9km)",
-      "Monterez Golf Driving Range (3.1km)",
-      "Elmina Lakeside Mall (8.2km)",
-      "UiTM Puncak Perdana (7.2km)"
-    ],
+    "description": "Rumah 18,586 sqft di Kayangan Heights, Seksyen U9, Shah Alam, Selangor dijual pada RM2,605,069. Hakmilik: Leasehold. Anggaran RM140 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Kayangan+Heights,+Seksyen+U9,+Shah+Alam,+Selangor",
-    "project": "bungalow-kayangan-heights",
-    "project_name": "Bungalow Kayangan Heights (2 Unit)",
-    "unit": "Unit 1",
+    "project": "",
+    "project_name": "",
+    "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-07",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1KsNH1NSyUt1U1ik0gbHwH0xT_Opmn86F=w1000",
       "https://lh3.googleusercontent.com/d/1qKlKbGPaeq9ZqepPLV6xwiNzneeS8bI2=w1000",
@@ -1008,7 +729,7 @@ window.LISTINGS = [
     "location": "Kayangan Heights, Seksyen U9, Shah Alam, Selangor",
     "state": "Selangor",
     "price": 2951150.4,
-    "price_label": "RM2,951,150.40",
+    "price_label": "RM2,951,150",
     "price_old": null,
     "land_area": "27,049 sqft",
     "built_up": "-",
@@ -1023,37 +744,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "2.5 Storey Bungalow Type Begonia Crescent",
-      "CF completed — sedia huni",
-      "Built up 4,232 sqft",
-      "6 bilik 7 bilik air",
-      "Leasehold",
-      "Gated & guarded 24 jam, clubhouse infinity pool"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Bungalow 2.5 tingkat Type Begonia Crescent di Kayangan Heights, Seksyen U9 Shah Alam — CF completed, built up 4,232 sqft dengan tanah 27,049 sqft. 6 bilik 7 bilik air, gated & guarded 24 jam, security fees RM250/bulan. Berhampiran Kelab Impiana Kayangan, Real International School dan Elmina Lakeside Mall. Harga RM2,951,150.40.",
-    "amenities": [
-      "Gated & guarded 24 jam",
-      "Clubhouse infinity pool & gymnasium",
-      "Tennis court",
-      "Security fees RM250/bln",
-      "CF completed"
-    ],
-    "nearby": [
-      "Kelab Impiana Kayangan (di hadapan)",
-      "Real International School (1.2km)",
-      "Mudtrekker Paintball Park Cahaya SPK (2.9km)",
-      "Monterez Golf Driving Range (3.1km)",
-      "Elmina Lakeside Mall (8.2km)",
-      "UiTM Puncak Perdana (7.2km)"
-    ],
+    "description": "Rumah 27,049 sqft di Kayangan Heights, Seksyen U9, Shah Alam, Selangor dijual pada RM2,951,150. Hakmilik: Leasehold. Anggaran RM109 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Kayangan+Heights,+Seksyen+U9,+Shah+Alam,+Selangor",
-    "project": "bungalow-kayangan-heights",
-    "project_name": "Bungalow Kayangan Heights (2 Unit)",
-    "unit": "Unit 2",
+    "project": "",
+    "project_name": "",
+    "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-07",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1dSDvvD3z99H4qxeQsqaWdx1L6hiGm0EQ=w1000",
       "https://lh3.googleusercontent.com/d/1KsNH1NSyUt1U1ik0gbHwH0xT_Opmn86F=w1000",
@@ -1091,35 +792,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "60 ekar industrial land — IDRISS South Selangor",
-      "Depan pintu masuk NCT Smart Industry Park",
-      "12km ke KLIA",
-      "Leasehold Malay Reserve",
-      "Land category: Industry",
-      "Akses WCE, LATAR, NKVE, GCE, DASH"
-    ],
+    "highlights": [],
     "pelan": [],
     "description": "IDRISS, depan pintu masuk NCT Smart Industry Park, 12km KLIA. Land Category Industry. Leasehold Malay Reserve. Album foto: 406 (8)+414 (3). Hubungi Mr Tanah 6016-3119076.",
-    "amenities": [
-      "Land category: Industry",
-      "Depan pintu masuk NCT Smart Industry Park",
-      "12km ke KLIA",
-      "Akses lebuh raya utama"
-    ],
-    "nearby": [
-      "KLIA (12km)",
-      "Sepang Gold Coast (26km)",
-      "Port Klang (56km)",
-      "Kuala Lumpur City Centre (60km)",
-      "Subang Airport (60km)"
-    ],
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Banting,+Sepang,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-07",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1UfvMtctksaZeHRGmiia09TwzSatumiJx=w1000",
       "https://lh3.googleusercontent.com/d/1Nol8ia688YyW8bYzFBEx3KFmCqpMiQCw=w1000",
@@ -1157,45 +840,20 @@ window.LISTINGS = [
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
-    "jenis": [
-      "JUAL",
-      "SEWA"
-    ],
-    "sewa_price": 110860,
-    "sewa_label": "RM110,860/bulan",
-    "highlights": [
-      "5.09 ekar tanah komersial — Two Frontage (Jalan Kebun & Toll 3 Shah Alam)",
-      "Bersebelahan jalan utama — depan Jalan Kebun, belakang Toll 3 Shah Alam",
-      "Berhampiran SP Setia Alam Impian & Sunrise Technology Park",
-      "Freehold, Title Agriculture Open, bebas bebanan",
-      "Diluluskan untuk Commercial Industry (DO/KM)",
-      "Zoning Commercial — sesuai apartment servis, hipermarket, logistik, showroom, pembangunan campuran",
-      "Turut ditawarkan untuk disewa — RM110,860/bulan"
-    ],
+    "jenis": "JUAL",
+    "sewa_price": null,
+    "sewa_label": null,
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah komersial strategik 5.09 ekar di Jalan Kebun, Seksyen 36 Shah Alam dengan dua muka jalan (two frontage) — Jalan Kebun di hadapan dan Toll 3 Shah Alam di belakang. Berhampiran SP Setia Alam Impian dan Sunrise Technology Park, tanah ini sesuai untuk pembangunan apartment servis/kondominium, hipermarket, logistik, showroom, 3S/4S, kompleks membeli-belah atau projek pembangunan campuran. Freehold, Title Agriculture Open, bebas daripada bebanan dan diluluskan untuk Commercial Industry (DO/KM). Harga jualan RM26,606,448; turut ditawarkan untuk disewa pada RM110,860/bulan.",
-    "amenities": [
-      "Bersebelahan SJK (T) Ladang Batu Ampat",
-      "Masjid Alam Impian (4.9km)",
-      "Sentosa Specialist Hospital Klang (2.0km)",
-      "Hospital Tengku Ampuan Rahimah, Klang (6.9km)",
-      "NSK Jalan Sg Jati (1.4km)",
-      "KSL Esplanade Mall (13.3km)",
-      "Bukit Kemuning Golf & Country Resort (7.0km)"
-    ],
-    "nearby": [
-      "SP Setia Alam Impian",
-      "Sunrise Technology Park",
-      "Bandar Klang (8.0km)",
-      "Port Klang Cruise Terminal (20km)",
-      "Akses KESAS, LKSA, FEDERAL & ELITE Highway"
-    ],
+    "description": "Tanah 5.09 ekar (221,720 sqft) di Seksyen 36, Shah Alam, Selangor dijual pada RM26,606,448. Hakmilik: Freehold. Sekatan: Open. Anggaran RM120 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Jalan+Kebun,+Seksyen+36,+Shah+Alam,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-08",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1wNBa5kNZR8KDCvhJyDsNvNf5yRbVgPGR=w1000",
       "https://lh3.googleusercontent.com/d/1SNP82NB5_YfS0BRJbEb-f8SgYczjVBDC=w1000",
@@ -1233,36 +891,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Petrol station sedia ada — Malacca Customary Land (MCL), Freehold",
-      "Keluasan 40,009 sqft — status kegunaan stesyen minyak",
-      "Bersebelahan Wisma Kastam Ayer Keroh, berdepan Petronas Ayer Keroh 3",
-      "1.7km ke Tol Ayer Keroh, 4.2km ke MITC Melaka",
-      "Lokasi strategik di laluan utama pelancongan Ayer Keroh"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Stesyen minyak (petrol station) di Ayer Keroh, Melaka di atas tanah Malacca Customary Land (MCL) seluas 40,009 sqft, Freehold. Terletak bersebelahan Wisma Kastam Ayer Keroh dan berdepan Petronas Ayer Keroh 3 — lokasi strategik di laluan utama pelancongan Melaka. Hanya 1.7km dari Tol Ayer Keroh, 2km ke Hotel Seri Malaysia, 4.2km ke MITC dan 5km ke Zoo Melaka. Status kegunaan sedia ada stesyen minyak, sesuai untuk penerusan operasi atau pembangunan komersial. Harga jualan RM3,200,720 (RM80 psf).",
-    "amenities": [
-      "Wisma Kastam Ayer Keroh (bersebelahan)",
-      "Petronas Ayer Keroh 3 (berdepan)",
-      "Hotel Seri Malaysia (2km)",
-      "Zoo Melaka (5km)",
-      "MITC Malacca International Trade Centre (4.2km)",
-      "Ayer Keroh Tol Plaza (1.7km)"
-    ],
-    "nearby": [
-      "Tol Ayer Keroh (1.7km)",
-      "Hotel Seri Malaysia (2km)",
-      "MITC Malacca International Trade Centre (4.2km)",
-      "Zoo Melaka (5km)",
-      "Bandaraya Melaka (~10km)"
-    ],
+    "description": "Tanah 40,009 sqft di Ayer Keroh, Melaka dijual pada RM3,200,720. Hakmilik: Freehold. Sekatan: Malacca Customary Land. Anggaran RM80 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Ayer+Keroh,+Melaka",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-08",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ixFEJddjgCPfznaR6FwQqmDOK-OrROSf=w1000",
       "https://lh3.googleusercontent.com/d/1g3tdv4aa-MJyIPq64O-4tO-aj0y3C2YG=w1000",
@@ -1297,36 +936,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "3.6 ekar tanah komersial Freehold — bebas bebanan",
-      "Simpang jalan utama (cross road) — 8 arah aliran trafik tinggi",
-      "Bertentangan KFC, Pizza Hut, Public Bank, Hong Leong Bank & Econmart; berhampiran NSK",
-      "Diluluskan untuk shopping complex, service apartment, hypermarket, logistik, showroom, mix development",
-      "Akses KESAS, LKSA, FEDERAL & ELITE Highway"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah komersial Freehold seluas 3.6 ekar (156,816 sqft) di persimpangan jalan utama (cross road) Taman Sentosa, Klang dengan aliran trafik lapan arah. Bertentangan terus dengan KFC, Pizza Hut, Domino's, Public Bank, Hong Leong Bank dan Econmart, serta berhampiran NSK. Diluluskan untuk shopping complex, service apartment, office suite, hypermarket, logistik, showroom, 3S/4S dan pembangunan campuran. Bebas daripada bebanan. Akses mudah ke KESAS, LKSA, FEDERAL dan ELITE Highway. Harga jualan RM54,885,600 (RM350 psf).",
-    "amenities": [
-      "KFC, Pizza Hut, Domino's, Public Bank, Hong Leong Bank & Econmart (bertentangan)",
-      "NSK (berhampiran)",
-      "Royal Mustika Ballroom (1.4km)",
-      "Sentosa Specialist Hospital Klang (2.6km)",
-      "89 Arena Klang (2.6km)",
-      "Pantai Hospital Klang (6.5km)"
-    ],
-    "nearby": [
-      "Taman Sentosa, Klang",
-      "NSK (berhampiran)",
-      "Sentosa Specialist Hospital Klang (2.6km)",
-      "Pantai Hospital Klang (6.5km)",
-      "Akses KESAS, LKSA, FEDERAL & ELITE Highway"
-    ],
+    "description": "Tanah 3.6 ekar (156,816 sqft) di Taman Sentosa, Klang, Selangor dijual pada RM54,885,600. Hakmilik: Freehold. Sekatan: Open. Anggaran RM350 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Taman+Sentosa,+Klang,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-08",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YC87y3aZFwhJnYYIhrQIPw00i8CWv2Pw=w1000",
       "https://lh3.googleusercontent.com/d/1pjYH2aB5eYc-nJFx0w-3XUNsPa58C7hA=w1000",
@@ -1360,36 +980,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah komersial — Malacca Customary Land (MCL), Freehold",
-      "Keluasan 167,200 sqft (lebih kurang 3.84 ekar)",
-      "Belakang Wisma Kastam Ayer Keroh, berdepan Makmal Syarikat Air Melaka",
-      "2.2km ke Tol Ayer Keroh Plaza, 7km ke MITC Melaka",
-      "Lokasi strategik Ayer Keroh — laluan utama pelancongan Melaka"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah komersial Malacca Customary Land (MCL) Freehold seluas 167,200 sqft (lebih kurang 3.84 ekar) di Ayer Keroh, Melaka. Terletak di belakang Wisma Kastam Ayer Keroh dan berdepan Makmal Syarikat Air Melaka. Akses pantas 2.2km ke Tol Ayer Keroh Plaza, 3km ke Hotel Seri Malaysia, 7km ke Zoo Melaka dan 7km ke MITC (Malacca International Trade Centre). Sesuai untuk pembangunan komersial. Harga jualan RM4,180,000 (RM25 psf).",
-    "amenities": [
-      "Wisma Kastam Ayer Keroh (belakang)",
-      "Makmal Syarikat Air Melaka (berdepan)",
-      "Hotel Seri Malaysia (3km)",
-      "Zoo Melaka (7km)",
-      "MITC Malacca International Trade Centre (7km)",
-      "Ayer Keroh Tol Plaza (2.2km)"
-    ],
-    "nearby": [
-      "Tol Ayer Keroh Plaza (2.2km)",
-      "Hotel Seri Malaysia (3km)",
-      "Zoo Melaka (7km)",
-      "MITC Malacca International Trade Centre (7km)",
-      "Bandaraya Melaka (~12km)"
-    ],
+    "description": "Tanah 167,200 sqft di Ayer Keroh, Melaka dijual pada RM4,180,000. Hakmilik: Freehold. Sekatan: Malacca Customary Land. Anggaran RM25 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Ayer+Keroh,+Melaka",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-08",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1qCh1Y1Q52l7mBITJXUem63JNi8FGeMPP=w1000",
       "https://lh3.googleusercontent.com/d/1eHTgdnYI3fI5PPLkElZThO6RHBo3A-zl=w1000",
@@ -1421,32 +1022,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Kawasan elit Presint 10 Putrajaya",
-      "150m ke pintu masuk kediaman Perdana Menteri",
-      "Jiran menteri & VVIP",
-      "Freehold Open",
-      "Akses mudah ke jalan antara bandar Putrajaya"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Bungalow land premium di Presint 10, Putrajaya — kawasan komuniti elit berhampiran kediaman rasmi Perdana Menteri. Tanah seluas 19,367 sqft (1,799 sqm) berstatus Freehold Open, sesuai untuk kediaman eksklusif. Hanya 150 meter ke pintu masuk kediaman PM, dikelilingi jiran menteri dan VVIP, dengan akses mudah ke jalan antara bandar Putrajaya.",
-    "amenities": [
-      "Kawasan komuniti elit",
-      "Berhampiran kediaman Perdana Menteri",
-      "Jiran menteri & VVIP",
-      "Premium Freehold Land"
-    ],
-    "nearby": [
-      "Kediaman Perdana Menteri (150m)",
-      "Putrajaya inter-city road",
-      "IOI City Mall (via Lebuh Sentosa)"
-    ],
+    "description": "Tanah 19,367 sqft / 1,799 sqm di Presint 10, Putrajaya dijual pada RM2,600,000. Hakmilik: Freehold. Sekatan: Open. Anggaran RM134 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Presint+10+Putrajaya",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1i1GeiVWVj15JZREr4k5LKJ6-rNrm3tp7=w1000",
       "https://lh3.googleusercontent.com/d/1QluNnFqAnOLFLlHy4F3zq6oFoJZLA-qt=w1000",
@@ -1484,32 +1070,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Kawasan prime Presint 10 Putrajaya",
-      "Jalan cul-de-sac yang tenang",
-      "400m ke kediaman Perdana Menteri",
-      "Freehold Open",
-      "Akses Lebuh Sentosa ke IOI City Mall"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Bungalow land di lokasi utama Presint 10, Putrajaya — jalan cul-de-sac yang tenang, hanya 400 meter dari kediaman rasmi Perdana Menteri. Keluasan 12,820 sqft (1,191 sqm), Freehold Open, jiran menteri dan VVIP. Akses mudah ke Lebuh Sentosa menuju IOI City Mall.",
-    "amenities": [
-      "Jalan cul-de-sac",
-      "Kawasan prime",
-      "Jiran menteri & VVIP",
-      "Premium Freehold Land"
-    ],
-    "nearby": [
-      "Kediaman Perdana Menteri (400m)",
-      "Lebuh Sentosa",
-      "IOI City Mall"
-    ],
+    "description": "Tanah 12,820 sqft / 1,191 sqm di Presint 10, Putrajaya dijual pada RM1,680,000. Hakmilik: Freehold. Sekatan: Open. Anggaran RM131 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Presint+10+Putrajaya",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1SDRrP9Hnxm93vqJ2l97mNiyRs6iiVTRz=w1000",
       "https://lh3.googleusercontent.com/d/14DkWD-ANHhuQdrMGm4hJkrAM5ChDt6_n=w1000",
@@ -1535,7 +1106,7 @@ window.LISTINGS = [
     "price_label": "RM220,000",
     "price_old": null,
     "land_area": "5,016 sqft / 466 m² (62.4' x 80.2')",
-    "built_up": "5,016 sqft / 466 m² (62.4' x 80.2')",
+    "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Melayu Reserved",
     "kategori": "Bangunan",
@@ -1547,42 +1118,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Lot bungalow individu, tanah rata — sedia untuk bina",
-      "5,016 sqft (466 m²), 62.4' x 80.2' — bentuk kemas",
-      "Freehold Malay Reserved",
-      "Kawasan kejiranan persendirian, ada banglo bersebelahan",
-      "Dekat KLIA, Putrajaya, Cyberjaya, Bangi, Nilai & Dengkil",
-      "Berhampiran ERL Salak Tinggi & Litar F1 Sepang"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah lot individu untuk dijual di Jenderam Hulu, Dengkil, Selangor. Lot bungalow seluas 5,016 kaki persegi (466 meter persegi, lebih kurang 62.4' x 80.2'), tanah rata dan bersedia untuk dibina, terletak dalam kawasan kejiranan persendirian dengan banglo bersebelahan. Status Freehold Malay Reserved. Lokasi strategik — berhampiran Bandar Baru Nilai, Dengkil, KLIA, Bandar Baru Bangi, Putrajaya dan Cyberjaya, dengan akses mudah ke ERL Salak Tinggi dan Litar F1 Sepang. Harga permintaan RM220,000 (RM44 sekaki persegi).",
-    "amenities": [
-      "Salak Perdana Business Park",
-      "Masjid",
-      "SMK Bandar Baru Salak Tinggi",
-      "SK Taman Seroja",
-      "Tesco, AEON, Giant, MesaMall (Nilai)",
-      "KLIA & KLIA 2",
-      "ERL Salak Tinggi",
-      "Nilai Medical Center"
-    ],
-    "nearby": [
-      "Bandar Baru Nilai",
-      "Dengkil",
-      "KLIA",
-      "Bandar Baru Bangi",
-      "Putrajaya",
-      "Cyberjaya",
-      "Salak Tinggi",
-      "Litar F1 Sepang"
-    ],
+    "description": "Tanah 5,016 sqft / 466 m² (62.4' x 80.2') di Jenderam Hulu, Dengkil, Selangor dijual pada RM220,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM44 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Jenderam%20Hulu%2C%20Dengkil%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1d_0ItMwJxieL0iv-0cKujMFp4ojWXku0=w1000",
       "https://lh3.googleusercontent.com/d/13imFAc4jd0KXajWS-iQJoHqn9heufoRz=w1000",
@@ -1605,7 +1151,7 @@ window.LISTINGS = [
     "price_label": "RM7,000,000",
     "price_old": null,
     "land_area": "22,473 sqft",
-    "built_up": "Tanah 22,473 sqft",
+    "built_up": "-",
     "tenure": "Leasehold",
     "sekatan": "Melayu Reserved",
     "kategori": "Bangunan",
@@ -1617,42 +1163,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Lot bangunan bersama banglo 4 tingkat — lokasi prime Jalan Duta, Bukit Tunku",
-      "Tanah luas 22,473 sqft, siap dengan CCC",
-      "4 apartment — setiap satu 4 bilik tidur + 4 bilik air (jumlah 16 + 16)",
-      "Leasehold Bumi, tempoh hingga 2067",
-      "Sedang disewa (tenanted) — pulangan segera",
-      "1.4 km dari Parlimen Malaysia, 5.2 km dari KLCC"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Lot bangunan bersama banglo 4 tingkat untuk dijual di Jalan Duta, Bukit Tunku, Kuala Lumpur. Tanah seluas 22,473 kaki persegi dengan bangunan 4 tingkat yang telah siap dengan CCC (Certificate of Completion and Compliance). Terdiri daripada 4 unit apartment, setiap satu dengan 4 bilik tidur dan 4 bilik air — jumlah keseluruhan 16 bilik tidur dan 16 bilik air. Status Leasehold Bumi dengan tempoh pajakan sehingga 2067. Kini disewakan (tenanted) kepada pekerja pemaju berdekatan, menjadikannya pelaburan dengan potensi pulangan segera. Lokasi strategik berhampiran Parlimen Malaysia, Muzium Negara, Bank Negara Malaysia dan KLCC, dengan akses mudah melalui NKVE, Jalan Duta dan Jalan Tuanku Abdul Halim. Sesuai untuk lodging mingguan, alumni house, eco resort, rumah kebajikan, mahupun kuarters pekerja. Harga permintaan RM7,000,000 (boleh runding).",
-    "amenities": [
-      "1.4 km Malaysian House of Parliament",
-      "1.6 km Kuala Lumpur Butterfly Park",
-      "2.8 km Muzium Negara",
-      "3.7 km Bank Negara Malaysia",
-      "4.4 km Petaling Street Market",
-      "5.2 km KLCC Park",
-      "Akses NKVE Highway",
-      "Jalan Tuanku Abdul Halim"
-    ],
-    "nearby": [
-      "Bukit Tunku",
-      "Jalan Duta",
-      "Parlimen Malaysia",
-      "Muzium Negara",
-      "Bank Negara Malaysia",
-      "KLCC",
-      "Petaling Street",
-      "Mont Kiara"
-    ],
+    "description": "Tanah 22,473 sqft di Jalan Duta, Bukit Tunku, Kuala Lumpur dijual pada RM7,000,000. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM311 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Jalan%20Duta%2C%20Bukit%20Tunku%2C%20Kuala%20Lumpur",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Nj9S1Exka46N6Sh8G831uA1CiyN3Rw_a=w1000",
       "https://lh3.googleusercontent.com/d/1So3hQRPDvICeHO6bbGww5zk0piH7QoTK=w1000",
@@ -1692,7 +1213,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 11,748 sqft di Tanah Perdana Hills, Presint 11, Putrajaya dijual pada RM1,644,720. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM140 sekaki persegi.",
+    "description": "Tanah 11,748 sqft di Tanah Perdana Hills, Presint 11, Putrajaya dijual pada RM1,644,720. Hakmilik: Freehold. Anggaran RM140 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Tanah%20Perdana%20Hills%2C%20Presint%2011%2C%20Putrajaya",
@@ -1700,7 +1221,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-20",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/195OW-ewrG68M10x5X7-xUdq0fkVWjw0T=w1000",
       "https://lh3.googleusercontent.com/d/1GEutqBp8J3vwUtl3xKgrBaCSorlH8znH=w1000",
@@ -1734,7 +1255,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 10,146 sqft di Tanah Perdana Hills, Presint 11, Putrajaya dijual pada RM1,299,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM128 sekaki persegi.",
+    "description": "Tanah 10,146 sqft di Tanah Perdana Hills, Presint 11, Putrajaya dijual pada RM1,299,000. Hakmilik: Freehold. Anggaran RM128 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Tanah%20Perdana%20Hills%2C%20Presint%2011%2C%20Putrajaya",
@@ -1742,7 +1263,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-20",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ngLED0_8MoNEszRY_Z6DTlVYhKV6Mc5E=w1000",
       "https://lh3.googleusercontent.com/d/1S2HNEqKtyQZs-tLgsFlrsp9a_U4_84Um=w1000",
@@ -1776,29 +1297,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "9.5 ekar (4.5 + 5 ekar)",
-      "Freehold - Malay Reserved",
-      "RM300k/ekar",
-      "Pokok durian, manggis, cempedak",
-      "400m ke Sekolah Lubuk Kelubi"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah 9.5 ekar (4.5 + 5 ekar) di Ulu Perdik, Batu 19, Hulu Langat. Freehold, Malay Reserved. Hanya 400m dari Sekolah Lubuk Kelubi. Terdapat pokok durian, manggis dan cempedak sedia ada di atas tanah. Jalan Pusara. Harga RM300k seekar.",
-    "amenities": [
-      "Kebun sedia ada (durian, manggis, cempedak)"
-    ],
-    "nearby": [
-      "Sekolah Lubuk Kelubi (400m)",
-      "Jalan Pusara",
-      "Batu 19, Hulu Langat"
-    ],
+    "description": "Tanah 4.5 ekar di Ulu Perdik, Batu 19, Hulu Langat, Selangor dijual pada RM1,350,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM7 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Ulu+Perdik+Batu+19+Hulu+Langat+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1pjTDpOHHQdr9yJaVVLcoMLHtPsvW0NCq=w1000",
       "https://lh3.googleusercontent.com/d/1omqUMEHsBozcjaW0Co9yIRoqLY0RGdua=w1000",
@@ -1839,7 +1348,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-12",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1pjTDpOHHQdr9yJaVVLcoMLHtPsvW0NCq=w1000",
       "https://lh3.googleusercontent.com/d/1omqUMEHsBozcjaW0Co9yIRoqLY0RGdua=w1000",
@@ -1870,28 +1379,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "2.3 ekar tanah pembangunan",
-      "Tanah rata, dah convert pembangunan",
-      "2km ke Gamuda Land",
-      "Malay Reserved - Leasehold (2095)",
-      "RM80/sqft"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pembangunan 2.3 ekar di Kampung Sungai Serai, Rawang — hanya 2km ke Gamuda Land. Tanah rata dan telah convert kepada pembangunan. Malay Reserved, Leasehold sehingga 2095. Harga RM80 per sqft.",
-    "amenities": [
-      "Tanah rata sedia untuk pembangunan"
-    ],
-    "nearby": [
-      "Gamuda Land (2km)",
-      "Rawang, Selangor"
-    ],
+    "description": "Tanah 2.3 ekar di Kampung Sungai Serai, Rawang, Selangor (2km ke Gamuda Land) dijual pada RM5,000,000. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM50 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Kampung+Sungai+Serai,+Rawang",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1x-ywx-bepx1t3ANnJqvnmLjm7PiT5nWn=w1000",
       "https://lh3.googleusercontent.com/d/1hSYeXmr9spD4sWCRI-VjqpWSmBLdSiub=w1000",
@@ -1922,27 +1420,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "3 ekar Freehold",
-      "Zoning perumahan",
-      "Harga turun RM3.4M -> RM3M",
-      "Malay Reserved"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian 3 ekar di Jalan Jambu, Meru, Kapar, Klang. Freehold, Malay Reserved dengan zoning perumahan. Harga telah diturunkan daripada RM3.4 juta kepada RM3 juta — peluang pelaburan menarik.",
-    "amenities": [
-      "Zoning perumahan"
-    ],
-    "nearby": [
-      "Jalan Jambu, Meru",
-      "Kapar, Klang, Selangor"
-    ],
+    "description": "Tanah 3 ekar di Jalan Jambu, Meru, Kapar, Klang, Selangor dijual pada RM3,000,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM23 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Meru,+Kapar,+Klang",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1uUQTGOjoOG3-nfzhEcJM3gJwEtM0Qky8=w1000",
       "https://lh3.googleusercontent.com/d/1EKvP3jVJXEL_lXQHoPGHYsDzolApt69K=w1000",
@@ -1974,30 +1462,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "200 pokok durian (Black Thorn, Musang King, D24)",
-      "Freehold Open (non-bumi)",
-      "Anak sungai di tepi tanah",
-      "Sesuai chalet / leisure / weekend house",
-      "50% pokok tua 20-50 tahun",
-      "7.7km ke Pekan Bentong"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian 6 ekar di Bentong, Pahang dengan 200 pokok durian premium (Black Thorn, Musang King, D24, 114 & Kampung) — 50% muda 2 tahun, 50% tua 20-50 tahun. Freehold, open lot, tanah hampir rata dengan anak sungai di tepi tanah. Sesuai untuk chalet, leisure atau weekend house. 7.7km ke Pekan Bentong, 4.6km ke Lemang Tok'ki.",
-    "amenities": [
-      "Pekan Bentong (7.7 km)",
-      "Lemang Tok'ki (4.6 km)"
-    ],
-    "nearby": [
-      "Pekan Bentong — 7.7 km",
-      "Lemang Tok'ki — 4.6 km"
-    ],
+    "description": "Tanah 6 ekar di Bentong, Pahang dijual pada RM2,600,000. Hakmilik: Freehold. Sekatan: Open. Anggaran RM10 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=3.585303,101.885173",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Zt5JH7XeHflSe99xiTXurwrnxqfHkoYO=w1000",
       "https://lh3.googleusercontent.com/d/1f_3dh23Nsb_5SHLvMYJt3iqsllNBK3sS=w1000",
@@ -2030,31 +1505,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "🌆 Tanah komersial ~2.01 ekar",
-      "Sesuai Wedding Space / Foodcourt / Automotif",
-      "Leasehold 99 tahun (hingga 2112)",
-      "Strategik berhampiran Bandar Baru Bangi"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah komersial strategik seluas 87,774 sqft (~2.01 ekar) di Sungai Ramal, Kajang — sangat sesuai untuk Wedding Space, Foodcourt, atau Automotive Sales & Service Centre. Status Leasehold 99 tahun (hingga 15 Julai 2112), Malay Reserve, kategori Bangunan. Berhampiran Bandar Baru Bangi dengan akses mudah ke lebuh raya utama. Peluang pembangunan komersial bernilai tinggi. Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
-    "amenities": [
-      "Bandar Baru Bangi — berhampiran",
-      "Kawasan perniagaan sekitar",
-      "Akses lebuh raya utama"
-    ],
-    "nearby": [
-      "Bandar Baru Bangi",
-      "Kajang",
-      "Bangi Gateway",
-      "UKM"
-    ],
+    "description": "Tanah 87,774.18 sqft (~2.01 ekar) di Sungai Ramal, Selangor dijual pada RM12,000,000. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM137 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Sungai+Ramal,+Kajang,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1wcArmCRIFFFzqYYunpHKial4o3EHFZKr=w1000",
       "https://lh3.googleusercontent.com/d/1-PfParuujOUfd2Xj3yWNI_eRnsT15CqP=w1000",
@@ -2077,7 +1538,7 @@ window.LISTINGS = [
     "location": "Sungai Ramal, Selangor",
     "state": "Selangor",
     "price": 600000,
-    "price_label": "RM600,000 (NETT)",
+    "price_label": "RM600,000",
     "price_old": null,
     "land_area": "7,071 sqft",
     "built_up": "-",
@@ -2092,30 +1553,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "🏡 Bungalow Lot",
-      "Freehold | Malay Reserved",
-      "Individual title",
-      "Harga NETT RM600K"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Bungalow lot seluas 7,071 sqft di Sungai Ramal, Kajang — Freehold, Malay Reserved, status Bangunan dengan individual title. Berhampiran shoplots, stesen minyak dan sekolah; akses mudah ke SKVE, PLUS, Grand Saga dan SILK Highway. Harga NETT RM600,000. Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
-    "amenities": [
-      "Shoplots — berhampiran",
-      "Stesen minyak — berhampiran",
-      "Sekolah — berhampiran"
-    ],
-    "nearby": [
-      "Kajang",
-      "Bandar Baru Bangi",
-      "Bangi Gateway"
-    ],
+    "description": "Tanah 7,071 sqft di Sungai Ramal, Selangor dijual pada RM600,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM85 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Sungai+Ramal,+Kajang,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1p9DGWqTD8_d74C2y3eNHQExfVT5QHNNo=w1000",
       "https://lh3.googleusercontent.com/d/1XgsU7qlSshthobhPsdAf1Of1n2bnq22K=w1000",
@@ -2149,32 +1597,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Freehold | Malay Reserved — individual title",
-      "3.97 ekar (172,933 sqft) tanah pertanian",
-      "Dikelilingi sungai air jernih",
-      "Akses jalan sedia ada",
-      "Sesuai untuk retreat house / orchard",
-      "Kawasan peranginan Janda Baik yang sejuk"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian Freehold seluas 3.97 ekar (172,933 sqft) di Kampung Chemperoh, Janda Baik, Pahang — individual title, sekatan Malay Reserved, status Pertanian. Dikelilingi sungai air jernih dengan akses jalan sedia ada; amat sesuai untuk retreat house, orchard atau ladang rekreasi. Berada di kawasan tanah tinggi Janda Baik yang tenang, lebih kurang 45 minit dari Kuala Lumpur. Harga RM2,200,000 (lebih kurang RM13 sekaki persegi). Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
-    "amenities": [
-      "Sungai air jernih — mengelilingi tanah",
-      "Akses jalan — sedia ada",
-      "Suasana peranginan tanah tinggi"
-    ],
-    "nearby": [
-      "Kampung Chemperoh, Janda Baik",
-      "Lebuhraya Karak (Genting Sempah)",
-      "Kuala Lumpur — lebih kurang 45 minit"
-    ],
+    "description": "Tanah 3.97 ekar / 172,933 sqft di Janda Baik, Pahang dijual pada RM2,200,000. Hakmilik: Freehold. Sekatan: Malay Reserved. Anggaran RM13 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://maps.app.goo.gl/FoJXmRMuajhbBQG6A",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-03",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Q-0SD5YoQ799naUmRMM04Q9H2VyNDj-T=w1000",
       "https://lh3.googleusercontent.com/d/10GWbmcHi3or-ENf20ege0q8LdA01Xpj4=w1000",
@@ -2212,33 +1645,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Infra ready",
-      "Freehold — Malay Reserved",
-      "~7,287 sqft",
-      "Strategik — Dengkil / Putrajaya / BB Bangi"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Bungalow lot ~7,287 sqft di Sungai Merab, Selangor — infra ready dan tanah rata. Freehold (Melayu Reserved), sesuai untuk bina rumah banglo. Berdekatan Kondominium Pelangi, Projek Casa Mekar dan Maahad Tahfiz Uthmaniyah. Akses mudah ke Dengkil, Putrajaya dan Bandar Baru Bangi.",
-    "amenities": [
-      "Infra ready",
-      "Tanah rata",
-      "Jalan masuk sedia"
-    ],
-    "nearby": [
-      "Kondominium Pelangi",
-      "Projek Casa Mekar",
-      "Maahad Tahfiz Uthmaniyah",
-      "Dengkil",
-      "Putrajaya",
-      "Bandar Baru Bangi"
-    ],
+    "description": "Tanah ~7,287 sqft di Sungai Merab, Selangor dijual pada RM550,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM75 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Sungai+Merab,+Kajang,+Selangor",
-    "project": "bungalow-lot-sungai-merab",
+    "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-06",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xuGijTVYUgWxHcQInqWtWdtTbSHCzuI1=w1000",
       "https://lh3.googleusercontent.com/d/1krZ6euqkrA_CMJHSEVFNY76jf36YVfmr=w1000",
@@ -2273,37 +1690,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah campsite tepi sungai",
-      "1.6 ekar tanah pertanian Freehold",
-      "Geran Individu - Rezab Melayu",
-      "1 banglo setingkat + surau",
-      "2 asrama & 2 dewan makan",
-      "Air & elektrik lengkap",
-      "Sesuai pelaburan, pertanian & campsite"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Peluang menarik! Tanah pertanian 1.6 ekar yang telah beroperasi sebagai campsite tepi sungai di Hulu Langat, Selangor. Dilengkapi 1 buah banglo setingkat, surau, 2 asrama, 2 dewan makan dan 1 dewan aktiviti — sedia untuk disambung atau dijadikan projek pelancongan. Ada sungai cantik di tepi tanah, air dan elektrik lengkap, serta 3 batang pokok durian. Freehold, Geran Individu, Rezab Melayu. Sesuai untuk pelaburan, pertanian dan pembangunan campsite.",
-    "amenities": [
-      "Sungai di tepi tanah",
-      "Air & elektrik lengkap",
-      "Banglo setingkat",
-      "Surau",
-      "2 asrama",
-      "2 dewan makan",
-      "1 dewan aktiviti"
-    ],
-    "nearby": [
-      "Kejiranan berdekatan",
-      "Kawasan Hulu Langat",
-      "Air terjun & tarikan semula jadi Hulu Langat"
-    ],
+    "description": "Tanah 1.6 ekar (~69,696 sqft) di Hulu Langat, Selangor dijual pada RM800,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM11 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Hulu+Langat,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-07",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1y46p05Xkrc48LYR13TdCpxq59sRpOXTd=w1000",
       "https://lh3.googleusercontent.com/d/1SlxECX1AVS0iVtzkoEkbC99L4kcSvpAG=w1000",
@@ -2341,37 +1738,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "4 ekar tanah pertanian Freehold",
-      "Geran Individu - Rezab Melayu",
-      "Tepi jalan & pagar keliling",
-      "Ada sungai + 3 kolam ikan",
-      "Pelbagai pokok buah-buahan",
-      "Air terjun Sungai Gabai 500m",
-      "Sesuai campsite, resort & pencen"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian strategik 4 ekar di Sungai Gabai, Hulu Langat — tepi jalan, dikelilingi dinding batu dan pagar besi. Ada sungai dalam tanah dengan air dari air terjun Sungai Gabai (hanya 500 meter), 3 kolam ikan dan pelbagai pokok buah-buahan (durian, nangka, cempedak, manggis, duku, langsat, rambutan). Elektrik dan air lengkap, sumber air dari air bukit. Sesuai untuk bina rumah pencen, resort, campsite atau pelaburan. Freehold, Geran Individu, Rezab Melayu. Prefer cash buyer.",
-    "amenities": [
-      "Sungai dalam tanah",
-      "3 kolam ikan",
-      "Air terjun Sungai Gabai 500m",
-      "Dinding batu & pagar besi",
-      "Elektrik & air lengkap",
-      "Pokok buah-buahan pelbagai"
-    ],
-    "nearby": [
-      "Air terjun Sungai Gabai (500m)",
-      "Maahad Tahfiz Baitul Rahmah (1km)",
-      "SK Sungai Lui (5km)",
-      "Kawasan Hulu Langat"
-    ],
+    "description": "Tanah 4 ekar (~174,240 sqft) di Sungai Gabai, Hulu Langat, Selangor dijual pada RM2,900,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM17 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Sungai+Gabai,+Hulu+Langat,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-07",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/15Jjb5hAk05TKw9zt-4SKxfOMCX0IKcTk=w1000",
       "https://lh3.googleusercontent.com/d/19_x5-6Oet2fBLMK0oVYSFUo3OChVdBVe=w1000",
@@ -2409,31 +1786,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "🌆 Tanah komersial lokasi perdana Jalan Damai, KL",
-      "Bungalow sedia ada di atas tanah",
-      "Bersebelahan AKLEH — akses mudah",
-      "Potensi pembangunan 5–10 tingkat (tertakluk kelulusan)"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah komersial strategik seluas 17,000 sqft di Jalan Damai, Kuala Lumpur — lokasi perdana bersebelahan lebuh raya AKLEH dengan bungalow sedia ada di atas tanah. Status Leasehold, lot bukan Bumiputera (Open), kategori Limited Commercial. Sesuai untuk Showroom, Diplomatic Office, Mixed-Use Development, atau Embassy / Ambassador's Residence. Potensi pembangunan 5–10 tingkat (tertakluk kelulusan pihak berkuasa). Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
-    "amenities": [
-      "Bersebelahan AKLEH (akses terus)",
-      "Kawasan elit Jalan Damai, KL",
-      "Bungalow sedia ada di atas tanah"
-    ],
-    "nearby": [
-      "AKLEH",
-      "Jalan Damai",
-      "Kuala Lumpur City Centre (KLCC)",
-      "Kawasan kedutaan KL"
-    ],
+    "description": "Tanah 17,000 sqft di Jalan Damai, Kuala Lumpur dijual pada RM16,150,000. Hakmilik: Leasehold. Sekatan: Open. Anggaran RM950 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Jalan+Damai,+Kuala+Lumpur",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/18t9uCqg9F5jP8f5SFrw1KhUe9TzdJ6bb=w1000",
       "https://lh3.googleusercontent.com/d/1VXWAOet14QeWMl7lguT821chxVcB9i1G=w1000",
@@ -2467,36 +1830,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "2 lot tanah bungalow bersebelahan",
-      "Freehold — kategori Bangunan",
-      "Lot 1: 5,866 sqft (545 msq) · Lot 2: 5,780 sqft (537 msq)",
-      "RM230,000 seunit — beli 2 lot RM430,000 (nego)",
-      "Berdekatan Masjid, Klinik & Balai Polis Batu 14",
-      "Lokasi tenang di Hulu Langat"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Dua lot tanah bungalow bersebelahan di Semungkis (Batu 15 1/2), Hulu Langat, Selangor. Setiap lot berstatus Freehold dengan kategori Bangunan — Lot 1 seluas 5,866 sqft (545 msq) dan Lot 2 seluas 5,780 sqft (537 msq). Harga RM230,000 seunit, atau RM430,000 untuk kedua-dua lot (nego). Lokasi tenang berhampiran Masjid Batu 14, Klinik Kesihatan Batu 14, Balai Polis Batu 14 dan SMK Abdul Jalil. Sesuai untuk membina rumah impian atau pelaburan tanah.",
-    "amenities": [
-      "Tanah rata & sedia bina",
-      "Jalan akses ke lot",
-      "Kawasan kediaman tenang",
-      "2 lot boleh dibeli berasingan"
-    ],
-    "nearby": [
-      "Masjid Batu 14",
-      "Klinik Kesihatan Batu 14",
-      "Balai Polis Batu 14",
-      "SMK Abdul Jalil",
-      "Hulu Langat",
-      "Ampang"
-    ],
+    "description": "Tanah 5,866 sqft (545 msq) di Semungkis, Hulu Langat, Selangor dijual pada RM230,000. Hakmilik: Freehold. Anggaran RM39 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Semungkis,+Hulu+Langat,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1RkW1FuKbl3TRy_HUD-nCxsw0psH6063G=w1000",
       "https://lh3.googleusercontent.com/d/1jloVQBN9TlNuLck6rypJ6EfiCQMK32PT=w1000",
@@ -2533,7 +1877,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 5,780 sqft (537 msq) di Semungkis, Hulu Langat, Selangor dijual pada RM230,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM40 sekaki persegi.",
+    "description": "Tanah 5,780 sqft (537 msq) di Semungkis, Hulu Langat, Selangor dijual pada RM230,000. Hakmilik: Freehold. Anggaran RM40 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=Semungkis,+Hulu+Langat,+Selangor",
@@ -2541,7 +1885,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-12",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1RkW1FuKbl3TRy_HUD-nCxsw0psH6063G=w1000",
       "https://lh3.googleusercontent.com/d/1jloVQBN9TlNuLck6rypJ6EfiCQMK32PT=w1000",
@@ -2576,34 +1920,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "2.92 ekar (1.183 hektar) tanah pertanian",
-      "Corner lot tepi jalan utama — bersebelahan Highway Persiaran Lumut",
-      "100 meter dari jeti Telok Nipah",
-      "Freehold, Rezab Melayu",
-      "RM1,000,000 per 1.46 ekar (2.92 ekar penuh RM2,000,000, nego)",
-      "Ada tawaran sewa RM8,000 se ekar"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian 2.92 ekar (1.183 hektar) di Telok Nipah, Pulau Indah, Klang, Selangor. Kedudukan corner lot tepi jalan utama dan bersebelahan Highway Persiaran Lumut, hanya 100 meter dari jeti Telok Nipah. Status Freehold dengan sekatan Rezab Melayu, kegunaan Pertanian. Harga RM1,000,000 bagi setiap 1.46 ekar (RM2,000,000 untuk 2.92 ekar penuh) dan masih boleh dirunding. Turut ditawarkan untuk sewa pada RM8,000 se ekar. Lokasi strategik berhampiran kawasan perindustrian Pulau Indah dan Pelabuhan Klang.",
-    "amenities": [
-      "Corner lot tepi jalan utama",
-      "Akses terus ke Highway Persiaran Lumut",
-      "100m dari jeti Telok Nipah",
-      "Sesuai pertanian / pelaburan / pembangunan"
-    ],
-    "nearby": [
-      "Jeti Telok Nipah (100m)",
-      "Highway Persiaran Lumut",
-      "Pulau Indah",
-      "Pelabuhan Klang"
-    ],
+    "description": "Tanah 2.92 ekar (~127,195 sqft) di Telok Nipah, Pulau Indah, Klang, Selangor dijual pada RM2,000,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM16 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Telok+Nipah,+Pulau+Indah,+Klang,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Lmk-flBAnrGxQflOTUoTVKIgHIxNk3P3=w1000",
       "https://lh3.googleusercontent.com/d/1nmNjiAC29uGeYCmIHcUk9_SEAF19hwpw=w1000",
@@ -2641,36 +1968,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "4 ekar tanah Freehold, Rezab Melayu",
-      "Rizab jalan sudah diclear — akses mudah",
-      "9 km ke Alamanda Putrajaya",
-      "Kegunaan pertanian (boleh convert untuk pembangunan)",
-      "Jalan bertar & rumah berdekatan",
-      "Pemilik tidak berminat JV"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah 4 ekar berstatus Freehold (Rezab Melayu) di Sungai Merab, Kajang, Selangor. Rizab jalan telah diclear dengan akses mudah — sudah ada jalan bertar dan rumah berdekatan. Hanya 9 km ke Alamanda Putrajaya dan berdekatan dengan pembangunan sekitar. Kegunaan tanah adalah pertanian, dengan potensi untuk ditukar kepada pembangunan. Berdekatan Masjid, kedai, UNITEN, UKM dan Hospital Putrajaya, serta akses ke lebuh raya PLUS, MEX dan SILK. Harga RM4,000,000 (nego). Pemilik tidak berminat untuk JV.",
-    "amenities": [
-      "Rizab jalan clear + jalan bertar",
-      "Tanah rata",
-      "Rumah berdekatan",
-      "Potensi pembangunan"
-    ],
-    "nearby": [
-      "Alamanda Putrajaya (9km)",
-      "UNITEN",
-      "UKM",
-      "Hospital Putrajaya",
-      "Masjid & kedai",
-      "PLUS / MEX / SILK Highway"
-    ],
+    "description": "Tanah 4 ekar (~174,240 sqft) di Sungai Merab, Kajang, Selangor dijual pada RM4,000,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM23 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Sungai+Merab,+Kajang,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1V8st-gsPbpyrf4M4ONHNt5xjShCAvXfH=w1000",
       "https://lh3.googleusercontent.com/d/1rUH0OQVM3rwvwJTPilfHLsw5EcnXh4Mn=w1000",
@@ -2708,38 +2016,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "2 lot tanah bersebelahan — jumlah 7.999 ekar",
-      "Lot 1: 1.7958 hektar · Lot 2: 1.4417 hektar",
-      "Freehold · Tanah rezab Melayu · Pertanian",
-      "Syarat nyata tiada — jalan tar sampai ke tanah",
-      "Ada bekalan api dan air",
-      "Durian ±20 pokok, manggis & petai · 2 kolam ikan",
-      "Harga turun RM2.5j → RM2.3j (bank value RM3.5j, 2018)"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Dua lot tanah bersebelahan di Lubok Kelubi, Hulu Langat (Selangor) untuk dijual — jumlah keluasan 7.999 ekar (Lot 1: 1.7958 hektar, Lot 2: 1.4417 hektar). Tanah berstatus Freehold, kategori pertanian, rezab Melayu, dengan syarat nyata tiada. Jalan tar sampai ke tanah, tersedia bekalan api dan air. Tanaman sedia ada termasuk kira-kira 20 pokok durian, manggis dan petai; terdapat juga 2 bangunan usang dan 2 kolam ikan. Lokasi hanya kira-kira 6 minit dari Balai Polis Batu 18. Harga diturunkan daripada RM2,500,000 kepada RM2,300,000 (bank value RM3,500,000 pada 2018). Sesuai untuk pertanian, dusun buah-buahan atau simpanan jangka panjang.",
-    "amenities": [
-      "2 lot boleh dibeli bersama",
-      "Jalan tar ke tanah",
-      "Bekalan api & air",
-      "Tanaman durian/manggis/petai",
-      "2 kolam ikan",
-      "2 bangunan sedia ada (usang)"
-    ],
-    "nearby": [
-      "Balai Polis Batu 18",
-      "Hulu Langat",
-      "Kajang",
-      "Ampang",
-      "Akses jalan kampung"
-    ],
+    "description": "Tanah 7.999 ekar (1.7958 ha + 1.4417 ha / ~348,436 sqft) di Lubok Kelubi, Hulu Langat, Selangor dijual pada RM2,300,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM7 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Lubok%20Kelubi%20Hulu%20Langat%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1UzKhcEx6Phsa-nKdhmdspVdmvJ_HhphA=w1000",
       "https://lh3.googleusercontent.com/d/1pGvyEHZQAkoWxwk24ZJbaysDYW1xJn1Y=w1000",
@@ -2777,36 +2064,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "1 ekar tanah pertanian, tepi jalan bertar sampai ke tanah",
-      "Sudah ada bekalan air dan elektrik",
-      "Rezab Melayu · Leasehold (pajakan Mei 2111)",
-      "Sesuai ternakan ayam, itik atau kambing + projek tanaman sayur",
-      "Ada reban itik, kandang kambing dan batas sayur sedia ada",
-      "Harga RM1,500,000 (boleh dirunding)"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian seluas 1 ekar di Pulau Meranti, Dengkil, Selangor. Tanah terletak di tepi jalan bertar yang sampai terus ke tanah, lengkap dengan bekalan air dan elektrik. Status Rezab Melayu dengan pajakan Leasehold sehingga Mei 2111, kegunaan pertanian dan syarat nyata tanaman kekal. Sesuai untuk projek ternakan ayam, itik atau kambing — tinja ternakan pula boleh dijadikan baja untuk tanaman sayuran. Atas tanah sudah ada reban itik, kandang kambing dan batas sayur. Berdekatan kolam pancing, surau, kedai makan dan pusat servis. Harga RM1,500,000 dan masih boleh dirunding.",
-    "amenities": [
-      "Jalan bertar sampai ke tanah",
-      "Bekalan air & elektrik",
-      "Reban & kandang sedia ada",
-      "Tanah rata untuk tanaman"
-    ],
-    "nearby": [
-      "Kolam pancing",
-      "Surau",
-      "Kedai makan",
-      "Pusat servis",
-      "Dengkil",
-      "Putrajaya"
-    ],
+    "description": "Tanah 1 ekar (~43,560 sqft) di Pulau Meranti, Dengkil, Selangor dijual pada RM1,500,000. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM34 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Pulau+Meranti,+Dengkil,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-V-xAVvt1_e6ZrhPN1NufsJ5jEpPojFI=w1000",
       "https://lh3.googleusercontent.com/d/1l4vMuT5cvSzl0YgFplUDmpbBUsTxNNZI=w1000",
@@ -2844,35 +2112,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "9.8 ekar tanah tepi Lebuhraya PLUS",
-      "Bentuk tanah segi empat — mudah dirancang",
-      "Tanah Simpanan Melayu · Freehold",
-      "Aliran trafik tinggi, berganda pada musim perayaan",
-      "Potensi RnR, stesen minyak + EV charging, retail & F&B",
-      "Harga turun RM7,900,000 → RM7,500,000"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah seluas 9.8 ekar di Kg Sg Buah, Dengkil, Selangor — terletak di tepi Lebuhraya PLUS dengan bentuk tanah segi empat yang memudahkan perancangan pembangunan. Terdapat laluan anak sungai di atas tanah dan syarat nyata: nil. Tanah Simpanan Melayu dengan status Freehold. Kelebihan utama lokasi ini ialah aliran trafik yang tinggi dan berganda pada musim perayaan, menjadikannya sesuai untuk pembangunan RnR, stesen minyak bersama kemudahan EV charging, serta retail dan F&B. Harga asal RM7,900,000, kini ditawarkan pada RM7,500,000.",
-    "amenities": [
-      "Tepi Lebuhraya PLUS",
-      "Bentuk tanah segi empat",
-      "Ada laluan anak sungai",
-      "Trafik tinggi sepanjang masa"
-    ],
-    "nearby": [
-      "Lebuhraya PLUS",
-      "Dengkil",
-      "Bandar Baru Bangi",
-      "Putrajaya",
-      "KLIA"
-    ],
+    "description": "Tanah 9.8 ekar (~426,888 sqft) di Kg Sg Buah, Dengkil, Selangor dijual pada RM7,900,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM19 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Sungai+Buah,+Dengkil,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YO4BaUKizkwamNkmXVH2dnzRBLH2y92r=w1000",
       "https://lh3.googleusercontent.com/d/19IvBYQUZm7wAlWjID_wGY0-oPxfVWTJ3=w1000",
@@ -2905,35 +2155,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "1 ekar tanah tepi Jalan Beranang",
-      "Status Bangunan — syarat nyata bangunan perniagaan",
-      "Rezab Melayu · Freehold",
-      "Trafik sentiasa tinggi di tepi jalan utama",
-      "Sesuai untuk stesen minyak atau kedai serbaneka",
-      "Harga RM2,500,000"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah 1 ekar di tepi Jalan Beranang, Selangor, dengan status Bangunan dan syarat nyata bangunan perniagaan. Tanah berstatus Rezab Melayu dan Freehold, cukai tahunan RM2,844, sekatan kepentingan: nil. Kedudukan strategik di tepi jalan Beranang dengan trafik yang sentiasa tinggi menjadikannya sesuai untuk pembangunan stesen minyak atau kedai serbaneka. Harga RM2,500,000.",
-    "amenities": [
-      "Tepi jalan utama",
-      "Kedudukan strategik",
-      "Sesuai pembangunan komersial",
-      "Cukai tahunan RM2,844"
-    ],
-    "nearby": [
-      "Beranang",
-      "Semenyih",
-      "Kajang",
-      "Nilai",
-      "LEKAS"
-    ],
+    "description": "Tanah 1 ekar (~43,560 sqft) di Beranang, Selangor dijual pada RM2,500,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM57 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Beranang,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YD4Jh2z9TqFos9mFp05HluxyMKZ8xudE=w1000",
       "https://lh3.googleusercontent.com/d/13GoLdY3VMokrREPW5Y-L0lBcKBZz3J77=w1000",
@@ -2969,38 +2201,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah 0.2048 hektar (0.51 ekar) tepi sungai",
-      "Freehold · Rezab Melayu · kegunaan pertanian",
-      "Sudah ada rumah 3 bilik 1 bilik air",
-      "Surau kayu jati dan 2 stor di atas tanah",
-      "Pokok buluh, pisang dan tebu yang menghijau",
-      "Potensi campsite atau kediaman sendiri",
-      "Harga turun RM555,000 → RM499,000"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah seluas 0.2048 hektar (0.51 ekar) di tepi sungai, Mukim Hulu Langat, Selangor. Tanah berstatus Freehold Rezab Melayu dengan kegunaan pertanian. Atas tanah sudah ada sebuah rumah 3 bilik 1 bilik air, surau kayu jati dan 2 stor, serta pokok buluh, pisang dan tebu yang menghijau. Lokasi tenang dengan pemandangan sungai — sesuai dijadikan campsite atau kediaman sendiri. Harga asal RM555,000 kini ditawarkan pada RM499,000.",
-    "amenities": [
-      "Tanah tepi sungai",
-      "Rumah 3 bilik sedia ada",
-      "Surau kayu jati",
-      "2 stor",
-      "Pokok buluh, pisang & tebu",
-      "Freehold Rezab Melayu"
-    ],
-    "nearby": [
-      "Mukim Hulu Langat",
-      "Hulu Langat",
-      "Kajang",
-      "Ampang",
-      "Cheras"
-    ],
+    "description": "Tanah 0.2048 hektar (~22,044 sqft / 0.51 ekar) di Mukim Hulu Langat, Selangor dijual pada RM499,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM23 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Mukim+Hulu+Langat,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/10jx53GEPZBcK3AAUZAmmfUEkO8T3T7Ea=w1000",
       "https://lh3.googleusercontent.com/d/12a5dqsnoL9xTgRmyhN0Veg2mSFnpkKiB=w1000",
@@ -3038,37 +2249,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah ±2.4 ekar bersebelahan Padang Awam MPKJ",
-      "Bentuk tanah 4 segi memanjang — mudah dirancang",
-      "Freehold · Open",
-      "Berdekatan Masjid Jamek Kajang, SK & SJK, shoplot",
-      "Potensi event space & wedding hall",
-      "Sesuai untuk pembangunan lot banglo",
-      "Harga turun RM300 psf → RM200 psf (RM21,000,000)"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah seluas ±2.4 ekar di Kajang, Selangor, terletak bersebelahan Padang Awam MPKJ. Tanah berbentuk 4 segi memanjang ini berstatus Freehold dan Open, dengan kegunaan pertanian di bawah syarat nyata semasa. Persekitaran terdiri daripada bangunan kerajaan, Masjid Jamek Kajang, sekolah kebangsaan dan jenis kebangsaan, serta deretan shoplot yang sedia makmur. Potensi pembangunan termasuk event space, wedding hall atau pembangunan lot banglo. Harga diturunkan daripada RM300 psf kepada RM200 psf, iaitu RM21,000,000.",
-    "amenities": [
-      "Bersebelahan Padang Awam MPKJ",
-      "Bentuk tanah 4 segi memanjang",
-      "Freehold & Open",
-      "Akses jalan utama Kajang"
-    ],
-    "nearby": [
-      "Padang Awam MPKJ",
-      "Masjid Jamek Kajang",
-      "Bangunan kerajaan",
-      "SK & SJK",
-      "Shoplot",
-      "Bandar Kajang"
-    ],
+    "description": "Tanah ±2.4 ekar (~104,544 sqft) di Kajang, Selangor dijual pada RM21,000,000. Hakmilik: Freehold. Sekatan: Open. Anggaran RM201 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Padang+Awam+MPKJ,+Kajang,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1QZv60MMC0KP940fNWrxwP74_PRu1lTpP=w1000",
       "https://lh3.googleusercontent.com/d/1do-jGdGSJdwSU4r3O8t_rBFELN2k0Lc3=w1000",
@@ -3106,35 +2297,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah 4.62 ekar (1.8717 hektar) bentuk 4 segi",
-      "Freehold · Rezab Melayu · pertanian",
-      "±800m dari jalan besar, ±3km ke pekan Kuala Kubu Baru",
-      "Persekitaran surau & rumah kampung yang tenang",
-      "Potensi dusun buah-buahan atau sekolah tahfiz",
-      "Harga RM699,000 nego (nilai pasaran RM800,000)"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah seluas 1.8717 hektar atau 4.62 ekar di Kuala Kubu Baru, Hulu Selangor. Tanah berbentuk 4 segi, berstatus Freehold Rezab Melayu dengan kegunaan pertanian. Lokasi kira-kira 800 meter dari jalan besar dan 3 kilometer ke pekan Kuala Kubu Baru, dengan persekitaran surau dan rumah-rumah kampung yang tenang. Sangat sesuai untuk membangunkan dusun buah-buahan atau sekolah tahfiz. Harga RM699,000 dan masih boleh dirunding, dengan nilai pasaran (MV) RM800,000.",
-    "amenities": [
-      "Bentuk tanah 4 segi",
-      "±800m dari jalan besar",
-      "Freehold Rezab Melayu",
-      "Persekitaran kampung tenang"
-    ],
-    "nearby": [
-      "Pekan Kuala Kubu Baru",
-      "Surau kampung",
-      "Hulu Selangor",
-      "Batang Kali",
-      "Rasa"
-    ],
+    "description": "Tanah 1.8717 hektar / 4.62 ekar (~201,247 sqft) di Kuala Kubu Baru, Hulu Selangor, Selangor dijual pada RM649,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM3 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Kuala+Kubu+Baru,+Hulu+Selangor,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/17LTJNkfozcecHSi_wmh6FNp1KKAYFbj1=w1000",
       "https://lh3.googleusercontent.com/d/1ljTzCR2R2SIRQwtg2dIwXF10fqu2cdUg=w1000",
@@ -3168,38 +2341,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah lot banglo ±8,890 sqft di Kg Selangor Dredging",
-      "Sudah ada rumah 6 bilik 2 bilik air yang berjaga",
-      "Leasehold sehingga Ogos 2094 · Bumi Lot",
-      "Masih ada lebihan tanah untuk riadah keluarga",
-      "15km ke Cyberjaya · 21km ke Putrajaya · 19km ke KLIA",
-      "Harga RM650,000 (boleh dirunding)"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah lot banglo seluas 883 m² (±8,890 sqft mengikut iklan) di Kampung Selangor Dredging, Dengkil, Selangor. Di atas tanah sudah ada sebuah rumah 6 bilik 2 bilik air yang masih dalam keadaan baik dan berjaga; di tepi dan belakang rumah masih ada lebihan tanah untuk aktiviti riadah bersama keluarga. Tanah berstatus Leasehold sehingga Ogos 2094, Bumi Lot, dengan syarat nyata bangunan. Lokasi strategik — 15km ke Cyberjaya, 21km ke Putrajaya dan 19km ke KLIA, dengan kemudahan seperti SK/SMK Dengkil, Masjid Pekan Dengkil, Klinik Kesihatan Dengkil dan UiTM Dengkil berdekatan. Owner berpindah ke luar negara. Harga RM650,000 dan boleh dirunding.",
-    "amenities": [
-      "Rumah 6 bilik sedia ada",
-      "Lebihan tanah untuk riadah",
-      "Leasehold Ogos 2094",
-      "Bumi Lot",
-      "Akses jalan kampung"
-    ],
-    "nearby": [
-      "SK/SMK Dengkil",
-      "Masjid Pekan Dengkil",
-      "Klinik Kesihatan Dengkil",
-      "UiTM Dengkil",
-      "Cyberjaya",
-      "Putrajaya",
-      "KLIA"
-    ],
+    "description": "Tanah 883 m² (~9,505 sqft / 8,890 sqft ikut iklan) di Kg Selangor Dredging, Dengkil, Selangor dijual pada RM650,000. Hakmilik: Leasehold. Sekatan: Bumi Lot. Anggaran RM68 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Kampung+Selangor+Dredging,+Dengkil,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1mO4_b3ERGTG2EvoBJvuxkVGXSi3fH3lh=w1000",
       "https://lh3.googleusercontent.com/d/1-_Lsl_8jtSmk-gBUWO4b0kpI6jBGZdRm=w1000",
@@ -3238,38 +2390,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah pertanian 0.6884 hektar (1.7 ekar)",
-      "Freehold · Tanah Simpanan Melayu · kegunaan pertanian",
-      "Elektrik dan air sudah tersedia",
-      "7 pokok durian, 30 nenas, 10 pisang, 3 rambutan & 4 manggis",
-      "Ada 1 unit rumah di atas tanah",
-      "9 km ke Bandar Baru Bangi · 15 km ke Putrajaya",
-      "Exit Southville (PLUS) hanya 2.8 km",
-      "Harga turun RM1.59 juta → RM1.3 juta"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian seluas 0.6884 hektar (1.7 ekar) di Kg Sungai Buah, Dengkil, Selangor. Tanah berstatus Freehold dan Tanah Simpanan Melayu dengan kategori penggunaan pertanian. Elektrik dan air sudah tersedia, dan di atas tanah sudah ada 1 unit rumah bersama 7 pokok durian, 30 pokok nenas, 10 pokok pisang, 3 pokok rambutan serta 4 pokok manggis. Lokasi strategik — hanya 2.8 km dari exit Southville (PLUS), 9 km ke Bandar Baru Bangi, 13 km ke Salak Tinggi, 15 km ke Putrajaya dan 18 km ke Cyberjaya. Harga asal RM1.59 juta kini ditawarkan pada RM1.3 juta.",
-    "amenities": [
-      "Elektrik & air sedia ada",
-      "1 unit rumah",
-      "Kebun durian & buah-buahan",
-      "Akses jalan tar",
-      "Tanah Simpanan Melayu"
-    ],
-    "nearby": [
-      "Bandar Baru Bangi",
-      "Salak Tinggi",
-      "Putrajaya",
-      "Cyberjaya",
-      "Dengkil"
-    ],
+    "description": "Tanah 0.6884 hektar (1.7 ekar / ~74,099 sqft) di Kg Sungai Buah, Dengkil, Selangor dijual pada RM1,300,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM18 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Kampung+Sungai+Buah,+Dengkil,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/16d6kr9-ozUJ-ameiYLDcqB01qBaVSyMr=w1000",
       "https://lh3.googleusercontent.com/d/1fIovg-SmVdv5B0e8qdcbDPp-U8us_eCW=w1000",
@@ -3307,44 +2438,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Private ranch 3.369 ekar (Freehold, international lot)",
-      "90 pokok durian Musang King — hasil 5,000–6,000 kg/musim",
-      "Cabin house & villa lengkap berpenghawa dingin",
-      "Sistem siraman & pembajaan automatik (IoT)",
-      "Elektrik 3 fasa · internet Starlink · CCTV",
-      "Pagar zink 8 kaki · anak sungai di sempadan tanah",
-      "Sumber air mineral semula jadi (6,000 liter/jam)",
-      "±1 jam 30 minit dari Kuala Lumpur"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Private ranch / dusun durian seluas 3.369 ekar di Raub, Pahang — kira-kira 1 jam 30 minit dari Kuala Lumpur. Tanah Freehold (international lot) dengan kategori pertanian dan jalan tar sampai ke tanah. Terdapat 90 pokok durian Musang King dengan hasil 5,000–6,000 kg setiap musim, di samping manggis, rambutan, langsat, pulasan dan rumah lebah (Italian bees & kelulut). Kemudahan atas tanah termasuk cabin house dan villa/office kecil yang berpenghawa dingin, CCTV yang boleh dipantau melalui telefon, ATV, sistem siraman dan pembajaan automatik, bekalan elektrik 3 fasa, internet Starlink, pagar zink 8 kaki, anak sungai di sempadan tanah serta sumber air mineral semula jadi (pam 6,000 liter/jam). Sesuai untuk pelaburan jangka panjang, private ranch atau rumah hujung minggu.",
-    "amenities": [
-      "90 pokok durian Musang King",
-      "Manggis, rambutan, langsat & pulasan",
-      "Rumah lebah (Italian bees & kelulut)",
-      "Cabin house berpenghawa dingin",
-      "Villa / office kecil",
-      "CCTV boleh monitor dari telefon",
-      "ATV CF Moto power steering",
-      "Sistem siraman & baja automatik (IoT)",
-      "Elektrik 3 fasa",
-      "Internet Starlink",
-      "Pagar zink 8 kaki",
-      "Sumber air mineral 6,000 L/jam"
-    ],
-    "nearby": [
-      "Raub",
-      "Bentong",
-      "Kuala Lipis",
-      "Jerantut"
-    ],
+    "description": "Tanah 3.369 ekar (~1.363 hektar / ~146,754 sqft) di Raub, Pahang dijual pada RM2,900,000. Hakmilik: Freehold. Sekatan: Open. Anggaran RM20 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Raub,+Pahang",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1HbPyWiFW-pDBECjDDNVLtmvFwoQjP3D9=w1000",
       "https://lh3.googleusercontent.com/d/1QVYCJoxjKELHgLJlErEtSVIjHP4l8Qjh=w1000",
@@ -3382,33 +2486,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah pertanian 2.9 ekar",
-      "Leasehold (April 2074)",
-      "Tanah Simpanan Melayu",
-      "Syarat tanaman kelapa sawit",
-      "Harga nego RM750,000"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian seluas 2.9 ekar di Olak Lempit, Selangor. Tanah berstatus Leasehold (April 2074), Tanah Simpanan Melayu, dengan syarat tanaman kelapa sawit. Lokasi kampung yang tenang dan mudah diakses melalui jalan bertar. Harga nego RM750,000. Nota: TNB telah mengambil sebahagian tanah (±0.31 hektar / 0.76 ekar).",
-    "amenities": [
-      "Tanah Simpanan Melayu",
-      "Syarat tanaman kelapa sawit",
-      "Akses jalan bertar",
-      "Lokasi kampung yang tenang"
-    ],
-    "nearby": [
-      "Olak Lempit",
-      "Banting",
-      "Kuala Langat",
-      "Jenjarom"
-    ],
+    "description": "Tanah 2.9 ekar (~1.173 hektar / ~126,324 sqft) di Olak Lempit, Selangor dijual pada RM750,000. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM6 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Olak+Lempit,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1f3Y94AtWVKqITwAX_m5cDR1UxMJULLpp=w1000",
       "https://lh3.googleusercontent.com/d/1n5BdNeBVkAH9Jj6dPka_46B2S8bcpWFu=w1000",
@@ -3444,37 +2532,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Dua lot banglo — boleh beli sekali atau asing",
-      "Lot ±8,213 sqft — RM490,000 (nego)",
-      "Lot ±7,309 sqft — RM435,000 (nego)",
-      "Individual title · tanah rata & ready build",
-      "Leasehold sehingga 2073 · Tanah Simpanan Melayu",
-      "Bersebelahan Putrajaya",
-      "Akses mudah ke SKVE & PLUS"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Dua lot banglo di Sungai Merab, Dengkil, Selangor — bersebelahan Putrajaya, kawasan tenang dan sedang membangun. Tanah rata dan ready build dengan individual title serta akses jalan yang tersedia. Lot pertama ±8,213 kaki persegi ditawarkan pada RM490,000 dan lot kedua ±7,309 kaki persegi pada RM435,000 — kedua-duanya boleh dirunding dan boleh dibeli sekali atau asing. Berstatus Leasehold sehingga 2073 dan Tanah Simpanan Melayu, dengan kategori Bangunan Kediaman (Mukim Dengkil). Berhampiran Sungai Merab, Dengkil, Bangi, Putrajaya dan Kajang, dengan akses mudah ke SKVE dan PLUS Highway.",
-    "amenities": [
-      "Individual title",
-      "Tanah rata & ready build",
-      "Akses jalan tersedia",
-      "Bersebelahan Putrajaya",
-      "Berhampiran SKVE & PLUS"
-    ],
-    "nearby": [
-      "Sungai Merab",
-      "Dengkil",
-      "Bangi",
-      "Putrajaya",
-      "Kajang"
-    ],
+    "description": "Tanah 8,213 sqft (Lot A) / 7,309 sqft (Lot B) di Sungai Merab, Dengkil, Selangor dijual pada RM490,000. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM60 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Sungai+Merab,+Dengkil,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1U_jHckKtyMTMC4Q1LC1JBFgmrYBgseDm=w1000",
       "https://lh3.googleusercontent.com/d/1sqc1ipSqXXYacddM2CjWOUFV1nY4VPAY=w1000",
@@ -3494,7 +2562,7 @@ window.LISTINGS = [
     "state": "Selangor",
     "price": 699000,
     "price_label": "RM699,000",
-    "price_old": 749000,
+    "price_old": null,
     "land_area": "140,263 sqft (3.22 ekar)",
     "built_up": "-",
     "tenure": "Freehold",
@@ -3508,37 +2576,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah pertanian 3.22 ekar (140,263 sqft)",
-      "Freehold · Tanah Simpanan Melayu · title individu",
-      "Ada sungai di atas tanah",
-      "Zoning kediaman · kategori pertanian",
-      "4 km ke Masjid Semenyih · 7 km ke Lotus's Semenyih",
-      "10 km ke LEKAS · 15 km ke Kajang · 28 km ke Putrajaya",
-      "Harga turun RM749,000 → RM699,000"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian seluas 3.22 ekar (140,263 kaki persegi) di Sungai Pening, Semenyih, Selangor. Tanah berstatus Freehold dan Tanah Simpanan Melayu dengan title individu, zoning kediaman dan kategori penggunaan pertanian. Terdapat sungai di atas tanah. Lokasi mudah diakses — 4 km ke Masjid Semenyih, 7 km ke Lotus's Semenyih, 10 km ke Lebuhraya LEKAS (Eco Highway), 15 km ke Kajang dan 28 km ke Putrajaya. Harga asal RM749,000 kini ditawarkan pada RM699,000 (masih boleh runding).",
-    "amenities": [
-      "Ada sungai di atas tanah",
-      "Title individu",
-      "Akses jalan ke tapak",
-      "Tanah Simpanan Melayu",
-      "Kategori pertanian"
-    ],
-    "nearby": [
-      "Semenyih",
-      "Kajang",
-      "Putrajaya",
-      "Hulu Langat",
-      "Beranang"
-    ],
+    "description": "Tanah 140,263 sqft (3.22 ekar) di Sungai Pening, Semenyih, Selangor dijual pada RM699,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM5 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Sungai+Pening,+Semenyih,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11socJG0hEPKjCWITttMA8YpS9LH67g7w=w1000",
       "https://lh3.googleusercontent.com/d/1I4Nj509vxvpg-s_arT571PHqgqTj2NEJ=w1000",
@@ -3576,37 +2624,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah pembangunan kediaman 2.2 ekar",
-      "First layer menghadap jalan utama",
-      "Bersebelahan Lebuhraya MEX",
-      "Infrastruktur TNB dan Syabas sedia ada",
-      "Sesuai rumah · komersial · stesen minyak",
-      "Leasehold (tamat 2089) · Tanah Simpanan Melayu",
-      "Dekat Putrajaya, Cyberjaya dan Dengkil"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pembangunan kediaman (residential land) seluas 2.2 ekar di Dengkil, Selangor — berhampiran Cyberjaya dan Putrajaya. Tanah first layer menghadap jalan utama dan bersebelahan Lebuhraya MEX. Infrastruktur TNB dan Syabas sudah tersedia di tapak. Sesuai untuk pembangunan rumah, bangunan komersial mahupun stesen minyak. Berstatus Leasehold sehingga 2089 dan Tanah Simpanan Melayu. Akses mudah ke Putrajaya, Cyberjaya, Dengkil dan Sepang melalui rangkaian jalan dan lebuhraya utama. Harga RM3,500,000 (boleh runding).",
-    "amenities": [
-      "First layer ke jalan utama",
-      "Infra TNB dan Syabas sedia ada",
-      "Bersebelahan Lebuhraya MEX",
-      "Sesuai pembangunan kediaman dan komersial",
-      "Tanah Simpanan Melayu"
-    ],
-    "nearby": [
-      "Putrajaya",
-      "Cyberjaya",
-      "Dengkil",
-      "Sepang",
-      "Kajang"
-    ],
+    "description": "Tanah 2.2 ekar (~95,832 sqft) di Dengkil, Selangor dijual pada RM3,500,000. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM37 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Dengkil,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1k6ThnclXTDVHwoSrnK-_sxrqtd3swpWk=w1000",
       "https://lh3.googleusercontent.com/d/1mTomaoMZcalo9fxzh9Ebk23V7uJXRy0I=w1000",
@@ -3643,38 +2671,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Lot tanah bangunan ±6,124 sqft (569 m²)",
-      "Ready infra — elektrik dan air sedia ada",
-      "Sebelah Masjid Kariah Kg Paya (boleh jalan kaki)",
-      "Kawasan kejiranan sudah hidup — ada jiran depan dan tepi",
-      "Sesuai untuk rumah pencen atau rumah impian",
-      "Leasehold (tamat 2100) · Bumi Lot · single ownership",
-      "5–10 minit ke Lukut dan Bandar Port Dickson"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Lot tanah bangunan seluas 569 m² (±6,124 kaki persegi) di Kg Paya, Port Dickson, Negeri Sembilan. Lot ini bersebelahan Masjid Kariah Kg Paya (boleh berjalan kaki) dan berada dalam kawasan kejiranan yang sudah hidup dengan jiran di depan dan di tepi. Infrastruktur ready — elektrik dan air sedia ada. Berstatus Leasehold (tamat 2100), Bumi Lot dan single ownership. Sesuai untuk membina rumah pencen atau rumah impian. Hanya 5–10 minit ke Lukut dan Bandar Port Dickson serta berhampiran tarikan PD Waterfront, Pantai Saujana, Pantai Batu 4 dan Pantai Teluk Kemang, di samping kemudahan seperti Lotus's Lukut, Econsave, sekolah, bank dan hospital. Harga RM190,000 — penjual mengutamakan pembeli tunai.",
-    "amenities": [
-      "Elektrik dan air sedia ada",
-      "Sebelah masjid kariah",
-      "Kawasan kejiranan hidup",
-      "Single ownership",
-      "Bumi Lot",
-      "Akses jalan bertar"
-    ],
-    "nearby": [
-      "Lukut",
-      "Port Dickson",
-      "Teluk Kemang",
-      "Si Rusa",
-      "Pasir Panjang"
-    ],
+    "description": "Tanah 569 m2 / +/-6,124 sqft di Kg Paya, Port Dickson, Negeri Sembilan dijual pada RM190,000. Hakmilik: Leasehold. Sekatan: Bumi Lot. Anggaran RM31 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Kampung+Paya,+Port+Dickson,+Negeri+Sembilan",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1fnSnrT8QbKMwuirYC33Vp2sRdov6YJ80=w1000",
       "https://lh3.googleusercontent.com/d/1-fSpV4Qok0jrA7vljtBApne3oxXCBMSe=w1000",
@@ -3711,37 +2718,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah kebun / pertanian 2.275 ekar",
-      "Freehold · Rezab Melayu · Mukim Bentong",
-      "11 minit ke Genting Sempah",
-      "45 minit ke Genting Highland dan Kuala Lumpur",
-      "Sesuai komersial, agropelancongan atau pewarisan keluarga",
-      "Udara sejuk kawasan tanah tinggi",
-      "Harga nego RM2.7 juta"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah kebun (pertanian) seluas 2.275 ekar di Janda Baik, Bentong, Pahang. Tanah berstatus Freehold dengan Rezab Melayu (Tanah Simpanan Melayu), dalam Mukim Bentong. Lokasi tanah tinggi dengan udara sejuk dan pemandangan semula jadi — hanya 11 minit ke Genting Sempah, dan 45 minit ke Genting Highland serta Kuala Lumpur. Sesuai untuk projek komersial, agropelancongan, dusun atau pewarisan keluarga. Harga RM2,700,000 (boleh runding).",
-    "amenities": [
-      "Tanah kebun sedia ada",
-      "Rezab Melayu",
-      "Akses jalan ke tapak",
-      "Kawasan tanah tinggi dan sejuk",
-      "Sesuai agropelancongan"
-    ],
-    "nearby": [
-      "Janda Baik",
-      "Bentong",
-      "Genting Sempah",
-      "Bukit Tinggi",
-      "Kuala Lumpur"
-    ],
+    "description": "Tanah 2.275 ekar (~99,099 sqft) di Janda Baik, Bentong, Pahang dijual pada RM2,700,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM27 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Janda+Baik,+Bentong,+Pahang",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1U8iwR9NfSsvx7TKWmmeVmPCAaYeu1RGD=w1000",
       "https://lh3.googleusercontent.com/d/1hkC7HY7k7VB-GhNabUPS6ccOnBXJIySC=w1000",
@@ -3775,39 +2762,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah 6.62 ekar — 2 geran bersebelahan (3.84 + 2.78 ekar)",
-      "Bankable: RM22/sqft (RM6,344,078) — highly nego untuk pembeli serius",
-      "Status Bangunan · syarat nyata Bangunan Kediaman",
-      "Rezab jalan semua sudah ready",
-      "Tanah landai (slope ±13%), sedikit berbukit dan rata",
-      "Sesuai untuk pemaju pecah lot banglo",
-      "Negeri Selangor — Jenderam Hulu, Dengkil"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah status bangunan seluas 6.62 ekar di Jenderam Hulu, Dengkil, Selangor — dipecahkan kepada dua geran bersebelahan. Plot 1 berkeluasan 3.84 ekar (Leasehold Rezab Melayu sehingga 8/9/2087) dan Plot 2 berkeluasan 2.78 ekar (Freehold Malay Reserve). Kedua-duanya kategori penggunaan Bangunan dengan syarat nyata Bangunan Kediaman. Rezab jalan semua sudah ready dan bentuk muka bumi tanah landai (±13% slope), sedikit berbukit dan rata — sangat sesuai untuk pemaju yang mahu pecah lot banglo. Harga RM22/sqft iaitu RM6,344,078 dan masih highly nego untuk pembeli serius. Lokasi strategik berhampiran Dengkil, Putrajaya, Cyberjaya dan KLIA.",
-    "amenities": [
-      "2 geran bersebelahan",
-      "Rezab jalan ready",
-      "Tanah landai (slope ±13%)",
-      "Status penggunaan Bangunan",
-      "Syarat nyata Bangunan Kediaman",
-      "Sesuai pecah lot banglo / pembangunan"
-    ],
-    "nearby": [
-      "Jenderam Hulu",
-      "Dengkil",
-      "Bandar Baru Salak Tinggi",
-      "Putrajaya",
-      "Cyberjaya",
-      "KLIA"
-    ],
+    "description": "Tanah 3.84 ekar (167,270 sqft) di Jenderam Hulu, Dengkil, Selangor dijual pada RM3,679,949. Hakmilik: Freehold. Sekatan: Malay Reserve. Anggaran RM22 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Jenderam+Hulu,+Dengkil,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1inxIs7pyO1lLeAPhbtvGPw5CgQOZdsHG=w1000",
       "https://lh3.googleusercontent.com/d/1hvb1FrWEyJF1zBzK79Qgt7qXcz7uxJMS=w1000",
@@ -3855,7 +2820,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-12",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1inxIs7pyO1lLeAPhbtvGPw5CgQOZdsHG=w1000",
       "https://lh3.googleusercontent.com/d/1hvb1FrWEyJF1zBzK79Qgt7qXcz7uxJMS=w1000",
@@ -3893,38 +2858,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah lot banglo 6,146 sqft (±51ft x 120ft)",
-      "Leasehold Malay Reserve sehingga 2/3/2107 · Geran Individu",
-      "Bukan kawasan banjir — selamat & tenang",
-      "Infra lengkap, tanah landai — boleh terus bina rumah",
-      "Berhadapan Zanas Villa D'KLIA, Sepang",
-      "Harga RM310,000 (nego)"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah lot banglo seluas 6,146 sqft (anggaran 51 kaki x 120 kaki) di Kg Labu Lanjut, Sepang, Selangor — terletak berhadapan dengan Zanas Villa D'KLIA. Tanah berstatus Leasehold Malay Reserve sehingga 2/3/2107 dengan Geran Individu. Kawasan bukan kawasan banjir, infra lengkap dan tanah landai, sesuai untuk terus membina rumah idaman. Turut berdekatan jalan utama dan kemudahan sekitar Sepang serta KLIA. Harga RM310,000 dan masih boleh dirunding.",
-    "amenities": [
-      "6,146 sqft (±51ft x 120ft)",
-      "Geran Individu",
-      "Leasehold Malay Reserve sehingga 2107",
-      "Bukan kawasan banjir",
-      "Infra lengkap",
-      "Tanah landai — boleh terus bina rumah"
-    ],
-    "nearby": [
-      "Kg Labu Lanjut",
-      "Zanas Villa D'KLIA",
-      "Sepang",
-      "KLIA",
-      "Bandar Baru Salak Tinggi",
-      "Nilai"
-    ],
+    "description": "Tanah 6,146 sqft (±51ft x 120ft) / 571 m² di Kg Labu Lanjut, Sepang, Selangor dijual pada RM310,000. Hakmilik: Leasehold. Sekatan: Malay Reserve. Anggaran RM50 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Kampung+Labu+Lanjut,+Sepang,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/12tv8p2VrVIRsxkzwyUkuhNH8ftFc-LHs=w1000",
       "https://lh3.googleusercontent.com/d/1MsKcQKcp0HlvqutXCFDWN-e-9WgfyZ02=w1000",
@@ -3963,39 +2907,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah lot banglo besar 876 m² / ±9,429 sqft",
-      "Leasehold sehingga Ogos 2105 · Malay Reserve · Geran Individu",
-      "Kegunaan tanah: Bangunan",
-      "Anggaran depan ±64 kaki — mudah masuk jalan",
-      "Sesuai untuk banglo sendiri (own stay)",
-      "Berhampiran Putrajaya & Dengkil",
-      "RM615,000 nego (±RM65/sqft)"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah lot banglo seluas 876 m² (lebih kurang 9,429 kaki persegi) di Kg Limau Manis, Desa Pinggiran Putra, Dengkil, Selangor. Tanah berstatus Leasehold sehingga Ogos 2105, Malay Reserve dan Geran Individu, dengan kategori penggunaan Bangunan — sesuai untuk pemilik yang mahu membina banglo sendiri. Anggaran dimensi lot: hadapan ±64 kaki, belakang ±109 kaki, kiri ±97 kaki, kanan bersudut ±115 kaki dan tambahan bahagian belakang bersudut ±19 kaki. Kedudukan strategik berhampiran Putrajaya, Dengkil dan Cyberjaya. Harga RM615,000 (lebih kurang RM65/sqft) dan masih boleh dirunding.",
-    "amenities": [
-      "876 m² / ±9,429 sqft",
-      "Geran Individu",
-      "Leasehold sehingga Ogos 2105",
-      "Malay Reserve",
-      "Kegunaan tanah: Bangunan",
-      "Sesuai untuk banglo / own stay"
-    ],
-    "nearby": [
-      "Kg Limau Manis",
-      "Desa Pinggiran Putra",
-      "Dengkil",
-      "Putrajaya",
-      "Cyberjaya",
-      "Sepang"
-    ],
+    "description": "Tanah 876 m² / ~9,429 sqft di Kg Limau Manis, Desa Pinggiran Putra, Dengkil, Selangor dijual pada RM615,000. Hakmilik: Leasehold. Sekatan: Malay Reserve. Anggaran RM65 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Kampung+Limau+Manis,+Desa+Pinggiran+Putra,+Dengkil,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1oZIA-B8cRwAl_pyGYj83tZZg1_9ENIL-=w1000",
       "https://lh3.googleusercontent.com/d/1Ju0R4pYQ9oZA-Gb9KUDXtIw3cGTQ27h4=w1000",
@@ -4019,7 +2941,7 @@ window.LISTINGS = [
     "state": "Selangor",
     "price": 480000,
     "price_label": "RM480,000",
-    "price_old": 499000,
+    "price_old": null,
     "land_area": "0.506 ekar / 0.2048 hektar (~22,041 sqft)",
     "built_up": "-",
     "tenure": "Freehold",
@@ -4033,40 +2955,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah pertanian 0.506 ekar tepi jalan utama & seberang sungai",
-      "Freehold · Malay Reserve (Bumi Lot) · Geran Individu",
-      "Sudah ada rumah 3 bilik, 2 stor besar & rumah kayu jati",
-      "Air & elektrik tersedia (meter boleh pasang sendiri)",
-      "Pokok buah-buahan & kelapa — tanah subur, landai",
-      "Potensi dusun, glamping/retreat, tapak event",
-      "Harga turun RM499,000 → RM480,000"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian seluas 0.506 ekar (0.2048 hektar) terletak di tepi jalan utama, seberang Sungai Lui, Batu 24 Jalan Sungai Lui, Hulu Langat, Selangor. Tanah berstatus Freehold, Malay Reserve (Bumi Lot) dengan Geran Individu dan ada jalan masuk. Di atas tanah sudah ada sebuah rumah 3 bilik, 2 stor besar dan sebuah rumah struktur kayu jati yang masih kukuh; bekalan air dan elektrik juga tersedia (meter boleh dipasang sendiri). Terdapat sungai kecil di tepi kawasan serta pokok-pokok buah dan kelapa yang menghijau. Potensi luas — sesuai untuk dusun atau tanaman pertanian, agro-tourism seperti glamping, retreat dan homestay nature, tapak kenduri/event, atau private getaway. Harga asal RM499,000 kini ditawarkan pada RM480,000 dan masih boleh dirunding (pembeli tunai).",
-    "amenities": [
-      "0.506 ekar / 22,041 sqft",
-      "Freehold Malay Reserve (Bumi Lot)",
-      "Geran Individu",
-      "Rumah 3 bilik sedia ada",
-      "2 stor besar + rumah kayu jati",
-      "Air & elektrik tersedia",
-      "Tepi sungai & jalan masuk"
-    ],
-    "nearby": [
-      "Batu 24",
-      "Jalan Sungai Lui",
-      "Hulu Langat",
-      "Kajang",
-      "Semenyih",
-      "Bangi"
-    ],
+    "description": "Tanah 0.506 ekar / 0.2048 hektar (~22,041 sqft) di Batu 24, Jalan Sungai Lui, Hulu Langat, Selangor dijual pada RM480,000. Hakmilik: Freehold. Sekatan: Malay Reserve. Anggaran RM22 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Batu+24,+Jalan+Sungai+Lui,+Hulu+Langat,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1mn3F4KaOT1dMNOLmgk4qGhuqXyLkClr-=w1000",
       "https://lh3.googleusercontent.com/d/1dWBW_yXLA8Ix-OLK8YAFeooKJUKtbPFD=w1000",
@@ -4104,41 +3003,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah 1.5 ekar (65,340 sqft) di Janda Baik, Pahang",
-      "Leasehold baki 93 tahun · individual title · Malay Reserved",
-      "1 rumah kayu + 1 rumah batu sedia ada",
-      "10 bilik air kemudahan campsite",
-      "1 kolam ikan + 1 kolam renang",
-      "Dewan kahwin kapasiti 250 pax",
-      "Akses Lebuhraya Karak–KL & Karak–Kuantan, dekat Bukit Tinggi",
-      "Harga turun RM4.5 juta → RM3,950,000"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah seluas 1.5 ekar (65,340 sqft) berserta bangunan sedia ada di Janda Baik, Pahang. Tanah berstatus Leasehold dengan baki 93 tahun, individual title dan sekatan Malay Reserved. Di atas tanah terdapat 1 rumah kayu dan 1 rumah batu, 10 bilik air yang dibina untuk kemudahan campsite, sebuah kolam ikan, sebuah kolam renang serta sebuah dewan kahwin yang boleh memuatkan sehingga 250 pax. Lokasi strategik dengan akses mudah melalui Lebuhraya Karak–KL dan Lebuhraya Karak–Kuantan, berhampiran Bukit Tinggi — kawasan peranginan tanah tinggi yang sejuk dan menjadi tumpuan pengunjung. Sesuai untuk perniagaan campsite, rumah rehat, pusat percutian keluarga atau pelaburan. Harga asal RM4.5 juta kini ditawarkan pada RM3,950,000. Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
-    "amenities": [
-      "1 rumah kayu",
-      "1 rumah batu",
-      "10 bilik air (campsite)",
-      "Kolam ikan",
-      "Kolam renang",
-      "Dewan kahwin (250 pax)",
-      "Akses jalan tar",
-      "Kawasan peranginan tanah tinggi"
-    ],
-    "nearby": [
-      "Janda Baik",
-      "Bukit Tinggi",
-      "Genting Sempah",
-      "Bentong",
-      "Kuala Lumpur"
-    ],
+    "description": "Tanah 1.5 ekar (65,340 sqft) di Janda Baik, Pahang dijual pada RM3,950,000. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM60 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Janda+Baik,+Pahang",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1BPzSEKCcXNZZEq8FEER3Sy55BixmTLP5=w1000",
       "https://lh3.googleusercontent.com/d/1tR5UzoqberB2hpg7LU7C-vH8gq9jzuB6=w1000",
@@ -4176,39 +3051,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah pertanian 1.052 ekar di Dusun Tua, Hulu Langat",
-      "Freehold (Rezab Melayu) · geran kongsi boleh masuk nama",
-      "Pelan pecahan bahagian disediakan",
-      "Batu sempadan telah ditandakan",
-      "Tanah rata & landai · akses jalan tar sampai lokasi",
-      "Sungai mengalir dalam kawasan tanah",
-      "Pokok buah sedia ada: durian, cempedak, nangka, dokong, rambutan",
-      "Sesuai untuk kebun, dusun atau rumah rehat"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian seluas 1.052 ekar di Dusun Tua, Hulu Langat, Selangor. Tanah berstatus Freehold dengan sekatan Rezab Melayu dan geran kongsi (boleh masuk nama), serta pelan pecahan bahagian telah disediakan dan batu sempadan telah ditandakan. Bentuk muka bumi tanah rata dan landai, dengan akses jalan tar sehingga ke lokasi. Terdapat sungai yang mengalir di dalam kawasan tanah dan pokok buah-buahan sedia ada seperti durian, cempedak, nangka, dokong dan rambutan. Suasana tenang dan kehijauan semula jadi — sesuai untuk kebun, dusun atau rumah rehat. Harga RM350,000 (pembeli tunai sahaja). Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
-    "amenities": [
-      "Geran kongsi (boleh masuk nama)",
-      "Pelan pecahan bahagian disediakan",
-      "Batu sempadan ditanda",
-      "Tanah rata & landai",
-      "Akses jalan tar",
-      "Sungai dalam kawasan",
-      "Pokok buah-buahan sedia ada"
-    ],
-    "nearby": [
-      "Dusun Tua",
-      "Hulu Langat",
-      "Ampang",
-      "Kuala Lumpur"
-    ],
+    "description": "Tanah 1.052 ekar (45,825 sqft) di Dusun Tua, Hulu Langat, Selangor dijual pada RM350,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM8 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Dusun+Tua,+Hulu+Langat,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1tYcgJ56H19VrJxslz6Gwn9IIYCI1Pj3U=w1000",
       "https://lh3.googleusercontent.com/d/1iUVKSZZ3qC8-E7MLmBGHrtC1NEhTFCWj=w1000",
@@ -4246,39 +3099,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah kosong 4.79 ekar (208,652 sqft) — RM19/sqft",
-      "Freehold open title (tiada sekatan)",
-      "Zoning kediaman (residential)",
-      "Bentuk plot segi empat & tanah rata",
-      "Terletak tepi Lebuhraya PLUS",
-      "Status tanah: pertanian",
-      "Sesuai untuk pembangunan atau simpanan pelaburan",
-      "Harga RM4,000,000 (nego)"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah kosong seluas 4.79 ekar (208,652 sqft) di Kg Sungai Buah, Dengkil, Selangor — ditawarkan pada kadar RM19 sekaki persegi. Tanah berstatus Freehold open title (tiada sekatan), dengan zoning kediaman (residential) dan status penggunaan pertanian. Bentuk plot segi empat dan tanah rata memudahkan perancangan pembangunan, manakala lokasinya yang bersebelahan Lebuhraya PLUS memberikan akses yang sangat baik ke Putrajaya, Cyberjaya, Bandar Baru Bangi dan Lembah Klang. Sesuai untuk pembangunan kediaman, komersial kecil atau simpanan pelaburan jangka panjang. Harga RM4,000,000 dan masih boleh dirunding. Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
-    "amenities": [
-      "Freehold open title",
-      "Zoning kediaman",
-      "Plot segi empat & tanah rata",
-      "Tepi Lebuhraya PLUS",
-      "Akses jalan sedia ada",
-      "Status tanah pertanian"
-    ],
-    "nearby": [
-      "Kg Sungai Buah",
-      "Dengkil",
-      "Putrajaya",
-      "Cyberjaya",
-      "Bandar Baru Bangi"
-    ],
+    "description": "Tanah 4.79 ekar (208,652 sqft) di Kg Sungai Buah, Dengkil, Selangor dijual pada RM4,000,000. Hakmilik: Freehold. Sekatan: Open. Anggaran RM19 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Kampung+Sungai+Buah,+Dengkil,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1EtnPGLBcQaX2-YxZcO-xjyoKzb932eAt=w1000",
       "https://lh3.googleusercontent.com/d/1uM3QjZca5qJw0VWGwBvMuTc88WtKGwnR=w1000",
@@ -4311,36 +3142,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah 11,170 kp (0.26 ekar) di Sungai Kantan, Kajang",
-      "Harga RM850,000 (nett)",
-      "Pajakan 60 tahun — berakhir 28 Disember 2035 (baki ±9 tahun)",
-      "Status Rizab Melayu",
-      "Berhampiran Lotus Kajang dan jalan utama Kajang",
-      "Sesuai untuk kediaman atau simpanan pelaburan"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah seluas 11,170 kp (0.26 ekar) di Sungai Kantan, Kajang, Selangor, ditawarkan pada harga RM850,000. Tanah ini berstatus Rizab Melayu dengan pajakan 60 tahun yang berakhir pada 28 Disember 2035 (baki ±9 tahun). Lokasinya berhampiran Lotus Kajang serta jalan utama Kajang — akses mudah ke pusat bandar Kajang, Semenyih dan Lembah Klang. Sesuai untuk pembinaan kediaman atau simpanan pelaburan jangka panjang. Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
-    "amenities": [
-      "Tanah 11,170 kp (0.26 ekar)",
-      "Rizab Melayu",
-      "Pajakan sehingga 28 Dis 2035",
-      "Berhampiran jalan utama",
-      "Berhampiran Lotus Kajang"
-    ],
-    "nearby": [
-      "Lotus Kajang",
-      "Bandar Kajang",
-      "Sungai Chua",
-      "Semenyih",
-      "Jalan Reko"
-    ],
+    "description": "Tanah 11,170 sqft (0.26 ekar) di Sungai Kantan, Kajang, Selangor dijual pada RM850,000. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM76 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Sungai+Kantan,+Kajang,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19WVny5AvhU7K8ZSj2czAM-k6rIojKdVA=w1000",
       "https://lh3.googleusercontent.com/d/1oYAdGQEZg-svoYjkIekmq4E7sfr4ZVhd=w1000",
@@ -4357,7 +3169,7 @@ window.LISTINGS = [
     "location": "Putrajaya",
     "state": "Putrajaya",
     "price": 58021.92,
-    "price_label": "RM58,022 / bulan",
+    "price_label": "RM58,021 / bulan",
     "price_old": null,
     "land_area": "1.48 ekar (64,468.80 sqft)",
     "built_up": "-",
@@ -4365,43 +3177,24 @@ window.LISTINGS = [
     "sekatan": "Tidak dinyatakan",
     "kategori": "Komersial",
     "zoning": "Komersial",
-    "psf": 0.9,
+    "psf": 1,
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
     "jenis": "SEWA",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah kegunaan komersial untuk stesen minyak di Putrajaya",
-      "Keluasan 1.48 ekar (64,468.80 kp)",
-      "Sewa RM58,021.92/bulan",
-      "Kadar sewa RM0.90 sekaki persegi sebulan",
-      "Tempoh sewa 15 tahun",
-      "Lokasi komersial di Putrajaya"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah berstatus kegunaan komersial (land use: Commercial) untuk pembangunan stesen minyak di Putrajaya, ditawarkan untuk disewa pada kadar RM0.90 sekaki persegi sebulan. Keluasan 1.48 ekar (64,468.80 kp) pada sewa RM58,021.92 sebulan. Tempoh sewa selama 15 tahun. Lokasi strategik di Putrajaya dengan pendedahan trafik yang baik serta akses mudah ke kawasan pentadbiran kerajaan dan kediaman sekitar. Sesuai untuk pengendali stesen minyak atau pelaburan komersial. Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
-    "amenities": [
-      "Tanah komersial",
-      "Keluasan 1.48 ekar",
-      "Kadar RM0.90 psf/bulan",
-      "Tempoh sewa 15 tahun",
-      "Lokasi Putrajaya"
-    ],
-    "nearby": [
-      "Putrajaya",
-      "Presint 8",
-      "Cyberjaya",
-      "Sepang",
-      "Kajang"
-    ],
+    "description": "Tanah 1.48 ekar (64,468.80 sqft) di Putrajaya ditawarkan untuk disewa pada RM58,021 / bulan. Hakmilik: Tidak pasti. Anggaran RM1 sekaki persegi sebulan.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=2.9594680859464715,101.71647724163854",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11Xc5WWZCC0tMxXRtoOyg7XkapVnT_Nel=w1000",
       "https://lh3.googleusercontent.com/d/1KacL6k_9N0Mz2g1rWKBQi3rbRF9aOiGp=w1000",
@@ -4425,43 +3218,24 @@ window.LISTINGS = [
     "sekatan": "Tidak dinyatakan",
     "kategori": "Komersial",
     "zoning": "Komersial",
-    "psf": 0.9,
+    "psf": 1,
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
     "jenis": "SEWA",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah kegunaan komersial untuk stesen minyak di Putrajaya",
-      "Keluasan 2 ekar (87,120 kp)",
-      "Sewa RM78,408.00/bulan",
-      "Kadar sewa RM0.90 sekaki persegi sebulan",
-      "Tempoh sewa 15 tahun",
-      "Lokasi komersial di Putrajaya"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah berstatus kegunaan komersial (land use: Commercial) untuk pembangunan stesen minyak di Putrajaya, ditawarkan untuk disewa pada kadar RM0.90 sekaki persegi sebulan. Keluasan 2 ekar (87,120 kp) pada sewa RM78,408.00 sebulan. Tempoh sewa selama 15 tahun. Lokasi strategik di Putrajaya dengan pendedahan trafik yang baik serta akses mudah ke kawasan pentadbiran kerajaan dan kediaman sekitar. Sesuai untuk pengendali stesen minyak atau pelaburan komersial. Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
-    "amenities": [
-      "Tanah komersial",
-      "Keluasan 2 ekar",
-      "Kadar RM0.90 psf/bulan",
-      "Tempoh sewa 15 tahun",
-      "Lokasi Putrajaya"
-    ],
-    "nearby": [
-      "Putrajaya",
-      "Presint 8",
-      "Cyberjaya",
-      "Sepang",
-      "Kajang"
-    ],
+    "description": "Tanah 2 ekar (87,120 sqft) di Putrajaya ditawarkan untuk disewa pada RM78,408 / bulan. Hakmilik: Tidak pasti. Anggaran RM1 sekaki persegi sebulan.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=2.9580633219430705,101.71783017723371",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11Xc5WWZCC0tMxXRtoOyg7XkapVnT_Nel=w1000",
       "https://lh3.googleusercontent.com/d/1KacL6k_9N0Mz2g1rWKBQi3rbRF9aOiGp=w1000",
@@ -4492,37 +3266,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah pertanian 3.75 ekar (163,350 kp) tepi jalan",
-      "Freehold Rezab Melayu — geran 2 nama",
-      "Zoning kediaman (residential)",
-      "Kategori kegunaan pertanian, syarat nyata tiada",
-      "Tanah sedikit berbukit — sesuai untuk pembangunan kediaman",
-      "Harga RM1,050,000 (boleh dirunding)"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian seluas 3.75 ekar (163,350 kp) di Kg Sungai Kembung, Semenyih, Selangor, terletak di tepi jalan dengan tanah sedikit berbukit. Tanah berstatus Freehold Rezab Melayu (geran 2 nama), kategori kegunaan pertanian, syarat nyata tiada dan zoning kediaman — sesuai untuk pembangunan kediaman atau projek bercampur. Lokasi di Semenyih memberikan akses mudah ke Bangi, Kajang dan Lembah Klang melalui jaringan lebuh raya utama. Harga RM1,050,000 dan masih boleh dirunding. Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
-    "amenities": [
-      "Luas 3.75 ekar (163,350 kp)",
-      "Freehold Rezab Melayu",
-      "Geran 2 nama",
-      "Zoning kediaman",
-      "Syarat nyata tiada",
-      "Tanah tepi jalan"
-    ],
-    "nearby": [
-      "Semenyih",
-      "Bandar Baru Bangi",
-      "Kajang",
-      "Beranang",
-      "Lenggeng"
-    ],
+    "description": "Tanah 3.75 ekar (163,350 sqft) di Kg Sungai Kembung, Semenyih, Selangor dijual pada RM1,050,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM6 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Kampung+Sungai+Kembung,+Semenyih,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1qwDkfnFt46xsskaFAG5o9PN0j6SmSR69=w1000",
       "https://lh3.googleusercontent.com/d/1lJEVr3vrSIiMPzPk-vCGY6wlMaEefSbW=w1000",
@@ -4553,44 +3307,24 @@ window.LISTINGS = [
     "sekatan": "Tidak dinyatakan",
     "kategori": "Komersial",
     "zoning": "Komersial",
-    "psf": 0.6,
+    "psf": 1,
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "DIJUAL",
     "jenis": "SEWA",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah komersial untuk stesen minyak di Bandar 16 Sierra, Puchong South",
-      "Keluasan 1.39 ekar (60,548 kaki persegi)",
-      "Kadar sewa RM0.60 sekaki persegi sebulan",
-      "Tempoh pajakan 15 tahun",
-      "Hakmilik Leasehold, kegunaan tanah komersial",
-      "Lokasi strategik dengan akses mudah ke lebuh raya utama"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah berstatus komersial (land use: Commercial) untuk pembangunan stesen minyak di Bandar 16 Sierra, Puchong South, Selangor. Keluasan 1.39 ekar (60,548 kaki persegi) ditawarkan untuk disewa pada RM36,350 sebulan, bersamaan RM0.60 sekaki persegi sebulan, dengan tempoh pajakan 15 tahun. Hakmilik Leasehold, kategori kegunaan komersial. Lokasi berpotensi tinggi dengan pendedahan trafik daripada kawasan kediaman 16 Sierra dan akses mudah ke lebuh raya utama sekitar Puchong dan Putrajaya — sesuai untuk pengendali stesen minyak atau pelaburan komersial jangka panjang. Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
-    "amenities": [
-      "Tanah komersial",
-      "Keluasan 1.39 ekar (60,548 kp)",
-      "Sewa RM0.60 sekaki persegi sebulan",
-      "Tempoh pajakan 15 tahun",
-      "Hakmilik Leasehold"
-    ],
-    "nearby": [
-      "Bandar 16 Sierra",
-      "Puchong South",
-      "Puchong",
-      "Putrajaya",
-      "Cyberjaya",
-      "Seri Kembangan"
-    ],
+    "description": "Tanah 1.39 ekar (60,548 sqft) di 16 Sierra, Puchong, Selangor ditawarkan untuk disewa pada RM36,350 / bulan. Hakmilik: Leasehold. Anggaran RM1 sekaki persegi sebulan.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=2.97618,101.65589",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ZvWoJi-8gHFHH_mnsGNUxfeb5qXmzHxw=w1000",
       "https://lh3.googleusercontent.com/d/1UEeK6_Dtrg9bRFAp3fFEqCYIC6vKR4b1=w1000",
@@ -4623,38 +3357,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah pertanian 3.781 ekar (164,700 kp) / 1.5302 hektar",
-      "Freehold — Malay Reserve, individual title",
-      "Zoning kediaman (residential) — berpotensi untuk pembangunan",
-      "Jalan masuk melalui Petronas Sungai Merab (±1.2 km)",
-      "Harga RM2,900,000",
-      "Berhampiran Putrajaya, Bangi dan Kajang"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian seluas 3.781 ekar (164,700 kaki persegi) atau 1.5302 hektar di Sungai Merab, Kajang, Selangor. Berstatus Freehold dengan sekatan Malay Reserve dan individual title, serta zoning kediaman (residential) — berpotensi untuk pembangunan kediaman atau pelaburan tanah jangka panjang. Jalan masuk melalui Petronas Sungai Merab, kira-kira 1.2 km daripada lokasi tanah. Kedudukan strategik berhampiran Putrajaya, Bandar Baru Bangi dan Kajang dengan akses mudah ke lebuh raya utama. Harga RM2,900,000. Untuk maklumat lanjut, hubungi Mr Tanah (016-3119076).",
-    "amenities": [
-      "Tanah pertanian",
-      "3.781 ekar (164,700 kp) / 1.5302 hektar",
-      "Freehold — Malay Reserve",
-      "Individual title",
-      "Zoning kediaman",
-      "Jalan masuk tersedia"
-    ],
-    "nearby": [
-      "Sungai Merab",
-      "Kajang",
-      "Bandar Baru Bangi",
-      "Putrajaya",
-      "Dengkil",
-      "Semenyih"
-    ],
+    "description": "Tanah 3.781 ekar (164,700 sqft) / 1.5302 hektar di Sungai Merab, Kajang, Selangor dijual pada RM2,900,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM18 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Sungai+Merab,+Kajang,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19pk7oAWqIQAp_4l6K0c-_IN2DKMVLizz=w1000",
       "https://lh3.googleusercontent.com/d/15HbAZjbmEQSl14AnO_kzKkTbsIuTIbvh=w1000",
@@ -4690,37 +3403,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Leasehold Bumi Lot, geran individu — 3,100 sqft",
-      "Kategori bangunan — sesuai untuk lot banglo",
-      "Harga RM150,000 (nego) — sekitar RM48 sekaki persegi",
-      "Akses mudah ke Kajang, Putrajaya & Cyberjaya",
-      "Dekat KTM Bangi dan exit PLUS Bandar Bukit Mahkota",
-      "Kawasan Bangi Avenue, Batu 5 Jalan Bangi, Selangor"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah lot banglo seluas 3,100 sqft untuk dijual di Bangi Avenue, Batu 5 Jalan Bangi, Bangi, Selangor. Hakmilik Leasehold dengan sekatan Bumi Lot dan geran individu, kategori penggunaan bangunan. Sesuai untuk membina rumah banglo atau simpanan jangka panjang. Harga RM150,000 (masih boleh dirunding), sekitar RM48 sekaki persegi. Lokasi strategik dengan akses mudah ke Kajang, Putrajaya dan Cyberjaya, serta berdekatan KTM Bangi dan exit PLUS Bandar Bukit Mahkota. Tanah berbentuk lereng/cerun.",
-    "amenities": [
-      "3,100 sqft",
-      "Leasehold Bumi Lot",
-      "Geran individu",
-      "Kategori bangunan",
-      "Akses jalan bertaraf"
-    ],
-    "nearby": [
-      "KTM Bangi",
-      "Exit PLUS Bandar Bukit Mahkota",
-      "Kajang",
-      "Putrajaya",
-      "Cyberjaya",
-      "Bangi Avenue"
-    ],
+    "description": "Tanah 3,100 sqft di Bangi Avenue, Batu 5 Jalan Bangi, Bangi, Selangor dijual pada RM150,000. Hakmilik: Leasehold. Sekatan: Bumi Lot. Anggaran RM48 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Bangi+Avenue,+Bangi,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-14",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1PXEglqsBmpqPba9OX9Fs6CsmvB-cJHMT=w1000",
       "https://lh3.googleusercontent.com/d/1Gl3UlPK1cI3jT6KPs6cH35pD4qqIEy7T=w1000",
@@ -4757,32 +3450,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "2.7 ekar (117,612 kaki persegi) tanah rata",
-      "Freehold, non-bumi",
-      "Kategori & zon penggunaan: pertanian",
-      "Lebih kurang RM4.50 sekaki persegi",
-      "Dilalui parit / drainase",
-      "Lokasi Sungai Rambai, Melaka — harga boleh runding"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian seluas 2.7 ekar (117,612 kaki persegi) di Sungai Rambai, Melaka, dengan pegangan Freehold dan bukan bumi lot. Tanah berbentuk rata dan dilalui parit atau drainase, manakala kategori penggunaan tanah serta zonnya adalah pertanian. Harga permintaan RM530,000 (boleh runding), bersamaan lebih kurang RM4.50 sekaki persegi.",
-    "amenities": [
-      "Tanah rata (flat land)",
-      "Dilalui parit / drainase",
-      "Zon pertanian"
-    ],
-    "nearby": [
-      "Pekan Sungai Rambai",
-      "Daerah Jasin",
-      "Bandar Melaka"
-    ],
+    "description": "Tanah 2.7 ekar (117,612 sqft) di Sungai Rambai, Melaka dijual pada RM530,000. Hakmilik: Freehold. Sekatan: Open. Anggaran RM5 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Sungai%20Rambai%2C%20Melaka",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1K9i3sLOqKwzJyaoImEsl6ecoaqhHLEMU=w1000",
       "https://lh3.googleusercontent.com/d/1TYXOMLtM3MLziENfbFQxHfQSnDc_ouhK=w1000",
@@ -4813,34 +3491,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "9,600 kaki persegi (80' x 120') — tanah lot bungalow, bentuk empat segi",
-      "Freehold dengan individual title, bukan bumi lot",
-      "Bangunan kediaman — tanah rata, sedia untuk dibina",
-      "Kemudahan infrastruktur di kawasan sudah sedia",
-      "Lokasi Bandar Bukit Mahkota, Seksyen 7, Bangi (Selangor)",
-      "Harga permintaan RM441,600 — boleh runding"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah lot bungalow untuk dijual di Bandar Bukit Mahkota, Seksyen 7, Bangi, Selangor — seluas lebih kurang 9,600 kaki persegi (80' x 120') dengan bentuk tanah empat segi dan rata. Pegangan Freehold dengan individual title serta bukan bumi lot, manakala kategori penggunaan tanah adalah bangunan kediaman. Kemudahan infrastruktur di kawasan sudah sedia dan tanah berada dalam keadaan sedia untuk dibangunkan. Harga permintaan RM441,600 (boleh runding).",
-    "amenities": [
-      "Tanah rata berbentuk empat segi",
-      "Infrastruktur sudah sedia",
-      "Bangunan kediaman (individual title)",
-      "Jalan masuk Jalan BM 7/13"
-    ],
-    "nearby": [
-      "Bandar Bukit Mahkota",
-      "Seksyen 7, Bandar Baru Bangi",
-      "Kajang",
-      "LEKAS / SILK Highway"
-    ],
+    "description": "Tanah 9,600 sqft (80' x 120') di Bandar Bukit Mahkota, Seksyen 7, Bangi dijual pada RM441,600. Hakmilik: Freehold. Sekatan: Non-Bumi. Anggaran RM46 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bandar%20Bukit%20Mahkota%2C%20Seksyen%207%2C%20Bangi",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1yMWrfh35lyS4ckFgotVvEz74a7aqu-RC=w1000",
       "https://lh3.googleusercontent.com/d/1aM24lR3PVYEXMu73CGDm0iY4P4QCW_s0=w1000",
@@ -4874,34 +3535,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Residential land 14,671 sqft menghadap jalan utama di Sungai Merab, Bangi — berdekatan Putrajaya",
-      "Harga RM40 psf — RM586,840 (boleh runding)",
-      "Individual title, residential lot",
-      "Leasehold (rezab Melayu)",
-      "Beberapa rumah telah dibina berhampiran — kawasan mula membangun",
-      "Akses strategik: hampir dengan Putrajaya & Bandar Baru Bangi"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah residential seluas 14,671 kaki persegi untuk dijual di Sungai Merab, Bangi, Selangor — berdekatan Putrajaya. Tanah menghadap jalan utama dengan harga RM40 kaki persegi (RM586,840 keseluruhan, boleh runding). Pegangan Leasehold (rezab Melayu) dengan individual title dan zoning residential lot. Beberapa rumah telah dibina berhampiran menunjukkan kawasan ini mula membangun — sesuai untuk pembangunan rumah banglo, kawasan kediaman atau pelaburan tanah. Lokasi strategik berdekatan Putrajaya, Alamanda, IOI City Mall dan mudah diakses melalui lebuh raya utama. Hubungi kami untuk viewing.",
-    "amenities": [
-      "Menghadap jalan utama — akses mudah",
-      "Individual title — residential lot",
-      "14,671 sqft — RM40 psf",
-      "Kawasan mula membangun (rumah berhampiran)"
-    ],
-    "nearby": [
-      "Putrajaya (10-15 minit)",
-      "Alamanda & IOI City Mall Putrajaya",
-      "Bandar Baru Bangi",
-      "Lebuh raya SILK, SKVE, MEX, PLUS"
-    ],
+    "description": "Tanah 14,671 sqft di Sungai Merab, Bangi / Dengkil, Selangor dijual pada RM586,840. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM40 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Sungai+Merab,+Kajang,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-24",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1qX_1eGEeP-vjO6z8YNkNwKYMqJdxFLdx=w1000",
       "https://lh3.googleusercontent.com/d/1ow1rV_pXjCb5PyGuDHqoqm-tSuituV_I=w1000",
@@ -4939,34 +3583,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah pembangunan 4.2 ekar (182,952 sqft) di Batu 10, Cheras, Selangor",
-      "Zoning Pembangunan Bercampur — potensi komersial & kediaman",
-      "Pegangan Freehold, rizab Melayu",
-      "Harga RM60 psf — RM11,005,000 (boleh runding)",
-      "Berhampiran kawasan perumahan sedia ada & kemudahan",
-      "Akses mudah ke Jalan Cheras & lebuh raya utama"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pembangunan bercampur seluas 4.2 ekar (182,952 kaki persegi) untuk dijual di Batu 10, Cheras, Selangor dengan harga RM11,005,000 (RM60 kaki persegi — boleh runding). Pegangan Freehold, rizab Melayu, zoning Pembangunan Bercampur — sesuai untuk pembangunan komersial, kediaman atau campuran. Lokasi sangat strategik di koridor Cheras yang pesat membangun, berhampiran kawasan perumahan sedia ada, sekolah, pusat komersial dan mudah diakses melalui Jalan Cheras serta lebuh raya utama. Potensi nilai tinggi untuk pemaju atau pelabur tanah. Hubungi kami untuk viewing.",
-    "amenities": [
-      "Zoning Pembangunan Bercampur",
-      "4.2 ekar (182,952 sqft)",
-      "Freehold rizab Melayu",
-      "RM60 psf — potensi nilai tinggi"
-    ],
-    "nearby": [
-      "Batu 10 Cheras commercial hub",
-      "Kawasan perumahan sedia ada",
-      "Sekolah & kemudahan awam",
-      "Jalan Cheras & lebuh raya utama"
-    ],
+    "description": "Tanah 4.2 ekar (182,952 sqft) di Batu 10, Cheras, Selangor dijual pada RM11,005,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM60 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Batu+10+Cheras,+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-09-24",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Bzt5nnrKi3lP_pOup0xk9CFLLjweT9GI=w1000",
       "https://lh3.googleusercontent.com/d/1PGYlKPSWhkFQKX-NdSqNgneOnplVKZL8=w1000",
@@ -4988,7 +3615,7 @@ window.LISTINGS = [
     "price_label": "RM5,000,000",
     "price_old": null,
     "land_area": "2,130 sqm / 22,917 sqft (0.5 ekar)",
-    "built_up": "22,917 sqft (0.5 ekar)",
+    "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Tidak dinyatakan",
     "kategori": "Bangunan",
@@ -5000,37 +3627,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah Freehold 0.5 ekar (2,130 sqm / 22,917 sqft)",
-      "Bangunan tadika SIAP dengan CCC",
-      "12 bilik darjah, nursery, dewan, bilik guru, bilik mesyuarat",
-      "Kemudahan lengkap: kolam renang, playdeck, taman, blok pentadbiran",
-      "Dua lorong drop-off — sesuai operasi tadika",
-      "Bentuk tanah sekata, akses dua jalan"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Peluang jarang di Putrajaya — tanah Freehold 0.5 ekar (2,130 sqm / 22,917 sqft) bersama bangunan tadika yang SIAP dengan CCC. Kategori tanah: Bangunan. Kegunaan sedia ada: Tadika Swasta.\n\nBangunan ini dibina khas sebagai kompleks pendidikan: 12 bilik darjah, nursery, dewan, bilik guru, bilik mesyuarat, kolam renang, playdeck, taman dan blok pentadbiran, dengan dua lorong drop-off untuk kelancaran operasi.\n\nTerletak dalam kawasan perumahan matang Putrajaya dengan visibiliti hadapan yang tinggi dan akses mudah melalui Persiaran Perdana, MEX, SKVE dan ELITE. Sesuai untuk kegunaan tadika sahaja.\n\nHarga: RM5,000,000. Hubungi Zahir MJ Property untuk lawatan.",
-    "amenities": [
-      "Bangunan pendidikan siap (CCC)",
-      "Kolam renang",
-      "Playdeck & taman",
-      "Blok pentadbiran",
-      "Dua lorong drop-off",
-      "Kawasan letak kereta"
-    ],
-    "nearby": [
-      "Presint matang Putrajaya",
-      "Persiaran Perdana",
-      "MEX Highway",
-      "SKVE Highway",
-      "ELITE Highway"
-    ],
+    "description": "Tanah 2,130 sqm / 22,917 sqft (0.5 ekar) di Putrajaya dijual pada RM5,000,000. Hakmilik: Freehold. Anggaran RM218 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Putrajaya",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-04",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1k--ZOtr_D48Kr_dDevOGvv71ZxM5GFqy=w1000",
       "https://lh3.googleusercontent.com/d/17mTaUWlMZoa7m1pf6ovc6hJZlPsz-VP0=w1000",
@@ -5068,31 +3675,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Corner Lot",
-      "Freehold Malay Reserve",
-      "Tanah Rata 6,372 sqft (592 m2)",
-      "100m dari jalan utama Sungai Merab",
-      "5 minit ke Presint 15 Putrajaya",
-      "5 minit ke Bandar Baru Bangi"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Lot banglo di Sungai Merab, berhampiran Merab Pesona dan hanya 100 meter dari jalan utama Sungai Merab - Abu Bakar Baginda - Bandar Baru Bangi. Tanah rata, corner lot, freehold Malay Reserve, keluasan 6,372 kaki persegi (592 meter persegi) dengan lebar 55 kaki dan panjang 115 kaki. Persekitaran banglo dan taman perumahan, hanya 5 minit ke Presint 15 Putrajaya dan Bandar Baru Bangi. Sesuai untuk bina rumah impian atau pelaburan tanah jangka panjang.",
+    "description": "Tanah 6,372 sqft (592 m2) di Sungai Merab, Bandar Baru Bangi dijual pada RM399,000. Hakmilik: Freehold. Sekatan: Malay Reserve. Anggaran RM63 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "Petronas Sungai Merab",
-      "Taman Merab Pesona",
-      "Masjid Imam As-Syafie Sungai Merab",
-      "SK Abu Bakar Baginda",
-      "SMK Abu Bakar Baginda",
-      "Bandar Baru Bangi"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Sungai%20Merab%2C%20Bandar%20Baru%20Bangi",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1s-FsZ0kDamTqVh01P0RPQwEdURn5K4L4=w1000",
       "https://lh3.googleusercontent.com/d/1EGc4d8qzWGaNPWCLNugqnERB3FpdgwoQ=w1000",
@@ -5128,29 +3721,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "2.77 ekar (120,661 sqft)",
-      "Leasehold dengan individual title",
-      "Kawasan Malay Reserve",
-      "Jalan tar terus ke lot tanah",
-      "Dekat Cyberjaya & Putrajaya",
-      "Sesuai pertanian / simpanan jangka panjang"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian seluas 2.77 ekar (120,661 kaki persegi) di Bukit Damar, Dengkil, hanya beberapa minit dari Cyberjaya dan Putrajaya. Lot tanah berbentuk selesa dengan jalan tar terus ke pintu tanah, sesuai untuk aktiviti pertanian, dusun atau simpanan jangka panjang. Berstatus leasehold dengan individual title dan berada dalam kawasan Malay Reserve. Lokasi tenang tetapi sangat dekat dengan kawasan pembangunan Cyberjaya.",
+    "description": "Tanah 2.77 ekar (120,661 sqft / 11,210 m2) di Bukit Damar, Dengkil, Selangor dijual pada RM2,000,000. Hakmilik: Leasehold. Sekatan: Malay Reserve. Anggaran RM17 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "Cyberjaya",
-      "Putrajaya",
-      "Dengkil",
-      "Bandar Baru Bangi"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bukit%20Damar%2C%20Dengkil%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1U32Xhatcg8LXn6jMc7n-CX1fPbKoHaRa=w1000",
       "https://lh3.googleusercontent.com/d/1cjlb191liG97p8w4W6DL_hySmUyOXKLz=w1000",
@@ -5186,28 +3767,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "2.0234 hektar (5 ekar)",
-      "Freehold",
-      "Tepi pantai",
-      "Sesuai pembangunan resort / percutian",
-      "Mukim Sungai Menyala, Port Dickson"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah tepi pantai seluas 5 ekar (2.0234 hektar) di Mukim Sungai Menyala, Port Dickson, Negeri Sembilan. Berstatus freehold dengan potensi tinggi untuk pembangunan resort, homestay atau projek percutian tepi laut. Lokasi dalam daerah Port Dickson yang menjadi tumpuan pelancong dan hanya beberapa minit dari pekan serta kemudahan utama.",
+    "description": "Tanah 2.0234 hektar (5 ekar / 217,800 sqft) di Mukim Sungai Menyala, Port Dickson, Negeri Sembilan dijual pada RM15,000,000. Hakmilik: Freehold. Anggaran RM69 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "Pantai Port Dickson",
-      "Pekan Port Dickson",
-      "Lukut",
-      "Seremban"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Mukim%20Sungai%20Menyala%2C%20Port%20Dickson%2C%20Negeri%20Sembilan",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bi65DZu3-D5LODlzuLo6NfGdLsy6UKhB=w1000",
       "https://lh3.googleusercontent.com/d/1iHV7LLOWLO3m2QhXJ5TdnQN4Mf8C4XRu=w1000",
@@ -5245,29 +3815,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Lot banglo 6,148 sqft (571 m2)",
-      "Leasehold dengan individual title",
-      "Kawasan Malay Reserve",
-      "Jalan tar terus ke lot",
-      "Dekat Cyberjaya & Putrajaya",
-      "Sesuai bina rumah banglo"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Lot banglo seluas 6,148 kaki persegi (571 meter persegi) di Bukit Damar, Dengkil, dekat dengan Cyberjaya. Tanah rata dengan akses jalan tar terus ke lot, sesuai untuk membina rumah banglo keluarga atau simpanan jangka panjang. Berstatus leasehold dengan individual title dalam kawasan Malay Reserve, hanya beberapa minit ke Cyberjaya dan Putrajaya.",
+    "description": "Tanah 6,148 sqft (571 m2) di Bukit Damar, Dengkil, Selangor dijual pada RM258,216. Hakmilik: Leasehold. Sekatan: Malay Reserve. Anggaran RM42 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "Cyberjaya",
-      "Putrajaya",
-      "Dengkil",
-      "Bandar Baru Bangi"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bukit%20Damar%2C%20Dengkil%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1uhDX29pCYHN6fccpbsC7DIgheu4sOi8C=w1000",
       "https://lh3.googleusercontent.com/d/13oGNRLRX4TqDPm7JUsO7xel0fmHOeCFd=w1000",
@@ -5295,40 +3853,24 @@ window.LISTINGS = [
     "sekatan": "Non-Bumi",
     "kategori": "Kediaman",
     "zoning": "Bangunan",
-    "psf": 170,
+    "psf": 325,
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "5 lot banglo 10,010 - 11,593 sqft selot",
-      "Freehold dengan individual title",
-      "Non-Bumi / open lot",
-      "Kawasan gated & guarded",
-      "Dekat IOI City Mall Putrajaya",
-      "Boleh beli berasingan atau keseluruhan"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Lima lot banglo tanah rata di Country Heights, Kajang, boleh dibeli secara berasingan atau sebagai satu keseluruhan. Setiap lot bersaiz antara 10,010 hingga 11,593 kaki persegi, berstatus freehold dengan individual title di dalam kawasan perumahan matang yang berpagar dan berpengawal. Lokasi sangat strategik berdekatan IOI City Mall Putrajaya, IOI Golf Club, Hospital Serdang serta beberapa universiti dan sekolah antarabangsa.",
+    "description": "Tanah 5 lot (10,010 - 11,593 sqft selot) di Country Heights, Kajang, Selangor dijual pada RM3,762,270. Hakmilik: Freehold. Sekatan: Non-Bumi. Anggaran RM325 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "IOI City Mall Putrajaya",
-      "IOI Golf Club",
-      "Hospital Serdang",
-      "Tamanranta International School",
-      "Bangi Golf Course",
-      "UNITEN",
-      "UPM",
-      "MARDI"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Country%20Heights%2C%20Kajang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1rXMfWsqFsID5ySLAVJ4nDlEP0rFeVIuL=w1000",
       "https://lh3.googleusercontent.com/d/1UkTx4n5XqqfuP0pB6ZG43Cl4dsDRcDRT=w1000",
@@ -5365,33 +3907,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "3 lot banglo 7,998 - 9,009 sqft selot",
-      "Freehold non-bumi, individual title",
-      "Boleh beli berasingan atau keseluruhan",
-      "Kawasan gated & guarded",
-      "Dekat IOI City Mall Putrajaya",
-      "Status tanah: Bangunan"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tiga lot tanah banglo di Country Heights, Kajang — lokasi elevated dalam kawasan perumahan matang yang berpagar dan berpengawal. Setiap lot bersaiz antara 7,998 hingga 9,009 kaki persegi, berstatus freehold non-bumi dengan individual title. Pembeli boleh memilih untuk membeli satu lot secara berasingan atau keseluruhan. Lokasi strategik berdekatan IOI City Mall Putrajaya, IOI Golf Club, Hospital Serdang, KPJ Kajang serta beberapa buah universiti dan sekolah antarabangsa.",
+    "description": "Tanah 7,998 - 9,009 sqft selot di Country Heights, Kajang, Selangor dijual pada RM1,479,630. Hakmilik: Freehold. Sekatan: Non-Bumi. Anggaran RM164 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "IOI City Mall Putrajaya",
-      "IOI Golf Club",
-      "Hospital Serdang",
-      "Tamanranta International School",
-      "Bangi Golf Course",
-      "UNITEN",
-      "UPM",
-      "MARDI"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Country%20Heights%2C%20Kajang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11BnkEhLYezqJy8Da3ixLI0kbg6reJKSk=w1000",
       "https://lh3.googleusercontent.com/d/1n0r1kyytcLQrWQxMjVjC8CjoVcxNAlYG=w1000",
@@ -5429,28 +3955,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Corner lot 6,716 sqft",
-      "Freehold dengan individual title",
-      "Kawasan Melayu Reserved",
-      "Sesuai bina rumah banglo",
-      "Akses Lebuhraya Cheras-Kajang"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah corner lot banglo seluas 6,716 kaki persegi di Wira Heights, Sungai Long, Kajang. Lot berbentuk selesa di kawasan perumahan matang, sesuai untuk membina rumah banglo keluarga. Berstatus freehold dengan individual title dalam kawasan Melayu Reserved. Akses mudah melalui Lebuhraya Cheras-Kajang ke Bandar Baru Bangi, Cheras dan Kuala Lumpur.",
+    "description": "Tanah 6,716 sqft di Wira Heights, Sungai Long, Kajang, Selangor dijual pada RM315,652. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM47 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "Sungai Long",
-      "Bandar Baru Bangi",
-      "Cheras",
-      "Lebuhraya Cheras-Kajang"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Wira%20Heights%2C%20Sungai%20Long%2C%20Kajang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1VDb91E5RBCRRSEOKowu15-x5ss9w_fwH=w1000",
       "https://lh3.googleusercontent.com/d/15x28hjwKmF9m6m4li1vV0yERDZLTfnpY=w1000",
@@ -5485,39 +4000,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "1.3987 hektar (±3.456 ekar / 150,554 sqft)",
-      "Zon kediaman — sesuai pembangunan perumahan",
-      "Pajakan Mukim 99 tahun (tamat 15 Mei 2058)",
-      "Kawasan pesat membangun, dikelilingi taman perumahan",
-      "Harga tawaran ±RM16.61/sqft"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian seluas 1.3987 hektar (±3.456 ekar / 150,554 kaki persegi) di Gombak, Selangor — berzoning kediaman dan sesuai untuk pembangunan perumahan. Tanah pajakan mukim 99 tahun (tamat 15 Mei 2058) ini terletak di kawasan pesat membangun yang dikelilingi taman perumahan sedia ada seperti Taman Sri Gombak, Taman Pinggiran dan Taman Bunga Permata. Akses mudah melalui Sri Gombak, MRR2 dan Jalan Besar Kuala Lumpur, berhampiran kemudahan awam termasuk masjid, sekolah, bank dan Hospital Selayang. Harga tawaran sekitar RM16.61 sekaki persegi.",
-    "amenities": [
-      "Zon kediaman",
-      "Kawasan pesat membangun",
-      "Akses MRR2 & Sri Gombak",
-      "Berdekatan taman perumahan sedia ada"
-    ],
-    "nearby": [
-      "Taman Sri Gombak",
-      "Taman Bunga Permata",
-      "Taman Pinggiran",
-      "Masjid Al-Khairiyah",
-      "SK Taman Sri Gombak",
-      "SMK Sungai Kertas",
-      "Baseerah International School",
-      "Hospital Selayang",
-      "MRR2",
-      "Jalan Besar Kuala Lumpur"
-    ],
+    "description": "Tanah 1.3987 hektar (3.456 ekar / 150,554 sqft) di Gombak dijual pada RM2,500,000. Hakmilik: Leasehold. Anggaran RM17 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Mukim+Batu+Gombak+Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/18ErekCK4TE_bl699qHdRktVZl7sfM0Gg=w1000",
       "https://lh3.googleusercontent.com/d/19eHPJcMxjsXjR1vGCvWMHADT6riwLb6j=w1000",
@@ -5555,7 +4048,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Komersial 20 x 75 (1,500 sqft) di Presint 11, Putrajaya dijual pada RM2,650,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM1767 sekaki persegi.",
+    "description": "Komersial 20 x 75 (1,500 sqft) di Presint 11, Putrajaya dijual pada RM2,650,000. Hakmilik: Freehold. Anggaran RM1767 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Presint+11+Putrajaya",
@@ -5563,7 +4056,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/102nycJVF1TmxDqeCaaMKO_92SYGDt-sk=w1000",
       "https://lh3.googleusercontent.com/d/1rnznwXC1Y-04BA_KDUzYbtpNZ6WEpN70=w1000",
@@ -5603,7 +4096,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Komersial 20'x70' (1,400 sqft) di Kajang Impian, Selangor dijual pada RM2,000. Hakmilik: Tidak pasti. Sekatan: Tidak dinyatakan. Anggaran RM1 sekaki persegi.",
+    "description": "Komersial 20'x70' (1,400 sqft) di Kajang Impian, Selangor ditawarkan untuk disewa pada RM2,000 / bulan. Hakmilik: Tidak pasti. Anggaran RM1 sekaki persegi sebulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "",
@@ -5611,7 +4104,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kMB1QmsGGKV3cgNR17G16I84SuigJOWH=w1000",
       "https://lh3.googleusercontent.com/d/19wAY45kQgVQlNgvZ_NNzuNGWgufnl6Un=w1000",
@@ -5651,7 +4144,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Komersial 22' x 80' (1,760 sqft) di TTDI Grove, Kajang, Selangor dijual pada RM2,480,000. Hakmilik: Tidak pasti. Sekatan: Tidak dinyatakan. Anggaran RM1409 sekaki persegi.",
+    "description": "Komersial 22' x 80' (1,760 sqft) di TTDI Grove, Kajang, Selangor dijual pada RM2,480,000. Hakmilik: Tidak pasti. Anggaran RM1409 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=TTDI+Grove,+Kajang,+Selangor",
@@ -5659,7 +4152,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bZnuCrDS8AwAUc-YDY2pZQSwUT8c23gM=w1000",
       "https://lh3.googleusercontent.com/d/1GfXI1afE67wTv9iFKLF_oYOhc-vNZICx=w1000",
@@ -5699,7 +4192,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Komersial 450 sqft (15 x 30 ft) di Shaftbury Avenue, Putrajaya dijual pada RM430,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM956 sekaki persegi.",
+    "description": "Komersial 450 sqft (15 x 30 ft) di Shaftbury Avenue, Putrajaya dijual pada RM430,000. Hakmilik: Freehold. Anggaran RM956 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "",
@@ -5707,7 +4200,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xlQOHan3pHCKJ8tHE54dezKUoSOY-OdO=w1000",
       "https://lh3.googleusercontent.com/d/1Q2pk5JboeA6udntXEROPbqn5c3jBO5Yr=w1000",
@@ -5747,7 +4240,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Komersial 4,125 sqft di Seksyen 8 Bandar Baru Bangi, Selangor dijual pada RM3,000,000. Hakmilik: Tidak pasti. Sekatan: Tidak dinyatakan. Anggaran RM727 sekaki persegi.",
+    "description": "Komersial 4,125 sqft di Seksyen 8 Bandar Baru Bangi, Selangor dijual pada RM3,000,000. Hakmilik: Tidak pasti. Anggaran RM727 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=Seksyen+8+Bandar+Baru+Bangi,+Selangor",
@@ -5755,7 +4248,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1KhuPqgGPD3Xyxxza-ilyTWQnwMMkQK-P=w1000",
       "https://lh3.googleusercontent.com/d/1Ub9o1ks03DC2QF1ctb5qO5UsEZqTtvsz=w1000",
@@ -5795,7 +4288,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Pejabat ±899 sqft (Tingkat 7) di Bangi Gateway, Seksyen 15, Bandar Baru Bangi, Selangor dijual pada RM430,000. Hakmilik: Leasehold. Sekatan: Tidak dinyatakan. Anggaran RM478 sekaki persegi.",
+    "description": "Pejabat ±899 sqft (Tingkat 7) di Bangi Gateway, Seksyen 15, Bandar Baru Bangi, Selangor dijual pada RM430,000. Hakmilik: Leasehold. Anggaran RM478 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=Bangi%20Gateway%20Seksyen%2015%20Bandar%20Baru%20Bangi%20Selangor",
@@ -5803,7 +4296,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xKK4Y8i-d1rIWXMSs2ZE3iSZmrZoH67b=w1000",
       "https://lh3.googleusercontent.com/d/1wL7KMgY_Y8RLJTvmIzXm7A7ZuVlLra9O=w1000",
@@ -5843,7 +4336,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Komersial 1,453 sqft di OCHRE Putrajaya, Presint 1, Putrajaya dijual pada RM8,700. Hakmilik: Tidak pasti. Sekatan: Tidak dinyatakan. Anggaran RM6 sekaki persegi.",
+    "description": "Komersial 1,453 sqft di OCHRE Putrajaya, Presint 1, Putrajaya ditawarkan untuk disewa pada RM8,700 / bulan. Hakmilik: Tidak pasti. Anggaran RM6 sekaki persegi sebulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=OCHRE%20Putrajaya%2C%20Presint%201%2C%20Putrajaya",
@@ -5851,7 +4344,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1RJih4EYoENldIiJ5iU0bggYG_6IaEXvS=w1000",
       "https://lh3.googleusercontent.com/d/1eK6IdrufA2dkt4T0RZzsqBIg1zAYfIBZ=w1000",
@@ -5882,7 +4375,7 @@ window.LISTINGS = [
     "sekatan": "Bumi Lot",
     "kategori": "Komersial",
     "zoning": "Komersial",
-    "psf": 259,
+    "psf": null,
     "bedrooms": 3,
     "bathrooms": 2,
     "status": "BARU",
@@ -5891,7 +4384,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Komersial 753 sqft (70 m2) di Seksyen 15, Bandar Baru Bangi, Selangor dijual pada RM195,000. Hakmilik: Leasehold. Sekatan: Bumi Lot. Anggaran RM259 sekaki persegi.",
+    "description": "Komersial di Seksyen 15, Bandar Baru Bangi, Selangor dijual pada RM195,000. Hakmilik: Leasehold. Sekatan: Bumi Lot.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Seksyen+15,+Bandar+Baru+Bangi,+Selangor",
@@ -5899,7 +4392,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1etg1tcPTP-kkp7amI_QBb-L-o8SaqMV9=w1000",
       "https://lh3.googleusercontent.com/d/1oZJvSKDHLFnNZJlwMdCGqbHehiqWtlpj=w1000",
@@ -5947,7 +4440,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YMf5gHXHHX87s7hI7-r8SD_oMqFVJUZN=w1000",
       "https://lh3.googleusercontent.com/d/10lQqwMtlI4cqW5oY5QWyRPojb4BccRqP=w1000",
@@ -5995,7 +4488,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1XUIKrFycZaa5A-cjpLkApNfxYLeiPYvi=w1000",
       "https://lh3.googleusercontent.com/d/17aIOYmj7rKrqkWRt7d1o9aH27d9W7xgL=w1000",
@@ -6037,7 +4530,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11Y3IekILMLXDzHIv4UTP08JILZfF6pvf=w1000",
       "https://lh3.googleusercontent.com/d/1oainVeX0oMbOOhE-apUBRwYOGdaJQs3m=w1000",
@@ -6087,7 +4580,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1HWnNYR-dKpoHMbEwcTivc0ybR1F21Dy5=w1000",
       "https://lh3.googleusercontent.com/d/16vKUxHtzVjYE3D5fz5NGdI5YU0CARBQS=w1000",
@@ -6133,7 +4626,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1D2y6TsdwUXFV9-_5tDndPG-wSSbCB-dM=w1000",
       "https://lh3.googleusercontent.com/d/1-Kh5TdNDHSKyH1ljhIeiaf5anaPyqAqB=w1000",
@@ -6174,38 +4667,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tanah pertanian 3.03 ekar (131,879 sqft) — freehold, Tanah Rizab Melayu",
-      "6 unit chalet sedia ada (4 standard + 2 glamping)",
-      "1 unit rumah kotej dengan basement (music studio)",
-      "Kolam renang & kolam ikan dalam kawasan",
-      "Harga 20% lebih rendah daripada nilai pasaran (MV RM3 juta)",
-      "Potensi homestay / private retreat — sesuai pelaburan hospitaliti"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Estate peribadi seluas 3.03 ekar (131,879 kaki persegi) di Kampung Kuala Pajam, Beranang, Selangor untuk dijual. Tanah berstatus pertanian, freehold dengan Tanah Rizab Melayu dan hakmilik individu. Kawasan ini telah dibangunkan dengan 6 unit chalet (4 standard + 2 glamping) serta 1 unit rumah kotej dengan basement yang menempatkan music studio. Kemudahan sedia ada termasuk kolam renang, kolam ikan, ruang tamu, dapur, ruang makan, BBQ area, outdoor deck dan kawasan lapang hijau. Harga permintaan RM2,400,000 (boleh dirunding) iaitu lebih kurang 20% lebih rendah daripada nilai pasaran RM3,000,000. Berpotensi sebagai homestay, private retreat atau pelaburan hospitaliti. Lokasi berhampiran Beranang, Semenyih dan akses mudah ke Lebuhraya LEKAS.",
-    "amenities": [
-      "6 unit chalet (4 standard + 2 glamping)",
-      "Rumah kotej dengan basement",
-      "Kolam renang & kolam ikan",
-      "BBQ area & outdoor deck",
-      "Basement music studio",
-      "Kawasan lapang & persekitaran hijau",
-      "Hakmilik individu"
-    ],
-    "nearby": [
-      "Beranang",
-      "Semenyih",
-      "Lebuhraya LEKAS",
-      "Bandar Baru Bangi",
-      "Kajang"
-    ],
+    "description": "Tanah 3.03 ekar (131,879 sqft) di Beranang, Selangor dijual pada RM2,400,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM18 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Kampung%20Kuala%20Pajam%2C%20Beranang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/17PecpCILrnSRoIkuwPP8pEtbIHmM7kNT=w1000",
       "https://lh3.googleusercontent.com/d/1V3nnvSOR0EK_dtonYq-1de7LI2smv_uu=w1000",
@@ -6231,7 +4703,7 @@ window.LISTINGS = [
     "price_label": "RM4,990,000",
     "price_old": null,
     "land_area": "2.249 ekar (91,050 m2 / 99ft x 994ft)",
-    "built_up": "2.249 ekar (91,050 m2 / 99ft x 994ft)",
+    "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Bumi Lot",
     "kategori": "Pertanian",
@@ -6243,41 +4715,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "2.249 ekar (99ft x 994ft), menghadap jalan utama",
-      "Freehold, Bumi Lot",
-      "Zoning perumahan, bentuk segi empat tepat",
-      "Potensi pembangunan kediaman / gudang / industri ringan",
-      "Akses KESAS, Federal Highway, SKVE, NKVE",
-      "Sungai Kandis, Seksyen 36 Shah Alam"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah 2.249 ekar menghadap jalan utama di Sungai Kandis, Seksyen 36, Shah Alam, ditawarkan pada RM4.99 juta (RM50/sqft). Tanah freehold berstatus Bumi Lot dengan bentuk segi empat tepat, zoning perumahan — berpotensi untuk dikaji sebagai pembangunan kediaman, nurseri, pertanian komersial, gudang, industri ringan atau projek komersial yang bersesuaian (tertakluk kelulusan pihak berkuasa). Lokasi strategik dengan akses mudah ke KESAS, Federal Highway, SKVE dan NKVE, berhampiran pusat komersial Alam Impian, Econsave, Giant Jalan Kebun dan pelbagai kemudahan awam.",
-    "amenities": [
-      "Menghadap jalan utama",
-      "Freehold Bumi Lot",
-      "Zoning perumahan",
-      "Bentuk segi empat tepat",
-      "2.249 ekar"
-    ],
-    "nearby": [
-      "Petrol station Shell Alam Impian",
-      "Pasaraya Econsave",
-      "Giant Jalan Kebun",
-      "SRA Sungai Kandis",
-      "Masjid Alam Impian",
-      "Klinik Mediviron Kampung Jawa",
-      "KESAS Highway",
-      "Federal Highway",
-      "SKVE",
-      "NKVE"
-    ],
+    "description": "Tanah 2.249 ekar (91,050 m2 / 99ft x 994ft) di Seksyen 36, Shah Alam, Selangor dijual pada RM4,990,000. Hakmilik: Freehold. Sekatan: Bumi Lot. Anggaran RM51 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Seksyen%2036%2C%20Shah%20Alam%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1uYjVrofs4bzMWf-ZUT10T4VsciVnUAiQ=w1000",
       "https://lh3.googleusercontent.com/d/1s5cCSkFqzulW_8RWb9dL9pO6pOqu6CAq=w1000",
@@ -6303,7 +4751,7 @@ window.LISTINGS = [
     "price_label": "RM3,822,420",
     "price_old": null,
     "land_area": "4.5 ekar (196,022 sqft)",
-    "built_up": "4.5 ekar (196,022 sqft)",
+    "built_up": "-",
     "tenure": "Leasehold",
     "sekatan": "Melayu Reserved",
     "kategori": "Pertanian",
@@ -6315,46 +4763,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "4.5 ekar (196,022 sqft), RM19.5/sqft",
-      "Leasehold, Malay Reserved",
-      "Zoning kediaman (pertanian belum tukar status)",
-      "Dekat Putrajaya, akses jalan utama",
-      "Bentuk simetri (segi empat tepat)",
-      "Potensi pembangunan rumah 2 tingkat"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian 4.5 ekar di Sungai Merab, Bandar Baru Bangi, ditawarkan pada RM3,822,420 (RM19.5/sqft, boleh dirunding untuk pembeli serius). Berstatus leasehold dengan sekatan Malay Reserved, zoning kediaman walaupun status pertanian belum ditukar. Lokasi sangat strategik berhampiran Putrajaya dengan akses mudah dari jalan utama, berhampiran Taman Sentosa, Desa Sentosa dan Mutiara Keruing. Bentuk tanah simetri segi empat tepat — berpotensi besar untuk pembangunan perumahan (rumah dua tingkat). Sasaran pasaran termasuk kakitangan kerajaan, pelajar dan pekerja di Putrajaya, Cyberjaya dan Bandar Baru Bangi.",
-    "amenities": [
-      "4.5 ekar",
-      "Leasehold Malay Reserved",
-      "Zoning kediaman",
-      "Tepi jalan utama",
-      "Bentuk segi empat tepat",
-      "Potensi pembangunan"
-    ],
-    "nearby": [
-      "Alamanda Putrajaya",
-      "IOI City Mall",
-      "UPM",
-      "UKM",
-      "UNITEN",
-      "IUKL",
-      "SK & SMA Sg Merab Luar",
-      "Klinik Desa Sg Merab Luar",
-      "Hospital Serdang",
-      "Hospital Putrajaya",
-      "Masjid Kampung Sg Merab",
-      "SILK Highway",
-      "SKVE",
-      "PLUS Highway"
-    ],
+    "description": "Tanah 4.5 ekar (196,022 sqft) di Sungai Merab, Bandar Baru Bangi, Selangor dijual pada RM3,822,420. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM19 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Sungai%20Merab%2C%20Bandar%20Baru%20Bangi%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1pcTwyAk-85KkRE8BMw_6QqFHyS-RYb73=w1000",
       "https://lh3.googleusercontent.com/d/1gLiJSvcNSKm_FpDN6EI7tOQ2n7uuhUDX=w1000",
@@ -6380,7 +4799,7 @@ window.LISTINGS = [
     "price_label": "RM1,600,000",
     "price_old": null,
     "land_area": "5 ekar",
-    "built_up": "5 ekar",
+    "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Melayu Reserved",
     "kategori": "Pertanian",
@@ -6392,35 +4811,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "5 ekar, RM1.6 juta (boleh runding)",
-      "Freehold, Malay Reserved",
-      "Zoning kediaman (tanah pertanian)",
-      "Hulu Langat, Selangor",
-      "Sesuai untuk pembangunan atau pertanian",
-      "Lokasi tenang berhampiran alam semula jadi"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian 5 ekar di Hulu Langat, Selangor, ditawarkan pada RM1.6 juta (boleh dirunding). Berstatus freehold dengan sekatan Malay Reserved dan zoning kediaman — sesuai untuk pembangunan kediaman atau aktiviti pertanian. Lokasi Hulu Langat yang tenang dan berhampiran kawasan semula jadi menjadikannya pilihan menarik untuk projek perumahan bercirikan alam sekitar atau pelaburan tanah jangka panjang.",
-    "amenities": [
-      "5 ekar",
-      "Freehold Malay Reserved",
-      "Zoning kediaman",
-      "Status pertanian"
-    ],
-    "nearby": [
-      "Hulu Langat",
-      "Ampang",
-      "Sungai Congkak",
-      "Sungai Gabai",
-      "SUKE Highway"
-    ],
+    "description": "Tanah 5 ekar di Hulu Langat, Selangor dijual pada RM1,600,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM7 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Hulu%20Langat%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1QNfOQbg_BI6t9QLTVbm5bZ1zLb6DyLzE=w1000",
       "https://lh3.googleusercontent.com/d/1nBZJWiEZbs7C-2Fa0A8kiDd9iBhc3m6_=w1000",
@@ -6445,7 +4846,7 @@ window.LISTINGS = [
     "price_label": "RM500,000",
     "price_old": null,
     "land_area": "1.03 ekar (45,208 sqft) per lot",
-    "built_up": "1.03 ekar (45,208 sqft) per lot",
+    "built_up": "-",
     "tenure": "Leasehold",
     "sekatan": "Melayu Reserved",
     "kategori": "Pertanian",
@@ -6457,44 +4858,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "1.03 ekar (45,208 sqft) per lot — RM500k",
-      "2 lot bersebelahan untuk dijual",
-      "Leasehold, Malay Reserved, status Pertanian A",
-      "Tepi Lebuhraya SILK",
-      "Akses LEKAS, SILK, CKE, PLUS, SKVE",
-      "Dekat Semenyih, Kajang, Bangi"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian tepi Lebuhraya SILK untuk dijual pada RM500,000 se-lot (saiz 1.03 ekar / 45,208 kaki persegi). Terdapat 2 lot bersebelahan yang boleh dibeli berasingan atau kedua-duanya. Berstatus leasehold dengan sekatan Malay Reserved dan status Pertanian A. Lokasi sangat strategik di tepi Lebuhraya SILK dengan akses mudah ke LEKAS, CKE, PLUS dan SKVE — hanya 5 minit ke Pekan Semenyih, Sungai Long dan Bandar Teknologi Kajang, serta 10 minit ke Bandar Baru Bangi, Beranang dan Kajang.",
-    "amenities": [
-      "1.03 ekar per lot",
-      "2 lot bersebelahan",
-      "Leasehold Malay Reserved",
-      "Pertanian A",
-      "Tepi Lebuhraya SILK"
-    ],
-    "nearby": [
-      "Pekan Semenyih",
-      "Pekan Sg Long",
-      "Bandar Teknologi Kajang",
-      "Bandar Kajang",
-      "Bandar Baru Bangi",
-      "Beranang",
-      "Mydin Bdr Teknologi",
-      "Billion Bandar Teknologi",
-      "LEKAS Highway",
-      "SILK Highway",
-      "CKE Highway",
-      "PLUS Highway",
-      "SKVE"
-    ],
+    "description": "Tanah 1.03 ekar (45,208 sqft) per lot di Semenyih / Sungai Long, Selangor dijual pada RM500,000. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM11 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Semenyih%20/%20Sungai%20Long%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1buMws1fMvxlpALt7PUplwg-PuopvLJLL=w1000",
       "https://lh3.googleusercontent.com/d/1Ts_3emNbYxJGjcKYg90l5kk8yQ6rGKuB=w1000",
@@ -6515,7 +4889,7 @@ window.LISTINGS = [
     "price_label": "RM1,500,000",
     "price_old": null,
     "land_area": "Tanah 1,916 sqft",
-    "built_up": "Tanah 1,916 sqft",
+    "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Non-Bumi",
     "kategori": "Perindustrian",
@@ -6527,36 +4901,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Kilang/warehouse single storey, tanah 1,916 sqft",
-      "Lot Service Industry di Putrajaya",
-      "Freehold, non-Bumi, intermediate",
-      "Disewa RM3,900/bulan hingga Mei 2025",
-      "Sesuai workshop, warehouse, showroom, car wash",
-      "Dekat Presint Diplomatik & IOI City Mall"
-    ],
+    "highlights": [],
     "pelan": [],
     "description": "Lot Service Industry, disewa RM3,900/bulan hingga Mei 2025. Sesuai workshop/warehouse/showroom. Agen: Azizirrahim 017-5602008 | Kembar Zahir: COA-0203",
-    "amenities": [
-      "Kilang/warehouse",
-      "Service Industry zoning",
-      "Freehold non-Bumi",
-      "Tanah 1,916 sqft",
-      "Tenanted RM3,900/bulan"
-    ],
-    "nearby": [
-      "Presint Diplomatik",
-      "Alamanda",
-      "Pejabat kerajaan",
-      "IOI City Mall",
-      "Putrajaya"
-    ],
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Presint%20Diplomatik%2C%20Putrajaya",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19U_sD78HMmDog7TEfdmiIUIHhwSwBMxG=w1000",
       "https://lh3.googleusercontent.com/d/1zQ-m0TRjaZgHbdwCgG3ITCpD7NbAddPJ=w1000",
@@ -6585,7 +4940,7 @@ window.LISTINGS = [
     "price_label": "RM6,000,000",
     "price_old": null,
     "land_area": "8 ekar",
-    "built_up": "8 ekar",
+    "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Melayu Reserved",
     "kategori": "Bangunan",
@@ -6597,43 +4952,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "8 ekar, zoning Bangunan (tukar dari pertanian)",
-      "Freehold, Malay Reserved, 2 geran",
-      "Harga turun RM7.0M → RM6.0M (RM17.22/sqft)",
-      "Bukit Unggul, Jenderam, Dengkil, Sepang",
-      "Akses PLUS & ELITE",
-      "Dekat Bangi, Putrajaya, Nilai"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian yang telah ditukar status kepada Bangunan, seluas 8 ekar di Bukit Unggul, Jenderam, Mukim Dengkil, Sepang. Berstatus freehold Malay Reserved dengan 2 geran, zoning Bangunan — sesuai untuk pembangunan. Harga telah diturunkan daripada RM7.0 juta kepada RM6.0 juta (RM17.22/sqft). Lokasi strategik: 12km ke Bangi, 13km ke Putrajaya, 13km ke Kota Warisan, 23km ke Kajang dan Nilai, dengan akses mudah ke PLUS (6km) dan ELITE (9km) highway.",
-    "amenities": [
-      "8 ekar",
-      "Freehold Malay Reserved",
-      "2 geran",
-      "Zoning Bangunan",
-      "Tukar status dari pertanian"
-    ],
-    "nearby": [
-      "Sekolah Tahfiz",
-      "SK Jenderam",
-      "SRA Jenderam Hulu",
-      "Kolej Vokasional Sepang",
-      "UniKL MIAT",
-      "USIM",
-      "UiTM Dengkil",
-      "Xiamen University",
-      "Bangi",
-      "Putrajaya",
-      "PLUS Highway",
-      "ELITE Highway"
-    ],
+    "description": "Tanah 8 ekar di Bukit Unggul, Jenderam, Dengkil, Sepang, Selangor dijual pada RM6,000,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM17 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bukit%20Unggul%2C%20Jenderam%2C%20Dengkil%2C%20Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1R0b8k0igdUJcTsXtBpEtWvmfaNa0PZwS=w1000",
       "https://lh3.googleusercontent.com/d/1KVYnayFidoLI-GsLFJHKjRmPs1lZYqV3=w1000",
@@ -6656,7 +4985,7 @@ window.LISTINGS = [
     "price_label": "RM5,796,630",
     "price_old": null,
     "land_area": "6.3367 ekar (276,030 sqft)",
-    "built_up": "6.3367 ekar (276,030 sqft)",
+    "built_up": "-",
     "tenure": "Leasehold",
     "sekatan": "Melayu Reserved",
     "kategori": "Pertanian",
@@ -6668,43 +4997,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "6.3367 ekar (276,030 sqft), RM21/sqft",
-      "Leasehold, Malay Reserved",
-      "Zoning kediaman (pertanian belum tukar)",
-      "Tepi jalan, dekat Putrajaya",
-      "Lokasi strategik Sg Merab Tengah",
-      "Potensi pembangunan kediaman"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah 6.3367 ekar (276,030 kaki persegi) di Kampung Sungai Merab Tengah untuk dijual pada RM21/sqft (boleh dirunding untuk pembeli serius). Berstatus leasehold dengan sekatan Malay Reserved, zoning kediaman walaupun status pertanian belum ditukar. Tanah terletak di tepi jalan dengan lokasi sangat strategik berhampiran Putrajaya — akses mudah melalui Jalan Sungai Merab ke Putrajaya melalui Kampung Limau Manis. Sesuai untuk pelaburan tanah atau pembangunan kediaman masa hadapan.",
-    "amenities": [
-      "6.3367 ekar",
-      "Leasehold Malay Reserved",
-      "Zoning kediaman",
-      "Tepi jalan",
-      "RM21/sqft"
-    ],
-    "nearby": [
-      "Surau Al-Barokah Kampung Tengah",
-      "Masjid Al-Iman Desa Putra",
-      "SK Desa Putra",
-      "SMK Teknik Sepang",
-      "Putrajaya",
-      "Cyberjaya",
-      "Bandar Baru Bangi",
-      "PLUS Highway",
-      "LDP",
-      "MEX",
-      "ELITE",
-      "SKVE"
-    ],
+    "description": "Tanah 6.3367 ekar (276,030 sqft) di Kg Sungai Merab Tengah, Sepang, Selangor dijual pada RM5,796,630. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM21 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Kg%20Sungai%20Merab%20Tengah%2C%20Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1mwvHidy26XEE_w91UzIx0w6KOOe43RJh=w1000",
       "https://lh3.googleusercontent.com/d/1DHWYYYmpg-g9ah0RgZ691TAvkSH_Uf47=w1000",
@@ -6727,7 +5030,7 @@ window.LISTINGS = [
     "price_label": "RM4,400,000",
     "price_old": null,
     "land_area": "5.95 ekar (2.406 hektar / 258,980 sqft)",
-    "built_up": "5.95 ekar (2.406 hektar / 258,980 sqft)",
+    "built_up": "-",
     "tenure": "Leasehold",
     "sekatan": "Malay Reserved",
     "kategori": "Pertanian",
@@ -6739,37 +5042,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "5.95 ekar (258,980 sqft), RM4.4 juta (nego)",
-      "Leasehold, Malay Reserve, hakmilik individu",
-      "Zoning kediaman, status pertanian",
-      "Tanah berbukit, potensi pembangunan perumahan",
-      "Dekat sempadan Putrajaya",
-      "Hakmilik individu"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pembangunan 5.95 ekar (2.406 hektar / 258,980 kaki persegi) di Kampung Tengah, Sungai Merab, Sepang, ditawarkan pada RM4.4 juta (boleh dirunding). Berstatus leasehold dengan sekatan Malay Reserve dan hakmilik individu, zoning kediaman. Tanah berbukit dengan potensi untuk pembangunan perumahan, terletak berhampiran sempadan Putrajaya. Berdekatan Putra Mutiara Residence, Desa Anjung Putra, Puncak Pinggiran Putra dan Puncak Mekar. Harga lot banglo berdekatan sekitar RM45/sqft.",
-    "amenities": [
-      "5.95 ekar",
-      "Leasehold Malay Reserve",
-      "Hakmilik individu",
-      "Zoning kediaman",
-      "Tanah berbukit"
-    ],
-    "nearby": [
-      "Putra Mutiara Residence",
-      "Desa Anjung Putra",
-      "Puncak Pinggiran Putra",
-      "Puncak Mekar",
-      "Putrajaya",
-      "Sungai Merab"
-    ],
+    "description": "Tanah 5.95 ekar (2.406 hektar / 258,980 sqft) di Kampung Tengah, Sungai Merab, Sepang, Selangor dijual pada RM4,400,000. Hakmilik: Leasehold. Sekatan: Malay Reserved. Anggaran RM17 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Kampung%20Tengah%2C%20Sungai%20Merab%2C%20Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1MVtRtQq0Fr11PcHtI6erbx_EHXYC_iL5=w1000",
       "https://lh3.googleusercontent.com/d/1F4I6N8GixmxGsfISyJQOO84t9s3TmPIs=w1000",
@@ -6795,7 +5078,7 @@ window.LISTINGS = [
     "price_label": "RM2,900,000",
     "price_old": null,
     "land_area": "3.52 ekar (1.4243 hektar / 153,310 sqft)",
-    "built_up": "3.52 ekar (1.4243 hektar / 153,310 sqft)",
+    "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Melayu Reserved",
     "kategori": "Pertanian",
@@ -6807,36 +5090,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "3.52 ekar (153,310 sqft), RM2.9 juta",
-      "Freehold, Rezab Melayu, 2 geran individu",
-      "Tepi jalan besar, berhadapan Taman Mawar",
-      "Zoning kediaman (pertanian)",
-      "Sesuai lot banglo atau perumahan",
-      "5 min ke Bandar Baru Salak Tinggi"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah tepi jalan besar seluas 3.52 ekar (1.4243 hektar / 153,310 kaki persegi) berhadapan Taman Mawar, Jalan Jenderam–Salak Tinggi, Sepang, ditawarkan pada RM2.9 juta (turun dari RM3.2 juta). Berstatus freehold Rezab Melayu dengan 2 geran individu bersebelahan, zoning kediaman. Bentuk tanah segi empat, lapisan pertama dengan permukaan rendah di bahagian hadapan jalan utama dan sedikit menaik ke belakang. Sesuai untuk pembangunan lot banglo atau perumahan. Lokasi 5 minit ke Bandar Baru Salak Tinggi, 18 minit ke KLIA dan 30 minit ke Putrajaya.",
-    "amenities": [
-      "3.52 ekar",
-      "Freehold Rezab Melayu",
-      "2 geran individu",
-      "Tepi jalan utama",
-      "Zoning kediaman"
-    ],
-    "nearby": [
-      "Taman Mawar",
-      "Bandar Baru Salak Tinggi",
-      "KLIA",
-      "Putrajaya",
-      "Sepang"
-    ],
+    "description": "Tanah 3.52 ekar (1.4243 hektar / 153,310 sqft) di Jalan Jenderam - Salak Tinggi, Sepang, Selangor dijual pada RM2,900,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM19 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Jalan%20Jenderam%20-%20Salak%20Tinggi%2C%20Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-WtWbH6qJRJ8FpCuKCRPcpxO7INtPtfg=w1000",
       "https://lh3.googleusercontent.com/d/1lJ2TzbYdC4c3s-33WpLd5pcm8DcyrYCT=w1000",
@@ -6862,7 +5126,7 @@ window.LISTINGS = [
     "price_label": "RM1,250,000",
     "price_old": null,
     "land_area": "2.15 ekar",
-    "built_up": "2.15 ekar",
+    "built_up": "-",
     "tenure": "Leasehold",
     "sekatan": "Bumi Lot",
     "kategori": "Pertanian",
@@ -6874,37 +5138,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "2.15 ekar, RM1,250,000",
-      "Leasehold (tamat 2090), pemilik Bumi",
-      "Status pertanian, permukaan rata",
-      "Berdekatan Bypass Dengkil",
-      "Akses ELITE & MEX",
-      "Dekat Putrajaya, Cyberjaya, KLIA"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian 2.15 ekar berdekatan Bypass Dengkil untuk dijual pada RM1,250,000. Berstatus leasehold (tamat 2090) dengan pemilik Bumi dan status pertanian, permukaan tanah rata. Lokasi strategik berhampiran Bypass Dengkil dengan akses mudah ke ELITE Highway (Bandar Serenia), MEX Highway serta Putrajaya, Cyberjaya, KLIA dan KLIA2.",
-    "amenities": [
-      "2.15 ekar",
-      "Leasehold tamat 2090",
-      "Bumi owner",
-      "Permukaan rata",
-      "Status pertanian"
-    ],
-    "nearby": [
-      "Bypass Dengkil",
-      "ELITE Highway",
-      "MEX Highway",
-      "Putrajaya",
-      "Cyberjaya",
-      "KLIA"
-    ],
+    "description": "Tanah 2.15 ekar di Bypass Dengkil, Sepang, Selangor dijual pada RM1,250,000. Hakmilik: Leasehold. Sekatan: Bumi Lot. Anggaran RM13 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bypass%20Dengkil%2C%20Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1cilV6f-i41BvFNFq3B2S4yITLIXjUupK=w1000",
       "https://lh3.googleusercontent.com/d/1coxwKQDI6Q8mpzGx6bvkTszOtgjHArQT=w1000",
@@ -6926,7 +5170,7 @@ window.LISTINGS = [
     "price_label": "RM450,000",
     "price_old": null,
     "land_area": "Lot 1: 1.06 ekar (46,080 sqft) | Lot 2: 1.34 ekar (58,100 sqft)",
-    "built_up": "Lot 1: 1.06 ekar (46,080 sqft) | Lot 2: 1.34 ekar (58,100 sqft)",
+    "built_up": "-",
     "tenure": "Leasehold",
     "sekatan": "Melayu Reserved",
     "kategori": "Pertanian",
@@ -6938,36 +5182,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "2 lot: Lot 1 (1.06 ekar) & Lot 2 (1.34 ekar)",
-      "RM450,000 setiap lot",
-      "Leasehold 99 tahun, tamat 5 Mei 2104",
-      "Malay Reserved, kategori pertanian",
-      "Dengkil, Sepang",
-      "Boleh beli satu atau kedua-dua lot"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Dua lot tanah pertanian (Malay Reserved) di Dengkil, Sepang, Selangor untuk dijual. Lot 1 seluas 1.06 ekar (46,080 kaki persegi) dan Lot 2 seluas 1.34 ekar (58,100 kaki persegi), setiap satunya ditawarkan pada RM450,000. Kedua-dua lot berstatus leasehold 99 tahun yang tamat pada 5 Mei 2104, kategori pertanian dengan permukaan rata. Boleh dibeli secara berasingan atau kedua-dua lot untuk pegangan tanah yang lebih besar. Lokasi berhampiran Pantai Sepang, zon lapangan terbang dan pembangunan baru, dengan akses mudah ke ELITE dan Southville City.",
-    "amenities": [
-      "2 lot tanah",
-      "1.06 ekar + 1.34 ekar",
-      "Leasehold 99 tahun (tamat 2104)",
-      "Malay Reserved",
-      "Permukaan rata"
-    ],
-    "nearby": [
-      "Pantai Sepang",
-      "Southville City",
-      "ELITE Highway",
-      "Sepang",
-      "Dengkil"
-    ],
+    "description": "Tanah Lot 1: 1.06 ekar (46,080 sqft) | Lot 2: 1.34 ekar (58,100 sqft) di Dengkil, Sepang, Selangor dijual pada RM450,000. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM10 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Mukim%20Dengkil%2C%20Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kuV4yzroWNtmsox6EGTlS1bkMXe94P7Q=w1000",
       "https://lh3.googleusercontent.com/d/1NQFwE1HgWhRF474sVEO-RsV79_RNxvgW=w1000",
@@ -6986,7 +5211,7 @@ window.LISTINGS = [
     "price_label": "RM250,000",
     "price_old": null,
     "land_area": "4,929 sqft",
-    "built_up": "4,929 sqft",
+    "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Melayu Reserved",
     "kategori": "Bangunan",
@@ -6998,35 +5223,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "4,929 sqft, RM250,000",
-      "Freehold, Malay Reserved, status Bangunan",
-      "Lot kediaman Salak Tinggi, Sepang",
-      "Jalan ke lot sudah bertar",
-      "Mukim Dengkil, Daerah Sepang",
-      "Sesuai bina rumah sendiri"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah lot kediaman seluas 4,929 kaki persegi di Salak Tinggi, Sepang, untuk dijual pada RM250,000. Berstatus freehold dengan sekatan Malay Reserved dan status Bangunan. Jalan masuk ke lot sudah bertar, memudahkan kerja pembinaan. Lokasi di Mukim Dengkil, Daerah Sepang — sesuai untuk membina rumah impian anda.",
-    "amenities": [
-      "4,929 sqft",
-      "Freehold Malay Reserved",
-      "Status Bangunan",
-      "Jalan bertar",
-      "Lot kediaman"
-    ],
-    "nearby": [
-      "Salak Tinggi",
-      "Sepang",
-      "Dengkil",
-      "KLIA"
-    ],
+    "description": "Tanah 4,929 sqft di Salak Tinggi, Sepang, Selangor dijual pada RM250,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM51 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Salak%20Tinggi%2C%20Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/10Tet0x2hFgKm5iCx-_XJSUD11oInoNPP=w1000",
       "https://lh3.googleusercontent.com/d/177sTunF2dNFSwdxaFucTG2_HWV1bhtPR=w1000",
@@ -7047,7 +5254,7 @@ window.LISTINGS = [
     "price_label": "RM44,900,000",
     "price_old": null,
     "land_area": "41.22 ekar",
-    "built_up": "41.22 ekar",
+    "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Open",
     "kategori": "Pertanian",
@@ -7059,39 +5266,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "41.22 ekar freehold, RM44.9 juta (RM25/sqft)",
-      "Open title — pemilikan fleksibel",
-      "Zoning kediaman/komersial, status pertanian",
-      "Tanah kosong, sedikit berbukit",
-      "Potensi township / pembangunan bercampur",
-      "Dekat Southville City, Dengkil, Bangi"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah 41.22 ekar freehold open title di Bukit Unggul, Jalan Bangi-Dengkil (berhampiran Southville City), ditawarkan pada RM44.9 juta (RM25/sqft). Status semasa pertanian dengan zoning kediaman/komersial, tanah kosong sedikit berbukit. Berpotensi untuk pembangunan township, kediaman atau komersial — terletak dalam kawasan pertumbuhan pesat Bangi, Dengkil dan Cyberjaya. Akses mudah ke ELITE, LEKAS, PLUS serta Putrajaya dan Cyberjaya.",
-    "amenities": [
-      "41.22 ekar",
-      "Freehold open title",
-      "Zoning kediaman/komersial",
-      "Tanah kosong berbukit",
-      "RM25/sqft"
-    ],
-    "nearby": [
-      "Southville City",
-      "Dengkil",
-      "Bangi",
-      "Putrajaya",
-      "Cyberjaya",
-      "ELITE Highway",
-      "LEKAS",
-      "PLUS Highway"
-    ],
+    "description": "Tanah 41.22 ekar di Bukit Unggul, Jalan Bangi-Dengkil, Selangor dijual pada RM44,900,000. Hakmilik: Freehold. Sekatan: Open. Anggaran RM25 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bukit%20Unggul%2C%20Jalan%20Bangi-Dengkil%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xfQoyNra59B7WdWNG5D5a6m_IhpPzLRZ=w1000",
       "https://lh3.googleusercontent.com/d/1iNQNC7Z3Gz8hK6RAjmmbPr0bg5A63OWm=w1000",
@@ -7117,7 +5302,7 @@ window.LISTINGS = [
     "price_label": "RM1,983,960",
     "price_old": null,
     "land_area": "11,022 sqft",
-    "built_up": "11,022 sqft",
+    "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Open",
     "kategori": "Bangunan",
@@ -7129,36 +5314,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Lot banglo corner 11,022 sqft",
-      "RM1,983,960, freehold, hakmilik individu",
-      "Infra ready, pemandangan malam Putrajaya",
-      "Perdana Lakeview East, Cyberjaya",
-      "Jogging track, taman, tasik rekreasi",
-      "Kawalan keselamatan 24 jam"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Lot banglo corner seluas 11,022 kaki persegi di Perdana Lakeview East, Cyberjaya, untuk dijual pada RM1,983,960. Berstatus freehold dengan hakmilik individu dan infrastruktur sedia ada (infra ready). Menawarkan pemandangan malam yang indah menghadap Putrajaya. Kemudahan kawasan termasuk jogging track, taman berlandskap, taman permainan, tasik rekreasi dan kawalan keselamatan 24 jam — suasana kediaman eksklusif untuk membina rumah impian anda.",
-    "amenities": [
-      "11,022 sqft",
-      "Freehold hakmilik individu",
-      "Corner lot",
-      "Infra ready",
-      "Kawalan 24 jam"
-    ],
-    "nearby": [
-      "Perdana Lakeview East",
-      "Cyberjaya",
-      "Putrajaya",
-      "Jogging track",
-      "Tasik rekreasi"
-    ],
+    "description": "Tanah 11,022 sqft di Perdana Lakeview East, Cyberjaya, Selangor dijual pada RM1,983,960. Hakmilik: Freehold. Sekatan: Open. Anggaran RM180 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Perdana%20Lakeview%20East%2C%20Cyberjaya%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1GLFvRDT2zPDOKqLh_lMu_ZT97_lyL9Fr=w1000",
       "https://lh3.googleusercontent.com/d/1541hFck0Pdiw8QFrvFUjkX--JYihSUdH=w1000",
@@ -7184,7 +5350,7 @@ window.LISTINGS = [
     "price_label": "RM888,320",
     "price_old": null,
     "land_area": "11,104 sqft",
-    "built_up": "11,104 sqft",
+    "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Non-Bumi",
     "kategori": "Bangunan",
@@ -7196,37 +5362,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "11,104 sqft hilltop, RM888,320 (RM80/sqft)",
-      "Freehold, hakmilik individu, non-Bumi",
-      "Tanah rata 100% — tiada kos meratakan",
-      "Pemandangan panorama 270 darjah",
-      "Phase 6 Bandar Country Homes, Rawang",
-      "Gated & guarded, kejiranan eksklusif"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Lot banglo hilltop seluas 11,104 kaki persegi di Phase 6, Bandar Country Homes, Rawang — lokasi premium yang asalnya disimpan pemaju untuk kedudukan terbaiknya. Ditawarkan pada RM888,320 (RM80/sqft, boleh dirunding). Berstatus freehold dengan hakmilik individu dan non-Bumi. Tanah 100% rata di puncak bukit (tiada kos meratakan yang mahal), menghadap timur untuk cahaya matahari pagi. Menawarkan pemandangan panorama 270 darjah yang menghadap banglo mewah dan tasik di kejauhan. Kawasan kejiranan eksklusif berpagar dan berkawal (gated & guarded), berhampiran AEON Mall Rawang dan Anggun City dengan akses ke PLUS, LATAR dan GCE.",
-    "amenities": [
-      "11,104 sqft",
-      "Freehold hakmilik individu",
-      "Tanah rata 100%",
-      "Pemandangan 270 darjah",
-      "Gated & guarded"
-    ],
-    "nearby": [
-      "AEON Mall Rawang",
-      "Anggun City",
-      "Bandar Country Homes",
-      "PLUS Highway",
-      "LATAR",
-      "GCE"
-    ],
+    "description": "Tanah 11,104 sqft di Phase 6, Bandar Country Homes, Rawang, Selangor dijual pada RM888,320. Hakmilik: Freehold. Sekatan: Non-Bumi. Anggaran RM80 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Phase%206%2C%20Bandar%20Country%20Homes%2C%20Rawang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bGTg37VEJDgfuoVSJf7tW43v70LiDTnj=w1000",
       "https://lh3.googleusercontent.com/d/1uiDIr4h0R1I2xmNZIHlurdjWwf-KJlhn=w1000",
@@ -7245,7 +5391,7 @@ window.LISTINGS = [
     "price_label": "RM11,505,000",
     "price_old": null,
     "land_area": "4.4537 hektar (~11 ekar)",
-    "built_up": "4.4537 hektar (~11 ekar)",
+    "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Non-Bumi",
     "kategori": "Pertanian",
@@ -7257,38 +5403,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "~11 ekar (4.4537 hektar), RM11,505,000 (RM24/sqft)",
-      "Freehold, non-Bumi",
-      "Intermediate / high ground",
-      "Jenderam Hulu, Dengkil",
-      "Akses ELITE & Dengkil Bypass",
-      "Dekat KLIA, Putrajaya"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian seluas 4.4537 hektar (~11 ekar) di Jenderam Hulu, Dengkil, Selangor, ditawarkan pada RM11,505,000 (kira-kira RM24/sqft). Berstatus freehold non-Bumi, jenis lot intermediate/high ground. Lokasi strategik berhampiran Sekolah Kebangsaan Jenderam Hulu (3.5km), Hospital Putrajaya (10.5km), UiTM Dengkil (6km) dan ERL Salak Tinggi (8.5km). Akses mudah ke ELITE Highway (Serenia City Toll), Dengkil Bypass dan Putrajaya-Cyberjaya Expressway, serta KLIA/KLIA2 (15km).",
-    "amenities": [
-      "~11 ekar",
-      "Freehold non-Bumi",
-      "Intermediate/high ground",
-      "RM24/sqft"
-    ],
-    "nearby": [
-      "SK Jenderam Hulu",
-      "Hospital Putrajaya",
-      "UiTM Dengkil",
-      "ERL Salak Tinggi",
-      "KIP Mall Kota Warisan",
-      "ELITE Highway",
-      "Dengkil Bypass",
-      "KLIA"
-    ],
+    "description": "Tanah 4.4537 hektar (~11 ekar) di Jenderam Hulu, Dengkil, Selangor dijual pada RM11,505,000. Hakmilik: Freehold. Sekatan: Non-Bumi. Anggaran RM24 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Jenderam%20Hulu%2C%20Dengkil%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1eloA-8vo5qtzHW3I7-4nVZHNWh6zV-rO=w1000",
       "https://lh3.googleusercontent.com/d/1VaVRpilTheFa4xiEPTY0GbO1fvCgZmA3=w1000",
@@ -7314,7 +5439,7 @@ window.LISTINGS = [
     "price_label": "RM799,000",
     "price_old": null,
     "land_area": "12,015 sqft",
-    "built_up": "12,015 sqft",
+    "built_up": "-",
     "tenure": "Leasehold",
     "sekatan": "Tidak dinyatakan",
     "kategori": "Bangunan",
@@ -7326,39 +5451,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "12,015 sqft, RM799,000 (RM66.5/sqft)",
-      "Lot banglo terbesar & termurah Bandar Kajang",
-      "Leasehold (tamat 13 Dis 2094)",
-      "Kampung Sungai Kantan, Kajang",
-      "Tanah lapang (vacant lot), penggunaan kediaman",
-      "Dekat MRT Stadium Kajang"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Lot banglo seluas 12,015 kaki persegi di Jalan Melati 2, Kampung Sungai Kantan, Kajang — lot banglo terbesar dan termurah di Bandar Kajang, ditawarkan pada RM799,000 (RM66.5/sqft). Berstatus leasehold sehingga 13 Disember 2094, penggunaan tanah kediaman (tanah lapang/vacant lot). Lokasi strategik berhampiran SRA Sungai Kantan (1.2km), SK Sungai Kantan (1.5km), Lotus's Kajang, Plaza Metro Kajang, Hospital Pakar KPJ Kajang, Hospital Kajang dan Stesen MRT Stadium Kajang.",
-    "amenities": [
-      "12,015 sqft",
-      "Leasehold (tamat 2094)",
-      "Vacant lot",
-      "Penggunaan kediaman",
-      "RM66.5/sqft"
-    ],
-    "nearby": [
-      "SRA Sungai Kantan",
-      "SK Sungai Kantan",
-      "Lotus's Kajang",
-      "Plaza Metro Kajang",
-      "Metro Point",
-      "Hospital Pakar KPJ Kajang",
-      "Hospital Kajang",
-      "MRT Stadium Kajang"
-    ],
+    "description": "Tanah 12,015 sqft di Jalan Melati 2, Kampung Sungai Kantan, Kajang, Selangor dijual pada RM799,000. Hakmilik: Leasehold. Anggaran RM67 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Jalan%20Melati%202%2C%20Kampung%20Sungai%20Kantan%2C%20Kajang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1XNr16GZiyY9aYU9k1ojjgjjqkz2XZzA9=w1000",
       "https://lh3.googleusercontent.com/d/1IWUhic2DETVXCro3JmIXpSIxvdMC2eYG=w1000",
@@ -7383,7 +5486,7 @@ window.LISTINGS = [
     "price_label": "RM270,000",
     "price_old": null,
     "land_area": "0.25 ekar",
-    "built_up": "0.25 ekar",
+    "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Tidak dinyatakan",
     "kategori": "Pertanian",
@@ -7395,37 +5498,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "1/4 ekar, RM270,000",
-      "Freehold, kategori pertanian, zoning perumahan",
-      "Batu 12, Sungai Serai, Jalan Hulu Langat",
-      "Dekat jalan utama Hulu Langat",
-      "30 minit ke Ampang, akses SUKE",
-      "Berdekatan Sungai Congkak & Gabai"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah 1/4 ekar di Batu 12, Sungai Serai, Jalan Hulu Langat, Selangor, untuk dijual pada RM270,000. Berstatus freehold, kategori tanah pertanian dengan zoning perumahan. Lokasi berhampiran jalan utama Hulu Langat, hanya 30 minit ke Ampang dengan akses ke SUKE Highway. Berdekatan SK Sungai Serai, Sungai Congkak, Sungai Gabai dan Hot Spring Sungai Serai — suasana tenang berhampiran alam semula jadi.",
-    "amenities": [
-      "1/4 ekar",
-      "Freehold",
-      "Kategori pertanian",
-      "Zoning perumahan",
-      "Dekat jalan utama"
-    ],
-    "nearby": [
-      "SK Sungai Serai",
-      "Sungai Congkak",
-      "Sungai Gabai",
-      "Hot Spring Sungai Serai",
-      "Ampang",
-      "SUKE Highway"
-    ],
+    "description": "Tanah 0.25 ekar di Batu 12, Sungai Serai, Jalan Hulu Langat, Selangor dijual pada RM270,000. Hakmilik: Freehold. Anggaran RM25 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Batu%2012%2C%20Sungai%20Serai%2C%20Jalan%20Hulu%20Langat%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Kpkhma9v815qIWB6pbR87-ZpFs_GtMxU=w1000",
       "https://lh3.googleusercontent.com/d/11uqCmbvMN4gIERr3PnzGSEaxtwHPWqcV=w1000",
@@ -7446,7 +5529,7 @@ window.LISTINGS = [
     "price_label": "RM7,200,000",
     "price_old": null,
     "land_area": "~6.18 ekar (269,528 sqft)",
-    "built_up": "~6.18 ekar (269,528 sqft)",
+    "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Open",
     "kategori": "Pertanian",
@@ -7458,34 +5541,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "~6.18 ekar (269,528 sqft), RM7.2 juta",
-      "Freehold open title",
-      "Kategori pertanian, bentuk segi tiga",
-      "Menghadap jalan utama",
-      "Air & infra berdekatan sedia ada",
-      "Dekat Putrajaya, Sg Merab"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah 6.18 ekar (269,528 kaki persegi) open title di Sungai Merab, untuk dijual pada RM7.2 juta — potensi pembangunan berhampiran Putrajaya. Berstatus freehold dengan kategori pertanian, bentuk tanah segi tiga, menghadap jalan utama. Air dan infrastruktur berdekatan sudah sedia ada. Lokasi berhampiran Coffee Village dan Putrajaya.",
-    "amenities": [
-      "~6.18 ekar",
-      "Freehold open title",
-      "Bentuk segi tiga",
-      "Menghadap jalan utama",
-      "Infra sedia ada"
-    ],
-    "nearby": [
-      "Coffee Village",
-      "Putrajaya",
-      "Sungai Merab"
-    ],
+    "description": "Tanah ~6.18 ekar (269,528 sqft) di Sungai Merab, Selangor dijual pada RM7,200,000. Hakmilik: Freehold. Sekatan: Open. Anggaran RM27 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Sungai%20Merab%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-13",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19Ju8IBuldjuBHCttEKPBTZH8ugTsb6cA=w1000",
       "https://lh3.googleusercontent.com/d/1GFQW4dVEDKwVjFKmR8OZL3hYMTy4Oh9E=w1000",
@@ -7532,7 +5598,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-14",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1EAp-YP6ZaYEHUwfu8H5ROS3yhKRmFEtH=w1000",
       "https://lh3.googleusercontent.com/d/1okuujogF6PkHG3RPbEsivA9DRjAJ5flR=w1000",
@@ -7576,7 +5642,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-14",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-BM3TK9YoGLI7PYXCYhE6k6ML_V3zHdQ=w1000",
       "https://lh3.googleusercontent.com/d/118WXrsZCb2B53jRhhVGUpMsgePGVuOoy=w1000",
@@ -7613,7 +5679,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 15,000 sqft di Jalan Peel, Cheras, Kuala Lumpur dijual pada RM15,000. Hakmilik: Tidak pasti. Sekatan: Tidak dinyatakan. Anggaran RM1 sekaki persegi.",
+    "description": "Tanah 15,000 sqft di Jalan Peel, Cheras, Kuala Lumpur ditawarkan untuk disewa pada RM15,000 / bulan. Hakmilik: Tidak pasti. Anggaran RM1 sekaki persegi sebulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Jalan%20Peel%2C%20Cheras%2C%20Kuala%20Lumpur",
@@ -7621,7 +5687,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-14",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1R9NQPw2uW-B3HigZufYc0GTnLLTpQh18=w1000",
       "https://lh3.googleusercontent.com/d/1KK9sc265YTxmdU2ghSP2zp8UwZ3-Kw1g=w1000",
@@ -7656,7 +5722,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 30 ekar (1,306,800 sqft) di Jalan Kebun, Klang, Selangor dijual pada RM84,000. Hakmilik: Tidak pasti. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 30 ekar (1,306,800 sqft) di Jalan Kebun, Klang, Selangor ditawarkan untuk disewa pada RM84,000 / bulan. Hakmilik: Tidak pasti.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Jalan%20Kebun%2C%20Klang%2C%20Selangor",
@@ -7664,7 +5730,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-14",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1qairqDP_Fqj-UpAFq4Ku34Up8v_idj9j=w1000",
       "https://lh3.googleusercontent.com/d/10wceZ0jHX3SP-kfmAUPjiP3m2tCQoHG0=w1000",
@@ -7706,7 +5772,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-14",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kxy0lQSvfhfDvK1I7JT2MXU2KMKl3ikG=w1000",
       "https://lh3.googleusercontent.com/d/11lcFkzhEXlVTmlCtNGx_p-yGn5x7fGUR=w1000",
@@ -7749,7 +5815,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-14",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1va4xKFxAvOr1J3sNJFgyyRaF6KHGlEFl=w1000",
       "https://lh3.googleusercontent.com/d/1Z2MaPbmGOxPoFebslFsq5ImKbwm5PMHY=w1000",
@@ -7798,7 +5864,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-14",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1AU448D_gTiXXAXoL8eKtI0WKvXgkB84W=w1000",
       "https://lh3.googleusercontent.com/d/1lPzZKV6hHOsxkuzXLkrJHVGxLlIHbvVp=w1000",
@@ -7849,7 +5915,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-14",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/100b3iLHnirmgcFLJHWV1h3XZQ__FmM89=w1000",
       "https://lh3.googleusercontent.com/d/1Ek1PgvOUfGJfmgJN6JwbJVajzusoYs7S=w1000",
@@ -7893,7 +5959,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-14",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/16MKY1ffJ2slLd5CheYTCeOlauaHFsz1L=w1000",
       "https://lh3.googleusercontent.com/d/1XtyE6muljpkrbvbJSmJ5y5a1RzZG36fT=w1000",
@@ -7938,7 +6004,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-14",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xfruoDr9vTPDLh3k1FOvwB102ernfmJa=w1000",
       "https://lh3.googleusercontent.com/d/1mXiQa5Z-ogsiN9ILaFsIMQPSZY5xuUDi=w1000",
@@ -7986,7 +6052,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-14",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xAbYcp6cDTOdI2lE3DDYR8HkVgJQ4Vpl=w1000",
       "https://lh3.googleusercontent.com/d/1e8KnQfo8xUTkcAywIxPYM0pWPUTOYZ-M=w1000",
@@ -8037,7 +6103,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-14",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19Bw20oAOGvbXMwJF_nOP745rXU1L3Nlx=w1000",
       "https://lh3.googleusercontent.com/d/1UxF_zUmQ2g2DYDuNYxx9eR9STmYv0eJX=w1000",
@@ -8088,7 +6154,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-14",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kmUWeVGvmPPsxld5Sf5xr3tqNPnAihn0=w1000",
       "https://lh3.googleusercontent.com/d/1wzMSE7FY1RLs7xj68ptHvu1JXGXy_okf=w1000",
@@ -8135,7 +6201,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1yJexYLMYzYeSzAul2rFZKarXoiOOWZXH=w1000",
       "https://lh3.googleusercontent.com/d/1eC-O-YRPyTekuucYbAzshHVjbLC-d8RJ=w1000",
@@ -8183,7 +6249,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bBtOd7wSYDVB3iJk5jkrfRYZQHLQc8vA=w1000",
       "https://lh3.googleusercontent.com/d/1i84I7zkPTCWTuPlC808hsAk21qXSX9nY=w1000",
@@ -8231,7 +6297,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kLDaQD_xRUNeLvXg0u7cDui0_iQOfZzj=w1000",
       "https://lh3.googleusercontent.com/d/1-DkH-LNGMzXHX7fb7X1kEN0x2CfdW1lQ=w1000",
@@ -8279,7 +6345,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1TcL9vj1EiswEYHhfB_uvJeu384KmAje-=w1000",
       "https://lh3.googleusercontent.com/d/16tWmJZQWYmgeSfgqwg6CYQZ_h_QYYHnn=w1000",
@@ -8327,7 +6393,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1gEU0a5uNE1RQC0aohGPrTLjJO-Vm1YYJ=w1000",
       "https://lh3.googleusercontent.com/d/1vExyF2DwEdTERABDuj1WDwlLu58rqn3D=w1000",
@@ -8375,7 +6441,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1sJBiNS-UUR7BKd02-4V8UgTN8dsmIKMl=w1000",
       "https://lh3.googleusercontent.com/d/1BdYto4bEBcF5wziL1DLYaD3ak-iaHgeU=w1000",
@@ -8423,7 +6489,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1JIs4mIGRH80piUsHXnas6o9zIHbY2PHf=w1000",
       "https://lh3.googleusercontent.com/d/1PP26X8kOeeSl5DcoXymWjoC4Cy8JMXvd=w1000",
@@ -8471,7 +6537,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Q_XzhuSPN_lnFrlwtWLhvNd0sBqyx9BB=w1000",
       "https://lh3.googleusercontent.com/d/1UPkcYBShw-CjEGbKXHhNCY8oFTV0RNK2=w1000",
@@ -8519,7 +6585,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/128-_xyrz1p-dZjBM2w7j36bsg4fK-zwz=w1000",
       "https://lh3.googleusercontent.com/d/1zC0BFRrEK-1AFh3VZZMjRZkUYdBhx61k=w1000",
@@ -8567,7 +6633,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ocA0_R3F0tUBL0hGs69bTidWbejn6tz0=w1000",
       "https://lh3.googleusercontent.com/d/1ip7NdHZq0EpXdXTaUtYzLV8ItZ0uZtt-=w1000",
@@ -8615,7 +6681,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jBRb_9TndtOvgxF2U5g-bmCIEyDquioJ=w1000",
       "https://lh3.googleusercontent.com/d/1Cxy9tBLz0p3fkgmCMxXgp9v9OiquNEYz=w1000",
@@ -8663,7 +6729,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/12xT2FYOTvsnNe4WijgMtxFMNrA51Dx3M=w1000",
       "https://lh3.googleusercontent.com/d/1_FEwapb98oNkhk7vBwFjcp8XTmymJxTn=w1000",
@@ -8711,7 +6777,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ubTMHG1jl0jPjfeuVGVaL3xOO-SGfCAk=w1000",
       "https://lh3.googleusercontent.com/d/1KnASHYflEEphFBLQ_SF5bZs9qopVR7my=w1000",
@@ -8759,7 +6825,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ZvD5awV2uwCcSY_9dGB3_AoZH7yNQf-T=w1000",
       "https://lh3.googleusercontent.com/d/1gbTw8CgJM5PBTaOha4WdwK6m-jBWok4G=w1000",
@@ -8807,7 +6873,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19keA8e6i7YhcmeRpr-hM4Y6o0S2fYLIV=w1000",
       "https://lh3.googleusercontent.com/d/1x5qCAXFmckUUQkI0eKWtfy44Yq_uxRMC=w1000",
@@ -8855,7 +6921,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1HFValxrWShUuNgkm7h3TB5ENuvYzGFEG=w1000",
       "https://lh3.googleusercontent.com/d/1UZ4VaMNBHKwxgV7Z0G1JP9q18qwLs23-=w1000",
@@ -8903,7 +6969,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1uAUUkW20ne0hYWYzQZH6Ml4kJtrxN3bh=w1000",
       "https://lh3.googleusercontent.com/d/1lWg0QoI-vaE4sZy9by_Ez1ZKaYEi12XQ=w1000",
@@ -8951,7 +7017,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1cocU133cZcYYe2CAExZXKEIgv2slkSYz=w1000",
       "https://lh3.googleusercontent.com/d/15iJFp7QPQ3Ga3mwLXsrHsgvs4Zkhxhfx=w1000",
@@ -8999,7 +7065,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/14EprA-CZndeuouJhyJMUwRaJhlTHUnjI=w1000",
       "https://lh3.googleusercontent.com/d/1erfn6m7XLgj9sFAmo_1BW49l65lVLpWW=w1000",
@@ -9047,7 +7113,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/18zu76g-TItKyQtnpgJWww6JbKo60ZDdx=w1000",
       "https://lh3.googleusercontent.com/d/1zHhseRK6FXkoSum89edvf-M8y2aP9yGk=w1000",
@@ -9095,7 +7161,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1sP4qZK3bxAIAKMYbOQlgDrnSyGHBiy9X=w1000",
       "https://lh3.googleusercontent.com/d/1kd2zZfc4ckVbY9mr0zPEbraGeGDuTdn3=w1000",
@@ -9143,7 +7209,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1CehIF1J-2m8pdz10GBgZG2cpJG85pRxH=w1000",
       "https://lh3.googleusercontent.com/d/17AKC8VpAbc5OdPptqNsf-nSpvGSn6lGP=w1000",
@@ -9191,7 +7257,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1aHEjK8eU5ETRCuqNA0CagHQ4wp_Kefly=w1000",
       "https://lh3.googleusercontent.com/d/1SHIWbelU4oLoFpXt6G668hXuQ-raRh2o=w1000",
@@ -9239,7 +7305,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1o9rmukHrJj0i0liVtQlKl0Nib-P20FPn=w1000",
       "https://lh3.googleusercontent.com/d/1i2tff89hBU-Mgc_XM_MvNIgCZyxjE_cp=w1000",
@@ -9287,7 +7353,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1W9WaJlNmj4M_n3SLdPhTd1TYhhQ7ssVV=w1000",
       "https://lh3.googleusercontent.com/d/1PI2saUdNJsuO0xuYXD5Rvgs8kGWEBQB7=w1000",
@@ -9335,7 +7401,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1m9dulqPOHNlkrw8REWw5yESs0A8yb-kG=w1000",
       "https://lh3.googleusercontent.com/d/1URO9V2UwdIWiLN1_30x3aWKoeB54qBnc=w1000",
@@ -9383,7 +7449,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19iKxqvg6oen4D_1ZKFa8j78xocXM9-s9=w1000",
       "https://lh3.googleusercontent.com/d/1ljcux2rvCDx8HQWSpP1WS2q97nsxH9-2=w1000",
@@ -9423,7 +7489,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 6,738 sqft di Kampung Baru Lanjut, Sepang, Selangor dijual pada RM370,590. Hakmilik: Leasehold. Sekatan: Tidak dinyatakan. Anggaran RM55 sekaki persegi.",
+    "description": "Tanah 6,738 sqft di Kampung Baru Lanjut, Sepang, Selangor dijual pada RM370,590. Hakmilik: Leasehold. Anggaran RM55 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Kampung%20Baru%20Lanjut%2C%20Sepang%2C%20Selangor",
@@ -9431,7 +7497,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1TzS4HFYKCX0dso0CeMNx_u_4AtOTcT1Y=w1000",
       "https://lh3.googleusercontent.com/d/1clakz6YAGZAI9GBNVb7WUbAaj-wNw1m8=w1000",
@@ -9479,7 +7545,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Qk0Q5rd4dUMQZaoPNm0xRw96PFMHQsIq=w1000",
       "https://lh3.googleusercontent.com/d/1QsvHykhrinKj86hH9iPX8m7MaFZA_Xyj=w1000",
@@ -9527,7 +7593,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1rOGRvu6BuCLEla153ID5K_CtUPx4mKZc=w1000",
       "https://lh3.googleusercontent.com/d/1jUGYpy3eNYd1wZ6SXW5UdndPblEFDQbu=w1000",
@@ -9567,7 +7633,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah ~170,155 sqft (3.9 ekar) di Jalan Meranti, Sungai Merab Luar, Kajang, Selangor dijual pada RM3,062,790. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan. Anggaran RM18 sekaki persegi.",
+    "description": "Tanah ~170,155 sqft (3.9 ekar) di Jalan Meranti, Sungai Merab Luar, Kajang, Selangor dijual pada RM3,062,790. Anggaran RM18 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Jalan%20Meranti%2C%20Sungai%20Merab%20Luar%2C%20Kajang%2C%20Selangor",
@@ -9575,7 +7641,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/16aNmNRdmM4G8kM-qD6jk3LPjCEiIYGhE=w1000",
       "https://lh3.googleusercontent.com/d/1Ka7PqSGxyOV0ccghMXXurZIc3zIpCgsl=w1000",
@@ -9623,7 +7689,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1SKwAS5Duz3t3KNjyBfhUqEWUYCO8eP_V=w1000",
       "https://lh3.googleusercontent.com/d/1X3_2Lf-e88ft6P1kGOYPQndBAvn6McPO=w1000",
@@ -9663,7 +7729,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 5,414 sqft di Jalan Meranti, Sungai Merab Luar, Kajang, Selangor dijual pada RM362,738. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan. Anggaran RM67 sekaki persegi.",
+    "description": "Tanah 5,414 sqft di Jalan Meranti, Sungai Merab Luar, Kajang, Selangor dijual pada RM362,738. Anggaran RM67 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Jalan%20Meranti%2C%20Sungai%20Merab%20Luar%2C%20Kajang%2C%20Selangor",
@@ -9671,7 +7737,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1JOJAwVvOZcRSpDE6mHz6BCQ5Bnyi7Uyx=w1000",
       "https://lh3.googleusercontent.com/d/11Gz-zAM7j2c1uj06pbdfykcZGk_3n_rk=w1000",
@@ -9719,7 +7785,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1DSh6QYecg1F1wUdVUwJk1208cI2B6feM=w1000",
       "https://lh3.googleusercontent.com/d/1kuowoFcTbbpI1k6fXiSo5SlurBS1BaAl=w1000",
@@ -9767,7 +7833,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/18RIhShdByz6yjGKHWRtJ_JuoMw-kQF9T=w1000",
       "https://lh3.googleusercontent.com/d/1vvqQjdLfaPGrMFzyXiyIUwNkVeAaVTo-=w1000",
@@ -9815,7 +7881,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1GhFLhjZegOg-Hhlvbi75roo4tftOtCIN=w1000",
       "https://lh3.googleusercontent.com/d/17LIcwLDl_1-OUCZrynxDhjFy5NtonDtJ=w1000",
@@ -9856,7 +7922,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bEYBtcaQ79RnoEvxZ8jsMMHinhvlkvtf=w1000",
       "https://lh3.googleusercontent.com/d/1SYc2MbW72Y6rL0vwcKQGWrA38dRHqzJ_=w1000",
@@ -9903,7 +7969,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1L-HR3zXP22MAumimnDoebWwoOSfghBk0=w1000",
       "https://lh3.googleusercontent.com/d/1HEVgTe2GhUyhU-wYLEYwat1HDzf64UHe=w1000",
@@ -9943,7 +8009,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 3.53 ekar (154,085 sqft) di Parit Ismail, Mukim Sungai Pinggan, Pontian, Johor dijual pada RM1,500,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM10 sekaki persegi.",
+    "description": "Tanah 3.53 ekar (154,085 sqft) di Parit Ismail, Mukim Sungai Pinggan, Pontian, Johor dijual pada RM1,500,000. Hakmilik: Freehold. Anggaran RM10 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=1.698519,103.286825",
@@ -9951,7 +8017,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1phVjxTIIXLJBwx5TP_r4wI0dx6UNWgM9=w1000",
       "https://lh3.googleusercontent.com/d/1F7YUBvkVTajyZNZB3j_SOtUXOYgJ_04s=w1000",
@@ -9988,7 +8054,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 2.78 ekar (121,065 sqft) di Jalan Sentosa, Jenderam Hulu, Sepang, Selangor dijual pada RM4,200,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM35 sekaki persegi.",
+    "description": "Tanah 2.78 ekar (121,065 sqft) di Jalan Sentosa, Jenderam Hulu, Sepang, Selangor dijual pada RM4,200,000. Hakmilik: Freehold. Anggaran RM35 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Jalan%20Sentosa%2C%20Jenderam%20Hulu%2C%20Sepang%2C%20Selangor",
@@ -9996,7 +8062,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1aMZ14FNReFkO_zz4ahTErhliiEo-VDNO=w1000",
       "https://lh3.googleusercontent.com/d/19jBzwgz7Wo1h1_Cj-ED5hqofok0PLan3=w1000",
@@ -10044,7 +8110,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1FGPN-xTZTIfCQzVbNtwDG4jdqwlNHP3J=w1000",
       "https://lh3.googleusercontent.com/d/1UYCryqbXKMD507oSiERx0r9eOihpbSEz=w1000",
@@ -10092,7 +8158,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1SJfp1GY5gGZkzFUcxSJc0NiwC2UttZj1=w1000",
       "https://lh3.googleusercontent.com/d/1-eEX9JUsG51Gs8l7V1omQTg389dglGZX=w1000",
@@ -10132,7 +8198,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 2.0 ekar (87,120 sqft) di Kg Sg Pening-Pening, Mukim Ulu Semenyih, Selangor dijual pada RM650,000. Hakmilik: Leasehold. Sekatan: Tidak dinyatakan. Anggaran RM7 sekaki persegi.",
+    "description": "Tanah 2.0 ekar (87,120 sqft) di Kg Sg Pening-Pening, Mukim Ulu Semenyih, Selangor dijual pada RM650,000. Hakmilik: Leasehold. Anggaran RM7 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Kg%20Sg%20Pening-Pening%2C%20Mukim%20Ulu%20Semenyih%2C%20Selangor",
@@ -10140,7 +8206,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1d6wpFg1HwbSfVJwxoxbF5CZ4gm_K0aqm=w1000",
       "https://lh3.googleusercontent.com/d/15JXQEdRR754T3ILSlBz3zcoXdGnyxUCY=w1000",
@@ -10183,7 +8249,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1WyIzjzGOceCQ0nlVc_fB7oUaE2ndtqT8=w1000",
       "https://lh3.googleusercontent.com/d/1D7WUTjQUcaZAQeeEbD3vnd8Arq96pL0z=w1000",
@@ -10216,7 +8282,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 21.272 ekar (926,608 sqft) di Batu Ferringhi, Penang dijual pada RM75,000,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM81 sekaki persegi.",
+    "description": "Tanah 21.272 ekar (926,608 sqft) di Batu Ferringhi, Penang dijual pada RM75,000,000. Hakmilik: Freehold. Anggaran RM81 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Batu%20Ferringhi%2C%20Penang",
@@ -10224,7 +8290,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-15",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Ym-O_xMEaztM6PmdiYrv6abW_JZU6-6-=w1000",
       "https://lh3.googleusercontent.com/d/1xF20XH5s4-ZW0kNeiX4ZFwtXicwl9135=w1000",
@@ -10264,7 +8330,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Komersial 4 ekar (1.618 hektar) di Jalan Felcra Semungkis, Sg Gahal, Batu 14 Hulu Langat, Selangor dijual pada RM17,800,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM102 sekaki persegi.",
+    "description": "Komersial 4 ekar (1.618 hektar) di Jalan Felcra Semungkis, Sg Gahal, Batu 14 Hulu Langat, Selangor dijual pada RM17,800,000. Hakmilik: Freehold. Anggaran RM102 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Jalan%20Felcra%20Semungkis%2C%20Sg%20Gahal%2C%20Batu%2014%20Hulu%20Langat%2C%20Selangor",
@@ -10272,7 +8338,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1zf1HGrLELlODg3vVenf3jJ3GsxutNOue=w1000",
       "https://lh3.googleusercontent.com/d/1FQCD4Z5-jzG3L597sU9whEtb5xl1aEQE=w1000",
@@ -10320,7 +8386,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Lp8jYRgn32Bq_fBlyOJqjnkqNAU4NRlA=w1000",
       "https://lh3.googleusercontent.com/d/1Etv7VANrfpos1xbYvcX909Qirlqx3TGA=w1000",
@@ -10357,7 +8423,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Komersial Built-up ~50,000 sqft di Kajang, Selangor dijual pada RM35,000. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan. Anggaran RM1 sekaki persegi.",
+    "description": "Komersial Built-up ~50,000 sqft di Kajang, Selangor ditawarkan untuk disewa pada RM35,000 / bulan. Anggaran RM1 sekaki persegi sebulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Kajang%2C%20Selangor",
@@ -10365,7 +8431,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1mNyTTDSFyhvyodyCoKYl4HcbQ_oqTj45=w1000",
       "https://lh3.googleusercontent.com/d/1Oi0oMqixPQhtHn9xn6tNDGpzKUfe3Qfn=w1000",
@@ -10413,7 +8479,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jI6OaPnrSLHL-4UwDlFJrK6x6P8_Eeg1=w1000",
       "https://lh3.googleusercontent.com/d/1h37F9L-MW22KSkiTjdQKhI6Lw6kbJONw=w1000",
@@ -10461,7 +8527,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/12ULO9siJnilKLUVDviDog6AvF9ITbp2U=w1000",
       "https://lh3.googleusercontent.com/d/1Sg26VjYaoWrzJYW0xi1tC6fAzkqRZQoG=w1000",
@@ -10509,7 +8575,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1dVgr3iJ8Uq6XbqvGQ-ehh61ch3qYe6wW=w1000",
       "https://lh3.googleusercontent.com/d/1Q3QQGZ_N_PA6O1Mah0MlsTRYXHU2db9S=w1000",
@@ -10543,7 +8609,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Kilang Built-up ~56,000 sqft | Land 16,558 sqft/blok di Taman Perindustrian Meranti Jaya, Puchong, Selangor dijual pada RM60,000. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan. Anggaran RM1 sekaki persegi.",
+    "description": "Kilang Built-up ~56,000 sqft | Land 16,558 sqft/blok di Taman Perindustrian Meranti Jaya, Puchong, Selangor ditawarkan untuk disewa pada RM60,000 / bulan. Anggaran RM1 sekaki persegi sebulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Taman%20Perindustrian%20Meranti%20Jaya%2C%20Puchong%2C%20Selangor",
@@ -10551,7 +8617,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1qZFUq5HMu_RaYcwXcZkaj1AvEPUvgm__=w1000",
       "https://lh3.googleusercontent.com/d/1HjPlZYcSzogqSAOu1zrq2mlEH0OeEOKa=w1000",
@@ -10591,7 +8657,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Kilang Built-up 26,425 sqft | Land 43,560 sqft di Hicom Industrial Estate, Shah Alam, Selangor dijual pada RM55,000. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan. Anggaran RM2 sekaki persegi.",
+    "description": "Kilang Built-up 26,425 sqft | Land 43,560 sqft di Hicom Industrial Estate, Shah Alam, Selangor ditawarkan untuk disewa pada RM55,000 / bulan. Anggaran RM2 sekaki persegi sebulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Hicom%20Industrial%20Estate%2C%20Shah%20Alam%2C%20Selangor",
@@ -10599,7 +8665,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/13JeeVuUwmBlDYmyoBqmPIC45Ff9X3sH0=w1000",
       "https://lh3.googleusercontent.com/d/1Pi8An3ZhHwTx9KjSvUPUKe3Ke98GTmUt=w1000",
@@ -10639,7 +8705,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Kedai Built-up 1,080 sqft (18 x 60) di Serene Square, Serene Heights, Semenyih, Selangor dijual pada RM4,000. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan. Anggaran RM4 sekaki persegi.",
+    "description": "Kedai Built-up 1,080 sqft (18 x 60) di Serene Square, Serene Heights, Semenyih, Selangor ditawarkan untuk disewa pada RM4,000 / bulan. Anggaran RM4 sekaki persegi sebulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Serene%20Square%2C%20Serene%20Heights%2C%20Semenyih%2C%20Selangor",
@@ -10647,7 +8713,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1JUMqn4ORrGYk7GX1ZqO8tnwDxUMLVXcs=w1000",
       "https://lh3.googleusercontent.com/d/1OtJks3yUbPDssnnVIAaZiaUr75ihFTp_=w1000",
@@ -10687,7 +8753,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 2 ekar (untuk disewa) di Kampung Sesapan Kelubi, Beranang, Selangor dijual pada RM6,000. Hakmilik: Freehold. Sekatan: Open.",
+    "description": "Tanah 2 ekar (untuk disewa) di Kampung Sesapan Kelubi, Beranang, Selangor ditawarkan untuk disewa pada RM6,000 / bulan. Hakmilik: Freehold. Sekatan: Open.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://maps.app.goo.gl/Pp97uUfCSNPAmxDMA",
@@ -10695,7 +8761,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1MuwUp_TCFHiRYGHXJ_8ONvqas0S_lTMO=w1000",
       "https://lh3.googleusercontent.com/d/14XrfXAzFwYaYd2jjSZJ4yrgTNGX24_7F=w1000",
@@ -10737,7 +8803,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1P_rHwRx8zq2M2zLi26gEVUFl9_kJhwMC=w1000",
       "https://lh3.googleusercontent.com/d/187hcXQGgyj8MsF4rAjbLxzpoNg0DfCgx=w1000"
@@ -10777,7 +8843,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kLlA7aE_uD4-jEq6mHd2T_exHvLdbnka=w1000",
       "https://lh3.googleusercontent.com/d/1G9ZOd8tAHggqgtlv5FlPjfv9S3JFYctZ=w1000",
@@ -10824,7 +8890,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1atu8keE-WBdxQnaa799FJO7Qlu_PFYme=w1000",
       "https://lh3.googleusercontent.com/d/1VM5YhGOHkDI7ibE1L2ywmbwUrLKq4Uis=w1000",
@@ -10869,7 +8935,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1j30Km9f6SQYd259hwDPbzlgyHogewlKa=w1000",
       "https://lh3.googleusercontent.com/d/1w7h1zRPM5pMuqv4BXSF5KVGMMYJrpcsh=w1000",
@@ -10917,7 +8983,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1VmI2N3XwoDU-2k1GabftoOBLut4RVz9E=w1000",
       "https://lh3.googleusercontent.com/d/1Vg36J1UJIGbMvVd7wsu_QGDPUNkbayFn=w1000",
@@ -10958,7 +9024,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1DLU4Yu2a1R1VdIcsbxMrtBBRfL3DudXs=w1000",
       "https://lh3.googleusercontent.com/d/1rCdt5_r5ojWomk-FAX9LdI_mfENO2lIq=w1000",
@@ -10993,7 +9059,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Kilang Built-up 40,167 sqft | Land 1.56 ekar di Puncak Alam Jaya, Selangor dijual pada RM88,000. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan. Anggaran RM2 sekaki persegi.",
+    "description": "Kilang Built-up 40,167 sqft | Land 1.56 ekar di Puncak Alam Jaya, Selangor ditawarkan untuk disewa pada RM88,000 / bulan. Anggaran RM2 sekaki persegi sebulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Puncak%20Alam%20Jaya%2C%20Selangor",
@@ -11001,7 +9067,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1gtvrRhxqLCpfRzs8Kv6QKuBaJFGNQadH=w1000",
       "https://lh3.googleusercontent.com/d/1wcjrph1aDf4fPxs2Yhad5VgDS0Bnt4eT=w1000",
@@ -11049,7 +9115,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1OVirr8IRDDeXFfXUMGfx2LAOFzw88oKx=w1000",
       "https://lh3.googleusercontent.com/d/1xycq9vWa_FZJSz03CPjRAhCY6cHmIsDP=w1000",
@@ -11092,7 +9158,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1PVtjudHQq1NQP1_4TAoSMFgUh_Hfmy8e=w1000",
       "https://lh3.googleusercontent.com/d/1TyJbJdSPtsOioFw8NSHKb83V23KiC5CZ=w1000",
@@ -11140,7 +9206,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1fozJW8tyO32XozvZIkHJLOkOGdYbPiJx=w1000",
       "https://lh3.googleusercontent.com/d/11-OooaGtUS21SuanO9kHGZfFWeIRlTUD=w1000",
@@ -11181,7 +9247,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1foszsc5rTRVTZ7ca-IC-XlBCa5FEwgFE=w1000",
       "https://lh3.googleusercontent.com/d/1FJSw4nfJ69qhJJaZaaRUMjkFjgZw092O=w1000",
@@ -11227,7 +9293,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1vTAKsLgjkqnYWmiNG2EaB9qpDsprm6g9=w1000",
       "https://lh3.googleusercontent.com/d/1ugJFczVQi_ofByIUd-iQ43A0WRgsCZWE=w1000",
@@ -11271,7 +9337,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1qm9DDJqijmfQSB7LM0wylkwYJFtr6uvf=w1000",
       "https://lh3.googleusercontent.com/d/1nbJtoFogN4EZtXvEQ4sooW4DVKEtNnhJ=w1000",
@@ -11317,7 +9383,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/18iWJHDruwiVh4eVWxgNm8s17aV75F3lB=w1000",
       "https://lh3.googleusercontent.com/d/153IqZPHy_3s9RDfH3H6E90AYNw5snLgr=w1000",
@@ -11361,7 +9427,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1OSI84DpI1Ulhc4CMXeLXM6sPFqdj7L7m=w1000",
       "https://lh3.googleusercontent.com/d/1fVe3dTMyq7qRf8IAzaKBGpfTOGOSJ2xc=w1000",
@@ -11407,7 +9473,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1cqv5TpkqRgPpg8Nzes9pXSmXQ8-wRPX3=w1000",
       "https://lh3.googleusercontent.com/d/1r9NsCVSuUmHnZE12LzynQuYvhDJSbpmh=w1000",
@@ -11451,7 +9517,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ABoul3AsmpqIG8Yj06SJc_jTrI3oCyiq=w1000",
       "https://lh3.googleusercontent.com/d/16eY7RUFjW87F_9oiAGWR6mWnKinSfhOV=w1000",
@@ -11497,7 +9563,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1nFbEbykPqE1c9rQyOdk7CYu7XXs9xvEp=w1000",
       "https://lh3.googleusercontent.com/d/1nTGMXmSTG47_hSrUPuATtnlLs8RJFdGU=w1000",
@@ -11545,7 +9611,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1FHHqJunxHKjm4cLUjhMQNi40FzoANAI4=w1000",
       "https://lh3.googleusercontent.com/d/10WvDnP2U6Gt_mgxgaf5oS5AewYyN8_dc=w1000",
@@ -11593,7 +9659,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1TyzxA_v-23WGZb2pEpGqZD-qMaB9mSER=w1000",
       "https://lh3.googleusercontent.com/d/1vbPYv224qFULemFIFwoDmwgIxYEpI5te=w1000",
@@ -11641,7 +9707,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1NdyVN9gi0M72am1SEQr7XJnIo2EjuAOm=w1000",
       "https://lh3.googleusercontent.com/d/1SUhzrpse_oX3EawE92I11TYhqf5hGOw-=w1000",
@@ -11689,7 +9755,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/193_a_KLpAHi2ZEnTReGcPIVoa7JFB7Px=w1000",
       "https://lh3.googleusercontent.com/d/1QnxL5clSrj_tkONwE3sPqqmpnNOKLFCZ=w1000",
@@ -11737,7 +9803,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1y1vbbBdUodRycLBholmZf5F6W-xXZ9qQ=w1000",
       "https://lh3.googleusercontent.com/d/1bjkbNYy0Hq58Bt_voRDXCUJH6WOkYRZm=w1000",
@@ -11785,7 +9851,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kGrz6KV0d_hXmUMfb3aBC9mMa_skgEYX=w1000",
       "https://lh3.googleusercontent.com/d/160Ew1Jv9j_U2x0Gm8FMk4PHgOWQ6pIPr=w1000",
@@ -11827,7 +9893,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kDnAzsSXNaMP8hLX0S7_0bI0mWLSSUWn=w1000",
       "https://lh3.googleusercontent.com/d/113_Q-5B33zJECZ8Ln3PzVIMtjaQIcuns=w1000",
@@ -11873,7 +9939,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Op-q3zDukfL1EPCpT1zhbRRWx5BUlBuU=w1000",
       "https://lh3.googleusercontent.com/d/1x0QV7at7Azh7xzkWjnOyOZMENClLjXmP=w1000",
@@ -11918,7 +9984,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1aQS4UQ7Rwua4DXkitbT20FQjLy872Wqu=w1000",
       "https://lh3.googleusercontent.com/d/1Vn3vROTzmJmb6sVrGztV2luMKhbVZjvh=w1000",
@@ -11966,7 +10032,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YFxDRQu3ChqALmlMgs0onzQuK-An5MZk=w1000",
       "https://lh3.googleusercontent.com/d/1LXAm7fF6yCrW7KQb29iYU9yL-7iiZ638=w1000",
@@ -12013,7 +10079,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1nWWRJfD7Xph-tcE0oERU77eY6N8GvMWY=w1000",
       "https://lh3.googleusercontent.com/d/1pHU678Uedbbkhnxo-6b_DTMj8qWOJJ85=w1000",
@@ -12061,7 +10127,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/151heMy0miaQX3LHX7xn__AAPv-fX00G-=w1000",
       "https://lh3.googleusercontent.com/d/1guwIun-c6mW7P4L--Ixk5c4cOmebYnzr=w1000",
@@ -12109,7 +10175,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jgnq77Ih9LKDyxYXPkt2qbjSIB9Piv-G=w1000",
       "https://lh3.googleusercontent.com/d/1T7wMz9L73uHhiSfwOmL8TTnYVH_25DNx=w1000",
@@ -12157,7 +10223,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Eyv4b3QkcVjuD-AnGprdkCQNTRajlkjx=w1000",
       "https://lh3.googleusercontent.com/d/1kb5dqCXI9e4qAue4e8K-5xYWDwsdA4D7=w1000",
@@ -12205,7 +10271,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/15s-_zTWCJIYf9gFU218PcfY0k_Wset5C=w1000",
       "https://lh3.googleusercontent.com/d/1aVAKG0U_qtxipvzJ9nzTdLID7MSqjSBW=w1000",
@@ -12253,7 +10319,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1v-bDGDU69VEihL2pCQOJUlgxc9FyqidK=w1000",
       "https://lh3.googleusercontent.com/d/1Juei7WqCHK1Jc412Ki2KkF9binaoM5PD=w1000",
@@ -12300,7 +10366,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Fty6npnFLAftxbgNQxMOcqepw03jos43=w1000",
       "https://lh3.googleusercontent.com/d/1z7W3aLUya3cFnV4EFsjFI7-Cdc8viYjU=w1000",
@@ -12348,7 +10414,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1lQT6g88DW11NJg-T0omJLtJ0YnaovMjP=w1000",
       "https://lh3.googleusercontent.com/d/1lw1xzZz-uN3_Zuwv_-iA_bwyYaM_717E=w1000",
@@ -12389,7 +10455,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1tK44sEkIkzewvtzcZ_25kvXNXnNU52oq=w1000",
       "https://lh3.googleusercontent.com/d/1b8LsxIow7w2WZ14xCqTbWLidtaev30Rd=w1000",
@@ -12437,7 +10503,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1lCpieaSedhtXkJoDA9YeVF_YFBbl7D2-=w1000",
       "https://lh3.googleusercontent.com/d/19087thruA4f9sRjZcsIrD4zWpWPP6Ek1=w1000",
@@ -12485,7 +10551,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1nh7ygrGwSRMjMRIqB8doNmdchHpV8uHc=w1000",
       "https://lh3.googleusercontent.com/d/1cQkbk0SmeDKlKE21gfBh0xdg53YfyVGo=w1000",
@@ -12533,7 +10599,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/10JgVi6MfcH65xwvIR5dMtnSDFdRflFdL=w1000",
       "https://lh3.googleusercontent.com/d/1PAiR1CSaE3xatLty9ijALaYUMhy21Tgj=w1000",
@@ -12577,7 +10643,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1el3-YTZ9wKkK-_aTuiMsbtZ8AJgyAzhI=w1000",
       "https://lh3.googleusercontent.com/d/10APZMGXChcVaSuTswv_iH6P4jVLauoEu=w1000",
@@ -12625,7 +10691,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1G4vfLIzgYNAlkRYCdjOx4SdGNLlHoa-L=w1000",
       "https://lh3.googleusercontent.com/d/1uqDl_KKSPeWfUa_IRoYHtreU7G4kxFpr=w1000",
@@ -12668,7 +10734,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ko8XdU691duHCW9LcPklRfxc0lftYOzK=w1000",
       "https://lh3.googleusercontent.com/d/1v2jpVno9Xr4g1jJ6hkdetVNgCqd37UM7=w1000",
@@ -12715,7 +10781,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1We-7TWiY90OanWwN4ZOmsaVy9dVeJCyb=w1000",
       "https://lh3.googleusercontent.com/d/1q9hhdPMvY-5eMYh69g9sjSsTVsA935i6=w1000",
@@ -12763,7 +10829,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1baj-bgi9FOvBBaBnnn3P9mLpwmVIAIy7=w1000",
       "https://lh3.googleusercontent.com/d/1aIBqDZrgFt1lZ50UAL8liVx1_Y08d-bX=w1000",
@@ -12807,7 +10873,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_tgawMZMQly7oBC97dOFpC6ULDsOpU4n=w1000",
       "https://lh3.googleusercontent.com/d/1vw9hAOSTu_N5WdeamgxyIenu14geOr-2=w1000",
@@ -12850,7 +10916,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1APnRJJrXXlmepubtAVPkzwKG4Ol1F78n=w1000",
       "https://lh3.googleusercontent.com/d/17A091dtWlDtN4_PTtV_3bdQHARcE6Ojt=w1000",
@@ -12892,7 +10958,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1MorlpqxwONqokUR_yTKvk1p7FG6F1Lrl=w1000",
       "https://lh3.googleusercontent.com/d/1VbQ1LU5ZL7gsarmhYAsmAMzx4K-5RVJ0=w1000",
@@ -12940,7 +11006,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_ut7ydlEgTxyOJDdAcQDoRykqsEN_LdT=w1000",
       "https://lh3.googleusercontent.com/d/1zwfuI9ONLSoetkRH7kpARQvxPQNe2fJt=w1000",
@@ -12988,7 +11054,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1uCO7r60thk6l2owXAHf3g6J38Aqtjx96=w1000",
       "https://lh3.googleusercontent.com/d/1lHDhQPyLJGgxb8PznUeU-4SGIYqY94Ws=w1000",
@@ -13036,7 +11102,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1B8yQc8w6KacQNm5-ZsOsLsIu6VY91cgH=w1000",
       "https://lh3.googleusercontent.com/d/1ceAdfCPbAGCAjTSr9fDYQPhegjP240Mp=w1000",
@@ -13084,7 +11150,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1rmI6aIeqb0scXpdap1PQpCKa9xE55Oyt=w1000",
       "https://lh3.googleusercontent.com/d/1Tn6jPAwj28elZZB-qJbVfscRHPmeRnXz=w1000",
@@ -13132,7 +11198,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1b6e4FTA8nR8ziEmCvVS5XkmVdOEZZTUT=w1000",
       "https://lh3.googleusercontent.com/d/1icYi9s8N7Ck-HwAz2u9vQmygMSfwnxBa=w1000",
@@ -13177,7 +11243,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ojAH2c1WvrkqSa9CDwdh0lv4QWwMf_Ku=w1000",
       "https://lh3.googleusercontent.com/d/17mkiVICDJ9sbtcnihEAtTZefgncHT6Ed=w1000",
@@ -13221,7 +11287,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1NBVoVFR17zNjX3dH_yOOrSuia-vPy-qp=w1000",
       "https://lh3.googleusercontent.com/d/14pYyA0j4u0fqhwM7mMLbhsjhdUa9U75e=w1000",
@@ -13267,7 +11333,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jYN0tBtMI6m0CY3e6noW2qmzL6A0h71g=w1000",
       "https://lh3.googleusercontent.com/d/1HYM16TNL9LduwTbuOnzN8_AzMiglR11o=w1000",
@@ -13311,7 +11377,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jA0tQagFEiWk4Ruun3PqljEnDMvRziPV=w1000",
       "https://lh3.googleusercontent.com/d/1_qdaS7ZJoDE9R0BOfhsPfeoRc02BZ1Kb=w1000",
@@ -13355,7 +11421,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/13roItTcAoRMMacVlaCEdh-YAlk61JhiJ=w1000",
       "https://lh3.googleusercontent.com/d/1g4IIfBzzut2malN5RSYOs9bn1qJdT2Bu=w1000",
@@ -13391,7 +11457,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 7 ekar di Janda Baik, Bukit Tinggi, Bentong, Pahang dijual pada RM7,000,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM23 sekaki persegi.",
+    "description": "Tanah 7 ekar di Janda Baik, Bukit Tinggi, Bentong, Pahang dijual pada RM7,000,000. Hakmilik: Freehold. Anggaran RM23 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Janda%20Baik%2C%20Bukit%20Tinggi%2C%20Bentong%2C%20Pahang",
@@ -13399,7 +11465,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1EIRZ7mpS_WUQzL-iIxfyR6Rf9tQXJ-h_=w1000",
       "https://lh3.googleusercontent.com/d/1NDJFczg3vxyTbSRZhmClomtYXkXmCbLN=w1000",
@@ -13443,7 +11509,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1J0BBeKVQD-tZrkzrnOmJF5UknG5RU8rh=w1000",
       "https://lh3.googleusercontent.com/d/1_Wq7UY2wAYwNK3JSo41BUIUtWdHiKKS2=w1000",
@@ -13486,7 +11552,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1vHttibRLjZI3TL9E_tqAUJ9e9u41Jbdb=w1000",
       "https://lh3.googleusercontent.com/d/1fUy6eMJBgq3YtUjUQzLecURuq_sByW9j=w1000",
@@ -13520,7 +11586,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 2 lot: 127,960 sqft + 130,684 sqft (±5.94 ekar) di Pulau Indah, Klang, Selangor dijual pada RM12,410,000. Hakmilik: Tidak dinyatakan. Sekatan: Malay Reserved. Anggaran RM97 sekaki persegi.",
+    "description": "Tanah 2 lot: 127,960 sqft + 130,684 sqft (±5.94 ekar) di Pulau Indah, Klang, Selangor dijual pada RM12,410,000. Sekatan: Malay Reserved. Anggaran RM97 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Pulau%20Indah%2C%20Klang%2C%20Selangor",
@@ -13528,7 +11594,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-19",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1lEcwkMo0m15tzeCoquklR9ku-UlBUl_3=w1000",
       "https://lh3.googleusercontent.com/d/1WrVF09OIlntyHSj17X34rCXedJtu2yQN=w1000",
@@ -13570,7 +11636,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-19",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kUMCNy9joI4H3Qf7rgyVl8l95AaAuvQp=w1000",
       "https://lh3.googleusercontent.com/d/19ofP-Ms8x1GKOuIoqBvLh8fI93U4zC2W=w1000",
@@ -13612,7 +11678,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-19",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1R_RH2DiLn9oj9ztJDdKoX0Nt8uNhTBRs=w1000",
       "https://lh3.googleusercontent.com/d/17LrE0YAQpsM9LePJt6oGK216VlAv3zQ2=w1000",
@@ -13654,7 +11720,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-19",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ANvjF9iJCIUmqFLLGpSCZBimHiCEo1z1=w1000",
       "https://lh3.googleusercontent.com/d/15Jh5kP0hcYnfGwgXKBqqzzSdg4FqK9tW=w1000",
@@ -13698,7 +11764,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-19",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/142feV9rtesYlYW90futC6UT3NFBTO8te=w1000",
       "https://lh3.googleusercontent.com/d/1Z2yQgE8sG75p8z835Zgu6RPjQcCPOv_9=w1000",
@@ -13746,7 +11812,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-19",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1p8n2t-9NonZkhJBRyhIJw9Hsq5tu6WXE=w1000",
       "https://lh3.googleusercontent.com/d/1BbH7m5tMyI0X0NFVMl_wNTbxaoUn6y4x=w1000",
@@ -13780,7 +11846,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 2 lot: 4,750 sqft + 3,785 sqft di Bangi Lama, Bandar Baru Bangi, Selangor dijual pada RM365,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM77 sekaki persegi.",
+    "description": "Tanah 2 lot: 4,750 sqft + 3,785 sqft di Bangi Lama, Bandar Baru Bangi, Selangor dijual pada RM365,000. Hakmilik: Freehold. Anggaran RM77 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bangi%20Lama%2C%20Bandar%20Baru%20Bangi%2C%20Selangor",
@@ -13788,7 +11854,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-19",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/174ZE-8jd8v0Vy6jJVamCaVCz3XDbzp7g=w1000",
       "https://lh3.googleusercontent.com/d/1oYpyRHufMyuonE8enczXpaWeMEPsz8lz=w1000",
@@ -13825,7 +11891,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 3.193 ekar di Bukit Cerakah, Seksyen U15, Shah Alam, Selangor dijual pada RM3,750,000. Hakmilik: Leasehold. Sekatan: Tidak dinyatakan. Anggaran RM27 sekaki persegi.",
+    "description": "Tanah 3.193 ekar di Bukit Cerakah, Seksyen U15, Shah Alam, Selangor dijual pada RM3,750,000. Hakmilik: Leasehold. Anggaran RM27 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bukit%20Cerakah%2C%20Seksyen%20U15%2C%20Shah%20Alam%2C%20Selangor",
@@ -13833,7 +11899,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-19",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_RIGKcBCXaQ1e_B9qQgnO9J62Oqf4ZwD=w1000",
       "https://lh3.googleusercontent.com/d/1Mz6aLiMH5m8GmOIrm5OqHIdhMfrp3mB3=w1000",
@@ -13873,7 +11939,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Kedai 1,080 sqft (18' x 60') di Serene Heights, Semenyih, Selangor dijual pada RM4,000. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan. Anggaran RM4 sekaki persegi.",
+    "description": "Kedai 1,080 sqft (18' x 60') di Serene Heights, Semenyih, Selangor ditawarkan untuk disewa pada RM4,000 / bulan. Anggaran RM4 sekaki persegi sebulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Serene%20Heights%2C%20Semenyih%2C%20Selangor",
@@ -13881,7 +11947,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-19",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1DU-c_2z2EQHVnD_PLs6tUve51cUblTPv=w1000",
       "https://lh3.googleusercontent.com/d/14edvg6Lu7Drleg3aneJOV7i0hopm5ED3=w1000",
@@ -13918,28 +11984,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Tepi Lebuhraya SKVE — pendedahan tinggi",
-      "36,369 sqft (0.835 ekar)",
-      "Leasehold sehingga 5 April 2097",
-      "Rezab Melayu",
-      "Status pertanian",
-      "RM13.72 psf — harga berpatutan"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah 36,369 kaki persegi (0.835 ekar) di tepi Lebuhraya SKVE — lokasi strategik dengan pendedahan terus ke lebuh raya utama. Status pertanian, Rezab Melayu, leasehold sehingga 5 April 2097. Harga RM499,000 (RM13.72 psf). Sesuai untuk pelaburan tanah jangka panjang dan pembangunan masa hadapan berhampiran koridor SKVE.",
+    "description": "Tanah 36,369 sqft (~0.835 ekar / 3,378 m2) di Tepi Lebuhraya SKVE, Selangor dijual pada RM499,000. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM14 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "Lebuhraya SKVE (E26) — tepi tanah",
-      "Rimbayu — kawasan perumahan berhampiran",
-      "Akses terus ke Kuala Lumpur & Putrajaya"
-    ],
+    "nearby": [],
     "map_url": "",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-20",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kl9EnbVhth2WgI9UKQbzTejg9INeIY3f=w1000",
       "https://lh3.googleusercontent.com/d/1ehQQlo3Q13pi4UMUjQanT0RNUeaq2U50=w1000",
@@ -13980,7 +12035,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-20",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1pb7wb8NFF1SjDfomr5N0X3sNew77GwIe=w1000",
       "https://lh3.googleusercontent.com/d/1bDbEgnQzDZ4_k0lemI8A-3q-477ud4Y9=w1000",
@@ -14025,7 +12080,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-20",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1MTwH8sY-IS94sOAk18ufUPYmqTO00k00=w1000",
       "https://lh3.googleusercontent.com/d/1EgHbxnlOUnstbi092deRnupT8G8ig0_N=w1000",
@@ -14069,7 +12124,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-20",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1nivqh8bl9FJUMw01XQHNwYx_7XtI7l7C=w1000",
       "https://lh3.googleusercontent.com/d/1TOzIyF9CK8Xsmx0Hm_Z7bj3VriZwYH7_=w1000",
@@ -14122,7 +12177,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-20",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1QTi546nPsmPsEjJRn20T0URMsp1_bQLG=w1000",
       "https://lh3.googleusercontent.com/d/1n2lynaCFstv5vzJ4_qdyySot7g8BSIT-=w1000",
@@ -14165,7 +12220,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-20",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xf7hBQSJBoBVr4HCm3o6OxhnuCMpWfJF=w1000"
     ],
@@ -14196,7 +12251,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 42,170 sqft di Taman Tasik Titiwangsa, Kuala Lumpur dijual pada RM22,000,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM522 sekaki persegi.",
+    "description": "Tanah 42,170 sqft di Taman Tasik Titiwangsa, Kuala Lumpur dijual pada RM22,000,000. Hakmilik: Freehold. Anggaran RM522 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Taman%20Tasik%20Titiwangsa%2C%20Kuala%20Lumpur",
@@ -14204,7 +12259,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-20",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jA6UznOztAcX8P4Mh4wNvpaD1Wi9dv6W=w1000",
       "https://lh3.googleusercontent.com/d/1h34sanJ8FYPd8sAwzbhyBu8TYCuU249F=w1000",
@@ -14243,7 +12298,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Pejabat 600 - 145,000 sqft di Menara Dato Onn, PWTC, Kuala Lumpur dijual pada RM2,400. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan.",
+    "description": "Pejabat 600 - 145,000 sqft di Menara Dato Onn, PWTC, Kuala Lumpur ditawarkan untuk disewa pada RM2,400 / bulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Menara%20Dato%20Onn%2C%20PWTC%2C%20Kuala%20Lumpur",
@@ -14251,7 +12306,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-20",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1pFjn3xNb9ukQcm-3A0lHx_Yh_tr7WViQ=w1000",
       "https://lh3.googleusercontent.com/d/1V6gAJsCTTaDXcfXHv55PpMw4avJTnEEJ=w1000",
@@ -14286,7 +12341,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Pejabat 2,000 sqft di The Exchange 106, TRX, Kuala Lumpur dijual pada RM28,800. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan. Anggaran RM14 sekaki persegi.",
+    "description": "Pejabat 2,000 sqft di The Exchange 106, TRX, Kuala Lumpur ditawarkan untuk disewa pada RM28,800 / bulan. Anggaran RM14 sekaki persegi sebulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=The%20Exchange%20106%2C%20TRX%2C%20Kuala%20Lumpur",
@@ -14294,7 +12349,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-20",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/13rJUdvX7cCMADiwDcy6H8E8sROwAefWp=w1000",
       "https://lh3.googleusercontent.com/d/1ZxJCA-l0KLLRnjYQMG4bdttHHwAYgcjh=w1000",
@@ -14342,7 +12397,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-21",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/12re8zFUo5L-DcmylWVjb9OyxMSTzIswX=w1000",
       "https://lh3.googleusercontent.com/d/1ja_it-qb23zdV3N99A868rh2EHCRlJjT=w1000",
@@ -14386,7 +12441,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-21",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11flqqur8MtaLkcMVmlLNPme9gciPAbua=w1000",
       "https://lh3.googleusercontent.com/d/12hcL-L7NItaf3g2mxRA71wo-GpSWcZCd=w1000",
@@ -14429,7 +12484,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-21",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1EZiu25bAqCOkaxvPS7vq8PFtqUEkPpaN=w1000",
       "https://lh3.googleusercontent.com/d/1H7d2kweT-nLzTZfrw0eqz4ybybPfJCGQ=w1000",
@@ -14475,7 +12530,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-21",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19Y9Pjq5bSVelM80TvdpGxUtB-ZgWd4e_=w1000",
       "https://lh3.googleusercontent.com/d/1au_6iS51L9__wJEyc8A8Ae2WYqj3iZSa=w1000",
@@ -14517,7 +12572,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-21",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1UorI_1nrbY1j67OUvr3GCjXsdu9XumYF=w1000",
       "https://lh3.googleusercontent.com/d/1nVklYB0ESjoDmleDHt_-wsZYgcl5Xo0a=w1000",
@@ -14558,7 +12613,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-21",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ghO4EPxdEB58JwGqgltTPtVnMSPexPfg=w1000",
       "https://lh3.googleusercontent.com/d/1p3BCpPdNaY2fy4tvTDu5kpnbJ6zcUXtI=w1000",
@@ -14600,7 +12655,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-22",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1fUGc3425Jjr4_g3d9wDeO8GqS1VICKRo=w1000",
       "https://lh3.googleusercontent.com/d/1fipoC-sxKSljpw2kbtGBrwB33o1hXV90=w1000",
@@ -14650,7 +12705,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-22",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19o0plj-eeEtDYF-r_3big9vZv0hkTw4E=w1000",
       "https://lh3.googleusercontent.com/d/1Q33TLLiOIggMMzk9Kw6T6vBR8MMuokVn=w1000",
@@ -14693,7 +12748,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-22",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ftxb0gL93NolybB-RA6V8BUd4yPS_S35=w1000",
       "https://lh3.googleusercontent.com/d/11--AU5mqccfUeOijLf5PDT5540D5lgCI=w1000",
@@ -14746,7 +12801,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-22",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1JFEOBayWGmLYpKiCy-vI06CNjiDzPoUe=w1000",
       "https://lh3.googleusercontent.com/d/1iuhc0tXtI3a5ChdG9foPVHju88Tpgtba=w1000",
@@ -14791,7 +12846,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-xM5kpF3uOvzzElejYZ8Zg0IGsPrqiu1=w1000",
       "https://lh3.googleusercontent.com/d/1qU_9Uq3ArfqMnBM_zov-AihNMRzC_WqC=w1000",
@@ -14833,7 +12888,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1MvcFaoXQW9G3QR7-uM6eXDOAfD-yRB-o=w1000",
       "https://lh3.googleusercontent.com/d/1goLyRxdWaP5tKYYMq3sjJzBibk2KIeqx=w1000",
@@ -14877,7 +12932,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1x1u-9SBLwDjgIR1wgl6cIBAYBdEuffLt=w1000"
     ],
@@ -14891,7 +12946,7 @@ window.LISTINGS = [
     "location": "Jalan Lapangan Terbang Subang Lama, Kampung Baru Subang, Shah Alam, Selangor",
     "state": "Selangor",
     "price": 6000,
-    "price_label": "RM6,000/bulan",
+    "price_label": "RM6,000 / bulan",
     "price_old": null,
     "land_area": "~12,000 sqft",
     "built_up": "-",
@@ -14908,7 +12963,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah ~12,000 sqft di Jalan Lapangan Terbang Subang Lama, Kampung Baru Subang, Shah Alam, Selangor dijual pada RM6,000. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah ~12,000 sqft di Jalan Lapangan Terbang Subang Lama, Kampung Baru Subang, Shah Alam, Selangor ditawarkan untuk disewa pada RM6,000 / bulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://maps.app.goo.gl/Zn3Uaob8BVxnSKPZ9",
@@ -14916,7 +12971,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1iiZYJJDK1Lol6FayfEt0QWSatdWe4ZGd=w1000",
       "https://lh3.googleusercontent.com/d/1BwxbBUtalKRKPohSF8j-QZQ3F53TlINF=w1000",
@@ -14952,7 +13007,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 42,819 sq ft di Permatang Batu, Pulau Pinang dijual pada RM6,359,100. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 42,819 sq ft di Permatang Batu, Pulau Pinang dijual pada RM6,359,100. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=5.364261,100.4336",
@@ -14960,7 +13015,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1UOwzBlCnn78nunym2-qMdVrGLvCl1Qb1=w1000"
     ],
@@ -14991,7 +13046,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 54,207 sq ft di Kg Baharu Bt Dua, Gerik, Perak dijual pada RM2,564,100. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 54,207 sq ft di Kg Baharu Bt Dua, Gerik, Perak dijual pada RM2,564,100. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=5.452008,101.138",
@@ -14999,7 +13054,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-dGj8Msq8wRyG-W2VY2Z3n-vmyRx1Mbc=w1000"
     ],
@@ -15030,7 +13085,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 43,809 sq ft di Hentian Nilai Arka KL, Negeri Sembilan dijual pada RM6,182,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 43,809 sq ft di Hentian Nilai Arka KL, Negeri Sembilan dijual pada RM6,182,000. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=2.86238,101.7884",
@@ -15038,7 +13093,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ZfoZ49JW0tSfyuxcHAhrpkJZGn-HBwZA=w1000"
     ],
@@ -15069,7 +13124,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 17,739 sq ft di Kuala Nerus, Terengganu dijual pada RM1,496,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 17,739 sq ft di Kuala Nerus, Terengganu dijual pada RM1,496,000. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=5.35633,103.0946",
@@ -15077,7 +13132,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Wk6xesZA2zt36Pr6EFd-gKswoAaSBgLY=w1000"
     ],
@@ -15108,7 +13163,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 24,886 sq ft di Pekan Gambang, Pahang dijual pada RM739,200. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 24,886 sq ft di Pekan Gambang, Pahang dijual pada RM739,200. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=3.704105,103.1086",
@@ -15116,7 +13171,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1T5NrhlUtPZx60-E_OIXPI_TzHD2Dy5Vj=w1000"
     ],
@@ -15147,7 +13202,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 25,000 sq ft di Jementah, Johor dijual pada RM511,500. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 25,000 sq ft di Jementah, Johor dijual pada RM511,500. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=2.492557,102.7391",
@@ -15155,7 +13210,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1029fnhhs6YBkJYb1L8aMq8DfqqqS5wGB=w1000"
     ],
@@ -15186,7 +13241,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 30,159 sq ft di Jalan Penampang, Sabah dijual pada RM3,184,500. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 30,159 sq ft di Jalan Penampang, Sabah dijual pada RM3,184,500. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=5.909113,116.1041",
@@ -15194,7 +13249,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/141aQhUJDK9Qssa5YIt0OVvQ3Otj0eAm1=w1000"
     ],
@@ -15225,7 +13280,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 50,364 sq ft di Seksyen 20 Persiaran Jubli Perak, Shah Alam, Selangor dijual pada RM13,860,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 50,364 sq ft di Seksyen 20 Persiaran Jubli Perak, Shah Alam, Selangor dijual pada RM13,860,000. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=3.051916,101.540921",
@@ -15233,7 +13288,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1cLEn3RiaC5ii1zeEpIZAdA0n3dY-a_6_=w1000"
     ],
@@ -15264,7 +13319,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 44,799 sq ft di Jln Panglima Awang, Melaka dijual pada RM5,280,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 44,799 sq ft di Jln Panglima Awang, Melaka dijual pada RM5,280,000. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=2.213787,102.248421",
@@ -15272,7 +13327,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1TVYZCp31tl-bX2d2KxMgHlckS6VwR5B8=w1000"
     ],
@@ -15303,7 +13358,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 42,431 sq ft di GCE Bukit Jelutong, Selangor dijual pada RM14,003,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 42,431 sq ft di GCE Bukit Jelutong, Selangor dijual pada RM14,003,000. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=3.1096436,101.5336188",
@@ -15311,7 +13366,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/13Lv49c1t-8ljmkfYlgHurv82lfFEDOjv=w1000"
     ],
@@ -15342,7 +13397,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 52,577 sq ft di Pinggiran Batu Caves, Selangor dijual pada RM13,860,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 52,577 sq ft di Pinggiran Batu Caves, Selangor dijual pada RM13,860,000. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=3.253939,101.694229",
@@ -15350,7 +13405,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1D6DKFDh-KxsnuOonZegDEIcQXSNwqsOQ=w1000"
     ],
@@ -15381,7 +13436,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 31,950 sq ft di Lebuh Putra, Johor dijual pada RM3,339,600. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 31,950 sq ft di Lebuh Putra, Johor dijual pada RM3,339,600. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=1.66149,103.63999",
@@ -15389,7 +13444,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1TpiNRRHnnO_Ix-9uANUvLwmE9izmT_k_=w1000"
     ],
@@ -15420,7 +13475,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 49,836 sq ft di Jalan Teluk Kumbar, Bayan Lepas, Pulau Pinang dijual pada RM24,673,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 49,836 sq ft di Jalan Teluk Kumbar, Bayan Lepas, Pulau Pinang dijual pada RM24,673,000. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=5.29247,100.250427",
@@ -15428,7 +13483,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1loMPCDrwKHGquc6VkEAPiMzrPVdg_Hdh=w1000"
     ],
@@ -15459,7 +13514,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 89,620 sq ft di Sg Dua Highway NB, Permatang Pauh, Pulau Pinang dijual pada RM9,858,200. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 89,620 sq ft di Sg Dua Highway NB, Permatang Pauh, Pulau Pinang dijual pada RM9,858,200. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=5.427927,100.416632",
@@ -15467,7 +13522,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1RUd6UQS-ZSmwDE6PnvgDBAMHXkVprvEj=w1000"
     ],
@@ -15498,7 +13553,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 52,743 sq ft di Bedong, Kedah dijual pada RM4,351,600. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 52,743 sq ft di Bedong, Kedah dijual pada RM4,351,600. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=5.73784,100.50924",
@@ -15506,7 +13561,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1e7ICwQineAFpHWGYnbC4lZu6OKROBUOP=w1000"
     ],
@@ -15537,7 +13592,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 45,122 sq ft di PS Simpang Lima, Parit Buntar, Perak dijual pada RM3,971,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 45,122 sq ft di PS Simpang Lima, Parit Buntar, Perak dijual pada RM3,971,000. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=5.09789,100.488327",
@@ -15545,7 +13600,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ixch381GGhz5YRfdrjXl1-CZfw0-SmRM=w1000"
     ],
@@ -15576,7 +13631,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 65,446 sq ft di PS Equine Park 2, Seri Kembangan, Selangor dijual pada RM11,858,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 65,446 sq ft di PS Equine Park 2, Seri Kembangan, Selangor dijual pada RM11,858,000. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=2.983413,101.666924",
@@ -15584,7 +13639,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xRWSSalXNGIYAGntYGkrAcDiKZole13F=w1000"
     ],
@@ -15615,7 +13670,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 52,272 sq ft di PS Alam Sutera, Bandar Kinrara, Selangor dijual pada RM15,840,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 52,272 sq ft di PS Alam Sutera, Bandar Kinrara, Selangor dijual pada RM15,840,000. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=3.05269991012824,101.65242136348239",
@@ -15623,7 +13678,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1aTCCChfrfSlC4jF5Yfitl-DQ9cs_moba=w1000"
     ],
@@ -15662,7 +13717,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xi4P3uOTcVRSCvWp9l5msmkbakGXr6HA=w1000",
       "https://lh3.googleusercontent.com/d/1XtTkBRNmH9s_a0Ii3UNsJRCNmfzDVbuq=w1000",
@@ -15710,7 +13765,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ZpsOOPIR-QZAQOFMW-upjwdlSJy4uqFP=w1000",
       "https://lh3.googleusercontent.com/d/1T6-8jUMpWF1Yg6PQK6tnC2Lo-xpCvlIg=w1000",
@@ -15755,7 +13810,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1VGFgDWAMqPxg0pLVK-r5QttNM3C2RlWe=w1000",
       "https://lh3.googleusercontent.com/d/1bsASBwWNCaD2s6aY5u3smR6SvOpMJJ5X=w1000",
@@ -15799,7 +13854,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Fy_T1DwCZCyf2Bzyw_wDvXgDNXJGm_TH=w1000",
       "https://lh3.googleusercontent.com/d/1fDD_TyDE4hESnQ-KLzKE-jTj2urK-6wH=w1000",
@@ -15817,7 +13872,7 @@ window.LISTINGS = [
     "location": "Padang Matsirat, Langkawi, Kedah",
     "state": "Kedah",
     "price": 12000,
-    "price_label": "RM12,000/bulan",
+    "price_label": "RM12,000 / bulan",
     "price_old": null,
     "land_area": "±36,000 sqft (±0.83 ekar)",
     "built_up": "-",
@@ -15834,7 +13889,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah ±36,000 sqft (±0.83 ekar) di Padang Matsirat, Langkawi, Kedah dijual pada RM12,000. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah ±36,000 sqft (±0.83 ekar) di Padang Matsirat, Langkawi, Kedah ditawarkan untuk disewa pada RM12,000 / bulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bulatan%20Padang%20Matsirat%2C%20Langkawi%2C%20Kedah",
@@ -15842,7 +13897,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19WdnZ2QA4Fh-r-nhCvVYBEkQjNtvbMOj=w1000",
       "https://lh3.googleusercontent.com/d/12Bb9N4A1eIhE3tNqmsyoBwTw6ICJkvbz=w1000",
@@ -15883,7 +13938,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11FHq2t__T3Ky_JyoY-EBhA4uBCo_BLmc=w1000",
       "https://lh3.googleusercontent.com/d/14EIpBXCS1Ys8mtjt93chRZ8xNW6w0GgF=w1000",
@@ -15929,7 +13984,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bevU9dBGJvFGcWFHwPr8uHgexuK5LOX-=w1000",
       "https://lh3.googleusercontent.com/d/12NPHPdhWyIIb0Oh263TNVkSM5Ott4EvO=w1000",
@@ -15950,7 +14005,7 @@ window.LISTINGS = [
     "location": "Jalan Balakong, Batu 11, Cheras, Kajang, Selangor",
     "state": "Selangor",
     "price": 30000,
-    "price_label": "RM30,000/bulan",
+    "price_label": "RM30,000 / bulan",
     "price_old": null,
     "land_area": "43,787 sqft (±1.005 ekar)",
     "built_up": "-",
@@ -15967,7 +14022,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 43,787 sqft (±1.005 ekar) di Jalan Balakong, Batu 11, Cheras, Kajang, Selangor dijual pada RM30,000. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan. Anggaran RM1 sekaki persegi.",
+    "description": "Tanah 43,787 sqft (±1.005 ekar) di Jalan Balakong, Batu 11, Cheras, Kajang, Selangor ditawarkan untuk disewa pada RM30,000 / bulan. Anggaran RM1 sekaki persegi sebulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Jalan%20Balakong%2C%20Batu%2011%2C%20Cheras%2C%20Selangor",
@@ -15975,7 +14030,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jJYvepazzSYdTt_kXbBi3mkBJFcZ12RI=w1000",
       "https://lh3.googleusercontent.com/d/1u1vwR7HBZSi54ItXd8j_hBCV4xwFlYpM=w1000",
@@ -16028,7 +14083,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-28",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-FAOoEPjFdVzjVhIdRGRfNSBgb4FnFHC=w1000",
       "https://lh3.googleusercontent.com/d/1Z-LNUGWWGaRdqOPCI6Apk8kCOLzwhMWC=w1000",
@@ -16071,7 +14126,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-28",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1VWB1Mo-FOXVGkfzOeW4B9dgePaecuBNW=w1000",
       "https://lh3.googleusercontent.com/d/1PF10-74voXM3LTXZ5mBg038AVAag_9wZ=w1000",
@@ -16116,7 +14171,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-28",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Aq_kGHxKLrQIxFSIUK56AkmGQYWfhRuo=w1000",
       "https://lh3.googleusercontent.com/d/104LlGjLyfUMtANaniFwQxMtoklzyre-y=w1000",
@@ -16169,7 +14224,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-28",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1H7ewTvC4r_9NtH7l46E9G9VwiQ1v-5ux=w1000",
       "https://lh3.googleusercontent.com/d/1N52s0RjJXMgXKYWdHkKSVTq1L7NNGfXU=w1000",
@@ -16212,7 +14267,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-28",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1B9JlgFiEv10s0VtNplAr6wvL1DEWwvhz=w1000",
       "https://lh3.googleusercontent.com/d/1AL0R-3FDgQBAX2qFYGIJDjOYPcHXWLiL=w1000",
@@ -16259,7 +14314,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-28",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1hlG8l5zaSh3Q2yHcNXiGyjudZYoMnhQZ=w1000",
       "https://lh3.googleusercontent.com/d/150QF_zuWj4TXjT_L8sRxU8BEb4T8b_qi=w1000",
@@ -16312,7 +14367,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-28",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1SScHr_DZDm3Oj38ggQyeT0G6TGHaElhC=w1000",
       "https://lh3.googleusercontent.com/d/1VwyBTxGeOJIIkGy0CyIeZ94XZ6MGnikf=w1000",
@@ -16357,7 +14412,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-28",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1quM_0wz4QAYjzp2cEJ8TKvewXdKRjKSf=w1000",
       "https://lh3.googleusercontent.com/d/13yQo1-Nm-swY6vrj-MXI6x0JIMFnZP5w=w1000",
@@ -16399,7 +14454,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-28",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1PgD4-bNdJjSYR4NacxxXinPfu1KZ5U5h=w1000",
       "https://lh3.googleusercontent.com/d/1ysfKG1OA-Ew8bPfbLLfMU7-Y07mnrrNd=w1000",
@@ -16443,7 +14498,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-28",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_f4v2GiSvkaS9rx0dxDJuijBlIJRKdnA=w1000",
       "https://lh3.googleusercontent.com/d/1SFE3tCzhAzZQt8qTSHJ2Or_yy_94D4dQ=w1000"
@@ -16483,7 +14538,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-28",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1FCsvEDuzepsjpSAtxSou-ZiBFfuCTF1V=w1000",
       "https://lh3.googleusercontent.com/d/1a3KCv4gnVHduvBhy_TvZ_O0GZZjtF9Nt=w1000",
@@ -16527,7 +14582,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-28",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1NuqTnYxYeR5YQdgoWilTSS6u94ySpsKX=w1000",
       "https://lh3.googleusercontent.com/d/1a9kMmv6TOKo6ktT7wkTEGUswtvh-Q23U=w1000",
@@ -16571,7 +14626,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-28",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/16OPz3_iH7CgvCZeXYbbVXjXilUEhlKA9=w1000",
       "https://lh3.googleusercontent.com/d/1aZvzERvRfW69nlclg4moDGh1mC5ZFmM9=w1000",
@@ -16614,7 +14669,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-28",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1gxDd_D8rVSkTcY4uRXRqhYvOnUrFQPLm=w1000",
       "https://lh3.googleusercontent.com/d/1MJNZt1pzIRIv3ZpbKe6EMRSZvOCP-oPe=w1000",
@@ -16662,7 +14717,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-28",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/13W3X-ugfLF8C9WrrVCcgwtNFb7VUQN13=w1000",
       "https://lh3.googleusercontent.com/d/1rppe2OR-Ze4OOqzy3YWAjUjb5hvO5HHU=w1000",
@@ -16703,7 +14758,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1s4eWaTaO1JaUAgk9SzIvHFwH1Wn3EOmc=w1000",
       "https://lh3.googleusercontent.com/d/1DuifPeGPZOP4YiSUw24hJ-bq4ENUv6De=w1000",
@@ -16751,7 +14806,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1UEh7Zw0MzoEnafNrcO6vuia5In_K3Eso=w1000",
       "https://lh3.googleusercontent.com/d/1Uq72hRA1gaI8ckHt1UhgecaLimRl3s3-=w1000",
@@ -16796,7 +14851,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1N3ckmpmMNqj8wHRnQyi8RWTxe36ScVGE=w1000",
       "https://lh3.googleusercontent.com/d/1tQj09TAZho299LhVh4RYDKwxttUtA-Tk=w1000",
@@ -16840,7 +14895,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1RWfDJRlIAc2prK99-t6O8O8BAlPqsdLl=w1000",
       "https://lh3.googleusercontent.com/d/1clFhk6AufwOx-ZJ-zpfE_IHXZ4Iu6Bd4=w1000",
@@ -16883,7 +14938,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1P2kC3YU9XNOAHOplGAyhI4cY2ZoaL37Z=w1000",
       "https://lh3.googleusercontent.com/d/15_e__GfAiP934AuJ2-VCDa5_jjc_erk8=w1000",
@@ -16926,7 +14981,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1PP5DKuLD3Z4w5_IIx_IUY5ThsVmwpABv=w1000",
       "https://lh3.googleusercontent.com/d/1Nuutsq5QLzaZHaE_XURNPrIvqozhOSEA=w1000",
@@ -16970,7 +15025,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1VMpqNFviNy3p-C65flQEcZ_juyFHznj3=w1000",
       "https://lh3.googleusercontent.com/d/1flgB1znJMCBz58yivAXkPJTpc9BGQEfb=w1000",
@@ -17005,7 +15060,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Komersial Basic Unit — Ground/First/Second Floor di Jalan Kebun, Bandar Putera, Klang, Selangor dijual pada RM415,000. Hakmilik: Leasehold. Sekatan: Tidak dinyatakan.",
+    "description": "Komersial Basic Unit — Ground/First/Second Floor di Jalan Kebun, Bandar Putera, Klang, Selangor dijual pada RM415,000. Hakmilik: Leasehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Jalan%20Kebun%2C%20Bandar%20Putera%2C%20Klang%2C%20Selangor",
@@ -17013,7 +15068,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kf5B6wE8OoBDgnzWzpIajxW8XlZ6tiFR=w1000",
       "https://lh3.googleusercontent.com/d/1iQI3O71bv0VNQHAtqCIXIMFCecTKcYX9=w1000",
@@ -17057,7 +15112,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 1.0289 ekar (44,782 sqft) — 244' x 230' di Jalan Johan Setia, 41200 Klang, Selangor dijual pada RM1,028,900. Hakmilik: Leasehold. Sekatan: Tidak dinyatakan. Anggaran RM23 sekaki persegi.",
+    "description": "Tanah 1.0289 ekar (44,782 sqft) — 244' x 230' di Jalan Johan Setia, 41200 Klang, Selangor dijual pada RM1,028,900. Hakmilik: Leasehold. Anggaran RM23 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Jalan%20Johan%20Setia%2C%2041200%20Klang%2C%20Selangor",
@@ -17065,7 +15120,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1N-AXo4XbaFPcBlBq2TiRFmq2MBMn0W9e=w1000",
       "https://lh3.googleusercontent.com/d/1ctk32DyJJRqB4Z3y6gBSQPjvzHnCLKuk=w1000",
@@ -17108,7 +15163,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1NWXglI0a3vFngSfzvFLCj50XreGR4OLl=w1000",
       "https://lh3.googleusercontent.com/d/1NR5VTG95znP95y3v9ecsb5dKIu_b27Wc=w1000",
@@ -17151,7 +15206,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1rZkiXgfUg6m67jdq48_ZUL5HXKHL5pwT=w1000",
       "https://lh3.googleusercontent.com/d/1hgEdcFXr1oumAOplsTPdqYyk6tnFzP3C=w1000",
@@ -17193,7 +15248,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/16x7IgETjaYvvTbJubxCTzz4R-GDwMAeS=w1000",
       "https://lh3.googleusercontent.com/d/1tGIeTDgBlTADUXBKSu6tvSaRXt8nbLhY=w1000",
@@ -17244,7 +15299,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1FjUZ8kUS7YdjA604PJUmA4R9GoPLJWjj=w1000",
       "https://lh3.googleusercontent.com/d/1kg0zdzDlr93fK3QKI7Qe1hxZB7nooVCl=w1000",
@@ -17292,7 +15347,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1abx-w3wPaOjeoWcXq1vuiRI8HTZNhMC6=w1000",
       "https://lh3.googleusercontent.com/d/1q6ZJiy09SwlNW7A6_-menU0rl0kvHM98=w1000",
@@ -17337,7 +15392,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1VCsCfbuxSndhwmyZ2g_LkfrBeGt1gMZL=w1000",
       "https://lh3.googleusercontent.com/d/1wia8I6L5W0dUjPPitv-Tf41A5Ysq9a4H=w1000",
@@ -17386,7 +15441,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/13b-Wu1mXCvIlknTstvIjF9bH5cs0aGge=w1000",
       "https://lh3.googleusercontent.com/d/15EXv3VXQH7HJs0Xjfd6hgROnws22Cns7=w1000",
@@ -17439,7 +15494,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xlSGDfX6qmCaF6G0OV1OygFMsEAKNSGa=w1000",
       "https://lh3.googleusercontent.com/d/1FPoWanYgJ2jmbMtjS1xYTi3GWBKS4Bcp=w1000",
@@ -17478,7 +15533,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 2 ekar di Dengkil, Selangor dijual pada RM6,000. Hakmilik: Tidak pasti. Sekatan: Melayu Reserved.",
+    "description": "Tanah 2 ekar di Dengkil, Selangor ditawarkan untuk disewa pada RM6,000 / bulan. Hakmilik: Tidak pasti. Sekatan: Melayu Reserved.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Dengkil%2C%20Selangor",
@@ -17486,7 +15541,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kpNsQVw_7w5zoGUCA_SDRzHtYDKkpjti=w1000"
     ],
@@ -17525,7 +15580,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1gb4eYTG612wiIHj-qEJROaVNoPneHVcS=w1000",
       "https://lh3.googleusercontent.com/d/1HluIL32sWA_0W_UDFpGEUq-E5qUrKAku=w1000",
@@ -17567,7 +15622,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bp-ZYMM5dsLhulXZuhFjp2ZYHr0K_7qC=w1000",
       "https://lh3.googleusercontent.com/d/1-Ory-elVC65PHr4nTwM7BQ_0Vx1F2mkj=w1000",
@@ -17613,7 +15668,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bp-ZYMM5dsLhulXZuhFjp2ZYHr0K_7qC=w1000",
       "https://lh3.googleusercontent.com/d/1-Ory-elVC65PHr4nTwM7BQ_0Vx1F2mkj=w1000",
@@ -17659,7 +15714,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1W6DSmp3vFWDHjFaNhaEVTYYT0q-4mKvB=w1000",
       "https://lh3.googleusercontent.com/d/1P_GEQkWSe-_uELNUeR22sLAxP3yDyNqW=w1000",
@@ -17681,7 +15736,7 @@ window.LISTINGS = [
     "state": "Selangor",
     "price": 750000,
     "price_label": "RM750,000",
-    "price_old": "RM680,000",
+    "price_old": null,
     "land_area": "0.4051 Hektare / 1.0 Acre (≈ 43,560 sq ft)",
     "built_up": "-",
     "tenure": "Leasehold",
@@ -17695,16 +15750,9 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Leasehold Bumi Lot (tamat Jan 2101)",
-      "0.4051 Hektare / 1.0 Acre — lot intermediate",
-      "Bentuk tanah segi empat, tanah rata",
-      "Akses jalan — lapisan ke-2 (2nd layer)",
-      "Individual Title",
-      "Sesuai untuk pelaburan masa hadapan"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian 1 acre di Johan Setia Sijangkang, Mukim Klang. Leasehold Bumi Lot dengan tamat 99 tahun Januari 2101. Tanah rata berbentuk segi empat, lot intermediate dengan akses jalan di lapisan ke-2. Sesuai untuk pelaburan tanah pertanian jangka panjang.",
+    "description": "Tanah 0.4051 Hektare / 1.0 Acre (≈ 43,560 sq ft) di Johan Setia Sijangkang, Mukim Klang, Daerah Klang, Selangor dijual pada RM750,000. Hakmilik: Leasehold. Sekatan: Bumi Lot. Anggaran RM17 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "",
@@ -17712,7 +15760,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kLh3REv1dAZe6BQudSkc_guAHtoce9wb=w1000",
       "https://lh3.googleusercontent.com/d/1c7HYCjyPtTCBWsDqNFVINKxqw5f_X_xD=w1000",
@@ -17738,7 +15786,7 @@ window.LISTINGS = [
     "state": "Selangor",
     "price": 450000,
     "price_label": "RM450,000",
-    "price_old": "RM680,000",
+    "price_old": null,
     "land_area": "0.428 ha / 4,608 sq m / 46,080 sq ft (1.06 Acre)",
     "built_up": "-",
     "tenure": "Leasehold",
@@ -17752,17 +15800,9 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Leasehold 99 tahun (tamat 5 Mei 2104)",
-      "Tanah Rezab Melayu — Malay Reserved",
-      "0.428 ha / 46,080 sq ft (1.06 Acre)",
-      "Lot PT 32664 (40741)",
-      "Tanah rata — sesuai pertanian & hortikultur",
-      "Akses ELITE & SOUTHVILLE City",
-      "Market Value RM680,000"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian 1.06 acre di Mukim Dengkil, Sepang. Tanah Rezab Melayu, leasehold 99 tahun sehingga 2104. Tanah rata dan bersaiz baik untuk pertanian, hortikultur atau pelaburan tanah. Berhampiran ELITE Highway dan SOUTHVILLE City dengan pertumbuhan masa hadapan dijangka.",
+    "description": "Tanah 0.428 ha / 4,608 sq m / 46,080 sq ft (1.06 Acre) di Mukim Dengkil, Sepang, Selangor dijual pada RM450,000. Hakmilik: Leasehold. Sekatan: Bumi Lot / Tanah Rezab Melayu. Anggaran RM10 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://maps.app.goo.gl/UbKgYXBoeZ4m61JN8",
@@ -17770,7 +15810,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1vntUFZ6d3Itp17rmjvPUlqMBXmsndb4z=w1000",
       "https://lh3.googleusercontent.com/d/1kl2cGNCz3IMUshwawHRfNpgwZXnXWIX1=w1000",
@@ -17808,17 +15848,9 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Freehold — Individual Title",
-      "5,400 sq ft bungalow lot",
-      "Menghadap North-East (Feng Shui ideal)",
-      "Gated & Guarded Community",
-      "Berhampiran Epsom College",
-      "Kawasan kejiranan rendah kepadatan",
-      "Sesuai untuk build dream home atau pelaburan"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Lot bungalow 5,400 sq ft di Bandar Baru Enstek, Negeri Sembilan. Freehold dengan orientasi North-East yang ideal dari segi Feng Shui. Terletak dalam komuniti gated & guarded berhampiran Epsom College. Kawasan aman rendah kepadatan, sesuai untuk membina rumah idaman atau pelaburan jangka panjang di kawasan berkembang.",
+    "description": "Tanah 5,400 sq ft di Bandar Baru Enstek, Negeri Sembilan (near Epsom College) dijual pada RM335,000. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "",
@@ -17826,7 +15858,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1z1mYGvSDZj2lmMTHxQX2Grp09Eu81nSX=w1000",
       "https://lh3.googleusercontent.com/d/1sj4AAelruOylcmjmLbix9Dtb16rpKccL=w1000",
@@ -17857,18 +15889,9 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Freehold — Individual Title",
-      "MSC Status — bangunan komersial 4 tingkat + 1 basement",
-      "Gross 230,965 sq ft / NLA 172,260 sq ft",
-      "Tanah 5.54 Acre di Cyberjaya",
-      "Keselamatan 24 jam + CCTV + access control",
-      "Lift penumpang, covered & open parking",
-      "5 min ke D'Pulze & Tamarind Square",
-      "Akses MEX, ELITE, SKVE, LDP"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Bangunan standalone 4 tingkat separa berkelengkapan di Cyberjaya dengan status MSC. Saiz gros 230,965 sq ft (NLA 172,260 sq ft) atas tanah 5.54 acre. Dilengkapi keselamatan 24 jam, lif penumpang, covered parking, lobby/reception, CCTV. Sesuai untuk universiti, kolej, sekolah antarabangsa, hospital atau ruang pejabat. Lokasi strategik — 5 minit ke D'Pulze & Tamarind Square, akses 4 lebuh raya.",
+    "description": "Komersil Gross 230,965 sq ft / NLA 172,260 sq ft | Tanah 5.54 Acre di Cyberjaya, Selangor dijual pada RM130,000,000. Hakmilik: Freehold. Anggaran RM539 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "",
@@ -17876,7 +15899,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jjsH2QQbBHih2hV6-DotxrT0-oJLIDUF=w1000",
       "https://lh3.googleusercontent.com/d/1j47I8SwX4shPqSZABM-3_OZpKVLxT-N-=w1000",
@@ -17916,45 +15939,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Leasehold (Rezab Melayu), tanah pertanian 3.21 ekar",
-      "Berhampiran PKNS Cyberjaya, Raudhah City & Gamuda Cove",
-      "Berpotensi untuk lot bungalow / semi-D",
-      "Boleh diakses melalui jalan raya"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Peluang memiliki tanah pertanian berpotensi seluas 3.21 ekar (1.298 hektar) di Bukit Damar, berhampiran PKNS Cyberjaya. Kedudukan strategik berdekatan Raudhah City dan Gamuda Cove, dengan akses jalan raya sedia ada. Berpotensi untuk pembangunan lot bungalow atau semi-D. Tanah leasehold berstatus rezab Melayu. Harga RM2,000,000.",
-    "amenities": [
-      "PKNS Cyberjaya",
-      "Raudhah City",
-      "Gamuda Cove",
-      "Putrajaya",
-      "Lebuhraya MEX"
-    ],
-    "nearby": [
-      {
-        "name": "PKNS Cyberjaya",
-        "distance": "berdekatan"
-      },
-      {
-        "name": "Raudhah City",
-        "distance": "berdekatan"
-      },
-      {
-        "name": "Gamuda Cove",
-        "distance": "berdekatan"
-      },
-      {
-        "name": "Putrajaya",
-        "distance": "±15 minit"
-      }
-    ],
+    "description": "Tanah 1.298 Hektare / 3.21 Ekar di Bukit Damar, near PKNS Cyberjaya, Sepang dijual pada RM2,000,000. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM14 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bukit%20Damar%2C%20near%20PKNS%20Cyberjaya%2C%20Sepang",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1oEfJk5k6jnOlW_1sPSRgec6Gr7EgdZ5K=w1000",
       "https://lh3.googleusercontent.com/d/17fmb4xDwo7G03wEfbQr8VivS1aCwuPuk=w1000",
@@ -17997,51 +15992,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Freehold (Rezab Melayu), geran individu",
-      "Lot bangunan 7,868 sqft (731 sqm)",
-      "Infrastruktur jalan, elektrik & SYABAS sedia ada",
-      "Kawasan bebas banjir, boleh loan LPPSA/bank"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Lot bangunan 7,868 sqft (731 sqm) di Putra Hill View, Desa Putra Kajang. Status freehold (rezab Melayu) dengan geran individu. Infrastruktur lengkap — jalan, elektrik dan paip SYABAS — serta kawasan bebas banjir. Layak untuk pinjaman LPPSA atau bank. Berdekatan SK Desa Putra, Putrajaya (Mydin, Alamanda, IOI City Plaza), UKM, UNITEN dan Bandar Baru Bangi. Harga RM350,000.",
-    "amenities": [
-      "SK Desa Putra (1km)",
-      "Sekolah Rendah Agama Desa Putra (1km)",
-      "Mydin & Alamanda Putrajaya",
-      "IOI City Plaza",
-      "UKM & UNITEN",
-      "Bandar Baru Bangi",
-      "Hospital Serdang & An-Nur"
-    ],
-    "nearby": [
-      {
-        "name": "SK Desa Putra",
-        "distance": "1 km"
-      },
-      {
-        "name": "Putrajaya (Mydin, Alamanda, IOI City Plaza)",
-        "distance": "berdekatan"
-      },
-      {
-        "name": "UKM / UNITEN / GMI",
-        "distance": "berdekatan"
-      },
-      {
-        "name": "Bandar Baru Bangi",
-        "distance": "berdekatan"
-      },
-      {
-        "name": "Hospital Serdang & An-Nur",
-        "distance": "berdekatan"
-      }
-    ],
+    "description": "Tanah 7868 sqft (731 sqm) di Desa Putra, Kajang, Selangor dijual pada RM350,000. Hakmilik: Freehold. Sekatan: Melayu Reserved. Anggaran RM44 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Desa%20Putra%2C%20Kajang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Z0_vAJuoZkE_49lHgmrRqW3gY8IGXk_l=w1000",
       "https://lh3.googleusercontent.com/d/1MyhgBd9rdaXiqOMNZET2XnMWPmtWXmLr=w1000",
@@ -18084,40 +16045,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Leasehold sehingga 2094 (Rezab Melayu)",
-      "Tanah pertanian 3.91 ekar",
-      "Berhampiran Cyberjaya & Gamuda Cove",
-      "Berpotensi untuk lot bungalow / semi-D"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pertanian berpotensi seluas 3.91 ekar di Bukit Damar, berhampiran PKNS Cyberjaya. Leasehold sehingga tahun 2094, berstatus rezab Melayu. Berdekatan Cyberjaya dan Gamuda Cove dengan akses jalan raya. Berpotensi untuk pembangunan lot bungalow atau semi-D. Harga RM2,050,000.",
-    "amenities": [
-      "PKNS Cyberjaya",
-      "Gamuda Cove",
-      "Putrajaya",
-      "Lebuhraya MEX"
-    ],
-    "nearby": [
-      {
-        "name": "Cyberjaya",
-        "distance": "berdekatan"
-      },
-      {
-        "name": "Gamuda Cove",
-        "distance": "berdekatan"
-      },
-      {
-        "name": "Putrajaya",
-        "distance": "±15 minit"
-      }
-    ],
+    "description": "Tanah 3.91 Ekar di Bukit Damar, near PKNS Cyberjaya, Sepang dijual pada RM2,050,000. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM12 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bukit%20Damar%2C%20near%20PKNS%20Cyberjaya%2C%20Sepang",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1n2s3kpTXHfr9FEm6IE0Bxd__vpgUe2h5=w1000",
       "https://lh3.googleusercontent.com/d/1fgAB54R_QKjH9pDxFOpGsUVwJS1TBG16=w1000",
@@ -18167,7 +16105,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1gxYKe6-ssNs5topu16cdX3yBF4qgKWdv=w1000",
       "https://lh3.googleusercontent.com/d/11pD8j8ljLFG0IeThC7YZKWzRWmCvAyBP=w1000",
@@ -18212,7 +16150,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1zOfg06S946nSgLNnsVtq8HTN6WkNJ_at=w1000",
       "https://lh3.googleusercontent.com/d/1n1OmzzgWtONgwomFpnE29-UzZW7ZhcIP=w1000",
@@ -18260,7 +16198,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/18P05_3WE2Q1o93NAkHvuF-y2F7XQi-5Q=w1000",
       "https://lh3.googleusercontent.com/d/11QxgEWkAnK96nUBadB5-iNpfripR5kNt=w1000",
@@ -18313,7 +16251,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1rIHxvGkG1qwrMDZvV2AVXoESiuOGQLn2=w1000",
       "https://lh3.googleusercontent.com/d/13WNSRAHfLGwqqrR2zvtMnfs4ttGSdL_M=w1000",
@@ -18354,7 +16292,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ogu60ivVQt3eLcKbw7Cw9J8pvWX0e0dA=w1000",
       "https://lh3.googleusercontent.com/d/1iPLSydsLZPQ__L9z73X4IsOi3EAMMWWv=w1000",
@@ -18402,7 +16340,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1BYANAE83b1LlUox2dArhyywqhs1HENxg=w1000",
       "https://lh3.googleusercontent.com/d/19gWmwucjOvRO8m2r-BmZgAnjy-H5Sh1_=w1000",
@@ -18451,7 +16389,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Wm1MKqu3j29r6DNasw9cGDIrENnCEqDw=w1000",
       "https://lh3.googleusercontent.com/d/1jTkjZdbqIbw8yTzoiiZ9R-IAycinReHN=w1000",
@@ -18504,7 +16442,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/16jlklRuJXe8B8W2dxRMCE11UOY3bXqMO=w1000",
       "https://lh3.googleusercontent.com/d/1Z9Bak0fqEBpOx2xy37e1_THWbTnW_XKt=w1000",
@@ -18548,7 +16486,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/18VbgALaFTvDw3JNAml2inrXKFQK0isPT=w1000",
       "https://lh3.googleusercontent.com/d/1EGqdzeG0WXoNO7ojWAVm5hef1ADRTYIW=w1000",
@@ -18575,7 +16513,7 @@ window.LISTINGS = [
     "sekatan": "Malay Reserve",
     "kategori": "",
     "zoning": "",
-    "psf": 275000,
+    "psf": 6,
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
@@ -18584,7 +16522,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 4 sqft di Kajang, Selangor dijual pada RM1,100,000. Hakmilik: Leasehold. Sekatan: Malay Reserve. Anggaran RM275000 sekaki persegi.",
+    "description": "Tanah 182,952 sqft di Kajang, Selangor dijual pada RM1,100,000. Hakmilik: Leasehold. Sekatan: Malay Reserve. Anggaran RM6 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Kajang%2C%20Selangor",
@@ -18592,7 +16530,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1mlLvf8iT2sW0n469zNlQT3fW1qjUU7O-=w1000",
       "https://lh3.googleusercontent.com/d/1RveZH0eFW6Txa83FwJ19dhmnNitjXGBK=w1000",
@@ -18636,7 +16574,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Z0ufKIpdhcvpy5ipY-7RZl3V66D1TwKY=w1000",
       "https://lh3.googleusercontent.com/d/1gaTqtM_UERLV-ZT3ZIhiMqmd9MYAZydz=w1000",
@@ -18680,7 +16618,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jZPEx99Dzjp4slu9vG45AzCVa2fvvp8c=w1000",
       "https://lh3.googleusercontent.com/d/1bDj_BYwUfimHW4_wTXtBWrtbRjemVuH1=w1000",
@@ -18724,7 +16662,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1UpcXN2aAkSp5L2m0i3o5dg83wyE2m4w7=w1000",
       "https://lh3.googleusercontent.com/d/1FEqiLgdhNu-EWY08Jd8sgTprtmOb2X1H=w1000",
@@ -18771,7 +16709,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jH9Ds6xNBHnpUzr7wWQwA-uOSXxBu_wT=w1000",
       "https://lh3.googleusercontent.com/d/12FB6Zd9FcLxUbgp1vJgYPjc6ezteRp2c=w1000",
@@ -18815,7 +16753,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1aHLAJal0xoQhmvau81sNL0brewlzpPdg=w1000",
       "https://lh3.googleusercontent.com/d/16xoAPo2B5V-PElmb1_asOwvjcwhG6Jb5=w1000",
@@ -18860,7 +16798,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1FwWF_YYyVcPU3jEh4g6DnsfUt0AoHJoo=w1000",
       "https://lh3.googleusercontent.com/d/1_cDPLq_jFNGVqNA1X10JU4sA1p5xCa4c=w1000",
@@ -18904,7 +16842,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19jQXgzQq8w6bb_0TfIqs6SkrrrzY29DX=w1000",
       "https://lh3.googleusercontent.com/d/1Id0vPylJU7d-J-G7D2HCKv47-WDIGpzE=w1000",
@@ -18947,7 +16885,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1R_gwF2EuZ-7ykDdqg9-aUETLFXkBswib=w1000",
       "https://lh3.googleusercontent.com/d/1wSX9MmPbs7fp2NaZjQH6hZSzkyQLYmNI=w1000",
@@ -18992,7 +16930,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1XHRgpeC-FAPw39zBKoct1t3egB_iAkh0=w1000",
       "https://lh3.googleusercontent.com/d/1RMtQQ0ok_5FORH5qu1R1xHhIRvNVbmlK=w1000",
@@ -19042,7 +16980,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_n9icxoaHIOIY8DXXJoV27dAKccu6ICT=w1000",
       "https://lh3.googleusercontent.com/d/1wsGABk-s_PKgZ-lQA6j1GTPR44sBW-cg=w1000",
@@ -19084,7 +17022,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1DH7xThan_HBqsc7ck5peSns8Jyqdy-2C=w1000",
       "https://lh3.googleusercontent.com/d/1uX_juB9OaCjET-nWWLeTkyil7d_wPs-a=w1000",
@@ -19130,7 +17068,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1lJGnXtwbrAbjd3Dcg5JyzDGAFRVdcPbv=w1000",
       "https://lh3.googleusercontent.com/d/1Ev8U-6wfPMtmMM7Y8cGUrVErACbn2WnL=w1000",
@@ -19179,7 +17117,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1dmD-7bNh7zjqYKAZtJEXIc23ib_6PbOa=w1000",
       "https://lh3.googleusercontent.com/d/1h2RLJQ-UqfaDTNmSbMrPz2GR8ZC45Q-z=w1000",
@@ -19222,7 +17160,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ZNrS-7VYMzS4k-8RxIUWW-b17dgOc5lK=w1000",
       "https://lh3.googleusercontent.com/d/19cTkJkTj6sHs1u3Zm3o7yMGojJqErK2p=w1000",
@@ -19267,7 +17205,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1zMTCk3zQA5aKlYXXCDTIRd0-pxaQRF3i=w1000"
     ],
@@ -19306,7 +17244,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1V4dXFB-3nxkVh31ECRL9dCFsqhzXvh0Z=w1000",
       "https://lh3.googleusercontent.com/d/1yiKSQgMjeJmaUAoaC-DLNkU22VSItyC9=w1000",
@@ -19350,7 +17288,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1R1tYq3oPkUDPOPB2cT0tCr9V2uYzdEH7=w1000",
       "https://lh3.googleusercontent.com/d/1gECK1m9CoqnVJb5a7uZIPMxOWC4-e6iZ=w1000",
@@ -19394,7 +17332,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1G3w8Qi35op-6v__1dP8MWqlKyk6kh1QT=w1000",
       "https://lh3.googleusercontent.com/d/1tyJ6G-2SmxObHcsRtu4lwtO_T9oVvewl=w1000",
@@ -19438,7 +17376,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Nl1GbO4sTjoz_U9-i080VBdQsvtAKLrb=w1000",
       "https://lh3.googleusercontent.com/d/1NGCpTHmpGWgBEHgTNpymRj78Vf9jDI7T=w1000",
@@ -19483,7 +17421,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kS-nGtaS3h3THv_6UB6bBm9ofolmTQPX=w1000",
       "https://lh3.googleusercontent.com/d/1w2CYD-wWDdFNA5CBRCQIHxaQ_jf56y8U=w1000",
@@ -19527,7 +17465,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/14POhGnuJR1bsMgKT4LQGsyrIuOcp4lWh=w1000",
       "https://lh3.googleusercontent.com/d/1inNNH2Ie7Mf8PQ4uxK6CHHlv1eijpkE_=w1000",
@@ -19574,7 +17512,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/188mKa8QZcdWwlU6HDV5A4tl1IOQd_3A_=w1000",
       "https://lh3.googleusercontent.com/d/1c51RWBoZhCLNuevLM6yNz9QLJ7EA6i_c=w1000",
@@ -19622,7 +17560,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Q6Tv_dm1zh5eycNN8hvP02pWYYZvf47-=w1000",
       "https://lh3.googleusercontent.com/d/1SdSmTzmqnEVPj6ufZBDbsNagUu3cJVfS=w1000",
@@ -19675,7 +17613,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1igzRoJx7LzcLufGVb8MRrn7nIoy0EFXk=w1000",
       "https://lh3.googleusercontent.com/d/1OeuVmnM8PdSgWK_-RiWfmP6JJ87uBOhs=w1000",
@@ -19724,7 +17662,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19oxaVPEDOPSpaoobA92qK9omACyb91LJ=w1000",
       "https://lh3.googleusercontent.com/d/11rKwNfVY_iHIapzX5RSm1fPMOJR2H2xC=w1000",
@@ -19771,7 +17709,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1weJuwVgPeswKn_d8p3ASLGHbxvAx4ya_=w1000",
       "https://lh3.googleusercontent.com/d/1MnUOesD3EEoxKVWBElASfGgk_Fqx2lFL=w1000",
@@ -19812,7 +17750,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jkmTEGUela5wOMc7gjpcdhGt0I2L5Jba=w1000",
       "https://lh3.googleusercontent.com/d/1t8dQh8GN61RUo2SWj7Z4eaEFZp8rXpFg=w1000",
@@ -19863,7 +17801,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1AMwL6_xx89MoJ9sU3jR9eqIN_NQsT1Sb=w1000",
       "https://lh3.googleusercontent.com/d/1zU2P3a5vcl6CW5NFxM6fbHd7Kj-ZGYg3=w1000",
@@ -19910,7 +17848,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Z8x_ToZ1vaAbHh3miJmaAD59ih41Ullz=w1000",
       "https://lh3.googleusercontent.com/d/1BaAaY2TYMr22xq-OL8xMwUaL9HvYKfjl=w1000",
@@ -19956,7 +17894,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ZzUPvOF2--J5SzsuaF6Ztuan9eDTaLku=w1000",
       "https://lh3.googleusercontent.com/d/11l3kF_DW6dyVu-sZqqThy80wVd6FousT=w1000",
@@ -19999,7 +17937,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 1,080 sqft di Bukit Beruntung, Selangor dijual pada RM290,000. Hakmilik: Freehold. Sekatan: Non-Bumi. Anggaran RM269 sekaki persegi.",
+    "description": "Tanah 1,080 sqft di Bukit Beruntung, Selangor ditawarkan untuk disewa pada RM290,000 / bulan. Hakmilik: Freehold. Sekatan: Non-Bumi. Anggaran RM269 sekaki persegi sebulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bukit%20Beruntung%2C%20Selangor",
@@ -20007,7 +17945,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1asDaU6NapwetYluXirAR5FgyBNCWCX41=w1000",
       "https://lh3.googleusercontent.com/d/17iv9113y9uMjCLG7ztz1GNwBjxZqOtYu=w1000",
@@ -20050,7 +17988,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xuF264k4eIL1XVy7s6q-gkB7T98JXm0m=w1000",
       "https://lh3.googleusercontent.com/d/1mw-pyppy9QIZkv39OlBHj0l2MJZOpp6p=w1000",
@@ -20103,7 +18041,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1JvsWPLRAcNdnkmvQYKOOCHjnnnzcFIHZ=w1000",
       "https://lh3.googleusercontent.com/d/1zleSngEeit012ff_JGVJVuj-WRzCdGrl=w1000",
@@ -20154,7 +18092,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Va7KbOwz_fZbu-y-_8K-cjpAyNRFXQX-=w1000",
       "https://lh3.googleusercontent.com/d/1T-bsWhmyt9AJ7SjwPznO7FYMEU_UJSUG=w1000",
@@ -20200,7 +18138,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/14YKRt9hBOLeaRf3Q-_KoNNKdUeSyioSv=w1000",
       "https://lh3.googleusercontent.com/d/16vcXmB3n1WECoquHQAq1GB-gS7t6lIwN=w1000",
@@ -20243,7 +18181,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1G52GUw96482CGeEw3UMFt41lHeCUzgsR=w1000",
       "https://lh3.googleusercontent.com/d/17z66qJdiSQJ0Tl98i0K_TKOmPQe_JhqM=w1000",
@@ -20291,7 +18229,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ZBTmrVzKdKt-tpep4YwtiQmEOeLrrN2g=w1000",
       "https://lh3.googleusercontent.com/d/14KC37GcBnaN9I7g05d5HoZ84_GRs2zDq=w1000",
@@ -20334,7 +18272,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/18mgFmsdzgFQuIyrQ5UIjPlIsk70znvYq=w1000",
       "https://lh3.googleusercontent.com/d/1NG0pUlhc1cwTHo8CwsAFXdTokCfRAHPv=w1000",
@@ -20378,7 +18316,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1IUHRkYVMXfpeSGWCZQ04MocgROHKCvrp=w1000",
       "https://lh3.googleusercontent.com/d/13X2SuAUFG0atN89LIQaK39yazGR2KnhB=w1000",
@@ -20427,7 +18365,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1KlhwsEFT2E15cCB-WWfz2_LheOXS-tvd=w1000",
       "https://lh3.googleusercontent.com/d/1K4vIoRvfzMswyfQxumajUo0SpdlkTO8a=w1000",
@@ -20476,7 +18414,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1HCHNgG1OdXcfQh7YPRnt7TkekulkqAGM=w1000",
       "https://lh3.googleusercontent.com/d/1jiQqGEBYmpNTf66krzrh9qc52W-y0j9X=w1000",
@@ -20517,7 +18455,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1gj-Edd6Cy-mExMNcjGrWo65vrDQXsO81=w1000"
     ],
@@ -20556,7 +18494,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1CTWzhnu04O89R0DcPhT16rZatEByL37u=w1000",
       "https://lh3.googleusercontent.com/d/1yyNvtr2cxOfBvk89MIJN3WubmQE1J6cC=w1000",
@@ -20597,7 +18535,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1IKczwR0x5u4R6F_AofoQUVMy8_9Lrb4m=w1000",
       "https://lh3.googleusercontent.com/d/1uswVojKhVzwShBH8QzFu7YN0DvjBN4I9=w1000",
@@ -20640,7 +18578,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1cgLbcoiERSyAQpdFcKtuP3rSxAYagpe_=w1000",
       "https://lh3.googleusercontent.com/d/1kzlXwZV-LUB159yLTtqOTGW4NNRLJqpN=w1000",
@@ -20683,7 +18621,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1VTFGgPB5iQjoXDjlnH7fKG3XepERRRCQ=w1000",
       "https://lh3.googleusercontent.com/d/1sViKDMh9l-oc_8Uhe02gcZ73oGemBZGE=w1000",
@@ -20707,7 +18645,7 @@ window.LISTINGS = [
     "sekatan": "Malay Reserve",
     "kategori": "",
     "zoning": "",
-    "psf": 67,
+    "psf": null,
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
@@ -20716,7 +18654,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 7,147 sqft di Kajang, Selangor dijual pada RM480,000. Hakmilik: Freehold. Sekatan: Malay Reserve. Anggaran RM67 sekaki persegi.",
+    "description": "Tanah di Kajang, Selangor dijual pada RM480,000. Hakmilik: Freehold. Sekatan: Malay Reserve.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Kajang%2C%20Selangor",
@@ -20724,7 +18662,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1JKG5ApglmP-tb57_m9BdN_QDyC7XWR4O=w1000",
       "https://lh3.googleusercontent.com/d/1MjPC7y1yBgz0foxyXXUPE9fynx30tezl=w1000",
@@ -20774,7 +18712,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1yKDCm_FynGxYUxFpvcNMIQKUCbTVYla8=w1000",
       "https://lh3.googleusercontent.com/d/10kabD5oGNLJaXECBaRWzxdIlYCJj_O7I=w1000",
@@ -20827,7 +18765,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1QjMJgct0WHvmIQvFEw2dFIdT8U3HURzZ=w1000",
       "https://lh3.googleusercontent.com/d/14iw9zTCQ4Wsx_3e5_vz4QOQiS3YjWubC=w1000",
@@ -20870,7 +18808,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1zn4JDFmkB5stIsmKQgaj3v_QOeGMBb0q=w1000",
       "https://lh3.googleusercontent.com/d/14QrP6n58dmXrBtvGjV3P_oIQ7BoC4S-X=w1000",
@@ -20923,7 +18861,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YAUA1YFwazYD9D1mCsY3y-iHY8qafZei=w1000",
       "https://lh3.googleusercontent.com/d/1gNQrnmbGKp6i9HBGXLuG5HQg4n2fR3lY=w1000",
@@ -20976,7 +18914,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1I-1WFHhaza0SkoiSU6FOHQnNnG39-Njw=w1000",
       "https://lh3.googleusercontent.com/d/1pPwp_8OIIbPx6ueQDVTHAED9SDplZlgw=w1000",
@@ -21027,7 +18965,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/15J7qJ5TrsZCPDMC7Sy02ZEKrCMeO3ATA=w1000",
       "https://lh3.googleusercontent.com/d/1WBzzGFp8Go3EI-RM6PBLd0rNxRgu3OhM=w1000",
@@ -21077,7 +19015,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1WZtuYtlz7AwwZhdAGzdBtvDAJhVq8EVL=w1000",
       "https://lh3.googleusercontent.com/d/1E9FeLxsrLCkGZWOIr7UMS16coW6mtGsn=w1000",
@@ -21127,7 +19065,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jfeG2c4Cj3FZ07qlft_H7W_4B8qljhOC=w1000",
       "https://lh3.googleusercontent.com/d/1CAfUJkk03-H5WSDhTqIsiBP0ZznVn7eu=w1000",
@@ -21173,7 +19111,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1OrwRYR48qZgn1OGwzaxVCxX94N2etl0Q=w1000",
       "https://lh3.googleusercontent.com/d/1LqJTmvsnJif6LlxFMasS4kAgdYM7qgq9=w1000",
@@ -21214,7 +19152,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jRlRqX-VEthpuBHIAmsceeFnM1dsHnvX=w1000",
       "https://lh3.googleusercontent.com/d/1y5yUz5wSXust_J7fYsHdZzgf5BAJ971d=w1000",
@@ -21264,7 +19202,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/12eiRv8BNwXNshaWcCfM0VaxduD4NLMfi=w1000",
       "https://lh3.googleusercontent.com/d/1QRxOYZvoVaIWoy6D24IRdM1bgnJv7tO6=w1000",
@@ -21310,7 +19248,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1MhLyoJIVcUeB_-sbpENW9GhkK3YtL-5G=w1000",
       "https://lh3.googleusercontent.com/d/1qYsLG9PW5nSmWgLnVnKWybnk0eCHLYje=w1000",
@@ -21339,7 +19277,7 @@ window.LISTINGS = [
     "sekatan": "",
     "kategori": "",
     "zoning": "",
-    "psf": 81,
+    "psf": null,
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
@@ -21348,7 +19286,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 7,394 sqft di Bangi, Selangor dijual pada RM600,000. Hakmilik: Freehold. Anggaran RM81 sekaki persegi.",
+    "description": "Tanah di Bangi, Selangor dijual pada RM600,000. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bangi%2C%20Selangor",
@@ -21356,7 +19294,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1MghsN3ntfzofqEoWQ_f0RNdNupWy5hca=w1000",
       "https://lh3.googleusercontent.com/d/1aXfLulVGQOK4GKPrl6uGOaifMdHIEckx=w1000",
@@ -21400,7 +19338,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-S-H-3odroFecssMSagUa5wuqmTkwxEt=w1000",
       "https://lh3.googleusercontent.com/d/1E4Uf-qR5KMSt4zAriDzAN4dyCKnupSnE=w1000",
@@ -21452,7 +19390,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1LlvMVt74qoSO7_DjUNuxbaNlCyZYvLc2=w1000",
       "https://lh3.googleusercontent.com/d/14_JjKwgCnaTXzdAIsrAE6SRj6c46W6Yk=w1000",
@@ -21502,7 +19440,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1qsihhtf-TkvnrIjL48-qOfrpZ6EMlSlW=w1000",
       "https://lh3.googleusercontent.com/d/16JuCmT5dkfUCLA2qcwJAQg7572yMMiF9=w1000",
@@ -21554,7 +19492,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1hbFIk_3yLsMTGD0Z1-XD6B-RPisFCKj1=w1000",
       "https://lh3.googleusercontent.com/d/1YUs3IUOCipCTUACGf7dsq-4nexfhtNZ1=w1000",
@@ -21598,7 +19536,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1J4oj9ylYSEYYICasvJmrTSHse51VWgPW=w1000",
       "https://lh3.googleusercontent.com/d/1TtkNA_xvi7LHcrOXnV7L3H66h1K9BzGd=w1000",
@@ -21642,7 +19580,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1yz712XTFgJ7I31twlo0lEc6q-kLic3pL=w1000",
       "https://lh3.googleusercontent.com/d/19xJwfZ0s3HkltociMkWlwdJN-URnOsrc=w1000",
@@ -21693,7 +19631,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bWTQYMdlefphKGmAffvpFvHNBwZxNCF_=w1000",
       "https://lh3.googleusercontent.com/d/164KMeP4ccz2h40RORZ2os_4QfBGr8Nae=w1000",
@@ -21746,7 +19684,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/156YVKfpFO3ZwFRXtR68LfKDz0hL3nv7s=w1000",
       "https://lh3.googleusercontent.com/d/1YpGw8rrxMOiBBom-swtTtdJJWvS6TTb0=w1000",
@@ -21790,7 +19728,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kwm4ngnqDZb6mJUE2bxU1OyoVVWhJYgj=w1000",
       "https://lh3.googleusercontent.com/d/1uTNfaEMZjifz0-byzQfN8wVZvTIN5j-1=w1000",
@@ -21835,7 +19773,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1RjZqgLpHZfbIzJh07xqmFqMYH8t3yeqq=w1000",
       "https://lh3.googleusercontent.com/d/1moMODCdG_1OogrISTRMLA-1reGRNydtI=w1000",
@@ -21880,7 +19818,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1oWbTp8parzzdjjLp3TuoGphZx_Q8oD5Q=w1000",
       "https://lh3.googleusercontent.com/d/1aWHVZWA92LIp-HKiS3HzLMJbz5KJ9nYf=w1000",
@@ -21928,7 +19866,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Da1o-_cXJBPui_FIla7BdpJdhgdpMZ8U=w1000",
       "https://lh3.googleusercontent.com/d/1X0ZRn_r0WbpXytcyLO5D30wyCwRXYLS7=w1000",
@@ -21981,7 +19919,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1snLRYi1I2NP0ODRR8sOIt5iMFKaKdfg3=w1000",
       "https://lh3.googleusercontent.com/d/1uIhAT-IJHj3Sy_mRN69q5xG0vH5MoEtK=w1000",
@@ -22026,7 +19964,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jl5Bi9J0vuctetWlog6rS1p3Ab2S0Kut=w1000",
       "https://lh3.googleusercontent.com/d/1BdlEgBV-1gXdXoop9c_wXgDMUAPm5tUQ=w1000",
@@ -22079,7 +20017,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11Y4H1eLi-pwaoh3DSoLHjA0cU52fPxdg=w1000",
       "https://lh3.googleusercontent.com/d/1pImR0M-InxVTsnC1oBrTuD67GgHmSVcl=w1000",
@@ -22132,7 +20070,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xGz_gsWFFZWoutcIHgmVoloP5hYZs_vQ=w1000",
       "https://lh3.googleusercontent.com/d/1Z1e6_PD05s47VSo_sqdAXDZTrwVN9IPO=w1000",
@@ -22177,7 +20115,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1yVpPxAs_a3TVwVz67eNL922OmE67m4ap=w1000",
       "https://lh3.googleusercontent.com/d/1IHuvNm8wjFPZk6k3sUHafib5T_s3KF1A=w1000",
@@ -22230,7 +20168,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1vUZ61ga4-kA8lrDbXAU3En3HdT03ZuCn=w1000",
       "https://lh3.googleusercontent.com/d/1aXAX4R4fUm3OJBkf8Jd23H-nfXiSzYYU=w1000",
@@ -22274,7 +20212,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jqwL4jl32Fa2FQQsq6UXaxlXZ6ju2VR7=w1000",
       "https://lh3.googleusercontent.com/d/184-0p2ECibYtjwHtGj-r9LbzJ3l2mcOU=w1000",
@@ -22316,7 +20254,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1f5vkH24m7NZptTSaqYnDV9q_EgmCXC2k=w1000",
       "https://lh3.googleusercontent.com/d/1VIMcGd8DmpiesmjGJ1nsC7qouDDK-VoQ=w1000",
@@ -22360,7 +20298,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1yHPMGBn3GGxy-4RqiW4Awez2aP_UpSpX=w1000",
       "https://lh3.googleusercontent.com/d/1ejlOKHcKwMAlGj2s6MtaxRRAlVR5a6A4=w1000",
@@ -22405,7 +20343,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1KWUM5BTiRZP5v6V83ycN_mtTiow_i5Iq=w1000",
       "https://lh3.googleusercontent.com/d/1vXQ6qRl5vE5fg6NCOfpS2nL_NPC9q5p0=w1000",
@@ -22449,7 +20387,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1CdSOHDr2SvSMYIxdrUEGndB4_EQ4a6TK=w1000",
       "https://lh3.googleusercontent.com/d/16V0LsmZmBLvV4AHxT4zc5ANtmV028L5c=w1000",
@@ -22493,7 +20431,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/10cPsv8TH6sZRb4YX9W_OVQeXTJEHAOLW=w1000",
       "https://lh3.googleusercontent.com/d/1hffPiDCVfSDO5ywuPNBWiifoB8ZwtrUe=w1000",
@@ -22537,7 +20475,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1DZIcvR9xMSG_KFqhKcvB8AM06Jski2n_=w1000",
       "https://lh3.googleusercontent.com/d/1S5EynaM1tDoiT4LmOx-xngu7XjQnGcnv=w1000",
@@ -22586,7 +20524,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1LcBXC_nvjTlIjq2w0t1A9-hPkuCqC4hp=w1000",
       "https://lh3.googleusercontent.com/d/1h_gYN6f2QpfSOWo2i0vzfbkA_Y0gzF6M=w1000",
@@ -22630,7 +20568,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1CpGPjyCmNPUUl2hvmEhgz3lBE7RXZNdA=w1000",
       "https://lh3.googleusercontent.com/d/1vtY3fzEZnNE-wXPj-_XS41UAiaLOvjP9=w1000",
@@ -22674,7 +20612,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1yF4tw9nJE-zC8PRq1r5qYJ5xtZZtRtA6=w1000",
       "https://lh3.googleusercontent.com/d/1XoVD47ymFQFgQcYk2jVn1jIIwP4Gw2qp=w1000",
@@ -22720,7 +20658,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1fntDaaNpeKAWwxirV0r8DqgI4tXvakYL=w1000",
       "https://lh3.googleusercontent.com/d/16Ga8D3n54_fq5gQvtWxNkUAEzxLxaiSu=w1000",
@@ -22765,7 +20703,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1N-FzcNzFyLipL07w7WPeqNnf30-4nyBm=w1000",
       "https://lh3.googleusercontent.com/d/11uPMXSv1NRFEJMbwuve0-K-wfVoe_5En=w1000",
@@ -22818,7 +20756,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1wi6EIo4eaaxqkoAiI4KdyP4kJk5Ukxz9=w1000",
       "https://lh3.googleusercontent.com/d/1Nv9ongMLr1EASvDWorkvImqjd8eHRNtm=w1000",
@@ -22862,7 +20800,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1VYe1NX4dDwwyY-YCe19ecuEpRDXTkfax=w1000",
       "https://lh3.googleusercontent.com/d/10wfU5z_BsOIXnP2ZZ7dvdNsvIuuE5m9y=w1000",
@@ -22904,7 +20842,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1z_UM-wEkMIdcGDCR53eTuZwgXeM5Dj_S=w1000",
       "https://lh3.googleusercontent.com/d/12lwUvI0V52zIRxzpB6fL_zZ-TPMf0R5g=w1000",
@@ -22954,7 +20892,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Pnsbmqw4QjuCYCvswYFZ5y3RJmNySQFr=w1000",
       "https://lh3.googleusercontent.com/d/1HAIOQV31V47aCx09tXQxuehVmLK0vG_V=w1000",
@@ -23007,7 +20945,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1IgxJt-E01L27EHSXDHJo-bs4YJMargdS=w1000",
       "https://lh3.googleusercontent.com/d/1e1oqs7hs54-sJNjGf8VNSaXzFMRgXir_=w1000",
@@ -23060,7 +20998,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1lOKR5oCBMg41lO9Rh78640DN31JcuYTc=w1000",
       "https://lh3.googleusercontent.com/d/1Vuuc2ilaS8AGBcV1wDR6F3ATTQQu_BP9=w1000",
@@ -23113,7 +21051,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Cx-v601TtqPa6FgpQ-wPZW3gPARjevnB=w1000",
       "https://lh3.googleusercontent.com/d/12NDx97oe7w_dD8PbKXkJDcbeh93AQIR-=w1000",
@@ -23166,7 +21104,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/13R_eEIXmPF3MDcammZEqNk3KLi4_EEqW=w1000",
       "https://lh3.googleusercontent.com/d/1JfdGz3G__mosPaDTYzqZqItLK_b9cROB=w1000",
@@ -23210,7 +21148,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1H31k4kymIAd0-IN4SV-df5hRM9K-GZEq=w1000",
       "https://lh3.googleusercontent.com/d/11a9hwt_UpiEhgxSFgdB467U4-wvj11Ie=w1000",
@@ -23263,7 +21201,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/117G_1RmFCuW_bQWIxWFRfHp0DY6CyOjL=w1000",
       "https://lh3.googleusercontent.com/d/1Xuu8i3AY19TMIWOKAWkQJ9vVGlse11N9=w1000",
@@ -23313,7 +21251,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1PoLoUh0lZk-CMsRcGj3BvpH99EltAAmq=w1000",
       "https://lh3.googleusercontent.com/d/1bOIGDLuF4-yh0vafHfZutGBWQ9Pv8Tdy=w1000",
@@ -23361,7 +21299,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1HRj6Y9iRfeNVxRlxhleTU5UZc4o0GcGz=w1000",
       "https://lh3.googleusercontent.com/d/1virFNCkfa7cDkIfWwPKgAjo-oXxbUqIF=w1000",
@@ -23409,7 +21347,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/175QREK9TDB-RblQyE-AWEukgqx8UGJAc=w1000",
       "https://lh3.googleusercontent.com/d/1Or4s89fKfzVfJHl5d8Vs2Rv0o6rFSIgW=w1000",
@@ -23458,7 +21396,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1utm2YdoW1CXwhBFQcvfgBd49k1pxD8PN=w1000",
       "https://lh3.googleusercontent.com/d/1R_lwQawyLUff725n6vdSniXHoUNQ_yph=w1000",
@@ -23501,7 +21439,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1PBP229CzX8SopFoJlaSLmhdWq1cQFMtC=w1000",
       "https://lh3.googleusercontent.com/d/1iWEebZe_y4sVyHxL_4x--TJ-G_XENkD-=w1000",
@@ -23543,7 +21481,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1dxrsZACgwjbB9fFQIHUjYPaYIXumDnHT=w1000",
       "https://lh3.googleusercontent.com/d/1EWsgSMrb6Gxj65jQlMMd8slmRGV1bSFP=w1000",
@@ -23596,7 +21534,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1mB8yjbvI23Gc5jydxbkcYM-ILH172qLY=w1000",
       "https://lh3.googleusercontent.com/d/1Tc8rV2HXCEUJRzadTYIQd1emSg31wTzk=w1000",
@@ -23638,7 +21576,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11W-NP-rLn22UdaPZlXz5yotrCPVrwg_C=w1000",
       "https://lh3.googleusercontent.com/d/1pP77CsYll7vOO71J0PpwWWdCeJmdhqtY=w1000",
@@ -23684,7 +21622,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1k-ekyB_A-8yavHHiK51WPY4tbln5qakj=w1000",
       "https://lh3.googleusercontent.com/d/1_2TYjbxbu8ohN3AOArdn9HdwGs7dggWs=w1000",
@@ -23728,7 +21666,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1nvV3jDXsB9PIKUUkob8lLEPBJLBQNFlH=w1000",
       "https://lh3.googleusercontent.com/d/13Bnq5c7WxMuVOmyM5OgR9CUWwaEDn5pw=w1000",
@@ -23772,7 +21710,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1tFXCkP1abfb22GXyOAikeRrS-Qec2jGI=w1000",
       "https://lh3.googleusercontent.com/d/183Iaz8sB07fArznfa0HL_XW9SNYOeAtr=w1000",
@@ -23813,7 +21751,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bY46EnzlSPv67cpgit4s3hEtv3kvrtmZ=w1000",
       "https://lh3.googleusercontent.com/d/1Ye5_kXYLu1Mq6HsGPQfTVDXmkrmFefOD=w1000",
@@ -23854,7 +21792,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_0G-hHSSG81it2hTVJWW124_RewbCrou=w1000",
       "https://lh3.googleusercontent.com/d/12qr2kV49m8aThTT7qHiegiUhe38Jdl6l=w1000",
@@ -23898,7 +21836,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1HXbi1q4l_NKUlqSk2ZeUmROl9kQ6Y8Xt=w1000",
       "https://lh3.googleusercontent.com/d/1P6awwT8CvaFuGMY-KHxnll_19RQlIS5m=w1000",
@@ -23945,7 +21883,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1v_H98rQE9Fp3C7cwomU3pC4lJy6fRMHn=w1000",
       "https://lh3.googleusercontent.com/d/1E8e7lZ3F2UtCBahCaBzZSRrSr_4YSYZl=w1000",
@@ -23991,7 +21929,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1oIrGpFUqhlqpTucJlNRXhsqOSla3IkQq=w1000",
       "https://lh3.googleusercontent.com/d/15p_hlZlwixlRjtgxOISGPOk524RbvbL2=w1000",
@@ -24034,7 +21972,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bP44r4UFJAP242_X8Sd-P7iabuwDVE6L=w1000",
       "https://lh3.googleusercontent.com/d/1KF0brOrEcWQN_8zmjcVeflOIi9exY4bz=w1000",
@@ -24087,7 +22025,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1oIbW7OErHSkqldOLBl4OwKOBMOBjXhfS=w1000",
       "https://lh3.googleusercontent.com/d/1yAsaCVJLolPLme9ZKTeXSJVHqYkViFg2=w1000",
@@ -24131,7 +22069,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1QmcYAGUtb9b0_gnCNRdqujE9nrR6ZFV_=w1000",
       "https://lh3.googleusercontent.com/d/15zjnnLIg8TU7LJ4pgbZB9fiW5bsCDMqu=w1000",
@@ -24178,7 +22116,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1mOwDpLHaTm7-5K7OZHsOHkSmM3Oo743m=w1000",
       "https://lh3.googleusercontent.com/d/1spKRmY9j0w_qH2dieMd3_oFAWlOQsATK=w1000",
@@ -24223,7 +22161,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1RkugKCLFZx0r0gr6po6e7rvSbNCtK5EG=w1000",
       "https://lh3.googleusercontent.com/d/1mkRQ2jU6dclCiJ1m0NJ2dS9NZPCj4kr4=w1000",
@@ -24276,7 +22214,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/136sVepFHAWbwymAsyysITUu54IU-MCBC=w1000",
       "https://lh3.googleusercontent.com/d/14qo57VSSLR3-GTfe3jKNpAGHHlo-1jBs=w1000",
@@ -24322,7 +22260,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1eFETIFJ7TULgbIKRVtl1lREdGxv-Lval=w1000",
       "https://lh3.googleusercontent.com/d/12FqbHoGJ9KdcpqanGOlMK7uAzLrnmfLy=w1000"
@@ -24362,7 +22300,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/10QAQnbaUthWbeRe39RolOKfnNjYGk56C=w1000",
       "https://lh3.googleusercontent.com/d/10VCPFQC75-miM8X0Pvk-S_er8jhcxWSL=w1000",
@@ -24415,7 +22353,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1r0oGXU_yhHGCqxEws7OJD1UiztH7YiqH=w1000",
       "https://lh3.googleusercontent.com/d/1WT3vPB1WTQLaz4SUg1Zmyys67PM5O4ip=w1000",
@@ -24456,7 +22394,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1fRtBsXk2Xw3QW0GF4dtEMrEZnudD0L-v=w1000",
       "https://lh3.googleusercontent.com/d/1ir5x1T6QGqiK57Pe9SToqPrAd_BIuIO3=w1000",
@@ -24503,7 +22441,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1AJvsb-161ua1xdCuplFF1QWaFl0RpHgk=w1000",
       "https://lh3.googleusercontent.com/d/1_bEfV2kaOaUFvifbLf3jslJIiD-tWaIa=w1000",
@@ -24556,7 +22494,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1lbTH94MCXqnNVu4tKlQFjzw6_zscmKS5=w1000",
       "https://lh3.googleusercontent.com/d/1UJi9p5KSKWaIUG9calYWGxaJODyhmPEW=w1000",
@@ -24609,7 +22547,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/102pDki8JcErhBRnsIqmkYUBCzFxlo7Ln=w1000"
     ],
@@ -24648,7 +22586,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1PG7IwNTWdLGbNKlto_ZEZS0hcJX_yNLa=w1000",
       "https://lh3.googleusercontent.com/d/1fDSeOTmqdNaZP9QCy-WY40WqSSYFXbDF=w1000",
@@ -24692,7 +22630,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/147vWDn56g-TKTxCB3fJVtRj_HlrJZuUS=w1000",
       "https://lh3.googleusercontent.com/d/1B7CChYxFrNqqQkpcsBXVXr8dMYyiGhgv=w1000",
@@ -24740,7 +22678,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ohWAUNvvtC-VV53_HUbz9_VXGwvSO9Mo=w1000",
       "https://lh3.googleusercontent.com/d/1T5756-Z2u2ERm2TZCy9VnZs2VLtfSOl7=w1000",
@@ -24781,7 +22719,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1tCpkFZkXXuOgn__G2URg9zbK1uVxaE0t=w1000",
       "https://lh3.googleusercontent.com/d/11pl8Yoa0l-PxmJ6WRqhF5-MSVT0CUiUt=w1000",
@@ -24829,7 +22767,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1P-QpX1xj-tCzElbosIE2cHg8RB-vK5Bi=w1000",
       "https://lh3.googleusercontent.com/d/10i6FUJeA-tn8rk6_qnHEi3G9Nks7FKyh=w1000",
@@ -24874,7 +22812,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1006BkFsQ3VHnVptHnmmFBIlpSS_CEvRR=w1000",
       "https://lh3.googleusercontent.com/d/1VokZbHIbC54t17T91tGUDPdxK7yhyTb2=w1000",
@@ -24917,7 +22855,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/17k5kKLyaWeWaJaxw8AUXdPdM2JB7kYs7=w1000",
       "https://lh3.googleusercontent.com/d/1tpKSeBBJ-BUPtNP1yvprmjs3tv1v3S2y=w1000",
@@ -24959,7 +22897,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/12nhkc5hgy-Me5yrpkgF3TNfwY-i_TcrL=w1000",
       "https://lh3.googleusercontent.com/d/1GDbOVut4CbzLcnmNUX3_c9FORVFgw88J=w1000",
@@ -25000,7 +22938,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1HdJzvgKJt7HoIgSgAuGHRbg3A9CcAyFV=w1000",
       "https://lh3.googleusercontent.com/d/1xQ4cmXZlMudTEqtCRw8pl2OjDwYx6BWA=w1000",
@@ -25043,7 +22981,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1uYUHOFeiNg09-tEwoe8f8LgndkkdD8Fk=w1000",
       "https://lh3.googleusercontent.com/d/1DyDCFILmVyq6Q3sHvV3GP3CumI-ICvAu=w1000",
@@ -25090,7 +23028,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/15APekkC9JaW9PJkW_i-grUJWgdx_FeqH=w1000",
       "https://lh3.googleusercontent.com/d/1jk0YBD80jh2htp2FlFJktMkA9wpBYi80=w1000",
@@ -25138,7 +23076,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1tuYaKBK6QYklXQ5SMPHSIV5_dLToqC6u=w1000",
       "https://lh3.googleusercontent.com/d/1BRPfe9vC4qSNcVXhZGJiDkgVNhMT5SrI=w1000",
@@ -25191,7 +23129,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1IvOhV2sn1qXSS6-bLOhShUanxXelucP5=w1000",
       "https://lh3.googleusercontent.com/d/1KJ2AuF_SrNpJQyyUQwtXx-3m_N8Q5lu9=w1000",
@@ -25235,7 +23173,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ds3r9iiGQJWt62Hv7kHM9ws8lY9x38jq=w1000",
       "https://lh3.googleusercontent.com/d/1TpfYVFqky8JjXt2NqoZBti8Wm4eJF8nt=w1000",
@@ -25277,7 +23215,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1AQ2mfOY8FPpRwwB-uJfRIDpPuWXcEghy=w1000",
       "https://lh3.googleusercontent.com/d/1xu4Jg-9FmDBvOXq4mEjF5iz3PU3bO7Vq=w1000",
@@ -25326,7 +23264,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1E5UsYDrzFUPOoGiZHrlhfMd5ll1GvyFu=w1000",
       "https://lh3.googleusercontent.com/d/19n4Vs32SlEPsF9vZ-l2hepL2DIirfGWw=w1000",
@@ -25371,7 +23309,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1c4ijOaaIFmswSdnEPqdiWs2qn9ifs0fU=w1000"
     ],
@@ -25389,11 +23327,11 @@ window.LISTINGS = [
     "price_old": null,
     "land_area": "127,961 sqft (2.94 ekar)",
     "built_up": "-",
-    "tenure": "Freehold",
+    "tenure": "-",
     "sekatan": "Malay Reserve",
     "kategori": "",
     "zoning": "",
-    "psf": 16.41,
+    "psf": 16,
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
@@ -25402,7 +23340,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 127,961 sqft (2.94 ekar) di Sepang, Selangor dijual pada RM2,100,000. Hakmilik: Freehold. Sekatan: Malay Reserve. Anggaran RM16.41 sekaki persegi.",
+    "description": "Tanah 127,961 sqft (2.94 ekar) di Sepang, Selangor dijual pada RM2,100,000. Sekatan: Malay Reserve. Anggaran RM16 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Sepang%2C%20Selangor",
@@ -25410,7 +23348,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1KEqrgeT0t9ZYMFVZD22uTxEIghplRWdg=w1000",
       "https://lh3.googleusercontent.com/d/1JuQ8SaLpn2lxu4arhMdeM23K5s-eN3B6=w1000",
@@ -25454,7 +23392,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_DXF_nMB54EaphNrgBmoA0gVxf3tYSUY=w1000",
       "https://lh3.googleusercontent.com/d/1OjR-ZfYIlvHfoKMALlGsQateQXpORe0Z=w1000",
@@ -25507,7 +23445,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/14MkFkNuZPnkACcQhJn6z1_Qs7gtAZ3um=w1000",
       "https://lh3.googleusercontent.com/d/16Llt4ZsSPawurfaONkdfgwQhXzk3GXhh=w1000",
@@ -25551,7 +23489,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1hSe9W7FeVlMBl3wpwm6OKZVGRG589bvg=w1000",
       "https://lh3.googleusercontent.com/d/1xCi1YDR3hv6T1Q_ggey9waIjKfD66HVs=w1000",
@@ -25598,7 +23536,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ye_WW6eB8S2WzJtHNpN1loO1d_jIpdby=w1000",
       "https://lh3.googleusercontent.com/d/1LPk12oMrSZf1skYxILRMlukGpjiLXX4t=w1000",
@@ -25644,7 +23582,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1FSLXLSNm4zUQHVkUbLvZVRGoG35R2eBZ=w1000",
       "https://lh3.googleusercontent.com/d/1xlv_fMqUcI7DIXozqagbJa_t9zR0ahUJ=w1000",
@@ -25692,7 +23630,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1uSMWFTqlp3m9iPc7rzGtJ0SPfjVhSils=w1000",
       "https://lh3.googleusercontent.com/d/1oyirCn3SO_hoQu3BlNay4iD7rB-fK2_f=w1000",
@@ -25735,7 +23673,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1lM8_j7kL8EW09lLVXpvRCzt2kxVnKThf=w1000",
       "https://lh3.googleusercontent.com/d/1AOAHOfQFBGhl-OjkBHZcmEFXSGUICONC=w1000",
@@ -25783,7 +23721,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Q0o21jg7Sosd5rNGqWSxyNthMpLYI9_2=w1000",
       "https://lh3.googleusercontent.com/d/1LyjxpTJHXymsoEfh_pGFTSv9SRsIFZsW=w1000",
@@ -25824,7 +23762,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1j5fgI_dkz4C5cMMaAmfC7Brs-cjGsDxQ=w1000",
       "https://lh3.googleusercontent.com/d/1m5v3d3AzGQe0mGnNgsVxcEcpxCwrq9rY=w1000",
@@ -25867,7 +23805,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_Gsm4Nuzf7fpJnP-6ZS-1bJF9QHXJG37=w1000",
       "https://lh3.googleusercontent.com/d/1FBLoRffoD5-ZM0nbl4DVOFZxVKPdntpS=w1000",
@@ -25911,7 +23849,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1wCEC-VyHPI5nbnPFpjDCkGLj4KrYG39N=w1000",
       "https://lh3.googleusercontent.com/d/1H2k_3XlJoi9K-lCaKk4rSi6DzcwWI6xW=w1000",
@@ -25957,7 +23895,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1nz8DEeTWtc8eD-KUvpoPwF7lWR74HPcK=w1000",
       "https://lh3.googleusercontent.com/d/1uUJYk9Qwd3LTikAzq3-y9krJy4EeEIlM=w1000",
@@ -26001,7 +23939,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1aWnXwnGEh8A9tBMx7WFZmdFzs0_gpOCH=w1000",
       "https://lh3.googleusercontent.com/d/1t7ssWXrdtdQ-QvhEbI7zAUd84Wd_dTQG=w1000",
@@ -26051,7 +23989,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_b9BECj_t8kWO9zlBNSiUhS2aRDd8KUu=w1000",
       "https://lh3.googleusercontent.com/d/12sMROJYpBYGfWrJvSHo1E5PxOvP-x4al=w1000",
@@ -26102,7 +24040,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1lbeutbjDpDDPLcSZZk3v0Dof4KXQnquQ=w1000",
       "https://lh3.googleusercontent.com/d/1nCfBHRycOtdQU-eWSGvowCU21iLywPvK=w1000",
@@ -26153,7 +24091,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1tjd2zHO_jok542tXecx2v2UBrP66TSba=w1000",
       "https://lh3.googleusercontent.com/d/1e_iJ-98MEkm9XZGYrT5x-QrB1PytCGmv=w1000",
@@ -26202,7 +24140,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ibGjdKa9SguAaWjev0YprJb0DuFlDPXo=w1000",
       "https://lh3.googleusercontent.com/d/1k145tqNaWnDkcfDKmBqJ-Vk2bLDfO6cS=w1000",
@@ -26243,7 +24181,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1U512y3Q6-czl_4JJShi-YiNWmG7d_W5n=w1000",
       "https://lh3.googleusercontent.com/d/1a5A3rL1O-oW8J8ueLWmIM2-pMCUVlqt-=w1000",
@@ -26285,7 +24223,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1mhuE5gP7zrvQa7oU3g9WIVZxqGXCmmyp=w1000",
       "https://lh3.googleusercontent.com/d/10qxFW66-i_qS5hY5wnjFtibuWth1Br3i=w1000",
@@ -26328,7 +24266,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-S6KIGdbZSNMY4yu3f8Zy4q96VGT7v6Q=w1000",
       "https://lh3.googleusercontent.com/d/1sxIHmQVbMIdxabVRDMlOe_q4qruKEygf=w1000",
@@ -26371,7 +24309,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1dD0As9V6Gz0dPDTiBVIWa_aPLMdCerk_=w1000",
       "https://lh3.googleusercontent.com/d/1XspZ2u_tK2mTSh6gbbrszC8gMYHxKMs3=w1000",
@@ -26414,7 +24352,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1FN64-ktK_FsG_O2LKdDWmFMucjJxeTWs=w1000",
       "https://lh3.googleusercontent.com/d/1JyP8Bgdtb6Tx3Xteg2znNergIAcFcd9u=w1000",
@@ -26460,7 +24398,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1gtDCmfEsycYqCIkiZD6CUgMjFOb9qpas=w1000",
       "https://lh3.googleusercontent.com/d/18Db9JJi2RgMajSAJdTTIOhR8d9sAvwC0=w1000",
@@ -26502,7 +24440,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1UJZhnMDmMbQuSC2vnI126EAmRUx8XJ1a=w1000",
       "https://lh3.googleusercontent.com/d/1CzFAOLj-I3_TtPvxgqy8UvOnZq7Ox_am=w1000",
@@ -26549,7 +24487,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1duBwu-HwRkPYTZCM9MdO0pWL5NztaodM=w1000",
       "https://lh3.googleusercontent.com/d/1_f0cSRbeb3Ty5CvBC_HNgvWSQUupzIzL=w1000",
@@ -26599,7 +24537,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1EiofzMGFsEDigGheA1SY_cjbXC2J0f1L=w1000",
       "https://lh3.googleusercontent.com/d/1Zbf7fNr7hTjfFEBAxiORD8tQxgZPHI8D=w1000",
@@ -26642,7 +24580,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1vuJyC7IFMcP1m2LA99aUQnSI1LDld51t=w1000",
       "https://lh3.googleusercontent.com/d/1JcT3yXMofINOTn-mQTpPUWCWM76EY0XQ=w1000",
@@ -26687,7 +24625,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1TVY2_jGv2XU8EIDTmyoP-CrCkb6dGitf=w1000",
       "https://lh3.googleusercontent.com/d/1rSQ8HUiz-oiwPeOr998z_TPFJUXIATNd=w1000",
@@ -26736,7 +24674,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1TImOvLrI9_-Jy0P1zKrVSgSISR4a2h13=w1000",
       "https://lh3.googleusercontent.com/d/1hN1By76T0qcFc9Tz7ywzrM-veKX6K4Kx=w1000",
@@ -26780,7 +24718,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_e6BQPKsi6temyiQz0lzyYQnnEbjKGmk=w1000",
       "https://lh3.googleusercontent.com/d/1SMcpOuZDYJquQyNrSybcGUJaghrro0tH=w1000",
@@ -26828,7 +24766,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/10RbpoRo2d36ASIR-F5mJucxnSBqIKYcI=w1000",
       "https://lh3.googleusercontent.com/d/1JgQtmn4Q3AUslzhg_Ibwg4OTLDQczjWp=w1000",
@@ -26873,7 +24811,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/10kANm5pLVTFZR8G7Htv6uP74ixyUMdQb=w1000",
       "https://lh3.googleusercontent.com/d/1pMmW6Jd29sgGMg7GaP-IhaEfagMQ5b-h=w1000",
@@ -26916,7 +24854,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1CtQZVh0FK9Jwla-X7ZQDOPuUBpaYyoQl=w1000"
     ],
@@ -26955,7 +24893,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Q_xbLxJZ4ZuCX885BK2AR7ay1SgtnUt2=w1000",
       "https://lh3.googleusercontent.com/d/1ZXo85Tc5lrHZ5tPQe9MJZL1W3uy6sdto=w1000"
@@ -26995,7 +24933,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1GT7K5PFXGyPqkcpYhBI4Z_fMveQ5io9h=w1000",
       "https://lh3.googleusercontent.com/d/1NgZVdBcDrOpCWpLde7MKYYFBs1QRJDBC=w1000",
@@ -27036,7 +24974,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/181XMoPMdo8c4LiZ3-kLd1wbN3Vjax0Gt=w1000",
       "https://lh3.googleusercontent.com/d/1w4Lf64Hi3YBzaNDiDu7j1djXFOmzLSB6=w1000",
@@ -27078,7 +25016,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1fLSd_QdqTIrX-NAaAmykmiIr9HLbEh-0=w1000",
       "https://lh3.googleusercontent.com/d/1XGRF7GMr2R550OqRCFy5Eo01fvp59NyW=w1000",
@@ -27120,7 +25058,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1FlHapSoitU_rK_9CbM-WahWZ5Xd86tIy=w1000",
       "https://lh3.googleusercontent.com/d/1Fjy3IrPIqd6qPQSvxYVSo58iFS215h2f=w1000",
@@ -27163,7 +25101,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/10sWUYPLfnUd2D2xW6dCzG3FqnG5JKPK0=w1000",
       "https://lh3.googleusercontent.com/d/1d1wxZ965TpDwnYv4vrlxa1bj66qaAUYs=w1000",
@@ -27208,7 +25146,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1yiLmhbXbL8PV0RC767GDe3Ge7NuuZyWW=w1000",
       "https://lh3.googleusercontent.com/d/1U-Af9D-AYQRhRtiSy4-4p6sH0d82Ob43=w1000"
@@ -27248,7 +25186,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1I8diJqP4NrkECXjKbWClHnqRCsg1hvaH=w1000",
       "https://lh3.googleusercontent.com/d/1EVKqGLJvI0IrkFHp_0XSYKzaLlp_1Ubq=w1000",
@@ -27289,7 +25227,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YTULSeC-DwitEqoT5CgtdxCQcPzffzsE=w1000",
       "https://lh3.googleusercontent.com/d/1PPembFTxG7iWpfTJ2TpXoMd-UifjLAiG=w1000",
@@ -27337,7 +25275,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jI_EfaIxJWTmmDiSRh3thlzIELXN8uZR=w1000",
       "https://lh3.googleusercontent.com/d/1dc4o3kGZCbqBb2tYU5WL811X1fQu1J5s=w1000",
@@ -27386,7 +25324,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/149lVps_-wAcvQPYT-hooW_uQuIU_9AsZ=w1000",
       "https://lh3.googleusercontent.com/d/1ifl8lJ1CMuTjwMtSf1negu90QQs8ISmr=w1000",
@@ -27431,7 +25369,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YrRCoBUPu8WLKKXuYNBrl8gACvUtGrqu=w1000",
       "https://lh3.googleusercontent.com/d/1EL-IDSI2P4XwJKBfk8aUQNinM-xLhXH-=w1000",
@@ -27473,7 +25411,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1mL8AV6an8VdUQzdgBGXOOmuV5Eqk5Pkk=w1000",
       "https://lh3.googleusercontent.com/d/1dK2cxXoUTkNMFRIq_qfjyRNw4SL7_omF=w1000",
@@ -27516,7 +25454,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 9,353 sqft di Bangi, Selangor dijual pada RM2,800. Hakmilik: Leasehold.",
+    "description": "Tanah 9,353 sqft di Bangi, Selangor ditawarkan untuk disewa pada RM2,800 / bulan. Hakmilik: Leasehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=MTCOA%2065768",
@@ -27524,7 +25462,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/17fLGe1IsBTQ2SSMdaqelhl6jnYNmQTur=w1000",
       "https://lh3.googleusercontent.com/d/1MXEPV2ZSDTmSz7zFkz-6AlYErmp8H2n2=w1000",
@@ -27574,7 +25512,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1JY75r-hGNCijGxtArSJwxbRI4K_odNGB=w1000",
       "https://lh3.googleusercontent.com/d/1hKDOIK0PPDVhKSVGR8QlyxfdX1kbpSez=w1000",
@@ -27623,7 +25561,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/16SfDGolpJBZLMiWi-WqtJ0dt4Bw17gFa=w1000",
       "https://lh3.googleusercontent.com/d/1d6jWMNyOKWvjsEh7XtZRRpyxQHYyIxeo=w1000",
@@ -27668,7 +25606,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1LIqUmNe9nHGW0WPc15DDzVSxDco1zTV8=w1000",
       "https://lh3.googleusercontent.com/d/1JUeM-gTLALn4w_slPqeU_9cfFJpt1Sij=w1000",
@@ -27721,7 +25659,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1C4pwdZETnVCeBSXftY5rpS8oFUKuxgYq=w1000",
       "https://lh3.googleusercontent.com/d/1II_HCDBUJ3X99LU4RwqJlx08ZLDnlbqP=w1000",
@@ -27765,7 +25703,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1dQux3OpJ-Wukgs8ntt1YRdXzEeb7Rzwv=w1000",
       "https://lh3.googleusercontent.com/d/1eY3_Oe27j_ayWwyiwpSM5h4OY2lFT9M9=w1000",
@@ -27806,7 +25744,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1X8FznyABtekp8PciY9h-IhU-cmvEfAoo=w1000"
     ],
@@ -27845,7 +25783,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1T5ZHyI8hn4eRh6Mui6p8uK8p0QeWjIUW=w1000"
     ],
@@ -27884,7 +25822,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1f06dKCEV5T8r-fHwaGNnJ4ezRB34Tupi=w1000"
     ],
@@ -27923,7 +25861,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1niad0l5VWX7__qwHgWLLCbVzejEBnaEV=w1000"
     ],
@@ -27962,7 +25900,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19MJo5dXo3fTv2OQCExIRh7270S42lvo9=w1000"
     ],
@@ -28001,7 +25939,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1N1vtiX8qLwuTVqNpkP-l6nWXl0IcNoER=w1000"
     ],
@@ -28040,7 +25978,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1EBaO9zQOJheqGGDaKoCt_78ibP784nBq=w1000"
     ],
@@ -28079,7 +26017,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-88U_es_fD82sfxHhJwvvhubHWCNyS7t=w1000"
     ],
@@ -28118,7 +26056,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11FnSJc11Cus4V7gnyiAGJSgwFXhbP3rb=w1000"
     ],
@@ -28157,7 +26095,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/14TW8154EEeaz7GbY53DN449Vwcf7BeCM=w1000"
     ],
@@ -28196,7 +26134,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1niWcVNdpewViXtM63fHqPzf04-l7Xn_o=w1000"
     ],
@@ -28235,7 +26173,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Jx_rrl5wSZ0h0VLno_4i370TFo8mahdV=w1000"
     ],
@@ -28274,7 +26212,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1FthE-zXdy2nXoTjN8LfzvEcujtVuJykk=w1000"
     ],
@@ -28313,7 +26251,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/14w3viaSL7ko9bVFhV3t-QHFryS6MbM3e=w1000"
     ],
@@ -28352,7 +26290,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1X4Xx5RZnvXuqZUYcdF2TCnybB9Pl0xPW=w1000"
     ],
@@ -28374,7 +26312,7 @@ window.LISTINGS = [
     "sekatan": "Non-Bumi",
     "kategori": "",
     "zoning": "",
-    "psf": 57,
+    "psf": null,
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
@@ -28383,7 +26321,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 8,300 sqft di Bangi, Selangor dijual pada RM475,000. Hakmilik: Freehold. Sekatan: Non-Bumi. Anggaran RM57 sekaki persegi.",
+    "description": "Tanah di Bangi, Selangor dijual pada RM475,000. Hakmilik: Freehold. Sekatan: Non-Bumi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bangi%2C%20Selangor",
@@ -28391,7 +26329,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YERjfeBQSEbJ2om0sNkrX53ZExBgAVci=w1000"
     ],
@@ -28430,7 +26368,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1oDw5uZrJysV5I8tP9BzMASGXPWaz9sJr=w1000"
     ],
@@ -28469,7 +26407,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1UWbneK5TX8hPFnhDatlPYwjeTNGGOuz-=w1000"
     ],
@@ -28508,7 +26446,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11W5A4K0mqFYSCuT-z-r1-v3R6gxdLbGj=w1000",
       "https://lh3.googleusercontent.com/d/11aROJhTw5Vyz37nqdHQg6al0f6iDnx9W=w1000",
@@ -28561,7 +26499,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_VWLAXzyggs4wmCCYiLt010KaF29iayw=w1000",
       "https://lh3.googleusercontent.com/d/18pruZCPHsXfeHq7x8MDGf243qXNOelma=w1000",
@@ -28614,7 +26552,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xiWCE3HXKGi8rhlyhHf-RpYORgpcl7vz=w1000",
       "https://lh3.googleusercontent.com/d/1-dvyW_2k1E9pL0lqB4unF9WPyJMl2l9H=w1000",
@@ -28665,7 +26603,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/12muvGpOJLOKOSR782XydWzVZtFa2rh_U=w1000",
       "https://lh3.googleusercontent.com/d/1NmKrsUXXO6XHOAzd5Hk8j2CwhZL7CC25=w1000",
@@ -28708,7 +26646,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ZcjqAYTqWQnbfRo1TfsSgvqxMAA6Qtbk=w1000",
       "https://lh3.googleusercontent.com/d/11xIQmiZKkQnisXLswEdb-kf6GbKzVtLo=w1000",
@@ -28754,7 +26692,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/17DkfwX9szG9fOJm56axvHeBc4jPH5DqA=w1000",
       "https://lh3.googleusercontent.com/d/1CFHSBUJGUS2jBl1cA90a6lWesXYl0tIA=w1000",
@@ -28801,7 +26739,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kFAzURs5lUmxrSr8LrL9DjdT-Gm7pcH0=w1000",
       "https://lh3.googleusercontent.com/d/1QyUlN8Uq9N3pXSEBTHlTzGBHxE444WwI=w1000",
@@ -28849,7 +26787,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1DvnQRzpgfCQFdkFXqW-43UiOqoFxNx1f=w1000",
       "https://lh3.googleusercontent.com/d/1oDmHUwZFtqJvj4SF0TvoXDxLeOHWs2Uc=w1000",
@@ -28888,7 +26826,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 12,000 sqft di MTCOA 62368 dijual pada Hubungi. Hakmilik: -.",
+    "description": "Tanah Pertanian 12,000 sqft di Sungai Merab, Kajang, Selangor ditawarkan untuk disewa pada RM2,000 / bulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=MTCOA%2062368",
@@ -28896,7 +26834,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1k8NiRACZZshRH4yOzIfFaGsjGjIgHBHy=w1000",
       "https://lh3.googleusercontent.com/d/1Vh5ijEkMo9K7jpWF9uvgAoNecCMKHNpX=w1000",
@@ -28935,7 +26873,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah - di Bangi, Selangor dijual pada RM1,685,600. Hakmilik: Leasehold. Sekatan: Bumi.",
+    "description": "Tanah di Bangi, Selangor dijual pada RM1,685,600. Hakmilik: Leasehold. Sekatan: Bumi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bangi%2C%20Selangor",
@@ -28943,7 +26881,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Cosax_Ca4J9hwZF83cZfwBld2bgFhP7J=w1000",
       "https://lh3.googleusercontent.com/d/1k44nYlIN9Knjl759k94AmtYOc8u-1xA8=w1000",
@@ -28985,7 +26923,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Ia_gs19L-U2zIR77JyzEMiRxqgqSGOiX=w1000",
       "https://lh3.googleusercontent.com/d/1QlFFJeMH4J0wX5mJEK6zs2l66QA-wpSA=w1000",
@@ -29038,7 +26976,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ZVuAw0eCjII_phbFwVZjlIyGH-uQi5Hz=w1000",
       "https://lh3.googleusercontent.com/d/18TxTgnU4FTa6Oy-4X6Kpzxm4v71AnU-k=w1000",
@@ -29091,7 +27029,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jOFbXxpJgZ9FO8MSHg7seHZ9MG78ZWL3=w1000",
       "https://lh3.googleusercontent.com/d/1P_B_Aqjb2hyYqseJRcEWGyvaOG2JPDJn=w1000",
@@ -29133,7 +27071,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1WReaEDkhcN8eySSvVJoLjw2_2TQWKg2J=w1000",
       "https://lh3.googleusercontent.com/d/1zY9huATa450V7UXtDay33VuQMnB5gbCs=w1000",
@@ -29178,7 +27116,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ktu2q979_Lj5uPjQzh1UhYzvvSRaHSQD=w1000",
       "https://lh3.googleusercontent.com/d/19dRe8-qMJoGA1udxEPkioG_CNp2kXwxW=w1000",
@@ -29228,7 +27166,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1BnYahIzLlKiyjiuCc0G-xdlzjHMbVf7y=w1000",
       "https://lh3.googleusercontent.com/d/1tnX9sFSeWz84s7Kqf_QJ3hlOZnB8c0ou=w1000",
@@ -29275,7 +27213,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1pJ0pwUg1qFwm2cB1ByWCybcFKgmIhzvH=w1000",
       "https://lh3.googleusercontent.com/d/1uDG2opZsTyifajFqdAwJ4i5_QQXsQLnU=w1000",
@@ -29321,7 +27259,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1gLKaYldRSacruYsRDB7dJjbPg9SqspUs=w1000",
       "https://lh3.googleusercontent.com/d/1c66PQ7Mgf_BQ0ddAgjNadGMU4wwjYTtD=w1000",
@@ -29364,7 +27302,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1gU0nuMsesEyL3TEjID2VqBkv1Inn6jey=w1000",
       "https://lh3.googleusercontent.com/d/1ithy1X5JJC4brYwUW6_-ajCsE3wNK2qr=w1000",
@@ -29408,7 +27346,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/121bEAF5EnGI7cbj_wgQCm7SpPSamZb51=w1000",
       "https://lh3.googleusercontent.com/d/1EJR0wcRnRJUcx3wpSLaGhN8Culw5yQHq=w1000",
@@ -29454,7 +27392,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1p8UqmmXOJnxQxd1o3jScDIWEMG7RlYbY=w1000",
       "https://lh3.googleusercontent.com/d/1cbVsNrO-Xe3_Hf5ewMR3ACMkiGD6irzv=w1000",
@@ -29498,7 +27436,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/12k6fDDmi7eaNkS6r5EYZuT0q6K25KJXL=w1000",
       "https://lh3.googleusercontent.com/d/1bxA2YDWb3tFTCgZ6AYU29XA88wh616A_=w1000",
@@ -29536,7 +27474,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah - di Sepang, Selangor dijual pada RM2,200,000. Hakmilik: Freehold. Sekatan: Non-Bumi.",
+    "description": "Tanah 95,013 sqft di Sepang, Selangor dijual pada RM2,200,000. Hakmilik: Freehold. Sekatan: Non-Bumi. Anggaran RM23 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Sepang%2C%20Selangor",
@@ -29544,7 +27482,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1zmMIm-EL6XWxjFcudE6mg_C-S3BCy5Wv=w1000",
       "https://lh3.googleusercontent.com/d/1d5NtQkgN7ftr30ocsXlHVcosBygZ2oAT=w1000",
@@ -29587,7 +27525,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1CnPpRmfTQCh1cDm2nfVwXHZblJ6qilc3=w1000",
       "https://lh3.googleusercontent.com/d/1OorYiHaUSsqBxrx5ShGg6enmbmIrnL8j=w1000",
@@ -29640,7 +27578,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1UzW7E7oGIWRzOIRkcCRCMz5iGI-jUIAo=w1000",
       "https://lh3.googleusercontent.com/d/1f4mrBCjuvi1ujeyikh2WU-hdB5Zs4Hdz=w1000",
@@ -29686,7 +27624,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1TFu2Tt_264cHhFbWC6KCqHkVOfXhuIlv=w1000",
       "https://lh3.googleusercontent.com/d/1zjfAnot0-7mbEUGOl1_5lmkmVoGaIE-Q=w1000",
@@ -29730,7 +27668,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1eskELglwtnW36j3vQy4tHR9ylzAzuyrr=w1000",
       "https://lh3.googleusercontent.com/d/1q93Yly8xYrMxvRBjsDhrPkJVacDCJLqR=w1000",
@@ -29775,7 +27713,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1AgxhQUXU9WhsxRFcCQcXA6RM_4IkD7PZ=w1000",
       "https://lh3.googleusercontent.com/d/1osvcgmOI7YeLjh4DSbyLmZrUl0GGnaos=w1000",
@@ -29821,7 +27759,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YRMLtSM16tyeWzB3pWYheCYfREggDjQL=w1000"
     ],
@@ -29860,7 +27798,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1rk8xL-MBVnN9g7axrHvijASfZ6FurVDS=w1000"
     ],
@@ -29899,7 +27837,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/18Y5s4ZyyjqbYv45UrNqwwAk7_JjH7hg5=w1000"
     ],
@@ -29930,7 +27868,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah - di Dengkil, Selangor dijual pada RM12,344,904. Hakmilik: Freehold.",
+    "description": "Tanah 474,804 sqft di Dengkil, Selangor dijual pada RM12,344,904. Hakmilik: Freehold. Sekatan: Non-Bumi. Anggaran RM26 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Dengkil%2C%20Selangor",
@@ -29938,7 +27876,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1x-igPsM6N6NHFb1eZDZIWOGCur7M5l4I=w1000"
     ],
@@ -29977,7 +27915,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1V5ictCn6CMiHnICilXdjxCYGS8mcJCmT=w1000"
     ],
@@ -30016,7 +27954,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ZZ-Mzq1hgUbcwOfQBYvnylSCpdDhKzRk=w1000"
     ],
@@ -30055,7 +27993,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1g8fPSjvajL1PCxRs0z3mZcx_y9AlPvjo=w1000"
     ],
@@ -30094,7 +28032,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/18YOZBGNEUoeZxsPSg2eENxN4XCuZ2Mvf=w1000"
     ],
@@ -30133,7 +28071,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/14YvHcMlo2EJ_jwXldXqtSqwDBos_wBvC=w1000"
     ],
@@ -30172,7 +28110,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/12fezZsVzZYVBG9-UyMisQSnhV5FO2ESD=w1000"
     ],
@@ -30211,7 +28149,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1WOFr-q6HpVTmpXNFJ39w5ZYx9GTFTJT4=w1000"
     ],
@@ -30250,7 +28188,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Cwp-A6T6MGXTdaoxD7X2Aw7XjYMfS8bJ=w1000"
     ],
@@ -30289,7 +28227,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1S_-ojRSyBy-ruPEKoykxkC7VkKJ5CGIj=w1000"
     ],
@@ -30320,7 +28258,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 65,340 sqft di Kuala Langat, Selangor dijual pada RM580,000. Hakmilik: Freehold. Anggaran RM9 sekaki persegi.",
+    "description": "Tanah 65,340 sqft di Kuala Langat, Selangor dijual pada RM580,000. Hakmilik: Freehold. Sekatan: Rizab Melayu. Anggaran RM9 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Kuala%20Langat%2C%20Selangor",
@@ -30328,7 +28266,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bOjqaG8vxmP9kddFQLqSR07hIlKnsKwA=w1000"
     ],
@@ -30359,7 +28297,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 43,560 sqft di Kuala Langat, Selangor dijual pada RM750,000. Hakmilik: Freehold. Anggaran RM17 sekaki persegi.",
+    "description": "Tanah 43,560 sqft di Kuala Langat, Selangor dijual pada RM750,000. Hakmilik: Freehold. Sekatan: Rizab Melayu. Anggaran RM17 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Kuala%20Langat%2C%20Selangor",
@@ -30367,7 +28305,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ZbR6_c43qAAI4SaAc_BO1j4yLN2ygFiA=w1000"
     ],
@@ -30406,7 +28344,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Ih4kM4visCM7PJYK8EWmwMweRuzu-hOW=w1000"
     ],
@@ -30445,7 +28383,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1OagsZ7Ut1Vf9Uv42E5xRvjXMpHfaMvzr=w1000"
     ],
@@ -30484,7 +28422,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ChtX_qz0B3OFD-PxqKSl1k4IV-yptOHZ=w1000"
     ],
@@ -30523,7 +28461,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1tJbT4DtY2EJq-Z_nQmyz4k2ccevJ3E9K=w1000"
     ],
@@ -30562,7 +28500,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1m3FwBSL9P0AqkDEoTrn-trcpAc3gyxV-=w1000",
       "https://lh3.googleusercontent.com/d/1AUAjAJu1UFt1SelXVYJOllfyGsNBY-Bd=w1000",
@@ -30607,7 +28545,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1h6ggz6fhnt-5q2KjTqpSaaMEqxUmdbkh=w1000",
       "https://lh3.googleusercontent.com/d/1vJHl-hcO3Cw5_FG9KMqzw6AMILuluj1g=w1000",
@@ -30653,7 +28591,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1CCJk-k9rNRYumcdliUfZhRisRW9mbUbg=w1000",
       "https://lh3.googleusercontent.com/d/1iEhr8jVKMsU7a409WzrXggoxV7h85-9q=w1000",
@@ -30697,7 +28635,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xacxSItEH-kdtwCx4gEz4oataNFLfLhb=w1000",
       "https://lh3.googleusercontent.com/d/1cZkhCgK8FIVlWL2zyqKLgnyjIPdnqqgq=w1000",
@@ -30742,7 +28680,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 39,204 sqft di Dengkil, Selangor dijual pada RM1,280,000. Hakmilik: -. Sekatan: Non-Bumi. Anggaran RM33 sekaki persegi.",
+    "description": "Tanah 39,204 sqft di Dengkil, Selangor dijual pada RM1,280,000. Sekatan: Non-Bumi. Anggaran RM33 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Dengkil%2C%20Selangor",
@@ -30750,7 +28688,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1L_Jv27AJ24sotfPOnE17Gl214hKgtBMQ=w1000",
       "https://lh3.googleusercontent.com/d/1vNqninzbELOAWNCpciOiajl9vVORBVRc=w1000",
@@ -30798,7 +28736,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Hswxd4IZI5wMvZUlApnCUU7XRyu5xAHc=w1000",
       "https://lh3.googleusercontent.com/d/1lmvxHWb_JH5MQtMeifN18_BxOAJKM28s=w1000",
@@ -30842,7 +28780,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/184irua9HFZqQv0JBA5Yq5xJC9Zs9AON6=w1000",
       "https://lh3.googleusercontent.com/d/1zpdPzUqqIW-X7wTsqlsIC7YAjblEi6di=w1000",
@@ -30887,7 +28825,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1mFon32168nZTZMKYUhkdEZhZ6R1Woy5F=w1000",
       "https://lh3.googleusercontent.com/d/1dJfAu2cGpcB8xNdRQZDaCFk74KR7OiuB=w1000",
@@ -30934,7 +28872,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ErFyzdsxLXP845-m-Z4abiuB8ITqB7d0=w1000",
       "https://lh3.googleusercontent.com/d/1CuiLb8RvP5r5Lz4KVXkqqdQDIaDPYcs4=w1000",
@@ -30981,7 +28919,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1iPsKMaG-EOLMaKhOs6Dy4F6xHOmF8khB=w1000",
       "https://lh3.googleusercontent.com/d/1XG_K4oCKmp7PJSZ7WCAU6A8GJbwfgHFH=w1000",
@@ -31015,7 +28953,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 39,204 sqft di Dengkil, Selangor dijual pada RM1,250,000. Hakmilik: -. Sekatan: Non-Bumi. Anggaran RM32 sekaki persegi.",
+    "description": "Tanah 39,204 sqft di Dengkil, Selangor dijual pada RM1,250,000. Sekatan: Non-Bumi. Anggaran RM32 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Dengkil%2C%20Selangor",
@@ -31023,7 +28961,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/17KOiV4P-itEOHZTDYcsllD0iKQEIoBTN=w1000",
       "https://lh3.googleusercontent.com/d/1RU8YJ2cLj86VDs2MW7xAg7FQDGk6e4ro=w1000",
@@ -31076,7 +29014,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1__yFADuo4wjIEvYdV9-xCVwf-hARKnV9=w1000",
       "https://lh3.googleusercontent.com/d/19PJN1ihbcEtIsQgxfEfQ7Tz-j9vA1VRC=w1000",
@@ -31119,7 +29057,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1CIPNLMKOrBVmAOQG7znJ3U_CWx_FP9i6=w1000",
       "https://lh3.googleusercontent.com/d/1s2GHDTKpZ2EDAxZfa9kxBXdOnEwB6fmy=w1000",
@@ -31163,7 +29101,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Gcalpx7FT6P2ie3hZ2dqsDozPx9bNDTn=w1000",
       "https://lh3.googleusercontent.com/d/1r1JijZpnp4dZhDZ5WghOwVoHJ-VRvpJi=w1000",
@@ -31208,7 +29146,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1T3PkpWbZWiRSXqZDcbYvBTs-n8NuRlo6=w1000",
       "https://lh3.googleusercontent.com/d/1ca0iVPPCA2gb3qsvKvlBT2Y2PK33dr7V=w1000",
@@ -31261,7 +29199,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1svHRaRovNmoAdiu7T8U2Lycy8PfBsuw6=w1000",
       "https://lh3.googleusercontent.com/d/1AwOXiwm-GmXZ2k5zT_-7Twsew4ZeUDTt=w1000",
@@ -31314,7 +29252,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1sGa7SOSzLehtOZ4bwqu8Mw0ztmm3fuFj=w1000",
       "https://lh3.googleusercontent.com/d/1zHDJKKv11ZA8IQiQ7D-JfkCGZeiBSa4x=w1000",
@@ -31360,7 +29298,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1L0XyQLh-ifT5-jGenO3AqaezeYpReULM=w1000",
       "https://lh3.googleusercontent.com/d/1AIj_qNjVVEzHqK-ogyJGiJSFcc4CVJ9U=w1000",
@@ -31405,7 +29343,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/10XS62VjPD_JckP7SGTrCXZwmiW4xSykx=w1000",
       "https://lh3.googleusercontent.com/d/1eGct5JesGV2iUgl2PixQg-m8UrEHm_9G=w1000",
@@ -31452,7 +29390,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19qrpk_u60m6yNzJj6vsRDQkQNUddsLel=w1000",
       "https://lh3.googleusercontent.com/d/1ufCNLupPv8mX_qC3VCMXeiZqr3LlWm3T=w1000",
@@ -31500,7 +29438,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Au5sRNayOT8JtAwETY14Kpsi6pUfLEQZ=w1000",
       "https://lh3.googleusercontent.com/d/1bQpNe3wwFVbOGFY1dFx3idYK9gtV1dFt=w1000",
@@ -31550,7 +29488,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/16fhooVXDpmWeIugvNoHJvM3luEJFqr7i=w1000",
       "https://lh3.googleusercontent.com/d/1TchGca0iT5E2dY9nq4VTrn7sULgKKDVS=w1000",
@@ -31596,7 +29534,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/12oAGS6z9PzWMlfHbwhxIYYiULNs5zLOp=w1000",
       "https://lh3.googleusercontent.com/d/1tAut64m166kDDkGfLH3lpfQzQVQqyNHu=w1000",
@@ -31631,7 +29569,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah - di Puchong, Selangor dijual pada RM8,000,000. Hakmilik: Freehold. Sekatan: Bumi.",
+    "description": "Tanah 171,146 sqft di Puchong, Selangor dijual pada RM8,000,000. Hakmilik: Freehold. Sekatan: Bumi. Anggaran RM47 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Puchong%2C%20Selangor",
@@ -31639,7 +29577,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1asJ8ONFbqBHDIEqqOemM0g9u1his44Di=w1000",
       "https://lh3.googleusercontent.com/d/1snmbe_965HKc_R-_DEpnO1s00vxZCmOA=w1000"
@@ -31679,7 +29617,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1T8jYmVfWYf0ZH1wGgB_OGc_GSH_NpFYY=w1000",
       "https://lh3.googleusercontent.com/d/1tuZAkro6kxkL2vodND7JG8A90TCA9Jxg=w1000",
@@ -31724,7 +29662,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xebnzp2fZ0i2d63dAwN1iAjPXZEuTCMx=w1000",
       "https://lh3.googleusercontent.com/d/1TPy_WYg8dMvZSveahegoz4a3SyhXRmRu=w1000",
@@ -31766,7 +29704,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1s7Ug53Of822R6qMmrVQDBrVNlRUesgE-=w1000",
       "https://lh3.googleusercontent.com/d/1IM_8zdpmoNnEtSyT0dZpB2RDuZ27_wEC=w1000",
@@ -31812,7 +29750,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1btnPh_hi7j6LEKLUFzQ9grv64rYFNiJb=w1000",
       "https://lh3.googleusercontent.com/d/1W5JWqnwcb7G7UaYgRcHL_wfHvQKNu76q=w1000",
@@ -31861,7 +29799,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/17uHPWJFBT4zE4E7KF_9XP6yTHOekuwut=w1000",
       "https://lh3.googleusercontent.com/d/1Lekv98i-b8l3txHJpcEdoWAwmU-1HnbY=w1000",
@@ -31913,7 +29851,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YxqE3ije3v8GnQ24xWD8qk2o-2w0l4ar=w1000",
       "https://lh3.googleusercontent.com/d/1FZ_7RT-BPQSarHpoKyzk1HLAH9RxJ4PB=w1000",
@@ -31957,7 +29895,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Y2gw0K1uXdDDi9_xM-D8z3GgFyYAFFGx=w1000",
       "https://lh3.googleusercontent.com/d/1Nxm4MT1hVTRC-Y0sr-ii0czjDnvCtJ6-=w1000",
@@ -32010,7 +29948,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1wYhGSBDjUOu7vIRMzzrKMWcH5CiWwwar=w1000",
       "https://lh3.googleusercontent.com/d/1_m70gg8B-wtEbnnsY5zc8cRnUcsgCJ_A=w1000",
@@ -32054,7 +29992,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1eOZFn2Chv9hWuIO6KOObDgM3JDfhMtFy=w1000",
       "https://lh3.googleusercontent.com/d/1b7eAO0MnoPvWTMEgqkOA6GhhDzyYCxpJ=w1000",
@@ -32101,7 +30039,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Vbk2Md5mtDcThdt6JIrf5zdAourJAtD1=w1000",
       "https://lh3.googleusercontent.com/d/1YVodLxsIlC3jgvwKZFdBlIIogVKHBcRB=w1000",
@@ -32133,7 +30071,7 @@ window.LISTINGS = [
     "sekatan": "Malay Reserve",
     "kategori": "",
     "zoning": "",
-    "psf": 70,
+    "psf": null,
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
@@ -32142,7 +30080,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 5,006 sqft di Cyberjaya, Selangor dijual pada RM350,000. Hakmilik: Leasehold. Sekatan: Malay Reserve. Anggaran RM70 sekaki persegi.",
+    "description": "Tanah di Cyberjaya, Selangor dijual pada RM350,000. Hakmilik: Leasehold. Sekatan: Malay Reserve.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Cyberjaya%2C%20Selangor",
@@ -32150,7 +30088,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1aKcPPg7jtf-n2uhbgtdeLbt_OU-LRR96=w1000",
       "https://lh3.googleusercontent.com/d/15lhm57quhxHRNO5AyM3SaoPyKZm3S7mW=w1000",
@@ -32194,7 +30132,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ItauxztTIkKh8sFOyTV7td9vxLdrFrgB=w1000",
       "https://lh3.googleusercontent.com/d/1ljvnOW0QhH7ansn0dYBDkbVJVV58j2_E=w1000",
@@ -32236,7 +30174,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1AYznkPPcKw6z7Lnl9X1DQ5FoHgWARCMv=w1000",
       "https://lh3.googleusercontent.com/d/1otNG6XNUOYeURSuogvQJ-zcRIrMvVe8M=w1000",
@@ -32278,7 +30216,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 148,104 sqft di Kuala Langat, Selangor dijual pada RM3,500,000. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan. Anggaran RM24 sekaki persegi.",
+    "description": "Tanah 148,104 sqft di Kuala Langat, Selangor dijual pada RM3,500,000. Anggaran RM24 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Kuala%20Langat%2C%20Selangor",
@@ -32286,7 +30224,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1d9E3k2BxCfB2ko5fzUkdDZhfncV1_GIN=w1000",
       "https://lh3.googleusercontent.com/d/1sOY9u6XwXe4ZyTikIuo-MNVIxWs7_TjR=w1000",
@@ -32336,7 +30274,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1MYWUKEyLrgc67Bebp68JPQaFIYzxVWtW=w1000",
       "https://lh3.googleusercontent.com/d/1OZPC-fngKwUJtZmfePfxrnqjsPSomfuM=w1000",
@@ -32380,7 +30318,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1SWtql_6zvDnP1G3Yxlgw8KZ6SE86-Kr3=w1000",
       "https://lh3.googleusercontent.com/d/1EuaWs6bcHMDx7e_wK0ZLIu_hWtb2yg15=w1000",
@@ -32428,7 +30366,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1KpCEoXD2kWIh96GH0JBV_2asf9Y4OgHk=w1000",
       "https://lh3.googleusercontent.com/d/1bTlQ38p0GdgCAD_jBQwXPdaBotoWusbV=w1000",
@@ -32473,7 +30411,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1fEoQJe_-l2obv5wNaC9Nk58MUoMxnTxy=w1000",
       "https://lh3.googleusercontent.com/d/1YOvi1_hsg2o_vNRcBiXKtyiKyE4mCvDA=w1000",
@@ -32523,7 +30461,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1hBnkmgn-qw44Ow-cRYEVZPgAgo3KjeLh=w1000",
       "https://lh3.googleusercontent.com/d/1BI95lL3TjNBL-uP60ncMNqQ4CRBXjCrT=w1000",
@@ -32566,7 +30504,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1pdDv4sTFiRX2T_Ho0MIAoSFr8gtHrLc3=w1000",
       "https://lh3.googleusercontent.com/d/1OMRBVDR4d_0Y-AjVwolbj4uz1y5xTtob=w1000",
@@ -32609,7 +30547,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/15PIAb_5ULgJ524l6RZLp47aC9Gk6bwbk=w1000",
       "https://lh3.googleusercontent.com/d/1B3Tgl16CQMV9m5Vf8r9l3JQ2wbL_SsLa=w1000",
@@ -32652,7 +30590,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1KZEAvo-MNi44Mczr39-2ZOBedwU2srD2=w1000",
       "https://lh3.googleusercontent.com/d/1fQh_a9ScA6HSmhR1_l8cLn_p5D9uYt1Y=w1000",
@@ -32695,7 +30633,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/14p5S2uGMONknmzC6oLlA1OAls3ch7_Hk=w1000",
       "https://lh3.googleusercontent.com/d/14t0rYQhwlyDXoyFKXmqCoZDCzxQQTUTB=w1000",
@@ -32746,7 +30684,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1J3CaDF96CLUPQf87L3L7ryEo-mGBOlH6=w1000",
       "https://lh3.googleusercontent.com/d/12_I4n2z-4pGIXLTcgLYQ29vfSR4dcVz7=w1000",
@@ -32788,7 +30726,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1buvcPsXRWfTOI-uHWGpw6bPY4xR-WO1U=w1000",
       "https://lh3.googleusercontent.com/d/1rQ81B5wecMfZ9XQCJ9kEo3heDaqxr2pD=w1000",
@@ -32830,7 +30768,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/156Iqd-Bv79gqfhO-q69_u-vcO5BtGVSX=w1000",
       "https://lh3.googleusercontent.com/d/1UnhziPuGw0n6JKo17Tr_jf1D-8JqwBtQ=w1000",
@@ -32875,7 +30813,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1XPoRZsXYDa27tPXZdEQxZkBzd4UkQ28q=w1000",
       "https://lh3.googleusercontent.com/d/121CZTGdk96EcyTsrebMNOrz17yLwF3Mx=w1000",
@@ -32921,7 +30859,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1gM3pGQIzlFEfIkKU6VIh9j_hhjS1H8Ms=w1000",
       "https://lh3.googleusercontent.com/d/1suXogXVyAbiW_4jWQwjDjqrNFYyXvfAe=w1000",
@@ -32964,7 +30902,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1LjgzgPZ1RW66cM9eMF1Plw65L15KjoVZ=w1000",
       "https://lh3.googleusercontent.com/d/1Flwoh2Pi9JYrX82ogFT2BlBMxa2Ye_Ha=w1000",
@@ -33010,7 +30948,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11PboPtVjUyrbuIYuQ2iXa-MLul8IQqZ1=w1000",
       "https://lh3.googleusercontent.com/d/1lD4pru0tBgN6oQmyPk3F9iYF4UQLzEcw=w1000",
@@ -33052,7 +30990,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1nuCR8n3O3PL6dPoSPhi5sICvpQ_92Sfi=w1000",
       "https://lh3.googleusercontent.com/d/1IkGKeS62LXPhnSL0KKCb_HW1KteVWN-E=w1000",
@@ -33102,7 +31040,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1--CMzbN2muksWSrs7NfUKD54zXIFoEiW=w1000",
       "https://lh3.googleusercontent.com/d/13xEws1ZH8PVQaJnAtRz0YlqVMv-cLPsO=w1000",
@@ -33144,7 +31082,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 474,804 sqft di Dengkil, Selangor dijual pada RM1,200,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM3 sekaki persegi.",
+    "description": "Tanah 474,804 sqft di Dengkil, Selangor dijual pada RM1,200,000. Hakmilik: Freehold. Anggaran RM3 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Dengkil%2C%20Selangor",
@@ -33152,7 +31090,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/18IZTBkfbEfE6Tjjzk_LZ9PVHKSLyynHg=w1000",
       "https://lh3.googleusercontent.com/d/1wCt7JlzZsrDtF0E4mhXtcG7IpIc1snCS=w1000",
@@ -33205,7 +31143,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Q_42BtH-piuAX8P-wxlVzDwOR2tKini4=w1000",
       "https://lh3.googleusercontent.com/d/1-lgaLP0LVooqv82Mi9wFy-E9aDjT4lt3=w1000",
@@ -33258,7 +31196,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1RJH8DrhCohnRu6mTGouHIuz4JH6kQi5U=w1000",
       "https://lh3.googleusercontent.com/d/1zsIFct-yVdaztLg77OTQdVwIzFmlIbPF=w1000",
@@ -33292,7 +31230,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 4,252,785 sqft di Banting, Selangor dijual pada RM107,390,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM25 sekaki persegi.",
+    "description": "Tanah 4,252,785 sqft di Banting, Selangor dijual pada RM107,390,000. Hakmilik: Freehold. Anggaran RM25 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Banting%2C%20Selangor",
@@ -33300,7 +31238,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/16af5dfU0QXkRBmev7wZ7lzeiRHz4wf0g=w1000",
       "https://lh3.googleusercontent.com/d/17jR2QS0apxKiToIWGWUpQN89X1cZDmbk=w1000",
@@ -33342,7 +31280,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1p4_viTUnlKof5HfuI3PQ0MPPbVyeerWw=w1000",
       "https://lh3.googleusercontent.com/d/176nxkmJqRPs0n8DC5smkGBUWgqFZsEPj=w1000",
@@ -33390,7 +31328,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1wDXDo26scmCsCX14LKDXQbx9KMjzsJaX=w1000",
       "https://lh3.googleusercontent.com/d/1VStM7ysMVuPRhskKJ4F0gF9uEbg8zq2N=w1000",
@@ -33435,7 +31373,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1iKCsAv-6BToO7jn2xafN-_JU3hvQYO_2=w1000",
       "https://lh3.googleusercontent.com/d/1WyrHv8bZlBEasEGIRBT_diuiK7nlJwQP=w1000",
@@ -33476,7 +31414,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1M9TXpUYqslaW6rHhIvPxXpjp8Hj0OM5E=w1000",
       "https://lh3.googleusercontent.com/d/1u8cXpBEsdPdcWDFTXmqbBKLgG8km1Xqi=w1000",
@@ -33525,7 +31463,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/148bIccsTdr-MHeugWFEIRLpTiixtxIBx=w1000",
       "https://lh3.googleusercontent.com/d/1ONUza2Bq3XDJ4y2J7qZSAiWf498RgcEe=w1000",
@@ -33571,7 +31509,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Z0UEzSHRjcSCBjJYG0FskHpPnWcUzCvm=w1000",
       "https://lh3.googleusercontent.com/d/1h5DhwwBnfShimmE4p81Yo3wt1JaD259K=w1000",
@@ -33621,7 +31559,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1c4lJTnCJZrJkUZXeQaQ1muUHuLrAP491=w1000",
       "https://lh3.googleusercontent.com/d/12yPtx3ApjC4sT7cgu9P9h_KVupG2L5iZ=w1000",
@@ -33666,7 +31604,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1QcyH7aeftN6YIkyuXIo6bMsvmH1NWNhc=w1000",
       "https://lh3.googleusercontent.com/d/1ur4lAUfnwd-v1GyjvFOAIktbGnoYyZ5O=w1000",
@@ -33717,7 +31655,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1MLVY2PAzMpgZdOqGTE8Q8dyfvThchItp=w1000"
     ],
@@ -33756,7 +31694,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1vKqK536ZnVAIQdjknE9BAq7SDn90Oq6T=w1000",
       "https://lh3.googleusercontent.com/d/1kud984rtjV7A4yWAXmEo3EMd8DwSBHjW=w1000",
@@ -33800,7 +31738,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ERA5SBVXr38IB7CFupOkqn1hYLEFiERI=w1000",
       "https://lh3.googleusercontent.com/d/1zavndb8XJF657qZJ1rRYCwdDVSxVao2s=w1000",
@@ -33845,7 +31783,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Bf5E_1fkmySXNo1pbxoMsUzGduI0t2FK=w1000",
       "https://lh3.googleusercontent.com/d/1-aSgB483gGc29YWMI5LwFecMStEjJZ0-=w1000",
@@ -33886,7 +31824,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1dkhwOWBDsp43hReHJ-_ztvLuHZRkmkg_=w1000",
       "https://lh3.googleusercontent.com/d/1v5s8jX0YhYb7aT_dKVEJUDto-YbUStV0=w1000",
@@ -33939,7 +31877,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1DxvfG9lfT2ZmsZTVvOrwBFzIUsDTupja=w1000",
       "https://lh3.googleusercontent.com/d/1BS18O590fcsyfjhnvKBzbJt-IWpgcazA=w1000",
@@ -33988,7 +31926,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1NOSzS8aKtmIF4KZpqFt0xil5uiFfm7H2=w1000",
       "https://lh3.googleusercontent.com/d/1bBum9lusKEMyJcwsyZ7dzDwTwnA3V-xC=w1000",
@@ -34029,7 +31967,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1aYlR33oEpZeVUYHW12BYlr1QjrTdaYOJ=w1000",
       "https://lh3.googleusercontent.com/d/1w3L9f8Dl6m61nvpiPSHt4KCjpCCzb3h-=w1000",
@@ -34082,7 +32020,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1TRfmtsLwkW1Y7168OeyZccZtcZY54OaK=w1000",
       "https://lh3.googleusercontent.com/d/1W2uAJQ0TmJkyZjiao2ic4p1ueZC7lfFL=w1000",
@@ -34126,7 +32064,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1r1KG9VnHKIrO4vhsdR-0bhhzLP0CvYMr=w1000",
       "https://lh3.googleusercontent.com/d/14wVok8OXvjsGCDbY9-3m0Eymi2pvr_hX=w1000",
@@ -34170,7 +32108,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1LUwmmip6n_oT4GsXc4F1bpcXGGx-YQiy=w1000",
       "https://lh3.googleusercontent.com/d/1KWHUu__WEQ2mnTmsRCctY-jrvO2OkGCh=w1000",
@@ -34205,7 +32143,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 144,236 sqft di Dengkil, Selangor dijual pada RM1,450,000. Hakmilik: Tidak dinyatakan. Sekatan: Malay Reserve. Anggaran RM10 sekaki persegi.",
+    "description": "Tanah 144,236 sqft di Dengkil, Selangor dijual pada RM1,450,000. Sekatan: Malay Reserve. Anggaran RM10 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Dengkil%2C%20Selangor",
@@ -34213,7 +32151,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1kVqitdzH_KKoPrpFika-rS46PcupptOk=w1000",
       "https://lh3.googleusercontent.com/d/1dUfWPPrRMq3uJnBfKbIsNttO7bkpRsgx=w1000",
@@ -34251,7 +32189,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 73,409 sqft di Salak Tinggi, Selangor dijual pada RM1,350,000. Hakmilik: Tidak dinyatakan. Sekatan: Malay Reserve. Anggaran RM18 sekaki persegi.",
+    "description": "Tanah 73,409 sqft di Salak Tinggi, Selangor dijual pada RM1,350,000. Sekatan: Malay Reserve. Anggaran RM18 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Salak%20Tinggi%2C%20Selangor",
@@ -34259,7 +32197,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-159XFJ0PP2gSnoEEoYJqjk1Sfy8fKE5=w1000",
       "https://lh3.googleusercontent.com/d/1a5jIl7Lh4qFxnfzkTb-DptNaxuz7S98V=w1000",
@@ -34302,7 +32240,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1tVE9pcqNukrJjRjYMoEN1Ix5xPKw9xSc=w1000",
       "https://lh3.googleusercontent.com/d/1u3MeS7mXMC9yr2h4JSgExTKUTHMtLSOt=w1000",
@@ -34347,7 +32285,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1XY7yKZYUxImBeWtx8ke_mCDqKZ0Zt7TJ=w1000",
       "https://lh3.googleusercontent.com/d/1mZom9YOaPvcnimByLMzU0JIrogITlaaJ=w1000",
@@ -34400,7 +32338,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1RtzUmqPVLo55zKqvRCXkyWM4juBd0q65=w1000",
       "https://lh3.googleusercontent.com/d/1OkPGjEFLGtFmkKY51vJDWxsqbIIeSH35=w1000",
@@ -34451,7 +32389,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xs3wwdRw2cpjlNAVhRny2VacBxprMrSt=w1000",
       "https://lh3.googleusercontent.com/d/1Nqnhs_xGu-6uHqy6tu6GNod9fv6J37m9=w1000",
@@ -34493,7 +32431,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1pSD80jDIfaIGzDgIJtMPkyg1Uibhko2V=w1000",
       "https://lh3.googleusercontent.com/d/1-6X69pBDM4_-69wvMcRsB-rkqdokada1=w1000",
@@ -34525,7 +32463,7 @@ window.LISTINGS = [
     "sekatan": "Non-Bumi",
     "kategori": "",
     "zoning": "",
-    "psf": 8,
+    "psf": null,
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
@@ -34534,7 +32472,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 174,240 sqft di Dengkil, Selangor dijual pada RM1,400,000. Hakmilik: Leasehold. Sekatan: Non-Bumi. Anggaran RM8 sekaki persegi.",
+    "description": "Tanah di Dengkil, Selangor dijual pada RM1,400,000. Hakmilik: Leasehold. Sekatan: Non-Bumi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Dengkil%2C%20Selangor",
@@ -34542,7 +32480,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1W-5xM17ex-6uStknCfvE8SsdnWon7lkC=w1000",
       "https://lh3.googleusercontent.com/d/1avxJhGrFfO7Mv7hNKwbzRZJXQIsfh0UC=w1000",
@@ -34585,7 +32523,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bbBF7KWc-rTVuUsY4PSq-STeakm51SxS=w1000",
       "https://lh3.googleusercontent.com/d/1GzDefTlungyjBk1koYgLGXzPlYJm--_p=w1000",
@@ -34638,7 +32576,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1RZNUNlV95XmumKyj5uIBKb3jluy-MyqD=w1000",
       "https://lh3.googleusercontent.com/d/1c_6CYDJ-OlwhqxQ1hdlclj0WnJHkjLSW=w1000",
@@ -34682,7 +32620,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1pU4afCLDsTOmk4y_aGJvWIQ8geVGS5cC=w1000",
       "https://lh3.googleusercontent.com/d/1YLDAVbqw2n4dZu45OFQkQToavMaEbNXi=w1000",
@@ -34728,7 +32666,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ju2WxoKJZWsUtke7rJdo3aCS17iZOZwo=w1000",
       "https://lh3.googleusercontent.com/d/1tKJ-AXdJ0un6GgL7gTOZBDjvif_DxqZJ=w1000",
@@ -34772,7 +32710,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1tqov2hH95S59jv7qJVpxKnTEs-3_99K4=w1000",
       "https://lh3.googleusercontent.com/d/1IHj9QLJTJ9vFEbNy5GiMWpub6c-_66lf=w1000",
@@ -34813,7 +32751,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1vf2IMarKec2i9LpnOMc7WK8iJb7RaMf-=w1000",
       "https://lh3.googleusercontent.com/d/1OsNhFENaj570NJ5Il4AMC3x1TNFcAe9v=w1000",
@@ -34861,7 +32799,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YmmFTSCfT-3Nef6Ba4lpxhx8hhMF0yzJ=w1000",
       "https://lh3.googleusercontent.com/d/1qYyOhRmpF2vAXPNKfNuhvaywMcnF8igu=w1000",
@@ -34906,7 +32844,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/15TdAP02dKOvXlo3MA9VM3GzAKsbAWx1G=w1000",
       "https://lh3.googleusercontent.com/d/1brGUFiTQRDXnR60fwopN0Qjupq7AjrvB=w1000",
@@ -34951,7 +32889,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1G65NZQSCxzXAgcmv2oXGMmJ8RMHeMsq1=w1000",
       "https://lh3.googleusercontent.com/d/1C59mUvgd2tlFkgXDA_Gn81u62g7OPvAj=w1000",
@@ -34992,7 +32930,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/13WLmD1LU6xjf_wumQ0YLceW20edYfULR=w1000",
       "https://lh3.googleusercontent.com/d/1xb2QgZ6B32AACmF2x-8ycNs3hM2tD0Xy=w1000",
@@ -35038,7 +32976,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1i4Pyv7Pjqgyg9mCj7mS_EnsxFYDGs6J8=w1000",
       "https://lh3.googleusercontent.com/d/10uKzzl9Ldn-MuBP6j6LtJD_KUcJ9airy=w1000",
@@ -35082,7 +33020,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1XVhTFZUyg0YPnEYmSCVkemMCcQe55mqf=w1000",
       "https://lh3.googleusercontent.com/d/10Fr0hRf0zBZ2fmHUyyfNugRqRjmP_EPG=w1000",
@@ -35125,7 +33063,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1N09E13KIle85Cwxouor2b9WhRqPXRY4g=w1000",
       "https://lh3.googleusercontent.com/d/1iuukovQnBivSSqois0TRHXP_CfYfe-e9=w1000",
@@ -35178,7 +33116,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1UFOWf9GnYpWDzTRZ4oQmZak6Odx272vR=w1000",
       "https://lh3.googleusercontent.com/d/1vBqNOT31iM69waDwBsn6e9Wm_vGqwiPs=w1000",
@@ -35219,7 +33157,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1iIASwPPsIQ9gzMUNoEUciZqFsIAOKAsa=w1000",
       "https://lh3.googleusercontent.com/d/1A9wgj_ylp-gsBQcWaV7ttn-hn9V_nrk8=w1000",
@@ -35261,7 +33199,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1cem8liESzc3oC9qlv-O44wVK8_oZEqAz=w1000",
       "https://lh3.googleusercontent.com/d/1fdtt6n6c2sGsagUvqrihnrtPv0TQZd_A=w1000",
@@ -35306,7 +33244,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YChzqEvo6y9qrPvMme03jFsQ5LaQqrim=w1000",
       "https://lh3.googleusercontent.com/d/1IUrhG0vU2iR-IV2BSpbFuwWW6cV4wT1e=w1000",
@@ -35350,7 +33288,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1KRyCgd9_mLo8WXyjT1SQEkhyV_pTTScH=w1000",
       "https://lh3.googleusercontent.com/d/1_-v2SGJvOXdrD0z8A01N6jIQizGMhlfT=w1000",
@@ -35399,7 +33337,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ljpUFZLcpZQfGwmIKNux7vp9mmX1qJsD=w1000",
       "https://lh3.googleusercontent.com/d/1K61btFOukJAp10QdE-P4u7jp4lf4jz6t=w1000",
@@ -35444,7 +33382,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xKU_7dZ_UoagbeJ3ctbE7wVeFlFeEfGz=w1000"
     ],
@@ -35483,7 +33421,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1FlCyevA1-EV23_Xz97OWICMiLSP2nIzc=w1000",
       "https://lh3.googleusercontent.com/d/1l3XtjBA16KT8FCtUlMeeaMYeXxOGPrqt=w1000",
@@ -35519,7 +33457,7 @@ window.LISTINGS = [
     "sekatan": "Malay Reserve",
     "kategori": "",
     "zoning": "",
-    "psf": 25,
+    "psf": null,
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
@@ -35528,7 +33466,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 192,535 sqft di Dengkil, Selangor dijual pada RM4,800,000. Hakmilik: Leasehold. Sekatan: Malay Reserve. Anggaran RM25 sekaki persegi.",
+    "description": "Tanah di Dengkil, Selangor dijual pada RM4,800,000. Hakmilik: Leasehold. Sekatan: Malay Reserve.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Dengkil%2C%20Selangor",
@@ -35536,7 +33474,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1n1CUQx4AiebsbOpQy-l3FIVepNLZFNRE=w1000"
     ],
@@ -35575,7 +33513,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1gXZDGlJ-p_RgB-PlnQv5Jv-L9WMv7uGN=w1000",
       "https://lh3.googleusercontent.com/d/1M4n8HNvDZ38cp1IOTXZHBQuPQBcUUogG=w1000"
@@ -35615,7 +33553,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1MSy1U3hAtRoTwlcaTgijOuguzZuIgqOr=w1000",
       "https://lh3.googleusercontent.com/d/13OrYN5l-Ew631gEkDnya181BrRv3YVIu=w1000",
@@ -35661,7 +33599,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1JWVSVfEmYTfOs6Yj1sfvVFAxOCKkSNFv=w1000",
       "https://lh3.googleusercontent.com/d/1I0rnUgK__tAAQbvhK1VlgDgc3I05F6gp=w1000",
@@ -35711,7 +33649,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1D2DdgKoZJI2c9ZfkC_h0cIWdvolK6CFH=w1000",
       "https://lh3.googleusercontent.com/d/1V0mACZyFS2NCkOEOCsayPTXcd1ieCvhG=w1000",
@@ -35753,7 +33691,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1MDX-Spk-H-3SOfYbRN0K2LJcYTmorROQ=w1000",
       "https://lh3.googleusercontent.com/d/14vdhJvZPZ1bGdHfYCBkDVcQsGPgchl6D=w1000",
@@ -35799,7 +33737,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1nd1wUhGZ8AoM0s12gALC2WGyblrggEvA=w1000"
     ],
@@ -35838,7 +33776,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Aao9Fq4ENJRFtYfJMlwV2GrCYLY6Tqh6=w1000"
     ],
@@ -35877,7 +33815,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ebICQqLSXx3iAeukVphNkbk7VivnQl9Q=w1000",
       "https://lh3.googleusercontent.com/d/1Lpu9jxTSTyAUIV6I1NYP6nHd7RYTuIR0=w1000"
@@ -35917,7 +33855,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1NooNLx9BQhoxoOxjKdsuWqGnY7F1SjJj=w1000",
       "https://lh3.googleusercontent.com/d/1T1b0pOMupm4N4eYYG-dZV7_kTDAOx536=w1000",
@@ -35962,7 +33900,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1cpKN0T2B94nebsWSX9TShxaeix32M8wv=w1000",
       "https://lh3.googleusercontent.com/d/1gYf6wsm1d3gA-pjbgQMJ50NWKR8pOX7x=w1000",
@@ -36015,7 +33953,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1R2AbrX2m7vgab0xuEo-L2tC2WUQ0wUgt=w1000",
       "https://lh3.googleusercontent.com/d/1Ja7RKWlOnY0od65pKRXUtlo5QGeRHfjH=w1000",
@@ -36060,7 +33998,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1fDuVk5NVZiQCtpBHn1fPHduaSvcPzT-8=w1000",
       "https://lh3.googleusercontent.com/d/1iX24lQz1skz6oNxiaIYRsESfo1c4WJ4H=w1000",
@@ -36105,7 +34043,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ZUNQw1ap17SwjxQZegKkpPAbDw0HvFk7=w1000",
       "https://lh3.googleusercontent.com/d/1qYL5MZkSkcyfbGFQR3XaAZ3WDZRx44Bp=w1000",
@@ -36147,7 +34085,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1rWFYT4BlOa0wBNVvOs_dVjUsp9RdQHsl=w1000",
       "https://lh3.googleusercontent.com/d/1qOUsA7dBsgXWVpvqp4KZaoctAKkSuJRD=w1000",
@@ -36194,7 +34132,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1d6tjMF5F2Ma6qI48WOG66nSqImH8nGP8=w1000",
       "https://lh3.googleusercontent.com/d/12li3JSpbydTDO1q2bngH4jbdLfclcxeF=w1000",
@@ -36236,7 +34174,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1M-0g6QqUl8OBFkv5Ez7tCCz725frSiDN=w1000",
       "https://lh3.googleusercontent.com/d/1BZUDKEIM9Tzf3HjICX0nBMMfTPjFHghs=w1000",
@@ -36288,7 +34226,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1RZ7uocd3HlkQfWYUSRyqUO-gjicE931Z=w1000",
       "https://lh3.googleusercontent.com/d/1KF-5GvrBul95sfa5iMRdTL7PDq8CK6W7=w1000",
@@ -36331,7 +34269,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1wy1ulLFNXCZO4Nk3Ot2X0MMnnW68MYuK=w1000",
       "https://lh3.googleusercontent.com/d/1q42ipG1EsdiXmA6GMGUz7qKGd_wUqpfm=w1000",
@@ -36374,7 +34312,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1FaYtXCWet4hPhn-vBcMnxC5JHDY_vsOx=w1000",
       "https://lh3.googleusercontent.com/d/1OuFMcLbJB7xBvA_42ycEh5CTweXGnGV2=w1000",
@@ -36422,7 +34360,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Vvfpt9O95atyka9FIakvK1GDgDsAtZBi=w1000",
       "https://lh3.googleusercontent.com/d/1plYfF9vroZRqUMlzuCEkKf_UQbuddqfl=w1000",
@@ -36463,7 +34401,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/171NNQiX-MPwpnk-JZPQ0beUBA-3JUxBk=w1000",
       "https://lh3.googleusercontent.com/d/1eKqdrQwbWzocjJ7EpVedIPCTOFenY4Pl=w1000",
@@ -36516,7 +34454,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1znjclEVlbJGaca-7MHLBC6dnpmVzav1-=w1000",
       "https://lh3.googleusercontent.com/d/1raqBN1nAHxzbropCfb_GkAoJIQu15dqz=w1000",
@@ -36556,7 +34494,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 130,680 sqft di MTCOA 58060 dijual pada Hubungi. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 130,680 sqft di MTCOA 58060 ditawarkan untuk disewa pada Hubungi / bulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=MTCOA%2058060",
@@ -36564,7 +34502,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11Q5_5gHgvpqJtlDciZpQsfd5WGbDk7k-=w1000",
       "https://lh3.googleusercontent.com/d/1GPG_lZGt7oZOa13HcjjfeaQClcqvdQx6=w1000",
@@ -36607,7 +34545,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1qK3_OpYPKoPyNzTkZawilAqBux_yERV1=w1000",
       "https://lh3.googleusercontent.com/d/1IL3U8CJlbEMCvK5VWkxUxfnL-o8Z5Xe6=w1000",
@@ -36654,7 +34592,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/170UoEOF9n1XMeAOhq4kFPZEpgo2DPdaX=w1000",
       "https://lh3.googleusercontent.com/d/1MZ2-EKqPimkO4p9Mv09J3Ho5-88kxb8L=w1000",
@@ -36698,7 +34636,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1DXQ7IW5yT4dBEKVb7ob_GCMOYVH69Kem=w1000",
       "https://lh3.googleusercontent.com/d/1ylhvMbXdaSfpJ19i2S9LRGF4BR0_gORl=w1000",
@@ -36743,7 +34681,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1BFJvzUYytCqRDKNFIVeQE3R8nndmZiGO=w1000",
       "https://lh3.googleusercontent.com/d/1Uy4gp5YCxtw1_qM_OFdG5fePCNknQSoK=w1000",
@@ -36788,7 +34726,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-03",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/16WqRXT1p_2Avg1CQWCsNt5IACdPKcGYa=w1000",
       "https://lh3.googleusercontent.com/d/1JsQM-b2bG-YRI-Xa82g5SgGFcTY4rEPs=w1000",
@@ -36840,7 +34778,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1cuvDmJUzn6DMIHsWyEiKH_2B7Z3uv5zN=w1000",
       "https://lh3.googleusercontent.com/d/1ZSKW6jSmmhHGWemxIUbwgJHVekYS0lsd=w1000"
@@ -36880,7 +34818,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1lA69b1YHwZGsIKLvvQyD6qEaZWDiI0CT=w1000",
       "https://lh3.googleusercontent.com/d/1j9L8KBjPnLppZEXoF-_RS30kB3B-Nsui=w1000",
@@ -36927,7 +34865,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1MIQXEb03eNHlk1G-mDPW2TjScdhT9x3D=w1000",
       "https://lh3.googleusercontent.com/d/1U4ev5gI8EYM3RhKF_DfSU5_L4QV7clf6=w1000",
@@ -36969,7 +34907,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1RuihDfSL2rOtZywHLfOP3B8_B-gcrsCu=w1000",
       "https://lh3.googleusercontent.com/d/1t1bFYm_0T55KEBliBRxmQNBt0x30x1Oi=w1000",
@@ -37016,7 +34954,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Bjf6kMumZrvwvWLqwAKcighoEukflEpn=w1000",
       "https://lh3.googleusercontent.com/d/1fJCZBeT-UGGQUfbRjl1JXxY2bneMtmb-=w1000",
@@ -37067,7 +35005,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1qiVxmhLoaXR-2f0ONcI0alBsPjzoCjVa=w1000",
       "https://lh3.googleusercontent.com/d/1GbCwaviArKhexTsyp6NURpPPOShAssEF=w1000",
@@ -37117,7 +35055,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/12qqIVvBPyGOyL48YSl-xxW84httlXolq=w1000",
       "https://lh3.googleusercontent.com/d/1eGBc8eDg8YfVTuPH184O4XpPBOVVDLM6=w1000",
@@ -37169,7 +35107,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1zVZJlDhT-Lhq6Jl09UGhYntFCnAxsHcE=w1000",
       "https://lh3.googleusercontent.com/d/1zsodEPhRGYrYa7wC_26yy14rwjmSylke=w1000",
@@ -37222,7 +35160,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/120tHyn0OWCfkf7hQgcqcwRkl586UnIeZ=w1000",
       "https://lh3.googleusercontent.com/d/1AgQ3awjwTrhw2dMxA0U6WeQkKpbBg6bs=w1000",
@@ -37273,7 +35211,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1IFJxHUqKT1sGRFjojWvmxxI0OIyOAUFz=w1000",
       "https://lh3.googleusercontent.com/d/1NgnfnCRlpglPfqPmNustEqaF0ZcGbwsX=w1000",
@@ -37317,7 +35255,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1uaCTmU4vn6HZLRYEl72k2IDX4Yw4W676=w1000",
       "https://lh3.googleusercontent.com/d/13c3DTys2hA8k90riWww5UdLAeF8od8ne=w1000",
@@ -37357,7 +35295,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 217,800 sqft di Hulu Langat, Selangor dijual pada RM2,500,000. Hakmilik: Tidak dinyatakan. Sekatan: Malay Reserve. Anggaran RM11 sekaki persegi.",
+    "description": "Tanah 217,800 sqft di Hulu Langat, Selangor dijual pada RM2,500,000. Sekatan: Malay Reserve. Anggaran RM11 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Hulu%20Langat%2C%20Selangor",
@@ -37365,7 +35303,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1hNS6NLkJh-7EpuocNTjAdhqesA-dkfkX=w1000",
       "https://lh3.googleusercontent.com/d/101k-TdiDU_xy_6V8UuQHLYaWU7WwiyYU=w1000",
@@ -37415,7 +35353,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1P4lLhRymaT5uGUSo_JnUmSIpubfUyg0P=w1000",
       "https://lh3.googleusercontent.com/d/1iJ48sVvKdrhjxLyGOAfwAPhUDk6TluKX=w1000",
@@ -37460,7 +35398,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-gTQjTrP2HKGyaMyMPqoc-oGMR_CDhNO=w1000",
       "https://lh3.googleusercontent.com/d/1vaTnu5jhyVv3KcjMpAd1XpWCNHrT7XhV=w1000",
@@ -37507,7 +35445,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Y6uAosH-rBhPKkt2OpivGvMZztZNMzev=w1000",
       "https://lh3.googleusercontent.com/d/1Lzv1OfL8DGcKj353ZyhRwSo1aWHP1ojM=w1000",
@@ -37560,7 +35498,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-CLJky_3eT5teEsiw_DwFjjBeMlb4VKg=w1000",
       "https://lh3.googleusercontent.com/d/1CZiGVJcO0Lqs-V2hUo57OR2L4llnoW-I=w1000",
@@ -37613,7 +35551,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1SeOhpDRwpuBOmQ9QK9gAsLlEJl3pYbVz=w1000",
       "https://lh3.googleusercontent.com/d/1EyO7QQyTfjGw60MrmLly3JpC_57Hku-2=w1000",
@@ -37657,7 +35595,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1gw3BK_aioGqcg795G3rpLiZFayFeJX-A=w1000",
       "https://lh3.googleusercontent.com/d/1_JopQZYEulMJFgiGNGObw5aOO304OdGV=w1000",
@@ -37705,7 +35643,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1U2qUjqSF06-FX7taSeOVCT_N50DYGUxP=w1000",
       "https://lh3.googleusercontent.com/d/11eLOWzQ6iwHYK9BZ_fImuMmHuoqMIZUa=w1000",
@@ -37733,7 +35671,7 @@ window.LISTINGS = [
     "sekatan": "Malay Reserve",
     "kategori": "",
     "zoning": "",
-    "psf": 115,
+    "psf": null,
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
@@ -37742,7 +35680,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 60,984 sqft di Cheras, Selangor dijual pada RM7,000,000. Hakmilik: Leasehold. Sekatan: Malay Reserve. Anggaran RM115 sekaki persegi.",
+    "description": "Tanah di Cheras, Selangor dijual pada RM7,000,000. Hakmilik: Leasehold. Sekatan: Malay Reserve.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Cheras%2C%20Selangor",
@@ -37750,7 +35688,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Ui3oXRhtX7gpwcSqOjaKwDQyoVDgb1uQ=w1000",
       "https://lh3.googleusercontent.com/d/1LkRPI4aZHfrdqJL1xPcAX9DREKdEnTmJ=w1000",
@@ -37799,7 +35737,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1r5JJIHQqnuLd80-m8O8d3ZVYubIW75D_=w1000",
       "https://lh3.googleusercontent.com/d/1iYHfh6ytu2M9sUFLyfkw20TM16B66I5z=w1000",
@@ -37852,7 +35790,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1OSAYboYN0UAAGHPJSBQFuyuvmrKuDnQv=w1000",
       "https://lh3.googleusercontent.com/d/1RrKzhVVcYax1jU67LioNcuvui3_HSbAo=w1000",
@@ -37900,7 +35838,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1EIdu-cIqxOYOsLFGcXdPhIXU-N79EUeW=w1000",
       "https://lh3.googleusercontent.com/d/1nqOlCoexCk9P82lMxn29Fs6IH7qS92AW=w1000",
@@ -37942,7 +35880,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1qZfjOG0mHg5OaRE3ZvQSwDDo1RKZ8NmS=w1000",
       "https://lh3.googleusercontent.com/d/1QDn6XuOfU2XPaughYjEv-MpKMQX91IkG=w1000",
@@ -37993,7 +35931,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bRIXqaNiCN1EVs5-qt-zpg9iiWO_yW52=w1000",
       "https://lh3.googleusercontent.com/d/1IseDxfl-qm6j1TSMCokJE7biCI-1mx7H=w1000",
@@ -38027,7 +35965,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 5 sqft di MTCOA 176177 dijual pada Hubungi. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 5 sqft di MTCOA 176177 ditawarkan untuk disewa pada Hubungi / bulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=MTCOA%20176177",
@@ -38035,7 +35973,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1FCo6vE2kKH_WOwvFhMb8wnyhPlVVPk9V=w1000",
       "https://lh3.googleusercontent.com/d/1tcbbAg9NxrteBA_cdC_oS3W3qvt8yEJJ=w1000",
@@ -38072,7 +36010,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 247,421 sqft di Hulu Langat, Selangor dijual pada RM750,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM3 sekaki persegi.",
+    "description": "Tanah 247,421 sqft di Hulu Langat, Selangor dijual pada RM750,000. Hakmilik: Freehold. Anggaran RM3 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Hulu%20Langat%2C%20Selangor",
@@ -38080,7 +36018,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1TJSbEtoXEarQ06mpmdz-k7dM9-yquyXC=w1000",
       "https://lh3.googleusercontent.com/d/1WlMdzj3919bOjGSlcrMGlWn1wRJViKZz=w1000",
@@ -38115,7 +36053,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 134,165 sqft di Beranang, Selangor dijual pada RM630,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM5 sekaki persegi.",
+    "description": "Tanah 134,165 sqft di Beranang, Selangor dijual pada RM630,000. Hakmilik: Freehold. Anggaran RM5 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Beranang%2C%20Selangor",
@@ -38123,7 +36061,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1k0IGP34W9cmWlg1d5Ran4bjriQ7fCPss=w1000",
       "https://lh3.googleusercontent.com/d/1TES3gALWN7MgN-qXq57pywT8CLW2crg_=w1000",
@@ -38176,7 +36114,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Db1LzwNWtj8F59hQOVxufaHFA75cDZBG=w1000",
       "https://lh3.googleusercontent.com/d/1ONYDWRpj1lKrfxUxgK98IH8pQLhNGaup=w1000",
@@ -38225,7 +36163,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1fQ64r9sOh8zgwY-Q760xwnVC9bJ1S-k8=w1000",
       "https://lh3.googleusercontent.com/d/1MvaGJ7BC0axFX4vBvsn_Ll6_JARYhbvX=w1000",
@@ -38273,7 +36211,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1CZhG2j_47Zcozev3ns_F4WiW1lwVb4bL=w1000",
       "https://lh3.googleusercontent.com/d/1fO3f6DRTm1-W4xdPsLh8lWTJJyDtTWva=w1000",
@@ -38315,7 +36253,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19_ufXVqpzYovrhu6RjquOkUU50wY-MHe=w1000",
       "https://lh3.googleusercontent.com/d/1QMWaLiQwoj_a79aeZl-728WymzAGdO_T=w1000",
@@ -38363,7 +36301,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1VEthm_2WW_u8my1ftrZVhQqg73TYc7MA=w1000",
       "https://lh3.googleusercontent.com/d/1ohlIz-02OFc4z3d_LFvaW4f_7HI93ie1=w1000",
@@ -38416,7 +36354,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1buu4sgJaqJgIsRV99yqxVTIPHryMkOBO=w1000",
       "https://lh3.googleusercontent.com/d/1CUO8urSOU3Om5_zczwyLUbNkyAUmReB8=w1000",
@@ -38455,7 +36393,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 413,820 sqft di Hulu Langat, Selangor dijual pada RM2,375,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM6 sekaki persegi.",
+    "description": "Tanah 413,820 sqft di Hulu Langat, Selangor dijual pada RM2,375,000. Hakmilik: Freehold. Anggaran RM6 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Hulu%20Langat%2C%20Selangor",
@@ -38463,7 +36401,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Gu1g32iyzLJQMO9mC2XNB5aYPCxPUncK=w1000",
       "https://lh3.googleusercontent.com/d/1Ka4YL5CqmPa-ykKQKFRwFqWIJhlm18kq=w1000",
@@ -38516,7 +36454,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/10iLmr_V2dgz0ML1NmdtQvDSQLUzlghmN=w1000",
       "https://lh3.googleusercontent.com/d/1Jc5jYsaZyMIgDrSGrAa0xUnmwWK4ClIN=w1000",
@@ -38567,7 +36505,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Cy0hYiIpuZPyu7z-sVcbNzZE3uFSIe9j=w1000",
       "https://lh3.googleusercontent.com/d/1VkQPSfiXQvNd_ujjw8F2W10Axw2hPzUr=w1000",
@@ -38612,7 +36550,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19W8ULRwciFK0sYVFaVETyTSIqxtS0vud=w1000",
       "https://lh3.googleusercontent.com/d/1vmfKqUKya9_OL6aQc7lhBWjNhU3CUsin=w1000",
@@ -38660,7 +36598,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ydoiu2iSjvT2LRM_QWN8Y5isJs5mTUbI=w1000",
       "https://lh3.googleusercontent.com/d/1VdUtHLvXkKMgXacVMnJCRi-USZIRqWyl=w1000",
@@ -38708,7 +36646,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1zJwBLXzuOIIzzHawT8S9x-2ynqh5MHs8=w1000",
       "https://lh3.googleusercontent.com/d/1TJQnRdTPNb878UFCwDB6w84B6UJcm_Ny=w1000",
@@ -38754,7 +36692,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YiGU8qvlQFtW0sSqqK7qAtkNvAXjXITi=w1000",
       "https://lh3.googleusercontent.com/d/1-uH1Kbp5HGZfYNP9HIQc79oYxt1M4J6j=w1000",
@@ -38804,7 +36742,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/14O6qW35pA-kWVfYDAwGWpw83tbSHZQvo=w1000",
       "https://lh3.googleusercontent.com/d/17MP2K1wPx-UBDNRCEOsQLJaUu3nlN4Vr=w1000",
@@ -38849,7 +36787,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1GvYG_gO7RM0FrXHy59nUPy-bERcuCnxQ=w1000",
       "https://lh3.googleusercontent.com/d/14jPZmx7Bf0i7IqcX1v6YkcFeqVeISfCv=w1000",
@@ -38895,7 +36833,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1JkWUgqkyBQAhtq5I6UywwxPJgCzg5shY=w1000",
       "https://lh3.googleusercontent.com/d/1YO34dCycXr8m9BJy9DKv8Y6eWnarx-6n=w1000",
@@ -38940,7 +36878,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1U7pSKeOOx5SHODkVqL7APaA9dajW_YOv=w1000",
       "https://lh3.googleusercontent.com/d/1Agmyg58Zx9HN5uuTKG8YJ1s7-Hp4PVgY=w1000",
@@ -38984,7 +36922,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Q25f23Krssd3JsC6xiRJtUnCVbqMPsfH=w1000",
       "https://lh3.googleusercontent.com/d/1NRMhzfEjaNNbl6KfAV_4e0Eq12dk-etA=w1000",
@@ -39029,7 +36967,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 189,050 sqft di Hulu Langat, Selangor dijual pada RM2,100,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM11 sekaki persegi.",
+    "description": "Tanah 189,050 sqft di Hulu Langat, Selangor dijual pada RM2,100,000. Hakmilik: Freehold. Anggaran RM11 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Hulu%20Langat%2C%20Selangor",
@@ -39037,7 +36975,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1UV1aT7KZTdjSdMvtdZRpGK_PcBpMhBVY=w1000",
       "https://lh3.googleusercontent.com/d/12Fcd8m-4r6XploaBC90S05kGVTCETCcQ=w1000",
@@ -39080,7 +37018,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Gseq_33JISs8LO4IssSt8DEVEoWFXBJE=w1000",
       "https://lh3.googleusercontent.com/d/1QIDKXdJE_wHPgNqwk-hYPC91QnUDoEbQ=w1000",
@@ -39122,7 +37060,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/12vM3enG1AyOIv2OD_RPist4ASk0AlKE5=w1000",
       "https://lh3.googleusercontent.com/d/1IIUKD7HBlU8042FtDiv7Vvmar_asrYY4=w1000",
@@ -39175,7 +37113,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YEvSpRpBOtVX00V87VNb5TGa_LkaYSzS=w1000",
       "https://lh3.googleusercontent.com/d/1yPwsVlAkWQKK8XPKeWx6Ryln0deIPxQY=w1000",
@@ -39225,7 +37163,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19WheIVoIfrdfy6JNiRIeiI0US5PUjF7b=w1000",
       "https://lh3.googleusercontent.com/d/1dPcYZuDGsh7yPMWKu5PIfYxEegz8AZ5r=w1000",
@@ -39270,7 +37208,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1RsRUWa9-MVx5VzxPawZ_MCAJl7jk2-iT=w1000",
       "https://lh3.googleusercontent.com/d/1QCRDXBQ1nbaN6zfWzF_xREWxup67-XQO=w1000",
@@ -39323,7 +37261,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ezb7hQqIHuiX9yha68QdBp3MEH_38VH4=w1000",
       "https://lh3.googleusercontent.com/d/1DKtSe5GQcpXaLQhixy5vqY8n9ulo0Q5X=w1000",
@@ -39366,7 +37304,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1es5fST9MO777aZZ3L3Un8kIcQ_8SBLlV=w1000",
       "https://lh3.googleusercontent.com/d/1YkMAlXzj_F43wkoC78zZTp2125KdO7Ys=w1000",
@@ -39412,7 +37350,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/16nD5I2udDegTA-vui4UKhCjSXSYj6FJd=w1000",
       "https://lh3.googleusercontent.com/d/1OftXEwKikcdOy6pa11VZfAf_2Y5G7BZW=w1000",
@@ -39455,7 +37393,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Vu2JPKhV_r2UK9VkmKpSuBqu-sWvjOXp=w1000",
       "https://lh3.googleusercontent.com/d/1bLikDwXUkfHKJlsPI6Kf73vDaCXiV-6i=w1000",
@@ -39498,7 +37436,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YKvmx9RR3n25mCavPeiq8sWxB09JNP9A=w1000"
     ],
@@ -39537,7 +37475,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/10WmtckYXiBohQ82iBdjQ254p8rWqboR3=w1000",
       "https://lh3.googleusercontent.com/d/1NagTwyN-PaKRRoaJOsB5-CCQegCXt7MK=w1000",
@@ -39585,7 +37523,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19t207hX6qGux0sJxbbmIr5mtNZT0Pra9=w1000",
       "https://lh3.googleusercontent.com/d/1IqTwrGCJG9G-IMeLJx7Sb7G00XEJPnbu=w1000",
@@ -39625,7 +37563,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 58,370 sqft di Beranang, Selangor dijual pada RM500,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM9 sekaki persegi.",
+    "description": "Tanah 58,370 sqft di Beranang, Selangor dijual pada RM500,000. Hakmilik: Freehold. Anggaran RM9 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Beranang%2C%20Selangor",
@@ -39633,7 +37571,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1R_h299stK65iQv6JjhLYgf7QX9Qfq_va=w1000",
       "https://lh3.googleusercontent.com/d/1KyV6OwFL30Dm6Z-MlfTijmwjNQjun82r=w1000",
@@ -39678,7 +37616,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1M1ZwTLvKMWafl9sIf7ZAUb0fKIQylCsi=w1000",
       "https://lh3.googleusercontent.com/d/1uX9C1O8Ubn4nPZWfuhWMl0_2R6dzJIhL=w1000",
@@ -39724,7 +37662,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1F4KnI0boWnvwvw2AaHkk6919AxHhBGDK=w1000",
       "https://lh3.googleusercontent.com/d/1cmVLzfUQE9e6XzpuCFcg0AOJ7ebV6Uhg=w1000",
@@ -39760,7 +37698,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 63,162 sqft di MTCOA 145167 dijual pada Hubungi. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 63,162 sqft di MTCOA 145167 ditawarkan untuk disewa pada RM18,000 / bulan. Hakmilik: Freehold. Sekatan: Malay Reserve.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=MTCOA%20145167",
@@ -39768,7 +37706,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1zcwcY1OBN9Cn_Y3FM2EjZbnwkKKS9k9p=w1000",
       "https://lh3.googleusercontent.com/d/1n5YjTPoBRDIJQwTZ7j-gWlEcINT1GMB-=w1000",
@@ -39811,7 +37749,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/13D16A58TWFn8b0jOhJVNUWZFXcWkjIo9=w1000",
       "https://lh3.googleusercontent.com/d/1ezTImVXXOf72u4oLRSrzKm6tTVUebS8u=w1000",
@@ -39862,7 +37800,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1--epYoJ4IB-CWAmqybiNIj-Zo1ED10wf=w1000",
       "https://lh3.googleusercontent.com/d/1oj8Z8j5wNYEkAn-2KLp7hAmTfb0eYX8B=w1000",
@@ -39913,7 +37851,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1PY6m7BtNBOlJUfB7c-e9FshH6uTpvv9P=w1000",
       "https://lh3.googleusercontent.com/d/1uQYuF1WO_Dtsgy7uiBL9egEDo2gAu5Y8=w1000",
@@ -39961,7 +37899,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1oboNkZDHTCd7Nu4O7seUTyzZ2HjDrDh2=w1000",
       "https://lh3.googleusercontent.com/d/1r3d7AMwWfqupMQC0hpGXsUht5vOdhZA-=w1000",
@@ -40014,7 +37952,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1qdPNVuQIo2tlm922EOU917bOB563MIo9=w1000",
       "https://lh3.googleusercontent.com/d/1jpRQ7cHC11uQi7H_Tufj3J7sgHJvlw2c=w1000",
@@ -40067,7 +38005,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1UStiAwR9AJlVmacIfxAlCGCEI6tlos3k=w1000",
       "https://lh3.googleusercontent.com/d/1mS_e45k0A0fUenugivWBefdZJrPLjvPW=w1000",
@@ -40120,7 +38058,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1PNUtD7WJk4V4euCUcMeWrHyz094qiLot=w1000",
       "https://lh3.googleusercontent.com/d/1AZqrGHv_Nkg1Z55zgwjCD5fVyc5-CEfY=w1000",
@@ -40173,7 +38111,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1dJKfzt0zkVSQEIA7h5-Qgr26wqghAyXN=w1000",
       "https://lh3.googleusercontent.com/d/1dhkDFiONac6tuWzkjvJdiPGr_S4XWM7E=w1000",
@@ -40218,7 +38156,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 9,602 sqft di Bangi, Selangor dijual pada RM624,130. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM65 sekaki persegi.",
+    "description": "Tanah 9,602 sqft di Bangi, Selangor dijual pada RM624,130. Hakmilik: Freehold. Sekatan: Bumi. Anggaran RM65 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bangi%2C%20Selangor",
@@ -40226,7 +38164,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1RvWpZVEen9O4FfNYA50xfsgkmbnqG7E4=w1000",
       "https://lh3.googleusercontent.com/d/18B78VxLqhk39G6-LKRyy3rXHlzPT2K5i=w1000",
@@ -40269,7 +38207,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xVf5k2DcCxh9cfuEzWGrK4or8p_daW8C=w1000",
       "https://lh3.googleusercontent.com/d/1oEAVZeexhk7XXXC2Ai1cn3KJRFdNiS3T=w1000",
@@ -40300,7 +38238,7 @@ window.LISTINGS = [
     "sekatan": "Malay Reserve",
     "kategori": "Pertanian",
     "zoning": "Pertanian",
-    "psf": 420000,
+    "psf": 10,
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
@@ -40309,7 +38247,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 1 sqft di Hulu Langat, Selangor dijual pada RM420,000. Hakmilik: Tidak dinyatakan. Sekatan: Malay Reserve. Anggaran RM420000 sekaki persegi.",
+    "description": "Tanah 1 ekar (43,560 sqft) di Hulu Langat, Selangor dijual pada RM420,000. Sekatan: Malay Reserve. Anggaran RM10 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Hulu%20Langat%2C%20Selangor",
@@ -40317,7 +38255,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1HN825gg_fI_pO_BHY8WFiaxR2WRtm2Z-=w1000",
       "https://lh3.googleusercontent.com/d/1oSqZo816t_3GiwwR33BMc01S3NDvy9_Z=w1000",
@@ -40365,7 +38303,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1uHamYGf-slLDdqKQE0eecNiy81PagZaq=w1000",
       "https://lh3.googleusercontent.com/d/1gikryCAemG4_xq2BojNrzyvDdsgbDP0Y=w1000",
@@ -40418,7 +38356,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1DJoNegsPitnWKI9-Z6nVQMV13SsZbIDK=w1000",
       "https://lh3.googleusercontent.com/d/1Du1mvxBGGgkZLYP9qxGCncImpyLhzwlp=w1000",
@@ -40471,7 +38409,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ILuuHTiOo-SzopuAlzhny_6_KHiE4WQ5=w1000",
       "https://lh3.googleusercontent.com/d/1yD0vwU00y6p0mIZH3zhMOSbuy7hWTC5J=w1000",
@@ -40510,7 +38448,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 392,040 sqft di MTCOA 109782 dijual pada Hubungi. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 392,040 sqft di MTCOA 109782 ditawarkan untuk disewa pada RM2,250 / bulan. Hakmilik: Leasehold. Sekatan: Malay Reserve.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=MTCOA%20109782",
@@ -40518,7 +38456,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1PjzwPgXLYTUvL1FYQ3WriceInZeJyZVG=w1000",
       "https://lh3.googleusercontent.com/d/1HQ3nWYKk1chH0Pwawf81zohqF81Ydios=w1000",
@@ -40566,7 +38504,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1CD8J02K_CPePXrUyjDLanZhkscAvMSRk=w1000",
       "https://lh3.googleusercontent.com/d/1uCpwOGywjw9fHK-5U-Y_KZ_f0xXR7O2S=w1000",
@@ -40607,7 +38545,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 9,117 sqft di Bangi, Selangor dijual pada RM450,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM49 sekaki persegi.",
+    "description": "Tanah 9,117 sqft di Bangi, Selangor dijual pada RM450,000. Hakmilik: Freehold. Sekatan: Non-Bumi. Anggaran RM49 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bangi%2C%20Selangor",
@@ -40615,7 +38553,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/136sii6J_9yCHfj3Zp94GTGOCp0Kqg25W=w1000",
       "https://lh3.googleusercontent.com/d/1uyHtwCd5jP_jSAxSvG5x7uWKoimoN37o=w1000",
@@ -40661,7 +38599,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1audZd5y4frB6hvh87x9sKa9yWqmkyu1y=w1000",
       "https://lh3.googleusercontent.com/d/1EV0Naq_GY4y0GsA0Ear8hK0pNTPZfxm9=w1000",
@@ -40707,7 +38645,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1SHYbBAbTAfc9vqGuTbuwx6dIOgwVKwxZ=w1000",
       "https://lh3.googleusercontent.com/d/1fARljvf_DSXt-qLiBrckz2koDcS1EXnJ=w1000",
@@ -40757,7 +38695,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1fL3yQrBLnIJyP7GkGI8YdCa-VRsw4wPv=w1000",
       "https://lh3.googleusercontent.com/d/1xP1w626V9OdWLryTi2s756HZpYAShDmS=w1000",
@@ -40807,7 +38745,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1rH3umcdbIiiFNBpGAV29kLqcDM_Y6Jt3=w1000",
       "https://lh3.googleusercontent.com/d/1tPInT_yObc0XkDOp7rZOkwoBLajyS7Vv=w1000",
@@ -40853,7 +38791,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1PBrWqMVQauD0eLeQ-rNBJ_4PlA6wTEX4=w1000",
       "https://lh3.googleusercontent.com/d/1dFTZ8ksqVxdods_kkOFIMGwmLnlJ9et8=w1000",
@@ -40899,7 +38837,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1eddj_XAQ5rp_W_9NnmO5oLmKLoEg00KO=w1000",
       "https://lh3.googleusercontent.com/d/1AxCkbMCqpxHJixIV_l-S0agNc7LNCsnx=w1000",
@@ -40936,7 +38874,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 3,315 sqft di Kajang, Selangor dijual pada RM250,000. Hakmilik: Tidak dinyatakan. Sekatan: Malay Reserve. Anggaran RM75 sekaki persegi.",
+    "description": "Tanah 3,315 sqft di Kajang, Selangor dijual pada RM250,000. Sekatan: Malay Reserve. Anggaran RM75 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Kajang%2C%20Selangor",
@@ -40944,7 +38882,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1XhLsRd5e-CN6jckODDuK1ENDRbDRmOib=w1000",
       "https://lh3.googleusercontent.com/d/1kXEQPZzLQpgQY_y4RO0-idBVtiXOZyn4=w1000",
@@ -40982,7 +38920,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 6,630 sqft di Semenyih, Selangor dijual pada RM325,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM49 sekaki persegi.",
+    "description": "Tanah 6,630 sqft di Semenyih, Selangor dijual pada RM325,000. Hakmilik: Freehold. Sekatan: Malay Reserve. Anggaran RM49 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Semenyih%2C%20Selangor",
@@ -40990,7 +38928,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1swVSbGFJ419ptkNnZagmrLRHEkicwfj8=w1000",
       "https://lh3.googleusercontent.com/d/1kC5g8kswsmjfmZw7xvSe3J0ZSOJ09AsF=w1000",
@@ -41034,7 +38972,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1VvnUk2eGXdAEv9yQ6IGMU0SJLiwJ3uZx=w1000",
       "https://lh3.googleusercontent.com/d/1x6Q9MluBnQe8zcksnL41NX64RbO3UHVw=w1000",
@@ -41082,7 +39020,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Q6JqFj32Y6toQx-JczBo_0h539K81VkD=w1000",
       "https://lh3.googleusercontent.com/d/1MPpOUoMdxJauWU7pMw3Dv2hFJsgRvoQo=w1000",
@@ -41130,7 +39068,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1UgZN0V1E7XqTXV_TEcFnt-V9TJyPcrjB=w1000",
       "https://lh3.googleusercontent.com/d/1rdOx_ZOJA-o7sZy_DO4iFeCD5BrUEdJA=w1000",
@@ -41167,7 +39105,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 72,000 sqft di MTCOA 87465 dijual pada Hubungi. Hakmilik: Freehold. Sekatan: Malay Reserve.",
+    "description": "Tanah 72,000 sqft di MTCOA 87465 ditawarkan untuk disewa pada RM18,000 / bulan. Hakmilik: Freehold. Sekatan: Malay Reserve.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=MTCOA%2087465",
@@ -41175,7 +39113,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bjbBvUIdWL_2x3Am4RBytt3Jx8h778z3=w1000",
       "https://lh3.googleusercontent.com/d/1MEy6Vsw1SgWYx1fCht3ncbJUgpiV2pNS=w1000",
@@ -41218,7 +39156,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/103HHkvrbnvQdVdR6mMLz_T3skE7rLgO3=w1000",
       "https://lh3.googleusercontent.com/d/1zfjY0rce5lNZnCMo3ftoJF_FaWBevC_Q=w1000",
@@ -41251,7 +39189,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 53,579 sqft di Hulu Langat, Selangor dijual pada RM1,340,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM25 sekaki persegi.",
+    "description": "Tanah 53,579 sqft di Hulu Langat, Selangor dijual pada RM1,340,000. Hakmilik: Freehold. Sekatan: Malay Reserve. Anggaran RM25 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Hulu%20Langat%2C%20Selangor",
@@ -41259,7 +39197,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1qgDGUKP_vMG0f6C4K2lspUvK0wyHpK2a=w1000",
       "https://lh3.googleusercontent.com/d/1SLWLeLRNH48FkkEU08O5jUiiloY50cWw=w1000",
@@ -41302,7 +39240,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ixqk4tS_1reqNIcjM5kfJh5j28rrbfPJ=w1000",
       "https://lh3.googleusercontent.com/d/1oT0ubhG8-r7muzp12ht0v4XHSdOEP4mk=w1000"
@@ -41342,7 +39280,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1G1VDOXm7gzcysjvJsptCW_d68z7RgX2j=w1000",
       "https://lh3.googleusercontent.com/d/1GZBiO0m84mE38W3-91Pv_AN03mxsBgJQ=w1000",
@@ -41375,7 +39313,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 163,350 sqft di Semenyih, Selangor dijual pada RM2,300,000. Hakmilik: Tidak dinyatakan. Sekatan: Bumi. Anggaran RM14 sekaki persegi.",
+    "description": "Tanah 163,350 sqft di Semenyih, Selangor dijual pada RM2,300,000. Sekatan: Bumi. Anggaran RM14 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Semenyih%2C%20Selangor",
@@ -41383,7 +39321,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1WO_FmxHXC_TlJxWKHguUPU56cX9xD7N6=w1000",
       "https://lh3.googleusercontent.com/d/11WmQnVjMTPpndvDzuTzbr5fJmbzgZ8Ei=w1000",
@@ -41429,7 +39367,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1oDITNeGnPnCjGHdnZiEFKxiFBsAduDY3=w1000",
       "https://lh3.googleusercontent.com/d/1XoCBv4Qfetz8LHuru4ZfIxczePXydMpO=w1000",
@@ -41475,7 +39413,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jm9S1Aabs7xNqM3D2gM7opL54KFJX6mx=w1000",
       "https://lh3.googleusercontent.com/d/1DIIali6CDrGN2JtkH3jCv3GI_aKxPDLb=w1000",
@@ -41524,7 +39462,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1KMfps_uM2_iBGHozCWq-59Z4ibYheuUj=w1000",
       "https://lh3.googleusercontent.com/d/1cckmRaoYurEdm7fyZjIt3Lg19XsFa94L=w1000",
@@ -41572,7 +39510,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1MvTxr4GIRJqlnPL7I7LxDMZD0uKMRWRY=w1000",
       "https://lh3.googleusercontent.com/d/1PNbVdzHDRh9iK_9WCs6Jlt4BQz_KgQzz=w1000",
@@ -41616,7 +39554,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1zov9YmtNBv_j-mrf2j7TLMG63b4_gWJu=w1000",
       "https://lh3.googleusercontent.com/d/1dwmJFVuBLfUBF6ST4aETcw8ZD3KF9kAw=w1000",
@@ -41655,7 +39593,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 85,266 sqft di Kajang, Selangor dijual pada RM750,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM9 sekaki persegi.",
+    "description": "Tanah 85,266 sqft di Kajang, Selangor dijual pada RM750,000. Hakmilik: Freehold. Sekatan: Malay Reserve. Anggaran RM9 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Kajang%2C%20Selangor",
@@ -41663,7 +39601,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1nPMZS6v5mMJ2LhbbwUB3rAdepXSvpGpD=w1000",
       "https://lh3.googleusercontent.com/d/1QLSRwJJVyrxH0B0exUZrN7LSaHK9jadk=w1000",
@@ -41702,7 +39640,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 135,907 sqft di Beranang, Selangor dijual pada RM8,800,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM65 sekaki persegi.",
+    "description": "Tanah 135,907 sqft di Beranang, Selangor dijual pada RM8,800,000. Hakmilik: Freehold. Sekatan: Non-Bumi. Anggaran RM65 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Beranang%2C%20Selangor",
@@ -41710,7 +39648,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/12D_4yEZIawvZzPIwsqxiFrCkKMC_rUOL=w1000",
       "https://lh3.googleusercontent.com/d/1QV-OIfuhYiRUwXU6mvo0aDi7a2P9sOsB=w1000",
@@ -41761,7 +39699,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1rgJ8XMN21Yb5kGnfd-Zcohb-RSL0s2EY=w1000",
       "https://lh3.googleusercontent.com/d/18Sa0HzOs7AVlWEGof-p0MKVs6aQFB3jo=w1000",
@@ -41813,7 +39751,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-l9yfO-Jlfei1G5jXEYqNZjHOZc0xUlf=w1000",
       "https://lh3.googleusercontent.com/d/1nbDMUZ5p7X1H_iNRNIolWV2f-WC93Y_-=w1000",
@@ -41859,7 +39797,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Go2f57wt3CIq8n2XuF_AcqBWZSs0HZ0p=w1000",
       "https://lh3.googleusercontent.com/d/11LeRQxq4d2L9Sbljsm-EdweTh4Q51vZC=w1000",
@@ -41910,7 +39848,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1XZC21_VZ1XDX6yZZpMdR9ffCIBIBJqEh=w1000",
       "https://lh3.googleusercontent.com/d/1dyQvFXYbLQeWB8ibSZtdGrXdt0z3mN9v=w1000",
@@ -41963,7 +39901,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1D0aINkFONnSqV9Kd1k2Lth_CTW9kqhrM=w1000",
       "https://lh3.googleusercontent.com/d/1M9sOIofIGNGuNlLPhvTcI13Ek8IzgWbC=w1000",
@@ -42009,7 +39947,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1wqwN8OMaWL86psocTBNQCBjCzEqF4j-w=w1000",
       "https://lh3.googleusercontent.com/d/1FgE1fZpjtYKxx58Vh4CYu4YzEWwcTsSj=w1000",
@@ -42055,7 +39993,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1INfG0V-JYHXDtkaZk8TSpfz4Mg8b5TAT=w1000",
       "https://lh3.googleusercontent.com/d/1lOaRXLM30geDHRhG5i_MiR4O7TE24KZc=w1000",
@@ -42098,7 +40036,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ZiyYVDKWhRb26vejqOtFH5rWDd40PFSp=w1000",
       "https://lh3.googleusercontent.com/d/1fnYC5BzFT932nkdVS3SvupJHaGLql_TV=w1000",
@@ -42151,7 +40089,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Z8r2OCSka_a4jdHPI5LB6LOS8Vyjt892=w1000",
       "https://lh3.googleusercontent.com/d/1Lr-GUpeZgftIa8vCnQigycn04EBoyFAH=w1000",
@@ -42193,7 +40131,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ndZlBas1gihERPYGR6lg1Gcu4765u-7i=w1000",
       "https://lh3.googleusercontent.com/d/1YPzkyopHj-kUEAuXntoEbFcixy9qCpRz=w1000",
@@ -42240,7 +40178,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1QgD1xix-sL4iPrHjEBq09gRjHzyNBmX2=w1000",
       "https://lh3.googleusercontent.com/d/16LYZxWuTLUocoIbby0ZvNnAsCBpGuIYl=w1000",
@@ -42288,7 +40226,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1SVt_rrrE9UplEUztwtCFyy2HSnjA3D9V=w1000",
       "https://lh3.googleusercontent.com/d/1PvsaFPkCsXBEZkvPm3SXwwU3abjc1ovr=w1000",
@@ -42341,7 +40279,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1shTAOjw8NBrbVhLMCDv-Fk5glBh5dV2i=w1000",
       "https://lh3.googleusercontent.com/d/1DMQrq9Is49vYI4TTyhs45eXKR9aZceF1=w1000"
@@ -42381,7 +40319,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1GMW660r5z2pqtAw3tgOMnkY6L-0MmrT2=w1000",
       "https://lh3.googleusercontent.com/d/1HjGwkftL4y4vL1MjOtHoK39sLc2O8fWS=w1000"
@@ -42421,7 +40359,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1chlP7ZQPLy3LNn5_6CftMua-bm2tMM1-=w1000",
       "https://lh3.googleusercontent.com/d/1d5L7ymF_H77zHZkwHNrJdP5euP0LIf8E=w1000",
@@ -42472,7 +40410,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1EMaIk_D01-f6Roz2VVL2yz-RBVMs91lO=w1000",
       "https://lh3.googleusercontent.com/d/1KqVcDzV1ruTVaYyAUmyvJ_dUoIfbY9rI=w1000",
@@ -42525,7 +40463,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1yKrTzhOat08isQlt2w2o5tu0gd09Ze2z=w1000",
       "https://lh3.googleusercontent.com/d/1qKsRVcptLR593hTbqSbtdSVvp7j8egCb=w1000",
@@ -42567,7 +40505,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1BDTs5ZFg5K5XT6vDDvsin4tpWwmyaPSW=w1000",
       "https://lh3.googleusercontent.com/d/16ccfGpbdP0HdYvUFSGhzf4O23v0WzKJq=w1000",
@@ -42604,7 +40542,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 283,140 sqft di Bentong, Pahang dijual pada RM1,500,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM5 sekaki persegi.",
+    "description": "Tanah 283,140 sqft di Bentong, Pahang dijual pada RM1,500,000. Hakmilik: Freehold. Anggaran RM5 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bentong%2C%20Pahang",
@@ -42612,7 +40550,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1l4Cw1EeS90sCWrXJIEkyvx-cW9NkNzFF=w1000",
       "https://lh3.googleusercontent.com/d/1vpC_93PjfC8JVjsQ9GCUt--1ckMHy9Yk=w1000",
@@ -42654,7 +40592,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1LDdsRinnyhPCMBmEYxHjQSvjac4Wgqnc=w1000",
       "https://lh3.googleusercontent.com/d/1vuY7ue9Wp6x8IQXa0WBKdr1JAfy2p9bE=w1000",
@@ -42698,7 +40636,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1twSCbv18jUEr2L51BKlNsawfo0QnBbfT=w1000",
       "https://lh3.googleusercontent.com/d/1Qu1eqY9lTb4W53K0mgViocMshVeu6HQk=w1000",
@@ -42746,7 +40684,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1l23E8QPHezy7iNGWAXIkWuBPXUw_tJAa=w1000",
       "https://lh3.googleusercontent.com/d/1tzEkXU2WGDCMWe-6uTqg0fAK6q-v6Upv=w1000",
@@ -42795,7 +40733,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1knLe3Jf025hgu2GijetVpo4C2DSTCxLl=w1000",
       "https://lh3.googleusercontent.com/d/1U6aYQwe5GT7A9_kVYuAPickkY8-2rv9O=w1000",
@@ -42841,7 +40779,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-e204XbDCpQ_2kpe8b6fGZ0OLH3TozFN=w1000",
       "https://lh3.googleusercontent.com/d/1SivdTb0_cu_K50ddbRdTAokg43ro9F86=w1000",
@@ -42882,7 +40820,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1VXly-vXsqAVXDg7LLEbOZ_H6VXPfFYjc=w1000",
       "https://lh3.googleusercontent.com/d/1d_Onp99_TtdrDLOHSaEn3oveqYQ03EXQ=w1000",
@@ -42928,7 +40866,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-EeNyAjv4SztEttKaiOUcK-jFctGiGba=w1000",
       "https://lh3.googleusercontent.com/d/1b1vmDA0BCauprnFqsZlKu-jJ0E9zKBUb=w1000",
@@ -42975,7 +40913,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1JzKT9aPvNM7mx519qQWPiBjEVzBa-1s0=w1000",
       "https://lh3.googleusercontent.com/d/10hNrH07KK8UWkUP3sBZrZMBx2YRcar7Y=w1000",
@@ -43021,7 +40959,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1K8MDEtTc507aMYRuXlsVeLjNfshZhvXX=w1000",
       "https://lh3.googleusercontent.com/d/1EgqL4c1oYBt6yh03G7-M2SQS__1NZksI=w1000",
@@ -43068,7 +41006,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/13rWcyiUAtfb3TvV_xSJnq2z0wgW49CWC=w1000",
       "https://lh3.googleusercontent.com/d/1W9E26tx_FxFJfyHnGJKm2adThuhD92oF=w1000",
@@ -43115,7 +41053,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1PO_oQ1Vzuq9zRVncboC_FttoCvjiUXKz=w1000",
       "https://lh3.googleusercontent.com/d/1XoP5W8a-yLsD4NgMmZc-xOXBE--jmXwl=w1000",
@@ -43163,7 +41101,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1nn5oHNrJXjd4vCP_NLTJoVImADgv22bW=w1000",
       "https://lh3.googleusercontent.com/d/1gTkaw1fEeyLJdoj25UI1YaO8ovH28nR4=w1000",
@@ -43208,7 +41146,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1vY_52fJS88hEtS728eR2Q7ys3zVG-5-g=w1000",
       "https://lh3.googleusercontent.com/d/1rzybffyeV58dKx7cOA0rJ63gjYPCe4B5=w1000",
@@ -43256,7 +41194,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1s53j-nTC371AQuLDpUYMhbZ-dn9K8_Eh=w1000",
       "https://lh3.googleusercontent.com/d/1uWQHVgn0Bwe8xAZFzOpZkspmbwQJvGTt=w1000",
@@ -43299,7 +41237,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1N7reS8U5l9Sq-gwGjvvTl3qwn1XiDwra=w1000",
       "https://lh3.googleusercontent.com/d/1uFKGh08Sx9S2sqrxlxDT0sqUByAscqLB=w1000",
@@ -43351,7 +41289,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1UlPDJOSvSvX1KTTaadWmXcY7EzQdWWMU=w1000",
       "https://lh3.googleusercontent.com/d/1oUa8vXAH9wbdt7hMZQ1wm2GVrairKmhm=w1000",
@@ -43395,7 +41333,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1fBT2o0-7FIu3fRC0GbEK6COpkr7syMLq=w1000",
       "https://lh3.googleusercontent.com/d/1rg2EbGM2XjQbhFiQcZ4Sf7fRLwwzHPgS=w1000",
@@ -43440,7 +41378,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 9,418 sqft di Taman Melawati, Selangor dijual pada RM2,167,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM230 sekaki persegi.",
+    "description": "Tanah 9,418 sqft di Taman Melawati, Selangor dijual pada RM2,167,000. Hakmilik: Freehold. Anggaran RM230 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Taman%20Melawati%2C%20Selangor",
@@ -43448,7 +41386,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Q0b72bqb4txzyyqgVLqd0AmbrxVPQdwW=w1000",
       "https://lh3.googleusercontent.com/d/1ZOo_v1zfHiP7r2Z4FzToh12s1xObl9Kp=w1000",
@@ -43497,7 +41435,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1EhA4I_e2E9NJWh7-6c8O5CHiKsoqS2yr=w1000",
       "https://lh3.googleusercontent.com/d/1z61OJf6BRZtCPTtaylYnjWdvIrvFvHXp=w1000",
@@ -43536,7 +41474,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 43,996 sqft di Ampang, Selangor dijual pada RM1,150,000. Hakmilik: Tidak dinyatakan. Sekatan: Bumi. Anggaran RM26 sekaki persegi.",
+    "description": "Tanah 43,996 sqft di Ampang, Selangor dijual pada RM1,150,000. Sekatan: Bumi. Anggaran RM26 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Ampang%2C%20Selangor",
@@ -43544,7 +41482,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1mE1QKzpRuDJrAGnw1lApXHqU0Tps6w_X=w1000",
       "https://lh3.googleusercontent.com/d/1W6loCfxRVtWQ_6jvsioE-rNVF68EOFIY=w1000",
@@ -43591,7 +41529,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1aUvK997FjuYOOfDmbiTZHbUhE6FJGCHH=w1000",
       "https://lh3.googleusercontent.com/d/1oYOVkgESgpEElaEAunssQqQBmGiQouCt=w1000",
@@ -43644,7 +41582,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-YzQnVuVMV0bZOxEfJf-wItuR7deubku=w1000",
       "https://lh3.googleusercontent.com/d/1OcL6btmgvbo5veg6LVqHlDOhjQtuZi0M=w1000",
@@ -43690,7 +41628,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/12IJRDzQc_vHFGjnqbWE9IA1ZAycmKE-D=w1000",
       "https://lh3.googleusercontent.com/d/1cc6zIxiyrOmn7jTbnPUekfjpxLXScler=w1000",
@@ -43734,7 +41672,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xFUR0EOyLioW4XoorJXUdy8bObDQny9W=w1000",
       "https://lh3.googleusercontent.com/d/1fNtCgyBahYUO7SKFdHb5_Uk4TlofSzDq=w1000",
@@ -43770,7 +41708,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 87,120 sqft di Taman Melawati, Selangor dijual pada RM5,500,000. Hakmilik: Tidak dinyatakan. Sekatan: Bumi. Anggaran RM63 sekaki persegi.",
+    "description": "Tanah 87,120 sqft di Taman Melawati, Selangor dijual pada RM5,500,000. Sekatan: Bumi. Anggaran RM63 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Taman%20Melawati%2C%20Selangor",
@@ -43778,7 +41716,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/118nyYs5-UtSidI3P2ppx1YSe4pYbTouk=w1000",
       "https://lh3.googleusercontent.com/d/1k-gMCZeAOT_Rqz1Sf6NvK03rVbiWUtvc=w1000",
@@ -43820,7 +41758,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Jb65PtStquc3quePfvJTKlDl9SRcVPBI=w1000",
       "https://lh3.googleusercontent.com/d/1MOaaIRHoVZdj_RAZ71nxR64hs0wmwmQd=w1000",
@@ -43873,7 +41811,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1IIF2Namr80WIMyKtw6XuKm0OfN21LFCV=w1000",
       "https://lh3.googleusercontent.com/d/1ktkPuXCMntQ3Z0yI8q7rgMNUZ5tD_giv=w1000"
@@ -43905,7 +41843,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 3,797 sqft di Ampang, Selangor dijual pada RM455,640. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM120 sekaki persegi.",
+    "description": "Tanah 3,797 sqft di Ampang, Selangor dijual pada RM455,640. Hakmilik: Freehold. Anggaran RM120 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Ampang%2C%20Selangor",
@@ -43913,7 +41851,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1R7igmwwlxc9vReHQhskq8r-DVepgNibO=w1000",
       "https://lh3.googleusercontent.com/d/1futrKu9k-OUOAZtAhFiN2ocZW6iymBn7=w1000",
@@ -43954,7 +41892,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11TnSmbz5nyWsd5CuYrpYJZKZBpzOmFJX=w1000",
       "https://lh3.googleusercontent.com/d/1-yGDvNqcy5rW_qre7J0Edj2DYZnPgtyp=w1000",
@@ -43999,7 +41937,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 15,392 sqft di Ampang, Selangor dijual pada RM4,001,920. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan. Anggaran RM260 sekaki persegi.",
+    "description": "Tanah 15,392 sqft di Ampang, Selangor dijual pada RM4,001,920. Anggaran RM260 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Ampang%2C%20Selangor",
@@ -44007,7 +41945,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1JWvyoi-siksaRH5tMnns7C2RYaBNDUg5=w1000"
     ],
@@ -44046,7 +41984,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1rdUdawnHxYcjq_sX1U4er2gLFhDsuQ0b=w1000",
       "https://lh3.googleusercontent.com/d/1oemZ3Ky9oH-xmo-LirUKOnO3LeqweZVR=w1000",
@@ -44099,7 +42037,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1GweUvF_gNkCdfxtUUpto5lwAw3VcVi_r=w1000",
       "https://lh3.googleusercontent.com/d/1u-pMMky3MZS9H50sFJIQzJOLbuHboTDV=w1000",
@@ -44141,7 +42079,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1o5CRqsJIycC3stVhlYb3pD8jq-QZMgHw=w1000",
       "https://lh3.googleusercontent.com/d/1H80kzQHlRxb01OnuSLl-RbS4GDzqPmd1=w1000",
@@ -44186,7 +42124,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1qFC7EVghn-0dT8usIFfe57dg4cKPD-ME=w1000",
       "https://lh3.googleusercontent.com/d/1vf_taRLhbphJcinJG8q3lnKNmbPkAasg=w1000",
@@ -44238,7 +42176,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_3Bcp2u0xrn4U6sJIUqI60X29sECLe4X=w1000",
       "https://lh3.googleusercontent.com/d/1LkgFC74f5B4u6it10CEUMg-HGGn-JvCK=w1000",
@@ -44283,7 +42221,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1P245JGSLAMwA3GhzHrMedpzD23e6Hwxb=w1000",
       "https://lh3.googleusercontent.com/d/1TzajLMuKWFMfem2uWvcU3hd0fayLFIny=w1000",
@@ -44329,7 +42267,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/18n2istwRt8jeBg6QToEeLoZgIuBuZ85z=w1000",
       "https://lh3.googleusercontent.com/d/1LdFYjjPT4ZvasDfDsHixEGah0vSnfdgr=w1000",
@@ -44382,7 +42320,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1qHAGSNyKvXo6FypsyElBhn1_fVPW8vpy=w1000",
       "https://lh3.googleusercontent.com/d/1g3ro7PkIBZv0ggrmVMSvRf2WQMrMh7d8=w1000",
@@ -44427,7 +42365,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1wgkMlYpdk14VHSmLV-vx9p3dBaRnzbod=w1000",
       "https://lh3.googleusercontent.com/d/1TJg5FIewe58bwWv8neNXePjQtBBTf6P5=w1000",
@@ -44479,7 +42417,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1LiKbj40W7uPmQm8fK34hErH795lkwjxE=w1000",
       "https://lh3.googleusercontent.com/d/1qka7jc2zUAQu3-EOe8sczqkwZti4DsOr=w1000",
@@ -44521,7 +42459,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1n6C6JH5ym7BxHdHl0oRwPbLWiWYjbaOH=w1000",
       "https://lh3.googleusercontent.com/d/1viJaYX5JV2YbY0qcAn4HVlIHxKulD5yC=w1000",
@@ -44565,7 +42503,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/18i6frc4VRbyY_wBLCABiXzNe1wA95c6z=w1000",
       "https://lh3.googleusercontent.com/d/1O1vAs-YCMcqSEK2eeV8fJoGH8miy5jXk=w1000",
@@ -44607,7 +42545,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1MtPwZ-oXFTr0MYD7Z4aBvJoTWstx2mNj=w1000",
       "https://lh3.googleusercontent.com/d/1fcvn1IbTeLCST3LHo0KYGMbSfU9Sz8eV=w1000",
@@ -44651,7 +42589,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [],
     "video": "",
     "active": true
@@ -44688,7 +42626,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11_q2Nv54vaUGWCAt47pE21sPdQ-M8-Vz=w1000",
       "https://lh3.googleusercontent.com/d/1GjC2gRG8G-76fWqIpSteb6rEPcHmulua=w1000",
@@ -44741,7 +42679,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/12X4ckYgvzR4SoStzHZuwcrxHPSFI9qgz=w1000",
       "https://lh3.googleusercontent.com/d/1L6XiHyPxvF23vIx-FCQ7JVWQOGmM8SJd=w1000",
@@ -44784,7 +42722,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19d3qjjR77Y06WD-CiRdJXAZK3cEa3Bln=w1000",
       "https://lh3.googleusercontent.com/d/1yiR_BsnIRLjlE6tNG03OJzPyl6Dutp7c=w1000",
@@ -44837,7 +42775,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1L2zoia0NWca3h8HHCMXjs7OQegWk5A6_=w1000",
       "https://lh3.googleusercontent.com/d/1Ie9XhcBDfF4kAGi49AmNH4CoxJikhDEI=w1000",
@@ -44887,7 +42825,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1FDm8XMwaPldDcMdk6SzssQ6adRDJ0cUH=w1000",
       "https://lh3.googleusercontent.com/d/1tLsSHxh2Y9ZngJ2VY6El5nNCVqjlMFU4=w1000",
@@ -44940,7 +42878,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1rZnMCU1Rp0EOV3qrm2V2wdVhxSyU3KGj=w1000",
       "https://lh3.googleusercontent.com/d/1QNX8XvhjwNlRzWmNSPGb2NVi-tiYnohP=w1000",
@@ -44987,7 +42925,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1mIgE3S4FuLsXEY0ZSvdZMTUpdyMGzUOJ=w1000",
       "https://lh3.googleusercontent.com/d/1cwBmywsh2MSPcNTX3Bz7mqak_-IXYPNZ=w1000",
@@ -45036,7 +42974,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1AoTAGVB92AVyKBZfCusGj67dYJZh_pzN=w1000",
       "https://lh3.googleusercontent.com/d/1wSPVLqV7nBGAZcVuznGjMVDguvpYNZac=w1000",
@@ -45088,7 +43026,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ll5ZyV0mn_5XTrPWMyZO24m1r3Gdq08d=w1000",
       "https://lh3.googleusercontent.com/d/1qYKn78eZxQq1Tolnewg6YZuYV9-DbuXT=w1000",
@@ -45131,7 +43069,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1DyTNCgOC7MF6_qij3SZukHFvf2QZIrWN=w1000",
       "https://lh3.googleusercontent.com/d/1nksbU4M80fIzGcplbsGU2m0mWn_TAFkD=w1000",
@@ -45176,7 +43114,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/10WnAxdSEt4_V9UAypzT3puo-aJLaJ9Mx=w1000"
     ],
@@ -45207,7 +43145,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 43,560 sqft di MTCOA 174993 dijual pada Hubungi. Hakmilik: Tidak dinyatakan. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 43,560 sqft di MTCOA 174993 ditawarkan untuk disewa pada Hubungi / bulan.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=MTCOA%20174993",
@@ -45215,7 +43153,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1z8ZS5gjHGtW2MUSedLHjC8LcY0Ey3VLI=w1000",
       "https://lh3.googleusercontent.com/d/12ey7nps941RhvdIROQrxaH8YtsL48PCo=w1000",
@@ -45259,7 +43197,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1VRNLtGY6MJZe8JC-RE-PblX8a_usWzMo=w1000",
       "https://lh3.googleusercontent.com/d/179oG4k-io-YicuQ4v6RMGcKTuSwcylT8=w1000",
@@ -45305,7 +43243,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1GM55d_rMUkDyVmprMDZfwvSyhWuS673E=w1000",
       "https://lh3.googleusercontent.com/d/1pCRbWrK7RSHbFsA7soedXVBOdU9lPu4P=w1000",
@@ -45351,7 +43289,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YC9MMXQUABb09-EnTGvdDJXxXf0jhb-Q=w1000",
       "https://lh3.googleusercontent.com/d/1ymfNlP5IJlKrQ5PGVEoZubXKu-Ns5OfN=w1000",
@@ -45393,7 +43331,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1FVUNZQe3Xu7DBCK8Sbj4FKuMJ3fWANoI=w1000",
       "https://lh3.googleusercontent.com/d/1iI_5deCsktSNaJ7QubyHZTzc8wiCAKZ6=w1000",
@@ -45438,7 +43376,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1LIIOxnZ8-9F0B2CN3351nlfCDfYq1lPk=w1000",
       "https://lh3.googleusercontent.com/d/1UFaZYMt_HXMwANzCTat_fj-oVgQMR26C=w1000",
@@ -45482,7 +43420,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1S5zRZwoYg1caeoqjXkXi8kaRAItP6tLC=w1000",
       "https://lh3.googleusercontent.com/d/1b85ubmDWpiJvMt_MYy2lkyp3MjX79e6o=w1000",
@@ -45515,7 +43453,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 19,533 sqft di Country Heights, Selangor dijual pada RM2,929,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM150 sekaki persegi.",
+    "description": "Tanah 19,533 sqft di Country Heights, Selangor dijual pada RM2,929,000. Hakmilik: Freehold. Anggaran RM150 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Country%20Heights%2C%20Selangor",
@@ -45523,7 +43461,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1wM_Hrs-TJI103t1KJr7yhWNR1KgPag4b=w1000",
       "https://lh3.googleusercontent.com/d/1Qab3zl6o6ICSyEKRydbq4aLn9e8zbvfF=w1000",
@@ -45567,7 +43505,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Dg20HsFQb9wjJmfDxIN_P6f9Ik2m6T0e=w1000",
       "https://lh3.googleusercontent.com/d/1XIaPguqZuE37cq_8YHmJnNlHTW6pODQ-=w1000"
@@ -45607,7 +43545,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1OsNRGNY6nWe7RGTovUjUFB3hyY-GwwzU=w1000",
       "https://lh3.googleusercontent.com/d/16569IpBU6TZdOzAKehONKozpUhUzIze9=w1000",
@@ -45653,7 +43591,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YU8gwJRE_XSmyTBqoyY5Tz6ZCaZVy4DV=w1000"
     ],
@@ -45692,7 +43630,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1dc4MfQFHHK56vE1tzPvHjBylqGnNRwOo=w1000",
       "https://lh3.googleusercontent.com/d/1xecH9RcOxWSK2jNM_MfOq86x1PM_cIIH=w1000",
@@ -45741,7 +43679,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1lIC5h-2THbH0nkt-ZKEAPlof3kjJRjCb=w1000",
       "https://lh3.googleusercontent.com/d/1VOQHQ8wAifCMDLsWJwZ5LCdHvYEjR2fW=w1000",
@@ -45783,7 +43721,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xFMpOoUAopxNf8T3RzvGLMnv0pWWHJz2=w1000",
       "https://lh3.googleusercontent.com/d/1FDS2aUAKhLC7jml61UfRYM363H9gcKBb=w1000",
@@ -45825,7 +43763,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1QOE4D0bnmjm79NOgpCvZkgarvC-PMv_8=w1000",
       "https://lh3.googleusercontent.com/d/1WExCcHLCwbowoBZbkT-gRC-hIrtqDDM4=w1000",
@@ -45876,7 +43814,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1LA8CLOeycXwsPBMFACSDSwpwTWv5ahol=w1000",
       "https://lh3.googleusercontent.com/d/1I8lXk-Q5EPAc4KuP__lNN3V77WkMhDPo=w1000",
@@ -45929,7 +43867,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_SrAHjlpmCK1b3DL8IoyNpfExFXAUIi7=w1000",
       "https://lh3.googleusercontent.com/d/1N_5O17EXRxMG38s_I8qnyzpq2TPzJjD_=w1000",
@@ -45979,7 +43917,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1QSVbtb3FpdXppxhpf_UQR-VyHdYHtydr=w1000",
       "https://lh3.googleusercontent.com/d/1AVIe_3mx6tc_965aohPXMp3jcGV70udt=w1000",
@@ -46023,7 +43961,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_rCEf8qP746NReihWs3FIbXdB_LJn4Oc=w1000",
       "https://lh3.googleusercontent.com/d/1WSon2MnsaYklH7NJZNGYiAFdSYtWKJeD=w1000",
@@ -46068,7 +44006,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1635qI3HsuJNTllFcsfuA6xo8PdY3JHIC=w1000",
       "https://lh3.googleusercontent.com/d/1JflVXx82w56Uj3cSdqzUicPpi78rbEXm=w1000",
@@ -46110,7 +44048,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1xJPzcXINs0H-S4rxIDHJ7PMVnH_gSsyl=w1000",
       "https://lh3.googleusercontent.com/d/1HU64kw0-D8nIHJKrti8AtbAODvn52FYX=w1000",
@@ -46153,7 +44091,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ACij7fiaGcYc704K62ri5mVU2YmQzBBc=w1000",
       "https://lh3.googleusercontent.com/d/1jdsrS4lO9oWUTn57wAsKN2iHrfjz3sxd=w1000",
@@ -46196,7 +44134,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_IiIUd7_PfKHn6Wzk3WfmOD2apTryVeg=w1000",
       "https://lh3.googleusercontent.com/d/16HRB7LBS2MpVuN0FVkqFd8QrSzSxKru9=w1000",
@@ -46249,7 +44187,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/17auPBDbwiS31qjyzNizX-P9AtfKLfMCf=w1000",
       "https://lh3.googleusercontent.com/d/1I4WesFl2HNxL6AkkdflTjFPKcWn1ER6E=w1000",
@@ -46302,7 +44240,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1IWMHAfFvZvaNlvXV9-wbHQe0thcTQrz0=w1000",
       "https://lh3.googleusercontent.com/d/1MAEfKCoE3UFU-ygA0zFgaikr74FlNPqy=w1000",
@@ -46337,7 +44275,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 5,842 sqft di Sepang, Selangor dijual pada RM260,000. Hakmilik: Tidak dinyatakan. Sekatan: Malay Reserve. Anggaran RM45 sekaki persegi.",
+    "description": "Tanah 5,842 sqft di Sepang, Selangor dijual pada RM260,000. Sekatan: Malay Reserve. Anggaran RM45 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Sepang%2C%20Selangor",
@@ -46345,7 +44283,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1XwCakXl40uD95Sl-MLyZI50fhtkLRnNY=w1000",
       "https://lh3.googleusercontent.com/d/1W_5gKjU1yTd8xe3ZeEmud5oTYZ21Zovc=w1000",
@@ -46390,7 +44328,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1oJL0kZEUCHBfTNn-GItqijJ3faQWKVfZ=w1000",
       "https://lh3.googleusercontent.com/d/1yPtEkVm7ccPJupEi9wVVO4_3HItJo4sA=w1000",
@@ -46441,7 +44379,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1fAc3MI_WYj7gF2qxsNc1WL7jHMlP2qAH=w1000",
       "https://lh3.googleusercontent.com/d/1DjRQcWGK1Orpbs_A32aR4TDDATD0UCUx=w1000",
@@ -46494,7 +44432,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1m4MkhFMOkzY5u3EL8Z3vPUivTxvMO9CE=w1000",
       "https://lh3.googleusercontent.com/d/16dS59RWHZWO47xatvp_1Cp9ihdDrwWzs=w1000",
@@ -46537,7 +44475,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jia3gHkkR7WdiPzkDSoCBnQARZSMQLFs=w1000",
       "https://lh3.googleusercontent.com/d/1dV_C6t7GKm3QI3aDlQ-icKILMyh_df9G=w1000",
@@ -46582,7 +44520,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 140,229 sqft di Seri Kembangan, Selangor dijual pada RM5,500,000. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM39 sekaki persegi.",
+    "description": "Tanah 140,229 sqft di Seri Kembangan, Selangor dijual pada RM5,500,000. Hakmilik: Freehold. Anggaran RM39 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Seri%20Kembangan%2C%20Selangor",
@@ -46590,7 +44528,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1phOm-TURlxAJ3DthqX8WFchv7f6jO8za=w1000",
       "https://lh3.googleusercontent.com/d/1ez5lCCe0nZEj6b6hA7SkSxgoWkt3Hur3=w1000",
@@ -46634,7 +44572,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1MEjaLhqe80oPMmnRAcV8MOIrMPbsu79W=w1000",
       "https://lh3.googleusercontent.com/d/1P3qeyXll4U4t4NDn167YsWbFPdmgwBMy=w1000",
@@ -46686,7 +44624,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1PPFi7kQjc_scOakODD3Us9XFy2u1ht0L=w1000",
       "https://lh3.googleusercontent.com/d/1F_TQbgzUbuHBMLvURje2-uBUHmh954_V=w1000",
@@ -46728,7 +44666,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1a5kJySp3acG4fxr79wrHgYTrs75kVJf9=w1000"
     ],
@@ -46767,7 +44705,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1BrLkxhQ6-DpkAsQJhT1YNFTZ4fVDeCr8=w1000",
       "https://lh3.googleusercontent.com/d/1Q14uSoQ8OEQIE7e9TlFIck5o4LpQJ8Wk=w1000",
@@ -46811,7 +44749,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1HBk1QMYC3ZduzuZ_CAV7H0cWw5aFojEM=w1000",
       "https://lh3.googleusercontent.com/d/17vDgAd5BmMhsL2aWDXWU8MkErQz9r9At=w1000",
@@ -46853,7 +44791,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Sr1RcKWo0xHWHSLJnBsP4_l1r8UCG7kh=w1000",
       "https://lh3.googleusercontent.com/d/1bawmuc_PZ1UlgNuWUUIXUOULWaRqmX8H=w1000",
@@ -46905,7 +44843,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1JZu6ZWBNvYMEfLLSgEgQk_PGxyLOeKIF=w1000",
       "https://lh3.googleusercontent.com/d/18n3GximDw5AU3UpPXJzzxRDYm6ld-WUR=w1000",
@@ -46951,7 +44889,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1uFTTHIugjH-P9u14X6OhDyNikeLUhEOg=w1000",
       "https://lh3.googleusercontent.com/d/1fLiNlyvaNLK5wZLrp2XlimVjq8MQE0hQ=w1000",
@@ -47004,7 +44942,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1M5Tvw6ieMWxgawq7fHyp3thxDZ_6fjmE=w1000",
       "https://lh3.googleusercontent.com/d/1soLInGQBTuSflGC8sKXWW1p0oeBuO_K1=w1000",
@@ -47055,7 +44993,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-10",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1XsJKa7ua61Uw4gXKXxhHU2I3zkjzW-Mb=w1000",
       "https://lh3.googleusercontent.com/d/1XgVK8uLLcQBgCbU1qK7Zr_CRmEhsS6eN=w1000",
@@ -47091,7 +45029,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 87,120 sqft di Hulu Langat, Selangor dijual pada RM360,000. Hakmilik: Leasehold. Sekatan: Bumi. Anggaran RM4 sekaki persegi.",
+    "description": "Tanah 130,500 sqft di Hulu Langat, Selangor dijual pada RM350,000. Hakmilik: Leasehold. Sekatan: Malay Reserve. Anggaran RM3 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Hulu%20Langat%2C%20Selangor",
@@ -47099,7 +45037,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-09",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1zfsOe75Be1WgIRMCoXuS4EuDoOT4LxsQ=w1000",
       "https://lh3.googleusercontent.com/d/1y3s76S6hlmLz9brWJNEVEtc2uL9dNzbC=w1000",
@@ -47144,7 +45082,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/137mY9cmx2shBXmxZX8wapXPq3bvLfjem=w1000",
       "https://lh3.googleusercontent.com/d/1FsRQNHmEekEpEF534Jr-XpL2P_u6KtfJ=w1000",
@@ -47188,7 +45126,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-11",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1SS9PGt-H1zz5CkMGnKOZBAQ-lUykDQfe=w1000",
       "https://lh3.googleusercontent.com/d/1qxHAnL7VxhjMjWNHFeFY7ZYWM72xU632=w1000",
@@ -47231,35 +45169,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Individu title",
-      "ELITE Exit KLIA",
-      "MEX Exit Putrajaya",
-      "ELITE Exit Serenia City"
-    ],
+    "highlights": [],
     "pelan": [],
     "description": "Tanah 6,662 sqft di Salak Tinggi, Sepang, Selangor dijual pada RM350,000. Hakmilik: Freehold. Sekatan: Malay Reserved. Anggaran RM53 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "Near Pekan Salak",
-      "SMK Bandar Baru Salak Tinggi",
-      "Mahkamah Tinggi Sepang",
-      "Stadium Salak Tinggi",
-      "Masjid Jamek Sultan Hishamudin",
-      "Petrol Station (Shell)",
-      "IPD Sepang",
-      "Nilai Universiti & Nilai Medical Centre",
-      "MesaMall",
-      "KLIA 1 & KLIA 2",
-      "Mitsui Outlet KLIA",
-      "KL International Outlet"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Salak%20Tinggi%2C%20Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1FykmmfGLOcduqbsJvswEtEKA71XExKua=w1000",
       "https://lh3.googleusercontent.com/d/1P8eXUFWyux16dqGpGNLDvaS2LUHaofKx=w1000",
@@ -47291,44 +45211,24 @@ window.LISTINGS = [
     "sekatan": "Tidak dinyatakan",
     "kategori": "Komersil",
     "zoning": "",
-    "psf": 9,
+    "psf": null,
     "bedrooms": 0,
     "bathrooms": 0,
     "status": "BARU",
     "jenis": "SEWA",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Main Road Facing",
-      "Corner Lot",
-      "Approx. overall dimensions: 38.4 ft × 77.1 ft",
-      "4-storey commercial building",
-      "Lift facility",
-      "High visibility from the main road",
-      "Suitable for retail, showroom, office and various commercial activities",
-      "Flexible rental by floor",
-      "Uppermost floor is not available for rental"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Komersial di Bandar Puteri Kajang, Selangor ditawarkan untuk disewa pada RM27,000 / bulan. Anggaran RM9 sekaki persegi sebulan.",
+    "description": "Komersial di Bandar Puteri Kajang, Selangor ditawarkan untuk disewa pada RM27,000 / bulan.",
     "amenities": [],
-    "nearby": [
-      "Easy access to major highways",
-      "Conveniently located near Bandar Seri Putera",
-      "Strategic location within Bandar Puteri Kajang",
-      "Established commercial area",
-      "Surrounded by residential and commercial developments",
-      "High population density",
-      "Various shops and business services nearby",
-      "Convenient access to daily necessities and essential services",
-      "Bandar Puteri Kajang"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bandar%20Puteri%20Kajang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/14-trHwG_L5LlVHcyQWF1wX0AUqzJnISl=w1000",
       "https://lh3.googleusercontent.com/d/1Y7-lOgYvllHsTxJ0_EjDwweRz4dqVnDi=w1000",
@@ -47363,32 +45263,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "ZONING PERUMAHAN",
-      "TEPI BANGI & PUTRAJAYA"
-    ],
+    "highlights": [],
     "pelan": [],
     "description": "Tanah 88,479 sqft (2.03 ekar) di Kampung Sungai Ramal Luar, Kajang, Selangor dijual pada RM3,100,000. Hakmilik: Freehold. Sekatan: Malay Reserved. Anggaran RM35 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "Highway: Mudah ke Lebuhraya SILK",
-      "PLUS (Tol Bangi/Kajang)",
-      "SKVE & LDP.",
-      "Radius 5-10 minit ke Putrajaya (Presint 14/15)",
-      "Bandar Baru Bangi",
-      "UKM",
-      "IOI City Mall",
-      "Hospital Serdang & Hospital An-Nur",
-      "Dikelilingi penempatan sedia ada",
-      "sekolah",
-      "masjid"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Kampung%20Sungai%20Ramal%20Luar%2C%20Kajang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1peJS8Sc-xokza-kGie8n0-nWvj-fZ7T1=w1000",
       "https://lh3.googleusercontent.com/d/1Sl11a_fvkPRd_2P2aLc68zRQXLtFaJ6s=w1000",
@@ -47428,35 +45313,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Bebas banjir",
-      "Belakang tanah ada pembangunan rumah teres – kawasan sedang membangun.",
-      "Lengkap dengan infra: longkang,elektrik dan bekalan air tersedia.",
-      "Jalan berturap (akan datang) – sesuai untuk pembinaan rumah impian anda."
-    ],
+    "highlights": [],
     "pelan": [],
     "description": "Tanah 5,468 sqft di Bandar Baru Salak Tinggi, Sepang, Selangor dijual pada RM295,000. Hakmilik: Leasehold. Sekatan: Malay Reserved. Anggaran RM54 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "Belakang Taman Desa Seri Qaseh, Bandar Baru Salak Tinggi",
-      "KLIA – 14 km",
-      "IKBN Sepang – 5 km",
-      "Mitsui Outlet Park – 12 km",
-      "Salak Tinggi ERL Station – 7 km",
-      "Bandar Baru Nilai – 10 km",
-      "AEON Mall Nilai – 11 km",
-      "Akses mudah ke lebuh raya utama: ELITE",
-      "MEX",
-      "Berdekatan dengan sekolah",
-      "pasaraya",
-      "dan pusat bandar Salak Tinggi."
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Bandar%20Baru%20Salak%20Tinggi%2C%20Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1pd1gfZCarLGww_y6NtG5CFewKOLatPA1=w1000",
       "https://lh3.googleusercontent.com/d/1wli8svgisCJBcaxCJXoI_wqyHQyJoXM2=w1000",
@@ -47498,34 +45365,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "SPACIOUS LAND",
-      "4.1 ACRES",
-      "MALAY RESERVED LAND"
-    ],
+    "highlights": [],
     "pelan": [],
     "description": "Tanah 178,596 sqft (4.1 ekar) di Sepang, Selangor (berhampiran Presint 17 Putrajaya) dijual pada RM5,000,000. Hakmilik: Leasehold. Sekatan: Malay Reserved. Anggaran RM28 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "Alamanda Shopping Centre",
-      "IOI City Mall Putrajaya",
-      "Hospital Putrajaya",
-      "Hospital Serdang",
-      "Cyberjaya",
-      "Kota Warisan",
-      "5 min to Alamanda Shopping Centre",
-      "10 min to IOI Putrajaya",
-      "12 min to Hospital Putrajaya",
-      "12 min to Hospital Serdang",
-      "20 min to Cyberjaya",
-      "24 min to Kota Warisan"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Sepang%2C%20Selangor%20%28berhampiran%20Presint%2017%20Putrajaya%29",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jFwmDTvst2QCkFjtLOsronMKoJyp3WyI=w1000",
       "https://lh3.googleusercontent.com/d/1cXsWCLrOu0ribo30TEkqhOv_zRY5hEQZ=w1000",
@@ -47558,37 +45408,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "PRIME INDUSTRIAL LOCATION",
-      "SPACIOUS LAND AREA",
-      "Mukim: Dengkil, Daerah Sepang, Selangor",
-      "Logistics & Warehousing",
-      "Engineering & Fabrication",
-      "Electrical & Electronics Assembly",
-      "Food Processing & Packaging",
-      "Automotive Parts & Distribution",
-      "E-Commerce Fulfilment Centre",
-      "Trading & Industrial Services"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Kilang 13,328 sqft di Putra Perdana Industrial Park, Mukim Dengkil, Sepang, Selangor dijual pada RM5,500,000. Hakmilik: Leasehold. Sekatan: Tidak dinyatakan. Anggaran RM413 sekaki persegi.",
+    "description": "Kilang 13,328 sqft di Putra Perdana Industrial Park, Mukim Dengkil, Sepang, Selangor dijual pada RM5,500,000. Hakmilik: Leasehold. Anggaran RM413 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "Cyberjaya – Approximately 10–15 Minutes",
-      "Putrajaya – Approximately 15 Minutes",
-      "Klang Valley Central Areas – Approximately 25–30 Minutes",
-      "ELITE Highway",
-      "SKVE Highway",
-      "LDP Highway",
-      "MEX Highway",
-      "Putrajaya-Cyberjaya Link"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Putra%20Perdana%20Industrial%20Park%2C%20Mukim%20Dengkil%2C%20Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1W3l9D2lvcpK6-eYeM-dIoYrI5odLfqIp=w1000",
       "https://lh3.googleusercontent.com/d/1ixHHXfjeXrtgrZEUdAmgSAGgKEmZCIQv=w1000",
@@ -47626,38 +45456,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "STRATEGIC INDUSTRIAL LOCATION",
-      "SPACIOUS INDUSTRIAL LAND",
-      "NEAR CYBERJAYA & PUTRAJAYA",
-      "Mukim: Dengkil, Daerah Sepang, Selangor",
-      "Logistics & Warehousing",
-      "Engineering & Fabrication",
-      "Electrical & Electronics Assembly",
-      "Food Processing & Packaging",
-      "Automotive Parts & Distribution",
-      "E-Commerce Fulfilment Centre",
-      "Trading & Industrial Services"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Kilang 9,042 sqft di Putra Perdana Industrial Park, Mukim Dengkil, Sepang, Selangor dijual pada RM5,000,000. Hakmilik: Leasehold. Sekatan: Tidak dinyatakan. Anggaran RM553 sekaki persegi.",
+    "description": "Kilang 9,042 sqft di Putra Perdana Industrial Park, Mukim Dengkil, Sepang, Selangor dijual pada RM5,000,000. Hakmilik: Leasehold. Anggaran RM553 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "Cyberjaya – Approximately 10–15 Minutes",
-      "Putrajaya – Approximately 15 Minutes",
-      "Klang Valley Central Areas – Approximately 25–30 Minutes",
-      "ELITE Highway",
-      "SKVE Highway",
-      "LDP Highway",
-      "MEX Highway",
-      "Putrajaya-Cyberjaya Link"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Putra%20Perdana%20Industrial%20Park%2C%20Mukim%20Dengkil%2C%20Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/15rik074xAvwSMVasKnurK4VEbJZ7lJD6=w1000",
       "https://lh3.googleusercontent.com/d/1ZE4pz1JiclJu3JBHWOo9MWq_VWw2Ki3D=w1000",
@@ -47697,35 +45506,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Commercial Development",
-      "Mixed Commercial Development",
-      "Office & Corporate Buildings",
-      "Retail & Commercial Complex",
-      "Serviced Apartment Development"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah 578,786 sqft (13.287 ekar) di Cyberjaya, Sepang, Selangor dijual pada RM127,332,920. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM220 sekaki persegi.",
+    "description": "Tanah 578,786 sqft (13.287 ekar) di Cyberjaya, Sepang, Selangor dijual pada RM127,332,920. Hakmilik: Freehold. Anggaran RM220 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "LARGE LAND SIZE – 13.287 ACRES",
-      "HIGH DEVELOPMENT POTENTIAL",
-      "Located in Cyberjaya",
-      "Opposite Third Avenue & Wisma Shell",
-      "Near CBD Perdana 2",
-      "Approximately 1.5km to MRT Cyberjaya City Centre",
-      "MEX Highway",
-      "ELITE Highway",
-      "SKVE Highway",
-      "Putrajaya-Cyberjaya Expressway",
-      "Kuala Lumpur-Seremban Highway"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Cyberjaya%2C%20Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ZmDSmaL39OmYRASxa1hp8OQ7WdxV5iyA=w1000",
       "https://lh3.googleusercontent.com/d/1FLyT3zHt3s77Am_5HnXqOZHzKM821B2b=w1000",
@@ -47759,38 +45550,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "DIRECT ACCESS TO MRT CYBERJAYA NORTH",
-      "LARGE LAND SIZE – 9.069 ACRES",
-      "TOD DEVELOPMENT POTENTIAL",
-      "HIGH DEVELOPMENT POTENTIAL",
-      "Transit-Oriented Development (TOD)",
-      "Mixed Commercial Development",
-      "Office & Corporate Buildings",
-      "Retail & Commercial Complex",
-      "Serviced Apartment Development"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah 395,035 sqft (9.069 ekar) di Cyberjaya, Sepang, Selangor dijual pada RM138,262,250. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM350 sekaki persegi.",
+    "description": "Tanah 395,035 sqft (9.069 ekar) di Cyberjaya, Sepang, Selangor dijual pada RM138,262,250. Hakmilik: Freehold. Anggaran RM350 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "Fronting Persiaran APEC",
-      "Cyberjaya North MRT Station – Immediately Adjacent",
-      "MRT Putrajaya Line runs along the eastern boundary",
-      "Near Skypark @ Cyberjaya",
-      "Close to D’Pulze & Shaftsbury Square",
-      "MEX Highway",
-      "ELITE Highway",
-      "SKVE Highway",
-      "Putrajaya-Cyberjaya Expressway",
-      "Persiaran APEC"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Cyberjaya%2C%20Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1AiUbQN8rrV0a4Dd73eJwaj1Jvd0AaWqR=w1000",
       "https://lh3.googleusercontent.com/d/1krURCF5vKBe7uys1awRRi9shvVDq5S3k=w1000",
@@ -47824,36 +45594,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Enterprise Development",
-      "Commercial Development",
-      "Office & Corporate Buildings",
-      "Business & Enterprise Facilities",
-      "Mixed Development (Subject to Planning Approval)"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah 575,837 sqft (13.219 ekar) di Cyberjaya, Sepang, Selangor dijual pada RM103,650,660. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM180 sekaki persegi.",
+    "description": "Tanah 575,837 sqft (13.219 ekar) di Cyberjaya, Sepang, Selangor dijual pada RM103,650,660. Hakmilik: Freehold. Anggaran RM180 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "LARGE LAND SIZE – 13.219 ACRES",
-      "NEAR CYBERJAYA NORTH MRT STATION",
-      "Fronting Persiaran APEC",
-      "Cyberjaya North MRT Station – Approximately 250m",
-      "MRT Putrajaya Line along the western boundary",
-      "Near Skypark @ Cyberjaya",
-      "Close to D’Pulze & Shaftsbury Square",
-      "MEX Highway",
-      "ELITE Highway",
-      "SKVE Highway",
-      "Putrajaya-Cyberjaya Expressway",
-      "Persiaran APEC"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Cyberjaya%2C%20Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1lWlnX2Pu2mEnaTiYvY69L7it-8og9SAZ=w1000",
       "https://lh3.googleusercontent.com/d/1vXNg5tUaF0rRww6ZC9D5fnJmN-TKozyZ=w1000",
@@ -47884,36 +45635,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Enterprise Development",
-      "Commercial Development",
-      "Office & Corporate Buildings",
-      "Business & Enterprise Facilities",
-      "Commercial Projects (Subject to Planning Approval)"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah 267,935 sqft (6.151 ekar) di Cyberjaya, Sepang, Selangor dijual pada RM48,228,300. Hakmilik: Freehold. Sekatan: Tidak dinyatakan. Anggaran RM180 sekaki persegi.",
+    "description": "Tanah 267,935 sqft (6.151 ekar) di Cyberjaya, Sepang, Selangor dijual pada RM48,228,300. Hakmilik: Freehold. Anggaran RM180 sekaki persegi.",
     "amenities": [],
-    "nearby": [
-      "LARGE LAND SIZE – 6.151 ACRES",
-      "NEAR CYBERJAYA NORTH MRT STATION",
-      "Fronting Persiaran APEC",
-      "Cyberjaya North MRT Station – Approximately 250m",
-      "MRT Putrajaya Line along the eastern boundary",
-      "Near Skypark @ Cyberjaya",
-      "Close to D’Pulze & Shaftsbury Square",
-      "MEX Highway",
-      "ELITE Highway",
-      "SKVE Highway",
-      "Putrajaya-Cyberjaya Expressway",
-      "Persiaran APEC"
-    ],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Cyberjaya%2C%20Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1IZ3wnkzA8waAp_O-vE8qk70VJAKZ01yu=w1000",
       "https://lh3.googleusercontent.com/d/1Wu_aPQCCT4LVM086J7QtGP4zksKkhf1J=w1000",
@@ -47957,7 +45689,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-jQv9paCiOP6QiQjpELt0Jp0LktRKmNG=w1000",
       "https://lh3.googleusercontent.com/d/1Ns-zblp8PN6p-IXYlYTlZi0GvYp-sR5o=w1000",
@@ -48002,7 +45734,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Lot bungalow 12,283.77 sqft menghadap golf di The Mines Resort City, Seri Kembangan dijual pada RM5,773,000 (Lot A). Hakmilik: Leasehold. Anggaran RM470 sekaki persegi.",
+    "description": "Tanah 12,283.77 sqft di The Mines Resort City, Seri Kembangan dijual pada RM5,773,000. Hakmilik: Leasehold. Anggaran RM470 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=BUNGALOW%20LOTS",
@@ -48010,7 +45742,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1F4e-mhfZuW6a9Wtm9wyzcxrhb9LpCiwC=w1000",
       "https://lh3.googleusercontent.com/d/1OtHG-w3Txod-1PdqqEXFI0dLZLcnpQ_5=w1000",
@@ -48055,7 +45787,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Lot bungalow 11,777.87 sqft menghadap golf di The Mines Resort City, Seri Kembangan dijual pada RM5,535,000 (Lot B). Hakmilik: Leasehold. Anggaran RM470 sekaki persegi.",
+    "description": "Tanah 11,777.87 sqft di The Mines Resort City, Seri Kembangan dijual pada RM5,535,000. Hakmilik: Leasehold. Anggaran RM470 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=BUNGALOW%20LOTS",
@@ -48063,7 +45795,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1X1ofryprZGLajoUz9b2lZA_Iz7Ko2pTJ=w1000",
       "https://lh3.googleusercontent.com/d/1r9uUn8WK3fZImWEA7c2grNyuHQgpCpoQ=w1000",
@@ -48116,7 +45848,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1PHRmyEXUzJ7s8FrfQBi97ArSfB09kkPN=w1000",
       "https://lh3.googleusercontent.com/d/1jZ5JP9SupQo5GDcyNflialF74TtTTyCA=w1000",
@@ -48181,7 +45913,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ivG8JVs_nYqKR6KH9ZQF0pZ6MG74w1-7=w1000",
       "https://lh3.googleusercontent.com/d/1iyEigotUgbOSbk23xtsww2WkGtgHwNGj=w1000",
@@ -48252,7 +45984,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bslzPtZHbhjSfxEWbm88IMuC8ahryLV_=w1000",
       "https://lh3.googleusercontent.com/d/1XxvctKKlzHX6t9g4w5gLV84XqKBAbdzR=w1000",
@@ -48341,7 +46073,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1d5JQ-Z-zKFKitV83X8zS_AqmrRu_SgIh=w1000",
       "https://lh3.googleusercontent.com/d/1VtApCKi8cQlFBUwFJ4lq-Tekb383h39L=w1000",
@@ -48431,7 +46163,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1tskU2SOEEg3rJqQVdrIj41tCgZZsp63l=w1000",
       "https://lh3.googleusercontent.com/d/10CW2v5SfDcf4W8mL3vxIrBZamWrM8wfT=w1000",
@@ -48518,7 +46250,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1cbUbrD3slJsGU4qNhRwRsQchJ4YhbKC7=w1000",
       "https://lh3.googleusercontent.com/d/1W7Bo9fXVaprSS1MdTmy72Tdam93kex99=w1000",
@@ -48585,7 +46317,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1toJgeCi_tNa0qGASoOnXAALX-YAuOXKq=w1000",
       "https://lh3.googleusercontent.com/d/11FdRnKIYq63RBvZOKI5wzRs9bR2GJ03V=w1000",
@@ -48652,7 +46384,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1W8PKvzZ6bRuRebAVhiSrwo7srlT4C9SO=w1000",
       "https://lh3.googleusercontent.com/d/1FOldmkCaikZSCO2lg3SXFDoAf7MNsA_o=w1000",
@@ -48724,7 +46456,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/14ivKfHsb9d6Xiimo7L_Uii_hHE64g3l1=w1000",
       "https://lh3.googleusercontent.com/d/1NZyarTHK4vYD_smipVK3eSzVGEdALS4s=w1000",
@@ -48798,7 +46530,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1DQyp9ehCflKhS1bosLM8Fj0_SwAauwfm=w1000",
       "https://lh3.googleusercontent.com/d/1naI8Yg5iNDOEAzAYBQHrDdaxtIJ0GER8=w1000",
@@ -48868,7 +46600,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-5UTf40cmrXYSKTzZiGkk5nOAHzZaOPL=w1000",
       "https://lh3.googleusercontent.com/d/1dUvCdw7myWcQLcRF6GQ00FJQYy7SIxPh=w1000",
@@ -48932,7 +46664,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/15uJUZDvASrs9rSmUJLrlXnfcN-v-WKiU=w1000",
       "https://lh3.googleusercontent.com/d/1EHLf9Wiro0_JlEWhq9gORHRDOVSa_Wsh=w1000",
@@ -49006,7 +46738,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/134F0gbzG9Iy_-BuxJ1g9TEQT0qPjK6S3=w1000",
       "https://lh3.googleusercontent.com/d/1IDMWZB_BsjI-SDAqu9RoOLZJwAJdCI0r=w1000",
@@ -49095,7 +46827,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jiV2X2-bYPee3fJKy4BuMRmtd0M1k0me=w1000",
       "https://lh3.googleusercontent.com/d/1ilkPbMbYpveOZIyatHbyX3BcCKzBq0Gl=w1000",
@@ -49192,7 +46924,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Ql6KCOthBIe1eIHLH6J3sxzwWhRRdo6w=w1000",
       "https://lh3.googleusercontent.com/d/1K5hU-SJL6dSQHrX_7nbFNInXgY_uCi9B=w1000",
@@ -49281,7 +47013,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/100mUCKCrSWzAHU2R_k1c2tzYt7Jj8YT8=w1000",
       "https://lh3.googleusercontent.com/d/1bIuU31mmnjq6JwsIX5Vs4EgRbe0OFXNw=w1000",
@@ -49359,7 +47091,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-dgICzww-zGmqfwgXJcYYNk2Smaw_KLj=w1000",
       "https://lh3.googleusercontent.com/d/1R20nQHC8x-Xu8DdqYB1-J-G3OYDdVGqk=w1000",
@@ -49425,7 +47157,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1QTsh2aCj4PFg_h_eA-4K_-w5HKJrkAQs=w1000",
       "https://lh3.googleusercontent.com/d/1Odj-TLBpzFwAjVGUa8XQ49EevGZXcSZa=w1000",
@@ -49505,7 +47237,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1m_jpOvcE3L8-Q-xsrIKu5EJG_SdDr9am=w1000",
       "https://lh3.googleusercontent.com/d/15DQfIsjASzDkmNls0rfn4LiPtx4MNnsE=w1000",
@@ -49598,7 +47330,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1mbE1JzMyYwGKT3WU8-fH13eBhiIFFfAv=w1000",
       "https://lh3.googleusercontent.com/d/1lp3-8bAZaKbMhjGtWsrtjfIs4zclhdKk=w1000",
@@ -49669,7 +47401,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1rTfaO_VRy034tifnHrQqr9dRRfLNr7bx=w1000",
       "https://lh3.googleusercontent.com/d/1ysJ7kUP7fbgG0WD9lc0NoGARxVAiFKvG=w1000",
@@ -49758,7 +47490,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/14mNTIxcurUHq5A6MQ7cJ5RPbYPJUJziL=w1000",
       "https://lh3.googleusercontent.com/d/1BNaKAA8OwOA7kEG4BI2V8w-YCpyj1jgL=w1000",
@@ -49850,7 +47582,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_nigWq2-BUnN0mpHSRYRV3NEzFbG2eIH=w1000",
       "https://lh3.googleusercontent.com/d/1akiocaiNgZnU7d-sFRDCACiHJaji7tJ3=w1000",
@@ -49933,7 +47665,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1OmnzuI55h0Vn5peaL21hDuc7FqRPNyDh=w1000",
       "https://lh3.googleusercontent.com/d/1bWh2MwQue8Fc2U4eh1OYviMishD5ZoHt=w1000",
@@ -49992,7 +47724,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19Mf6s6_jjC_QG8yWlGPKSE-3DCpwrbVd=w1000",
       "https://lh3.googleusercontent.com/d/1ddWBXobKmwrpcV0H3CaevqeXfoZ5aGbE=w1000",
@@ -50070,7 +47802,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1I8AMiuFQ-uD86AYPSD6qLljm89Wok2UR=w1000",
       "https://lh3.googleusercontent.com/d/1hoYKb9SJ-hoOpCfwR5SYxG49MnX3Nyi1=w1000",
@@ -50144,7 +47876,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1A9opfU_Ao6973koD--bYtDpl4NTvSewN=w1000",
       "https://lh3.googleusercontent.com/d/15-NLpkES5hRYZoKkkVpyble0aOwprmUw=w1000",
@@ -50232,7 +47964,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1bSFF0aU6ugqALTY2ozFxWNPUWFGsQrUU=w1000",
       "https://lh3.googleusercontent.com/d/1WeCUoZKWedRa7NfA2quw6O1W8JmY5rwM=w1000",
@@ -50337,7 +48069,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1sOz0Kt-JE8w2d5L7g-itbBedAAl3YQ48=w1000",
       "https://lh3.googleusercontent.com/d/1JmNt-dK9HWkRkCW_ndlXDh8FPN_we_Ok=w1000",
@@ -50426,7 +48158,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1hxjloL6yQ-JXvVNYKqxLMe_YOcsEA_OZ=w1000",
       "https://lh3.googleusercontent.com/d/1qKIZh07kFLJl5ku5aTsG05J3wCbpadjM=w1000",
@@ -50491,7 +48223,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1abFYGy8sSKp5xukx68iegueNXEP6cDcy=w1000",
       "https://lh3.googleusercontent.com/d/1pi3BLIqGbyih9OXpZ7JCTs4k4bJ4sEcw=w1000",
@@ -50580,7 +48312,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1zjc9rekf1U7QGlYDlpz8QvmBMEdhXp_x=w1000",
       "https://lh3.googleusercontent.com/d/1O4xwIOSosdSf6daVC9H3f-kwyoL13bnw=w1000",
@@ -50673,7 +48405,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1E7BufApVEjj6YI3HKnFofTYk4HfOObzI=w1000",
       "https://lh3.googleusercontent.com/d/18T7jfUHeLCYcBwcNT77Is3hOk-nqNoxV=w1000",
@@ -50740,7 +48472,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/17uTm4RNgzMRnvLE9kWQglJf35xGtwnuq=w1000",
       "https://lh3.googleusercontent.com/d/1QV7z1IE-H-obLdTv9DKHVCf-TZ0lJhLp=w1000",
@@ -50820,7 +48552,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1-wpBuGrsckwwMysd9CtvDtHfuA5tbSka=w1000",
       "https://lh3.googleusercontent.com/d/1DaSuhH1NBqsFBD6C7bWmCFJzy1R9mNMM=w1000",
@@ -50897,7 +48629,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1anLHbqYInV_YAEqdk-ddzEi_NZKhxN_B=w1000",
       "https://lh3.googleusercontent.com/d/1Nkzgw7k7N_uniJGJV0R3XreCfYqrEYJz=w1000",
@@ -50992,7 +48724,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1b-6jpauMUrVUcBlV4wfGxNMdfzdLLPte=w1000",
       "https://lh3.googleusercontent.com/d/13IvTgvZvWCMqUxXL2CeByO6TjKUdNYyQ=w1000",
@@ -51064,7 +48796,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1JagWLGCHrT8pTZ-IDhGhYHvPz1-y_cLx=w1000",
       "https://lh3.googleusercontent.com/d/178z9ZKlG6Y2DWVNTWeUHmHFxteVmn9Vk=w1000",
@@ -51147,7 +48879,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1twLlzZFp5bReVnvANCh59GgfS0FULiLf=w1000",
       "https://lh3.googleusercontent.com/d/1Ihe98ts36a6taT4-ibgYbTqty88U0-5K=w1000",
@@ -51221,7 +48953,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ODIuvPvxaJkc2OQyn7TGNcJ7mBybCjy7=w1000",
       "https://lh3.googleusercontent.com/d/1sxHhpxwW5jFHFrEwzpZwY8PNyMczlBmx=w1000",
@@ -51287,7 +49019,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1sV-rVXG0YSvyRT_AmauVvMf8VvfRoKCW=w1000",
       "https://lh3.googleusercontent.com/d/15P8-Fs8OECsWP_Dx1INomY4nQUlnn2OV=w1000",
@@ -51376,7 +49108,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-16",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1FKUrRxVZlu7KSQ72DaRw7HTQ3i4RiYjP=w1000",
       "https://lh3.googleusercontent.com/d/1yKLgAInFGMqeRK_JjnEd6NA-8xyRDR0G=w1000",
@@ -51476,7 +49208,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/131ptG-Q7PfBb6sscKk9ovXaf3tnE0-R4=w1000",
       "https://lh3.googleusercontent.com/d/1N-Fee1qf3HBcJHp3V7XTbhLlwJdMEh-f=w1000",
@@ -51553,7 +49285,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_MyCCwZz_Vil0qHwUA9MrfEjLj-otW2i=w1000",
       "https://lh3.googleusercontent.com/d/11o_KhXslbBlcXfh7cB9Mn82tqF0fuLOR=w1000",
@@ -51622,7 +49354,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1rBV38we4K_1UJICrm8TaYjSYZo4PTQOL=w1000",
       "https://lh3.googleusercontent.com/d/18g0SiKgjK89Ups1oRPeIVT1DcnaQZGKf=w1000",
@@ -51690,7 +49422,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1jXF-dqy7wBPSGCVsjQgYS19c9iO4I6eB=w1000",
       "https://lh3.googleusercontent.com/d/1ZNA4UqODp_Fkh3Wwe_KOs7qsHe5xAqpQ=w1000",
@@ -51759,7 +49491,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1zY0ZfhDzDsRQw3RKomtMxnFtWDdNzw7A=w1000",
       "https://lh3.googleusercontent.com/d/1ouBd_dg4N0dG2xOfr7RGLcTMYlShuguU=w1000",
@@ -51834,7 +49566,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/18aKakn13wTbBip9KjtT5CUnwiYk-_D9I=w1000",
       "https://lh3.googleusercontent.com/d/1VTz8PcGXNuq9K4gNCwo3T0qF1DhDiu20=w1000",
@@ -51915,7 +49647,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1K-WrFLNX9ABRIfr_5m9iGH0bxOA_cDvO=w1000",
       "https://lh3.googleusercontent.com/d/1A_0nzA48sfieipdZEnlZP775I1TIVXpW=w1000",
@@ -51999,7 +49731,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1toSBAEpqeEzozJqYw5ffAqa0zxNYHgAU=w1000",
       "https://lh3.googleusercontent.com/d/1fOZdfCA50grl0msMtSfI_bYC_OI9mwZe=w1000",
@@ -52072,7 +49804,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1IuiFllD1Z6Lw1OYapASZ0u067mh14Uak=w1000",
       "https://lh3.googleusercontent.com/d/13yWhMna2s96FqerqERYM5xJUjOcp7mXM=w1000",
@@ -52147,7 +49879,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1AIljuvJ6pW2n_dtOF0s1qgT06-fOxSXd=w1000",
       "https://lh3.googleusercontent.com/d/1uk_B8Eve3KamUXqYgJvM2PrYGz94Zon1=w1000",
@@ -52221,7 +49953,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1JG0GgT3jnbC9_BPihw5D0rYbFNrovzb8=w1000",
       "https://lh3.googleusercontent.com/d/1uMkYeXzmjaTaZeMLQ7yTw2ushxXnPofp=w1000",
@@ -52312,7 +50044,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1LmARVnNeabD6Po7d8a4abjUUeeLua4Fh=w1000",
       "https://lh3.googleusercontent.com/d/19kkq0CYPzeEnewbhFbsGUzbJmXZdlgtn=w1000"
@@ -52367,7 +50099,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1yWhExCbOvlPuyrZ9WtlNXRy_jBTGCFQD=w1000",
       "https://lh3.googleusercontent.com/d/1EkzvjY2Gq1i82lhFIrAV7JSts9gHj1Fq=w1000"
@@ -52423,7 +50155,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1QS_r7WjxYl_m8dRq2er4LLiyKkb_Ykda=w1000",
       "https://lh3.googleusercontent.com/d/1p1-Eg2iQ3DSmd8kS_U-1AM8iaWCuM-Fm=w1000",
@@ -52503,7 +50235,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1hCfSY5MJoYMxFKEVVcbNcj39TooIPaL6=w1000",
       "https://lh3.googleusercontent.com/d/19CdVeKywLGl7Kd3cVjLFGckbzongznkm=w1000",
@@ -52576,7 +50308,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/18XWxl2FUM3IG-15N-x5hKBHTy8e9MoZ3=w1000"
     ],
@@ -52631,7 +50363,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ERWgUWy5RGL1n6tbXpS1SyvvAz7Wrox2=w1000"
     ],
@@ -52690,7 +50422,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1B76B-eJb5iJCBR58wZchBYXilzmZY--A=w1000",
       "https://lh3.googleusercontent.com/d/168BuxQXalqgqMR-FNN_GB6WIHt6EaPs3=w1000",
@@ -52750,7 +50482,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1el0znPX29ylJ7psLEl5Atzov1tvJAxXB=w1000"
     ],
@@ -52805,7 +50537,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1RnPUht7tFAzMUpUakHBM4LHt0ivHV0zZ=w1000"
     ],
@@ -52859,7 +50591,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1YEcBHbhnJs0ccmK5-aoaduVKuaZrFwiV=w1000",
       "https://lh3.googleusercontent.com/d/1UfUtfbHjTdeu5PN3E6OT0a7AP796YlrP=w1000",
@@ -52916,28 +50648,7 @@ window.LISTINGS = [
     "sewa_price": null,
     "sewa_label": null,
     "highlights": [],
-    "pelan": [
-      {
-        "tajuk": "Pelan Tingkat 1 & 2 (First & Second Floor)",
-        "url": "https://lh3.googleusercontent.com/d/1Qzagm5zTrY3pC6O8jh2Zco-srNMaqDRX=w1200"
-      },
-      {
-        "tajuk": "Pelan Aras Tanah & Mezzanine",
-        "url": "https://lh3.googleusercontent.com/d/17V-fscDFPh1vtkZn6dUsJv4xa_qLFpNo=w1200"
-      },
-      {
-        "tajuk": "Pandangan Sisi (Side Elevation)",
-        "url": "https://lh3.googleusercontent.com/d/1-8ePgrYR61Vr7qFWG2MSnoB6yVV-bI5H=w1200"
-      },
-      {
-        "tajuk": "Pandangan Belakang (Rear Elevation)",
-        "url": "https://lh3.googleusercontent.com/d/13MOTuw2cZCv7QsJxLek8AFm7pi6K3vDV=w1200"
-      },
-      {
-        "tajuk": "Pandangan Depan (Front Elevation)",
-        "url": "https://lh3.googleusercontent.com/d/1qp7nSidzBvkXXvsbgnpgibmb2msQvesq=w1200"
-      }
-    ],
+    "pelan": [],
     "description": "ETP 3 @ Meru Industrial Park\nSEMI-DETACHED FACTORY / Warehouse, Taman Perindustrian Meru, 42200 Kapar Selangor\nAsking RM 8,500,000\n\nDetails:\n- 3.5 Storey Semi Detached Factory / Warehouse\n- FREEHOLD\n- Land Area: 85' x 293' (24,922.76 sqft)\n- Built-up Mezzanine: 60' x 38'\n- Built-up Operation side: 60' x 178'\n- Total Built-up area: 19,839.60 sqft\n- Passenger Lift (15 pax)\n- Floor Loading: 3 TON/M2, 30kN/m2\n- EAVE Height: 40 ft\n- CONCRETE Driveway\n- Power Supply: 400 Amp\n- Class 'A' Building\n- Type KB1 (Longer layout)\n- 4 Storey: Operation floor (gf), Mezzanine floor, Office floor 1, Office floor 2 (With Lift)\n- 2 toilets every floor (x 4 floor), 2 prayer rooms at 3rd level\n\nAmenities:\n- Postal Service (POS Malaysia)\n- Banks (Maybank, CIMB, Hong Leong, Public Bank, BSN)\n- Food & Beverages (Seafood Restaurants, KFC, Pizza Hut, Domino's, Tealive)\n- Petrol Station (Petronas, Shell, Caltex)\n\nAccess:\n- WCE Highway\n- NKVE Highway\n- Federal Highway\n- 30mins to Northport\n- 25mins to Shah Alam/Klang\n- 35mins to Subang Airport\n- 45mins to Puchong\n- 50mins to KL\n- 50mins to KLIA Airport\n\nAgen: Zahir Ajran 018-7733 630 REN42509, IQI REALTY SDN BHD\nSumber: t.me/zsplisting/6358 (18 media)\n\n=== PELAN BANGUNAN (Architecture Plans) ===\nGround Floor: 85' x 293.15' total; 2 blok 60' lebar + 25' tepi; ruang kilang terbuka; tangga + tandas\nMezzanine: dalam 38.06'; 2 kawasan VOID di atas susun atur asas\nFirst Floor: 120' lebar (2 x 60') x 216.48' dalam (38.06' depan + 178.42' belakang VOID); pejabat, tandas, tangga, LIFT di tengah\nSecond Floor: sama susun atur First Floor\nSide Elevation: panjang 216.48'; tinggi bangunan 40'; menara pejabat 38.06' lebar; tangga luar + canopy loading bay\nRear Elevation: tinggi puncak 59'; dinding 40'; lebar 120' (2 x 60'); 2 roll-up door + canopy\nFront Elevation: tinggi 59'; aras: Ground 20ft, Mezzanine 12ft, First 12ft, Second 15ft, Roof; kaca biru + jalur kuning",
     "amenities": [],
     "nearby": [],
@@ -53189,145 +50900,83 @@ window.LISTINGS = [
     "active": true
   },
   {
-    "tracking": "COA-0433",
-    "title": "Double Storey Semi-D Verdale, Setia Alam Sari, Bangi",
-    "type": "Rumah Semi-D",
-    "location": "Setia Alam Sari, Bangi, Selangor",
+    "tracking": "MTCOA-1056",
+    "title": "Tanah Lot Banglo 11 000 sqft Labu Lanjut Sepang near KLIA Kota Warisan",
+    "type": "Kilang",
+    "location": "Sepang, Selangor",
     "state": "Selangor",
-    "price": 1470000,
-    "price_label": "RM1,470,000",
+    "price": 370000,
+    "price_label": "RM370,000",
     "price_old": null,
-    "land_area": "Tanah 3,200 sqft | Binaan 3,118 sqft",
-    "built_up": "-",
-    "tenure": "Freehold",
-    "sekatan": "Open",
-    "kategori": "",
-    "zoning": "",
-    "psf": 459,
-    "bedrooms": 4,
-    "bathrooms": 5,
-    "status": "BARU",
-    "jenis": "JUAL",
-    "sewa_price": null,
-    "sewa_label": null,
-    "highlights": [],
-    "description": "Rumah Semi-D Tanah 3,200 sqft | Binaan 3,118 sqft di Setia Alam Sari, Bangi, Selangor dijual pada RM1,470,000. Hakmilik: Freehold. Sekatan: Open. Anggaran RM459 sekaki persegi.",
-    "amenities": [],
-    "nearby": [],
-    "map_url": "https://www.google.com/maps/search/?api=1&query=Setia%20Alam%20Sari%2C%20Bangi%2C%20Selangor",
-    "project": "",
-    "project_name": "",
-    "unit": "",
-    "source": "Mr Tanah",
-    "date": "2026-10-29",
-    "images": [
-      "https://lh3.googleusercontent.com/d/1tZ1qXTgoUD-tESEMNkF1ox4dkqiKZoKw=w1000",
-      "https://lh3.googleusercontent.com/d/160TVN6x97TB3_aZLAA89mLFvL0AeD758=w1000",
-      "https://lh3.googleusercontent.com/d/18VpX83IEkpjE8K1DMl2o52MfAJx7vEGu=w1000",
-      "https://lh3.googleusercontent.com/d/1-PAn5MPjJmwuqQRX867R3jdZ5XwdhAYe=w1000",
-      "https://lh3.googleusercontent.com/d/1XkQipEbPETC4mhQWtBIjjh4I5RtgpgFD=w1000",
-      "https://lh3.googleusercontent.com/d/1WaTkOse-F59eZ6QCCux7M520P8aLEb_s=w1000",
-      "https://lh3.googleusercontent.com/d/1uZvzTHp4Yn4amUVsyV1x70Dl_tmMgHKv=w1000",
-      "https://lh3.googleusercontent.com/d/1P0cLUSt4thdwurzZo-I8xB-Al87mbLyk=w1000",
-      "https://lh3.googleusercontent.com/d/1zTCvl6UCYdAFBRXXowAkGdjoMA3KNKAN=w1000",
-      "https://lh3.googleusercontent.com/d/15MjL57vJ0AqlbyJB1OEOSOgngg3jdhWs=w1000"
-    ],
-    "video": "",
-    "active": false
-  },
-  {
-    "tracking": "COA-0434",
-    "title": "Simfoni 1, Bandar Teknologi Kajang — Serviced Residence (Level 11)",
-    "type": "Serviced Residence",
-    "location": "Bandar Teknologi Kajang, Kajang, Selangor",
-    "state": "Selangor",
-    "price": 325000,
-    "price_label": "RM325,000",
-    "price_old": null,
-    "land_area": "Binaan 1,073 sqft",
+    "land_area": "11,033 sqft",
     "built_up": "-",
     "tenure": "Leasehold",
-    "sekatan": "Bumi Lot",
-    "kategori": "",
-    "zoning": "",
-    "psf": 303,
-    "bedrooms": 3,
-    "bathrooms": 2,
+    "sekatan": "Malay Reserve",
+    "kategori": "Kilang",
+    "zoning": "Perindustrian",
+    "psf": 34,
+    "bedrooms": 0,
+    "bathrooms": 0,
     "status": "BARU",
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [],
-    "description": "Serviced Residence Binaan 1,073 sqft di Bandar Teknologi Kajang, Kajang, Selangor dijual pada RM325,000. Hakmilik: Leasehold. Sekatan: Bumi Lot. Anggaran RM303 sekaki persegi.",
+    "highlights": [
+      "*Surrounded by mature housing area",
+      "*near main road, 13min to KLIA, 10mins Kota Warisan",
+      "Geran Individu"
+    ],
+    "pelan": [],
+    "description": "Tanah Lot Banglo 11 000 sqft Labu Lanjut Sepang near KLIA Kota Warisan\n\nWTS / FOR SALE\nAsking RM 370,000\n\n+ Sepang, Selangor\n+ Building Land, Freehold, Malay Reserve, Individual Title\n+ Land Area : 11,033 sqft\n\n\n\n**********************************************************************\n\n\nTanah Lot Banglo 11 000 sqft Labu Lanjut Sepang near KLIA Kota Warisan\n\n**Surrounded by mature housing area\n**near main road, 13min to KLIA, 10mins Kota Warisan\n\nDetails:\n\n- Residential Land\n- Leasehold Malay Reserve (2103)\n- Geran Individu\n- Size tanah: 11033 sqft\n\nNearby:\n- 1.5km SK Labu Lanjut\n- 8km KIP Mall Kota Warisan @ Mitsui Outlet\n- 2km Masjid\n- 5km Stadium Salak Tinggi\n\n====================\nAsking Price: RM 370 000 (nego)\n====================\n\nInterested? Contact Me Now!\n\nMr Tanah\nIQI REALTY SDN. BHD. (E (1) 1584/11)\nTel: +60163119076\n\n#LS2512002486",
     "amenities": [],
-    "nearby": [],
-    "map_url": "https://www.google.com/maps/search/?api=1&query=Simfoni%201%20Bandar%20Teknologi%20Kajang%20Selangor",
+    "nearby": [
+      "1.5km SK Labu Lanjut",
+      "8km KIP Mall Kota Warisan @ Mitsui Outlet",
+      "2km Masjid",
+      "5km Stadium Salak Tinggi"
+    ],
+    "map_url": "https://www.google.com/maps/search/?api=1&query=Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
-      "https://lh3.googleusercontent.com/d/18OIm4p8oiHITz9WtGI_dsdHYJyAANlf4=w1000",
-      "https://lh3.googleusercontent.com/d/1oTKde-zRhs_Sqxu44XeijuINUynZmre3=w1000",
-      "https://lh3.googleusercontent.com/d/1FJ6WR98AeJNlm7Z6bdfVt0M3k82lBlr0=w1000",
-      "https://lh3.googleusercontent.com/d/1l7voHHx__zgdbYPS-iBxVN7di3SyAGhp=w1000",
-      "https://lh3.googleusercontent.com/d/1R-xpNxs2MGHYkD90g1jkHxB_kacGlaXh=w1000",
-      "https://lh3.googleusercontent.com/d/1xaqA9tHoAxtqM4uF52M5kSeS5M-SmWch=w1000",
-      "https://lh3.googleusercontent.com/d/1eb07FDfH2xETEzhU59YiS6iVT7vacPn9=w1000",
-      "https://lh3.googleusercontent.com/d/1g_CddCH4uCWO4DgRF3l2VwEf8iZ0d81l=w1000",
-      "https://lh3.googleusercontent.com/d/1I2QgT9wArydcCVMuxAt7xRVPMEA1c_Zb=w1000",
-      "https://lh3.googleusercontent.com/d/1XwS-fEn403k6TElJ2vqxzBU9RLYEWh34=w1000"
+      "https://lh3.googleusercontent.com/d/1P5vX5SwerI8QF2fHz07lKSNgRzfpwM7B=w1000",
+      "https://lh3.googleusercontent.com/d/1ZaMreWcoeaxU-kovR-dMGF8PE_klgitY=w1000",
+      "https://lh3.googleusercontent.com/d/1f8eqLeyTULdu0h-fZ5MPKLJc-85O1g1n=w1000",
+      "https://lh3.googleusercontent.com/d/1E9slvSF4NA9LPwwQ0HhZjMi8gkDLutxi=w1000",
+      "https://lh3.googleusercontent.com/d/18Co0q7E8AT2FNh7k059Cd9mN8xw7J8Rw=w1000",
+      "https://lh3.googleusercontent.com/d/1Zl5WxBYR3ZeWod1KEugreyzhCY7sZnMn=w1000",
+      "https://lh3.googleusercontent.com/d/10dIXJR5JEOyBhqA_YM0KxcY56c_7Tayp=w1000",
+      "https://lh3.googleusercontent.com/d/1VH_9ikwhl78NE6SsDJl2hwQg2P3cYaxg=w1000"
     ],
     "video": "",
-    "active": false
-  },
-  {
-    "tracking": "COA-0435",
-    "title": "Simfoni 1, Bandar Teknologi Kajang — Serviced Residence (Level 9)",
-    "type": "Serviced Residence",
-    "location": "Bandar Teknologi Kajang, Kajang, Selangor",
-    "state": "Selangor",
-    "price": 325000,
-    "price_label": "RM325,000",
-    "price_old": null,
-    "land_area": "Binaan 1,073 sqft",
-    "built_up": "-",
-    "tenure": "Freehold",
-    "sekatan": "Bumi Lot",
-    "kategori": "",
-    "zoning": "",
-    "psf": 303,
-    "bedrooms": 3,
-    "bathrooms": 2,
-    "status": "BARU",
-    "jenis": "JUAL",
-    "sewa_price": null,
-    "sewa_label": null,
-    "highlights": [],
-    "description": "Serviced Residence Binaan 1,073 sqft di Bandar Teknologi Kajang, Kajang, Selangor dijual pada RM325,000. Hakmilik: Freehold. Sekatan: Bumi Lot. Anggaran RM303 sekaki persegi.",
-    "amenities": [],
-    "nearby": [],
-    "map_url": "https://www.google.com/maps/search/?api=1&query=Simfoni%201%20Bandar%20Teknologi%20Kajang%20Selangor",
-    "project": "",
-    "project_name": "",
-    "unit": "",
-    "source": "Mr Tanah",
-    "date": "2026-10-29",
-    "images": [
-      "https://lh3.googleusercontent.com/d/1FUXyCOee8MksXQy6DPRus2T1SYUkUvfH=w1000",
-      "https://lh3.googleusercontent.com/d/1UTZXaGop9LEnp24VJ24D83SDtfTyCprA=w1000",
-      "https://lh3.googleusercontent.com/d/1PsPws66JYc-eVRObesZM4xcmVp4bqRTd=w1000",
-      "https://lh3.googleusercontent.com/d/1zlxHHi30ffOL7P6F8EZ5YN9rR3HS1Ewq=w1000",
-      "https://lh3.googleusercontent.com/d/1S1B5_rsOanpBuh62QVnLNT8Oo53s4EWs=w1000",
-      "https://lh3.googleusercontent.com/d/1z799rm5wJyVAviaWeQVNb7h_s44uAuyF=w1000",
-      "https://lh3.googleusercontent.com/d/13AZOoKnoF8A_ebZM_EQEUWbEPq_whTgl=w1000",
-      "https://lh3.googleusercontent.com/d/1gsvUcH5ee7A8a2kz3vIcvtWil82bm6DB=w1000",
-      "https://lh3.googleusercontent.com/d/1VSLYr2E_wzlhmjpfgzMht19SFylHizOg=w1000",
-      "https://lh3.googleusercontent.com/d/1Ke3pWURvCRfr_MAbE79dT3PosWa7Ov52=w1000"
-    ],
-    "video": "",
-    "active": false
+    "active": true,
+    "butiran": [
+      "Tanah Lot Banglo 11 000 sqft Labu Lanjut Sepang near KLIA Kota Warisan",
+      "WTS / FOR SALE",
+      "Asking RM 370,000",
+      "+ Sepang, Selangor",
+      "+ Building Land, Freehold, Malay Reserve, Individual Title",
+      "+ Land Area : 11,033 sqft",
+      "Tanah Lot Banglo 11 000 sqft Labu Lanjut Sepang near KLIA Kota Warisan",
+      "Surrounded by mature housing area",
+      "near main road, 13min to KLIA, 10mins Kota Warisan",
+      "Details:",
+      "Residential Land",
+      "Leasehold Malay Reserve (2103)",
+      "Geran Individu",
+      "Size tanah: 11033 sqft",
+      "Nearby:",
+      "1.5km SK Labu Lanjut",
+      "8km KIP Mall Kota Warisan @ Mitsui Outlet",
+      "2km Masjid",
+      "5km Stadium Salak Tinggi",
+      "Asking Price: RM 370 000 (nego)",
+      "Mr Tanah",
+      "#LS2512002486"
+    ]
   },
   {
     "tracking": "MTCOA-0003",
@@ -53351,28 +51000,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "1.76 + 2.66 ekar (2 geran, 1 penama)",
-      "RM21/sqft",
-      "Leasehold sehingga Nov 2089",
-      "Malay Reserved",
-      "Tanah pembangunan"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah pembangunan di Bukit Damar, Dengkil — 1.76 ekar dan 2.66 ekar (2 geran, 1 penama). Leasehold sehingga Nov 2089, Malay Reserved. Harga RM21 per sqft. Peluang baik untuk pembangunan.",
-    "amenities": [
-      "2 geran, 1 penama"
-    ],
-    "nearby": [
-      "Bukit Damar, Dengkil",
-      "Sepang, Selangor"
-    ],
+    "description": "Tanah 1.76 ekar + 2.66 ekar (2 geran, 1 penama) di Bukit Damar, Dengkil, Sepang, Selangor (Mukim Dengkil) dijual pada RM4,200,000. Hakmilik: Leasehold. Sekatan: Melayu Reserved. Anggaran RM55 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Bukit+Damar,+Dengkil,+Sepang",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1WFo6539HayBM0HOiKylRGDPKiukXRglJ=w1000",
       "https://lh3.googleusercontent.com/d/1r5hacKI_FINYIUDcuvo7APs3UK1G1C90=w1000",
@@ -53403,30 +51041,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Freehold - status penggunaan Bangunan",
-      "19,967 sqft (lebih kurang 1/2 ekar)",
-      "Akses MRR2, AKLEH, DUKE",
-      "Jalan Genting Klang",
-      "Kawasan Kemensah Height"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah lot banglo di Kemensah Height, Ampang (Daerah Gombak) seluas 1,855 m² (lebih kurang 19,967 sqft). Freehold dengan status penggunaan Bangunan. Akses pantas ke MRR2, AKLEH, DUKE dan Jalan Genting Klang.",
-    "amenities": [
-      "Status penggunaan: Bangunan"
-    ],
-    "nearby": [
-      "MRR2",
-      "AKLEH Highway",
-      "DUKE Highway",
-      "Jalan Genting Klang"
-    ],
+    "description": "Tanah 1855 m2 / 19,967 kps (lebih kurang 1/2 ekar) di Kemensah Height, Bandar Ulu Kelang, Ampang, Selangor (Daerah Gombak) dijual pada RM4,000,000. Hakmilik: Freehold. Anggaran RM46 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps?q=Kemensah+Height,+Ampang",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-08-31",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_1EavZjFoenleAhZ1g7A-LOgMMvIlN2m=w1000",
       "https://lh3.googleusercontent.com/d/1-r1rkLd_eYVQCxIvM5kfZqBfzYvNeDeG=w1000",
@@ -53467,7 +51092,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-19",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1h3vQQbaS1gVIywkmhA-ZP2vUw207WpeI=w1000",
       "https://lh3.googleusercontent.com/d/1ik7ShJChyDWp3AO4FUxNdx1Zd8dhhfgj=w1000",
@@ -53505,7 +51130,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 17,020 sq ft di Tmn Sri Ong Kee Hui, Sarawak dijual pada Hubungi. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 17,020 sq ft di Tmn Sri Ong Kee Hui, Sarawak dijual pada Hubungi. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=1.547847206,110.3508335",
@@ -53513,7 +51138,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1Ykl4FxxTSuJZxORAzOqujHVyLZTYGg8d=w1000"
     ],
@@ -53544,7 +51169,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 43,551 sq ft di Bukit Serdang, Selangor dijual pada Hubungi. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 43,551 sq ft di Bukit Serdang, Selangor dijual pada Hubungi. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=3.04849,101.699092",
@@ -53552,7 +51177,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1AB4roTLf6OStu6fJX0NoKB3GaTjsOVQn=w1000"
     ],
@@ -53583,7 +51208,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 29,471 sq ft di Taman Templer, Selangor dijual pada Hubungi. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 29,471 sq ft di Taman Templer, Selangor dijual pada Hubungi. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=3.284978,101.643563",
@@ -53591,7 +51216,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11iKPRfSj41A0kZ1WU1nf9TQGNzmANtFl=w1000"
     ],
@@ -53622,7 +51247,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 20,621 sq ft di PS Taman Pengkalan Jaya, Ipoh, Perak dijual pada Hubungi. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 20,621 sq ft di PS Taman Pengkalan Jaya, Ipoh, Perak dijual pada Hubungi. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=4.55407,101.0756",
@@ -53630,7 +51255,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1ccElmuyutR2oTENrmcVtZLwScZixQI5f=w1000"
     ],
@@ -53661,7 +51286,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 18,671 sq ft di PS Bertam Perdana, Kepala Batas, Pulau Pinang dijual pada Hubungi. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 18,671 sq ft di PS Bertam Perdana, Kepala Batas, Pulau Pinang dijual pada Hubungi. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=5.51736,100.44938",
@@ -53669,7 +51294,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1HSqXAcdpmOiQaekT2_a60bcUyzlPK38q=w1000"
     ],
@@ -53700,7 +51325,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 28,670 sq ft di PS Green Height, Kuching, Sarawak dijual pada Hubungi. Hakmilik: Freehold. Sekatan: Tidak dinyatakan.",
+    "description": "Tanah 28,670 sq ft di PS Green Height, Kuching, Sarawak dijual pada Hubungi. Hakmilik: Freehold.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps?q=1.5019984614786712,110.34468504196256",
@@ -53708,7 +51333,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-27",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/19YYzeZnhW1xW7TL8nS35D9dBDbL2K_12=w1000"
     ],
@@ -53747,7 +51372,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/12x_dx84JBpC2q8NtK1MQsYDKGMARmjqO=w1000",
       "https://lh3.googleusercontent.com/d/1M5S645AI68vwYPkTE0TaOmSFHEogKtwi=w1000",
@@ -53797,7 +51422,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1rnk-UH5YD6pYVgDq0Onou7vot3Wkp1Np=w1000",
       "https://lh3.googleusercontent.com/d/1hXRxcye93ZMcngAhhSGYOieo_YQaNb09=w1000",
@@ -53831,32 +51456,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Freehold & sedia untuk pembangunan",
-      "Zon lot bungalow — sesuai komuniti gated atau kediaman landed",
-      "Infrastruktur elektrik sedia ada",
-      "Akses jalan tersedia",
-      "Berdekatan Bandar Banting, sekolah & kemudahan tempatan",
-      "Potensi pertumbuhan koridor Banting–KLIA–West Coast Expressway"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah bungalow 7,030 sqft (0.161 ekar) di Pekan Telok Datok, Kuala Langat. Freehold, kategori Bangunan. Infra elektrik sedia ada dengan akses jalan. Lokasi strategik berdekatan Bandar Banting, sekolah dan kemudahan tempatan. Berada dalam koridor pertumbuhan Banting–KLIA–West Coast Expressway yang berpotensi tinggi.",
-    "amenities": [
-      "Bandar Banting",
-      "Sekolah Tempatan",
-      "Kemudahan Awam"
-    ],
-    "nearby": [
-      "Bandar Banting",
-      "KLIA",
-      "West Coast Expressway"
-    ],
+    "description": "Tanah 7,030 sqft (0.161 ekar) di Pekan Telok Datok, Kuala Langat, Selangor dijual pada RM260,110. Hakmilik: Freehold. Sekatan: Open. Anggaran RM37 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Pekan%20Telok%20Datok%2C%20Kuala%20Langat%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/11zfGTloAOP-Vyk0OrwnOKoKUTH4RvJfk=w1000",
       "https://lh3.googleusercontent.com/d/1J8G1rDfFWZ0RLmkBjWkMkWF11YMjbpXV=w1000",
@@ -53890,36 +51500,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Lot bungalow 11,960 sqft — tanah rata",
-      "Freehold residential land",
-      "Lokasi perdana di Putra Crest, Subang Jaya",
-      "Akses lebuh raya meluas: ELITE, LDP, KESAS, NKVE, Federal Highway, SKVE",
-      "Berdekatan Main Place Mall (4km), Sunway Pyramid (8.5km)",
-      "Subang Jaya Medical Centre (7km), Kingsley International School (3.5km)"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Tanah bungalow 11,960 sqft di Putra Crest, Subang Jaya. Freehold, residential land (bungalow lot), flat land. Lokasi perdana dengan akses meluas ke ELITE, LDP, KESAS, NKVE, Federal Highway dan SKVE. Berdekatan Main Place Mall, Sunway Pyramid, Subang Jaya Medical Centre, Kingsley International School dan Giant Putra Heights.",
-    "amenities": [
-      "Main Place Mall (4km)",
-      "Sunway Pyramid (8.5km)",
-      "Subang Jaya Medical Centre (7km)",
-      "Kingsley International School (3.5km)",
-      "Giant Putra Heights (2km)"
-    ],
-    "nearby": [
-      "Main Place Mall",
-      "Sunway Pyramid",
-      "Subang Jaya Medical Centre",
-      "Kingsley International School",
-      "Giant Putra Heights"
-    ],
+    "description": "Tanah 11,960 sqft di Putra Crest, Subang Jaya, Selangor dijual pada RM2,500,000. Hakmilik: Freehold. Sekatan: Open. Anggaran RM209 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Putra%20Crest%2C%20Subang%20Jaya%2C%20Selangor",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1y2D2jI1oFoUXSjzsW9JrTZ_OlOUqYBg_=w1000",
       "https://lh3.googleusercontent.com/d/13gOQfbEKwjZp1nmbykBQvTjrvNP-5-Re=w1000",
@@ -53945,7 +51536,7 @@ window.LISTINGS = [
     "price_label": "RM1,400,000",
     "price_old": null,
     "land_area": "4,000 sqft (tanah) / 2,415 sqft (binaan)",
-    "built_up": "2,415 sqft",
+    "built_up": "-",
     "tenure": "Freehold",
     "sekatan": "Open",
     "kategori": "",
@@ -53957,35 +51548,17 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [
-      "Corner lot dengan keluasan tanah 4,000 sqft",
-      "Binaan 2,415 sqft — 5 bilik, 4 bilik air",
-      "Freehold dalam komuniti gated & guarded",
-      "Dual frontage East & West — pencahayaan & pengudaraan semula jadi",
-      "Kawasan perumahan eksklusif rendah kepadatan",
-      "Berdekatan LimKokWing, D'Pulze, CBD Cyberjaya, sekolah"
-    ],
+    "highlights": [],
     "pelan": [],
-    "description": "Rumah teres 2 tingkat corner lot di Serenity Homes, Perdana Lakeview East, Cyberjaya. Freehold. Keluasan tanah 4,000 sqft, binaan 2,415 sqft dengan 5 bilik dan 4 bilik air. Komuniti gated & guarded. Dual frontage East & West memberikan pencahayaan dan pengudaraan yang cemerlang. Lokasi premium berdekatan LimKokWing, D'Pulze, CBD Cyberjaya dan sekolah.",
-    "amenities": [
-      "LimKokWing",
-      "D'Pulze Mall",
-      "CBD Cyberjaya",
-      "Sekolah",
-      "Hospital Cyberjaya"
-    ],
-    "nearby": [
-      "LimKokWing University",
-      "D'Pulze Shopping Mall",
-      "CBD Cyberjaya",
-      "Cyberjaya Hospital"
-    ],
+    "description": "Teres 4,000 sqft (tanah) / 2,415 sqft (binaan) di Serenity Homes, Perdana Lakeview East, Cyberjaya, Selangor dijual pada RM1,400,000. Hakmilik: Freehold. Sekatan: Open. Anggaran RM350 sekaki persegi.",
+    "amenities": [],
+    "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Serenity%20Homes%20Perdana%20Lakeview%20East%20Cyberjaya",
     "project": "",
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-29",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/17gPNZ0nVJJ_O1G-igWSK1DG8wzWX7Zar=w1000",
       "https://lh3.googleusercontent.com/d/15XKfSxnuq8jah1TSH0Butc9IWIHp_v1A=w1000",
@@ -54033,7 +51606,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1_bQnd1cZlpTuaRbA8--ggpLlTQprXpul=w1000",
       "https://lh3.googleusercontent.com/d/1n9fRJbLUrH9cLJy89GXC9qj5t_J3QVHV=w1000",
@@ -54086,7 +51659,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-10-30",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1EV1UGhgCD-JtoDMk_FzLjsZy8GMCn3wY=w1000",
       "https://lh3.googleusercontent.com/d/1I-pkNBOgQVSvUHn2ZpkUslAOQs9Zv-2Q=w1000",
@@ -54139,52 +51712,8 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-01",
+    "date": "2026-11-19",
     "images": [],
-    "video": "",
-    "active": false
-  },
-  {
-    "tracking": "MTCOA-0812",
-    "title": "Tanah Sangat Murah Batu 23 Sg Lawing Sg Lui, Gunung Hitam Hulu Langat Selangor.",
-    "type": "Tanah",
-    "location": "Hulu Langat, Selangor",
-    "state": "Selangor",
-    "price": 350000,
-    "price_label": "RM350,000",
-    "price_old": null,
-    "land_area": "130,500 sqft",
-    "built_up": "-",
-    "tenure": "Leasehold",
-    "sekatan": "Malay Reserve",
-    "kategori": "",
-    "zoning": "",
-    "psf": 3,
-    "bedrooms": 0,
-    "bathrooms": 0,
-    "status": "BARU",
-    "jenis": "JUAL",
-    "sewa_price": null,
-    "sewa_label": null,
-    "highlights": [],
-    "description": "Tanah 87,120 sqft di Hulu Langat, Selangor dijual pada RM360,000. Hakmilik: Leasehold. Sekatan: Bumi. Anggaran RM4 sekaki persegi.",
-    "amenities": [],
-    "nearby": [],
-    "map_url": "https://www.google.com/maps/search/?api=1&query=Hulu%20Langat%2C%20Selangor",
-    "project": "",
-    "project_name": "",
-    "unit": "",
-    "source": "Mr Tanah",
-    "date": "2026-11-09",
-    "images": [
-      "https://lh3.googleusercontent.com/d/1zfsOe75Be1WgIRMCoXuS4EuDoOT4LxsQ=w1000",
-      "https://lh3.googleusercontent.com/d/1y3s76S6hlmLz9brWJNEVEtc2uL9dNzbC=w1000",
-      "https://lh3.googleusercontent.com/d/1X3KoH0pR6KLbYE46J2isSIz_Bng3uGA0=w1000",
-      "https://lh3.googleusercontent.com/d/1L12h6dHsZytnwzbgdYl6bIhE3tOtoyRY=w1000",
-      "https://lh3.googleusercontent.com/d/18kRyy2gbubk0-XvPE9f-qbFhgTfPFszf=w1000",
-      "https://lh3.googleusercontent.com/d/1AanxRhSE9aB3-3KH7l85YoP2EBMMpCmX=w1000",
-      "https://lh3.googleusercontent.com/d/1jX3NIGpi3c5F-4td62YvwXa7vLMY9sjm=w1000"
-    ],
     "video": "",
     "active": false
   },
@@ -54220,7 +51749,7 @@ window.LISTINGS = [
     "project_name": "",
     "unit": "",
     "source": "Mr Tanah",
-    "date": "2026-11-17",
+    "date": "2026-11-19",
     "images": [
       "https://lh3.googleusercontent.com/d/1SP8nmzT0XxQjnMp4MkZHCBrt-h93eql6=w1000",
       "https://lh3.googleusercontent.com/d/1-4l-Kyz2Cvd8Zf_AxQziMZqOyPvq2OlP=w1000",
