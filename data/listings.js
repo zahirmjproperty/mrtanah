@@ -51857,6 +51857,13 @@ window.LISTINGS = [
     "description": "ETP 3 @ Meru Industrial Park\nSEMI-DETACHED FACTORY / Warehouse, Taman Perindustrian Meru, 42200 Kapar Selangor\nAsking RM 8,500,000\n\nDetails:\n- 3.5 Storey Semi Detached Factory / Warehouse\n- FREEHOLD\n- Land Area: 85' x 293' (24,922.76 sqft)\n- Built-up Mezzanine: 60' x 38'\n- Built-up Operation side: 60' x 178'\n- Total Built-up area: 19,839.60 sqft\n- Passenger Lift (15 pax)\n- Floor Loading: 3 TON/M2, 30kN/m2\n- EAVE Height: 40 ft\n- CONCRETE Driveway\n- Power Supply: 400 Amp\n- Class 'A' Building\n- Type KB1 (Longer layout)\n- 4 Storey: Operation floor (gf), Mezzanine floor, Office floor 1, Office floor 2 (With Lift)\n- 2 toilets every floor (x 4 floor), 2 prayer rooms at 3rd level\n\nAmenities:\n- Postal Service (POS Malaysia)\n- Banks (Maybank, CIMB, Hong Leong, Public Bank, BSN)\n- Food & Beverages (Seafood Restaurants, KFC, Pizza Hut, Domino's, Tealive)\n- Petrol Station (Petronas, Shell, Caltex)\n\nAccess:\n- WCE Highway\n- NKVE Highway\n- Federal Highway\n- 30mins to Northport\n- 25mins to Shah Alam/Klang\n- 35mins to Subang Airport\n- 45mins to Puchong\n- 50mins to KL\n- 50mins to KLIA Airport\n\nAgen: Zahir Ajran 018-7733 630 REN42509, IQI REALTY SDN BHD\nSumber: t.me/zsplisting/6358 (18 media)",
     "amenities": [],
     "nearby": [],
+    "pelan": [
+      {"tajuk": "Pelan Tingkat 1 & 2 (First & Second Floor)", "url": "https://lh3.googleusercontent.com/d/1Qzagm5zTrY3pC6O8jh2Zco-srNMaqDRX=w1200"},
+      {"tajuk": "Pelan Aras Tanah & Mezzanine", "url": "https://lh3.googleusercontent.com/d/17V-fscDFPh1vtkZn6dUsJv4xa_qLFpNo=w1200"},
+      {"tajuk": "Pandangan Sisi (Side Elevation)", "url": "https://lh3.googleusercontent.com/d/1-8ePgrYR61Vr7qFWG2MSnoB6yVV-bI5H=w1200"},
+      {"tajuk": "Pandangan Belakang (Rear Elevation)", "url": "https://lh3.googleusercontent.com/d/13MOTuw2cZCv7QsJxLek8AFm7pi6K3vDV=w1200"},
+      {"tajuk": "Pandangan Depan (Front Elevation)", "url": "https://lh3.googleusercontent.com/d/1qp7nSidzBvkXXvsbgnpgibmb2msQvesq=w1200"}
+    ],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Available%20as%20at%2029/10/2026%20%E2%9C%85",
     "project": "",
     "project_name": "",

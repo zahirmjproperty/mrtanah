@@ -249,6 +249,11 @@ function renderDetail(l) {
       <ul class="detail-list">${l.butiran.map(b => `<li>${b}</li>`).join("")}</ul>
     </section>` : ""}
 
+    ${l.pelan && l.pelan.length ? `<section class="detail-section">
+      <h2>Pelan Bangunan</h2>
+      <div class="pelan-grid">${l.pelan.map(p => `<figure class="pelan-card"><img src="${p.url}" alt="${p.tajuk}" loading="lazy"><figcaption>${p.tajuk}</figcaption></figure>`).join("")}</div>
+    </section>` : ""}
+
     ${videoHTML(l)}
 
     ${l.highlights && l.highlights.length ? `<section class="detail-section">
