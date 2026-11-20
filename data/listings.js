@@ -51004,11 +51004,26 @@ window.LISTINGS = [
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
-    "highlights": [],
+    "highlights": [
+      "Fitted wardrobe with muji design",
+      "Nice full kitchen cabinet for dry & wet",
+      "End Lot Unit",
+      "Full kitchen cabinet for dry and wet kitchen with oven",
+      "2 water heater"
+    ],
     "pelan": [],
     "description": "Kediaman 20 x 60 (1,200 sqft) di Casa Wood Cybersouth, Dengkil, Sepang, Selangor dijual pada RM725,000. Hakmilik: Leasehold. Sekatan: Bumi Lot. Anggaran RM604 sekaki persegi.",
     "amenities": [],
-    "nearby": [],
+    "nearby": [
+      "Tamarind Square",
+      "Dpulze Shopping Mall",
+      "Hospital Cyberjaya",
+      "King Henry Private School",
+      "Public Primary and High School",
+      "ELITE highway",
+      "MEX highway",
+      "Lebuhraya Putrajaya - Cyberjaya"
+    ],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Casa%20Wood%20Cybersouth%2C%20Dengkil%2C%20Sepang%2C%20Selangor",
     "project": "",
     "project_name": "",
