@@ -52091,7 +52091,7 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [],
     "pelan": [],
-    "description": "Tanah 7750 sqft di Tanah lot banglo sg merab dijual pada RM550,000. Anggaran RM71 sekaki persegi.",
+    "description": "Tanah 7750 sqft di Tanah lot banglo sg merab dijual pada RM480,000. Anggaran RM62 sekaki persegi.",
     "amenities": [],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Tanah%20lot%20banglo%20sg%20merab",
