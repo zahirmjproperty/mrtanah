@@ -52521,7 +52521,7 @@ window.LISTINGS = [
     "price_old": null,
     "land_area": "5005 sqft",
     "built_up": "-",
-    "tenure": "Leasehold",
+    "tenure": "Freehold",
     "sekatan": "Malay Reserved",
     "kategori": "",
     "zoning": "",
