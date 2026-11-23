@@ -53432,7 +53432,7 @@ window.LISTINGS = [
     "highlights": ["Rizab Melayu", "Tanah Rata (Terus Buat Rumah)", "Pagar Tembok Batu", "Sesuai rumah Pencen", "Api Elektrik & Air sudah ada Infra."],
     "pelan": [],
     "description": "Listing MTCOA-1100: Tanah Lot Bungalow Sungai Serai, Hulu Langat, Selangor. Butiran penuh di laman.",
-    "amenities": ["Akses Jalan", "Sk sungai Serai", "Pam Minyak", "Klinik Kesihtan", "000 Nego"],
+    "amenities": ["Akses Jalan", "Sk sungai Serai", "Pam Minyak", "Klinik Kesihtan"],
     "nearby": [],
     "map_url": "https://www.google.com/maps/search/?api=1&query=Tanah%20Lot%20Bungalow%20Sungai%20Serai%2C%20Hulu%20Langat%2C%20Selangor",
     "project": "",
