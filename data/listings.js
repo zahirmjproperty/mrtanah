@@ -55613,7 +55613,7 @@ window.LISTINGS = [
     "psf": 42,
     "bedrooms": 0,
     "bathrooms": 0,
-    "status": "BARU",
+    "status": "DIJUAL",
     "jenis": "JUAL",
     "sewa_price": null,
     "sewa_label": null,
@@ -55648,7 +55648,8 @@ window.LISTINGS = [
       "https://lh3.googleusercontent.com/d/1sJ_q6VjLTV_f0E-THFNmo4a7pRZqrcse=w1000"
     ],
     "video": "",
-    "active": true
+    "active": true,
+    "sold": true
   },
   {
     "tracking": "MTCOA-1142",
