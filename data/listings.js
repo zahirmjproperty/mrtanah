@@ -55756,7 +55756,7 @@ window.LISTINGS = [
     "land_area": "127,631 sqft",
     "built_up": "-",
     "tenure": "Leasehold",
-    "sekatan": "Bumi Lot",
+    "sekatan": "Rezab Melayu",
     "kategori": "Pertanian",
     "zoning": "Pertanian",
     "psf": 2,
@@ -55768,13 +55768,14 @@ window.LISTINGS = [
     "sewa_label": null,
     "highlights": [
       "Geran Individu",
+      "Rezab Melayu",
       "Mukim Pancang Bedena",
       "Status pertanian",
       "Kegunaan semasa: sawah padi",
       "Jalan masuk batu putih"
     ],
     "pelan": [],
-    "description": "Tanah sawah padi 2.93 ekar (1.187 hektar / 127,631 sqft) di Jalan Parit 2 1/2 Timur, Sungai Besar, mukim Pancang Bedena, Selangor, dijual pada RM290,000 (±RM2.27 psf). Tanah pertanian dengan geran individu, kegunaan semasa sawah padi dan jalan masuk batu putih. Berdekatan Masjid Badli Shah, Masjid Jamek Makmuriah, Pekan Sungai Besar, balai polis dan pasar raya; akses melalui Jalan Besar Klang - Teluk Intan dan Lebuhraya WCE.",
+    "description": "Tanah sawah padi 2.93 ekar (1.187 hektar / 127,631 sqft) di Jalan Parit 2 1/2 Timur, Sungai Besar, mukim Pancang Bedena, Selangor, dijual pada RM290,000 (±RM2.27 psf). Tanah pertanian berstatus Rezab Melayu dengan geran individu, kegunaan semasa sawah padi dan jalan masuk batu putih. Berdekatan Masjid Badli Shah, Masjid Jamek Makmuriah, Pekan Sungai Besar, balai polis dan pasar raya; akses melalui Jalan Besar Klang - Teluk Intan dan Lebuhraya WCE.",
     "amenities": [],
     "nearby": [
       "Masjid Badli Shah",
